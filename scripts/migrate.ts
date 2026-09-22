@@ -1,5 +1,5 @@
 /**
- * Applies database migrations. With DATABASE_URL set, migrates that Postgres;
+ * Applies database migrations. With DATABASE_URL (or DATABASE_URL_UNPOOLED) set, migrates that Postgres;
  * otherwise migrates the embedded development database in .data/pglite.
  *   npm run db:migrate
  */
@@ -8,7 +8,8 @@ import path from 'node:path';
 const migrationsFolder = path.join(process.cwd(), 'drizzle');
 
 async function main() {
-  const url = process.env.DATABASE_URL;
+  // Migrations prefer a direct connection; Neon's Vercel integration provides one as DATABASE_URL_UNPOOLED.
+  const url = process.env.DATABASE_URL_UNPOOLED || process.env.DATABASE_URL;
   if (url) {
     const { default: postgres } = await import('postgres');
     const { drizzle } = await import('drizzle-orm/postgres-js');
