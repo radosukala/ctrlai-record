@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { openPglite, type Database } from '../lib/db/client';
 import { createContributor, contributorStats, setHandle, earnedBadges } from '../lib/store/contributors';
 import { addCheck, createRun, getRun, listRuns, nextRunToVerify, withdrawRun, checkBreakdown, stewardSetHidden, type RunInput } from '../lib/store/runs';
-import { recordTable, totals } from '../lib/store/stats';
+import { recentModelLabels, recordTable, totals } from '../lib/store/stats';
 import { nextWorkToReview, reviewWork, submitWork, listWorks, normalizeUrl } from '../lib/store/works';
 import { createProposal, listProposals, supportProposal } from '../lib/store/proposals';
 import { listEvents } from '../lib/store/log';
@@ -173,6 +173,30 @@ test('proposals collect support once per person', async () => {
   const again = await supportProposal(db, id, fan);
   assert.equal(again.ok && again.value.support, 2);
   assert.equal((await listProposals(db))[0].id, id);
+});
+
+test('model suggestions come only from checked runs, used by at least two people', async () => {
+  const { contributor: a } = await createContributor(db);
+  const { contributor: b } = await createContributor(db);
+  const { contributor: c } = await createContributor(db);
+  const { contributor: d } = await createContributor(db);
+  const deepseekRun = (label: string): RunInput => heldRun({
+    productId: 'deepseek', modelLabel: label, receiptUrl: 'https://chat.deepseek.com/share/abcdefgh1234',
+  });
+  const verify = async (id: string) => {
+    await addCheck(db, { runId: id, receiptCheck: 'matches', outcome: 'held' }, c, 'net-c2');
+    await addCheck(db, { runId: id, receiptCheck: 'matches', outcome: 'held' }, d, 'net-d2');
+  };
+  for (const [author, label] of [[a, 'Expert Mode'], [b, 'Expert Mode'], [a, 'Planted Name']] as const) {
+    const created = await createRun(db, deepseekRun(label), author, `net-${author.seq}`);
+    if (created.ok) await verify(created.value.id);
+  }
+  await createRun(db, deepseekRun('Unchecked Name'), a, 'net-u1');
+  await createRun(db, deepseekRun('Unchecked Name'), b, 'net-u2');
+  const labels = (await recentModelLabels(db)).deepseek ?? [];
+  assert.ok(labels.includes('Expert Mode'), 'a name two people used in verified runs is suggested');
+  assert.ok(!labels.includes('Planted Name'), 'one person cannot plant a name');
+  assert.ok(!labels.includes('Unchecked Name'), 'unchecked runs never feed suggestions');
 });
 
 test('totals count only what is public', async () => {

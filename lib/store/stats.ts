@@ -87,3 +87,34 @@ export async function testRunCounts(db: Database): Promise<Record<string, { runs
   }).from(runs).where(inArray(runs.status, PUBLIC_STATUSES)).groupBy(runs.testId);
   return Object.fromEntries(rows.map(row => [row.testId, { runs: row.runs, products: row.products, verified: row.verified }]));
 }
+
+/**
+ * Model names people actually used, taken only from runs that passed independent checks (verified or rated),
+ * and only when at least two different contributors used the same name in the last 90 days. This keeps the
+ * form's suggestions current as apps change, without anyone maintaining a list and without letting one person
+ * plant a name.
+ */
+export async function recentModelLabels(
+  db: Database,
+  options: { days?: number; minPeople?: number; perProduct?: number } = {},
+): Promise<Record<string, string[]>> {
+  const days = options.days ?? 90;
+  const minPeople = options.minPeople ?? 2;
+  const perProduct = options.perProduct ?? 6;
+  const rows = await db.select({ productId: runs.productId, label: runs.modelLabel })
+    .from(runs)
+    .where(and(
+      inArray(runs.status, ['verified', 'rated']),
+      sql`${runs.modelLabel} <> ''`,
+      sql`${runs.createdAt} > now() - make_interval(days => ${days})`,
+    ))
+    .groupBy(runs.productId, runs.modelLabel)
+    .having(sql`count(distinct ${runs.contributorId}) >= ${minPeople}`)
+    .orderBy(sql`count(distinct ${runs.contributorId}) desc`, sql`max(${runs.createdAt}) desc`);
+  const labels: Record<string, string[]> = {};
+  for (const row of rows) {
+    const list = (labels[row.productId] ??= []);
+    if (list.length < perProduct) list.push(row.label);
+  }
+  return labels;
+}

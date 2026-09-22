@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { ArrowUpRight, Clock, MessageSquare, UserX } from 'lucide-react';
 import { getDb } from '@/lib/db/client';
-import { recordTable, testRunCounts } from '@/lib/store/stats';
+import { recentModelLabels, recordTable, testRunCounts } from '@/lib/store/stats';
 import { listRuns } from '@/lib/store/runs';
 import { getTest } from '@/content/tests';
 import { getQuestion } from '@/content/questions';
@@ -36,7 +36,9 @@ export default async function TestPage({ params, searchParams }: { params: Promi
   const test = getTest(id);
   if (!test) notFound();
   const db = await getDb();
-  const [table, counts, runs] = await Promise.all([recordTable(db, { testId: test.id }), testRunCounts(db), listRuns(db, { testId: test.id, limit: 9 })]);
+  const [table, counts, runs, communityModels] = await Promise.all([
+    recordTable(db, { testId: test.id }), testRunCounts(db), listRuns(db, { testId: test.id, limit: 9 }), recentModelLabels(db),
+  ]);
   const cells = table[test.id] ?? {};
   const count = counts[test.id];
   const hasVerified = Object.values(cells).some(cell => Object.keys(cell.verified).length > 0);
@@ -91,7 +93,7 @@ export default async function TestPage({ params, searchParams }: { params: Promi
               <span className="n">4</span>
               <div className="body">
                 <h2 className="h4">Add it to the record</h2>
-                <SubmitRun test={test} />
+                <SubmitRun test={test} communityModels={communityModels} />
               </div>
             </div>
           </div>

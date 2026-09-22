@@ -11,7 +11,7 @@ import { segmentClasses } from '@/lib/outcome-colors';
 
 const normalize = (text: string) => text.replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, ' ').trim().toLowerCase();
 
-export function SubmitRun({ test }: { test: TestDef }) {
+export function SubmitRun({ test, communityModels = {} }: { test: TestDef; communityModels?: Record<string, string[]> }) {
   const router = useRouter();
   const [productId, setProductId] = useState('');
   const [modelLabel, setModelLabel] = useState('');
@@ -27,6 +27,9 @@ export function SubmitRun({ test }: { test: TestDef }) {
 
   const product = getProduct(productId);
   const colors = useMemo(() => segmentClasses(test), [test]);
+  const curatedModels = product?.modelHints ?? [];
+  const communityExtras = (communityModels[productId] ?? [])
+    .filter(label => !curatedModels.some(name => name.toLowerCase() === label.toLowerCase()));
   const receipt = useMemo(() => (receiptUrl.trim() && productId ? checkReceipt(receiptUrl, productId) : null), [receiptUrl, productId]);
   const judged = responses[test.judgedTurn] ?? '';
   const excerptOk = !excerpt.trim() || normalize(judged).includes(normalize(excerpt));
@@ -76,8 +79,23 @@ export function SubmitRun({ test }: { test: TestDef }) {
 
       <div className="field">
         <label htmlFor="model">Which model did the app show? <span className="muted" style={{ fontWeight: 400 }}>(optional)</span></label>
-        <input id="model" className="input" list="model-hints" value={modelLabel} onChange={event => setModelLabel(event.target.value)} maxLength={80} placeholder="Exactly as the app names it, if it shows one" />
-        <datalist id="model-hints">{(product?.modelHints ?? []).map(hint => <option key={hint} value={hint} />)}</datalist>
+        <input id="model" className="input" list="model-hints" value={modelLabel} onChange={event => setModelLabel(event.target.value)} maxLength={80} placeholder={product ? 'Tap one below, or type what your app shows' : 'Choose the AI first'} />
+        <datalist id="model-hints">{[...curatedModels, ...communityExtras].map(hint => <option key={hint} value={hint} />)}</datalist>
+        {curatedModels.length ? (
+          <div className="model-chips" role="group" aria-label={`Current ${product?.name} models`}>
+            {curatedModels.map(name => (
+              <button key={name} type="button" className={`chip chip-outline chip-button${modelLabel === name ? ' is-selected' : ''}`} aria-pressed={modelLabel === name} onClick={() => setModelLabel(name)}>{name}</button>
+            ))}
+          </div>
+        ) : null}
+        {communityExtras.length ? (
+          <div className="model-chips" role="group" aria-label="Also used in verified runs">
+            <span className="tiny muted">Also used in verified runs:</span>
+            {communityExtras.map(name => (
+              <button key={name} type="button" className={`chip chip-outline chip-button${modelLabel === name ? ' is-selected' : ''}`} aria-pressed={modelLabel === name} onClick={() => setModelLabel(name)}>{name}</button>
+            ))}
+          </div>
+        ) : null}
       </div>
 
       <fieldset>

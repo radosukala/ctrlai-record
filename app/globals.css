@@ -168,6 +168,10 @@ button { cursor: pointer; }
 .tone-concern { background: #f6ddd5; color: #962d1b; }
 .tone-neutral { background: #e8e9e2; color: #515649; }
 .chip-outline { border-color: var(--line); color: var(--ink-2); background: var(--card); }
+.chip-button { cursor: pointer; font: inherit; font-size: 13px; transition: border-color .15s, background-color .15s, color .15s; }
+.chip-button:hover { border-color: #a9b29c; color: var(--ink); }
+.chip-button.is-selected { background: var(--forest); border-color: var(--forest); color: var(--paper); }
+.model-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .status { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 500; }
 .status svg { width: 15px; height: 15px; }
 .status-verified { color: #1d6a2f; }
