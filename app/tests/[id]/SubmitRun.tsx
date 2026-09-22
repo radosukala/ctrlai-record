@@ -180,7 +180,7 @@ export function SubmitRun({ test, communityModels = {} }: { test: TestDef; commu
 
       <div className="actions">
         <button type="submit" className="btn btn-primary" disabled={busy}>{busy ? 'Adding…' : <>Add to the record <ArrowRight size={17} aria-hidden="true" /></>}</button>
-        <span className="small muted">No account. No email. You get a private key to keep your contributions.</span>
+        <span className="small muted">No account needed. Afterwards you can keep your record with an email sign-in link.</span>
       </div>
     </form>
   );

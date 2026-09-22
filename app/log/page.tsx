@@ -33,6 +33,9 @@ function describe(event: PublicEvent): React.ReactNode {
     case 'work.listed': return <>“{d.title}” is now listed in the library.</>;
     case 'work.declined': return <>“{d.title}” was declined for the library.</>;
     case 'proposal.added': return <>{who} proposed a test: “{d.title}”.</>;
+    case 'contributor.kept': return <>Contributor #{id} kept their record with an account.</>;
+    case 'contributor.merged': return <>Contributor #{id} was merged into contributor #{d.into}{d.selfChecksRemoved ? `, and ${d.selfChecksRemoved} check${Number(d.selfChecksRemoved) === 1 ? '' : 's'} on their own runs were removed` : ''}.</>;
+    case 'work.reopened': return <>“{d.title}” went back to review after a merge removed an approval.</>;
     case 'steward.appointed': return <>Contributor #{id} was appointed a steward.</>;
     case 'steward.removed': return <>Contributor #{id} is no longer a steward.</>;
     default: return <>{event.action} · {event.subject}</>;

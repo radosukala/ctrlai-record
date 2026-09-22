@@ -9,8 +9,9 @@ record rather than an empty one or a faked one.
 ## Before launch
 
 - [x] Confirm the licenses (AGPL-3.0 code, CC BY 4.0 data) and publish the repository.
-- [ ] Deploy (Vercel + Neon works): set `DATABASE_URL`, `CTRL_SECRET`, `PUBLIC_ORIGIN`; run `npm run db:migrate && npm run seed`.
-- [ ] Delete any local QA data. Production starts empty.
+- [x] Deploy (Vercel + Neon): `DATABASE_URL`, `CTRL_SECRET`, `PUBLIC_ORIGIN`; migrations run in the build.
+- [x] Delete any local QA data. Production starts empty.
+- [ ] Add `RESEND_API_KEY` in Vercel so optional accounts can send sign-in links.
 - [ ] Run every test yourself on every product you can access, and confirm each product's share link is accepted as a
       receipt. Adjust `content/products.ts` where a format differs.
 - [ ] Check the share cards in X's and LinkedIn's post previewers.

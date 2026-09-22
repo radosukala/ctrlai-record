@@ -18,9 +18,9 @@ export async function findContributorByKey(db: Database, key: string | undefined
   return row ?? null;
 }
 
-export async function createContributor(db: Database): Promise<{ contributor: Contributor; key: string }> {
+export async function createContributor(db: Database, personId: string | null = null): Promise<{ contributor: Contributor; key: string }> {
   const key = newSecret();
-  const [contributor] = await db.insert(contributors).values({ keyHash: keyHash(key) }).returning();
+  const [contributor] = await db.insert(contributors).values({ keyHash: keyHash(key), personId }).returning();
   return { contributor, key };
 }
 

@@ -115,7 +115,7 @@ export default function AboutPage() {
                 <li>What counts as verified is decided by published rules, not by an editor.</li>
                 <li>Every status change and moderation action is written to a public log.</li>
                 <li>The whole record can be downloaded at any time.</li>
-                <li>Contributors are pseudonymous; no email, no account, no tracking.</li>
+                <li>Contributors are pseudonymous. No account is needed; an optional one keeps your record, and its email is never shown.</li>
                 <li>The code, tests and rules are <a href={SITE.repoUrl}>public on GitHub</a>, so anyone can run a copy.</li>
               </ul>
             </div>
@@ -163,8 +163,9 @@ export default function AboutPage() {
           </div>
           <ul className="bullets" style={{ fontSize: 15.5 }}>
             <li><strong>Public by design:</strong> runs (the AI’s reply, your rating, the share link, the model and memory setting), checks on settled runs, library entries, and your contributor number or chosen name.</li>
-            <li><strong>Never collected:</strong> email addresses, names, accounts, advertising profiles, or analytics.</li>
-            <li><strong>A private key in a cookie</strong> identifies you as a contributor, so you can withdraw your runs. We store only a hash of it.</li>
+            <li><strong>Never collected:</strong> names, advertising profiles, or analytics.</li>
+            <li><strong>No account is needed.</strong> A private key in a cookie identifies you as a contributor, so you can withdraw your runs. We store only a hash of it.</li>
+            <li><strong>An optional account</strong> keeps your record across devices. It stores your email address, used only to send you one-time sign-in links. It is never shown, exported or shared, and deleting the account deletes it.</li>
             <li><strong>A salted fingerprint of your network address</strong> is stored with each contribution. It is never shown; it prevents people from checking their own runs and limits abuse.</li>
             <li><strong>Withdraw any time:</strong> a withdrawn run’s content is removed; its ID stays reserved and the withdrawal appears in the log. Copies already downloaded by others can’t be recalled.</li>
           </ul>

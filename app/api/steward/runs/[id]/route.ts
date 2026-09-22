@@ -10,7 +10,8 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
   const reason = String(body?.reason ?? '').trim();
   if (!body || typeof body.hidden !== 'boolean' || reason.length < 5) return jsonError(400, 'Give a reason; it is published in the log.');
   const actor = await readActor(request);
-  if (!actor.contributor) return jsonError(403, 'Only stewards can do this.');
+  // Steward powers need a signed-in account, not only a browser key.
+  if (!actor.person || !actor.contributor || actor.contributor.personId !== actor.person.id) return jsonError(403, 'Stewards need to be signed in to do this.');
   const result = await stewardSetHidden(actor.db, id, actor.contributor, body.hidden, reason.slice(0, 300));
   if (!result.ok) return jsonError(result.status, result.error);
   return NextResponse.json({ ok: true });

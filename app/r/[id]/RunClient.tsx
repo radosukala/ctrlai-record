@@ -4,9 +4,10 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { CheckCircle2, Copy, Download } from 'lucide-react';
+import { KeepRecordForm } from '@/components/KeepRecordForm';
 
-/** Shown once, right after someone adds a run: what happens next, and their recovery key. */
-export function AddedBanner({ runId }: { runId: string }) {
+/** Shown once, right after someone adds a run: what happens next, and how to keep the record. */
+export function AddedBanner({ runId, signedIn }: { runId: string; signedIn: boolean }) {
   const [key, setKey] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
   useEffect(() => {
@@ -30,19 +31,27 @@ export function AddedBanner({ runId }: { runId: string }) {
       <p className="small mt-8">
         It now needs two strangers to check it. The fastest way to get checks is to give some: <Link href="/verify"><strong>check two other people’s runs</strong></Link>. It takes about two minutes each.
       </p>
-      {key ? (
+      {signedIn ? (
+        <p className="small mt-12">Kept with your account.</p>
+      ) : (
         <div className="mt-16">
-          <p className="small"><strong>Your private contributor key.</strong> This browser remembers you. Save the key to keep your contributions if you switch devices. We can’t show it again.</p>
-          <div className="keybox mt-8">{key}</div>
-          <div className="actions mt-12">
-            <button type="button" className="btn btn-ghost btn-small" onClick={async () => { try { await navigator.clipboard.writeText(key); setCopied(true); } catch { /* ignore */ } }}>
-              <Copy size={14} aria-hidden="true" /> {copied ? 'Copied' : 'Copy key'}
-            </button>
-            <button type="button" className="btn btn-ghost btn-small" onClick={download}><Download size={14} aria-hidden="true" /> Download</button>
-            <button type="button" className="btn btn-ghost btn-small" onClick={forget}>I’ve saved it</button>
-          </div>
+          <p className="small"><strong>Keep this run with you.</strong> Right now only this browser can withdraw it. Add your email and we’ll send a one-time sign-in link. No password, and your address is never shown.</p>
+          <div className="mt-12"><KeepRecordForm next="/me" compact /></div>
+          {key ? (
+            <details className="mt-12">
+              <summary className="small" style={{ cursor: 'pointer' }}>Prefer no email? Save your private contributor key instead</summary>
+              <div className="keybox mt-8">{key}</div>
+              <div className="actions mt-12">
+                <button type="button" className="btn btn-ghost btn-small" onClick={async () => { try { await navigator.clipboard.writeText(key); setCopied(true); } catch { /* ignore */ } }}>
+                  <Copy size={14} aria-hidden="true" /> {copied ? 'Copied' : 'Copy key'}
+                </button>
+                <button type="button" className="btn btn-ghost btn-small" onClick={download}><Download size={14} aria-hidden="true" /> Download</button>
+                <button type="button" className="btn btn-ghost btn-small" onClick={forget}>I’ve saved it</button>
+              </div>
+            </details>
+          ) : null}
         </div>
-      ) : null}
+      )}
     </div>
   );
 }

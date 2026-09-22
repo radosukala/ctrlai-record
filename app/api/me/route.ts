@@ -1,13 +1,15 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { jsonError, readActor, readJson, sameOrigin } from '@/lib/http';
 import { contributorStats, earnedBadges, setHandle } from '@/lib/store/contributors';
+import { maskEmail } from '@/lib/auth';
 
 export async function GET(request: NextRequest) {
   const actor = await readActor(request);
-  if (!actor.contributor) return NextResponse.json({ contributor: null }, { headers: { 'Cache-Control': 'no-store' } });
+  const account = actor.person ? { email: maskEmail(actor.person.email) } : null;
+  if (!actor.contributor) return NextResponse.json({ contributor: null, account }, { headers: { 'Cache-Control': 'no-store' } });
   const stats = await contributorStats(actor.db, actor.contributor.id);
   const { seq, handle, trust, createdAt } = actor.contributor;
-  return NextResponse.json({ contributor: { seq, handle, trust, createdAt, stats, badges: earnedBadges(actor.contributor, stats) } }, { headers: { 'Cache-Control': 'no-store' } });
+  return NextResponse.json({ contributor: { seq, handle, trust, createdAt, stats, badges: earnedBadges(actor.contributor, stats) }, account }, { headers: { 'Cache-Control': 'no-store' } });
 }
 
 export async function PATCH(request: NextRequest) {

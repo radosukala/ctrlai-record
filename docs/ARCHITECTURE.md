@@ -111,7 +111,8 @@ evidence.
 
 | Table | Holds |
 | --- | --- |
-| `contributors` | Pseudonymous people: number, optional handle, hash of their key, trust level. No email, no name. |
+| `contributors` | Pseudonymous people: number, optional handle, hash of their key, trust level, optional account link. |
+| `people`, `login_tokens` | Optional accounts: an email address proven by a one-time link, and hashes of issued links. Never public. |
 | `runs` | One test on one AI: replies, receipt link and status, submitter and agreed outcomes, status, test version, metadata. |
 | `verifications` | One person's check of one run: receipt check, blind rating, flag. Unique per person per run. |
 | `works`, `work_reviews` | The Library and its two-person review. |
@@ -149,7 +150,9 @@ Network addresses are never stored, only a salted hash used for self-check preve
 - **No safety scores or leaderboards.** A single number invites gaming and false reassurance. Nothing here certifies
   any AI as safe.
 - **No jailbreaks or dangerous-capability tests.** Tests must be safe to paste into any app without breaking its rules.
-- **No accounts or emails.** A key in a cookie is enough to own your contributions; privacy by default.
+- **No required accounts.** Running and checking tests needs none. An optional account (an email address proven by a
+  one-time link) keeps a record across devices; it is offered after the first contribution, never before, and adopting a
+  browser's contributions into it is a separate, explicit step, so a sign-in link can't be used to take them.
 - **No private reviews of runs.** Checks are public once settled.
 - **No AI judge deciding outcomes.** People rate. Classifiers may help sort; they never decide.
 

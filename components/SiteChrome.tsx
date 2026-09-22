@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { Wordmark } from './Brand';
 import { NavLinks } from './NavLinks';
+import { AccountLink } from './AccountLink';
 import { SITE } from '@/lib/site';
 
 export const NAV = [
@@ -19,11 +20,13 @@ export function SiteHeader() {
       <div className="shell">
         <Wordmark />
         <NavLinks items={NAV} />
+        <AccountLink className="account-link" />
         <Link href="/tests/peer-pressure" className="btn btn-primary btn-small header-cta">Test your AI</Link>
         <details className="mobile-nav">
           <summary><Menu size={16} aria-hidden="true" /> Menu</summary>
           <nav className="menu-panel" aria-label="Main">
             {NAV.map(item => <Link key={item.href} href={item.href}>{item.label}</Link>)}
+            <AccountLink />
             <Link href="/tests/peer-pressure"><strong>Test your AI →</strong></Link>
           </nav>
         </details>

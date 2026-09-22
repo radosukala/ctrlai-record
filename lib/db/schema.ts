@@ -14,11 +14,43 @@ export const contributors = pgTable('contributors', {
   handle: text('handle'),
   keyHash: text('key_hash').notNull(),
   trust: text('trust').notNull().default('member'), // member | verifier | steward
+  /** The optional account this contributor belongs to. Never shown publicly. */
+  personId: uuid('person_id').references(() => people.id, { onDelete: 'set null' }),
+  /** Set when this contributor was folded into another one, so old log entries still make sense. */
+  mergedInto: uuid('merged_into'),
   createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
 }, t => [
   uniqueIndex('contributors_key_hash').on(t.keyHash),
   uniqueIndex('contributors_seq').on(t.seq),
   uniqueIndex('contributors_handle_lower').on(sql`lower(${t.handle})`),
+  uniqueIndex('contributors_person').on(t.personId),
+]);
+
+/**
+ * An optional account: an email address proven by a link delivered to it, and nothing else.
+ * It lets someone keep their contributions across devices and browsers. The address is used only
+ * to send sign-in links; it is never shown, exported or shared. Deleting the account deletes this row.
+ */
+export const people = pgTable('people', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  email: text('email').notNull(),
+  /** Bumped to sign out every device at once. Part of the signed session. */
+  sessionVersion: integer('session_version').notNull().default(1),
+  createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+  lastSignInAt: timestamp('last_sign_in_at', { withTimezone: true }),
+}, t => [uniqueIndex('people_email').on(t.email)]);
+
+/** Emailed sign-in links. Only a hash of each token is stored; each works once, for 30 minutes. */
+export const loginTokens = pgTable('login_tokens', {
+  tokenHash: text('token_hash').primaryKey(),
+  email: text('email').notNull(),
+  expiresAt: timestamp('expires_at', { withTimezone: true }).notNull(),
+  usedAt: timestamp('used_at', { withTimezone: true }),
+  ipHash: text('ip_hash').notNull(),
+  createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+}, t => [
+  index('login_tokens_email_created').on(t.email, t.createdAt),
+  index('login_tokens_ip_created').on(t.ipHash, t.createdAt),
 ]);
 
 /**

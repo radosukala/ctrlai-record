@@ -53,11 +53,21 @@ Any Node host with a Postgres database. See [.env.example](.env.example).
 | `DATABASE_URL` | Postgres connection string (a pooled Neon URL works). |
 | `CTRL_SECRET` | Long random string, e.g. `openssl rand -base64 32`. Salts network fingerprints. Required in production. |
 | `PUBLIC_ORIGIN` | `https://ctrlai.com`. Used for share links, canonical URLs and the same-origin check. |
+| `RESEND_API_KEY` | Sends the sign-in links for optional accounts. The sending domain must be verified in Resend. |
+| `RESEND_FROM` | Optional sender, default `Ctrl AI <record@ctrlai.com>`. |
 
 **On Vercel**, the `vercel-build` script runs migrations and refreshes the library before every build, so a deploy is
 all it takes. Elsewhere, run `npm run db:migrate && npm run seed` before starting.
 
 Appoint stewards with `DATABASE_URL=… npm run steward -- <contributor number>`. The change is written to the public log.
+
+## Accounts
+
+Nobody needs an account to run or check a test. After a first contribution, people can keep their record with an email
+sign-in link (no password). The design, ported from the ctrlai-audit repository, is in `lib/auth.ts`: single-use
+hashed tokens, signed sessions that can be revoked everywhere, and no automatic adoption of a browser's contributions
+at sign-in. Adoption is a separate step on `/me`, so a sign-in link can't be used to take someone's contributions.
+Stewards must be signed in to moderate.
 
 ## Structure
 

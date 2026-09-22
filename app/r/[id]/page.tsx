@@ -7,7 +7,7 @@ import { checkBreakdown, getRun } from '@/lib/store/runs';
 import { displayName } from '@/lib/store/contributors';
 import { getOutcome, getTest } from '@/content/tests';
 import { getProduct } from '@/content/products';
-import { currentContributor } from '@/lib/viewer';
+import { currentViewer } from '@/lib/viewer';
 import { isShortId } from '@/lib/ids';
 import { OutcomeChip } from '@/components/Outcomes';
 import { StatusBadge, STATUS_TEXT } from '@/components/Status';
@@ -50,8 +50,9 @@ export default async function RunPage({ params, searchParams }: { params: Promis
   const loaded = await load(id);
   if (!loaded) notFound();
   const { db, run, test, product } = loaded;
-  const viewer = await currentContributor();
-  const mine = viewer?.id === run.contributorId;
+  const viewer = await currentViewer();
+  const mine = viewer.contributor?.id === run.contributorId;
+  const signedInSteward = Boolean(viewer.person && viewer.contributor?.personId === viewer.person.id && viewer.contributor?.trust === 'steward');
   const settled = run.consensusOutcome !== null || run.status === 'disputed';
   const breakdown = settled ? await checkBreakdown(db, run.id) : [];
   const outcome = getOutcome(test, run.consensusOutcome ?? run.submitterOutcome);
@@ -68,7 +69,7 @@ export default async function RunPage({ params, searchParams }: { params: Promis
             <Link href="/record">Record</Link><span aria-hidden="true">/</span>
             <Link href={`/tests/${test.id}`}>Test {number}</Link><span aria-hidden="true">/</span><span>Run {run.id}</span>
           </nav>
-          {added && mine ? <AddedBanner runId={run.id} /> : null}
+          {added && mine ? <AddedBanner runId={run.id} signedIn={Boolean(viewer.person)} /> : null}
           <div className="mt-24"><span className="eyebrow"><span className="dot" /> Test {number} · {test.title}</span></div>
           {gone ? (
             <>
@@ -89,7 +90,7 @@ export default async function RunPage({ params, searchParams }: { params: Promis
         </div>
       </section>
 
-      {viewer?.trust === 'steward' && run.status !== 'withdrawn' ? (
+      {signedInSteward && run.status !== 'withdrawn' ? (
         <section className="section-tight"><div className="shell"><StewardPanel runId={run.id} hidden={run.status === 'hidden'} /></div></section>
       ) : null}
 
