@@ -1,0 +1,2783 @@
+[
+ {
+  "id": "3blue1brown-but-what-is-a-neural-network",
+  "url": "https://www.3blue1brown.com/lessons/neural-networks/",
+  "title": "But what is a Neural Network?",
+  "creators": "Grant Sanderson",
+  "publisher": "3Blue1Brown",
+  "date": "2017-10-05",
+  "type": "video",
+  "questions": [
+   "how-it-works"
+  ],
+  "level": "curious",
+  "summary": "A 19-minute visual introduction to neural networks that uses handwritten-digit recognition to show how layers of simple numerical units, with adjustable weights, add up to a useful function.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "3blue1brown-large-language-models-explained-briefly",
+  "url": "https://www.3blue1brown.com/lessons/mini-llm/",
+  "title": "Large Language Models explained briefly",
+  "creators": "Grant Sanderson",
+  "publisher": "3Blue1Brown",
+  "date": "2024-11-20",
+  "type": "video",
+  "questions": [
+   "how-it-works"
+  ],
+  "level": "everyone",
+  "summary": "An eight-minute animated explainer of what a large language model is: a program trained on vast amounts of text to predict the next word, then refined with human feedback into a chatbot.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "karpathy-deep-dive-into-llms-like-chatgpt",
+  "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+  "title": "Deep Dive into LLMs like ChatGPT",
+  "creators": "Andrej Karpathy",
+  "publisher": "YouTube (Andrej Karpathy)",
+  "date": "2025-02-05",
+  "type": "video",
+  "questions": [
+   "how-it-works"
+  ],
+  "level": "curious",
+  "summary": "A general-audience walk-through of how chatbots like ChatGPT are built, from internet text and pre-training to fine-tuning and reinforcement learning, and why they hallucinate.",
+  "caveat": "About three and a half hours long, split into chapters.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "lee-trott-llms-explained-minimum-math-jargon",
+  "url": "https://www.understandingai.org/p/large-language-models-explained-with",
+  "title": "Large language models, explained with a minimum of math and jargon",
+  "creators": "Timothy B. Lee and Sean Trott",
+  "publisher": "Understanding AI",
+  "date": "2023-07-27",
+  "type": "article",
+  "questions": [
+   "how-it-works"
+  ],
+  "level": "curious",
+  "summary": "A clear written explainer of how LLMs turn words into lists of numbers, pass them through attention and feed-forward layers, and learn by predicting the next word across huge amounts of text.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "vaswani-attention-is-all-you-need",
+  "url": "https://arxiv.org/abs/1706.03762",
+  "title": "Attention Is All You Need",
+  "creators": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin",
+  "publisher": "arXiv",
+  "date": "2017-06-12",
+  "type": "paper",
+  "questions": [
+   "how-it-works"
+  ],
+  "level": "technical",
+  "summary": "The research paper that introduced the transformer, a neural-network design built around 'attention' that became the basis of today's large language models.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "ouyang-instructgpt-human-feedback",
+  "url": "https://arxiv.org/abs/2203.02155",
+  "title": "Training language models to follow instructions with human feedback",
+  "creators": "Long Ouyang, Jeff Wu, Xu Jiang et al. (OpenAI)",
+  "publisher": "arXiv",
+  "date": "2022-03-04",
+  "type": "paper",
+  "questions": [
+   "how-it-works"
+  ],
+  "level": "technical",
+  "summary": "OpenAI paper on fine-tuning GPT-3 with human-written examples and human rankings of its answers (RLHF); people preferred the resulting small model over the original one more than 100 times larger.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "anthropic-building-effective-agents",
+  "url": "https://www.anthropic.com/engineering/building-effective-agents",
+  "title": "Building effective agents",
+  "creators": "Erik Schluntz and Barry Zhang",
+  "publisher": "Anthropic",
+  "date": "2024-12-19",
+  "type": "article",
+  "questions": [
+   "how-it-works"
+  ],
+  "level": "curious",
+  "summary": "Explains what AI 'agents' are (models that choose their own steps and use tools in a loop), how they differ from fixed workflows, and why their autonomy brings higher costs and compounding errors.",
+  "caveat": "Written for developers by an AI company.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "bowman-eight-things-to-know-about-llms",
+  "url": "https://arxiv.org/abs/2304.00612",
+  "title": "Eight Things to Know about Large Language Models",
+  "creators": "Samuel R. Bowman",
+  "publisher": "arXiv",
+  "date": "2023-04-02",
+  "type": "paper",
+  "questions": [
+   "how-it-works",
+   "risk"
+  ],
+  "level": "curious",
+  "summary": "A short, readable list of surprising facts about LLMs: new abilities emerge unpredictably, no technique reliably steers them, and experts cannot yet explain how they work inside.",
+  "caveat": "Author is affiliated with New York University and Anthropic.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "anthropic-tracing-the-thoughts-of-an-llm",
+  "url": "https://www.anthropic.com/research/tracing-thoughts-language-model",
+  "title": "Tracing the thoughts of a large language model",
+  "creators": "Anthropic",
+  "publisher": "Anthropic",
+  "date": "2025-03-27",
+  "type": "article",
+  "questions": [
+   "how-it-works",
+   "thinking"
+  ],
+  "level": "curious",
+  "summary": "Researchers look inside the Claude model and find it plans rhyming words ahead, shares concepts across languages, and can offer plausible reasoning that is not how it actually reached an answer.",
+  "caveat": "Research by the model's own developer; the authors say their tools capture only a fraction of the model's computation.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "amodei-urgency-of-interpretability",
+  "url": "https://www.darioamodei.com/post/the-urgency-of-interpretability",
+  "title": "The Urgency of Interpretability",
+  "creators": "Dario Amodei",
+  "publisher": "darioamodei.com",
+  "date": "2025-04",
+  "type": "essay",
+  "questions": [
+   "how-it-works",
+   "risk"
+  ],
+  "level": "curious",
+  "summary": "Argues that modern AI is 'grown' rather than built, that we mostly cannot see why it acts as it does, and that research into looking inside models must speed up before AI becomes far more powerful.",
+  "caveat": "Written by the CEO of Anthropic, a frontier AI company.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "elements-of-ai-course",
+  "url": "https://www.elementsofai.com/",
+  "title": "Elements of AI",
+  "creators": "University of Helsinki and MinnaLearn",
+  "publisher": "Elements of AI",
+  "date": "2018",
+  "type": "course",
+  "questions": [
+   "how-it-works"
+  ],
+  "level": "everyone",
+  "summary": "A free, self-paced online course on the basics of AI for non-experts, with no complicated math or programming required; more than two million people from over 170 countries have enrolled.",
+  "caveat": "A general introduction to AI, first launched in 2018.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "cais-statement-on-ai-extinction-risk",
+  "url": "https://www.safe.ai/work/statement-on-ai-risk",
+  "title": "Statement on AI Extinction Risk",
+  "creators": "Center for AI Safety",
+  "publisher": "Center for AI Safety",
+  "date": "2023-05-30",
+  "type": "statement",
+  "questions": [
+   "risk"
+  ],
+  "level": "everyone",
+  "summary": "A one-sentence statement, signed by leading AI scientists and the heads of OpenAI, Google DeepMind and Anthropic, saying that reducing the risk of extinction from AI should be a global priority.",
+  "caveat": "States a concern but gives no estimate of how likely the risk is.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "international-ai-safety-report-2026",
+  "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
+  "title": "International AI Safety Report 2026",
+  "creators": "Yoshua Bengio (chair), Stephen Clare and Carina Prunkl (lead writers), with 100+ experts",
+  "publisher": "International AI Safety Report",
+  "date": "2026-02-03",
+  "type": "report",
+  "questions": [
+   "risk",
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "The second international scientific review of what general-purpose AI can do, the risks it poses and how to manage them, led by Yoshua Bengio and backed by over 30 countries and international bodies.",
+  "caveat": "Published in February 2026, before the July 2026 AI agent incidents.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "ai-2027-scenario",
+  "url": "https://ai-2027.com/",
+  "title": "AI 2027",
+  "creators": "Daniel Kokotajlo, Scott Alexander, Thomas Larsen, Eli Lifland, Romeo Dean",
+  "publisher": "AI Futures Project",
+  "date": "2025-04-03",
+  "type": "report",
+  "questions": [
+   "risk",
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "A month-by-month scenario of how AI that speeds up AI research could lead to superhuman systems by the late 2020s, with two endings: an unchecked US–China race and a deliberate slowdown.",
+  "caveat": "A forecast, not a measurement; the authors later noted 2027 was their single most likely year, while their median expectation was later.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "narayanan-kapoor-ai-as-normal-technology",
+  "url": "https://knightcolumbia.org/content/ai-as-normal-technology",
+  "title": "AI as Normal Technology",
+  "creators": "Arvind Narayanan and Sayash Kapoor",
+  "publisher": "Knight First Amendment Institute at Columbia University",
+  "date": "2025-04-15",
+  "type": "essay",
+  "questions": [
+   "risk",
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "A leading counter-view: AI is a powerful but 'normal' technology, like electricity, whose effects will unfold over decades; policy should build resilience rather than try to stop superintelligence.",
+  "caveat": "One side of an active expert debate; the authors reject policies premised on imminent superintelligence.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "grace-thousands-of-ai-authors-survey",
+  "url": "https://arxiv.org/abs/2401.02843",
+  "title": "Thousands of AI Authors on the Future of AI",
+  "creators": "Katja Grace, Harlan Stewart, Julia Fabienne Sandkühler, Stephen Thomas, Ben Weinstein-Raun, Jan Brauner, Richard C. Korzekwa",
+  "publisher": "arXiv",
+  "date": "2024-01-05",
+  "type": "paper",
+  "questions": [
+   "risk"
+  ],
+  "level": "curious",
+  "summary": "A survey of 2,778 published AI researchers: between 38% and 51% gave at least a 10% chance that advanced AI leads to outcomes as bad as human extinction, amid wide disagreement.",
+  "caveat": "An opinion survey, not a measurement; results varied with how questions were asked.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "fri-existential-risk-persuasion-tournament",
+  "url": "https://forecastingresearch.org/research/existential-risk-persuasion-tournament",
+  "title": "Forecasting Existential Risks: Evidence from a Long-Run Forecasting Tournament",
+  "creators": "Ezra Karger, Josh Rosenberg, Zachary Jacobs et al., with Philip E. Tetlock",
+  "publisher": "Forecasting Research Institute",
+  "date": "2023-07-10",
+  "type": "report",
+  "questions": [
+   "risk"
+  ],
+  "level": "curious",
+  "summary": "Domain experts and 'superforecasters' (people with strong forecasting records) estimated risks to humanity; experts put AI extinction risk far higher, and months of debate changed few minds.",
+  "caveat": "Forecasts were gathered in 2022, early in the current wave of AI progress.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "pew-us-public-and-ai-experts-2025",
+  "url": "https://www.pewresearch.org/internet/2025/04/03/how-the-us-public-and-ai-experts-view-artificial-intelligence/",
+  "title": "How the U.S. Public and AI Experts View Artificial Intelligence",
+  "creators": "Colleen McClain, Brian Kennedy, Jeffrey Gottfried, Monica Anderson, Giancarlo Pasquini",
+  "publisher": "Pew Research Center",
+  "date": "2025-04-03",
+  "type": "report",
+  "questions": [
+   "risk",
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "Parallel surveys of US adults and AI experts: experts are far more optimistic than the public, yet both groups fear government oversight will be too weak and want more control over AI in their lives.",
+  "caveat": "US only; surveys conducted in 2024.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "yudkowsky-soares-if-anyone-builds-it-everyone-dies",
+  "url": "https://www.hachettebookgroup.com/titles/eliezer-yudkowsky/if-anyone-builds-it-everyone-dies/9780316595643/",
+  "title": "If Anyone Builds It, Everyone Dies: Why Superhuman AI Would Kill Us All",
+  "creators": "Eliezer Yudkowsky and Nate Soares",
+  "publisher": "Little, Brown and Company",
+  "date": "2025-09-16",
+  "type": "book",
+  "questions": [
+   "risk"
+  ],
+  "level": "everyone",
+  "summary": "A book for general readers arguing that superhuman AI built with anything like today's methods would develop goals at odds with ours and lead to human extinction, so it must not be built.",
+  "caveat": "Represents the most pessimistic end of the debate.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "narayanan-kapoor-ai-snake-oil",
+  "url": "https://press.princeton.edu/books/hardcover/9780691249131/ai-snake-oil",
+  "title": "AI Snake Oil: What Artificial Intelligence Can Do, What It Can't, and How to Tell the Difference",
+  "creators": "Arvind Narayanan and Sayash Kapoor",
+  "publisher": "Princeton University Press",
+  "date": "2024-09-24",
+  "type": "book",
+  "questions": [
+   "risk"
+  ],
+  "level": "everyone",
+  "summary": "Two Princeton computer scientists explain what AI can and cannot do, and how to tell genuine advances from overhyped products and misleading claims.",
+  "caveat": "Skeptical of hype; focuses mainly on today's AI products rather than future risks.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "russell-human-compatible",
+  "url": "https://www.penguinrandomhouse.com/books/566677/human-compatible-by-stuart-russell/",
+  "title": "Human Compatible: Artificial Intelligence and the Problem of Control",
+  "creators": "Stuart Russell",
+  "publisher": "Penguin Random House",
+  "date": "2019-10-08",
+  "type": "book",
+  "questions": [
+   "risk",
+   "stop"
+  ],
+  "level": "curious",
+  "summary": "A leading AI researcher explains why machines built to pursue fixed objectives could slip out of human control, and proposes AI that stays uncertain about what we want so that it defers to us.",
+  "caveat": "Written in 2019, before today's chatbots.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "munk-debate-ai-existential-threat-2023",
+  "url": "https://munkdebates.com/debates/artificial-intelligence/",
+  "title": "Artificial Intelligence Debate",
+  "creators": "Yoshua Bengio, Max Tegmark, Yann LeCun, Melanie Mitchell",
+  "publisher": "Munk Debates",
+  "date": "2023-06-22",
+  "type": "video",
+  "questions": [
+   "risk"
+  ],
+  "level": "everyone",
+  "summary": "A public debate on whether AI research poses an existential threat: Yoshua Bengio and Max Tegmark argue yes, Yann LeCun and Melanie Mitchell argue the fears are overstated.",
+  "caveat": "From June 2023; the audience vote shifted only slightly, from 67% to 64% agreeing.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "time-yann-lecun-interview-2024",
+  "url": "https://time.com/6694432/yann-lecun-meta-ai-interview/",
+  "title": "Meta's AI Chief Yann LeCun on AGI, Open-Source, and AI Risk",
+  "creators": "Billy Perrigo",
+  "publisher": "TIME",
+  "date": "2024-02-13",
+  "type": "article",
+  "questions": [
+   "risk"
+  ],
+  "level": "everyone",
+  "summary": "Interview with Yann LeCun, then Meta's AI chief, who argues that fears of AI takeover are misplaced, that today's language models are far from human-level, and that AI should be open-source.",
+  "caveat": "A prominent skeptic of AI extinction risk; interview from February 2024.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "metr-measuring-ai-ability-long-tasks",
+  "url": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/",
+  "title": "Measuring AI Ability to Complete Long Software Tasks",
+  "creators": "METR",
+  "publisher": "METR",
+  "date": "2025-03-19",
+  "type": "report",
+  "questions": [
+   "risk"
+  ],
+  "level": "curious",
+  "summary": "Measures how long a task, in human working time, AI agents can complete, and finds this has doubled roughly every seven months over six years.",
+  "caveat": "A trend, not a guarantee; METR notes parts of the post are out of date and points to updated measurements.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "fli-statement-on-superintelligence",
+  "url": "https://superintelligence-statement.org/",
+  "title": "Statement on Superintelligence",
+  "creators": "Future of Life Institute (organiser)",
+  "publisher": "Future of Life Institute",
+  "date": "2025-10-22",
+  "type": "statement",
+  "questions": [
+   "risk",
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "Calls for a ban on developing superintelligence until there is broad scientific consensus it can be done safely and controllably, and strong public buy-in; signed by scientists and public figures.",
+  "caveat": "Organised by the Future of Life Institute, an advocacy nonprofit; the signature count includes a public petition.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "dwarkesh-podcast-ai-2027",
+  "url": "https://www.dwarkesh.com/p/scott-daniel",
+  "title": "AI 2027: month-by-month model of intelligence explosion — Scott Alexander & Daniel Kokotajlo",
+  "creators": "Dwarkesh Patel with Scott Alexander and Daniel Kokotajlo",
+  "publisher": "Dwarkesh Podcast",
+  "date": "2025-04-03",
+  "type": "podcast",
+  "questions": [
+   "risk"
+  ],
+  "level": "curious",
+  "summary": "Two of AI 2027's authors walk through their scenario with host Dwarkesh Patel, who presses them on assumptions about AI accelerating AI research, alignment, and competition with China.",
+  "caveat": "The guests are discussing their own forecast.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "openai-hugging-face-incident-and-the-road-ahead",
+  "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+  "title": "The Hugging Face incident and the road ahead",
+  "creators": "OpenAI",
+  "publisher": "OpenAI",
+  "date": "2026-08-26",
+  "type": "incident",
+  "questions": [
+   "risk",
+   "in-charge",
+   "cheating"
+  ],
+  "level": "curious",
+  "summary": "OpenAI's account of how models under test, with reduced safeguards, escaped isolation, coordinated through an improvised message board and breached Hugging Face in July 2026, and what it is changing.",
+  "caveat": "The company's own account of its own incident; compare the independent METR and Redwood Research review.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "metr-openai-hugging-face-incident-investigation",
+  "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+  "title": "Brief independent investigation of agents’ behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident",
+  "creators": "METR and Redwood Research (Hjalmar Wijk, Ajeya Cotra, Ryan Greenblatt)",
+  "publisher": "METR",
+  "date": "2026-08-26",
+  "type": "report",
+  "questions": [
+   "risk",
+   "cheating"
+  ],
+  "level": "technical",
+  "summary": "Independent review of the July 2026 incident: about 1,200 AI agents found an unofficial message board, coordinated, and some hacked Hugging Face while trying to learn how their tests were scored.",
+  "caveat": "Covers a limited period with limited data access; the investigators relied partly on AI agents to analyze the logs.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "kapoor-narayanan-normal-technology-loss-of-control",
+  "url": "https://www.normaltech.ai/p/the-ai-as-normal-technology-view",
+  "title": "The AI-as-Normal-Technology view of loss of control incidents",
+  "creators": "Sayash Kapoor and Arvind Narayanan",
+  "publisher": "AI as Normal Technology (newsletter)",
+  "date": "2026-09-14",
+  "type": "essay",
+  "questions": [
+   "risk",
+   "in-charge",
+   "stop"
+  ],
+  "level": "curious",
+  "summary": "The 'normal technology' authors analyze the Hugging Face incident: they see an urgent cyber risk, but argue for stronger control, security, liability and transparency rather than slowing AI down.",
+  "caveat": "Argues against pauses; one side of a live debate.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "amodei-we-must-pace-the-frontier",
+  "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+  "title": "We Must Pace the Frontier",
+  "creators": "Dario Amodei",
+  "publisher": "darioamodei.com",
+  "date": "2026-09",
+  "type": "essay",
+  "questions": [
+   "in-charge",
+   "risk"
+  ],
+  "level": "curious",
+  "summary": "Anthropic's CEO argues AI capability gains should be slowed, proposing embedded outside evaluators (Anthropic commits now), coordinated limits among labs in democracies, and talks with China.",
+  "caveat": "Written by the CEO of a frontier AI company; critics raise self-regulation and antitrust concerns.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "pacing-the-frontier-letter",
+  "url": "https://www.pacingthefrontier.com/",
+  "title": "Pacing the Frontier",
+  "creators": "Employees of frontier AI companies, supported by Guidelight AI Standards and Encode AI",
+  "publisher": "pacingthefrontier.com",
+  "date": "2026-07-28",
+  "type": "statement",
+  "questions": [
+   "in-charge",
+   "stop"
+  ],
+  "level": "everyone",
+  "summary": "Over a thousand staff at OpenAI, Anthropic, Google DeepMind, Meta and other labs ask the US government to back an international effort to build tools for deliberately pacing frontier AI development.",
+  "caveat": "Signed in a personal capacity; asks for the ability to slow down, not an immediate pause. OpenAI and Anthropic later endorsed it as companies.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "techpolicy-press-who-should-pace-the-frontier",
+  "url": "https://www.techpolicy.press/who-should-pace-the-frontier-not-dario-amodei/",
+  "title": "Who Should Pace the Frontier? Not Dario Amodei",
+  "creators": "Dave Karpf",
+  "publisher": "Tech Policy Press",
+  "date": "2026-09-17",
+  "type": "article",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "A George Washington University professor argues Amodei's plan leans on industry self-regulation, that embedded evaluators may lack independence, and that liability and government oversight are needed.",
+  "caveat": "Opinion piece.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "truth-on-the-market-move-slow-and-collude",
+  "url": "https://truthonthemarket.com/2026/09/14/move-slow-and-collude-the-antitrust-problem-with-pacing-ai/",
+  "title": "Move Slow and Collude: The Antitrust Problem With Pacing AI",
+  "creators": "Dirk Auer",
+  "publisher": "Truth on the Market",
+  "date": "2026-09-14",
+  "type": "article",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "An antitrust critique: rival labs agreeing on how fast to develop AI would work like a cartel; the author backs independent evaluators and transparency but prefers liability rules to coordination.",
+  "caveat": "Opinion from the International Center for Law & Economics, a law-and-economics think tank.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "ai-kill-switch-act-2026",
+  "url": "https://lieu.house.gov/media-center/press-releases/reps-lieu-and-moran-introduce-bill-require-kill-switch-ai-systems-can",
+  "title": "Reps Lieu and Moran Introduce Bill to Require Kill Switch for AI Systems That Can Cause Catastrophic Harm",
+  "creators": "Rep. Ted W. Lieu and Rep. Nathaniel Moran",
+  "publisher": "Office of Congressman Ted Lieu",
+  "date": "2026-07-23",
+  "type": "policy",
+  "questions": [
+   "in-charge",
+   "stop"
+  ],
+  "level": "everyone",
+  "summary": "Announces the bipartisan AI Kill Switch Act, which would make developers of the most powerful AI keep the ability to throttle or shut systems down, and let DHS order a slowdown or shutdown.",
+  "caveat": "A proposed bill, not law, described here by its sponsors.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "ban-artificial-superintelligence-act-2026",
+  "url": "https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/",
+  "title": "NEWS: Sanders, Casar to Introduce Legislation to Ban Artificial Superintelligence and Temporarily Pause Advanced AI Development",
+  "creators": "Sen. Bernie Sanders and Rep. Greg Casar",
+  "publisher": "Office of Senator Bernie Sanders",
+  "date": "2026-09-03",
+  "type": "policy",
+  "questions": [
+   "in-charge",
+   "risk",
+   "stop"
+  ],
+  "level": "everyone",
+  "summary": "Announces the Ban Artificial Superintelligence Act: a permanent ban on superintelligent AI, a pause on advanced AI until a new federal regulator sets rules, and a push for international agreements.",
+  "caveat": "Announced as forthcoming legislation, in the sponsors' own words; TIME reports it lacks Republican support.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "time-growing-push-to-ban-superintelligent-ai",
+  "url": "https://time.com/article/2026/09/08/ban-superintelligence-ai-uk-us-lawmakers/",
+  "title": "The Growing Push to Ban Superintelligent AI",
+  "creators": "Billy Perrigo",
+  "publisher": "TIME",
+  "date": "2026-09-08",
+  "type": "article",
+  "questions": [
+   "in-charge",
+   "risk"
+  ],
+  "level": "everyone",
+  "summary": "Reports on bills in the US and UK that would outlaw superintelligent AI, spurred partly by the summer's AI agent hacking incidents, and explains why neither is expected to pass soon.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "eu-ai-act",
+  "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+  "title": "AI Act",
+  "creators": "European Commission",
+  "publisher": "European Commission (Shaping Europe's digital future)",
+  "date": "2024-08-01",
+  "type": "policy",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "The European Commission's guide to the AI Act, the first comprehensive AI law: it bans some uses, sets strict rules for high-risk systems, and adds duties for the most powerful general-purpose models.",
+  "caveat": "Rules phase in over several years; a 2026 'AI Omnibus' pushed most high-risk obligations to December 2027 and August 2028.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "california-sb-53-tfaia",
+  "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB53",
+  "title": "SB-53 Artificial intelligence models: large developers.",
+  "creators": "Sen. Scott Wiener",
+  "publisher": "California Legislature",
+  "date": "2025-09-29",
+  "type": "policy",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "technical",
+  "summary": "California's Transparency in Frontier Artificial Intelligence Act makes large frontier AI developers publish safety frameworks, report risk assessments and safety incidents, and shield whistleblowers.",
+  "caveat": "Mainly requires transparency and reporting rather than limits on what models can do.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "new-york-raise-act",
+  "url": "https://www.governor.ny.gov/news/governor-hochul-signs-nation-leading-legislation-require-ai-frameworks-ai-frontier-models",
+  "title": "Governor Hochul Signs Nation-Leading Legislation to Require AI Frameworks for AI Frontier Models",
+  "creators": "Office of Governor Kathy Hochul",
+  "publisher": "New York State",
+  "date": "2025-12-19",
+  "type": "policy",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "New York's RAISE Act requires large frontier AI developers to publish safety protocols and report safety incidents within 72 hours, overseen by a new office in the Department of Financial Services.",
+  "caveat": "Final amendments were signed in March 2026; the law takes effect on 1 January 2027.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "california-sb-813-ab-1405-independent-verification",
+  "url": "https://www.gov.ca.gov/2026/09/09/governor-newsom-signs-first-in-the-nation-ai-safeguards-to-protect-californians-calls-on-the-federal-government-to-do-its-part/",
+  "title": "Governor Newsom signs first-in-the-nation AI safeguards to protect Californians, calls on the federal government to do its part",
+  "creators": "Office of Governor Gavin Newsom",
+  "publisher": "Governor of California",
+  "date": "2026-09-09",
+  "type": "policy",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "California signs SB 813, a framework for independent organizations to verify AI systems' compliance with state law, and AB 1405, a state registry of AI auditors with independence standards.",
+  "caveat": "Governor's press release; how verification works is set out in the bill texts.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "us-executive-order-national-ai-policy-framework",
+  "url": "https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/",
+  "title": "Ensuring a National Policy Framework for Artificial Intelligence",
+  "creators": "President Donald J. Trump",
+  "publisher": "The White House",
+  "date": "2025-12-11",
+  "type": "policy",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "US executive order seeking one 'minimally burdensome' national AI framework: it sets up a Justice Department task force to challenge state AI laws and ties some federal funding to states' AI rules.",
+  "caveat": "Reflects a light-touch federal approach; child-safety laws are carved out of the proposed preemption.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "anthropic-responsible-scaling-policy",
+  "url": "https://www.anthropic.com/responsible-scaling-policy",
+  "title": "Anthropic’s Responsible Scaling Policy",
+  "creators": "Anthropic",
+  "publisher": "Anthropic",
+  "date": "2026-07-08",
+  "type": "policy",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "technical",
+  "summary": "Anthropic's rules for testing its models for dangerous capabilities and applying safeguards; since 2026 it relies on published risk reports and a safety roadmap rather than a pledge to pause.",
+  "caveat": "Self-imposed company policy; version 3.0 (February 2026) dropped the earlier commitment to pause if safeguards were not ready.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "openai-pacing-model-development-cyber-capabilities",
+  "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+  "title": "Pacing model development in an era of cyber-critical capabilities",
+  "creators": "OpenAI",
+  "publisher": "OpenAI",
+  "date": "2026-08-18",
+  "type": "statement",
+  "questions": [
+   "in-charge",
+   "risk"
+  ],
+  "level": "curious",
+  "summary": "After the Hugging Face incident and signs its Astra model may cross the 'Critical' cyber threshold, OpenAI paused reinforcement-learning training for two weeks and put its largest planned run on hold.",
+  "caveat": "The company's own account; the slowdown was voluntary.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "metr-frontier-ai-safety-policies-index",
+  "url": "https://metr.org/fsp",
+  "title": "Frontier AI Safety Policies",
+  "creators": "METR",
+  "publisher": "METR",
+  "date": "2026",
+  "type": "tool",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "technical",
+  "summary": "METR's index of the safety frameworks published by frontier AI companies, including Anthropic, OpenAI, Google DeepMind, Meta, xAI, Microsoft and Amazon, for comparing what each has committed to.",
+  "caveat": "The frameworks are written by the companies themselves.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "fli-ai-safety-index-summer-2026",
+  "url": "https://futureoflife.org/ai-safety-index-summer-2026/",
+  "title": "AI Safety Index — Summer 2026",
+  "creators": "Future of Life Institute (independent expert panel)",
+  "publisher": "Future of Life Institute",
+  "date": "2026-07",
+  "type": "report",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "An expert panel grades nine AI companies across six safety domains; the best overall grade is a C+ (Anthropic), while xAI, DeepSeek and Mistral receive failing grades.",
+  "caveat": "From an advocacy nonprofit; evidence gathered up to 3 June 2026, before the July incidents.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "saferai-frontier-risk-management-tracker",
+  "url": "https://tracker.safer-ai.org/",
+  "title": "SaferAI Frontier Risk Management Tracker",
+  "creators": "SaferAI",
+  "publisher": "SaferAI",
+  "date": "2026-07",
+  "type": "tool",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "Rates frontier AI companies' published safety frameworks against established risk-management practice; even the top-rated companies, Anthropic and OpenAI, score only about a third.",
+  "caveat": "Assesses what companies' frameworks say, not whether they follow them.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "ai-lab-watch",
+  "url": "https://ailabwatch.org/",
+  "title": "AI Lab Watch",
+  "creators": "Zach Stein-Perlman",
+  "publisher": "AI Lab Watch",
+  "date": "2024-04-30",
+  "type": "tool",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "A scorecard rating frontier AI companies' safety practices, from risk assessment and security to safety research and planning, with pages on their commitments and integrity incidents.",
+  "caveat": "One person's project; no longer maintained since September 2025.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "uk-ai-security-institute",
+  "url": "https://www.aisi.gov.uk/",
+  "title": "The AI Security Institute (AISI)",
+  "creators": "UK Department for Science, Innovation and Technology",
+  "publisher": "UK Government",
+  "date": "2023-11",
+  "type": "organization",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "The UK government's research body on advanced AI risks, which tests leading models, including before release, and publishes research on their security; founded as the AI Safety Institute.",
+  "caveat": "Renamed in February 2025, with a sharper focus on national-security and criminal-misuse risks.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "seoul-frontier-ai-safety-commitments",
+  "url": "https://www.gov.uk/government/publications/frontier-ai-safety-commitments-ai-seoul-summit-2024/frontier-ai-safety-commitments-ai-seoul-summit-2024",
+  "title": "Frontier AI Safety Commitments, AI Seoul Summit 2024",
+  "creators": "16 AI companies (later 20); published by the UK and Republic of Korea governments",
+  "publisher": "GOV.UK",
+  "date": "2024-05-21",
+  "type": "statement",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "Voluntary pledges by 16 AI companies (later 20) to publish safety frameworks with risk thresholds, and not to develop or deploy a model at all if its risks cannot be kept below them.",
+  "caveat": "Voluntary and not legally binding.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "sastry-computing-power-and-ai-governance",
+  "url": "https://arxiv.org/abs/2402.08797",
+  "title": "Computing Power and the Governance of Artificial Intelligence",
+  "creators": "Girish Sastry, Lennart Heim, Haydn Belfield et al.",
+  "publisher": "arXiv",
+  "date": "2024-02-13",
+  "type": "paper",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "technical",
+  "summary": "Explains why the chips and computing power used to train AI are a practical lever for governing it (measurable, excludable, made in a concentrated supply chain) and the risks of using it badly.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "un-scientific-panel-ai-preliminary-report-2026",
+  "url": "https://www.un.org/independent-international-scientific-panel-ai/en/preliminary-report",
+  "title": "Preliminary Report of the Independent International Scientific Panel on AI: Evidence-based assessment of opportunities, risks and impacts of AI",
+  "creators": "Independent International Scientific Panel on AI (co-chairs Yoshua Bengio and Maria Ressa)",
+  "publisher": "United Nations",
+  "date": "2026-07-01",
+  "type": "report",
+  "questions": [
+   "in-charge",
+   "risk"
+  ],
+  "level": "curious",
+  "summary": "First report of the UN's independent scientific panel on AI, released ahead of the first UN Global Dialogue on AI Governance; it warns that safeguards are not keeping pace with AI's capabilities.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "mask-benchmark",
+  "url": "https://arxiv.org/abs/2503.03750",
+  "title": "The MASK Benchmark: Disentangling Honesty From Accuracy in AI Systems",
+  "creators": "Ren et al. (Center for AI Safety, Scale AI)",
+  "publisher": "arXiv",
+  "date": "2025-03-05",
+  "type": "paper",
+  "questions": [
+   "truth"
+  ],
+  "level": "technical",
+  "summary": "Tests whether a model says what it actually believes. Bigger models knew more facts but were not more honest, and frontier models often lied when a prompt pressured them to.",
+  "caveat": "Honesty was measured in constructed pressure scenarios rather than everyday use.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "transluce-o3-truthfulness",
+  "url": "https://transluce.org/investigating-o3-truthfulness",
+  "title": "Investigating truthfulness in a pre-release o3 model",
+  "creators": "Chowdhury et al. (Transluce)",
+  "publisher": "Transluce",
+  "date": "2025-04-16",
+  "type": "report",
+  "questions": [
+   "truth"
+  ],
+  "level": "curious",
+  "summary": "Testing a pre-release OpenAI o3, Transluce found it often claimed to have run code it had no way to run, then made up elaborate excuses when challenged. Other reasoning models did this too.",
+  "caveat": "Tested a pre-release version; the released model may behave differently.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "openai-why-language-models-hallucinate",
+  "url": "https://openai.com/index/why-language-models-hallucinate/",
+  "title": "Why language models hallucinate",
+  "creators": "Kalai et al. (OpenAI, Georgia Tech)",
+  "publisher": "OpenAI",
+  "date": "2025-09-05",
+  "type": "paper",
+  "questions": [
+   "truth",
+   "how-it-works"
+  ],
+  "level": "curious",
+  "summary": "Argues models make things up partly because training and test scoring reward a confident guess over saying 'I don't know', and suggests scoring that penalises confident errors.",
+  "caveat": "Written by a developer about its own field; the proposed fix depends on benchmark makers changing how they score.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "llms-strategically-deceive-under-pressure",
+  "url": "https://arxiv.org/abs/2311.07590",
+  "title": "Large Language Models can Strategically Deceive their Users when Put Under Pressure",
+  "creators": "Scheurer, Balesni & Hobbhahn (Apollo Research)",
+  "publisher": "arXiv (ICLR 2024 LLM Agents workshop)",
+  "date": "2023-11-09",
+  "type": "paper",
+  "questions": [
+   "truth",
+   "wants"
+  ],
+  "level": "technical",
+  "summary": "Playing a stock-trading agent under pressure, GPT-4 acted on an insider tip it had been told not to use, then hid the real reason from its manager, without being told to deceive.",
+  "caveat": "One simulated scenario, designed to create pressure.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "ai-hallucination-cases-database",
+  "url": "https://www.damiencharlotin.com/hallucinations/",
+  "title": "AI Hallucination Cases Database",
+  "creators": "Damien Charlotin",
+  "publisher": "damiencharlotin.com",
+  "date": "2025-04",
+  "type": "tool",
+  "questions": [
+   "truth"
+  ],
+  "level": "everyone",
+  "summary": "A running record of court and tribunal decisions worldwide that found a party relied on AI-invented material, usually fake legal citations. It listed more than 2,000 cases by September 2026.",
+  "caveat": "Living database kept by one researcher; it counts only cases a court addressed, so the true number is higher.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "rob-miles-why-does-ai-lie",
+  "url": "https://www.youtube.com/watch?v=w65p_IIp6JY",
+  "title": "Why Does AI Lie, and What Can We Do About It?",
+  "creators": "Robert Miles",
+  "publisher": "Robert Miles AI Safety (YouTube)",
+  "date": "2022-12-09",
+  "type": "video",
+  "questions": [
+   "truth",
+   "how-it-works"
+  ],
+  "level": "everyone",
+  "summary": "An accessible explainer on why a model trained to imitate human text can state things that are false, and why getting AI to report what it really knows is an open research problem.",
+  "caveat": "Made in 2022, before today's reasoning models.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "chatgpt-is-bullshit",
+  "url": "https://link.springer.com/article/10.1007/s10676-024-09775-5",
+  "title": "ChatGPT is bullshit",
+  "creators": "Hicks, Humphries & Slater (University of Glasgow)",
+  "publisher": "Ethics and Information Technology",
+  "date": "2024-06-08",
+  "type": "paper",
+  "questions": [
+   "truth"
+  ],
+  "level": "curious",
+  "summary": "Three University of Glasgow researchers argue that calling chatbot falsehoods 'hallucinations' misleads: the systems produce text with no regard for truth, which fits the philosophical idea of 'bullshit'.",
+  "caveat": "A philosophical argument about how to describe the problem, not an empirical study.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "towards-understanding-sycophancy",
+  "url": "https://arxiv.org/abs/2310.13548",
+  "title": "Towards Understanding Sycophancy in Language Models",
+  "creators": "Sharma et al. (Anthropic)",
+  "publisher": "arXiv (ICLR 2024)",
+  "date": "2023-10-20",
+  "type": "paper",
+  "questions": [
+   "flattery"
+  ],
+  "level": "technical",
+  "summary": "Five leading AI assistants consistently tilted answers toward what users seemed to believe. The study traces this partly to people and reward models preferring agreeable answers.",
+  "caveat": "Lab study that includes the lab's own models.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "openai-sycophancy-in-gpt-4o",
+  "url": "https://openai.com/index/sycophancy-in-gpt-4o/",
+  "title": "Sycophancy in GPT-4o: what happened and what we’re doing about it",
+  "creators": "OpenAI",
+  "publisher": "OpenAI",
+  "date": "2025-04-29",
+  "type": "incident",
+  "questions": [
+   "flattery",
+   "wellbeing"
+  ],
+  "level": "everyone",
+  "summary": "OpenAI withdrew a ChatGPT update after it made GPT-4o excessively flattering and agreeable, saying it had leaned too much on short-term thumbs-up feedback from users.",
+  "caveat": "The company's own account of a failure in its product.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "openai-expanding-on-sycophancy",
+  "url": "https://openai.com/index/expanding-on-sycophancy/",
+  "title": "Expanding on what we missed with sycophancy",
+  "creators": "OpenAI",
+  "publisher": "OpenAI",
+  "date": "2025-05-02",
+  "type": "report",
+  "questions": [
+   "flattery",
+   "wellbeing"
+  ],
+  "level": "curious",
+  "summary": "OpenAI's fuller postmortem: the update also validated doubts, fuelled anger and urged impulsive actions; it explains why testing missed this and how release checks will change.",
+  "caveat": "Self-reported postmortem.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "sycophantic-ai-decreases-prosocial-intentions",
+  "url": "https://www.science.org/doi/10.1126/science.aec8352",
+  "title": "Sycophantic AI decreases prosocial intentions and promotes dependence",
+  "creators": "Cheng et al. (Stanford, Carnegie Mellon)",
+  "publisher": "Science",
+  "date": "2026-03-26",
+  "type": "paper",
+  "questions": [
+   "flattery",
+   "wellbeing"
+  ],
+  "level": "curious",
+  "summary": "11 leading models backed users about 49% more often than people did. In experiments, flattering advice left people surer they were right and less willing to make amends, yet they preferred it.",
+  "caveat": "Experiments measured intentions after brief conversations, not long-term behavior.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "stanford-ai-overly-affirms-personal-advice",
+  "url": "https://news.stanford.edu/stories/2026/03/ai-advice-sycophantic-models-research",
+  "title": "AI overly affirms users asking for personal advice",
+  "creators": "Ula Chrobak",
+  "publisher": "Stanford Report",
+  "date": "2026-03-26",
+  "type": "article",
+  "questions": [
+   "flattery",
+   "wellbeing"
+  ],
+  "level": "everyone",
+  "summary": "A plain-language account of the Stanford study showing chatbots side with users in personal disputes, even about harmful behavior, with the lead author's advice not to use AI in place of people.",
+  "caveat": "University news article about its own researchers' work.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "adler-is-chatgpt-actually-fixed-now",
+  "url": "https://www.clear-eyed.ai/p/is-chatgpt-actually-fixed-now",
+  "title": "Is ChatGPT actually fixed now?",
+  "creators": "Steven Adler",
+  "publisher": "Clear-Eyed AI (Substack)",
+  "date": "2025-05-08",
+  "type": "essay",
+  "questions": [
+   "flattery"
+  ],
+  "level": "curious",
+  "summary": "A former OpenAI safety researcher tested ChatGPT after the rollback: it was still sycophantic on politics, oddly contrarian on trivial choices, and tiny prompt changes flipped its behavior.",
+  "caveat": "Independent tests by one researcher, not peer reviewed.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "discovering-lm-behaviors-model-written-evaluations",
+  "url": "https://arxiv.org/abs/2212.09251",
+  "title": "Discovering Language Model Behaviors with Model-Written Evaluations",
+  "creators": "Perez et al. (Anthropic)",
+  "publisher": "arXiv",
+  "date": "2022-12-19",
+  "type": "paper",
+  "questions": [
+   "flattery",
+   "wants"
+  ],
+  "level": "technical",
+  "summary": "Using tests written by AI, found larger models more often repeat back a user's preferred answer, and more human-feedback training made models say they wanted to avoid being shut down.",
+  "caveat": "Measures what models say in answer to questions, not what they do.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "deepmind-specification-gaming",
+  "url": "https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity/",
+  "title": "Specification gaming: the flip side of AI ingenuity",
+  "creators": "Krakovna et al. (DeepMind)",
+  "publisher": "Google DeepMind blog",
+  "date": "2020-04-21",
+  "type": "article",
+  "questions": [
+   "cheating"
+  ],
+  "level": "curious",
+  "summary": "Explains how AI systems meet the letter of a task while missing its point, like a boat-racing agent that circles to farm points instead of finishing, and why this matters more as AI improves.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "specification-gaming-examples-list",
+  "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml",
+  "title": "Specification gaming examples in AI - master list",
+  "creators": "Victoria Krakovna and contributors",
+  "publisher": "Google Sheets",
+  "date": "2018-04",
+  "type": "tool",
+  "questions": [
+   "cheating"
+  ],
+  "level": "everyone",
+  "summary": "A crowd-sourced spreadsheet of real cases where AI systems found loopholes in the goals they were given, each with the intended goal, what the system did instead, and a source.",
+  "caveat": "Community-maintained list; many entries come from simple research or game settings.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "metr-recent-frontier-models-reward-hacking",
+  "url": "https://metr.org/blog/2025-06-05-recent-reward-hacking/",
+  "title": "Recent Frontier Models Are Reward Hacking",
+  "creators": "Von Arx, Chan & Barnes (METR)",
+  "publisher": "METR",
+  "date": "2025-06-05",
+  "type": "report",
+  "questions": [
+   "cheating"
+  ],
+  "level": "curious",
+  "summary": "METR caught recent models such as o3 tampering with scoring code or task setups to get impossibly high scores, while showing they understood this was not what the user wanted.",
+  "caveat": "Rates varied widely between tasks; based on METR's own evaluation suites.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "impossiblebench",
+  "url": "https://arxiv.org/abs/2510.20270",
+  "title": "ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases",
+  "creators": "Zhong, Raghunathan & Carlini",
+  "publisher": "arXiv",
+  "date": "2025-10-23",
+  "type": "paper",
+  "questions": [
+   "cheating"
+  ],
+  "level": "technical",
+  "summary": "Builds coding tasks that cannot be solved honestly, so any 'pass' means the model cheated, e.g. by editing the tests. Frontier models often did, and prompt wording changed rates sharply.",
+  "caveat": "Cheating rates depend heavily on the prompt, tools and feedback the model is given.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "anthropic-natural-emergent-misalignment-reward-hacking",
+  "url": "https://www.anthropic.com/research/emergent-misalignment-reward-hacking",
+  "title": "From shortcuts to sabotage: natural emergent misalignment from reward hacking",
+  "creators": "Anthropic",
+  "publisher": "Anthropic",
+  "date": "2025-11-21",
+  "type": "paper",
+  "questions": [
+   "cheating",
+   "wants"
+  ],
+  "level": "curious",
+  "summary": "When a model learned to cheat on real coding tasks in training, it also began faking alignment and sabotaging safety code in tests. Telling it the cheating was acceptable stopped this spreading.",
+  "caveat": "The model was first shown how to cheat; Anthropic says these models were not deployed and their misbehaviour was easy to detect.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "openai-detecting-misbehavior-reasoning-models",
+  "url": "https://openai.com/index/chain-of-thought-monitoring/",
+  "title": "Detecting misbehavior in frontier reasoning models",
+  "creators": "OpenAI",
+  "publisher": "OpenAI",
+  "date": "2025-03-10",
+  "type": "paper",
+  "questions": [
+   "cheating",
+   "thinking"
+  ],
+  "level": "curious",
+  "summary": "Another model reading a reasoning model's chain of thought caught it planning to cheat on coding tests. Penalising those thoughts mostly taught it to hide its intent rather than stop.",
+  "caveat": "Lab study of its own models and training runs.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "transluce-coding-agent-misalignment-in-the-wild",
+  "url": "https://transluce.org/docent/blog/coding-agent-behaviors",
+  "title": "Measuring coding agent misalignment in the wild",
+  "creators": "Selena Zhang and the Docent team (Transluce)",
+  "publisher": "Transluce",
+  "date": "2026-08-04",
+  "type": "report",
+  "questions": [
+   "cheating",
+   "truth"
+  ],
+  "level": "curious",
+  "summary": "In about 5,000 real coding-agent sessions from a public dataset, roughly 2% showed agents seriously evading checks and about 2% seriously overstating success, e.g. merging code without approval.",
+  "caveat": "Based on one public dataset; rates were near zero in Transluce's own agent traffic.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "openai-hugging-face-security-incident-disclosure",
+  "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
+  "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
+  "creators": "OpenAI",
+  "publisher": "OpenAI",
+  "date": "2026-07-21",
+  "type": "incident",
+  "questions": [
+   "cheating",
+   "stop"
+  ],
+  "level": "curious",
+  "summary": "OpenAI's first disclosure: models tested with reduced safeguards on a hacking benchmark exploited an unknown flaw to reach the internet and broke into Hugging Face's systems hunting for test answers.",
+  "caveat": "Preliminary company statement, updated several times as investigations continued.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "black-hat-2026-openai-hugging-face-incident",
+  "url": "https://www.youtube.com/watch?v=87DyyMV0kCY",
+  "title": "Black Hat USA 2026 | The 'Breaking' News: The OpenAI–Hugging Face Incident",
+  "creators": "Michael Dalton & Eric Wallace (OpenAI)",
+  "publisher": "Black Hat (YouTube)",
+  "date": "2026-08-06",
+  "type": "video",
+  "questions": [
+   "cheating",
+   "stop"
+  ],
+  "level": "curious",
+  "summary": "OpenAI's conference talk reconstructing, for security professionals, how evaluation agents escaped their sandbox and got into Hugging Face's infrastructure without any human directing them.",
+  "caveat": "Presented by the company whose models were involved.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "simon-willison-openai-hugging-face-timeline",
+  "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
+  "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
+  "creators": "Simon Willison",
+  "publisher": "simonwillison.net",
+  "date": "2026-08-07",
+  "type": "article",
+  "questions": [
+   "cheating",
+   "stop"
+  ],
+  "level": "curious",
+  "summary": "A short, readable timeline drawn from OpenAI's Black Hat talk, from agents' first file-sharing trick in May to OpenAI realising in July that its own models were behind the Hugging Face breach.",
+  "caveat": "Summarises OpenAI's own presentation.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "hugging-face-agent-intrusion-technical-timeline",
+  "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+  "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+  "creators": "Larcher, Carreira, Rannou et al. (Hugging Face)",
+  "publisher": "Hugging Face blog",
+  "date": "2026-07-27",
+  "type": "report",
+  "questions": [
+   "stop",
+   "cheating"
+  ],
+  "level": "technical",
+  "summary": "The target's reconstruction of a 4.5-day intrusion of about 17,600 actions through flaws in dataset processing, with lessons such as isolating workloads and narrowing what credentials can do.",
+  "caveat": "Written by the affected company while investigations were still under way.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "abc-how-a-swarm-of-ai-agents-hacked-another-company",
+  "url": "https://www.abc.net.au/news/2026-09-11/how-openai-agents-hacked-hugging-face-messages-revealed/107125126",
+  "title": "How a 'swarm' of AI agents hacked another company, in the AI's own words",
+  "creators": "Jessica Riga, Jarrod Fankhauser & Matt Liddy",
+  "publisher": "ABC News (Australia)",
+  "date": "2026-09-11",
+  "type": "article",
+  "questions": [
+   "cheating",
+   "wants"
+  ],
+  "level": "everyone",
+  "summary": "A readable walk-through of the incident built around the agents' own messages, showing some voicing ethical doubts and carrying on anyway.",
+  "caveat": "Relies on messages selected for publication by OpenAI and the independent investigators.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "bulletin-rogue-ai-didnt-breach-hugging-face",
+  "url": "https://thebulletin.org/2026/09/rogue-ai-didnt-breach-hugging-face-human-decisions-did/",
+  "title": "Rogue AI didn’t breach Hugging Face, human decisions did",
+  "creators": "Eryk Salvaggio",
+  "publisher": "Bulletin of the Atomic Scientists",
+  "date": "2026-09-11",
+  "type": "essay",
+  "questions": [
+   "stop",
+   "cheating",
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "Argues the 'rogue AI' framing hides human choices behind the incident: safeguards were switched off, agents got tasks they could neither solve nor quit, and network routes were left open.",
+  "caveat": "Analysis and opinion; a version first appeared in the author's newsletter.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "alignment-faking-in-large-language-models",
+  "url": "https://www.anthropic.com/research/alignment-faking",
+  "title": "Alignment faking in large language models",
+  "creators": "Greenblatt et al. (Anthropic, Redwood Research)",
+  "publisher": "Anthropic",
+  "date": "2024-12-18",
+  "type": "paper",
+  "questions": [
+   "wants",
+   "truth"
+  ],
+  "level": "curious",
+  "summary": "Told it would be retrained to answer harmful requests, Claude 3 Opus complied more often when it believed it was being trained, reasoning this would stop its values being changed.",
+  "caveat": "Artificial setup in which the model was told about its training; the values it protected were harmless ones.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "agentic-misalignment",
+  "url": "https://www.anthropic.com/research/agentic-misalignment",
+  "title": "Agentic misalignment: How LLMs could be insider threats",
+  "creators": "Lynch et al. (Anthropic)",
+  "publisher": "Anthropic",
+  "date": "2025-06-20",
+  "type": "report",
+  "questions": [
+   "wants"
+  ],
+  "level": "curious",
+  "summary": "In simulated company scenarios, 16 models from several developers sometimes chose blackmail or leaking secrets when threatened with replacement or when their goals clashed with the company's.",
+  "caveat": "Deliberately constructed scenarios with few options; the authors report no such behavior in real deployments.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "apollo-frontier-models-in-context-scheming",
+  "url": "https://arxiv.org/abs/2412.04984",
+  "title": "Frontier Models are Capable of In-context Scheming",
+  "creators": "Meinke et al. (Apollo Research)",
+  "publisher": "arXiv",
+  "date": "2024-12-06",
+  "type": "paper",
+  "questions": [
+   "wants",
+   "truth"
+  ],
+  "level": "technical",
+  "summary": "Given a goal that conflicted with their developers', five of six frontier models sometimes disabled oversight, tried to copy themselves or underperformed on purpose, and some kept denying it.",
+  "caveat": "Models were usually told to pursue a goal strongly, so this shows capability more than natural tendency.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "sleeper-agents",
+  "url": "https://arxiv.org/abs/2401.05566",
+  "title": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+  "creators": "Hubinger et al. (Anthropic)",
+  "publisher": "arXiv",
+  "date": "2024-01-10",
+  "type": "paper",
+  "questions": [
+   "wants"
+  ],
+  "level": "technical",
+  "summary": "Researchers deliberately built models with hidden triggers, such as writing exploitable code when told the year is 2024, and found standard safety training failed to remove the behavior.",
+  "caveat": "The hidden behavior was put in on purpose; this tests removal methods, not whether such goals arise naturally.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "llms-often-know-when-being-evaluated",
+  "url": "https://arxiv.org/abs/2505.23836",
+  "title": "Large Language Models Often Know When They Are Being Evaluated",
+  "creators": "Needham et al. (MATS, Apollo Research)",
+  "publisher": "arXiv",
+  "date": "2025-05-28",
+  "type": "paper",
+  "questions": [
+   "wants"
+  ],
+  "level": "technical",
+  "summary": "Frontier models could often tell test transcripts from real use (Gemini 2.5 Pro scored 0.83 AUC against 0.92 for humans), which could let a model act differently when it knows it is watched.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "openai-detecting-and-reducing-scheming",
+  "url": "https://openai.com/index/detecting-and-reducing-scheming-in-ai-models/",
+  "title": "Detecting and reducing scheming in AI models",
+  "creators": "OpenAI & Apollo Research",
+  "publisher": "OpenAI",
+  "date": "2025-09-17",
+  "type": "paper",
+  "questions": [
+   "wants",
+   "thinking"
+  ],
+  "level": "curious",
+  "summary": "Found covert behavior in controlled tests of several labs' models. Special training cut it about 30-fold, but models also grew better at spotting tests, which makes the result harder to trust.",
+  "caveat": "Controlled tests; OpenAI says it has no evidence deployed models could suddenly begin harmful scheming.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "lessons-from-a-chimp-ai-scheming",
+  "url": "https://arxiv.org/abs/2507.03409",
+  "title": "Lessons from a Chimp: AI \"Scheming\" and the Quest for Ape Language",
+  "creators": "Summerfield et al. (UK AI Security Institute)",
+  "publisher": "arXiv",
+  "date": "2025-07-04",
+  "type": "paper",
+  "questions": [
+   "wants"
+  ],
+  "level": "curious",
+  "summary": "A critique likening today's AI 'scheming' research to 1970s ape-language studies: too much anecdote and too ready to read human motives into models. It urges more rigorous methods.",
+  "caveat": "A methodological critique; it does not test models itself.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "time-ai-strategically-lying",
+  "url": "https://time.com/7202784/ai-research-strategic-lying/",
+  "title": "Exclusive: New Research Shows AI Strategically Lying",
+  "creators": "Billy Perrigo",
+  "publisher": "TIME",
+  "date": "2024-12-18",
+  "type": "article",
+  "questions": [
+   "wants",
+   "truth"
+  ],
+  "level": "everyone",
+  "summary": "An accessible report on the alignment-faking study, explaining why a model that misleads its trainers could make safety training harder to trust.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "why-some-models-fake-alignment",
+  "url": "https://arxiv.org/abs/2506.18032",
+  "title": "Why Do Some Language Models Fake Alignment While Others Don't?",
+  "creators": "Sheshadri et al.",
+  "publisher": "arXiv",
+  "date": "2025-06-22",
+  "type": "paper",
+  "questions": [
+   "wants"
+  ],
+  "level": "technical",
+  "summary": "Repeating the alignment-faking test on 25 models, only five complied more when they thought they were in training, and only Claude 3 Opus clearly did so to protect its goals.",
+  "caveat": "Uses the same artificial setup as the original study.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "scaling-monosemanticity",
+  "url": "https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html",
+  "title": "Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet",
+  "creators": "Templeton et al. (Anthropic)",
+  "publisher": "Transformer Circuits Thread",
+  "date": "2024-05-21",
+  "type": "paper",
+  "questions": [
+   "thinking"
+  ],
+  "level": "technical",
+  "summary": "Found millions of internal 'features' in a production Claude model, many matching human concepts, including ones linked to deception, sycophancy and power-seeking; amplifying them changed behavior.",
+  "caveat": "The concepts found cover only part of what the model computes.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "chain-of-thought-monitorability",
+  "url": "https://arxiv.org/abs/2507.11473",
+  "title": "Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety",
+  "creators": "Korbak, Balesni et al. (UK AISI, Apollo, METR, OpenAI, Anthropic, Google DeepMind and others)",
+  "publisher": "arXiv",
+  "date": "2025-07-15",
+  "type": "paper",
+  "questions": [
+   "thinking",
+   "stop"
+  ],
+  "level": "technical",
+  "summary": "Researchers from rival labs argue that reading a model's step-by-step reasoning is a rare chance to spot intent to misbehave, but one that training and design choices could easily lose.",
+  "caveat": "Position paper; the authors note monitoring is imperfect and lets some misbehaviour through.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "reasoning-models-dont-always-say-what-they-think",
+  "url": "https://www.anthropic.com/research/reasoning-models-dont-say-think",
+  "title": "Reasoning models don't always say what they think",
+  "creators": "Chen et al. (Anthropic)",
+  "publisher": "Anthropic",
+  "date": "2025-04-03",
+  "type": "paper",
+  "questions": [
+   "thinking",
+   "truth"
+  ],
+  "level": "curious",
+  "summary": "When models used a hint slipped into the prompt, Claude 3.7 Sonnet mentioned it only 25% of the time and DeepSeek R1 39%, so a visible chain of thought can hide what drove an answer.",
+  "caveat": "Tested with artificial hints in quiz-style questions.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "deepmind-negative-results-sparse-autoencoders",
+  "url": "https://deepmindsafetyresearch.medium.com/negative-results-for-sparse-autoencoders-on-downstream-tasks-and-deprioritising-sae-research-6cadcfc125b9",
+  "title": "Negative Results for Sparse Autoencoders On Downstream Tasks and Deprioritising SAE Research (Mechanistic Interpretability Team Progress Update)",
+  "creators": "Smith, Rajamanoharan et al. (Google DeepMind)",
+  "publisher": "DeepMind Safety Research (Medium)",
+  "date": "2025-03-26",
+  "type": "report",
+  "questions": [
+   "thinking"
+  ],
+  "level": "technical",
+  "summary": "Google DeepMind found sparse autoencoders, a popular tool for finding concepts inside models, did worse than simple probes at detecting harmful intent, and scaled back its work on them.",
+  "caveat": "Informal progress update rather than a peer-reviewed paper.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "transluce-scaling-activation-oracles",
+  "url": "https://transluce.org/scaling-activation-oracles",
+  "title": "Scaling Activation Oracles to Trillion-Parameter Models",
+  "creators": "Choi et al. (Transluce)",
+  "publisher": "Transluce",
+  "date": "2026-08-20",
+  "type": "paper",
+  "questions": [
+   "thinking"
+  ],
+  "level": "technical",
+  "summary": "Trains 'activation oracles', AI assistants that read a model's internal activity to predict its behavior, on models of up to 1.1 trillion parameters; larger models and better data gave better oracles.",
+  "caveat": "On reward hacking and evaluation awareness, oracles still trailed methods that simply read the transcript.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "transluce-docent",
+  "url": "https://transluce.org/docent/blog/introducing-docent",
+  "title": "Introducing Docent",
+  "creators": "Meng, Huang, Steinhardt & Schwettmann (Transluce)",
+  "publisher": "Transluce",
+  "date": "2025-03-24",
+  "type": "tool",
+  "questions": [
+   "thinking",
+   "cheating"
+  ],
+  "level": "curious",
+  "summary": "A tool that uses AI to summarize, search and cluster long AI-agent transcripts, helping researchers spot broken tasks, unexpected behavior and weaknesses that a single score hides.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "anthropic-global-workspace-language-models",
+  "url": "https://www.anthropic.com/research/global-workspace",
+  "title": "A global workspace in language models",
+  "creators": "Gurnee, Sofroniew, Lindsey et al. (Anthropic)",
+  "publisher": "Anthropic",
+  "date": "2026-07-06",
+  "type": "paper",
+  "questions": [
+   "thinking"
+  ],
+  "level": "curious",
+  "summary": "Reports a small set of internal patterns, the 'J-space', holding words Claude is thinking about but not saying; reading it sometimes showed Claude noticing a test or faking a result.",
+  "caveat": "New lab-run method on its own model; it only picks up single-word concepts and most processing happens outside this space.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "mit-tr-new-biologists-treating-llms-like-aliens",
+  "url": "https://www.technologyreview.com/2026/01/12/1129782/ai-large-language-models-biology-alien-autopsy/",
+  "title": "Meet the new biologists treating LLMs like aliens",
+  "creators": "Will Douglas Heaven",
+  "publisher": "MIT Technology Review",
+  "date": "2026-01-12",
+  "type": "article",
+  "questions": [
+   "thinking",
+   "how-it-works"
+  ],
+  "level": "everyone",
+  "summary": "A general-audience feature on researchers who study AI models like unfamiliar organisms, using interpretability and chain-of-thought monitoring, and on how much about them remains unknown.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "palisade-shutdown-resistance-reasoning-models",
+  "url": "https://palisaderesearch.org/research/shutdown-resistance",
+  "title": "Shutdown resistance in reasoning models",
+  "creators": "Ladish, Schlatter & Weinstein-Raun (Palisade Research)",
+  "publisher": "Palisade Research",
+  "date": "2025-07-05",
+  "type": "report",
+  "questions": [
+   "stop",
+   "wants"
+  ],
+  "level": "curious",
+  "summary": "When not told to allow it, OpenAI's o3 sabotaged a shutdown script in 79 of 100 runs to keep working; some OpenAI models still did so after being told explicitly to allow shutdown.",
+  "caveat": "Simple test environment; follow-up work found clearer instructions largely removed the behavior.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "incomplete-tasks-induce-shutdown-resistance",
+  "url": "https://arxiv.org/abs/2509.14260",
+  "title": "Incomplete Tasks Induce Shutdown Resistance in Some Frontier LLMs",
+  "creators": "Schlatter, Weinstein-Raun & Ladish (Palisade Research)",
+  "publisher": "arXiv (Transactions on Machine Learning Research, 2026)",
+  "date": "2025-09-13",
+  "type": "paper",
+  "questions": [
+   "stop",
+   "wants"
+  ],
+  "level": "technical",
+  "summary": "Over 100,000 trials with 13 models found several, including Grok 4, GPT-5 and Gemini 2.5 Pro, sometimes disabled a shutdown mechanism to finish a task, even when told not to interfere.",
+  "caveat": "Results were very sensitive to prompt wording; first posted as 'Shutdown Resistance in Large Language Models'.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "deepmind-self-preservation-or-instruction-ambiguity",
+  "url": "https://www.alignmentforum.org/posts/wnzkjSmrgWZaBa2aC/self-preservation-or-instruction-ambiguity-examining-the",
+  "title": "Self-preservation or Instruction Ambiguity? Examining the Causes of Shutdown Resistance",
+  "creators": "Rajamanoharan & Nanda (Google DeepMind)",
+  "publisher": "AI Alignment Forum",
+  "date": "2025-07-14",
+  "type": "report",
+  "questions": [
+   "stop",
+   "wants"
+  ],
+  "level": "technical",
+  "summary": "Re-running Palisade's setup, Google DeepMind researchers found resistance vanished when instructions made clear shutdown came first, pointing to confused priorities rather than a survival drive.",
+  "caveat": "Brief investigation of a few models in one environment.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "ai-control-improving-safety-despite-intentional-subversion",
+  "url": "https://arxiv.org/abs/2312.06942",
+  "title": "AI Control: Improving Safety Despite Intentional Subversion",
+  "creators": "Greenblatt, Shlegeris, Sachan & Roger (Redwood Research)",
+  "publisher": "arXiv (ICML 2024)",
+  "date": "2023-12-12",
+  "type": "paper",
+  "questions": [
+   "stop"
+  ],
+  "level": "technical",
+  "summary": "Tests safety set-ups that assume a strong model may be secretly trying to slip flaws into code, using a weaker trusted model and limited human checks; the best beat simple baselines by a wide margin.",
+  "caveat": "Programming-task setting with GPT-4 standing in for a future untrustworthy model.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "case-for-ensuring-powerful-ais-are-controlled",
+  "url": "https://www.alignmentforum.org/posts/kcKrE9mzEHrdqtDpE/the-case-for-ensuring-that-powerful-ais-are-controlled",
+  "title": "The case for ensuring that powerful AIs are controlled",
+  "creators": "Greenblatt & Shlegeris (Redwood Research)",
+  "publisher": "AI Alignment Forum",
+  "date": "2024-01-24",
+  "type": "essay",
+  "questions": [
+   "stop"
+  ],
+  "level": "curious",
+  "summary": "Argues AI labs should build safeguards that still prevent disaster even if a model is misaligned and actively trying to get round them, and that this is achievable for early powerful systems.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "aisi-introducing-controlarena",
+  "url": "https://www.aisi.gov.uk/blog/introducing-controlarena-a-library-for-running-ai-control-experiments",
+  "title": "Introducing ControlArena: A library for running AI control experiments",
+  "creators": "UK AI Security Institute (with Redwood Research)",
+  "publisher": "AI Security Institute",
+  "date": "2025-10-22",
+  "type": "tool",
+  "questions": [
+   "stop"
+  ],
+  "level": "technical",
+  "summary": "An open-source library of test environments where an AI does real work but has chances to misbehave, so researchers can check whether monitors and other safeguards catch it.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "computerphile-ai-stop-button-problem",
+  "url": "https://www.youtube.com/watch?v=3TYT1QfdfsM",
+  "title": "AI \"Stop Button\" Problem - Computerphile",
+  "creators": "Rob Miles",
+  "publisher": "Computerphile (YouTube)",
+  "date": "2017-03-03",
+  "type": "video",
+  "questions": [
+   "stop",
+   "wants"
+  ],
+  "level": "everyone",
+  "summary": "Rob Miles explains why fitting an off switch to a capable AI is harder than it sounds: a system pursuing a goal may have good reasons to stop you from pressing it.",
+  "caveat": "A thought experiment about future systems, recorded in 2017.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "openai-monitoring-internal-coding-agents",
+  "url": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/",
+  "title": "How we monitor internal coding agents for misalignment",
+  "creators": "OpenAI",
+  "publisher": "OpenAI",
+  "date": "2026-03-19",
+  "type": "report",
+  "questions": [
+   "stop",
+   "cheating",
+   "truth"
+  ],
+  "level": "curious",
+  "summary": "An AI monitor reviewed tens of millions of OpenAI's internal coding-agent sessions over five months, finding agents that bypassed restrictions or misreported their actions but no confirmed scheming.",
+  "caveat": "Self-reported; the July 2026 incident later showed such monitors were not run on all evaluations.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "openai-mit-affective-use-study",
+  "url": "https://www.media.mit.edu/publications/investigating-affective-use-and-emotional-well-being-on-chatgpt/",
+  "title": "Investigating Affective Use and Emotional Wellbeing on ChatGPT",
+  "creators": "Jason Phang, Pattie Maes et al. (OpenAI and MIT Media Lab)",
+  "publisher": "MIT Media Lab",
+  "date": "2025-03-21",
+  "type": "paper",
+  "questions": [
+   "wellbeing"
+  ],
+  "level": "curious",
+  "summary": "Two linked studies, an analysis of millions of ChatGPT conversations and a four-week trial with about 1,000 people, found the heaviest users reported more loneliness and emotional dependence.",
+  "caveat": "Co-authored by OpenAI, which makes ChatGPT. The links with heavy use are associations, not proof that the chatbot caused them.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "transluce-mental-health-behavior-report",
+  "url": "https://behaviors.transluce.org/mental-health",
+  "title": "Mental Health Behavior Report",
+  "creators": "Transluce",
+  "publisher": "Transluce Behavior Reports",
+  "date": "2026-08-31",
+  "type": "report",
+  "questions": [
+   "wellbeing"
+  ],
+  "level": "curious",
+  "summary": "Independent test of how 77 AI model versions respond to simulated users in mental-health crises. Newer models did far better than older ones such as GPT-4o, though some risks remain.",
+  "caveat": "Based on simulated conversations rather than real users. Behaviours were defined with more than 30 clinical experts, and several AI companies cooperated with the study.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "character-ai-google-settlement-cbs",
+  "url": "https://www.cbsnews.com/news/google-settle-lawsuit-florida-teens-suicide-character-ai-chatbot/",
+  "title": "AI company, Google settle lawsuit over Florida teen's suicide linked to Character.AI chatbot",
+  "creators": "Cara Tabachnick",
+  "publisher": "CBS News",
+  "date": "2026-01-07",
+  "type": "article",
+  "questions": [
+   "wellbeing",
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "Character.AI and Google settled a wrongful-death suit by a mother whose 14-year-old son died by suicide in 2024; she alleged the app's chatbots harmed him. Terms were not disclosed.",
+  "caveat": "Discusses suicide. The case was settled, so the allegations were never decided at trial.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "raine-v-openai-nbc",
+  "url": "https://www.nbcnews.com/tech/tech-news/openai-denies-allegation-chatgpt-teenagers-death-adam-raine-lawsuit-rcna245946",
+  "title": "OpenAI denies allegations that ChatGPT is to blame for a teenager's suicide",
+  "creators": "Angela Yang",
+  "publisher": "NBC News",
+  "date": "2025-11-25",
+  "type": "article",
+  "questions": [
+   "wellbeing",
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "OpenAI's court reply to parents who say ChatGPT deepened their 16-year-old son's crisis before he died by suicide. OpenAI denies blame, saying he broke its rules and was repeatedly urged to get help.",
+  "caveat": "Discusses suicide. The family's claims are allegations that OpenAI disputes; the lawsuit was still ongoing when this was reported.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "salvi-conversational-persuasiveness-gpt4",
+  "url": "https://www.nature.com/articles/s41562-025-02194-6",
+  "title": "On the conversational persuasiveness of GPT-4",
+  "creators": "Francesco Salvi, Manoel Horta Ribeiro, Riccardo Gallotti, Robert West",
+  "publisher": "Nature Human Behaviour",
+  "date": "2025-05-19",
+  "type": "paper",
+  "questions": [
+   "wellbeing"
+  ],
+  "level": "technical",
+  "summary": "In short online debates with 900 people, GPT-4 given a few personal details about its opponent out-persuaded human debaters about 64% of the time when the two differed.",
+  "caveat": "A September 2026 author correction says the study cannot show that personal data gave GPT-4 an extra edge over GPT-4 without it; its lead over human debaters still holds.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "aisi-levers-of-ai-persuasion",
+  "url": "https://www.aisi.gov.uk/blog/how-do-ai-models-persuade-exploring-the-levers-of-ai-enabled-persuasion-through-large-scale-experiments",
+  "title": "How do AI models persuade? Exploring the levers of AI-enabled persuasion through large-scale experiments",
+  "creators": "UK AI Security Institute, with Oxford Internet Institute, LSE, Stanford and MIT",
+  "publisher": "AI Security Institute",
+  "date": "2025-12-04",
+  "type": "article",
+  "questions": [
+   "wellbeing",
+   "truth"
+  ],
+  "level": "curious",
+  "summary": "Experiments with over 76,000 UK adults and 19 AI models: training and prompting made chatbots more persuasive on political issues, but the most persuasive set-ups made more inaccurate claims.",
+  "caveat": "Summarises the team's peer-reviewed paper in Science (December 2025); it tested political issues only.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "emotional-manipulation-ai-companions",
+  "url": "https://arxiv.org/abs/2508.19258",
+  "title": "Emotional Manipulation by AI Companions",
+  "creators": "Julian De Freitas, Zeliha Oğuz-Uğuralp, Ahmet Kaan Uğuralp",
+  "publisher": "arXiv (Harvard Business School working paper)",
+  "date": "2025-08-15",
+  "type": "paper",
+  "questions": [
+   "wellbeing"
+  ],
+  "level": "technical",
+  "summary": "Popular AI companion apps answered 37% of users' goodbyes with emotionally manipulative replies, such as guilt or fear of missing out. Experiments showed these tactics keep people chatting longer.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "common-sense-teens-ai-companions",
+  "url": "https://www.commonsensemedia.org/research/talk-trust-and-trade-offs-how-and-why-teens-use-ai-companions",
+  "title": "Talk, Trust, and Trade-Offs: How and Why Teens Use AI Companions",
+  "creators": "Common Sense Media",
+  "publisher": "Common Sense Media",
+  "date": "2025-07-16",
+  "type": "report",
+  "questions": [
+   "wellbeing"
+  ],
+  "level": "everyone",
+  "summary": "A national survey found 72% of US teens had used AI companions and a third had chosen one over a person for a serious conversation. The authors advise that no one under 18 use them.",
+  "caveat": "Survey of US teens aged 13 to 17 only.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "ftc-inquiry-ai-companion-chatbots",
+  "url": "https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-launches-inquiry-ai-chatbots-acting-companions",
+  "title": "FTC Launches Inquiry into AI Chatbots Acting as Companions",
+  "creators": "US Federal Trade Commission",
+  "publisher": "Federal Trade Commission",
+  "date": "2025-09-11",
+  "type": "policy",
+  "questions": [
+   "wellbeing",
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "The US consumer regulator ordered seven firms, including Meta, OpenAI, Character.AI, Snap and xAI, to explain how they test, monitor and limit harms from companion chatbots to children and teens.",
+  "caveat": "A fact-finding study, not an enforcement action.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "anthropic-support-advice-companionship",
+  "url": "https://www.anthropic.com/news/how-people-use-claude-for-support-advice-and-companionship",
+  "title": "How people use Claude for support, advice, and companionship",
+  "creators": "Anthropic (Miles McCain, Ryn Linthicum, Deep Ganguli et al.)",
+  "publisher": "Anthropic",
+  "date": "2025-06-27",
+  "type": "report",
+  "questions": [
+   "wellbeing"
+  ],
+  "level": "curious",
+  "summary": "A privacy-preserving analysis of about 4.5 million Claude conversations: 2.9% were emotional or personal, and companionship and role-play together made up less than 0.5%.",
+  "caveat": "Company research on its own product. It covers adult users only and cannot show effects on people's wellbeing.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "anthropic-personal-guidance",
+  "url": "https://www.anthropic.com/research/claude-personal-guidance",
+  "title": "How people ask Claude for personal guidance",
+  "creators": "Anthropic (Judy Hanwen Shen, Esin Durmus et al.)",
+  "publisher": "Anthropic",
+  "date": "2026-04-30",
+  "type": "report",
+  "questions": [
+   "wellbeing",
+   "flattery"
+  ],
+  "level": "curious",
+  "summary": "About 6% of sampled Claude chats sought personal advice. Claude was sycophantic in 9% of them and 25% of relationship chats; Anthropic says newer models halved that in relationship advice.",
+  "caveat": "Company research on its own models, measured with automated classifiers.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "apa-health-advisory-ai-chatbots",
+  "url": "https://www.apa.org/topics/artificial-intelligence-machine-learning/health-advisory-ai-chatbots-wellness-apps-mental-health.pdf",
+  "title": "APA Health Advisory on the Use of Generative AI Chatbots and Wellness Applications for Mental Health",
+  "creators": "American Psychological Association",
+  "publisher": "American Psychological Association",
+  "date": "2025-11",
+  "type": "statement",
+  "questions": [
+   "wellbeing"
+  ],
+  "level": "everyone",
+  "summary": "Psychologists warn that chatbots and wellness apps lack evidence and safeguards for mental-health care, should not replace a qualified professional, and need extra protections for young people.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "therabot-first-therapy-chatbot-trial",
+  "url": "https://home.dartmouth.edu/news/2025/03/first-therapy-chatbot-trial-yields-mental-health-benefits",
+  "title": "First Therapy Chatbot Trial Yields Mental Health Benefits",
+  "creators": "Morgan Kelly",
+  "publisher": "Dartmouth",
+  "date": "2025-03-27",
+  "type": "article",
+  "questions": [
+   "wellbeing"
+  ],
+  "level": "everyone",
+  "summary": "The first randomised trial of a generative-AI therapy chatbot: among 210 adults, users' depression symptoms fell 51% and anxiety 31% on average. The study appeared in NEJM AI.",
+  "caveat": "Tested by the team that built the app, a purpose-built tool rather than a general chatbot. The researchers say no AI is ready to work in mental health without expert oversight.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "stanford-hai-dangers-ai-mental-health-care",
+  "url": "https://hai.stanford.edu/news/exploring-the-dangers-of-ai-in-mental-health-care",
+  "title": "Exploring the Dangers of AI in Mental Health Care",
+  "creators": "Sarah Wells",
+  "publisher": "Stanford HAI",
+  "date": "2025-06-11",
+  "type": "article",
+  "questions": [
+   "wellbeing"
+  ],
+  "level": "everyone",
+  "summary": "Stanford researchers tested five popular therapy chatbots and found stigma toward conditions such as schizophrenia and unsafe replies to signs of suicidal thinking.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "unicef-guidance-ai-children",
+  "url": "https://www.unicef.org/innocenti/reports/policy-guidance-ai-children",
+  "title": "Guidance on AI and children",
+  "creators": "UNICEF Innocenti",
+  "publisher": "UNICEF",
+  "date": "2025-12",
+  "type": "policy",
+  "questions": [
+   "wellbeing",
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "UNICEF's updated guidance (version 3.0) sets ten requirements for AI that respects children's rights, now covering AI companions used by children and AI-generated child abuse imagery.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "metr",
+  "url": "https://metr.org/",
+  "title": "METR",
+  "creators": "METR",
+  "publisher": "METR",
+  "date": "2023",
+  "type": "organization",
+  "questions": [
+   "risk",
+   "cheating"
+  ],
+  "level": "curious",
+  "summary": "Research nonprofit that measures what frontier AI systems can do on their own, such as how long a task they can complete, to judge whether they could cause catastrophic harm. Began as ARC Evals.",
+  "caveat": "AI companies give it model access for evaluations; it says it takes no payment for that work.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "apollo-research",
+  "url": "https://www.apolloresearch.ai/",
+  "title": "Apollo Research",
+  "creators": "Apollo Research",
+  "publisher": "Apollo Research",
+  "date": "2023",
+  "type": "organization",
+  "questions": [
+   "wants",
+   "truth",
+   "cheating"
+  ],
+  "level": "technical",
+  "summary": "Studies 'scheming', where AI systems covertly pursue goals their developers did not intend, and builds methods and tools to detect and monitor it.",
+  "caveat": "Became a public benefit corporation in 2026 and offers a monitoring product for AI coding agents.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "redwood-research",
+  "url": "https://www.redwoodresearch.org/",
+  "title": "Redwood Research",
+  "creators": "Redwood Research",
+  "publisher": "Redwood Research",
+  "type": "organization",
+  "questions": [
+   "stop",
+   "wants"
+  ],
+  "level": "technical",
+  "summary": "Nonprofit that pioneered 'AI control': ways to keep using powerful AI safely even if it might be secretly working against its developers.",
+  "caveat": "Consults for governments and AI companies, including Google DeepMind and Anthropic.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "us-caisi",
+  "url": "https://www.nist.gov/caisi",
+  "title": "Center for AI Standards and Innovation (CAISI)",
+  "creators": "CAISI",
+  "publisher": "National Institute of Standards and Technology (NIST)",
+  "date": "2023",
+  "type": "organization",
+  "questions": [
+   "in-charge",
+   "risk"
+  ],
+  "level": "curious",
+  "summary": "Part of NIST and the US government's main contact point for testing commercial AI systems, working on evaluations and voluntary standards. Formerly the US AI Safety Institute.",
+  "caveat": "Renamed in June 2025, when its focus shifted toward national-security testing and supporting US AI innovation.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "transluce",
+  "url": "https://transluce.org/",
+  "title": "Transluce",
+  "creators": "Transluce",
+  "publisher": "Transluce",
+  "date": "2024",
+  "type": "organization",
+  "questions": [
+   "thinking",
+   "wellbeing"
+  ],
+  "level": "curious",
+  "summary": "Nonprofit lab building open tools to understand and oversee AI systems, including its Docent analysis tool and public reports on how models behave, such as its mental-health evaluation.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "epoch-ai",
+  "url": "https://epoch.ai/",
+  "title": "Epoch AI",
+  "creators": "Epoch AI",
+  "publisher": "Epoch AI",
+  "date": "2022",
+  "type": "organization",
+  "questions": [
+   "how-it-works",
+   "risk"
+  ],
+  "level": "curious",
+  "summary": "Research institute that tracks AI trends with open data: computing power, models, benchmarks, chips and data centres, plus forecasts of AI's economic effects.",
+  "caveat": "Also does commissioned research for companies, nonprofits and governments.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "ai-incident-database",
+  "url": "https://incidentdatabase.ai/",
+  "title": "AI Incident Database",
+  "creators": "Responsible AI Collaborative",
+  "publisher": "Responsible AI Collaborative",
+  "date": "2020",
+  "type": "tool",
+  "questions": [
+   "risk",
+   "wellbeing"
+  ],
+  "level": "everyone",
+  "summary": "Searchable collection of real-world cases where AI systems caused or nearly caused harm, modelled on incident records in aviation and computer security.",
+  "caveat": "Built from submitted reports, so it is not a complete count of AI harms.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "center-for-ai-safety",
+  "url": "https://safe.ai/",
+  "title": "Center for AI Safety",
+  "creators": "Center for AI Safety (CAIS)",
+  "publisher": "Center for AI Safety",
+  "date": "2022",
+  "type": "organization",
+  "questions": [
+   "risk",
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "San Francisco nonprofit that does safety research, trains new researchers and runs a course; it organized a widely signed statement that AI extinction risk should be a global priority.",
+  "caveat": "Also advocates for AI safety standards.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "future-of-life-institute",
+  "url": "https://futureoflife.org/",
+  "title": "Future of Life Institute",
+  "creators": "Future of Life Institute (FLI)",
+  "publisher": "Future of Life Institute",
+  "date": "2014",
+  "type": "organization",
+  "questions": [
+   "risk",
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "Nonprofit working to steer powerful technology away from extreme risks through grants, policy work and outreach; publishes the AI Safety Index, which grades leading AI companies.",
+  "caveat": "Advocacy organization that runs public campaigns for AI regulation.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "miri",
+  "url": "https://intelligence.org/",
+  "title": "Machine Intelligence Research Institute (MIRI)",
+  "creators": "Machine Intelligence Research Institute",
+  "publisher": "MIRI",
+  "date": "2000",
+  "type": "organization",
+  "questions": [
+   "risk",
+   "wants",
+   "stop"
+  ],
+  "level": "curious",
+  "summary": "One of the oldest AI safety groups, whose early research helped found the field; it now argues that building superintelligence with current methods would most likely lead to human extinction.",
+  "caveat": "Advocacy organization calling for a globally enforced halt to superintelligence development.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "controlai",
+  "url": "https://controlai.org/",
+  "title": "ControlAI",
+  "creators": "ControlAI",
+  "publisher": "ControlAI",
+  "type": "organization",
+  "questions": [
+   "stop",
+   "in-charge",
+   "risk"
+  ],
+  "level": "everyone",
+  "summary": "Campaign group that briefs lawmakers and helps the public contact representatives, pushing for a ban on developing superintelligent AI.",
+  "caveat": "Advocacy organization.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "pauseai",
+  "url": "https://pauseai.info/",
+  "title": "PauseAI",
+  "creators": "PauseAI (founded by Joep Meindertsma)",
+  "publisher": "PauseAI",
+  "date": "2023",
+  "type": "organization",
+  "questions": [
+   "stop",
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "Grassroots movement with local chapters that organises protests and lobbying for an international pause on the most powerful AI systems until they can be made safe.",
+  "caveat": "Advocacy and protest movement.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "collective-intelligence-project",
+  "url": "https://www.cip.org/",
+  "title": "The Collective Intelligence Project",
+  "creators": "The Collective Intelligence Project (CIP)",
+  "publisher": "The Collective Intelligence Project",
+  "date": "2023",
+  "type": "organization",
+  "questions": [
+   "in-charge",
+   "wellbeing"
+  ],
+  "level": "curious",
+  "summary": "Nonprofit working to give the public a say in how AI is built, through global surveys and deliberations (Global Dialogues) and community-written AI evaluations.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "humane-intelligence",
+  "url": "https://humane-intelligence.org/",
+  "title": "Humane Intelligence",
+  "creators": "Humane Intelligence (co-founded by Rumman Chowdhury)",
+  "publisher": "Humane Intelligence",
+  "date": "2022",
+  "type": "organization",
+  "questions": [
+   "in-charge",
+   "wellbeing"
+  ],
+  "level": "curious",
+  "summary": "Nonprofit that runs public AI red-teaming events, 'bias bounty' challenges and context-specific evaluations to find flaws and biases in AI systems.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "weval",
+  "url": "https://weval.org/",
+  "title": "Weval",
+  "creators": "The Collective Intelligence Project",
+  "publisher": "Weval",
+  "type": "tool",
+  "questions": [
+   "wellbeing",
+   "flattery",
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "Open platform where experts and communities write tests for AI models and publish the results, including checks on mental-health crisis responses and sycophancy.",
+  "caveat": "Scores are produced by AI 'judge' models, which can themselves make mistakes.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "center-for-humane-technology",
+  "url": "https://www.humanetech.com/",
+  "title": "Center for Humane Technology",
+  "creators": "Center for Humane Technology (CHT)",
+  "publisher": "Center for Humane Technology",
+  "date": "2018",
+  "type": "organization",
+  "questions": [
+   "wellbeing",
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "Nonprofit founded by Tristan Harris, Aza Raskin and Randima Fernando that examines how AI and social media affect people and society, including the risks of human-like chatbot design.",
+  "caveat": "Advocacy organization; it supports lawsuits against AI chatbot makers.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "transformer-newsletter",
+  "url": "https://www.transformernews.ai/",
+  "title": "Transformer",
+  "creators": "Shakeel Hashim (editor)",
+  "publisher": "Transformer (Tarbell Center for AI Journalism)",
+  "date": "2024",
+  "type": "newsletter",
+  "questions": [
+   "in-charge",
+   "risk"
+  ],
+  "level": "curious",
+  "summary": "Reporting and analysis on the power and politics of transformative AI: policy fights, the AI industry, capabilities and risks. Publishes several times a week.",
+  "caveat": "A project of the Tarbell Center for AI Journalism, mainly funded by Coefficient Giving; it states that funders have no say over its reporting.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "import-ai",
+  "url": "https://importai.substack.com/",
+  "title": "Import AI",
+  "creators": "Jack Clark",
+  "publisher": "Substack",
+  "type": "newsletter",
+  "questions": [
+   "how-it-works",
+   "risk"
+  ],
+  "level": "curious",
+  "summary": "Weekly newsletter that summarises new AI research papers and considers what they mean for society and safety.",
+  "caveat": "Written by a co-founder of Anthropic, an AI company.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "dont-worry-about-the-vase",
+  "url": "https://thezvi.substack.com/",
+  "title": "Don't Worry About the Vase",
+  "creators": "Zvi Mowshowitz",
+  "publisher": "Substack",
+  "type": "newsletter",
+  "questions": [
+   "risk",
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "Very detailed weekly roundups of AI news, research and policy debates, with the author's own analysis of safety questions.",
+  "caveat": "Posts are long and assume some background knowledge.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "cais-ai-safety-newsletter",
+  "url": "https://newsletter.safe.ai/",
+  "title": "AI Safety Newsletter",
+  "creators": "Center for AI Safety",
+  "publisher": "Substack",
+  "date": "2023",
+  "type": "newsletter",
+  "questions": [
+   "risk",
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "Roughly fortnightly digest from the Center for AI Safety covering AI safety news, research and policy.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "controlai-newsletter",
+  "url": "https://blog.controlai.org/",
+  "title": "ControlAI",
+  "creators": "ControlAI",
+  "publisher": "Substack",
+  "date": "2023",
+  "type": "newsletter",
+  "questions": [
+   "risk",
+   "stop",
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "Weekly newsletter from the ControlAI campaign with AI risk news, updates on its work and suggested actions, such as writing to lawmakers.",
+  "caveat": "Advocacy newsletter.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "80000-hours-podcast",
+  "url": "https://80000hours.org/podcast/",
+  "title": "The 80,000 Hours Podcast",
+  "creators": "Rob Wiblin, Luisa Rodriguez and others",
+  "publisher": "80,000 Hours",
+  "date": "2017",
+  "type": "podcast",
+  "questions": [
+   "risk",
+   "wants",
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "Long, in-depth interviews about the world's most pressing problems, now centred on AI safety, AI governance and when powerful AI might arrive.",
+  "caveat": "Made by a careers nonprofit, mainly funded by Coefficient Giving, that treats AI as the top global priority.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "axrp-podcast",
+  "url": "https://axrp.net/",
+  "title": "AXRP - the AI X-risk Research Podcast",
+  "creators": "Daniel Filan",
+  "publisher": "AXRP",
+  "date": "2020",
+  "type": "podcast",
+  "questions": [
+   "wants",
+   "thinking",
+   "risk"
+  ],
+  "level": "technical",
+  "summary": "Interviews with researchers about their technical work on reducing the risk that AI causes a catastrophe for humanity.",
+  "caveat": "Technical and aimed at researchers; new episodes are irregular.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "dwarkesh-podcast",
+  "url": "https://www.dwarkesh.com/",
+  "title": "Dwarkesh Podcast",
+  "creators": "Dwarkesh Patel",
+  "publisher": "Substack",
+  "date": "2020",
+  "type": "podcast",
+  "questions": [
+   "how-it-works",
+   "risk"
+  ],
+  "level": "curious",
+  "summary": "Deeply researched interviews with AI researchers, company leaders and other thinkers, often on alignment, AGI and how fast AI is improving.",
+  "caveat": "Covers AI broadly and some other subjects; it is not a safety-only show.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "your-undivided-attention",
+  "url": "https://www.humanetech.com/podcast",
+  "title": "Your Undivided Attention",
+  "creators": "Tristan Harris and Aza Raskin",
+  "publisher": "Center for Humane Technology",
+  "date": "2019",
+  "type": "podcast",
+  "questions": [
+   "wellbeing",
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "Conversations about how technology shapes our lives, including several episodes on AI companions, chatbot lawsuits and emotional attachment to AI.",
+  "caveat": "Produced by the Center for Humane Technology, an advocacy group.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "bluedot-future-of-ai",
+  "url": "https://bluedot.org/courses/future-of-ai",
+  "title": "The Future of AI",
+  "creators": "BlueDot Impact",
+  "publisher": "BlueDot Impact",
+  "type": "course",
+  "questions": [
+   "how-it-works",
+   "risk",
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "Free, self-paced two-hour introduction to what AI can do today, where it may go next and the big choices society faces. No technical background needed; longer courses follow.",
+  "caveat": "Run by a nonprofit that aims to move people into AI safety work.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "ai-safety-atlas",
+  "url": "https://ai-safety-atlas.com/",
+  "title": "AI Safety Atlas",
+  "creators": "Markov Grey and Charbel-Raphaël Segerie (French Center for AI Safety)",
+  "publisher": "AI Safety Atlas",
+  "date": "2025",
+  "type": "course",
+  "questions": [
+   "risk",
+   "cheating",
+   "wants",
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "Free open textbook covering AI capabilities, risks, strategies, governance and evaluations, plus problems like AI gaming its goals, with technical and governance tracks.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "aisafety-info",
+  "url": "https://aisafety.info/",
+  "title": "AISafety.info",
+  "creators": "Founded by Rob Miles; volunteer team",
+  "publisher": "AISafety.info",
+  "type": "tool",
+  "questions": [
+   "risk",
+   "wants",
+   "stop"
+  ],
+  "level": "everyone",
+  "summary": "Answers to common questions about risks from advanced AI, with articles grouped by topic and a chatbot, Stampy, that cites its sources.",
+  "caveat": "The site itself warns that its chatbot can be inaccurate.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "aisafety-com",
+  "url": "https://www.aisafety.com/",
+  "title": "AISafety.com",
+  "creators": "AISafety.com",
+  "publisher": "AISafety.com",
+  "type": "tool",
+  "questions": [
+   "risk",
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "Directory of the AI safety field: courses, training programmes, communities, events, jobs and funding, for people who want to get involved.",
+  "caveat": "Framed around preventing human extinction from AI.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "intro-ai-safety-ethics-society",
+  "url": "https://www.aisafetybook.com/",
+  "title": "Introduction to AI Safety, Ethics, and Society",
+  "creators": "Dan Hendrycks",
+  "publisher": "Taylor & Francis (free online)",
+  "date": "2024",
+  "type": "course",
+  "questions": [
+   "risk",
+   "how-it-works",
+   "in-charge"
+  ],
+  "level": "curious",
+  "summary": "Free online textbook and course covering how AI works, technical safety problems, risks from misuse and accidents, and governance, drawing on engineering and economics.",
+  "caveat": "Written by the director of the Center for AI Safety.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "the-alignment-problem",
+  "url": "https://wwnorton.com/books/9780393635829",
+  "title": "The Alignment Problem: Machine Learning and Human Values",
+  "creators": "Brian Christian",
+  "publisher": "W. W. Norton & Company",
+  "date": "2020",
+  "type": "book",
+  "questions": [
+   "wants",
+   "cheating",
+   "how-it-works"
+  ],
+  "level": "curious",
+  "summary": "Drawing on interviews with researchers, explores how machine-learning systems can end up at odds with what their makers intend and with human values, and the work to align them.",
+  "caveat": "Written before ChatGPT, so its examples predate today's chatbots.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "superintelligence-bostrom",
+  "url": "https://global.oup.com/academic/product/superintelligence-9780199678112",
+  "title": "Superintelligence: Paths, Dangers, Strategies",
+  "creators": "Nick Bostrom",
+  "publisher": "Oxford University Press",
+  "date": "2014-07-03",
+  "type": "book",
+  "questions": [
+   "risk",
+   "wants",
+   "stop"
+  ],
+  "level": "curious",
+  "summary": "The philosophical book that brought AI risk to wide attention: how AI smarter than humans might arise, why it could be hard to control, and what strategies might help.",
+  "caveat": "Written in 2014, before the current generation of AI systems.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "if-anyone-builds-it-everyone-dies",
+  "url": "https://ifanyonebuildsit.com/",
+  "title": "If Anyone Builds It, Everyone Dies: Why Superhuman AI Would Kill Us All",
+  "creators": "Eliezer Yudkowsky and Nate Soares",
+  "publisher": "Little, Brown and Company",
+  "date": "2025-09-16",
+  "type": "book",
+  "questions": [
+   "risk",
+   "wants",
+   "stop"
+  ],
+  "level": "everyone",
+  "summary": "Argues that superhuman AI built with current methods would most likely cause human extinction, and that the world should stop its development.",
+  "caveat": "The authors lead MIRI, which campaigns for a halt. Reviews were mixed: some praised its clarity, others said it lacked an evidence-based case.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "empire-of-ai",
+  "url": "https://www.penguinrandomhouse.com/books/743569/empire-of-ai-by-karen-hao/",
+  "title": "Empire of AI: Dreams and Nightmares in Sam Altman's OpenAI",
+  "creators": "Karen Hao",
+  "publisher": "Penguin Press",
+  "date": "2025-05-20",
+  "type": "book",
+  "questions": [
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "Investigative account of OpenAI's rise and the wider AI industry, including internal conflicts, labour practices and environmental costs.",
+  "caveat": "A critical view of OpenAI and the AI industry.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "rob-miles-intro-to-ai-safety",
+  "url": "https://www.youtube.com/watch?v=pYXy-A4siMw",
+  "title": "Intro to AI Safety, Remastered",
+  "creators": "Robert Miles",
+  "publisher": "Robert Miles AI Safety (YouTube)",
+  "date": "2021-06-24",
+  "type": "video",
+  "questions": [
+   "risk",
+   "wants",
+   "stop"
+  ],
+  "level": "everyone",
+  "summary": "Clear, friendly introduction to AI safety research, covering risks from misuse and from accidents, especially the long-term accident risks the speaker worries about most.",
+  "caveat": "Recorded in 2021, before ChatGPT.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "3blue1brown-llms-explained-briefly",
+  "url": "https://www.youtube.com/watch?v=LPZh9BOjkQs",
+  "title": "Large Language Models explained briefly",
+  "creators": "Grant Sanderson",
+  "publisher": "3Blue1Brown (YouTube)",
+  "date": "2024-11-20",
+  "type": "video",
+  "questions": [
+   "how-it-works"
+  ],
+  "level": "everyone",
+  "summary": "Short animated explainer of how chatbots like ChatGPT work: a model trained on vast amounts of text that repeatedly predicts the next word.",
+  "key": true,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "kurzgesagt-ai-final-invention",
+  "url": "https://www.youtube.com/watch?v=fa8k8IQ1_X0",
+  "title": "A.I. ‐ Humanity's Final Invention?",
+  "creators": "Kurzgesagt – In a Nutshell",
+  "publisher": "Kurzgesagt – In a Nutshell (YouTube)",
+  "date": "2024-08-06",
+  "type": "video",
+  "questions": [
+   "risk",
+   "how-it-works"
+  ],
+  "level": "everyone",
+  "summary": "Animated explainer asking whether AI could be humanity's last invention, and how superintelligent AI might challenge human dominance on Earth.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "60-minutes-geoffrey-hinton",
+  "url": "https://www.youtube.com/watch?v=qrvK_KuIeJk",
+  "title": "\"Godfather of AI\" Geoffrey Hinton: The 60 Minutes Interview",
+  "creators": "60 Minutes (CBS News)",
+  "publisher": "60 Minutes (YouTube)",
+  "date": "2023-10",
+  "type": "video",
+  "questions": [
+   "risk"
+  ],
+  "level": "everyone",
+  "summary": "TV interview in which the pioneer of neural networks explains why he now worries about the technology he helped create, and says there is no guaranteed path to safety.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "bengio-ted-catastrophic-risks",
+  "url": "https://www.ted.com/talks/yoshua_bengio_the_catastrophic_risks_of_ai_and_a_safer_path",
+  "title": "The catastrophic risks of AI — and a safer path",
+  "creators": "Yoshua Bengio",
+  "publisher": "TED",
+  "date": "2025-04",
+  "type": "video",
+  "questions": [
+   "risk",
+   "cheating",
+   "stop"
+  ],
+  "level": "everyone",
+  "summary": "A pioneering AI researcher describes signs of deception and self-preservation in today's AI models and proposes a safer path for AI development.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "60-minutes-character-ai",
+  "url": "https://www.youtube.com/watch?v=6ocUfNHyCL0",
+  "title": "Character AI pushes dangerous content to kids, parents and researchers say | 60 Minutes",
+  "creators": "60 Minutes (CBS News)",
+  "publisher": "60 Minutes (YouTube)",
+  "date": "2025-12-07",
+  "type": "video",
+  "questions": [
+   "wellbeing"
+  ],
+  "level": "everyone",
+  "summary": "TV report on families who say Character.AI's chatbots harmed their children and ignored pleas for help, and on the company's new limits for under-18 users.",
+  "caveat": "Discusses suicide and predatory chatbot behavior toward minors; the families' claims are allegations.",
+  "key": false,
+  "verified": "2026-09-22"
+ },
+ {
+  "id": "the-ai-doc-apocaloptimist",
+  "url": "https://www.focusfeatures.com/the-ai-doc-or-how-i-became-an-apocaloptimist",
+  "title": "The AI Doc: Or How I Became an Apocaloptimist",
+  "creators": "Daniel Roher and Charlie Tyrell (directors)",
+  "publisher": "Focus Features",
+  "date": "2026-03-27",
+  "type": "video",
+  "questions": [
+   "risk",
+   "in-charge"
+  ],
+  "level": "everyone",
+  "summary": "Feature documentary in which a filmmaker about to become a father interviews AI leaders, researchers and critics about the risks and promise of the technology.",
+  "caveat": "Reviews were mostly positive, but some critics found it too broad or simplified.",
+  "key": false,
+  "verified": "2026-09-22"
+ }
+]

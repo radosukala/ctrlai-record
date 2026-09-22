@@ -1,0 +1,15 @@
+node_modules/
+.next/
+.data/
+.env
+.env.local
+.env.*.local
+*.tsbuildinfo
+next-env.d.ts
+runner-output/
+# The v0.1 preview and its internal notes stay local.
+preview-v0.1/
+# Local tooling
+.claude/
+.vercel
+.DS_Store
