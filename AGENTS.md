@@ -32,6 +32,8 @@ Ctrl AI is a public record of how AI behaves, kept by the people who use it. Rea
 ## Practicalities
 
 - `npm test` runs against an in-memory Postgres (PGlite). Keep it green.
+- Never point a dev server or a test at the production database. The dev server ignores remote `DATABASE_URL`s
+  unless `CTRL_DEV_REMOTE_DB=1`; don't set it to try things out. The public record is real.
 - Stop `npm run dev` before running scripts against the local database; PGlite allows one process at a time.
 - Design tokens are in `app/globals.css`. Outcome colors are validated for color-blind readers; always pair a color
   with a text label.

@@ -32,8 +32,11 @@ npm run dev
 ```
 
 Open http://localhost:4310. With no `DATABASE_URL`, the app uses an embedded Postgres (PGlite) in `.data/pglite`,
-migrated and seeded automatically, so a full copy of the record runs with no setup. `.env.local` sets
-`CTRL_ALLOW_SAME_NETWORK=1` so you can check your own test runs from one machine; never set it in production.
+migrated and seeded automatically, so a full copy of the record runs with no setup. Set
+`CTRL_ALLOW_SAME_NETWORK=1` in `.env.local` to check your own test runs from one machine; never set it in production.
+
+The dev server ignores a `DATABASE_URL` that points to a remote host and uses the embedded database instead, so
+nothing done locally can reach the live record by accident. Scripts such as `npm run steward` still use it.
 
 ```sh
 npm test            # consensus, receipts, and the full submit → check → verify flow on a real Postgres
