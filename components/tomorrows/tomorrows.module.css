@@ -269,11 +269,25 @@
 }
 @keyframes breathe { 50% { opacity: 0.45; } }
 
-/* A highlighted option, reached with the arrow keys */
-.choice:focus-visible, .owner:focus-visible { outline: none; background: color-mix(in srgb, var(--fg) 7%, transparent); }
-.choice:focus-visible .choiceText, .owner:focus-visible .ownerText { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 7px; }
-.choice:focus-visible .key, .owner:focus-visible .key { background: var(--fg); border-color: var(--fg); color: var(--bg); }
-.quietButton:focus-visible, .action:focus-visible, .next:focus-visible, .go:focus-visible, .fact:focus-visible {
+/* A highlighted option: moved there with the arrow keys (data-active) or with tab (focus-visible) */
+.choice:focus-visible, .owner:focus-visible, .choice[data-active], .owner[data-active] {
+  outline: none;
+  background: color-mix(in srgb, var(--fg) 8%, transparent);
+  box-shadow: inset 3px 0 0 var(--fg);
+}
+.choice:focus-visible .choiceText, .owner:focus-visible .ownerText, .choice[data-active] .choiceText, .owner[data-active] .ownerText {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+}
+.choice:focus-visible .key, .owner:focus-visible .key, .choice[data-active] .key, .owner[data-active] .key {
+  background: var(--fg);
+  border-color: var(--fg);
+  color: var(--bg);
+}
+.choice[data-active], .owner[data-active] { padding-left: 12px; transition: padding-left 0.15s ease; }
+.quietButton:focus-visible, .action:focus-visible, .next:focus-visible, .go:focus-visible, .fact:focus-visible,
+.quietButton[data-active], .action[data-active] {
   outline: 2px solid var(--fg);
   outline-offset: 3px;
 }

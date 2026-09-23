@@ -44,6 +44,7 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
   const [copied, setCopied] = useState<string | null>(null);
   const [readingFacts, setReadingFacts] = useState(false);
   const [keyboard, setKeyboard] = useState(false);
+  const [cursor, setCursor] = useState<number | null>(null);
   const facts = useMemo(() => factsById(episode), [episode]);
   const newest = useRef<HTMLElement | null>(null);
   const afterRef = useRef<HTMLElement | null>(null);
@@ -72,8 +73,8 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
   }, []);
 
   // Keys: arrows, space and return play the whole story; ctrl+Z rewinds it; 1, 2 and 3 still answer directly.
-  const live = useRef({ mode: state.mode, choice: pendingChoice, owners: episode.arrangements });
-  live.current = { mode: state.mode, choice: pendingChoice, owners: episode.arrangements };
+  const live = useRef({ mode: state.mode, choice: pendingChoice, owners: episode.arrangements, cursor });
+  live.current = { mode: state.mode, choice: pendingChoice, owners: episode.arrangements, cursor };
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
       const { key } = event;
@@ -86,19 +87,25 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
       const target = event.target as HTMLElement | null;
       if (target?.closest('a, input, textarea, select, summary, .consent')) return;
 
+      // Options: the arrows move a highlight the page draws itself, so it looks the same in every browser.
       const items = navItems();
       if (items.length) {
-        const index = items.indexOf(document.activeElement as HTMLElement);
+        const focused = items.indexOf(document.activeElement as HTMLElement);
+        const current = focused !== -1 ? focused : live.current.cursor;
         if (MOVE_KEYS.has(key)) {
           event.preventDefault();
           const step = BACK_KEYS.has(key) ? -1 : 1;
-          const next = index === -1 ? (step === 1 ? 0 : items.length - 1) : (index + step + items.length) % items.length;
-          items[next].focus();
+          const next = current === null ? (step === 1 ? 0 : items.length - 1) : (current + step + items.length) % items.length;
+          setCursor(next);
+          if (focused !== -1) items[next].focus();
           return;
         }
         if (key === ' ' || key === 'Enter') {
-          // A highlighted option presses itself. With nothing highlighted, a stray key shouldn't choose for the reader.
-          if (index === -1) event.preventDefault();
+          // A focused button presses itself. Otherwise return presses the highlighted option;
+          // with nothing highlighted, a stray key never chooses for the reader.
+          if (focused !== -1) return;
+          event.preventDefault();
+          if (current !== null) items[current]?.click();
           return;
         }
       }
@@ -120,6 +127,11 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, []);
+
+  const optionsKey = state.mode === 'picker' ? 'picker' : pendingChoice ? `choice-${screen?.key}` : atEnd ? 'end' : null;
+  useEffect(() => {
+    setCursor(null);
+  }, [optionsKey]);
 
   // A new screen starts at the top; a new line comes into view.
   const screenKey = state.mode === 'picker' ? 'picker' : screen?.key;
@@ -302,6 +314,7 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
                     key={arrangement.id}
                     type="button"
                     data-nav
+                    data-active={cursor === index || undefined}
                     className={styles.owner}
                     style={{ animationDelay: `${120 + index * 90}ms` }}
                     onClick={() => dispatch({ type: 'pick', arrangement: arrangement.id })}
@@ -313,7 +326,7 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
                   </button>
                 ))}
               </div>
-              <button type="button" data-nav className={styles.quietButton} onClick={() => dispatch({ type: 'finale' })}>{episode.picker.end}</button>
+              <button type="button" data-nav data-active={cursor === episode.arrangements.length || undefined} className={styles.quietButton} onClick={() => dispatch({ type: 'finale' })}>{episode.picker.end}</button>
             </section>
           ) : screen ? (
             <section key={screen.key}>
@@ -333,6 +346,7 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
                       key={branch.id}
                       type="button"
                       data-nav
+                      data-active={cursor === index || undefined}
                       className={styles.choice}
                       style={{ animationDelay: `${index * 90}ms` }}
                       onClick={() => dispatch({ type: 'choose', branch: branch.id })}
@@ -359,9 +373,9 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
               {atEnd ? (
                 <>
                   <div className={styles.actions}>
-                    <button type="button" data-nav className={`${styles.action} ${styles.actionPrimary}`} onClick={share}>Send it to someone</button>
-                    <button type="button" data-nav className={styles.action} onClick={openAfterword}>What’s real here</button>
-                    <button type="button" data-nav className={styles.action} onClick={restart}>Start again</button>
+                    <button type="button" data-nav data-active={cursor === 0 || undefined} className={`${styles.action} ${styles.actionPrimary}`} onClick={share}>Send it to someone</button>
+                    <button type="button" data-nav data-active={cursor === 1 || undefined} className={styles.action} onClick={openAfterword}>What’s real here</button>
+                    <button type="button" data-nav data-active={cursor === 2 || undefined} className={styles.action} onClick={restart}>Start again</button>
                   </div>
                   {copied ? <p className={styles.copied} role="status">{copied}</p> : null}
                 </>
