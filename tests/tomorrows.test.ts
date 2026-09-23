@@ -11,7 +11,8 @@ function allLines(episode: Episode): Line[] {
 
 function everyText(episode: Episode): string[] {
   return [
-    episode.title, episode.hook, episode.description, episode.share, episode.picker.question, episode.picker.end,
+    episode.title, episode.hook, episode.description, episode.share, episode.rewindNote,
+    episode.picker.lead, episode.picker.question, episode.picker.end,
     ...allScreens(episode).flatMap(screen => [screen.next ?? '', screen.from ?? '']),
     ...allLines(episode).map(line => line.text),
     ...episode.arrangements.flatMap(arrangement => [arrangement.owner, arrangement.rewind, ...arrangement.branches.map(branch => branch.label)]),
@@ -58,7 +59,7 @@ test('the first reading opens cold, and a replay says who owns the machine this 
     for (const arrangement of others) {
       const replay = buildRun(episode, arrangement.id, { first: false, branchId: null });
       assert.equal(replay[0].lines[0].text, arrangement.rewind);
-      assert.equal(replay[1].tone, 'phone', 'the replay goes straight to the message');
+      assert.equal(replay[1].message, true, 'the replay goes straight to the message');
     }
   }
 });
@@ -67,7 +68,7 @@ test('the story clock follows what the reader has seen', () => {
   for (const episode of EPISODES) {
     const run = buildRun(episode, episode.arrangements[0].id, { first: true, branchId: null });
     assert.equal(clockAt(run, 0, 1, episode.start), episode.start);
-    const message = run.findIndex(screen => screen.tone === 'phone');
+    const message = run.findIndex(screen => screen.message);
     assert.equal(clockAt(run, message, 1, episode.start), run[message].at);
     for (const line of allLines(episode)) {
       if (!line.at) continue;
@@ -163,7 +164,7 @@ test('ctrl+Z waits for the message, and an unfinished version is not counted as 
     const start = initialState(episode);
     assert.equal(canRewind(episode, start), false);
     assert.equal(reduce(start, { type: 'rewind' }), start);
-    const atMessage = advanceUntil(episode, start, state => screensFor(episode, state)[state.screen].tone === 'phone');
+    const atMessage = advanceUntil(episode, start, state => !!screensFor(episode, state)[state.screen].message);
     const rewound = reduce(atMessage, { type: 'rewind' });
     assert.equal(rewound.mode, 'rewinding');
     assert.deepEqual(rewound.seen, []);

@@ -5,8 +5,10 @@ export interface RunScreen extends Screen {
   key: string;
   /** Set on the screen that ends in a choice. */
   choice?: Arrangement['branches'];
-  /** Set on the last screen of a run, the one that leads back to 8:41. */
+  /** Set on the last screen of a run, the one that leads back to the start. */
   closing?: boolean;
+  /** Set on the screen where the arrangement first shows itself: the message, or the machine's log. */
+  message?: boolean;
 }
 
 export function getArrangement(episode: Episode, id: string): Arrangement {
@@ -30,7 +32,7 @@ export function buildRun(episode: Episode, arrangementId: string, options: { fir
   } else {
     add({ ...episode.replay, lines: [{ text: arrangement.rewind, style: 'meta' }, ...episode.replay.lines] }, `replay-${arrangement.id}`);
   }
-  add(arrangement.message, `message-${arrangement.id}`);
+  add(arrangement.message, `message-${arrangement.id}`, { message: true });
   arrangement.after.forEach((screen, index) =>
     add(screen, `after-${arrangement.id}-${index}`, index === arrangement.after.length - 1 ? { choice: arrangement.branches } : {}));
 
@@ -136,7 +138,7 @@ export function canRewind(episode: Episode, state: PlayerState): boolean {
   if (state.mode === 'finale' || state.mode === 'end') return true;
   if (state.mode !== 'run') return false;
   const screens = screensFor(episode, state);
-  return state.screen >= screens.findIndex(screen => screen.tone === 'phone');
+  return state.screen >= screens.findIndex(screen => screen.message);
 }
 
 export function reducerFor(episode: Episode) {

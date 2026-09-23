@@ -27,7 +27,7 @@ export default async function Image({ params }: { params: Promise<{ episode: str
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
           <div style={{ display: 'flex', fontFamily: 'Instrument Serif', fontStyle: 'italic', fontSize: 40, lineHeight: 1 }}>{episode.title}</div>
-          <div style={{ display: 'flex', fontSize: 20, color: SOFT }}>{`About ${episode.minutes} minutes · then try the other Monday`}</div>
+          <div style={{ display: 'flex', fontSize: 20, color: SOFT }}>{`About ${episode.minutes} minutes · ${episode.rewindNote}`}</div>
         </div>
         <div style={{ display: 'flex', background: ACID, color: NIGHT, fontSize: 22, fontWeight: 600, padding: '15px 26px', borderRadius: 999 }}>Read it →</div>
       </div>

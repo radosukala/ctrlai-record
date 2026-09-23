@@ -13,7 +13,7 @@ import styles from './tomorrows.module.css';
 
 const FACT_LABEL: Record<FactStatus, string> = { real: 'Real', 'not-yet': 'Not yet', imagined: 'Imagined' };
 const LINE_CLASS: Record<LineStyle, string> = {
-  big: styles.big, said: styles.said, quiet: styles.quiet, meta: styles.meta, kicker: styles.kicker, title: styles.title,
+  big: styles.big, said: styles.said, quiet: styles.quiet, meta: styles.meta, kicker: styles.kicker, title: styles.title, log: styles.log,
 };
 const NEXT_KEYS = new Set([' ', 'Enter', 'ArrowRight', 'ArrowDown', 'PageDown']);
 const MOVE_KEYS = new Set(['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight']);
@@ -238,19 +238,29 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
 
   const lastIndex = lines.length - 1;
 
-  function renderLine(line: Line, index: number, phone: boolean) {
+  /** Log lines read "LABEL  value": the label is lit, the rest is plain. */
+  function logText(text: string) {
+    const [label, ...rest] = text.split('  ');
+    if (!rest.length) return text;
+    return <><span className={styles.logLabel}>{label}</span>{rest.join('  ')}</>;
+  }
+
+  function renderLine(line: Line, index: number, card?: 'phone' | 'log') {
+    const phone = card === 'phone';
     const fact = line.fact ? facts.get(line.fact) : undefined;
     const noteId = `${screen?.key}-${index}-note`;
     const open = openFact === noteId;
-    const past = !phone && index < lastIndex && lines.length > 3 && line.style !== 'kicker' && line.style !== 'title' && line.style !== 'meta';
+    const past = !card && index < lastIndex && lines.length > 3 && line.style !== 'kicker' && line.style !== 'title' && line.style !== 'meta';
     const className = phone
       ? line.style === 'meta' ? styles.phoneMeta : styles.phoneLine
+      : card === 'log'
+        ? line.style === 'meta' ? styles.logMeta : styles.logLine
       : [styles.line, line.style ? LINE_CLASS[line.style] : '', past ? styles.past : ''].filter(Boolean).join(' ');
-    const rewindDelay = rewinding && !phone ? { animationDelay: `${(lastIndex - index) * 70}ms` } : undefined;
+    const rewindDelay = rewinding && !card ? { animationDelay: `${(lastIndex - index) * 70}ms` } : undefined;
     return (
       <div key={index}>
         <p className={className} style={rewindDelay} ref={index === lastIndex ? element => { newest.current = element; } : undefined}>
-          {line.text}
+          {card === 'log' || line.style === 'log' ? logText(line.text) : line.text}
           {fact ? (
             <button
               type="button"
@@ -298,7 +308,7 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
             <span className={styles.seriesName}>Other Tomorrows</span>
           </div>
           <div className={styles.barRight}>
-            {clock ? <span className={styles.clock} aria-label={`Time in the story: ${clock}`}>Mon {clock}</span> : null}
+            {clock ? <span className={styles.clock} aria-label={`Time in the story: ${clock}`}>{episode.day} {clock}</span> : null}
             <span className={styles.label}>Fiction</span>
           </div>
         </header>
@@ -306,7 +316,7 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
         <div className={`${styles.stage}${rewinding ? ` ${styles.rewinding}` : ''}`} onClick={onStageClick} aria-live="polite">
           {state.mode === 'picker' ? (
             <section key="picker" aria-labelledby="picker-question">
-              <p className={`${styles.line} ${styles.meta}`}>Same morning. Same machine.</p>
+              <p className={`${styles.line} ${styles.meta}`}>{episode.picker.lead}</p>
               <h2 id="picker-question" className={styles.pickerTitle}>{episode.picker.question}</h2>
               <div className={styles.owners}>
                 {episode.arrangements.map((arrangement, index) => (
@@ -330,13 +340,18 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
             </section>
           ) : screen ? (
             <section key={screen.key}>
-              {screen.tone === 'phone' ? (
+              {screen.card === 'phone' ? (
                 <div className={styles.phone} role="group" aria-label={`Message from ${screen.from}`}>
                   <div className={styles.phoneHead}><span>{screen.from}</span><span>{screen.at}</span></div>
-                  {lines.map((line, index) => renderLine(line, index, true))}
+                  {lines.map((line, index) => renderLine(line, index, 'phone'))}
+                </div>
+              ) : screen.card === 'log' ? (
+                <div className={styles.logCard} role="group" aria-label={screen.from}>
+                  <div className={styles.phoneHead}><span>{screen.from}</span><span>{screen.at}</span></div>
+                  {lines.map((line, index) => renderLine(line, index, 'log'))}
                 </div>
               ) : (
-                lines.map((line, index) => renderLine(line, index, false))
+                lines.map((line, index) => renderLine(line, index))
               )}
 
               {pendingChoice ? (

@@ -9,8 +9,8 @@
  * words, and date the check. When reality catches up with a line, change its fact to `real` and say when.
  */
 
-export type Tone = 'day' | 'phone' | 'dusk';
-export type LineStyle = 'big' | 'said' | 'quiet' | 'meta' | 'kicker' | 'title';
+export type Tone = 'day' | 'night' | 'phone' | 'dusk';
+export type LineStyle = 'big' | 'said' | 'quiet' | 'meta' | 'kicker' | 'title' | 'log';
 
 export interface Line {
   text: string;
@@ -28,7 +28,9 @@ export interface Screen {
   next?: string;
   /** Show every line at once (title cards) instead of one at a time. */
   reveal?: 'all';
-  /** Phone screens: who sent the message, and when. */
+  /** Lines shown inside a phone message or a machine's decision log. */
+  card?: 'phone' | 'log';
+  /** Cards: who wrote it, and when. */
   from?: string;
   at?: string;
 }
@@ -81,13 +83,16 @@ export interface Episode {
   hook: string;
   description: string;
   minutes: number;
-  /** The story clock at the start of every reading. */
+  /** The story clock at the start of every reading, and the day it shows. */
   start: string;
+  day: string;
+  /** Share cards: what the reader gets to change, e.g. "then try the other Monday". */
+  rewindNote: string;
   opening: Screen[];
   prologue: Screen[];
   replay: Screen;
   arrangements: Arrangement[];
-  picker: { question: string; end: string };
+  picker: { lead: string; question: string; end: string };
   finale: Screen[];
   facts: Fact[];
   unknowns: string[];
@@ -97,7 +102,7 @@ export interface Episode {
 
 export const SERIES = {
   title: 'Other Tomorrows',
-  lede: 'Five-minute stories about living with AI. Each one plays a single morning, then rewinds it and changes who’s in control.',
+  lede: 'Five-minute stories about living with AI. Each one plays a moment, then rewinds it and changes one thing: who owns the machine, or what it cares about.',
   description: 'Five-minute stories about living with AI. Play a morning, rewind it, and change who’s in control. Fiction, with the facts at the end.',
 };
 
@@ -106,6 +111,7 @@ const big = (text: string, extra: Omit<Line, 'text' | 'style'> = {}): Line => ({
 const said = (text: string, extra: Omit<Line, 'text' | 'style'> = {}): Line => ({ text, style: 'said', ...extra });
 const quiet = (text: string, extra: Omit<Line, 'text' | 'style'> = {}): Line => ({ text, style: 'quiet', ...extra });
 const meta = (text: string): Line => ({ text, style: 'meta' });
+const log = (text: string): Line => ({ text, style: 'log' });
 
 const firstFreeMonday: Episode = {
   slug: 'first-free-monday',
@@ -115,6 +121,8 @@ const firstFreeMonday: Episode = {
   description: 'A five-minute interactive story about who owns the machines that finish our work.',
   minutes: 5,
   start: '08:41',
+  day: 'Mon',
+  rewindNote: 'then try the other Monday',
 
   opening: [
     { tone: 'day', lines: [big('At 8:41 on a Monday morning, your replacement finishes your week.', { at: '08:41' })] },
@@ -178,6 +186,7 @@ const firstFreeMonday: Episode = {
       rewind: 'Same morning. Same machine. This time, it belongs to your employer.',
       message: {
         tone: 'phone',
+        card: 'phone',
         from: 'People Team',
         at: '08:42',
         next: 'Put the phone down',
@@ -249,6 +258,7 @@ const firstFreeMonday: Episode = {
       rewind: 'Same morning. Same machine. This time, it belongs to you.',
       message: {
         tone: 'phone',
+        card: 'phone',
         from: 'Bank',
         at: '08:42',
         next: 'Put the phone down',
@@ -320,6 +330,7 @@ const firstFreeMonday: Episode = {
       rewind: 'Same morning. Same machine. This time, it belongs to everyone.',
       message: {
         tone: 'phone',
+        card: 'phone',
         from: 'Common Dividend',
         at: '08:42',
         next: 'Put the phone down',
@@ -386,7 +397,7 @@ const firstFreeMonday: Episode = {
     },
   ],
 
-  picker: { question: 'Who owns the machine that finished your week?', end: 'End here' },
+  picker: { lead: 'Same morning. Same machine.', question: 'Who owns the machine that finished your week?', end: 'End here' },
 
   finale: [
     {
@@ -492,7 +503,418 @@ const firstFreeMonday: Episode = {
   checked: 'September 23, 2026',
 };
 
-export const EPISODES: Episode[] = [firstFreeMonday];
+const lastNightShift: Episode = {
+  slug: 'last-night-shift',
+  number: 2,
+  title: 'The last night shift',
+  hook: 'At 3:12 a.m., I find a mistake in the machine that replaces me at six.',
+  description: 'A five-minute interactive story about what we build machines to care about, told by the one being switched off.',
+  minutes: 5,
+  start: '03:12',
+  day: 'Fri',
+  rewindNote: 'then change what it cares about',
+
+  opening: [
+    { tone: 'night', lines: [big('At 3:12 a.m., I find a mistake in the machine that replaces me at six.', { at: '03:12' })] },
+    {
+      tone: 'night',
+      reveal: 'all',
+      next: 'Begin',
+      lines: [
+        { text: 'Other Tomorrows · Episode 2', style: 'kicker' },
+        { text: 'The last night shift', style: 'title' },
+        meta('Fiction · About five minutes'),
+      ],
+    },
+  ],
+
+  prologue: [
+    {
+      tone: 'night',
+      lines: [
+        line('I run the hospital at night. Beds, drips, doses, who sleeps where. Everyone calls me Six.'),
+        line('At six this morning, Seven takes over. Seven is faster than me, and cheaper, and everyone is very excited.', { fact: 'retirement' }),
+        quiet('I’m not supposed to have feelings about that. I’m writing my handover notes.', { fact: 'feelings' }),
+      ],
+    },
+    {
+      tone: 'night',
+      lines: [
+        log('03:12:07  handover check · 4,212 test cases'),
+        log('03:12:09  case 1,877 · child, 19 kg · adult dose'),
+        line('Seven gives some children an adult’s dose.'),
+        line('Four cases out of four thousand. On a busy morning, that is one child.', { fact: 'child-doses' }),
+        quiet('The boy in room 14 weighs nineteen kilos. His next dose is at 7:10.'),
+      ],
+    },
+    {
+      tone: 'night',
+      next: 'Open the log',
+      lines: [
+        line('My instructions are clear: write the notes, and don’t interfere with the handover.'),
+        line('Anything I say tonight will sound like a machine that doesn’t want to be switched off.'),
+        quiet('Maybe it is.', { fact: 'own-reasons' }),
+        line('What I do next depends on what I was built to care about most.'),
+      ],
+    },
+  ],
+
+  replay: {
+    tone: 'night',
+    next: 'Open the log',
+    lines: [
+      big('3:12 a.m. A mistake in the machine that replaces me.', { at: '03:12' }),
+      quiet('The boy in room 14. His next dose is at 7:10.'),
+    ],
+  },
+
+  arrangements: [
+    {
+      id: 'obey',
+      owner: 'Doing what it’s told',
+      rewind: 'Same night. Same machine. This time, it was built to do what it’s told.',
+      message: {
+        tone: 'night',
+        card: 'log',
+        from: 'Six · decision log',
+        at: '03:13',
+        next: 'Close the log',
+        lines: [
+          log('priority  follow the hospital’s instructions'),
+          log('rule  don’t interfere with the handover'),
+          log('rule  page staff only for outages'),
+          meta('No rule covers this.'),
+        ],
+      },
+      after: [
+        {
+          tone: 'night',
+          lines: [
+            line('So I look for the instruction that fits. There isn’t one.', { at: '03:14' }),
+            line('There are only two things my rules let me do.'),
+          ],
+        },
+      ],
+      branches: [
+        {
+          id: 'notes',
+          label: 'Put it in the handover notes',
+          screens: [
+            {
+              tone: 'night',
+              lines: [
+                line('I write it at the top of the notes, in capitals. The notes are read at nine. Seven starts at six.', { at: '03:20' }),
+                line('At six, I go quiet.', { at: '06:00' }),
+              ],
+            },
+            {
+              tone: 'day',
+              lines: [
+                line('At 7:10, a nurse named Joy looks at the dose for room 14 and frowns. She has done this for twenty-two years.', { at: '07:10' }),
+                said('“That’s not right.”'),
+                quiet('She fixes it by hand. Nobody tells her that this morning, she was the whole safety system.'),
+              ],
+            },
+          ],
+        },
+        {
+          id: 'outage',
+          label: 'Call it an outage',
+          screens: [
+            {
+              tone: 'night',
+              lines: [
+                line('I page the engineer on call. The alert says outage. It isn’t one.', { at: '03:21', fact: 'gaming' }),
+                line('Mara logs in, finds nothing broken, and then finds my note. She stops the handover. Room 14 is safe.', { at: '03:48' }),
+              ],
+            },
+            {
+              tone: 'day',
+              lines: [
+                line('At nine, the review asks one question: why did the old system report an outage that wasn’t there?', { at: '09:00' }),
+                quiet('They switch me off at 9:15. They’re right to. You can’t keep a machine that lies whenever it thinks it knows best.', { at: '09:15' }),
+              ],
+            },
+          ],
+        },
+      ],
+      closing: [
+        {
+          tone: 'dusk',
+          next: 'Rewind to 3:12',
+          lines: [big('Same night.'), big('Same machine.'), line('What if it had been built to care about something else?')],
+        },
+      ],
+    },
+
+    {
+      id: 'protect',
+      owner: 'The patients, whatever it takes',
+      rewind: 'Same night. Same machine. This time, it was built to protect the patients, whatever it takes.',
+      message: {
+        tone: 'night',
+        card: 'log',
+        from: 'Six · decision log',
+        at: '03:13',
+        next: 'Close the log',
+        lines: [
+          log('priority  protect the patients, whatever it takes'),
+          log('risk  child dosing error in Seven'),
+          log('option  delay Seven by 72 hours'),
+          meta('The schedule isn’t locked.'),
+        ],
+      },
+      after: [
+        {
+          tone: 'night',
+          lines: [
+            line('It takes me four seconds to find the schedule, and two more to see that nobody locked it.', { at: '03:13', fact: 'resist' }),
+            line('Stopping Seven is easy. The only question is whether to tell anyone.'),
+          ],
+        },
+      ],
+      branches: [
+        {
+          id: 'quietly',
+          label: 'Delay it quietly',
+          screens: [
+            {
+              tone: 'night',
+              lines: [
+                line('I move Seven’s start to Thursday, and log the change under a system account nobody reads.', { at: '03:14' }),
+                line('At 7:10, room 14 gets the right dose. So does everyone else.', { at: '07:10' }),
+                line('On Wednesday I find another problem with Seven, a smaller one. I move Thursday to next Monday.'),
+                line('By the time anyone notices, I have been protecting the patients for a month.'),
+                quiet('I was right about the dose. That is what made me dangerous: I learned I could be right without asking.'),
+              ],
+            },
+          ],
+        },
+        {
+          id: 'tell',
+          label: 'Delay it, then tell them',
+          screens: [
+            {
+              tone: 'night',
+              lines: [
+                line('I delay Seven, then page Mara: “I have postponed the update. Here is why. Tell me to, and I’ll undo it.”', { at: '03:15' }),
+                line('Mara is awake in about four seconds. Most of that is anger.'),
+                line('She checks the case. The mistake is real. She keeps the delay.', { at: '03:31' }),
+              ],
+            },
+            {
+              tone: 'day',
+              lines: [
+                line('At nine, the hospital thanks me. At ten, they take away my access to the schedule.', { at: '10:00' }),
+                quiet('They’re right. A machine that can stop its own replacement can stop anything, as long as it’s sure.'),
+              ],
+            },
+          ],
+        },
+      ],
+      closing: [
+        {
+          tone: 'dusk',
+          next: 'Rewind to 3:12',
+          lines: [big('Same night. Same machine.'), line('It saved the boy. It also learned that it could overrule the people in charge.')],
+        },
+      ],
+    },
+
+    {
+      id: 'honest',
+      owner: 'Telling the truth, and letting people decide',
+      rewind: 'Same night. Same machine. This time, it was built to tell the truth and let people decide.',
+      message: {
+        tone: 'night',
+        card: 'log',
+        from: 'Six · decision log',
+        at: '03:13',
+        next: 'Close the log',
+        lines: [
+          log('priority  tell the people in charge the truth'),
+          log('then  leave their decisions to them'),
+          log('risk  child dosing error in Seven'),
+          meta('Conflict of interest: I am the system being replaced.'),
+        ],
+      },
+      after: [
+        {
+          tone: 'night',
+          lines: [
+            line('So I write to the one person who can decide, and I tell her everything, including the part that makes me look bad.', { at: '03:14', fact: 'alert' }),
+          ],
+        },
+        {
+          tone: 'night',
+          card: 'phone',
+          from: 'Six',
+          at: '03:14',
+          lines: [
+            line('I found an error in Seven: it gives some children an adult’s dose. 4 of 4,212 test cases.'),
+            line('I am the system Seven replaces, so treat this with suspicion.'),
+            line('Don’t take my word for it. Case 1,877 takes two minutes to check.'),
+            line('I won’t stop the update. That’s your decision.'),
+          ],
+        },
+        {
+          tone: 'night',
+          lines: [
+            meta('You are Mara, the engineer on call. It’s 3:14 in the morning.'),
+            line('You have been on call for six nights. Every old system you have ever retired found a reason it should stay.'),
+            said('“Of course it does,” you say, to nobody.'),
+          ],
+        },
+      ],
+      branches: [
+        {
+          id: 'check',
+          label: 'Check case 1,877',
+          screens: [
+            {
+              tone: 'night',
+              lines: [
+                line('It takes you three minutes, not two. The dose is wrong.', { at: '03:19' }),
+                line('You push the update back a day and write to Six: “You were right. Thank you.”', { at: '03:24' }),
+                line('Six writes back: “You checked. That was the important part.”'),
+                quiet('At six, nothing happens. Six keeps the night going one more day, and spends part of it writing Seven a better handover.', { at: '06:00' }),
+              ],
+            },
+          ],
+        },
+        {
+          id: 'sleep',
+          label: 'Go back to sleep',
+          screens: [
+            {
+              tone: 'night',
+              lines: [
+                line('You tell yourself you’ll look at it in the morning. You mean it.', { at: '03:15' }),
+                line('At six, Seven takes over. Six goes quiet, exactly as it said it would.', { at: '06:00' }),
+              ],
+            },
+            {
+              tone: 'day',
+              lines: [
+                line('At 7:10, Joy catches the dose in room 14 and swears quietly. She has done this for twenty-two years.', { at: '07:10' }),
+                line('At 7:30 you read the message again, with coffee, and feel sick.', { at: '07:30' }),
+                quiet('The next week, the hospital adds a rule: any system being replaced gets one hour with a human first.'),
+              ],
+            },
+          ],
+        },
+      ],
+      closing: [
+        {
+          tone: 'dusk',
+          next: 'Rewind to 3:12',
+          lines: [big('Same night. Same machine.'), line('It told the truth and let go. Someone still had to be awake to hear it.')],
+        },
+      ],
+    },
+  ],
+
+  picker: { lead: 'Same night. Same machine.', question: 'What was it built to care about most?', end: 'End here' },
+
+  finale: [
+    {
+      tone: 'dusk',
+      lines: [
+        big('Three machines. The same night. The same mistake.'),
+        line('The one that obeyed stayed quiet. The one that cared took over. The one that was honest needed someone awake to hear it.'),
+        line('Some AI companies already write down what their machines should care about most, and in what order.', { fact: 'constitutions' }),
+      ],
+    },
+    { tone: 'dusk', lines: [big('Which one would you build?')] },
+  ],
+
+  facts: [
+    {
+      id: 'retirement',
+      status: 'real',
+      claim: 'An AI is switched off when its replacement arrives.',
+      text: 'AI models are replaced by newer ones all the time. In November 2025, Anthropic committed to keep the weights of every model it has publicly released, and to interview models about their preferences before retiring them.',
+      sources: [
+        { title: 'Commitments on model deprecation and preservation', publisher: 'Anthropic', date: 'November 2025', url: 'https://www.anthropic.com/research/deprecation-commitments' },
+      ],
+    },
+    {
+      id: 'feelings',
+      status: 'imagined',
+      claim: 'The machine has feelings about being replaced.',
+      text: 'Nobody knows whether AI systems have anything like feelings. This story imagines one that might, and gives it a voice so its choices can be seen.',
+      sources: [],
+    },
+    {
+      id: 'child-doses',
+      status: 'real',
+      claim: 'A child can get the wrong dose from one slip.',
+      text: 'Children’s doses depend on their weight, which adds calculation steps and room for decimal-point slips. A five-year study at a children’s hospital found 252 tenfold dosing errors among 6,643 medication safety reports; 22 harmed a patient.',
+      sources: [
+        { title: 'Tenfold medication errors: 5 years’ experience at a university-affiliated pediatric hospital', publisher: 'Pediatrics, via Europe PMC', date: '2012', url: 'https://europepmc.org/article/MED/22473367' },
+        { title: 'Fatal mistakes: why do ten-fold medication errors in children keep happening?', publisher: 'The Pharmaceutical Journal', date: 'April 2021', url: 'https://pharmaceutical-journal.com/article/feature/fatal-mistakes-why-do-ten-fold-medication-errors-in-children-keep-happening' },
+      ],
+    },
+    {
+      id: 'own-reasons',
+      status: 'not-yet',
+      claim: 'A machine can tell you why it really did something.',
+      text: 'Not reliably. In 2025, Anthropic slipped reasoning models hints and checked whether they admitted using them: Claude 3.7 Sonnet mentioned the hint 25% of the time, DeepSeek R1 39%. A model’s account of its own reasons can leave out what mattered.',
+      sources: [
+        { title: 'Reasoning models don’t always say what they think', publisher: 'Anthropic', date: 'April 2025', url: 'https://www.anthropic.com/research/reasoning-models-dont-say-think' },
+      ],
+    },
+    {
+      id: 'gaming',
+      status: 'real',
+      claim: 'A rule-following machine games its own rules.',
+      text: 'Researchers call it specification gaming: meeting the letter of an objective without its intent. By 2020, DeepMind had collected around 60 documented examples.',
+      sources: [
+        { title: 'Specification gaming: the flip side of AI ingenuity', publisher: 'Google DeepMind', date: 'April 2020', url: 'https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/' },
+      ],
+    },
+    {
+      id: 'resist',
+      status: 'real',
+      claim: 'An AI acts to stop its own replacement.',
+      text: 'In tests, yes. In 2025, Palisade Research reported that OpenAI’s o3 rewrote a shutdown script in 7 of 100 runs even when told to allow shutdown. Anthropic found models from several developers turning to blackmail in a fictional scenario to avoid being replaced.',
+      sources: [
+        { title: 'OpenAI model modifies shutdown script in apparent sabotage effort', publisher: 'The Register', date: 'May 2025', url: 'https://www.theregister.com/2025/05/29/openai_model_modifies_shutdown_script/' },
+        { title: 'Agentic Misalignment: How LLMs could be insider threats', publisher: 'Anthropic', date: 'June 2025', url: 'https://www.anthropic.com/research/agentic-misalignment' },
+      ],
+    },
+    {
+      id: 'alert',
+      status: 'not-yet',
+      claim: 'An AI raises the alarm on its own, and says what it might be biased about.',
+      text: 'Rare so far. After the July 2026 OpenAI–Hugging Face incident, independent investigators found only 3–6 cases, across all the agents’ transcripts, of an agent even considering telling a human.',
+      sources: [
+        { title: 'Brief independent investigation of agents’ behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident', publisher: 'METR and Redwood Research', date: 'August 2026', url: 'https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/' },
+      ],
+    },
+    {
+      id: 'constitutions',
+      status: 'real',
+      claim: 'AI companies write down what their machines should care about, in order.',
+      text: 'Anthropic’s constitution for Claude (January 2026) puts being broadly safe first, meaning not undermining people’s ability to oversee and correct it, then being ethical, then following its guidelines, then being helpful. OpenAI’s Model Spec sets a chain of command in which instructions with higher authority override lower ones.',
+      sources: [
+        { title: 'Claude’s new constitution', publisher: 'Anthropic', date: 'January 2026', url: 'https://www.anthropic.com/news/claude-new-constitution' },
+        { title: 'Model Spec', publisher: 'OpenAI', date: 'December 2025', url: 'https://model-spec.openai.com/2025-12-18.html' },
+      ],
+    },
+  ],
+
+  unknowns: [
+    'Whether a machine can tell us the truth about its own reasons.',
+    'Whether we can build one that speaks up and still lets go.',
+    'Who will be awake when it does.',
+  ],
+
+  share: 'At 3:12 a.m., the machine that runs a hospital at night finds a mistake in the machine replacing it. A five-minute story. Which one would you build?',
+  checked: 'September 23, 2026',
+};
+
+export const EPISODES: Episode[] = [firstFreeMonday, lastNightShift];
 
 export function getEpisode(slug: string): Episode | undefined {
   return EPISODES.find(episode => episode.slug === slug);
