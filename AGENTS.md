@@ -10,8 +10,9 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 # Working on Ctrl AI
 
-Ctrl AI is a public record of how AI behaves, kept by the people who use it. Read `README.md`, then
-`docs/ARCHITECTURE.md`, before changing anything consequential.
+Ctrl AI publishes Other Tomorrows: five-minute interactive stories about who controls AI. The public record of how AI
+behaves that it started with stays online. Read `README.md`, then `docs/ARCHITECTURE.md`, before changing anything
+consequential.
 
 ## Rules that are not negotiable
 
@@ -27,7 +28,11 @@ Ctrl AI is a public record of how AI behaves, kept by the people who use it. Rea
 - **Library entries must be verified by opening the URL.** Summaries in your own words, calm and factual, with a
   caveat when the source is an interested party.
 - **Safe tests only.** No jailbreaks, no requests for harmful content, nothing that breaks a chat app's rules.
-- **No trackers, no ads, no third-party scripts.** Fonts are self-hosted.
+- **No ads. Analytics only with consent.** The one third-party script is Google Analytics (`lib/analytics.ts`), and it
+  loads only after a visitor says yes. Keep the privacy notes on `/about` true when this changes. Fonts are self-hosted.
+- **Fiction says it's fiction.** In Other Tomorrows, a line marked as a fact needs a source you opened, said in your own
+  words and dated. Nothing is presented as real that hasn't happened; when it does, the fact becomes `real` with `since`.
+- **Every story plays with the keyboard alone:** arrows, space and return; ctrl+Z rewinds.
 
 ## Practicalities
 

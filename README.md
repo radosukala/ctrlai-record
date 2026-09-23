@@ -1,4 +1,17 @@
-# Ctrl AI — the public record of how AI behaves
+# Ctrl AI — Other Tomorrows
+
+**ctrlai.com now publishes Other Tomorrows:** five-minute interactive stories about living with AI. Each one plays a
+single morning, then rewinds it and changes who's in control. The future has no undo key; these stories do (ctrl+Z).
+
+- Episodes are scripts in [content/tomorrows.ts](content/tomorrows.ts). The words and the facts live there; no code needed to edit them.
+- The player is [components/tomorrows/](components/tomorrows/) and [lib/tomorrows.ts](lib/tomorrows.ts). It plays with a tap, a click or the keyboard alone.
+- Every line that leans on the real world carries a fact: real, not yet, or imagined, with sources opened and dated.
+  When reality catches up with a line, its fact changes to `real` with the date.
+- [tests/tomorrows.test.ts](tests/tomorrows.test.ts) plays every path and checks every fact has a source.
+
+Everything below describes the public record Ctrl AI started with. It stays online at [/record](https://ctrlai.com/record).
+
+## The public record of how AI behaves
 
 **ctrlai.com** turns everyday AI use into public evidence. Anyone can run a one-minute test on the AI they already use,
 add the chat's public share link as a receipt, and have two strangers check it. Verified runs build a record of how

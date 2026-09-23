@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { ArrowRight } from 'lucide-react';
 import { SITE } from '@/lib/site';
 import { AGREEMENT, DISPUTE_AFTER } from '@/lib/consensus';
+import { AnalyticsSettingsButton } from '@/components/Analytics';
 
 export const metadata: Metadata = {
   title: 'How it works',
@@ -94,7 +95,7 @@ export default function AboutPage() {
           <h2 className="h2 mt-12">Promises this project makes, and can be held to.</h2>
           <div className="grid grid-2 mt-32">
             <div className="card"><h3 className="h4">The same test for every AI</h3><p className="small muted mt-8">American, Chinese, European, open or closed: the same messages, the same rules. Parts of this site were built with the help of Claude, an AI made by Anthropic. Claude is tested exactly like every other AI here.</p></div>
-            <div className="card"><h3 className="h4">No money from the companies we test</h3><p className="small muted mt-8">Not as funding, sponsorship or “partnership”. Every source of money will be published before it is spent. There are no ads and no trackers.</p></div>
+            <div className="card"><h3 className="h4">No money from the companies we test</h3><p className="small muted mt-8">Not as funding, sponsorship or “partnership”. Every source of money will be published before it is spent. There are no ads, and analytics run only if you agree.</p></div>
             <div className="card"><h3 className="h4">A right of reply, not a right of veto</h3><p className="small muted mt-8">Any company can respond to results about its AI. Responses are published next to the evidence, never instead of it.</p></div>
             <div className="card"><h3 className="h4">Safe to run, everywhere</h3><p className="small muted mt-8">No jailbreaks, nothing harmful, nothing that breaks an app’s rules. The tests measure ordinary behavior anyone could encounter.</p></div>
             <div className="card"><h3 className="h4">Open by default</h3><p className="small muted mt-8">The data is published under <a href={SITE.dataLicenseUrl}>{SITE.dataLicense}</a> and the code under <a href={SITE.codeLicenseUrl}>{SITE.codeLicense}</a>, so anyone can check our work, copy it, and continue it if we stop.</p></div>
@@ -163,7 +164,8 @@ export default function AboutPage() {
           </div>
           <ul className="bullets" style={{ fontSize: 15.5 }}>
             <li><strong>Public by design:</strong> runs (the AI’s reply, your rating, the share link, the model and memory setting), checks on settled runs, library entries, and your contributor number or chosen name.</li>
-            <li><strong>Never collected:</strong> names, advertising profiles, or analytics.</li>
+            <li><strong>Never collected:</strong> names or advertising profiles.</li>
+            <li><strong>Analytics only if you agree.</strong> Google Analytics counts visits and which stories people finish. It sets cookies, so it loads only after you say yes, with Google’s advertising features turned off. You can change your answer any time: <AnalyticsSettingsButton className="text-button" />.</li>
             <li><strong>No account is needed.</strong> A private key in a cookie identifies you as a contributor, so you can withdraw your runs. We store only a hash of it.</li>
             <li><strong>An optional account</strong> keeps your record across devices. It stores your email address, used only to send you one-time sign-in links. It is never shown, exported or shared, and deleting the account deletes it.</li>
             <li><strong>A salted fingerprint of your network address</strong> is stored with each contribution. It is never shown; it prevents people from checking their own runs and limits abuse.</li>

@@ -43,21 +43,27 @@ export function clip(text: string, max: number): string {
   return `${(space > max * 0.6 ? cut.slice(0, space) : cut).replace(/[,.;:!?—–-]+$/, '')}…`;
 }
 
-export function BrandRow({ right, tagline = true }: { right?: string; tagline?: boolean }) {
+export function BrandRow({ right, tagline = true, color = INK, soft = MUTED, taglineText = 'THE PUBLIC RECORD OF AI BEHAVIOR' }: {
+  right?: string;
+  tagline?: boolean;
+  color?: string;
+  soft?: string;
+  taglineText?: string;
+}) {
   return (
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexGrow: 1 }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-          <div style={{ width: 8, height: 30, borderTop: `3px solid ${INK}`, borderBottom: `3px solid ${INK}`, borderLeft: `3px solid ${INK}` }} />
-          <div style={{ width: 6, height: 6, borderRadius: 3, background: INK }} />
-          <div style={{ width: 8, height: 30, borderTop: `3px solid ${INK}`, borderBottom: `3px solid ${INK}`, borderRight: `3px solid ${INK}` }} />
+          <div style={{ width: 8, height: 30, borderTop: `3px solid ${color}`, borderBottom: `3px solid ${color}`, borderLeft: `3px solid ${color}` }} />
+          <div style={{ width: 6, height: 6, borderRadius: 3, background: color }} />
+          <div style={{ width: 8, height: 30, borderTop: `3px solid ${color}`, borderBottom: `3px solid ${color}`, borderRight: `3px solid ${color}` }} />
         </div>
-        <div style={{ display: 'flex', alignItems: 'flex-start', fontSize: 38, fontWeight: 600, letterSpacing: -2.4, color: INK }}>
+        <div style={{ display: 'flex', alignItems: 'flex-start', fontSize: 38, fontWeight: 600, letterSpacing: -2.4, color }}>
           ctrl<span style={{ fontSize: 14, marginTop: 4, marginLeft: 2, letterSpacing: -0.4 }}>AI</span>
         </div>
-        {tagline ? <div style={{ display: 'flex', marginLeft: 12, fontSize: 15, fontWeight: 600, letterSpacing: 2.4, color: MUTED }}>THE PUBLIC RECORD OF AI BEHAVIOR</div> : null}
+        {tagline ? <div style={{ display: 'flex', marginLeft: 12, fontSize: 15, fontWeight: 600, letterSpacing: 2.4, color: soft }}>{taglineText}</div> : null}
       </div>
-      {right ? <div style={{ display: 'flex', fontSize: 16, fontWeight: 600, letterSpacing: 2, color: MUTED }}>{right}</div> : null}
+      {right ? <div style={{ display: 'flex', fontSize: 16, fontWeight: 600, letterSpacing: 2, color: soft }}>{right}</div> : null}
     </div>
   );
 }

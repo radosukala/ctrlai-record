@@ -6,12 +6,15 @@ import '@fontsource/instrument-serif/400.css';
 import '@fontsource/instrument-serif/400-italic.css';
 import './globals.css';
 import { SiteFooter, SiteHeader } from '@/components/SiteChrome';
+import { ChromeGate } from '@/components/ChromeGate';
+import { Analytics } from '@/components/Analytics';
+import { SERIES } from '@/content/tomorrows';
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: { default: 'Ctrl AI — the public record of how AI behaves', template: '%s — Ctrl AI' },
-  description: SITE.description,
+  title: { default: 'Ctrl AI · Other Tomorrows', template: '%s — Ctrl AI' },
+  description: SERIES.description,
   openGraph: { siteName: SITE.name, type: 'website' },
   twitter: { card: 'summary_large_image' },
 };
@@ -23,9 +26,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <a href="#main" className="skip-link">Skip to content</a>
-        <SiteHeader />
+        <ChromeGate><SiteHeader /></ChromeGate>
         <main id="main">{children}</main>
-        <SiteFooter />
+        <ChromeGate><SiteFooter /></ChromeGate>
+        <Analytics />
       </body>
     </html>
   );

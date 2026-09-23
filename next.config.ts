@@ -18,6 +18,9 @@ const config: NextConfig = {
       './node_modules/@fontsource/instrument-serif/files/instrument-serif-latin*-400-*.woff',
     ],
   },
+  async redirects() {
+    return [{ source: '/tomorrows', destination: '/', permanent: false }];
+  },
   async headers() {
     return [{ source: '/(.*)', headers: securityHeaders }];
   },

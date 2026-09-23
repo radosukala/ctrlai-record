@@ -398,3 +398,17 @@ table.data td.num-cell { font-variant-numeric: tabular-nums; white-space: nowrap
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+/* ——— Other Tomorrows banner on the record's pages ——— */
+.story-banner { background: var(--forest-2); color: var(--paper); font-size: 14px; }
+.story-banner-inner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px 16px; max-width: var(--shell); margin: 0 auto; padding: 9px var(--gutter); }
+.story-banner a { color: var(--acid); font-weight: 600; text-decoration: none; white-space: nowrap; }
+.story-banner a:hover { text-decoration: underline; }
+
+/* ——— Analytics: asked once, only loaded after a yes ——— */
+.consent { position: fixed; left: 16px; bottom: 16px; z-index: 60; width: min(380px, calc(100% - 32px)); padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); color: var(--ink); box-shadow: 0 12px 32px rgba(27, 43, 34, 0.22); font-size: 14px; line-height: 1.5; }
+.consent-actions { display: flex; gap: 8px; margin-top: 12px; }
+.consent-actions button { padding: 9px 15px; border: 1px solid var(--line); border-radius: 999px; background: none; font-size: 14px; font-weight: 600; }
+.consent-actions .consent-yes { border-color: var(--forest); background: var(--forest); color: var(--paper); }
+@media (max-width: 640px) { .consent { width: auto; right: 88px; } }
+.footer-button, .text-button { padding: 0; border: 0; background: none; font: inherit; color: inherit; text-decoration: underline; text-underline-offset: 3px; }

@@ -4,6 +4,8 @@ import { Wordmark } from './Brand';
 import { NavLinks } from './NavLinks';
 import { AccountLink } from './AccountLink';
 import { SITE } from '@/lib/site';
+import { EPISODES } from '@/content/tomorrows';
+import { AnalyticsSettingsButton } from './Analytics';
 
 export const NAV = [
   { href: '/tests', label: 'Tests' },
@@ -17,6 +19,12 @@ export const NAV = [
 export function SiteHeader() {
   return (
     <header className="site-header">
+      <div className="story-banner">
+        <div className="story-banner-inner">
+          <span>New from Ctrl AI: <strong>Other Tomorrows</strong>, five-minute stories about who controls AI.</span>
+          <Link href={`/tomorrows/${EPISODES[0].slug}`}>Play the first one →</Link>
+        </div>
+      </div>
       <div className="shell">
         <Wordmark />
         <NavLinks items={NAV} />
@@ -77,7 +85,8 @@ export function SiteFooter() {
         <div className="footer-note">
           <span>Data: <a href={SITE.dataLicenseUrl}>{SITE.dataLicense}</a></span>
           <span>Code: <a href={SITE.repoUrl}>GitHub</a>, <a href={SITE.codeLicenseUrl}>{SITE.codeLicense}</a></span>
-          <span>No ads. No trackers. No money from the companies we test.</span>
+          <span>No ads. Analytics only if you agree. No money from the companies we test.</span>
+          <AnalyticsSettingsButton className="footer-button" />
         </div>
       </div>
     </footer>
