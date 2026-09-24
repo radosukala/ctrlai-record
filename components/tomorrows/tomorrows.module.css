@@ -189,6 +189,57 @@
 .logMeta { margin: 1em 0 0; font: 500 14px/1.4 var(--sans); color: var(--soft); animation: enter 0.4s ease backwards; }
 @keyframes arrive-soft { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 
+/* ——— A letter, kept for later ——— */
+.letter {
+  max-width: 660px;
+  margin: 0 0 1.6em;
+  padding: clamp(24px, 4vw, 42px) clamp(22px, 4.4vw, 48px);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: #fffdf7;
+  color: var(--ink);
+  box-shadow: 0 22px 44px -32px rgba(38, 59, 49, 0.45);
+  animation: arrive-soft 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+.letterDate { margin-bottom: 20px; text-align: right; font: italic 400 17px/1.4 var(--serif); color: var(--muted); }
+.letterLine { margin: 0 0 0.7em; font: 400 clamp(20px, 2.3vw, 26px) / 1.45 var(--serif); text-wrap: pretty; animation: enter 0.45s ease backwards; }
+.letterMeta { margin: 1.4em 0 0; text-align: right; font: 500 13px/1.4 var(--sans); letter-spacing: 0.02em; color: var(--muted); animation: enter 0.45s ease backwards; }
+
+/* ——— A front page ——— */
+.news {
+  max-width: 760px;
+  margin: 0 0 1.6em;
+  padding: 14px 0 22px;
+  border-top: 5px double var(--fg);
+  border-bottom: 1px solid var(--edge);
+  animation: arrive-soft 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+.newsHead {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--edge);
+  font: 600 12px/1.3 var(--sans);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--soft);
+}
+.newsHeadline { margin: 0 0 0.25em; font: 400 clamp(48px, 7.6vw, 104px) / 0.94 var(--serif); letter-spacing: -0.03em; text-wrap: balance; animation: enter 0.5s ease backwards; }
+.newsLine { margin: 0 0 0.5em; max-width: 30em; font: 400 clamp(20px, 2.3vw, 27px) / 1.35 var(--serif); text-wrap: pretty; animation: enter 0.45s ease backwards; }
+.newsMeta { margin: 1em 0 0; font: 500 13px/1.4 var(--sans); color: var(--soft); animation: enter 0.45s ease backwards; }
+
+/* ——— What a censor took out ——— */
+.redacted {
+  display: inline-block;
+  width: 4.4em;
+  height: 0.84em;
+  margin: 0 0.06em;
+  vertical-align: -0.08em;
+  border-radius: 1px;
+  background: currentColor;
+}
+
 /* ——— Facts, marked where the story leans on the real world ——— */
 .fact {
   display: inline-block;
@@ -332,7 +383,7 @@
 :global(html[data-consent-open]) .hint { display: none; }
 
 /* ——— Rewind ——— */
-.rewinding .line, .rewinding .phone, .rewinding .logCard, .rewinding .next, .rewinding .choices {
+.rewinding .line, .rewinding .phone, .rewinding .logCard, .rewinding .letter, .rewinding .news, .rewinding .next, .rewinding .choices {
   animation: out 0.55s cubic-bezier(0.5, 0, 0.8, 0.3) forwards;
 }
 @keyframes out { to { opacity: 0; transform: translateY(-22px); } }

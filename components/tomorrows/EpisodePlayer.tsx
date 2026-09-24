@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useReducer, useRef, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
-import type { Episode, Fact, FactStatus, Line, LineStyle } from '@/content/tomorrows';
+import type { Episode, Fact, FactStatus, Line, LineStyle, Screen } from '@/content/tomorrows';
 import {
   clockAt, factsById, fromMinutes, initialState, reducerFor, screensFor, toMinutes, type PlayerState,
 } from '@/lib/tomorrows';
@@ -18,6 +18,8 @@ const LINE_CLASS: Record<LineStyle, string> = {
 const NEXT_KEYS = new Set([' ', 'Enter', 'ArrowRight', 'ArrowDown', 'PageDown']);
 const MOVE_KEYS = new Set(['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight']);
 const BACK_KEYS = new Set(['ArrowUp', 'ArrowLeft']);
+const REMOVED = '⟦removed⟧';
+type Card = NonNullable<Screen['card']>;
 
 /** The buttons the arrow keys move between: a choice, the owners, or the actions at the end. */
 function navItems(): HTMLElement[] {
@@ -67,6 +69,7 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
     ? episode.start
     : state.mode === 'run' || state.mode === 'rewinding' ? clockAt(screens, state.screen, state.shown, episode.start) : null;
   const clock = clockOverride ?? storyClock;
+  const years = episode.clock === 'year';
 
   useEffect(() => {
     setKeyboard(window.matchMedia('(hover: hover) and (pointer: fine)').matches);
@@ -161,15 +164,16 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
       dispatch({ type: 'rewound' });
       return;
     }
-    const from = toMinutes(rewindFrom);
-    const to = toMinutes(episode.start);
+    const from = years ? Number(rewindFrom) : toMinutes(rewindFrom);
+    const to = years ? Number(episode.start) : toMinutes(episode.start);
     const duration = 1100;
     let frame = 0;
     let started = 0;
     const tick = (now: number) => {
       started ||= now;
       const t = Math.min(1, (now - started) / duration);
-      setClockOverride(fromMinutes(from + (to - from) * (1 - Math.pow(1 - t, 3))));
+      const value = from + (to - from) * (1 - Math.pow(1 - t, 3));
+      setClockOverride(years ? String(Math.round(value)) : fromMinutes(value));
       if (t < 1) frame = requestAnimationFrame(tick);
       else {
         setClockOverride(null);
@@ -178,7 +182,7 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
     };
     frame = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frame);
-  }, [rewindFrom, episode.start]);
+  }, [rewindFrom, episode.start, years]);
 
   // Count the moments that say whether the story works: begun, chosen, rewound, finished. Only with consent.
   const previous = useRef<PlayerState>(state);
@@ -245,7 +249,16 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
     return <><span className={styles.logLabel}>{label}</span>{rest.join('  ')}</>;
   }
 
-  function renderLine(line: Line, index: number, card?: 'phone' | 'log') {
+  /** Words a censor removed arrive as black bars. */
+  function censored(text: string) {
+    const parts = text.split(REMOVED);
+    if (parts.length === 1) return text;
+    return parts.map((part, index) => (
+      <span key={index}>{part}{index < parts.length - 1 ? <span className={styles.redacted} role="img" aria-label="removed" /> : null}</span>
+    ));
+  }
+
+  function renderLine(line: Line, index: number, card?: Card) {
     const phone = card === 'phone';
     const fact = line.fact ? facts.get(line.fact) : undefined;
     const noteId = `${screen?.key}-${index}-note`;
@@ -255,12 +268,16 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
       ? line.style === 'meta' ? styles.phoneMeta : styles.phoneLine
       : card === 'log'
         ? line.style === 'meta' ? styles.logMeta : styles.logLine
+      : card === 'letter'
+        ? line.style === 'meta' ? styles.letterMeta : styles.letterLine
+      : card === 'news'
+        ? line.style === 'meta' ? styles.newsMeta : line.style === 'big' ? styles.newsHeadline : styles.newsLine
       : [styles.line, line.style ? LINE_CLASS[line.style] : '', past ? styles.past : ''].filter(Boolean).join(' ');
     const rewindDelay = rewinding && !card ? { animationDelay: `${(lastIndex - index) * 70}ms` } : undefined;
     return (
       <div key={index}>
         <p className={className} style={rewindDelay} ref={index === lastIndex ? element => { newest.current = element; } : undefined}>
-          {card === 'log' || line.style === 'log' ? logText(line.text) : line.text}
+          {card === 'log' || line.style === 'log' ? logText(line.text) : censored(line.text)}
           {fact ? (
             <button
               type="button"
@@ -308,7 +325,7 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
             <span className={styles.seriesName}>Other Tomorrows</span>
           </div>
           <div className={styles.barRight}>
-            {clock ? <span className={styles.clock} aria-label={`Time in the story: ${clock}`}>{episode.day} {clock}</span> : null}
+            {clock ? <span className={styles.clock} aria-label={`${years ? 'Year' : 'Time'} in the story: ${clock}`}>{years ? clock : `${episode.day ?? ''} ${clock}`}</span> : null}
             <span className={styles.label}>Fiction</span>
           </div>
         </header>
@@ -349,6 +366,16 @@ export function EpisodePlayer({ episode, shareUrl }: { episode: Episode; shareUr
                 <div className={styles.logCard} role="group" aria-label={screen.from}>
                   <div className={styles.phoneHead}><span>{screen.from}</span><span>{screen.at}</span></div>
                   {lines.map((line, index) => renderLine(line, index, 'log'))}
+                </div>
+              ) : screen.card === 'letter' ? (
+                <div className={styles.letter} role="group" aria-label={`Letter: ${screen.from}`}>
+                  <div className={styles.letterDate}>{screen.from}</div>
+                  {lines.map((line, index) => renderLine(line, index, 'letter'))}
+                </div>
+              ) : screen.card === 'news' ? (
+                <div className={styles.news} role="group" aria-label={`${screen.from}, ${screen.at}`}>
+                  <div className={styles.newsHead}><span>{screen.from}</span><span>{screen.at}</span></div>
+                  {lines.map((line, index) => renderLine(line, index, 'news'))}
                 </div>
               ) : (
                 lines.map((line, index) => renderLine(line, index))

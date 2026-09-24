@@ -67,14 +67,19 @@ test('the first reading opens cold, and a replay says who owns the machine this 
 test('the story clock follows what the reader has seen', () => {
   for (const episode of EPISODES) {
     const run = buildRun(episode, episode.arrangements[0].id, { first: true, branchId: null });
-    assert.equal(clockAt(run, 0, 1, episode.start), episode.start);
+    assert.equal(clockAt(run, 0, 1, episode.start), run[0].lines[0].at ?? run[0].at ?? episode.start);
     const message = run.findIndex(screen => screen.message);
     assert.equal(clockAt(run, message, 1, episode.start), run[message].at);
-    for (const line of allLines(episode)) {
-      if (!line.at) continue;
-      const [hours, minutes] = line.at.split(':').map(Number);
-      assert.match(line.at, /^\d{2}:\d{2}$/);
-      assert.ok(hours < 24 && minutes < 60, `${line.at} is a time of day`);
+    const stamps = [...allLines(episode).map(line => line.at), ...allScreens(episode).map(screen => screen.at), episode.start];
+    for (const at of stamps) {
+      if (!at) continue;
+      if (episode.clock === 'year') {
+        assert.match(at, /^\d{4}$/, `${episode.slug}: ${at} is a year`);
+        continue;
+      }
+      const [hours, minutes] = at.split(':').map(Number);
+      assert.match(at, /^\d{2}:\d{2}$/);
+      assert.ok(hours < 24 && minutes < 60, `${at} is a time of day`);
     }
   }
 });

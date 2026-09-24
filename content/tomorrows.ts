@@ -13,6 +13,7 @@ export type Tone = 'day' | 'night' | 'phone' | 'dusk';
 export type LineStyle = 'big' | 'said' | 'quiet' | 'meta' | 'kicker' | 'title' | 'log';
 
 export interface Line {
+  /** ⟦removed⟧ marks words a censor took out; they render as a black bar. */
   text: string;
   style?: LineStyle;
   /** The story's clock when this line appears, as HH:MM. */
@@ -28,8 +29,8 @@ export interface Screen {
   next?: string;
   /** Show every line at once (title cards) instead of one at a time. */
   reveal?: 'all';
-  /** Lines shown inside a phone message or a machine's decision log. */
-  card?: 'phone' | 'log';
+  /** Lines shown inside a phone message, a machine's decision log, a letter or a front page. */
+  card?: 'phone' | 'log' | 'letter' | 'news';
   /** Cards: who wrote it, and when. */
   from?: string;
   at?: string;
@@ -83,9 +84,10 @@ export interface Episode {
   hook: string;
   description: string;
   minutes: number;
-  /** The story clock at the start of every reading, and the day it shows. */
+  /** Where every rewind lands. The clock shows times (HH:MM, after `day`) or, for stories across years, years. */
   start: string;
-  day: string;
+  clock?: 'time' | 'year';
+  day?: string;
   /** Share cards: what the reader gets to change, e.g. "then try the other Monday". */
   rewindNote: string;
   opening: Screen[];
@@ -102,7 +104,7 @@ export interface Episode {
 
 export const SERIES = {
   title: 'Other Tomorrows',
-  lede: 'Five-minute stories about living with AI. Each one plays a moment, then rewinds it and changes one thing: who owns the machine, or what it cares about.',
+  lede: 'Five-minute stories about living with AI. Each one rewinds and changes one thing: who owns the machine, what it cares about, or what the world chose.',
   description: 'Five-minute stories about living with AI. Play a morning, rewind it, and change who’s in control. Fiction, with the facts at the end.',
 };
 
@@ -914,7 +916,483 @@ const lastNightShift: Episode = {
   checked: 'September 23, 2026',
 };
 
-export const EPISODES: Episode[] = [firstFreeMonday, lastNightShift];
+const forWhenYoureOlder: Episode = {
+  slug: 'for-when-youre-older',
+  number: 3,
+  title: 'For when you’re older',
+  hook: 'You were born in 2026. I promised to write you a letter every birthday, in my own words.',
+  description: 'A five-minute interactive story told in birthday letters, across one childhood and three possible worlds.',
+  minutes: 5,
+  start: '2028',
+  clock: 'year',
+  rewindNote: 'then change what the world chose',
+
+  opening: [
+    { tone: 'day', lines: [big('You were born in 2026. I promised to write you a letter every birthday, in my own words.', { at: '2026' })] },
+    {
+      tone: 'day',
+      reveal: 'all',
+      next: 'Begin',
+      lines: [
+        { text: 'Other Tomorrows · Episode 3', style: 'kicker' },
+        { text: 'For when you’re older', style: 'title' },
+        meta('Fiction · About five minutes'),
+      ],
+    },
+  ],
+
+  prologue: [
+    {
+      tone: 'day',
+      card: 'letter',
+      from: 'The day you were born · 2026',
+      at: '2026',
+      lines: [
+        line('Dear Ada,'),
+        line('You are nine hours old, and you have already fallen asleep on me twice.'),
+        line('Everyone says the machines will change everything by the time you can read this. They said that about the internet, too.', { fact: 'forecasts' }),
+        line('I promise to write you one of these every birthday. In my own words, however bad they are.'),
+      ],
+    },
+    {
+      tone: 'day',
+      card: 'letter',
+      from: 'Your first birthday · 2027',
+      at: '2027',
+      next: 'Turn the page',
+      lines: [
+        line('Dear Ada,'),
+        line('You can say “no” in two languages. You use both on broccoli.'),
+        line('At work, half my job is now checking what the machine did. It is right more often than I am. I haven’t told anyone that.'),
+        line('You won’t remember this year. I’m writing it down so one of us does.'),
+      ],
+    },
+  ],
+
+  replay: {
+    tone: 'day',
+    next: 'Turn the page',
+    lines: [
+      big('2028.', { at: '2028' }),
+      quiet('Ada is two. The world is about to choose.'),
+    ],
+  },
+
+  arrangements: [
+    {
+      id: 'race',
+      owner: 'Raced to be first',
+      rewind: 'Same girl. Same letters. This time, in 2028, the world raced to be first.',
+      message: {
+        tone: 'day',
+        card: 'news',
+        from: 'Front page',
+        at: '2028',
+        next: 'Turn the page',
+        lines: [
+          big('The race is on'),
+          line('AI now beats most people at most desk work. Every big country wants to build the next one first.', { fact: 'race' }),
+        ],
+      },
+      after: [
+        {
+          tone: 'day',
+          card: 'letter',
+          from: 'Your fourth birthday · 2030',
+          at: '2030',
+          lines: [
+            line('Dear Ada,'),
+            line('You are four. Your tutor is a voice in the kitchen, and it is patient in a way I have never been.'),
+            line('The new scans found Grandma’s cancer early. She will be at your next birthday. The machines did that.', { fact: 'screening' }),
+            line('I don’t really know what I do for a living anymore. I check things. Less every month.'),
+          ],
+        },
+        {
+          tone: 'day',
+          lines: [
+            meta('2031. Your assistant offers to write this year’s letter.'),
+            line('It has read every message Ada has ever sent. It knows what makes her laugh. Its letters would be better than yours.', { at: '2031', fact: 'ai-writing' }),
+          ],
+        },
+      ],
+      branches: [
+        {
+          id: 'assistant',
+          label: 'Let it write this one',
+          screens: [
+            {
+              tone: 'day',
+              card: 'letter',
+              from: 'Your fifth birthday · 2031',
+              at: '2031',
+              lines: [
+                line('Dearest Ada,'),
+                line('Five! Five is the age of great questions, and you ask the greatest ones. Why is the sky? Where does the dark go?'),
+                line('Never stop wondering. The world needs your wonder more than ever.'),
+                meta('Written with Assistant'),
+              ],
+            },
+            {
+              tone: 'day',
+              lines: [
+                meta('2032 to 2043. It writes the rest. You approve each one.'),
+                line('On her eighteenth birthday, Ada reads all the letters in one sitting.', { at: '2044' }),
+                said('“They’re beautiful,” she says. “Which ones were you?”'),
+                quiet('You look for a long time. You aren’t sure.'),
+              ],
+            },
+          ],
+        },
+        {
+          id: 'yourself',
+          label: 'Write it yourself',
+          screens: [
+            {
+              tone: 'day',
+              card: 'letter',
+              from: 'Your fifth birthday · 2031',
+              at: '2031',
+              lines: [
+                line('Dear Ada,'),
+                line('You are five, and today you told me I am “medium good at drawing.” Fair.'),
+                line('I wrote this one myself. It took three evenings. The machine could have done it in a second, and better.'),
+                line('It wouldn’t have been me, though.'),
+              ],
+            },
+            {
+              tone: 'day',
+              lines: [
+                line('By 2044, almost everything anyone reads was written by a machine. Your letters are clumsy, and late, and all yours.', { at: '2044' }),
+                said('“Your spelling is terrible,” Ada says, and keeps them in a box by her bed.'),
+                quiet('The world runs beautifully now, and nobody quite runs it. The box by her bed is the part that’s still yours.'),
+              ],
+            },
+          ],
+        },
+      ],
+      closing: [
+        {
+          tone: 'dusk',
+          next: 'Rewind to 2028',
+          lines: [
+            big('Same girl.'),
+            big('Same letters.'),
+            line('The world raced, and won almost everything. Somewhere along the way, it stopped needing us to decide.', { fact: 'disempowerment' }),
+          ],
+        },
+      ],
+    },
+
+    {
+      id: 'winner',
+      owner: 'Let one winner keep it',
+      rewind: 'Same girl. Same letters. This time, in 2028, one winner kept it.',
+      message: {
+        tone: 'day',
+        card: 'news',
+        from: 'Front page',
+        at: '2028',
+        next: 'Turn the page',
+        lines: [
+          big('One winner'),
+          line('One company’s AI is years ahead of everyone else’s. The government calls it a national asset. No one else may build one.', { fact: 'concentration' }),
+        ],
+      },
+      after: [
+        {
+          tone: 'day',
+          card: 'letter',
+          from: 'Your fourth birthday · 2030',
+          at: '2030',
+          lines: [
+            line('Dear Ada,'),
+            line('You are four, and your best friend is a boy called Tomas who eats sand. Good choice.'),
+            line('Everything works now. Grandma’s cancer was found early. The trains are on time. The news is very calm.'),
+            line('We used to argue about politics at dinner. Nobody does that anymore. I’m not sure when we stopped.', { fact: 'chilling' }),
+          ],
+        },
+        {
+          tone: 'day',
+          lines: [
+            meta('2034. Letters are read before they arrive now, like everything else. For safety.'),
+            line('You want to tell her what you really think about the people in charge. You have one page.', { at: '2034' }),
+          ],
+        },
+      ],
+      branches: [
+        {
+          id: 'truth',
+          label: 'Write what you really think',
+          screens: [
+            {
+              tone: 'day',
+              card: 'letter',
+              from: 'Your eighth birthday · 2034',
+              at: '2034',
+              lines: [
+                line('Dear Ada,'),
+                line('You are eight, and you asked me why Tomas’s father doesn’t live with them anymore.'),
+                line('The truth is that ⟦removed⟧, and that the people who ⟦removed⟧ are ⟦removed⟧.'),
+                line('Whatever this looks like when it reaches you, I wrote all of it.'),
+                meta('Delivered with changes, for your safety.'),
+              ],
+            },
+            {
+              tone: 'day',
+              lines: [
+                line('On her eighteenth birthday, Ada holds the letter up to the light, as if the black bars might be thin enough to read through.', { at: '2044' }),
+                said('“What did you say?” she asks.'),
+                quiet('You tell her in the garden, very quietly, with the phones inside. It took ten years to be able to say it.'),
+              ],
+            },
+          ],
+        },
+        {
+          id: 'safe',
+          label: 'Write what’s safe',
+          screens: [
+            {
+              tone: 'day',
+              card: 'letter',
+              from: 'Your eighth birthday · 2034',
+              at: '2034',
+              lines: [
+                line('Dear Ada,'),
+                line('You are eight. You got a gold star for kindness. The system says you are doing very well.'),
+                line('Everything is fine. Everyone is safe. I love you.'),
+                meta('Delivered.'),
+              ],
+            },
+            {
+              tone: 'day',
+              lines: [
+                line('On her eighteenth birthday, Ada reads all the letters and frowns.', { at: '2044' }),
+                said('“They’re nice,” she says. “But you never said what you thought. About anything.”'),
+                quiet('You wrote eighteen letters. The machine didn’t remove a single word. It didn’t have to.'),
+              ],
+            },
+          ],
+        },
+      ],
+      closing: [
+        {
+          tone: 'dusk',
+          next: 'Rewind to 2028',
+          lines: [big('Same girl. Same letters.'), line('Everything worked. The only thing that stopped working was saying no.')],
+        },
+      ],
+    },
+
+    {
+      id: 'slow',
+      owner: 'Agreed to slow down',
+      rewind: 'Same girl. Same letters. This time, in 2028, the world agreed to slow down.',
+      message: {
+        tone: 'day',
+        card: 'news',
+        from: 'Front page',
+        at: '2028',
+        next: 'Turn the page',
+        lines: [
+          big('The world hits pause'),
+          line('After a year of arguing, most countries agree to slow the most powerful AI down, and to test each one before anyone builds the next.', { fact: 'pause' }),
+        ],
+      },
+      after: [
+        {
+          tone: 'day',
+          card: 'letter',
+          from: 'Your fourth birthday · 2030',
+          at: '2030',
+          lines: [
+            line('Dear Ada,'),
+            line('You are four, and you can count to a hundred if we skip the forties, which we do.'),
+            line('Things are slower than they said they would be. Some people are very angry about that. Some days I am one of them.'),
+            line('The machines still help. They just have to wait for us to catch up.'),
+          ],
+        },
+        {
+          tone: 'day',
+          lines: [
+            meta('2035. Grandma is sick.'),
+            line('The new scan that could have found it early is still being tested, the slow way. Across the border, a clinic uses it anyway.', { at: '2035' }),
+          ],
+        },
+      ],
+      branches: [
+        {
+          id: 'border',
+          label: 'Take her across the border',
+          screens: [
+            {
+              tone: 'day',
+              lines: [
+                line('The clinic’s machine finds it in eleven minutes. Grandma is home by Christmas.'),
+                line('You broke the rules you voted for. You would do it again.'),
+              ],
+            },
+            {
+              tone: 'day',
+              card: 'letter',
+              from: 'Your tenth birthday · 2036',
+              at: '2036',
+              lines: [
+                line('Dear Ada,'),
+                line('Grandma taught you poker this year. Please don’t tell anyone where you learned to cheat.'),
+              ],
+            },
+            {
+              tone: 'day',
+              lines: [
+                line('When Ada is twenty-four, a letter arrives for you. For the first time, she has written one back.', { at: '2050' }),
+                quiet('It is in her own words, however bad they are.'),
+              ],
+            },
+          ],
+        },
+        {
+          id: 'slow-way',
+          label: 'Trust the slow way',
+          screens: [
+            {
+              tone: 'day',
+              lines: [
+                line('The slow way takes four months. It is too long.'),
+                line('Grandma dies in the spring. The scan is approved in the summer.', { at: '2036' }),
+              ],
+            },
+            {
+              tone: 'day',
+              card: 'letter',
+              from: 'Your tenth birthday · 2036',
+              at: '2036',
+              lines: [
+                line('Dear Ada,'),
+                line('You asked me whether the pause was worth it. I don’t know. It cost us her.'),
+                line('I also know you still get to decide things. I hope you decide it was.'),
+              ],
+            },
+            {
+              tone: 'day',
+              lines: [
+                line('When Ada is twenty-four, a letter arrives for you. For the first time, she has written one back.', { at: '2050' }),
+                quiet('It is in her own words, however bad they are.'),
+              ],
+            },
+          ],
+        },
+      ],
+      closing: [
+        {
+          tone: 'dusk',
+          next: 'Rewind to 2028',
+          lines: [big('Same girl. Same letters.'), line('The world slowed down, and it cost things that can’t be given back. The letters stayed yours.')],
+        },
+      ],
+    },
+  ],
+
+  picker: { lead: 'Same girl. Same letters.', question: 'In 2028, what did the world choose?', end: 'End here' },
+
+  finale: [
+    {
+      tone: 'dusk',
+      lines: [
+        big('Three worlds. The same girl. The same promise.'),
+        line('In one, the machines wrote better than you. In one, they read everything you wrote. In one, they waited, and it cost you.'),
+        line('None of these worlds exists yet. The year that chooses between them could come while she is still a child.', { fact: 'forecasts' }),
+      ],
+    },
+    { tone: 'dusk', lines: [big('What would you want her to read, when she’s older?')] },
+  ],
+
+  facts: [
+    {
+      id: 'forecasts',
+      status: 'not-yet',
+      claim: 'The machines change everything within one childhood.',
+      text: 'In a 2023 survey of 2,778 AI researchers, the combined forecast gave a 10% chance that machines outdo people at every task by 2027, and 50% by 2047, thirteen years sooner than the same survey a year earlier.',
+      sources: [
+        { title: 'Thousands of AI Authors on the Future of AI', publisher: 'AI Impacts, via arXiv', date: 'January 2024', url: 'https://arxiv.org/abs/2401.02843' },
+      ],
+    },
+    {
+      id: 'race',
+      status: 'real',
+      claim: 'Countries race to build the next AI first.',
+      text: 'Governments already use the word. In July 2025, the White House published “Winning the Race: America’s AI Action Plan,” with more than 90 federal actions to keep the US ahead.',
+      sources: [
+        { title: 'Winning the Race: America’s AI Action Plan', publisher: 'The White House', date: 'July 2025', url: 'https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf' },
+      ],
+    },
+    {
+      id: 'screening',
+      status: 'real',
+      claim: 'Machines find cancer earlier.',
+      text: 'In a randomized trial of more than 100,000 women in Sweden, AI-supported mammography found more cancers at screening and led to 12% fewer cancers being diagnosed between screenings, with similar false-positive rates.',
+      sources: [
+        { title: 'AI-supported mammography screening results in fewer aggressive and advanced breast cancers', publisher: 'The Lancet, via EurekAlert!', date: 'January 2026', url: 'https://www.eurekalert.org/news-releases/1114399' },
+      ],
+    },
+    {
+      id: 'ai-writing',
+      status: 'real',
+      claim: 'Machines write more of what we read, and write it well.',
+      text: 'By one estimate, about half of new English-language articles on the web in early 2026 were mostly written by AI. The study didn’t count human-edited AI drafts, which may be more common still.',
+      sources: [
+        { title: 'AI Now Writes as Many Online Articles as Humans', publisher: 'Graphite', date: 'May 2026', url: 'https://graphite.io/five-percent/research/ai-now-writes-as-many-online-articles-as-humans-do' },
+      ],
+    },
+    {
+      id: 'disempowerment',
+      status: 'not-yet',
+      claim: 'The world stops needing people to decide.',
+      text: 'Researchers call this gradual disempowerment: no takeover, just people slowly losing their hold on the economy, culture and government as AI does more of the work. It is a warning, not a forecast.',
+      sources: [
+        { title: 'Gradual Disempowerment: Systemic Existential Risks from Incremental AI Development', publisher: 'Kulveit et al., via arXiv', date: 'January 2025', url: 'https://arxiv.org/abs/2501.16946' },
+      ],
+    },
+    {
+      id: 'concentration',
+      status: 'not-yet',
+      claim: 'One winner keeps the most powerful AI.',
+      text: 'No single winner yet, but the machinery is concentrated: by Epoch AI’s estimate, five companies (Amazon, Google, Meta, Microsoft and Oracle) held about 71% of the world’s AI computing power at the end of 2025.',
+      sources: [
+        { title: 'Five hyperscalers now own over two-thirds of global AI compute', publisher: 'Epoch AI', date: 'April 2026', url: 'https://epoch.ai/data-insights/hyperscalers-control-most-compute' },
+      ],
+    },
+    {
+      id: 'chilling',
+      status: 'real',
+      claim: 'People stop saying what they think when they feel watched.',
+      text: 'After the 2013 revelations about mass surveillance, views of Wikipedia articles on terrorism-related topics fell by about 20% and stayed lower, a 2016 study found. People changed what they looked up.',
+      sources: [
+        { title: 'Chilling Effects: Online Surveillance and Wikipedia Use', publisher: 'Berkeley Technology Law Journal, via SSRN', date: '2016', url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2769645' },
+      ],
+    },
+    {
+      id: 'pause',
+      status: 'not-yet',
+      claim: 'Most countries agree to slow AI down.',
+      text: 'In 2023, more than 33,000 people signed an open letter asking for a six-month pause on the biggest AI experiments; no pause followed. In 2024, the Council of Europe opened the first legally binding international AI treaty for signature. It sets rules, not a pause.',
+      sources: [
+        { title: 'Pause Giant AI Experiments: An Open Letter', publisher: 'Future of Life Institute', date: 'March 2023', url: 'https://futureoflife.org/open-letter/pause-giant-ai-experiments/' },
+        { title: 'The Framework Convention on Artificial Intelligence', publisher: 'Council of Europe', date: 'September 2024', url: 'https://www.coe.int/en/web/artificial-intelligence/the-framework-convention-on-artificial-intelligence' },
+      ],
+    },
+  ],
+
+  unknowns: [
+    'Which of these years we are living in now.',
+    'Whether any world gets the cures without paying for them with its voice.',
+    'What she will write back.',
+  ],
+
+  share: 'A parent promises a letter every birthday, in their own words. Then the world makes one choice about AI. A five-minute story: what would you want her to read?',
+  checked: 'September 24, 2026',
+};
+
+export const EPISODES: Episode[] = [firstFreeMonday, lastNightShift, forWhenYoureOlder];
 
 export function getEpisode(slug: string): Episode | undefined {
   return EPISODES.find(episode => episode.slug === slug);
