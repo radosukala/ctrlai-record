@@ -10,36 +10,29 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 # Working on Ctrl AI
 
-Ctrl AI publishes Other Tomorrows: five-minute interactive stories about who controls AI. The public record of how AI
-behaves that it started with stays online. Read `README.md`, then `docs/ARCHITECTURE.md`, before changing anything
-consequential.
+ctrlai.com is two things: **This week** (the week's events and seven picks on AI control, safety and alignment) and the
+**Hall of Fame** (at most 30 things a newcomer shouldn't miss). Read `README.md` and `docs/EDITING.md` before changing
+anything consequential. The earlier public record and Other Tomorrows are retired; don't bring their code back without
+being asked.
 
 ## Rules that are not negotiable
 
-- **Never fabricate** a run, a check, a contributor, a count, a quote or a source, including in seeds, demos,
-  screenshots and tests. Test fixtures live in test databases and are labeled as fixtures.
-- **The consensus rules are the constitution.** `lib/consensus.ts` changes only with new tests in
-  `tests/consensus.test.ts` and a clear explanation in the pull request.
-- **Evidence piles never mix.** Verified, rated and unchecked runs are counted and displayed separately. Never add
-  them together, and never call anything verified that `decide()` did not mark verified.
-- **Tests are versioned.** Never change the wording of a test's messages or outcomes in place: bump `version`, add a
-  `history` entry. Runs keep the version they were made with.
-- **Same standard for every AI**, including Claude and any other model used to build the site.
-- **Library entries must be verified by opening the URL.** Summaries in your own words, calm and factual, with a
-  caveat when the source is an interested party.
-- **Safe tests only.** No jailbreaks, no requests for harmful content, nothing that breaks a chat app's rules.
-- **No ads. Analytics only with consent.** The one third-party script is Google Analytics (`lib/analytics.ts`), and it
-  loads only after a visitor says yes. Keep the privacy notes on `/about` true when this changes. Fonts are self-hosted.
-- **Fiction says it's fiction.** In Other Tomorrows, a line marked as a fact needs a source you opened, said in your own
-  words and dated. Nothing is presented as real that hasn't happened; when it does, the fact becomes `real` with `since`.
-- **Every story plays with the keyboard alone:** arrows, space and return; ctrl+Z rewinds.
+- **Never fabricate** a pick, a source, a number, a quote or a date, including in tests and screenshots. Numbers come
+  only from `npm run measure`; a number we couldn't fetch is left out, never estimated.
+- **Open it before you pick it.** Every "why" line is written in our own words and checked against the source.
+  Videos: at least the description and the parts you describe. Articles: the text, or two reports of it if paywalled.
+- **Every event has two independent sources** (different outlets). Don't name private individuals unless the story is
+  about them.
+- **The Hall of Fame keeps its published rules:** the cap, nominees for 90 days, and a skeptical entry in every
+  contested section. `tests/content.test.ts` enforces them; change the rules on the page and in the tests together.
+- **Say where a pick stands** (alarmed, measured, skeptical, record), and keep the strongest counter-view in the room.
+- **No ads. Analytics only with consent.** Google Analytics (`lib/analytics.ts`) loads only after a visitor says yes.
+  Keep the privacy section on `/about` true. Fonts are self-hosted.
+- **Same standard for every AI company**, including Anthropic and any model used to build the site.
 
 ## Practicalities
 
-- `npm test` runs against an in-memory Postgres (PGlite). Keep it green.
-- Never point a dev server or a test at the production database. The dev server ignores remote `DATABASE_URL`s
-  unless `CTRL_DEV_REMOTE_DB=1`; don't set it to try things out. The public record is real.
-- Stop `npm run dev` before running scripts against the local database; PGlite allows one process at a time.
-- Design tokens are in `app/globals.css`. Outcome colors are validated for color-blind readers; always pair a color
-  with a text label.
+- The site is static. No database, no accounts, no secrets.
+- `npm test` runs the content rules. Keep it green.
+- Share images: render them and look at the PNG before shipping a change to `lib/og.tsx`.
 - American English in the interface.

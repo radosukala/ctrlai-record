@@ -7,11 +7,15 @@ const securityHeaders = [
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
 ];
 
+/** Addresses from earlier versions of ctrlai.com (the public record and Other Tomorrows), sent somewhere useful. */
+const RETIRED = [
+  '/tomorrows', '/tomorrows/:path*', '/record', '/tests', '/tests/:path*', '/verify', '/questions', '/questions/:path*',
+  '/data', '/log', '/me', '/signin', '/signin/:path*', '/r/:path*', '/ai/:path*',
+];
+
 const config: NextConfig = {
   poweredByHeader: false,
-  // PGlite loads its WebAssembly build from node_modules at runtime; bundling it breaks the asset paths.
-  serverExternalPackages: ['@electric-sql/pglite'],
-  // Share-card images read these fonts from disk at runtime; make sure serverless bundles include them.
+  // Share images read these fonts from disk at runtime; make sure serverless bundles include them.
   outputFileTracingIncludes: {
     '/**/*': [
       './node_modules/@fontsource/dm-sans/files/dm-sans-latin*-{400,600}-normal.woff',
@@ -19,7 +23,11 @@ const config: NextConfig = {
     ],
   },
   async redirects() {
-    return [{ source: '/tomorrows', destination: '/', permanent: false }];
+    return [
+      ...RETIRED.map(source => ({ source, destination: '/', permanent: false })),
+      { source: '/library', destination: '/hall-of-fame', permanent: false },
+      { source: '/library/:path*', destination: '/hall-of-fame', permanent: false },
+    ];
   },
   async headers() {
     return [{ source: '/(.*)', headers: securityHeaders }];

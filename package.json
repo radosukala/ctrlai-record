@@ -1,8 +1,8 @@
 {
-  "name": "ctrlai-record",
-  "version": "1.0.0-alpha",
+  "name": "ctrlai",
+  "version": "2.0.0",
   "private": true,
-  "description": "Ctrl AI: the public record of how AI behaves, kept by the people who use it.",
+  "description": "Ctrl AI: what matters this week about keeping AI under human control, and the things you shouldn't miss.",
   "engines": {
     "node": ">=22.13"
   },
@@ -12,29 +12,21 @@
     "start": "next start --port 4310",
     "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test tests/*.test.ts",
-    "db:generate": "drizzle-kit generate",
-    "db:migrate": "tsx scripts/migrate.ts",
-    "seed": "tsx scripts/seed.ts",
-    "steward": "tsx scripts/steward.ts",
-    "vercel-build": "tsx scripts/migrate.ts && tsx scripts/seed.ts && next build"
+    "measure": "tsx scripts/measure.ts",
+    "vercel-build": "next build"
   },
   "dependencies": {
-    "@electric-sql/pglite": "0.5.8",
     "@fontsource/dm-sans": "5.3.0",
     "@fontsource/instrument-serif": "5.3.0",
-    "drizzle-orm": "0.45.3",
     "lucide-react": "1.47.0",
     "next": "16.3.5",
-    "postgres": "3.4.9",
     "react": "19.3.0",
-    "react-dom": "19.3.0",
-    "zod": "4.6.5"
+    "react-dom": "19.3.0"
   },
   "devDependencies": {
     "@types/node": "24.13.6",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
-    "drizzle-kit": "0.31.11",
     "tsx": "4.23.15",
     "typescript": "5.9.3"
   },

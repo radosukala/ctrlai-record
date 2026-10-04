@@ -2,13 +2,13 @@ import Link from 'next/link';
 
 export default function NotFound() {
   return (
-    <section className="test-hero">
-      <div className="shell">
-        <span className="eyebrow"><span className="dot" /> Not found</span>
-        <h1 className="title">Nothing on the record here.</h1>
-        <p className="lede">The page may have moved, or the link may be mistyped. Runs keep their address even when withdrawn, so a run link that 404s never existed.</p>
-        <div className="actions mt-24"><Link href="/" className="btn btn-primary">Home</Link><Link href="/tests" className="btn btn-ghost">Run a test</Link></div>
-      </div>
-    </section>
+    <div className="read page">
+      <section className="hero-text">
+        <span className="eyebrow">Not found</span>
+        <h1 className="display">Nothing here.</h1>
+        <p className="lede">The link may be mistyped, or it pointed to an earlier version of this site.</p>
+        <p><Link href="/" className="btn btn-primary">This week</Link> <Link href="/hall-of-fame" className="btn btn-ghost">Hall of Fame</Link></p>
+      </section>
+    </div>
   );
 }

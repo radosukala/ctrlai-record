@@ -6,17 +6,17 @@ import '@fontsource/instrument-serif/400.css';
 import '@fontsource/instrument-serif/400-italic.css';
 import './globals.css';
 import { SiteFooter, SiteHeader } from '@/components/SiteChrome';
-import { ChromeGate } from '@/components/ChromeGate';
 import { Analytics } from '@/components/Analytics';
-import { SERIES } from '@/content/tomorrows';
+import { TrackOutbound } from '@/components/TrackOutbound';
 import { SITE } from '@/lib/site';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: { default: 'Ctrl AI · Other Tomorrows', template: '%s — Ctrl AI' },
-  description: SERIES.description,
+  title: { default: 'Ctrl AI · This week in AI control', template: '%s · Ctrl AI' },
+  description: SITE.description,
   openGraph: { siteName: SITE.name, type: 'website' },
   twitter: { card: 'summary_large_image' },
+  alternates: { types: { 'application/rss+xml': [{ url: '/feed.xml', title: 'Ctrl AI · This week in AI control' }] } },
 };
 
 export const viewport: Viewport = { themeColor: '#f5f4ee' };
@@ -26,10 +26,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <a href="#main" className="skip-link">Skip to content</a>
-        <ChromeGate><SiteHeader /></ChromeGate>
+        <SiteHeader />
         <main id="main">{children}</main>
-        <ChromeGate><SiteFooter /></ChromeGate>
+        <SiteFooter />
         <Analytics />
+        <TrackOutbound />
       </body>
     </html>
   );

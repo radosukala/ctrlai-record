@@ -1,116 +1,55 @@
-# Ctrl AI — Other Tomorrows
+# Ctrl AI — This week in AI control
 
-**ctrlai.com now publishes Other Tomorrows:** five-minute interactive stories about living with AI. Each one plays a
-single morning, then rewinds it and changes who's in control. The future has no undo key; these stories do (ctrl+Z).
+**ctrlai.com** keeps what matters about keeping AI under human control findable. It has two parts and nothing else:
 
-- Episodes are scripts in [content/tomorrows.ts](content/tomorrows.ts). The words and the facts live there; no code needed to edit them.
-- The player is [components/tomorrows/](components/tomorrows/) and [lib/tomorrows.ts](lib/tomorrows.ts). It plays with a tap, a click or the keyboard alone.
-- Every line that leans on the real world carries a fact: real, not yet, or imagined, with sources opened and dated.
-  When reality catches up with a line, its fact changes to `real` with the date.
-- [tests/tomorrows.test.ts](tests/tomorrows.test.ts) plays every path and checks every fact has a source.
+- **This week** ([/](https://ctrlai.com)): the events that mattered in the last seven days, each confirmed by two
+  independent reports, and seven pieces worth your time. Every issue keeps its own page at `/week/<last day>`.
+- **The Hall of Fame** ([/hall-of-fame](https://ctrlai.com/hall-of-fame)): what to see first if you're new. At most 30
+  entries; new ones are nominees for 90 days; contested sections carry the strongest counter-view.
 
-Everything below describes the public record Ctrl AI started with. It stays online at [/record](https://ctrlai.com/record).
+> The feed forgets. This page doesn't.
 
-## The public record of how AI behaves
+## Where things are
 
-**ctrlai.com** turns everyday AI use into public evidence. Anyone can run a one-minute test on the AI they already use,
-add the chat's public share link as a receipt, and have two strangers check it. Verified runs build a record of how
-AI actually behaves, one anyone can check, copy and continue.
+| What | File |
+|---|---|
+| Weekly issues: events and picks | [content/issues.ts](content/issues.ts) |
+| The Hall of Fame, its rules and sections | [content/hall.ts](content/hall.ts) |
+| Public numbers for every pick (generated) | [content/stats.json](content/stats.json) |
+| The script that fetches those numbers | [scripts/measure.ts](scripts/measure.ts) |
+| How numbers become "liked", "kept", "argued" | [lib/stats.ts](lib/stats.ts) |
+| Share images and the cards creators can post | [lib/og.tsx](lib/og.tsx), `app/**/opengraph-image.tsx`, `app/**/card/[id]/route.tsx` |
+| Content rules, enforced | [tests/content.test.ts](tests/content.test.ts) |
 
-> The labs test AI behind closed doors. Test it in the open.
-
-This repository is the whole thing: the site, the rules that decide what counts as verified, the tests, the ten-question
-Atlas and the Library. It is designed so that the project can be run by its contributors and continued by anyone. See
-[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for why it is built this way and [docs/LAUNCH.md](docs/LAUNCH.md) for how to start the flywheel.
-
-## The loop
-
-1. **Run a test.** Seven tests, each one or two messages with outcomes defined in advance ([content/tests.ts](content/tests.ts)).
-2. **Add the receipt.** The chat's share link, hosted by the AI's maker, so nobody can fake it ([lib/receipts.ts](lib/receipts.ts)).
-3. **Two strangers check it.** Blind rating, no self-checks, no checks from the same network ([lib/consensus.ts](lib/consensus.ts)).
-4. **It joins the record.** Verified, rated and unchecked runs are always counted separately ([lib/store/stats.ts](lib/store/stats.ts)).
-5. **It gets shared.** Every run and test has a share card showing its verification status ([app/r/[id]/opengraph-image.tsx](app/r/[id]/opengraph-image.tsx)).
-
-Around the loop: the **Atlas** (ten plain-language questions about AI, [content/questions.ts](content/questions.ts)), the
-**Library** (159 works of research, reporting and debate, [content/library.json](content/library.json)), a
-**public log** of every consequential change, and **open data** exports under CC BY 4.0.
+How to put out an issue each week: [docs/EDITING.md](docs/EDITING.md).
 
 ## Run it
 
-Requires Node 22.13 or newer.
+Requires Node 22.13 or newer. The site is static: no database, no accounts, no API keys.
 
-```sh
+```bash
 npm install
-npm run dev
-```
-
-Open http://localhost:4310. With no `DATABASE_URL`, the app uses an embedded Postgres (PGlite) in `.data/pglite`,
-migrated and seeded automatically, so a full copy of the record runs with no setup. Set
-`CTRL_ALLOW_SAME_NETWORK=1` in `.env.local` to check your own test runs from one machine; never set it in production.
-
-The dev server ignores a `DATABASE_URL` that points to a remote host and uses the embedded database instead, so
-nothing done locally can reach the live record by accident. Scripts such as `npm run steward` still use it.
-
-```sh
-npm test            # consensus, receipts, and the full submit → check → verify flow on a real Postgres
-npm run typecheck
+npm run dev        # http://localhost:4310
+npm test           # content rules and number handling
+npm run measure    # refresh content/stats.json from YouTube, X, Substack and Hacker News
 npm run build
 ```
 
-## Deploy
+Deployed on Vercel from `main`.
 
-Any Node host with a Postgres database. See [.env.example](.env.example).
+## Share cards
 
-| Variable | Purpose |
-| --- | --- |
-| `DATABASE_URL` | Postgres connection string (a pooled Neon URL works). |
-| `CTRL_SECRET` | Long random string, e.g. `openssl rand -base64 32`. Salts network fingerprints. Required in production. |
-| `PUBLIC_ORIGIN` | `https://ctrlai.com`. Used for share links, canonical URLs and the same-origin check. |
-| `RESEND_API_KEY` | Sends the sign-in links for optional accounts. The sending domain must be verified in Resend. |
-| `RESEND_FROM` | Optional sender, default `Ctrl AI <record@ctrlai.com>`. |
+Every pick has a card its maker can post, at `/week/<slug>/card/<pick id>` and `/hall-of-fame/card/<entry id>`, for
+example [/week/2026-10-04/card/gates-nuclear-weapons](https://ctrlai.com/week/2026-10-04/card/gates-nuclear-weapons).
+Attach it when you tag the creator.
 
-**On Vercel**, the `vercel-build` script runs migrations and refreshes the library before every build, so a deploy is
-all it takes. Elsewhere, run `npm run db:migrate && npm run seed` before starting.
+## Before this
 
-Appoint stewards with `DATABASE_URL=… npm run steward -- <contributor number>`. The change is written to the public log.
-
-## Accounts
-
-Nobody needs an account to run or check a test. After a first contribution, people can keep their record with an email
-sign-in link (no password). The design, ported from the ctrlai-audit repository, is in `lib/auth.ts`: single-use
-hashed tokens, signed sessions that can be revoked everywhere, and no automatic adoption of a browser's contributions
-at sign-in. Adoption is a separate step on `/me`, so a sign-in link can't be used to take someone's contributions.
-Stewards must be signed in to moderate.
-
-## Structure
-
-```
-app/                pages, API routes and share-card images (Next.js 16, App Router)
-components/         shared UI
-content/            tests, questions, products and the library: the editorial heart, reviewed like code
-lib/consensus.ts    the rules that decide what counts as verified (pure, tested)
-lib/receipts.ts     which share links count as receipts
-lib/store/          database operations: runs, checks, library, proposals, stats, log
-lib/db/             schema and client (Postgres via Drizzle; PGlite locally)
-drizzle/            SQL migrations
-tests/              node:test suites
-```
-
-## Contributing
-
-- **Content** (tests, questions, library) changes by pull request. A test's wording never changes in place: bump its
-  `version` and add a `history` entry, so runs are never silently mixed.
-- **The rules** in `lib/consensus.ts` change only with tests and a note in the public changelog. They are the
-  constitution of the record.
-- **Never fabricate** a run, a check, a contributor, a count or a quote, including in demos and screenshots.
-- **Same standard for every AI**, including the ones that helped build this site.
-
-See [AGENTS.md](AGENTS.md) for the rules AI coding agents follow when working on this repository.
+Until October 2026 this repository ran a public record of AI behavior (tests, receipts, two-stranger verification) and
+Other Tomorrows, a series of interactive stories. Both are closed; their code is in the git history before the
+`this-week-and-hall-of-fame` merge. Old addresses redirect to the home page, and `/library` to the Hall of Fame.
 
 ## License
 
-The software is licensed under the [GNU Affero General Public License v3.0](LICENSE): anyone can run, study and
-change it, and anyone who runs a modified version as a public service must publish their changes too.
-
-The record, the tests, the questions, the library descriptions and the docs are licensed under
-[CC BY 4.0](DATA-LICENSE.md): use them for anything, with credit.
+Code: [AGPL-3.0](LICENSE). Our words (summaries, event write-ups, rules): [CC BY 4.0](DATA-LICENSE.md). The works we
+link to belong to their makers.
