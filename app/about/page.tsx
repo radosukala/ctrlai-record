@@ -75,9 +75,10 @@ export default function AboutPage() {
       <section className="prose" aria-labelledby="privacy">
         <h2 className="h2" id="privacy">Privacy</h2>
         <p>
-          There are no accounts and no ads. If you agree, Google Analytics counts visits and which picks people open, with advertising features
-          switched off. If you don’t, nothing loads. You can change your mind at any time: <AnalyticsSettingsButton className="text-button" />.
-          Fonts and pictures are served from this site.
+          There are no accounts. We count visits with Vercel Web Analytics, which sets no cookies and keeps nothing that identifies you:
+          the page, where the visit came from, the country, and the kind of device and browser. If you agree, Google Analytics also counts
+          which picks people open and play, with advertising features switched off. If you don’t, it never loads. You can change your mind at
+          any time: <AnalyticsSettingsButton className="text-button" />. Fonts and pictures are served from this site.
         </p>
       </section>
 
@@ -96,7 +97,7 @@ export default function AboutPage() {
           Tomorrows. Both are closed. Their code stays in the <a href={SITE.repoUrl}>public repository</a>.
         </p>
         <p>
-          Ctrl AI is independent: no ads, no sponsors, no subscriptions and no money from AI companies. Our summaries are free to reuse under
+          Ctrl AI is an independent project. Our summaries are free to reuse under
           {' '}<a href={SITE.contentLicenseUrl}>{SITE.contentLicense}</a>; the works we link to belong to their makers. The code is
           {' '}<a href={SITE.codeLicenseUrl}>{SITE.codeLicense}</a>.
         </p>

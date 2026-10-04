@@ -28,8 +28,10 @@ being asked.
 - **Say where a pick stands** (alarmed, measured, skeptical, record), and keep the strongest counter-view in the room.
 - **Nothing loads from YouTube or X until a visitor presses play.** Pictures are copies in `public/media`, made by
   `npm run measure`; players live in `components/Media.tsx` and mount only on play.
-- **No ads. Analytics only with consent.** Google Analytics (`lib/analytics.ts`) loads only after a visitor says yes.
-  Keep the privacy section on `/about` true. Fonts are self-hosted.
+- **Analytics:** Vercel Web Analytics counts page views for everyone, without cookies. Google Analytics
+  (`lib/analytics.ts`) loads only after a visitor says yes, and is what sees which picks are opened and played. Keep
+  the privacy section on `/about` true whenever this changes. Fonts are self-hosted.
+- **Money never decides a pick.** Sponsorship or donations may come later; if they do, picks stay the editor's call.
 - **Same standard for every AI company**, including Anthropic and any model used to build the site.
 
 ## Practicalities

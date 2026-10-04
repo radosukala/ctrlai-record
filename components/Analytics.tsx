@@ -32,7 +32,7 @@ export function Analytics() {
 
   return (
     <div className="consent" role="region" aria-label="Analytics choice">
-      <p>Can we count your visit? We use Google Analytics to see which picks people open. It sets cookies, so we ask first.</p>
+      <p>Can we see which picks you open and play? That uses Google Analytics, which sets cookies, so we ask first. Visits are counted either way, without cookies.</p>
       <div className="consent-actions">
         <button type="button" className="consent-yes" onClick={() => decide('granted')}>Count me</button>
         <button type="button" onClick={() => decide('denied')}>No thanks</button>

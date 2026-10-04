@@ -40,8 +40,7 @@ export function SiteFooter() {
           </nav>
         </div>
         <div className="footer-note">
-          <span>No ads, no sponsors, no money from AI companies.</span>
-          <span>Analytics only if you agree. <AnalyticsSettingsButton className="footer-button" /></span>
+          <span>Visits are counted without cookies; Google Analytics only if you agree. <AnalyticsSettingsButton className="footer-button" /></span>
           <span>Our words: <a href={SITE.contentLicenseUrl}>{SITE.contentLicense}</a>. Code: <a href={SITE.codeLicenseUrl}>{SITE.codeLicense}</a>.</span>
         </div>
       </div>

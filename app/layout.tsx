@@ -6,6 +6,7 @@ import '@fontsource/instrument-serif/400.css';
 import '@fontsource/instrument-serif/400-italic.css';
 import './globals.css';
 import { SiteFooter, SiteHeader } from '@/components/SiteChrome';
+import { Analytics as VercelAnalytics } from '@vercel/analytics/next';
 import { Analytics } from '@/components/Analytics';
 import { TrackOutbound } from '@/components/TrackOutbound';
 import { SITE } from '@/lib/site';
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="main">{children}</main>
         <SiteFooter />
         <Analytics />
+        <VercelAnalytics />
         <TrackOutbound />
       </body>
     </html>
