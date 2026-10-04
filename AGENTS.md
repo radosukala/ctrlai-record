@@ -26,6 +26,8 @@ being asked.
 - **The Hall of Fame keeps its published rules:** the cap, nominees for 90 days, and a skeptical entry in every
   contested section. `tests/content.test.ts` enforces them; change the rules on the page and in the tests together.
 - **Say where a pick stands** (alarmed, measured, skeptical, record), and keep the strongest counter-view in the room.
+- **Nothing loads from YouTube or X until a visitor presses play.** Pictures are copies in `public/media`, made by
+  `npm run measure`; players live in `components/Media.tsx` and mount only on play.
 - **No ads. Analytics only with consent.** Google Analytics (`lib/analytics.ts`) loads only after a visitor says yes.
   Keep the privacy section on `/about` true. Fonts are self-hosted.
 - **Same standard for every AI company**, including Anthropic and any model used to build the site.

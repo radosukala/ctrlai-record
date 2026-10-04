@@ -15,6 +15,8 @@ const RETIRED = [
 
 const config: NextConfig = {
   poweredByHeader: false,
+  // Thumbnails are copies in public/media (npm run measure), so nothing loads from YouTube or X until someone presses play.
+  images: { localPatterns: [{ pathname: '/media/**', search: '' }] },
   // Share images read these fonts from disk at runtime; make sure serverless bundles include them.
   outputFileTracingIncludes: {
     '/**/*': [

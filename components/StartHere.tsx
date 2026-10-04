@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { START_HERE, ENTRIES } from '@/content/hall';
-import { KIND_LABEL } from '@/content/types';
+import { mediaFor } from '@/lib/media';
+import { MediaThumb } from './Media';
 
 function duration(minutes: number): string {
   const hours = Math.floor(minutes / 60);
@@ -8,18 +9,29 @@ function duration(minutes: number): string {
   return [hours ? `${hours} ${hours === 1 ? 'hour' : 'hours'}` : '', rest ? `${rest} minutes` : ''].filter(Boolean).join(' ');
 }
 
+/** The six videos for one evening, playable where they stand. */
 export function StartHere({ withLink = true }: { withLink?: boolean }) {
   const minutes = START_HERE.reduce((sum, entry) => sum + (entry.minutes ?? 0), 0);
   return (
     <>
       <ol className="path">
-        {START_HERE.map(entry => (
-          <li key={entry.id}>
-            <div>
-              <a href={entry.url} target="_blank" rel="noopener" data-list="start-here" data-pick={entry.id}>{entry.title}</a>
-              <small>{entry.outlet && entry.outlet !== entry.creator ? `${entry.creator} · ${entry.outlet}` : entry.creator}</small>
+        {START_HERE.map((entry, i) => (
+          <li key={entry.id} className="path-card">
+            <div className="path-thumb">
+              <MediaThumb
+                media={mediaFor(entry.url)}
+                url={entry.url}
+                title={entry.title}
+                label={entry.outlet ?? entry.creator}
+                minutes={entry.minutes}
+                list="start-here"
+                pickId={entry.id}
+                sizes="(max-width: 640px) 100vw, 340px"
+              />
+              <span className="path-step" aria-hidden="true">{i + 1}</span>
             </div>
-            <span className="mins">{entry.minutes ? `${entry.minutes} min` : KIND_LABEL[entry.kind]}</span>
+            <a href={entry.url} target="_blank" rel="noopener" data-list="start-here" data-pick={entry.id}>{entry.title}</a>
+            <small>{entry.outlet && entry.outlet !== entry.creator ? `${entry.creator} · ${entry.outlet}` : entry.creator}</small>
           </li>
         ))}
       </ol>

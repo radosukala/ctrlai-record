@@ -5,6 +5,8 @@ import { HN_THRESHOLD, MEASURED_ON, compact, signals, statsFor } from '../lib/st
 import { ISSUES } from '../content/issues';
 import { ENTRIES } from '../content/hall';
 import type { Pick } from '../content/types';
+import { existsSync, statSync } from 'node:fs';
+import { mediaFor } from '../lib/media';
 
 const base: Pick = { id: 'x', kind: 'video', title: 'T', creator: 'C', url: 'https://example.com/none', published: '2026-09-27', why: 'A sentence long enough to pass as a why line.', stance: 'measured' };
 
@@ -54,4 +56,20 @@ test(`Hacker News scores under ${HN_THRESHOLD} points stay hidden`, () => {
 
 test('a pick without numbers shows none, rather than zeros', () => {
   assert.deepEqual(signals(base, 'week'), []);
+});
+
+test('every video has a picture on this site, and nothing points at YouTube or X for images', () => {
+  const picks = [...ISSUES.flatMap(issue => issue.picks), ...ENTRIES];
+  for (const pick of picks) {
+    const media = mediaFor(pick.url);
+    if (pick.url.includes('youtube.com')) assert.equal(media?.type, 'youtube', `${pick.url} has no thumbnail; run npm run measure`);
+    if (!media) continue;
+    for (const image of [('image' in media ? media.image : undefined), (media.type === 'x' ? media.avatar : undefined)]) {
+      if (!image) continue;
+      assert.match(image, /^\/media\/[\w-]+\.jpg$/, `${image} must be a local copy`);
+      const file = `public${image}`;
+      assert.ok(existsSync(file), `${file} is missing`);
+      assert.ok(statSync(file).size < 250_000, `${file} is over 250 KB`);
+    }
+  }
 });

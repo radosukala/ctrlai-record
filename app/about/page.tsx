@@ -77,7 +77,15 @@ export default function AboutPage() {
         <p>
           There are no accounts and no ads. If you agree, Google Analytics counts visits and which picks people open, with advertising features
           switched off. If you don’t, nothing loads. You can change your mind at any time: <AnalyticsSettingsButton className="text-button" />.
-          Fonts are served from this site.
+          Fonts and pictures are served from this site.
+        </p>
+      </section>
+
+      <section className="prose" aria-labelledby="videos">
+        <h2 className="h2" id="videos">Videos on this page</h2>
+        <p>
+          Press a picture and the video plays here. Until you do, nothing loads from YouTube or X: the pictures are copies kept on this site.
+          When you press play, the video comes from YouTube in its privacy-enhanced mode, or from X, and their own privacy policies apply.
         </p>
       </section>
 
