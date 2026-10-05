@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-export function NavLinks({ items }: { items: { href: string; label: string; also?: string; pill?: boolean }[] }) {
+export function NavLinks({ items }: { items: { href: string; label: string; also?: string; key?: boolean }[] }) {
   const pathname = usePathname();
   return (
     <nav className="nav" aria-label="Main">
@@ -12,7 +12,7 @@ export function NavLinks({ items }: { items: { href: string; label: string; also
           || (item.href !== '/' && pathname.startsWith(`${item.href}/`))
           || (item.also !== undefined && pathname.startsWith(item.also));
         return (
-          <Link key={item.href} href={item.href} aria-current={active ? 'page' : undefined} className={item.pill ? 'nav-pill' : undefined}>
+          <Link key={item.href} href={item.href} aria-current={active ? 'page' : undefined} className={item.key ? 'key' : undefined}>
             {item.label}
           </Link>
         );

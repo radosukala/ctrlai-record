@@ -17,7 +17,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="shell">
         <Wordmark />
-        <NavLinks items={newsletterEnabled() ? [...NAV, { href: '/subscribe', label: 'Subscribe', pill: true }] : NAV} />
+        <NavLinks items={newsletterEnabled() ? [...NAV, { href: '/subscribe', label: 'Subscribe', key: true }] : NAV} />
       </div>
     </header>
   );
@@ -34,10 +34,10 @@ export function SiteFooter() {
           </div>
           <nav className="footer-links" aria-label="Footer">
             <Link href="/">This week</Link>
-            <Link href="/hall-of-fame">Hall of Fame</Link>
-            <Link href="/about">How we pick</Link>
             <a href="/feed.xml">RSS</a>
+            <Link href="/hall-of-fame">Hall of Fame</Link>
             <a href={SITE.suggestUrl}>Suggest something</a>
+            <Link href="/about">How we pick</Link>
             <a href={SITE.repoUrl}>Source code</a>
           </nav>
         </div>

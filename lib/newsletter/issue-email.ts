@@ -3,7 +3,7 @@ import { KIND_LABEL, STANCE_LABEL } from '@/content/types';
 import { mediaFor } from '@/lib/media';
 import { dateRange, longDate, shortDate } from '@/lib/site';
 import { signals } from '@/lib/stats';
-import { button, COLOR, esc, frame, MONO, SANS, SERIF } from './html';
+import { button, COLOR, esc, frame, SANS, SERIF } from './html';
 
 /** Resend replaces this with a one-click unsubscribe link for each person when it sends a broadcast. */
 export const UNSUBSCRIBE = '{{{RESEND_UNSUBSCRIBE_URL}}}';
@@ -34,7 +34,7 @@ export function renderIssueEmail(issue: Issue, origin: string): RenderedIssue {
 
   const main = issue.main.map(event => `
 <tr><td style="padding:16px 0;border-top:1px solid ${COLOR.line2};">
-<div style="font-family:${MONO};font-size:12px;color:${COLOR.muted};">${esc(shortDate(event.date))}</div>
+<div style="font-family:${SANS};font-size:11.5px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:${COLOR.muted};">${esc(shortDate(event.date))}</div>
 <div style="margin-top:3px;font-size:17px;font-weight:600;line-height:1.35;color:${COLOR.ink};">${esc(event.headline)}</div>
 <div style="margin-top:5px;font-size:15px;line-height:1.55;color:${COLOR.ink2};">${esc(event.text)}</div>
 <div style="margin-top:7px;font-size:12.5px;color:${COLOR.muted};">${sources(event)}</div>
@@ -42,7 +42,7 @@ export function renderIssueEmail(issue: Issue, origin: string): RenderedIssue {
 
   const also = issue.also.map(event => `
 <tr><td style="padding:9px 0;border-top:1px solid ${COLOR.line2};font-size:14.5px;line-height:1.5;color:${COLOR.ink2};">
-<span style="font-family:${MONO};font-size:12px;color:${COLOR.muted};">${esc(shortDate(event.date))}</span>&nbsp; <strong style="color:${COLOR.ink};">${esc(event.headline)}.</strong> ${esc(event.text)} <span style="font-size:12.5px;color:${COLOR.muted};">${sources(event)}</span>
+<span style="font-family:${SANS};font-size:11.5px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:${COLOR.muted};">${esc(shortDate(event.date))}</span>&nbsp; <strong style="color:${COLOR.ink};">${esc(event.headline)}.</strong> ${esc(event.text)} <span style="font-size:12.5px;color:${COLOR.muted};">${sources(event)}</span>
 </td></tr>`).join('');
 
   const picks = issue.picks.map((pick, index) => {
@@ -53,23 +53,23 @@ export function renderIssueEmail(issue: Issue, origin: string): RenderedIssue {
     const kind = pick.minutes ? `${KIND_LABEL[pick.kind]}, ${pick.minutes} min` : KIND_LABEL[pick.kind];
     return `
 <tr><td style="padding:22px 0;border-top:1px solid ${COLOR.line};">
-<div style="font-family:${SERIF};font-size:24px;line-height:1;color:${COLOR.moss};">${index + 1}</div>
+<div style="font-family:${SERIF};font-size:24px;line-height:1;color:${COLOR.muted};">${index + 1}</div>
 ${image ? `<a href="${esc(ours(origin, `/week/${issue.slug}#${pick.id}`, issue))}" style="text-decoration:none;"><img src="${esc(image)}" width="536" alt="${esc(pick.title)}" style="display:block;width:100%;max-width:536px;height:auto;margin:10px 0 0;border:1px solid ${COLOR.line};border-radius:6px;"></a>` : ''}
 <div style="margin-top:12px;font-family:${SERIF};font-size:23px;line-height:1.15;"><a href="${esc(pick.url)}" style="color:${COLOR.ink};text-decoration:none;">${esc(pick.title)}</a></div>
 <div style="margin-top:6px;font-size:13.5px;line-height:1.5;color:${COLOR.muted};">${esc(byline)} · ${esc(kind)} · ${esc(longDate(pick.published))} · <strong>${esc(STANCE_LABEL[pick.stance])}</strong></div>
 <div style="margin-top:8px;font-size:15px;line-height:1.55;color:${COLOR.ink2};">${esc(pick.why)}</div>
-${numbers ? `<div style="margin-top:8px;font-family:${MONO};font-size:12px;color:${COLOR.muted};">${esc(numbers)}</div>` : ''}
+${numbers ? `<div style="margin-top:8px;font-family:${SANS};font-size:12.5px;color:${COLOR.muted};">${esc(numbers)}</div>` : ''}
 </td></tr>`;
   }).join('');
 
   const section = (title: string) => `<h2 style="margin:34px 0 4px;padding-top:0;font-family:${SERIF};font-size:28px;font-weight:400;line-height:1.1;color:${COLOR.ink};">${esc(title)}</h2>`;
 
   const body = `
-<h1 style="margin:0 0 12px;font-family:${SERIF};font-size:38px;font-weight:400;line-height:1.05;letter-spacing:-0.01em;">This week in <em style="color:${COLOR.moss};">AI control</em></h1>
+<h1 style="margin:0 0 12px;font-family:${SERIF};font-size:38px;font-weight:400;line-height:1.05;letter-spacing:-0.01em;">This week in <em>AI control</em></h1>
 <p style="margin:0 0 4px;font-size:16px;line-height:1.6;color:${COLOR.ink2};">${esc(issue.summary)}</p>
 <p style="margin:14px 0 0;">${button(page, 'Open this week on ctrlai.com')} <span style="font-size:13px;color:${COLOR.muted};">&nbsp;Videos play on the page.</span></p>
 ${section('What happened')}
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;">${main}${also ? `<tr><td style="padding:14px 0 4px;border-top:1px solid ${COLOR.line};font-family:${MONO};font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;color:${COLOR.muted};">Also this week</td></tr>${also}` : ''}</table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:6px;">${main}${also ? `<tr><td style="padding:14px 0 4px;border-top:2px solid ${COLOR.ink};font-family:${SANS};font-size:11.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:${COLOR.ink};">Also this week</td></tr>${also}` : ''}</table>
 ${section(`Seven worth your time`)}
 <p style="margin:4px 0 0;font-size:14.5px;line-height:1.55;color:${COLOR.muted};">Picked from everything published this week, in the order we’d open them. The numbers show how people responded, not whether it’s right.</p>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:12px;">${picks}</table>

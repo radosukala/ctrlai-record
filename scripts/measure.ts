@@ -24,7 +24,7 @@ import type { Media } from '../lib/media';
 const FILE = path.join(process.cwd(), 'content', 'stats.json');
 const MEDIA_FILE = path.join(process.cwd(), 'content', 'media.json');
 const MEDIA_DIR = path.join(process.cwd(), 'public', 'media');
-const PAPER_2 = '#eeede5';
+const PAPER_2 = '#ebe7dd';
 
 /** Whether each YouTube video may play inside another site, read from the same watch page as its numbers. */
 const embeddable = new Map<string, boolean>();

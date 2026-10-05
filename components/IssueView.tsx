@@ -1,67 +1,79 @@
 import Link from 'next/link';
 import type { Issue } from '@/content/issues';
+import { START_HERE } from '@/content/hall';
 import { dateRange } from '@/lib/site';
 import { MEASURED_ON } from '@/lib/stats';
 import { Events } from './Events';
 import { PickItem, SignalLegend } from './Picks';
-import { StartHere } from './StartHere';
+import { Section } from './Section';
+import { StartHere, startHereDuration } from './StartHere';
 import { SubscribeForm } from './SubscribeForm';
 import { newsletterEnabled } from '@/lib/newsletter/config';
 
 export function IssueView({ issue, isLatest }: { issue: Issue; isLatest: boolean }) {
   const list = `week-${issue.slug}`;
   return (
-    <div className="read page">
-      <section className="hero">
-        <div className="hero-text">
-          <span className="eyebrow">Issue {issue.number} · {dateRange(issue.from, issue.to)}</span>
-          <h1 className="display">This week in <em>AI control</em></h1>
-          <p className="lede">{issue.summary}</p>
-          {isLatest ? null : <p className="small muted">This is an earlier issue. <Link href="/">The latest is here.</Link></p>}
-        </div>
-        <aside className="newcomer" aria-label="New here?">
-          <span className="eyebrow">New here?</span>
-          <Link href="/hall-of-fame#start-here">Start with six videos, one evening.</Link>
-          <p>The Hall of Fame: what you shouldn’t miss about AI control, safety and how AI works.</p>
-        </aside>
-      </section>
+    <div className="page">
+      <div className="shell">
+        <header className="hero">
+          <div className="hero-main">
+            <p className="dateline">
+              <b>This week in AI control</b>
+              <span>Issue {issue.number}</span>
+              <span>{dateRange(issue.from, issue.to)}</span>
+            </p>
+            <h1 className="headline">{issue.summary}</h1>
+            {isLatest ? null : <p className="small muted">This is an earlier issue. <Link href="/">The latest is here.</Link></p>}
+          </div>
+          <nav className="index" aria-label="In this issue">
+            <a href="#happened"><span className="cap">1</span><b>What happened</b><small>{issue.main.length} events and {issue.also.length} in brief, each confirmed by two reports</small></a>
+            <a href="#worth-your-time"><span className="cap">2</span><b>Seven worth your time</b><small>Picked from everything published this week</small></a>
+            <a href="#start-here"><span className="cap">3</span><b>New here? Start here</b><small>{START_HERE.length} videos, one evening, {startHereDuration()}</small></a>
+          </nav>
+        </header>
+      </div>
 
-      <section className="block" aria-labelledby="happened">
-        <div className="sec-head">
-          <h2 className="h2" id="happened">What happened</h2>
-          <p>Each event is confirmed by at least two independent reports. The links go to them.</p>
-        </div>
-        <Events main={issue.main} also={issue.also} />
-      </section>
+      <div className="shell">
+        <Section id="happened" title="What happened" blurb="Each event is confirmed by at least two independent reports. The links go to them.">
+          <Events main={issue.main} also={issue.also} />
+        </Section>
+      </div>
 
-      <section className="block" aria-labelledby="worth-your-time">
-        <div className="sec-head">
-          <h2 className="h2" id="worth-your-time">Seven worth your time</h2>
-          <p>Picked from everything published this week, in the order we’d open them. The numbers show how people responded, not whether it’s right.</p>
-        </div>
-        <SignalLegend mode="week" measuredOn={MEASURED_ON} />
-        <ol className="picks">
-          {issue.picks.map((pick, i) => <PickItem key={pick.id} pick={pick} list={list} mode="week" rank={i + 1} />)}
-        </ol>
-      </section>
+      <div className="shell">
+        <Section
+          id="worth-your-time"
+          title="Seven worth your time"
+          blurb="Picked from everything published this week, in the order we’d open them. The numbers show how people responded, not whether it’s right."
+          rail={<SignalLegend mode="week" measuredOn={MEASURED_ON} />}
+        >
+          <ol className="picks">
+            {issue.picks.map((pick, i) => <PickItem key={pick.id} pick={pick} list={list} mode="week" rank={i + 1} />)}
+          </ol>
+        </Section>
+      </div>
 
       {newsletterEnabled() ? (
-        <section className="subscribe-block" aria-labelledby="subscribe-title">
-          <div>
-            <h2 className="h2" id="subscribe-title">One email a week.</h2>
-            <p>What happened, and the seven pieces worth your time, the day the issue is out.</p>
-          </div>
-          <SubscribeForm source={`issue-${issue.number}`} />
-        </section>
+        <div className="shell">
+          <Section id="subscribe-title" title="One email a week." blurb="What happened, and the seven pieces worth your time, the day the issue is out.">
+            <div className="subscribe-body">
+              <SubscribeForm source={`issue-${issue.number}`} />
+              <p className="subscribe-note">You’ll get one email to confirm. Every issue has a one-click unsubscribe. <Link href="/about#privacy">How we handle your address</Link>.</p>
+            </div>
+          </Section>
+        </div>
       ) : null}
 
-      <section className="block" aria-labelledby="start-here">
-        <div className="sec-head">
-          <h2 className="h2" id="start-here">New to all this? <em>Start here.</em></h2>
-          <p>Six videos from the Hall of Fame, in order: how it works, who is worried, why it’s hard, what already happened, where it could go, and the strongest objection.</p>
+      <div className="band">
+        <div className="shell">
+          <Section
+            id="start-here"
+            title={<>New to all this? <em>Start here.</em></>}
+            blurb="Six videos from the Hall of Fame, in order: how it works, who is worried, why it’s hard, what already happened, where it could go, and the strongest objection."
+          >
+            <StartHere />
+          </Section>
         </div>
-        <StartHere />
-      </section>
+      </div>
     </div>
   );
 }

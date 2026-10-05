@@ -8,32 +8,36 @@ export const OG_SIZE = { width: 1200, height: 630 };
 /** The recap image goes out on X and LinkedIn, where 16:9 fills the feed. */
 export const RECAP_SIZE = { width: 1200, height: 675 };
 
-export const INK = '#263b31';
-export const PAPER = '#f5f4ee';
-export const MUTED = '#667064';
-export const LINE = '#d9dcd1';
-export const ACID = '#d5eb8c';
-export const NIGHT = '#1b2b22';
-export const SOFT = '#b9c4b5';
+export const INK = '#1a1917';
+export const INK_2 = '#3f3c36';
+export const PAPER = '#f4f1ea';
+export const WHITE = '#fbfaf7';
+export const MUTED = '#6e695f';
+export const LINE = '#d9d3c6';
+export const SIGNAL = '#cf3a16';
+export const SIGNAL_DEEP = '#a52c10';
 
-type Font = { name: string; data: Buffer; weight: 400 | 500 | 600; style: 'normal' | 'italic' };
+const SERIF = 'Newsreader';
+const SANS = 'Schibsted Grotesk';
+
+type Font = { name: string; data: Buffer; weight: 400 | 500 | 600 | 700; style: 'normal' | 'italic' };
 
 let cached: Promise<Font[]> | null = null;
 
-/** Self-hosted fonts from the same packages the site uses. Satori needs WOFF, not WOFF2. */
+/** Self-hosted fonts from the same families the site uses. Satori needs WOFF, not WOFF2. */
 export function ogFonts(): Promise<Font[]> {
   cached ??= (async () => {
     const dir = path.join(process.cwd(), 'node_modules', '@fontsource');
     const file = (pkg: string, name: string) => readFile(path.join(dir, pkg, 'files', name));
     const entries: [string, string, string, Font['weight'], Font['style']][] = [
-      ['DM Sans', 'dm-sans', 'dm-sans-latin-400-normal.woff', 400, 'normal'],
-      ['DM Sans', 'dm-sans', 'dm-sans-latin-ext-400-normal.woff', 400, 'normal'],
-      ['DM Sans', 'dm-sans', 'dm-sans-latin-600-normal.woff', 600, 'normal'],
-      ['DM Sans', 'dm-sans', 'dm-sans-latin-ext-600-normal.woff', 600, 'normal'],
-      ['Instrument Serif', 'instrument-serif', 'instrument-serif-latin-400-normal.woff', 400, 'normal'],
-      ['Instrument Serif', 'instrument-serif', 'instrument-serif-latin-ext-400-normal.woff', 400, 'normal'],
-      ['Instrument Serif', 'instrument-serif', 'instrument-serif-latin-400-italic.woff', 400, 'italic'],
-      ['Instrument Serif', 'instrument-serif', 'instrument-serif-latin-ext-400-italic.woff', 400, 'italic'],
+      [SANS, 'schibsted-grotesk', 'schibsted-grotesk-latin-500-normal.woff', 500, 'normal'],
+      [SANS, 'schibsted-grotesk', 'schibsted-grotesk-latin-ext-500-normal.woff', 500, 'normal'],
+      [SANS, 'schibsted-grotesk', 'schibsted-grotesk-latin-700-normal.woff', 700, 'normal'],
+      [SANS, 'schibsted-grotesk', 'schibsted-grotesk-latin-ext-700-normal.woff', 700, 'normal'],
+      [SERIF, 'newsreader', 'newsreader-latin-500-normal.woff', 500, 'normal'],
+      [SERIF, 'newsreader', 'newsreader-latin-ext-500-normal.woff', 500, 'normal'],
+      [SERIF, 'newsreader', 'newsreader-latin-400-italic.woff', 400, 'italic'],
+      [SERIF, 'newsreader', 'newsreader-latin-ext-400-italic.woff', 400, 'italic'],
     ];
     return Promise.all(entries.map(async ([name, pkg, fileName, weight, style]) => ({ name, data: await file(pkg, fileName), weight, style })));
   })();
@@ -57,83 +61,95 @@ export function capsRange(from: string, to: string): string {
   return `${SHORT_MONTHS[fm - 1]} ${fd} – ${fm === tm ? '' : `${SHORT_MONTHS[tm - 1]} `}${td}, ${ty}`;
 }
 
-export function BrandRow({ right, color = INK, soft = MUTED }: { right?: string; color?: string; soft?: string }) {
+/** A keycap: the mark, and every label that reads as something you press. */
+function Cap({ children, size = 44, fill = false, signal = false }: { children: string; size?: number; fill?: boolean; signal?: boolean }) {
+  const border = signal ? SIGNAL : INK;
+  const bottom = signal ? SIGNAL_DEEP : '#000000';
+  const background = signal ? SIGNAL : fill ? INK : WHITE;
+  const color = signal || fill ? PAPER : INK;
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexGrow: 1 }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-          <div style={{ width: 8, height: 30, borderTop: `3px solid ${color}`, borderBottom: `3px solid ${color}`, borderLeft: `3px solid ${color}` }} />
-          <div style={{ width: 6, height: 6, borderRadius: 3, background: color }} />
-          <div style={{ width: 8, height: 30, borderTop: `3px solid ${color}`, borderBottom: `3px solid ${color}`, borderRight: `3px solid ${color}` }} />
-        </div>
-        <div style={{ display: 'flex', alignItems: 'flex-start', fontSize: 38, fontWeight: 600, letterSpacing: -2.4, color }}>
-          ctrl<span style={{ fontSize: 14, marginTop: 4, marginLeft: 2, letterSpacing: -0.4 }}>AI</span>
-        </div>
-      </div>
-      {right ? <div style={{ display: 'flex', fontSize: 17, fontWeight: 600, letterSpacing: 2, color: soft }}>{right}</div> : null}
+    <div
+      style={{
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        height: size, minWidth: size, padding: `0 ${Math.round(size * 0.3)}px`,
+        border: `3px solid ${border}`, borderBottomWidth: 6, borderRadius: Math.round(size * 0.24),
+        background, color, fontFamily: SANS, fontWeight: 700, fontSize: Math.round(size * 0.48), letterSpacing: -0.5, lineHeight: 1,
+      }}
+    >
+      {children}
     </div>
   );
 }
 
-function Pill({ children, dark = false }: { children: string; dark?: boolean }) {
+export function BrandRow({ right, size = 44 }: { right?: string; size?: number }) {
   return (
-    <div style={{ display: 'flex', background: dark ? INK : ACID, color: dark ? PAPER : NIGHT, fontSize: 22, fontWeight: 600, padding: '14px 26px', borderRadius: 999 }}>
-      {children}
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexGrow: 1 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+        <Cap size={size}>ctrl</Cap>
+        <Cap size={size}>AI</Cap>
+      </div>
+      {right ? <div style={{ display: 'flex', fontFamily: SANS, fontSize: 18, fontWeight: 700, letterSpacing: 2.6, color: MUTED }}>{right}</div> : null}
+    </div>
+  );
+}
+
+function Label({ children }: { children: string }) {
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: 12, fontFamily: SANS, fontSize: 18, fontWeight: 700, letterSpacing: 2.6, color: INK }}>
+      <div style={{ display: 'flex', width: 12, height: 12, background: SIGNAL, borderRadius: 2 }} />
+      <div style={{ display: 'flex' }}>{children}</div>
+    </div>
+  );
+}
+
+function Footer({ left, url, dark = false }: { left: string; url: string; dark?: boolean }) {
+  return (
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div style={{ display: 'flex', fontFamily: SANS, fontSize: 23, color: dark ? LINE : MUTED }}>{left}</div>
+      <Cap size={50} fill={!dark}>{url}</Cap>
     </div>
   );
 }
 
 /** The share image for an issue, and for the home page while that issue is the latest. */
 export function IssueImage({ issue }: { issue: Issue }) {
-  const headlines = issue.main.slice(0, 3).map(event => clip(event.headline, 62));
+  const headline = clip(issue.summary, 190);
+  const size = headline.length > 150 ? 54 : headline.length > 110 ? 60 : 68;
   return (
-    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: NIGHT, color: PAPER, padding: '48px 64px 46px', fontFamily: 'DM Sans' }}>
+    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: PAPER, color: INK, padding: '44px 64px 46px', fontFamily: SANS, borderTop: `10px solid ${SIGNAL}` }}>
       <div style={{ display: 'flex' }}>
-        <BrandRow color={PAPER} soft={SOFT} right={`ISSUE ${issue.number} · ${capsRange(issue.from, issue.to)}`} />
+        <BrandRow right={`ISSUE ${issue.number} · ${capsRange(issue.from, issue.to)}`} />
       </div>
-      <div style={{ display: 'flex', marginTop: 40, fontFamily: 'Instrument Serif', fontSize: 96, lineHeight: 0.95, letterSpacing: -3 }}>
-        This week in&nbsp;<span style={{ fontStyle: 'italic', color: ACID }}>AI control</span>
+      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flexGrow: 1, gap: 22 }}>
+        <Label>THIS WEEK IN AI CONTROL</Label>
+        <div style={{ display: 'flex', fontFamily: SERIF, fontWeight: 500, fontSize: size, lineHeight: 1.06, letterSpacing: -1.6, maxWidth: 1072 }}>{headline}</div>
       </div>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginTop: 34, flexGrow: 1 }}>
-        {headlines.map(line => (
-          <div key={line} style={{ display: 'flex', alignItems: 'center', gap: 16, fontSize: 28, color: PAPER }}>
-            <div style={{ width: 10, height: 10, borderRadius: 5, background: ACID, flexShrink: 0 }} />
-            <div style={{ display: 'flex' }}>{line}</div>
-          </div>
-        ))}
-      </div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div style={{ display: 'flex', fontSize: 24, color: SOFT }}>What happened, and seven things worth your time.</div>
-        <Pill>ctrlai.com</Pill>
-      </div>
+      <Footer left="What happened, and seven things worth your time." url="ctrlai.com" />
     </div>
   );
 }
 
 export function HallImage({ count, cap, firstTitles }: { count: number; cap: number; firstTitles: string[] }) {
   return (
-    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: PAPER, color: INK, padding: '48px 64px 46px', fontFamily: 'DM Sans' }}>
+    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: PAPER, color: INK, padding: '44px 64px 46px', fontFamily: SANS, borderTop: `10px solid ${SIGNAL}` }}>
       <div style={{ display: 'flex' }}>
-        <BrandRow right={`CAPPED AT ${cap}`} />
+        <BrandRow right={`HALL OF FAME · ${count} OF ${cap}`} />
       </div>
-      <div style={{ display: 'flex', marginTop: 36, fontFamily: 'Instrument Serif', fontSize: 120, lineHeight: 0.92, letterSpacing: -4 }}>
-        Hall of&nbsp;<span style={{ fontStyle: 'italic', color: '#597247' }}>Fame</span>
+      <div style={{ display: 'flex', flexDirection: 'column', marginTop: 34, gap: 18 }}>
+        <Label>WHAT YOU SHOULDN’T MISS</Label>
+        <div style={{ display: 'flex', fontFamily: SERIF, fontWeight: 500, fontSize: 52, lineHeight: 1.06, letterSpacing: -1.2, maxWidth: 1072 }}>
+          {`The ${count} things to see first about AI control, safety and how AI works. Six videos make one evening.`}
+        </div>
       </div>
-      <div style={{ display: 'flex', marginTop: 14, fontSize: 27, color: '#46554b', maxWidth: 1080 }}>
-        {`The ${count} things you shouldn’t miss about AI control, safety and how AI works.`}
-      </div>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginTop: 26, flexGrow: 1 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', marginTop: 28, flexGrow: 1, borderTop: `2px solid ${INK}` }}>
         {firstTitles.map((title, i) => (
-          <div key={title} style={{ display: 'flex', alignItems: 'baseline', gap: 16, fontSize: 25 }}>
-            <div style={{ display: 'flex', fontFamily: 'Instrument Serif', fontSize: 34, color: '#597247', width: 26 }}>{String(i + 1)}</div>
-            <div style={{ display: 'flex' }}>{clip(title, 70)}</div>
+          <div key={title} style={{ display: 'flex', alignItems: 'center', gap: 18, padding: '9px 0', borderBottom: `1px solid ${LINE}`, fontFamily: SANS, fontSize: 22, fontWeight: 500 }}>
+            <div style={{ display: 'flex', fontFamily: SERIF, fontWeight: 400, fontSize: 26, color: MUTED, width: 28 }}>{String(i + 1)}</div>
+            <div style={{ display: 'flex' }}>{clip(title, 80)}</div>
           </div>
         ))}
       </div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div style={{ display: 'flex', fontSize: 24, color: MUTED }}>Start with six videos, one evening.</div>
-        <Pill dark>ctrlai.com/hall-of-fame</Pill>
-      </div>
+      <Footer left="Capped at 30. Earned by lasting." url="ctrlai.com/hall-of-fame" />
     </div>
   );
 }
@@ -143,21 +159,16 @@ export function PickCard({ pick, label, right, footer, url }: { pick: Pick; labe
   const titleSize = pick.title.length > 80 ? 54 : pick.title.length > 50 ? 64 : 76;
   const byline = pick.outlet && pick.outlet !== pick.creator ? `${pick.creator} · ${pick.outlet}` : pick.creator;
   return (
-    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: PAPER, color: INK, padding: '48px 64px 46px', fontFamily: 'DM Sans', borderBottom: `18px solid ${ACID}` }}>
+    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: PAPER, color: INK, padding: '44px 64px 46px', fontFamily: SANS, borderTop: `10px solid ${SIGNAL}` }}>
       <div style={{ display: 'flex' }}>
         <BrandRow right={right} />
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flexGrow: 1, gap: 22 }}>
-        <div style={{ display: 'flex' }}>
-          <div style={{ display: 'flex', background: INK, color: ACID, fontSize: 20, fontWeight: 600, letterSpacing: 2.4, padding: '9px 18px', borderRadius: 999 }}>{label}</div>
-        </div>
-        <div style={{ display: 'flex', fontFamily: 'Instrument Serif', fontSize: titleSize, lineHeight: 1.02, letterSpacing: -1.5, maxWidth: 1060 }}>{clip(pick.title, 110)}</div>
-        <div style={{ display: 'flex', fontSize: 28, color: '#46554b' }}>{clip(byline, 70)}</div>
+        <Label>{label}</Label>
+        <div style={{ display: 'flex', fontFamily: SERIF, fontWeight: 500, fontSize: titleSize, lineHeight: 1.04, letterSpacing: -1.5, maxWidth: 1060 }}>{clip(pick.title, 110)}</div>
+        <div style={{ display: 'flex', fontFamily: SANS, fontSize: 27, color: INK_2 }}>{clip(byline, 70)}</div>
       </div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div style={{ display: 'flex', fontSize: 24, color: MUTED }}>{footer}</div>
-        <Pill dark>{url}</Pill>
-      </div>
+      <Footer left={footer} url={url} />
     </div>
   );
 }
@@ -165,24 +176,23 @@ export function PickCard({ pick, label, right, footer, url }: { pick: Pick; labe
 /** The week's main events on one image: the first post of the weekly thread, and the LinkedIn image. */
 export function RecapImage({ issue }: { issue: Issue }) {
   return (
-    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: PAPER, color: INK, padding: '42px 64px 38px', fontFamily: 'DM Sans', borderBottom: `18px solid ${ACID}` }}>
+    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: PAPER, color: INK, padding: '38px 64px 38px', fontFamily: SANS, borderTop: `10px solid ${SIGNAL}` }}>
       <div style={{ display: 'flex' }}>
-        <BrandRow right={`ISSUE ${issue.number} · ${capsRange(issue.from, issue.to)}`} />
+        <BrandRow right={`ISSUE ${issue.number} · ${capsRange(issue.from, issue.to)}`} size={40} />
       </div>
-      <div style={{ display: 'flex', marginTop: 20, fontFamily: 'Instrument Serif', fontSize: 74, lineHeight: 1, letterSpacing: -2 }}>
-        This week in&nbsp;<span style={{ fontStyle: 'italic', color: '#597247' }}>AI control</span>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginTop: 24 }}>
+        <Label>THIS WEEK IN AI CONTROL · WHAT HAPPENED</Label>
       </div>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 15, marginTop: 28, flexGrow: 1 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', marginTop: 16, flexGrow: 1, borderTop: `2px solid ${INK}` }}>
         {issue.main.map(event => (
-          <div key={event.headline} style={{ display: 'flex', alignItems: 'flex-start', gap: 22 }}>
-            <div style={{ display: 'flex', width: 92, flexShrink: 0, marginTop: 7, fontSize: 20, fontWeight: 600, letterSpacing: 1.5, color: MUTED }}>{shortDate(event.date).toUpperCase()}</div>
-            <div style={{ display: 'flex', fontSize: 29, fontWeight: 600, lineHeight: 1.2 }}>{clip(event.headline, 90)}</div>
+          <div key={event.headline} style={{ display: 'flex', alignItems: 'center', gap: 22, padding: '11px 0', borderBottom: `1px solid ${LINE}` }}>
+            <div style={{ display: 'flex', width: 84, flexShrink: 0, fontFamily: SANS, fontSize: 17, fontWeight: 700, letterSpacing: 2, color: MUTED }}>{shortDate(event.date).toUpperCase()}</div>
+            <div style={{ display: 'flex', fontFamily: SERIF, fontWeight: 500, fontSize: 31, lineHeight: 1.15, letterSpacing: -0.4 }}>{clip(event.headline, 90)}</div>
           </div>
         ))}
       </div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div style={{ display: 'flex', fontSize: 23, color: MUTED }}>Every event confirmed by two independent reports</div>
-        <Pill dark>ctrlai.com</Pill>
+      <div style={{ display: 'flex', marginTop: 18 }}>
+        <Footer left="Every event confirmed by two independent reports." url="ctrlai.com" />
       </div>
     </div>
   );

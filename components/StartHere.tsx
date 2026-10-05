@@ -9,9 +9,13 @@ function duration(minutes: number): string {
   return [hours ? `${hours} ${hours === 1 ? 'hour' : 'hours'}` : '', rest ? `${rest} minutes` : ''].filter(Boolean).join(' ');
 }
 
+/** "1 hour 48 minutes": how long the six videos take together. */
+export function startHereDuration(): string {
+  return duration(START_HERE.reduce((sum, entry) => sum + (entry.minutes ?? 0), 0));
+}
+
 /** The six videos for one evening, playable where they stand. */
 export function StartHere({ withLink = true }: { withLink?: boolean }) {
-  const minutes = START_HERE.reduce((sum, entry) => sum + (entry.minutes ?? 0), 0);
   return (
     <>
       <ol className="path">
@@ -26,9 +30,9 @@ export function StartHere({ withLink = true }: { withLink?: boolean }) {
                 minutes={entry.minutes}
                 list="start-here"
                 pickId={entry.id}
-                sizes="(max-width: 640px) 100vw, 340px"
+                sizes="(max-width: 520px) 100vw, (max-width: 860px) 50vw, 300px"
               />
-              <span className="path-step" aria-hidden="true">{i + 1}</span>
+              <span className="cap step" aria-hidden="true">{i + 1}</span>
             </div>
             <a href={entry.url} target="_blank" rel="noopener" data-list="start-here" data-pick={entry.id}>{entry.title}</a>
             <small>{entry.outlet && entry.outlet !== entry.creator ? `${entry.creator} · ${entry.outlet}` : entry.creator}</small>
@@ -36,7 +40,7 @@ export function StartHere({ withLink = true }: { withLink?: boolean }) {
         ))}
       </ol>
       <div className="path-foot">
-        <span>About {duration(minutes)} in all.</span>
+        <span>About {startHereDuration()} in all.</span>
         {withLink ? <Link href="/hall-of-fame">See all {ENTRIES.length} in the Hall of Fame →</Link> : null}
       </div>
     </>

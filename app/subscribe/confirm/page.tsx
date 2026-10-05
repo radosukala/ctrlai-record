@@ -27,30 +27,38 @@ export default async function ConfirmPage({ searchParams }: { searchParams: Prom
 
   if (!checked.ok) {
     return (
-      <div className="read page">
-        <section className="hero-text">
-          <span className="eyebrow">Confirm your subscription</span>
-          <h1 className="display">That link <em>has run out.</em></h1>
-          <p className="lede">Confirmation links work for a few days, and each one only for the address it was sent to. Enter your address and we’ll send a fresh one.</p>
-          <SubscribeForm source="confirm-expired" />
-        </section>
+      <div className="page">
+        <div className="shell">
+          <header className="hero">
+            <div className="hero-main">
+              <p className="dateline"><b>Confirm your subscription</b></p>
+              <h1 className="headline">That link <em>has run out.</em></h1>
+              <p className="lede">Confirmation links work for a few days, and each one only for the address it was sent to. Enter your address and we’ll send a fresh one.</p>
+              <SubscribeForm source="confirm-expired" />
+            </div>
+          </header>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="read page">
-      <section className="hero-text">
-        <span className="eyebrow">Confirm your subscription</span>
-        <h1 className="display">One last <em>step.</em></h1>
-        <p className="lede">Press the button to get Ctrl AI’s weekly issue at <strong>{checked.email}</strong>.</p>
-        {problem && PROBLEM[problem] ? <p className="subscribe-error" role="alert">{PROBLEM[problem]}</p> : null}
-        <form action={confirm} className="subscribe-confirm">
-          <input type="hidden" name="token" value={token} />
-          <button type="submit" className="btn btn-primary">Yes, send me the weekly issue</button>
-        </form>
-        <p className="small muted">If this wasn’t you, just close this page. Nothing happens until you press the button.</p>
-      </section>
+    <div className="page">
+      <div className="shell">
+        <header className="hero">
+          <div className="hero-main">
+            <p className="dateline"><b>Confirm your subscription</b></p>
+            <h1 className="headline">One last <em>step.</em></h1>
+            <p className="lede">Press the button to get Ctrl AI’s weekly issue at <strong>{checked.email}</strong>.</p>
+            {problem && PROBLEM[problem] ? <p className="subscribe-error" role="alert">{PROBLEM[problem]}</p> : null}
+            <form action={confirm} className="subscribe-confirm">
+              <input type="hidden" name="token" value={token} />
+              <button type="submit" className="key key-primary">Yes, send me the weekly issue</button>
+            </form>
+            <p className="subscribe-note">If this wasn’t you, just close this page. Nothing happens until you press the button.</p>
+          </div>
+        </header>
+      </div>
     </div>
   );
 }

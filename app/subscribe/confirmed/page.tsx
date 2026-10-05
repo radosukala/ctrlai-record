@@ -9,16 +9,20 @@ export const metadata: Metadata = { title: 'You’re subscribed', robots: { inde
 export default function ConfirmedPage() {
   if (!newsletterEnabled()) notFound();
   return (
-    <div className="read page">
-      <section className="hero-text">
-        <span className="eyebrow">Subscribed</span>
-        <h1 className="display">You’re <em>in.</em></h1>
-        <p className="lede">The next issue will arrive in your inbox. A welcome email with the latest issue is on its way.</p>
-        <p>
-          <Link href="/" className="btn btn-primary">Read issue {LATEST.number} now</Link>{' '}
-          <Link href="/hall-of-fame#start-here" className="btn btn-ghost">Six videos to start with</Link>
-        </p>
-      </section>
+    <div className="page">
+      <div className="shell">
+        <header className="hero">
+          <div className="hero-main">
+            <p className="dateline"><b>Subscribed</b></p>
+            <h1 className="headline">You’re <em>in.</em></h1>
+            <p className="lede">The next issue will arrive in your inbox. A welcome email with the latest issue is on its way.</p>
+            <p>
+              <Link href="/" className="key key-primary">Read issue {LATEST.number} now</Link>{' '}
+              <Link href="/hall-of-fame#start-here" className="key">Six videos to start with</Link>
+            </p>
+          </div>
+        </header>
+      </div>
     </div>
   );
 }

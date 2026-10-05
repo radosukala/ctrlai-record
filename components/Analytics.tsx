@@ -34,8 +34,8 @@ export function Analytics() {
     <div className="consent" role="region" aria-label="Analytics choice">
       <p>Can we see which picks you open and play? That uses Google Analytics, which sets cookies, so we ask first. Visits are counted either way, without cookies.</p>
       <div className="consent-actions">
-        <button type="button" className="consent-yes" onClick={() => decide('granted')}>Count me</button>
-        <button type="button" onClick={() => decide('denied')}>No thanks</button>
+        <button type="button" className="key key-primary key-sm" onClick={() => decide('granted')}>Count me</button>
+        <button type="button" className="key key-sm" onClick={() => decide('denied')}>No thanks</button>
       </div>
     </div>
   );

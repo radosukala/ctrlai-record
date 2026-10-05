@@ -34,7 +34,7 @@ export function PickItem({ pick, list, mode, rank, reviewOn }: Props) {
           minutes={pick.minutes}
           list={list}
           pickId={pick.id}
-          sizes="(max-width: 680px) 100vw, 300px"
+          sizes="(max-width: 760px) 100vw, 272px"
         />
       </div>
       <div className="pick-main">
@@ -43,8 +43,8 @@ export function PickItem({ pick, list, mode, rank, reviewOn }: Props) {
         </h3>
         <div className="pick-meta">
           <span>{meta.join(' · ')}</span>
-          <span className={`chip ${pick.stance}`}>{STANCE_LABEL[pick.stance]}</span>
-          {reviewOn ? <span className="chip nominee" title={`Stays if people are still watching or citing it on ${longDate(reviewOn)}`}>Nominee until {shortDate(reviewOn)}</span> : null}
+          <span className={`stance ${pick.stance}`}>{STANCE_LABEL[pick.stance]}</span>
+          {reviewOn ? <span className="nominee" title={`Stays if people are still watching or citing it on ${longDate(reviewOn)}`}>Nominee until {shortDate(reviewOn)}</span> : null}
         </div>
         <p className="pick-why">{pick.why}</p>
         {found.length ? (
@@ -63,12 +63,10 @@ export function PickItem({ pick, list, mode, rank, reviewOn }: Props) {
 
 export function SignalLegend({ mode, measuredOn }: { mode: 'week' | 'hall'; measuredOn: string }) {
   return (
-    <p className="legend">
-      <span>Press a picture to play the video here. Numbers from {longDate(measuredOn)}:</span>
-      {mode === 'week' ? <span><b>a day</b> views per day since it came out</span> : <span><b>a year</b> views per year online</span>}
-      <span><b>liked</b> likes per view</span>
-      <span><b>kept</b> bookmarks per view</span>
-      <span><b>argued</b> comments per like</span>
+    <p className="sec-note">
+      Press a picture to play the video here. Numbers from {longDate(measuredOn)}:{' '}
+      {mode === 'week' ? <><b>a day</b> is views per day since it came out</> : <><b>a year</b> is views per year online</>},{' '}
+      <b>liked</b> likes per view, <b>kept</b> bookmarks per view, <b>argued</b> comments per like.
     </p>
   );
 }

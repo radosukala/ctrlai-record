@@ -1,9 +1,7 @@
 import type { Metadata, Viewport } from 'next';
-import '@fontsource/dm-sans/400.css';
-import '@fontsource/dm-sans/500.css';
-import '@fontsource/dm-sans/600.css';
-import '@fontsource/instrument-serif/400.css';
-import '@fontsource/instrument-serif/400-italic.css';
+import '@fontsource-variable/newsreader/standard.css';
+import '@fontsource-variable/newsreader/standard-italic.css';
+import '@fontsource-variable/schibsted-grotesk/wght.css';
 import './globals.css';
 import { SiteFooter, SiteHeader } from '@/components/SiteChrome';
 import { Analytics as VercelAnalytics } from '@vercel/analytics/next';
@@ -20,7 +18,7 @@ export const metadata: Metadata = {
   alternates: { types: { 'application/rss+xml': [{ url: '/feed.xml', title: 'Ctrl AI · This week in AI control' }] } },
 };
 
-export const viewport: Viewport = { themeColor: '#f5f4ee' };
+export const viewport: Viewport = { themeColor: '#f4f1ea' };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

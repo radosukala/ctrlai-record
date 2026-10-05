@@ -44,7 +44,7 @@ export function SubscribeForm({ source }: { /** Where the form sits, for countin
         defaultValue={state.email ?? ''}
       />
       <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hp" defaultValue="" />
-      <button type="submit" disabled={pending}>{pending ? 'Sending…' : 'Subscribe'}</button>
+      <button type="submit" className="key key-primary" disabled={pending}>{pending ? 'Sending…' : 'Subscribe'}</button>
       {state.status === 'error' ? <p className="subscribe-error" role="alert">{state.message}</p> : null}
     </form>
   );
