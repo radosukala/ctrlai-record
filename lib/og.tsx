@@ -104,7 +104,7 @@ function Label({ children }: { children: string }) {
 
 function Footer({ left, url, dark = false }: { left: string; url: string; dark?: boolean }) {
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+    <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center', gap: 24 }}>
       <div style={{ display: 'flex', fontFamily: SANS, fontSize: 23, color: dark ? LINE : MUTED }}>{left}</div>
       <Cap size={50} fill={!dark}>{url}</Cap>
     </div>
@@ -191,9 +191,7 @@ export function RecapImage({ issue }: { issue: Issue }) {
           </div>
         ))}
       </div>
-      <div style={{ display: 'flex', marginTop: 18 }}>
-        <Footer left="Every event confirmed by two independent reports." url="ctrlai.com" />
-      </div>
+      <Footer left="Every event confirmed by two independent reports." url="ctrlai.com" />
     </div>
   );
 }
