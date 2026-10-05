@@ -71,7 +71,7 @@ export function withBlurb(head: string, blurb: string, tail: string): string {
   for (let size = room; size >= 40; size -= 4) {
     const slice = blurb.slice(0, size);
     // Prefer to stop where a clause ends, so the cut reads as a thought and not as a cliff.
-    const clause = Math.max(...[', ', ' and ', ' but ', ' after ', ' while ', ' with ', ' that ', ' which '].map(word => slice.lastIndexOf(word)));
+    const clause = Math.max(...[', ', ' and ', ' but ', ' while ', ' which '].map(word => slice.lastIndexOf(word)));
     const cut = (clause > size * 0.6 ? slice.slice(0, clause) : slice.slice(0, slice.lastIndexOf(' '))).replace(/[\s,;:—–-]+$/, '');
     const candidate = `${head}\n\n${cut}…\n\n${tail}`;
     if (cut.length >= 30 && xLength(candidate) <= X_LIMIT) return candidate;
