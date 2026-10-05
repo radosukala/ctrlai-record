@@ -103,7 +103,7 @@ async function check() {
 
   note(`Sender: ${config.from}`);
   if (config.replyTo) note(`Replies go to ${config.replyTo}`);
-  else note(`No NEWSLETTER_REPLY_TO, so replies go to ${config.from.match(/<([^>]+)>/)?.[1] ?? config.from}. ctrlai.com’s mail is on Google: make sure that mailbox exists, or set NEWSLETTER_REPLY_TO. The About page promises erasure on reply.`);
+  else note(`No NEWSLETTER_REPLY_TO, so replies go to ${config.from.match(/<([^>]+)>/)?.[1] ?? config.from}. That address must receive mail (a Google alias is fine): the About page promises erasure on reply.`);
   if (!origin.startsWith('https://') || /localhost/.test(origin)) bad(`The site address is ${origin}`, 'Links in emails need the live address. Unset PUBLIC_ORIGIN or set it to https://ctrlai.com.');
   console.log(failed ? `\n${failed} thing${failed === 1 ? '' : 's'} to fix.` : '\nReady.');
   process.exit(failed ? 1 : 0);

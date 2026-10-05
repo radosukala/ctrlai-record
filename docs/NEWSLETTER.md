@@ -37,8 +37,9 @@
    welcome email. Then find yourself under Resend → Contacts.
 
 Optional variables: `NEWSLETTER_FROM` (default `Ctrl AI <hello@ctrlai.com>`) and `NEWSLETTER_REPLY_TO`.
-**Decide where replies go.** ctrlai.com's mail is on Google, so `hello@ctrlai.com` only works if that mailbox exists.
-The About page tells readers they can reply to ask for their address to be erased, so replies must reach a person.
+**Replies** go to the sender address. `hello@ctrlai.com` is an alias on Google, so they reach a person. The About page
+tells readers they can reply to ask for their address to be erased, so keep that alias working (or set
+`NEWSLETTER_REPLY_TO` to another inbox).
 
 ## Each week
 
