@@ -31,6 +31,12 @@ being asked.
 - **Analytics:** Vercel Web Analytics counts page views for everyone, without cookies. Google Analytics
   (`lib/analytics.ts`) loads only after a visitor says yes, and is what sees which picks are opened and played. Keep
   the privacy section on `/about` true whenever this changes. Fonts are self-hosted.
+- **Nothing emails the list from code.** The weekly issue is saved as a draft in Resend (`npm run newsletter -- draft`)
+  and sent by the editor in the dashboard. `tests/newsletter.test.ts` fails if a send path appears.
+- **A subscriber joins only by pressing the button** on the confirm page, never by typing an address. Addresses live in
+  Resend, not in this repo, and never appear in logs. Open and click tracking stay off in Resend: the About page says so.
+- **Posts are drafted, never posted.** `npm run social` writes files for the editor to post. Tag only handles in
+  `content/issues.ts` that were checked to exist.
 - **Money never decides a pick.** Sponsorship or donations may come later; if they do, picks stay the editor's call.
 - **Same standard for every AI company**, including Anthropic and any model used to build the site.
 

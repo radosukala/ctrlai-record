@@ -23,6 +23,8 @@ export type Pick = {
   /** One or two plain sentences: why a newcomer should open it. Written by us, checked against the source. */
   why: string;
   stance: Stance;
+  /** X handles to tag when we post this pick, without the @. Only handles we checked exist. */
+  x?: string[];
 };
 
 export type Source = { label: string; url: string };

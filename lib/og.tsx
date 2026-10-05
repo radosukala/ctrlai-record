@@ -2,8 +2,11 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { Issue } from '@/content/issues';
 import type { Pick } from '@/content/types';
+import { shortDate } from '@/lib/site';
 
 export const OG_SIZE = { width: 1200, height: 630 };
+/** The recap image goes out on X and LinkedIn, where 16:9 fills the feed. */
+export const RECAP_SIZE = { width: 1200, height: 675 };
 
 export const INK = '#263b31';
 export const PAPER = '#f5f4ee';
@@ -154,6 +157,32 @@ export function PickCard({ pick, label, right, footer, url }: { pick: Pick; labe
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div style={{ display: 'flex', fontSize: 24, color: MUTED }}>{footer}</div>
         <Pill dark>{url}</Pill>
+      </div>
+    </div>
+  );
+}
+
+/** The week's main events on one image: the first post of the weekly thread, and the LinkedIn image. */
+export function RecapImage({ issue }: { issue: Issue }) {
+  return (
+    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: PAPER, color: INK, padding: '42px 64px 38px', fontFamily: 'DM Sans', borderBottom: `18px solid ${ACID}` }}>
+      <div style={{ display: 'flex' }}>
+        <BrandRow right={`ISSUE ${issue.number} · ${capsRange(issue.from, issue.to)}`} />
+      </div>
+      <div style={{ display: 'flex', marginTop: 20, fontFamily: 'Instrument Serif', fontSize: 74, lineHeight: 1, letterSpacing: -2 }}>
+        This week in&nbsp;<span style={{ fontStyle: 'italic', color: '#597247' }}>AI control</span>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 15, marginTop: 28, flexGrow: 1 }}>
+        {issue.main.map(event => (
+          <div key={event.headline} style={{ display: 'flex', alignItems: 'flex-start', gap: 22 }}>
+            <div style={{ display: 'flex', width: 92, flexShrink: 0, marginTop: 7, fontSize: 20, fontWeight: 600, letterSpacing: 1.5, color: MUTED }}>{shortDate(event.date).toUpperCase()}</div>
+            <div style={{ display: 'flex', fontSize: 29, fontWeight: 600, lineHeight: 1.2 }}>{clip(event.headline, 90)}</div>
+          </div>
+        ))}
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div style={{ display: 'flex', fontSize: 23, color: MUTED }}>Every event confirmed by two independent reports</div>
+        <Pill dark>ctrlai.com</Pill>
       </div>
     </div>
   );

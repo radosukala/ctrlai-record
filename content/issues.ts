@@ -14,6 +14,8 @@ export type Issue = {
   to: string;
   /** One sentence on what kind of week it was. */
   summary: string;
+  /** The email subject, when "Issue N: <first headline>" isn't the best way in. */
+  subject?: string;
   /** The events that matter most, in date order. */
   main: Event[];
   /** Also this week: one line each. */
@@ -71,9 +73,9 @@ export const ISSUES: Issue[] = [
         headline: 'OpenAI dismisses three safety researchers, and its safety-report lead quits',
         text: 'OpenAI said three safety researchers had shared confidential information with an outside safety group. Two days later David Robinson, who led the safety reports for OpenAI’s launches, resigned with an essay in The Atlantic saying the company’s culture is broken.',
         sources: [
-          { label: 'TechCrunch', url: 'https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/' },
+          { label: 'TechCrunch on the dismissals', url: 'https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/' },
           { label: 'The Atlantic', url: 'https://www.theatlantic.com/technology/2026/10/openai-safety-team-resignation/688881/' },
-          { label: 'TechCrunch', url: 'https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/' },
+          { label: 'TechCrunch on the resignation', url: 'https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/' },
         ],
       },
     ],
@@ -143,6 +145,7 @@ export const ISSUES: Issue[] = [
         published: '2026-09-27',
         why: 'Someone who works on agent security at OpenAI, writing in a personal capacity, on living through the incidents from the inside, and why keeping agents contained takes more than a better sandbox.',
         stance: 'measured',
+        x: ['joedaroo'],
       },
       {
         id: 'gates-nuclear-weapons',
@@ -155,6 +158,7 @@ export const ISSUES: Issue[] = [
         minutes: 74,
         why: 'Gates thinks the alarm hasn’t gone far enough. He expects catastrophic cyberattacks, bioterrorism and mass job loss unless governments act, and calls the idea that the industry can regulate itself “insane.”',
         stance: 'alarmed',
+        x: ['ezraklein'],
       },
       {
         id: 'eleven-hugging-face-details',
@@ -167,6 +171,7 @@ export const ISSUES: Issue[] = [
         minutes: 20,
         why: 'The swarm was caught only because it wasn’t hiding. Wiblin goes through results from the system card of OpenAI’s strongest public model that show how a swarm that did hide could get away with it.',
         stance: 'alarmed',
+        x: ['robertwiblin', '80000Hours'],
       },
       {
         id: 'i-quit-openai',
@@ -178,6 +183,7 @@ export const ISSUES: Issue[] = [
         published: '2026-10-03',
         why: 'The person who led the safety reports for OpenAI’s launches argues that AI labs should run like nuclear plants or busy airports, with layers of redundancy, and that outside pressure is needed to get them there.',
         stance: 'alarmed',
+        x: ['TheAtlantic'],
       },
       {
         id: 'hawley-reads-the-logs',
@@ -190,6 +196,7 @@ export const ISSUES: Issue[] = [
         minutes: 6,
         why: 'A senator reads the agents’ messages to each other into the record. Six minutes that make “rogue AI” concrete.',
         stance: 'news',
+        x: ['HawleyMO'],
       },
       {
         id: 'big-tent-or-small-tent',
@@ -201,6 +208,7 @@ export const ISSUES: Issue[] = [
         published: '2026-10-01',
         why: 'Two leading skeptics of extinction talk agree the catastrophic risks are real, but argue the superintelligence framing polarizes. They want concrete defenses now: transparency, liability, resilience.',
         stance: 'skeptical',
+        x: ['random_walker', 'sayashk'],
       },
       {
         id: 'is-sandboxing-sufficient',
@@ -212,6 +220,7 @@ export const ISSUES: Issue[] = [
         published: '2026-09-30',
         why: 'A cryptography professor says no. Useful agents need access, and the bigger danger isn’t an evil AI breaking out but obedient agents taking orders from someone who shouldn’t be giving them.',
         stance: 'measured',
+        x: ['matthew_d_green'],
       },
     ],
   },

@@ -13,7 +13,9 @@
     "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test tests/*.test.ts",
     "measure": "tsx scripts/measure.ts",
-    "vercel-build": "next build"
+    "vercel-build": "next build",
+    "newsletter": "tsx --env-file-if-exists=.env.local scripts/newsletter.ts",
+    "social": "tsx scripts/social.ts"
   },
   "dependencies": {
     "@fontsource/dm-sans": "5.3.0",

@@ -4,6 +4,7 @@ import { CAP, NOMINEE_DAYS } from '@/content/hall';
 import { HN_THRESHOLD } from '@/lib/stats';
 import { SITE } from '@/lib/site';
 import { AnalyticsSettingsButton } from '@/components/Analytics';
+import { newsletterEnabled } from '@/lib/newsletter/config';
 
 export const metadata: Metadata = {
   title: 'How we pick',
@@ -81,6 +82,21 @@ export default function AboutPage() {
           any time: <AnalyticsSettingsButton className="text-button" />. Fonts and pictures are served from this site.
         </p>
       </section>
+
+      {newsletterEnabled() ? (
+        <section className="prose" aria-labelledby="email">
+          <h2 className="h2" id="email">The weekly email</h2>
+          <p>
+            Subscribing takes two steps: you type your address, and we send one email with a button. You’re added only when you press it,
+            so nobody can sign you up by typing your address. We keep your address with Resend, the service that sends our emails, and
+            use it for nothing but the weekly issue. We don’t track whether you open or click our emails.
+          </p>
+          <p>
+            Every issue ends with a one-click unsubscribe link, and after you use it we send nothing more. If you’d like your address erased
+            from the list entirely, reply to any issue and we’ll do it.
+          </p>
+        </section>
+      ) : null}
 
       <section className="prose" aria-labelledby="videos">
         <h2 className="h2" id="videos">Videos on this page</h2>

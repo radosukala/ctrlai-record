@@ -5,6 +5,8 @@ import { MEASURED_ON } from '@/lib/stats';
 import { Events } from './Events';
 import { PickItem, SignalLegend } from './Picks';
 import { StartHere } from './StartHere';
+import { SubscribeForm } from './SubscribeForm';
+import { newsletterEnabled } from '@/lib/newsletter/config';
 
 export function IssueView({ issue, isLatest }: { issue: Issue; isLatest: boolean }) {
   const list = `week-${issue.slug}`;
@@ -42,6 +44,16 @@ export function IssueView({ issue, isLatest }: { issue: Issue; isLatest: boolean
           {issue.picks.map((pick, i) => <PickItem key={pick.id} pick={pick} list={list} mode="week" rank={i + 1} />)}
         </ol>
       </section>
+
+      {newsletterEnabled() ? (
+        <section className="subscribe-block" aria-labelledby="subscribe-title">
+          <div>
+            <h2 className="h2" id="subscribe-title">One email a week.</h2>
+            <p>What happened, and the seven pieces worth your time, the day the issue is out.</p>
+          </div>
+          <SubscribeForm source={`issue-${issue.number}`} />
+        </section>
+      ) : null}
 
       <section className="block" aria-labelledby="start-here">
         <div className="sec-head">

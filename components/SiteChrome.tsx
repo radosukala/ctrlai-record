@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { Wordmark } from './Brand';
 import { NavLinks } from './NavLinks';
 import { AnalyticsSettingsButton } from './Analytics';
+import { FooterSubscribe } from './FooterSubscribe';
+import { newsletterEnabled } from '@/lib/newsletter/config';
 import { SITE } from '@/lib/site';
 
 export const NAV = [
@@ -15,7 +17,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="shell">
         <Wordmark />
-        <NavLinks items={NAV} />
+        <NavLinks items={newsletterEnabled() ? [...NAV, { href: '/subscribe', label: 'Subscribe', pill: true }] : NAV} />
       </div>
     </header>
   );
@@ -39,6 +41,7 @@ export function SiteFooter() {
             <a href={SITE.repoUrl}>Source code</a>
           </nav>
         </div>
+        {newsletterEnabled() ? <FooterSubscribe /> : null}
         <div className="footer-note">
           <span>Visits are counted without cookies; Google Analytics only if you agree. <AnalyticsSettingsButton className="footer-button" /></span>
           <span>Our words: <a href={SITE.contentLicenseUrl}>{SITE.contentLicense}</a>. Code: <a href={SITE.codeLicenseUrl}>{SITE.codeLicense}</a>.</span>

@@ -20,18 +20,22 @@
 | How numbers become "liked", "kept", "argued" | [lib/stats.ts](lib/stats.ts) |
 | Share images and the cards creators can post | [lib/og.tsx](lib/og.tsx), `app/**/opengraph-image.tsx`, `app/**/card/[id]/route.tsx` |
 | Content rules, enforced | [tests/content.test.ts](tests/content.test.ts) |
+| The weekly email: signup, confirmation, rendering | [lib/newsletter/](lib/newsletter/), [app/subscribe/](app/subscribe/), [scripts/newsletter.ts](scripts/newsletter.ts) |
+| The weekly X and LinkedIn posts | [lib/social.ts](lib/social.ts), [scripts/social.ts](scripts/social.ts) |
 
-How to put out an issue each week: [docs/EDITING.md](docs/EDITING.md).
+How to put out an issue each week: [docs/EDITING.md](docs/EDITING.md). The weekly email and posts: [docs/NEWSLETTER.md](docs/NEWSLETTER.md).
 
 ## Run it
 
-Requires Node 22.13 or newer. The site is static: no database, no accounts, no API keys.
+Requires Node 22.13 or newer. The site is static: no database, no accounts. The newsletter needs a Resend key, and the site shows no signup until it's set (`.env.example`).
 
 ```bash
 npm install
 npm run dev        # http://localhost:4310
 npm test           # content rules and number handling
 npm run measure    # refresh content/stats.json from YouTube, X, Substack and Hacker News
+npm run newsletter -- check    # is Resend set up? (see docs/NEWSLETTER.md)
+npm run social                 # the week's X and LinkedIn posts, with images, in kit/
 npm run build
 ```
 

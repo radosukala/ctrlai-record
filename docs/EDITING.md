@@ -40,10 +40,18 @@ npm run build
 
 Commit and push to `main`; Vercel deploys it.
 
-## 5. Share it
+## 5. Send it and share it
 
-- Post a thread linking `ctrlai.com`, one reply per pick, tagging the creator.
-- Attach the pick's card: `ctrlai.com/week/<slug>/card/<pick id>`.
+Once it has deployed (the email and posts use the live site's images and links):
+
+```bash
+npm run newsletter -- draft    # saves the email as a draft in Resend; you read it and press Send there
+npm run social                 # writes kit/<issue>/: the X threads, the LinkedIn post, and the images
+```
+
+- The email and its first-time setup: docs/NEWSLETTER.md. Nothing is ever sent to the list by code.
+- `kit/<issue>/x-recap.md` is "what happened", `x-picks.md` tags the creators, `linkedin.md` has the post and the first
+  comment. Copy, attach the named image, post. Read every tag first.
 - Don't automate replies or mentions. X's rules forbid automated unsolicited replies, and they read as spam anyway.
 
 ## The Hall of Fame
