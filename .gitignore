@@ -16,3 +16,7 @@ preview-v0.1/
 
 # Weekly kit: the X and LinkedIn posts, their images, and the rendered email. Generated, never committed.
 kit/
+
+# Voice model comparisons made by scripts/film-voices.ts (listening aids, not part of the film)
+public/film/voices/_compare/
+public/film/music/_compare/

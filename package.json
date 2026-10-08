@@ -15,7 +15,8 @@
     "measure": "tsx scripts/measure.ts",
     "vercel-build": "next build",
     "newsletter": "tsx --env-file-if-exists=.env.local scripts/newsletter.ts",
-    "social": "tsx scripts/social.ts"
+    "social": "tsx scripts/social.ts",
+    "film:voices": "tsx --env-file-if-exists=.env.local scripts/film-voices.ts"
   },
   "dependencies": {
     "@fontsource-variable/newsreader": "^5.3.0",

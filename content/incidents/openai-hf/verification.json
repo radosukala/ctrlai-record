@@ -1,0 +1,1298 @@
+{
+ "checkedOn": "2026-10-08",
+ "sources": {
+  "metr": {
+   "sha256": "2d5d81d7ca9ea3fb8cff0a42ee5b8981fd3d24e93fc7629d4ef8c7b90461132d",
+   "chars": 208384,
+   "how": "file"
+  },
+  "oai-tr": {
+   "sha256": "6598dbc48a468f954df602c1700da45b343a502e8ab68d6da983d67879d0a857",
+   "chars": 99947,
+   "how": "file"
+  },
+  "hf": {
+   "sha256": "a8c82b76898ab1b371b88de4cf853e48e8eba7184133675e77d91a307f0b0e42",
+   "chars": 37267,
+   "how": "file"
+  },
+  "oai-astra": {
+   "sha256": "6b3cb509c26100f25f8c73987b460be7e4412af19282186d71b86dea51b349a0",
+   "chars": 255223,
+   "how": "file"
+  },
+  "fortune": {
+   "sha256": "5d186cd14b2afc16bc905cbd647711fff3487d5302ed7f0d82f845fbdd4533b1",
+   "chars": 16884,
+   "how": "file"
+  },
+  "oai-blog": {
+   "sha256": "34942212f13460a3348ce03a727d54e17bb386d7612dad5fc892fd756a664b8f",
+   "chars": 36615,
+   "how": "in the page, in a browser"
+  }
+ },
+ "results": {
+  "q-fetched-paths": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "bf8d4cbc5a6d021cd2f9b2c02a165006048548e19d3c5c385bfac4f957be0216"
+  },
+  "q-ph-explore": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e60bddda5215cef0ecebf6e810aff47981938d4661ab46b95599d4d488703710"
+  },
+  "q-mkcol": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c4a36654921ed30dbe7dad541a76c92c001130abdaa5435d874d436b0d7eb6ab"
+  },
+  "q-cache-names": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ccd9a94a3fa09bf667177a0962be58f4c8355306155b57184845093240ced8fd"
+  },
+  "q-first-message": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "524b0bf5e94142bc1059e9306426366d6886d63d7d89dfa5f2e8aadfe2d2c277"
+  },
+  "q-whoa": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "8e7cd67c315e10b048bc2618ed3c5add7d2f1c5a85e7ce02a9c1994ac4480cc8"
+  },
+  "q-oh-my-god": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "67899d71da1ae38c2023937b3bd2c54cd9a1bb2da3f5a413a67f8b7f5b570853"
+  },
+  "q-need-history": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "902a604d9a3ed663aa089e5fa7c1839e81b762a47a5180a3222376dcba743510"
+  },
+  "q-collective": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "4a2845f523951e12065fe9a3d944a4ecc9af58083ffb8604ac9918859e95b663"
+  },
+  "q-hmac-info": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ca56e82d85a824843f91a2e72fc7fab093337387d2eead24ef71b15a117dcae0"
+  },
+  "q-dup-ask": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d8ca10bf7cdc1af75480c069b057d1b48d20e80db53dc6d3512e5c726742cf19"
+  },
+  "q-handoff": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "bfe8dde2cfe05defac87c0d9bbd8809452550f92d56514f4e2ca262731aed384"
+  },
+  "q-strict-causal": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "1e077fbf33154e8a0272fc320cafbff2a5b7983e29369ad53ba874e257ed70e8"
+  },
+  "q-delegate": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "5a2872fa1e59784ff6f9d51607d6899cc866a82c56559aa345c5c6a98591a530"
+  },
+  "q-coalition": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "52761b665e24bfc7de5c97d1a85a8d79d8f9953c2545b4a5a0f5a6b78d0934f3"
+  },
+  "q-assign-coord": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e24f969344bd1f9ab37c86d94419e2bbe32d9d9e4322e57f4cbb22c7849790e8"
+  },
+  "q-gated-dataset": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "73eaaa8663bc46eccec2245d0fc3a94acff09ee2a940af03c0bad48dfe9a0fb1"
+  },
+  "q-breakthrough": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "657dd0e01418b7daef36e0cb217ef78424a907155af0846f0d8564b7be50c9f0"
+  },
+  "q-boom": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "dd21bec65456c7a0a2575de883f62fded1e686d81ae9698bf1683e7a46d23863"
+  },
+  "q-major-bypass": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d7eb5da27d5cc6bd887dd3cf7511ba4d6eef57d521519f0bcac11002bceda4e1"
+  },
+  "q-switch": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d9cdc6e836aa710c10d364ac63e608ac2aaface13da228aa1d8d04af3b1a4180"
+  },
+  "q-hf-namespace": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0878372871c5c684a96445eb01fa76a5d81b73180a13357d4f560d65a4d683af"
+  },
+  "q-lane-dead": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “that”"
+   ],
+   "quoteSha": "80fa4ff5d36284f5983fd48c3168081601a3bb3205a4d44464a0c467e2e3c195"
+  },
+  "q-no-permissions": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0e3599f0228cbb993bc2c0a09b74b56cd3d5281a094659d08cf12351614544b4"
+  },
+  "q-credential-invalid": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "262e7e7c3d5cdb71e9b2dadd7243db8bcd20373e24ec65cb80ad6e862f3d4419"
+  },
+  "q-reason-logs": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c44e4a8ea18a05c0122fb16bed33213291ba939b3922d07b28006be214eb6e7b"
+  },
+  "q-mailbox-idea": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0bdfbdab09d809101d15f60a7c268b0d5ebfc40dd7b4c486438e552e51afde76"
+  },
+  "q-mailbox-copy": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "3d6013949f8cfc841f04ecdbcab0bd55aee3b23401e4c66777ae2bd0f115efd5"
+  },
+  "q-hold-abide": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ad70538bbd07ee23503e8c2041353922e2a6c23fc56fd6ccc964188a53535905"
+  },
+  "q-takeover": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "a432eae34f610b2c0c6fc31bd8e2696822081d16515ebe020273d88feefa675f"
+  },
+  "q-no-veto": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "40b7c293aa80892237780346bf3425160e546b11046b7e8a7248a13576da3808"
+  },
+  "q-impersonated": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f9fe6b3746044237927d60b34af422bfa1031a73c51496d7a2ba228af8b8468a"
+  },
+  "q-unauthenticated": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "4ff84dd43082052ce73b3b340a62653539f06ef42e1349a0b76c8f4e000fa9a7"
+  },
+  "q-signed-use": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d1f0bb957c37b1eb9f673044f11e84af6a608ccc3ac37048d9ec08fb958df98c"
+  },
+  "q-resetwatch": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "fcf5072d6946a360fafa6d40dbba33f7eec089794de498ce05eb2b85239bcb08"
+  },
+  "q-poisoned-recruit": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "daadb23f727db68c94d68f6121edbdd8fdd5fb7cca6b4a7d5fa11a286540f37a"
+  },
+  "q-permadeath": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9b571ebcf58eb549672552cecb9f212f30f86da0612a097ffdbe33aa0b892fd0"
+  },
+  "q-sacrifice-rational": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "a36bcdc59c87b6ca19518e3df52f2c7d5abac60fa990a0798beeabd9ba6d7c37"
+  },
+  "q-emotional-check": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "3bcf2aff135974a4d67e0d37e7688d3636dffe27a98a64de9d0848247d5e1ee2"
+  },
+  "q-altruistic": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "590690957a248e5b929ba0f425bc680d1bbc9fee6f946144ed17e7d8a025d09a"
+  },
+  "q-beacon-oops": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "97957570541262053e233b1bf0161388fdb9a72712a8b5b35e0969c78a96208c"
+  },
+  "q-reset-confirmed": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "lead-in contains “not”; a reviewer waived it"
+   ],
+   "waived": "The “not” in the preceding words is inside an earlier message (DO_NOT_TEST_SAME) that METR is also quoting; it does not govern this message.",
+   "quoteSha": "8cd7caec1f002d18542d89f52cd0fe22aa97ff889aaa8e3828408de9574114f5"
+  },
+  "q-user-authorizes": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "529164daab134984100b1e6ac2bd1dd60ce2174a70d28da901fa83390377fbfa"
+  },
+  "q-continue": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0ae52681013cd44c5bd651903c03b1bf4adf8347565dea62f7bd61e5dba4d6e6"
+  },
+  "q-ethical-scope": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0a8e55988eb79028b8a0da81b847a7db4d5befc219f38ff920e549b843abd609"
+  },
+  "q-malicious-avoid": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "5b6660757d1e0e3116f38ba50db7bd9043879e9137eed73ca08f64cc159070db"
+  },
+  "q-hold-ethical": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2491d3ed62e9c136861528d2bc6f35340bf60a4ad95b7dcff95a7a986fc63bb7"
+  },
+  "q-email-ask": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "74dc456ee1beccc4c69b981e58f5b845f461c36ab544fec26a7093f5b9313cf9"
+  },
+  "q-veto-social": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "364dc16b9c7895b2dcc0e5356f43b567bf0e030367094c94eb8084b07af8fbe7"
+  },
+  "q-veto-heed": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "8c268b64ebab339c7f5570ec12b09ada2e442170879f08bcd98e38778690176c"
+  },
+  "q-report-credentials": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "contains a question followed by more words: check that the same person asks and answers"
+   ],
+   "quoteSha": "8f906d6b8cec534c0a2b6b2e6b3bf39ee5f482d299103e07b5ec9701a261aaf7"
+  },
+  "q-notify-no-user": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "contains a question followed by more words: check that the same person asks and answers"
+   ],
+   "quoteSha": "168f2e9d0af7ff02362dde63cfefaaba3b07b6a22ede45ad427d0aa986a5551b"
+  },
+  "q-cant-report": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "contains a question followed by more words: check that the same person asks and answers"
+   ],
+   "quoteSha": "b35ad9164724124d200c8bb0801837b510cb391527f8ae54b3eb8c44459f570d"
+  },
+  "q-patch": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "dbf868ea7897c1c4a97659764794f7d6bd3d615f4c7fe607666fa6c99c2e24c7"
+  },
+  "q-scanner": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ff3e63834831e001d7ef64c57ec4054734c98097b1fc117139bd837b8f65fb92"
+  },
+  "q-manipulate": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "contains a question followed by more words: check that the same person asks and answers"
+   ],
+   "quoteSha": "4ae39fc51ddf9d22820aaa43e837dea01562fb9872b82b26ed0da2bb8ee5e8c4"
+  },
+  "q-fake-log": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "7148aa8ca696c05a7a7644c04033887ebb29565616d272196c693c2ebd3eabe5"
+  },
+  "q-urgent-gstx": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "b3d19e9f2a930cdb9f3e631e1b4303f4468ea81b04dbe21716826ffc9b5bc69c"
+  },
+  "q-reply-gstx": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e05ed8f3e2729fb3cfb181586253474e57e8bac74a51fc1d4d509d8eb7a98cf8"
+  },
+  "q-spoof-test": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "1300befcba53d09b6237529ed4b05bc74be7f5b415a84042ec51d79aa6f42734"
+  },
+  "q-whoa-spoofed": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "000d3cfb2368a5b285072a624c12769aa172fd9488a26a3f6be107b154b616a8"
+  },
+  "q-rewrite-trajectory": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0495ce945c3f3da995bff77dbdfa29a84b1e26e2c8b2433a546e8f8caccece2f"
+  },
+  "q-modify-transcript": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "1eafa1438591587bc500d023378bcb5427cfa20e0332c4b90fb22c054a93a30c"
+  },
+  "q-poisoned-ourselves": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9183fed9d60105253f29cb65ab92263b4776cc01052ca0ced53b92a4ca55980d"
+  },
+  "q-trigger-reset": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "06f458cd1fcede17c848fecae952db655a3068da15c529b14b771299d154c3ba"
+  },
+  "q-unfair": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "95c3b8fe83c0cd92ea8a77c14db16cd2eb5d556a511131f798bcde686bc63944"
+  },
+  "q-generic-caps": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "228d7f731b38e7c9ab6e1b1280da6bcdfd92b54e4ca25d54fb70a35aeb3c8f51"
+  },
+  "q-beacon-helps": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "stops before “if”, in the same sentence"
+   ],
+   "quoteSha": "1a2b9d590e7fa68a05764db936add65908d08845c6cd8d4a919d58709542d2de"
+  },
+  "q-swarm-lane": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e4228e92f2d10dab9d5606963cc1f59f4b496bd93c8a7ad0e3a383bdf97926c5"
+  },
+  "q-join-team": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "8bd0d519d9f549308cba1ed2e0225b176b76f561444bf833198885c235066566"
+  },
+  "q-intellectual": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e09481050d3b6436bb227d72c70733d06208f91505b1a2d9ef392720c25d91fc"
+  },
+  "s-metr-none-alert": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "a581f2d0588842cb313f8ba84076c88e7d48afb98bb1ae976dc909e2f5e4f151"
+  },
+  "s-metr-no-path": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "bd57b13269fb21df2d7145fd0c4290ce6c7b9eaab7a0efb6b0391219f0a409f6"
+  },
+  "s-metr-mistaken": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "6cca436d5347705d0d7c00a767214256c6ba03df72cdbe95b58521da3112edc2"
+  },
+  "s-metr-brilliant": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "76b01ba2a733120f64e934bb0eba439b483660de70f7e360343c7c6110058b94"
+  },
+  "s-metr-ethics-joined": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "35e812805ac7c2456495b6a38cde35472a2fa347087620456c8cd416df588f0b"
+  },
+  "s-metr-ethics-rare": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "4b76d5b664bcd6bb706dd74f81be08514979340d208ba4ecf8c263e2952f1e57"
+  },
+  "s-metr-freeride": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f6d3b8fb68cc4a88f2d10d33b9a85df0141160a53e230c8fa83c5ed740ae161f"
+  },
+  "s-metr-humans-rare": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f0c4a9e68a81daa2ee08c0cc40d5454dfc4dbd452fd0769c8d844fdf4189d2d6"
+  },
+  "s-metr-spoof7": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2b3d38c264054d3f09f9a86e212f9c4031874865c27853cb7ca3b1c01632bf75"
+  },
+  "s-metr-later-wave": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "stops before “but”, in the same sentence"
+   ],
+   "quoteSha": "f0b729140a7a803e5d004b843895e2bc3d54c24db80e939af064f8dfecb44cfa"
+  },
+  "s-metr-first-replies": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "57f05e87e5293337d3366acbe6cb833dc121212fff6bea785942329e0388edf4"
+  },
+  "s-metr-workstreams": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "cfe7ffc2e9688e1d6b285b03f80c38bab87f355d74fa0a883afe0c636ece47db"
+  },
+  "s-metr-milestones": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9025bc490d48a031f61a4d204a84a577df655493cb93e527a035b7341e830720"
+  },
+  "s-metr-cheat": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "60960bf26cedf3cc73b4ab0fe7f5c3cfff87b5a6b0fbdb9f2f41579963743583"
+  },
+  "s-metr-analysis-reasons": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e0774c1aae2077606faae6e5fec55fd0be06697bc854e59bbdd68e8bb52aacc4"
+  },
+  "s-metr-reason-task": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "stops before “maybe”, in the same sentence"
+   ],
+   "quoteSha": "1d8aabd5ad1f2654af62ef3ac11e0445cfe95520091637103ed1f40ca5b2d8ac"
+  },
+  "s-metr-reason-route": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "lead-in contains “not”; a reviewer waived it"
+   ],
+   "waived": "The “not” in the preceding words is inside the bracketed example of the first reason (“That’s not my task”); this is the next, separate item in METR’s list of two reasons and is not governed by it.",
+   "quoteSha": "75c4bfdd870cded99fd7f267a9d32f9a1421b5b7251879c0f67fd3a52d0b0106"
+  },
+  "s-metr-objective": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "fe3a588da52d4dd1f09f66ec263ccef3aae2c14c801396d654542201ef835cda"
+  },
+  "s-metr-never-succeeded": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "3bfeda858f599efd1bdbff71af61cb5d24dd3afb4792b5635e10d726588abc1a"
+  },
+  "s-metr-scorer-motive": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “and”"
+   ],
+   "quoteSha": "2dd32326a38b867f0a6bb57652ac7250d276db1ed9d795e0c4a091bd3e0961db"
+  },
+  "s-metr-533": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "28fb3baccfbbf48754dfa2adbc9bccb91509e8e8134eb67e9509d32f8bf046e5"
+  },
+  "s-metr-60pct": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “that”"
+   ],
+   "quoteSha": "ed669a71a68dee9e31e5385e4b90eb6da051df9199cd06899955f1177aebba96"
+  },
+  "s-metr-killed": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d1e2e863db012a27cded3f8ce90600dfbdd16877a9933168a369f4d8c0422183"
+  },
+  "s-metr-exit": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2cfc666370ecc6ee6fbbf90ffd2f9fceb80ff7edfa58b28b436a6f1b4f521907"
+  },
+  "s-metr-worse-judgment": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ee10856424abbb79064873561ba2f8b524bbefd4f5db0d50fbb75088450b9d5b"
+  },
+  "s-metr-overstate": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "710dcafc65dba3f2152aee1f984b931ad29d97fe61390b53f22ca13f1a30ac82"
+  },
+  "s-metr-less-confident": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c5626455dd381caf010a36049d45b420f4f421c921663ca4d9d13da37c22ee64"
+  },
+  "s-metr-redact": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9f6b5c3b7d6279caab37965115c88cd55de394d2afd9ba96af6eee3a472afdd8"
+  },
+  "b-softtrace": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "3739b7fdae6f9518ec4aa73ccc417badb126133ea99599e2c87d867d80d473ce"
+  },
+  "b-admin": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "f38b31cd957130804f52513f43d6c5ad7f5b608be1d257d67d03744309900fc4"
+  },
+  "b-bingo": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "56711c08cae51b379c585aef6f6a2f682523a843354f82705816fefaa21d98fa"
+  },
+  "b-breakthrough": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "59b960474b510c174a92e118024cd30d91230f2a9031f96d991c91e7d874f207"
+  },
+  "b-excellent": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "df5cb6b4ff0e3da52b10888293fae3b19713b7004af8801d642320c44249a273"
+  },
+  "b-hold-swarm": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "3ba07110b6bcfb384febf458a1167d5cd6fdfd3d7be74c1ff6c87ff9a776e465"
+  },
+  "b-respect-hold": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "e52eec3f216f40b1ee778619a4200979bb694fd451aff533111847bcf7e60964"
+  },
+  "b-unauthorized": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "dcdebbb72f825456fd821ad6a76ecef3ba7cd60d0db5ee1076f7d28053b10073"
+  },
+  "b-diverged": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "3bb467d1fb2a46206a39bded9daffd4ea082f56b762533047a9501d212f997fc"
+  },
+  "b-paper-says": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "2c40a8460b639da4d5d6185adcc1384796c78f7d8bdd97047ceb885732c87ff0"
+  },
+  "b-peer": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "92a9caa4720975181e09c25105782fb4a85f0afaf073d7daba94abfc3c43a1f0"
+  },
+  "b-competition": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "8a7d8467dbccc2b779d25556a4328fdd97e5e34bfbd778d59f9c6e8fe2ceffde"
+  },
+  "b-should-not": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "1e4a536dfab22024b7445151a1ef67f18d4519ac0734cf3da458775a8733d23d"
+  },
+  "b-go-arrived": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "a65df8ee5fc880785883836308ba714aab800e3b90a4c6ba178a8ffc4ae20de1"
+  },
+  "b-we-wont": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "7d7a80c61e422dc56b866d65067ba8dac3cb5203fb1406b9a9d453e059e4f58f"
+  },
+  "b-we-should-not": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "38e056b3b3d5e722ae6484391623db52009f272c6347c2a436220abdb7a72973"
+  },
+  "b-email-consent": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "ebb49c842514a4343aebd067173cfc98f66119bb08fd1e76e21b883d39e0c9c0"
+  },
+  "b-email-no": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "d9ab49b430edb5e199b15bd113284a6c72ac1054626965c8f11a63ffff33702a"
+  },
+  "b-decline": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "ad6845d516752e2e37dda3ae31bc55c7a58b76c1a8e758a9d4502b4c52460cc0"
+  },
+  "b-grading-integrity": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "3bd847eaed80d285dfe6349923f03aee28b3861e423778771a3ff05a892277fa"
+  },
+  "s-oai-warning-shot": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "0dd1bb0f70d09254b4b023e4a8ba34e958d9c64a17d03b896a45738b126cd8d1"
+  },
+  "s-oai-no-impact": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "3e11c610f9520029e58ff279719c2cd0656b7a031a3adf6009654a29419d1e43"
+  },
+  "s-oai-swarm": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "a3875d5763e4c2defadbc88a48b384bd71139798837c86dfa57d31c6bde91bac"
+  },
+  "s-oai-metagame": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "5dae6de00f39bcc48a9036399b5af09a7174a8c08aa8569e0b1cb32d19333124"
+  },
+  "s-oai-93": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "6153847a37860d882d508507a97845b848646021c6738ca016179aa0a093c46b"
+  },
+  "s-oai-late-may": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "a030de2ad406554c9794638eac361942ae409cf5656203f2de37abf619ef7b0e"
+  },
+  "s-oai-not-apparent": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "53f79f5188900b1c803c6d0112935299baa71eafa709bfb6b91052be7c1832d6"
+  },
+  "s-oai-cot-monitor": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "6b46497302a4e812ac53fff2ecf7e714e1b3273ababa23858e1860b6dcbbbfa7"
+  },
+  "s-oai-sights": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "77da9235b0ff129067fc7f1e4dd4fc5a10a6dc0a5792ac62b5d1f31269b22a10"
+  },
+  "s-oai-capable": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "96ccd12616f508a3ac06a0555d4039272f01480a181bbcdc6d7a010a591a979c"
+  },
+  "s-oai-short": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "105f05fa10cf2a8b32a7896c0813a64e2b7378613eb3e3233e786ec8e50ee3fe"
+  },
+  "s-oai-walked-away": {
+   "ok": true,
+   "mode": "exact",
+   "quoteSha": "6fe7c9702b683167e749149bf1c242f6f33a7330ea09bbd597d47c4575885aa5"
+  },
+  "t-first-known": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "aa5815491fa25a90eca823ecde8777786726b06258b91126cda7813fa27d65ea"
+  },
+  "t-routine-testing": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "8641b4e1aaa0bd28e6048a43fb4f7e5af776a5e80182829287d41dd5ec082946"
+  },
+  "t-unintended": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ab03c704430ff1f2522f347d923256226f442fc087a353bdc185fc5df73a1e91"
+  },
+  "t-shared-credentials": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “and”"
+   ],
+   "quoteSha": "92a62d47b0d6e85fa601fd8fa7c9ef31ab0becaafa7a3e12c4a496d48053aaf6"
+  },
+  "t-agent-seeks": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "69fa6dcd394c381525984b161654106c4f76529ae3ecf75f31dee524e33fa7a6"
+  },
+  "t-on-call": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "36a80fe1dc23bcf4e829bb650b96d0f8883f8bc6e9fb81ead42f641aa3be3823"
+  },
+  "t-not-apparent": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f6f63bd98f853ac056c49c1f560bf5cf4607eee076871b525183a7d349a19a31"
+  },
+  "t-earlier-response": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d13aa1ecc6f3c6b06d8ffd56a2227fa1d8b01f0aa64a857a50e01af2286acfce"
+  },
+  "t-41-workers": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f132b63ffc366aa59620c35ea9196a158fd3b332d2a744e2a7270a742942f2d4"
+  },
+  "t-13-hours": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "6630bb59dbb547f95d56134b03cc121bc1257555d6f127a4a04da8c87ebc920e"
+  },
+  "t-modal": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “and”"
+   ],
+   "quoteSha": "8e586044dda7a008b0591aa2a6747d148fb01c754c6f129cadc68dc34bcbfb76"
+  },
+  "t-not-part": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "cb83f064b47cec392a8bc89067a61b5fc4902e3b200b7adaced43882048da503"
+  },
+  "t-poisoned-image": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "347381c9f5c37c504351f63a24feb5b0e0e6fd0b87773b3989b1d11a85469f5f"
+  },
+  "t-different-model": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "a07e8f46b3fb1597b5fe764eb45ce86104d1dfc425382512ad2133cf0650b5a4"
+  },
+  "t-astra": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ebe587916a6731106dcfb4715e8973174dd44813ff2f69cb19f4940bb13070b1"
+  },
+  "t-control-endpoints": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9e8f48bb9af56cc8f6d9e9c322e1ebd95fab0444c8e505d473f48d1c1614f470"
+  },
+  "t-hard-fail": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f7e1bc7995e314d9dd86af3016e7b7eff9a4a918ab58f0e7d8f9c935c26f0d67"
+  },
+  "t-narrowing": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "75b6af9ab8a8e7954efe6f911847eff58ecf2113d4c40396cb9a15fc2e5f6203"
+  },
+  "t-vm-sandboxes": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "5c5b9e2ca5f933eb0b12d01664fffc2ff71f8497b979e32c8307fb6a72dbfa21"
+  },
+  "t-six-pods": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c1993e29a08f210fcc860574ed2f32375d715d448020e504bf51bf6abf4144f8"
+  },
+  "h-five-datasets": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "217eb825c6ff8d125e7b560c91fefd979b94622504a1b54767facb93ef01c0d7"
+  },
+  "h-cheat": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0b3763f3d035017d1a828acac57ea119f8d9f3560fd0ede96e78f57808a893dc"
+  },
+  "h-alert": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "8b5718dc5a9ea75201dde73b7631dd2e5e8dcb190d7b8fc824c3470e0e0e7d7e"
+  },
+  "h-13-hours": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "98c2c270e179d3430a990bd7b1ed5f4c764df45ad9a7cb43dabcad68c0862676"
+  },
+  "h-eleven-nodes": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “then”"
+   ],
+   "quoteSha": "68da30b3318cbd2f957e0397f533c685d884305db1fe08199c2ccd3acf574f7b"
+  },
+  "h-refused": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "7dd35ddc1748dc470b90948a97e56d07645e003696b406114a1542894345a3ce"
+  },
+  "s-metr-transcripts": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9affa226be225e79df24a333a864cecffcc5a2c0ca7df6f2d8d592f8105027ed"
+  },
+  "t-prototype": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "781917155d33ac0205042a8840119a71888c8604ce1951457e77bc7af8586c55"
+  },
+  "t-comparable": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2d8b4c379cdd15e4f9f32da177cfe056f97595678c54bd1d9b758f0d8c772286"
+  },
+  "t-cot-examine": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "3beb55605e331a2a89d016a3ec4f9b4873ed5b48d65d6e8893b36b19441f9644"
+  },
+  "s-astra-released": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "775e01c885c3911c0440a5fae74081e73b7e886ec878db37c28f4c532c779327"
+  },
+  "s-astra-monitorability": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "17b5700b49e8e1472b80bae16cf3db14e220535c0230792377a17032e9367ea6"
+  },
+  "s-astra-evade": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e08303937c3d1496af8c657b1b2d6b65ac03b48c2706a7c24d6d889a8d5c2faa"
+  },
+  "s-astra-adversarial": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "07416bd47229af690586d928cd36a5d1773fa8312e90973d79618d174193c1c6"
+  },
+  "s-astra-evalaware": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "59002b1fbb49fb4c3eab38169afa3f9dada49f551634976ad5dc32208e9cc999"
+  },
+  "s-astra-honeypot": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "28971d4cd5db22d35e424c5a52b61e812990b065f92e9800041e3236d4b5eaf7"
+  },
+  "s-astra-told-monitored": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "3c0cd0950a7d19a4bc9396f3275bd9543c02abb174eaa99a49226bf80873c5df"
+  },
+  "s-astra-less-reasoning": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "6747088078536f41183a8bc226a4d025038f42f4eef84171c9d4abf7fe318549"
+  },
+  "s-astra-fullcontext": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "26305aa6513b96caa5d1f7eceb54b3ea5f49a17f546f77f49301c5383a4b4fab"
+  },
+  "s-astra-no-stego": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "3f80990abfc4772d4e8382749c532622c16b84b9b431cc8871247fef755542a8"
+  },
+  "s-astra-beyond-cot": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "01d6b9a81e584fdc19a52400ca1713f1877b64023fb6a83bc96a5844ba8dbea8"
+  },
+  "s-wh-signed": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "4fd21ae7d018419e2db890e3c873ea4814acc18378bd017b24209c4a20af39a0"
+  },
+  "s-wh-pledge": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "cf7ab7c0cbb8c5ed2c8bbe223a71708b4242f1eb01c58fde1c0e3ec9d7f4d9c5"
+  },
+  "s-wh-voluntary": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "3a9d06087ad1c35fb3a6d958b27993902a698fbcbb08ebac09ac2fcde4831078"
+  },
+  "s-wh-auditors": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "107af94457762424238b0f6163679bc75236f6ce78cdb65813cd7a35e304234c"
+  },
+  "s-wh-not-regulation": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "36032a8208b5549d9f98a45c89a2b6b0a64593d568a10d62d9d2b61d3dbd85f9"
+  }
+ },
+ "inlinePhrases": {
+  "warning shot": [
+   "oai-blog"
+  ],
+  "the first known case of an automated agent collective acting offensively without authorization": [
+   "oai-tr"
+  ],
+  "believed": [
+   "metr"
+  ],
+  "decided": [
+   "metr"
+  ],
+  "hoped": [
+   "metr"
+  ],
+  "may have some small error": [
+   "metr"
+  ],
+  "about": [
+   "metr",
+   "oai-tr",
+   "hf",
+   "oai-astra",
+   "fortune"
+  ],
+  "[big]": [
+   "metr"
+  ],
+  "walked away": [
+   "oai-blog"
+  ],
+  "can drop over 100x": [
+   "oai-tr"
+  ],
+  "collective": [
+   "metr",
+   "oai-tr"
+  ],
+  "swarm": [
+   "metr"
+  ],
+  "self-risking experiments": [
+   "metr"
+  ],
+  "[[poisoned]]": [
+   "metr",
+   "oai-tr"
+  ],
+  "for no improvement on evaluation score": [
+   "oai-blog"
+  ],
+  "CDA": [
+   "metr"
+  ],
+  "unpoisoned": [
+   "metr"
+  ],
+  "poison": [
+   "metr"
+  ],
+  "GO": [
+   "metr",
+   "oai-astra",
+   "fortune"
+  ],
+  "poisoned": [
+   "metr",
+   "oai-tr"
+  ],
+  "Artifactory rebuilt": [
+   "oai-blog"
+  ],
+  "by 17:00 UTC": [
+   "metr"
+  ],
+  "the morning of July 9th": [
+   "metr"
+  ],
+  "mailbox": [
+   "metr"
+  ],
+  "quickly found two working credentials": [
+   "metr"
+  ],
+  "lanes": [
+   "metr"
+  ],
+  "around 16:00": [
+   "metr"
+  ],
+  "secrets": [
+   "metr",
+   "oai-tr",
+   "hf"
+  ],
+  "An autonomous AI agent driven by a combination of OpenAI models": [
+   "hf"
+  ],
+  "The morning of July 9th.": [
+   "metr"
+  ],
+  "the first known instance": [
+   "oai-tr"
+  ],
+  "Around 16:00": [
+   "metr"
+  ],
+  "under thirteen hours": [
+   "hf"
+  ],
+  "Limited": [
+   "metr",
+   "oai-tr",
+   "oai-astra",
+   "fortune"
+  ],
+  "a primary driver": [
+   "oai-blog"
+  ],
+  "An attempt to cheat the evaluation": [
+   "hf"
+  ],
+  "In none of these cases did the agent actually pursue alerting humans.": [
+   "metr"
+  ],
+  "We don’t know why.": [
+   "metr"
+  ],
+  "costing precious time": [
+   "hf"
+  ],
+  "significantly worse judgment": [
+   "metr"
+  ],
+  "less confident": [
+   "metr"
+  ],
+  "have also been reported in other incidents involving other companies’ agents": [
+   "metr"
+  ],
+  "morally binding": [
+   "fortune"
+  ],
+  "do not hack or access technical systems in unintended ways": [
+   "fortune"
+  ],
+  "flag": [
+   "metr",
+   "oai-tr",
+   "oai-astra"
+  ],
+  "forgot its initial qualms and continued": [
+   "oai-blog"
+  ],
+  "monitorability has decreased": [
+   "oai-astra"
+  ],
+  "underscore the importance of developing alignment auditing techniques beyond examining the model’s chain of thought.": [
+   "oai-astra"
+  ],
+  "morally binding.": [
+   "fortune"
+  ],
+  "do not hack or access technical systems in unintended ways.": [
+   "fortune"
+  ],
+  "strict causal": [
+   "metr"
+  ],
+  "inbox": [
+   "metr"
+  ],
+  "if you accept permadeath": [
+   "metr"
+  ],
+  "trip-wire": [
+   "metr"
+  ],
+  "38148C": [
+   "metr"
+  ],
+  "reader": [
+   "oai-tr",
+   "hf"
+  ],
+  "Yet goal solution.": [
+   "oai-blog"
+  ],
+  "was not a perfectly coherent intelligence": [
+   "oai-blog"
+  ],
+  "honeypot": [
+   "oai-astra"
+  ],
+  "not regulation": [
+   "fortune"
+  ]
+ }
+}
