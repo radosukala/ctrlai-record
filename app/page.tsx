@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { LATEST } from '@/content/issues';
+import { FilmHero } from '@/components/FilmHero';
 import { IssueView } from '@/components/IssueView';
+import { FILM_PUBLIC } from '@/content/incidents/openai-hf/publish';
 import { SITE, dateRange } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -11,5 +13,10 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <IssueView issue={LATEST} isLatest />;
+  return (
+    <>
+      {FILM_PUBLIC ? <FilmHero /> : null}
+      <IssueView issue={LATEST} isLatest />
+    </>
+  );
 }

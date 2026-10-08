@@ -27,6 +27,8 @@ const config: NextConfig = {
   async redirects() {
     return [
       ...RETIRED.map(source => ({ source, destination: '/', permanent: false })),
+      // The address printed on the film's videos: short enough to type.
+      { source: '/film', destination: '/incident/openai-hugging-face/film', permanent: false },
       { source: '/library', destination: '/hall-of-fame', permanent: false },
       { source: '/library/:path*', destination: '/hall-of-fame', permanent: false },
     ];
