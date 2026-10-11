@@ -70,7 +70,7 @@ function Cap({ children, size = 44, fill = false, signal = false }: { children: 
   return (
     <div
       style={{
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, whiteSpace: 'nowrap',
         height: size, minWidth: size, padding: `0 ${Math.round(size * 0.3)}px`,
         border: `3px solid ${border}`, borderBottomWidth: 6, borderRadius: Math.round(size * 0.24),
         background, color, fontFamily: SANS, fontWeight: 700, fontSize: Math.round(size * 0.48), letterSpacing: -0.5, lineHeight: 1,
@@ -192,6 +192,86 @@ export function RecapImage({ issue }: { issue: Issue }) {
         ))}
       </div>
       <Footer left="Every event confirmed by two independent reports." url="ctrlai.com" />
+    </div>
+  );
+}
+
+const FILL: Record<string, number> = { nothing: 0, said: 0.33, detailed: 0.66, confirmed: 1, contradicted: 1 };
+
+/**
+ * The accord tracker's share image: the whole matrix, so the picture is the finding. Each cell is a bar that fills as the
+ * evidence gets stronger (empty and dashed for "nothing new"), and the numbers are the page's own, passed in.
+ */
+export function AccordImage({ days, companies, rows, withNews, tied, total, checked }: {
+  days: number;
+  companies: string[];
+  rows: { number: string; cells: string[] }[];
+  withNews: number;
+  tied: number;
+  total: number;
+  checked: string;
+}) {
+  const cellW = 160;
+  return (
+    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: PAPER, color: INK, padding: '34px 64px 34px', fontFamily: SANS, borderTop: `10px solid ${SIGNAL}` }}>
+      <div style={{ display: 'flex' }}>
+        <BrandRow right={`ACCORD TRACKER · ${days} DAYS AFTER`} />
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', marginTop: 20, gap: 12 }}>
+        <Label>WHITE HOUSE ACCORD ON SUPER INTELLIGENCE</Label>
+        <div style={{ display: 'flex', fontFamily: SERIF, fontWeight: 500, fontSize: 54, lineHeight: 1.04, letterSpacing: -1.3, maxWidth: 1070 }}>Six companies committed to four safety controls.</div>
+        <div style={{ display: 'flex', fontFamily: SANS, fontWeight: 500, fontSize: 27, lineHeight: 1.25, color: INK_2, maxWidth: 1070 }}>
+          {withNews === 0 ? `${days} days after the accord: we found nothing new from any of them.` : `${days} days after the accord: ${withNews} of ${total} commitments show anything new; in ${tied} the company itself points to the accord.`}
+        </div>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', marginTop: 14, flexGrow: 1, justifyContent: 'center' }}>
+        <div style={{ display: 'flex', paddingLeft: 52, gap: 8 }}>
+          {companies.map(name => (
+            <div key={name} style={{ display: 'flex', width: cellW, fontFamily: SANS, fontSize: 17, fontWeight: 700, letterSpacing: 2, color: INK_2 }}>{name.toUpperCase()}</div>
+          ))}
+        </div>
+        {rows.map(row => (
+          <div key={row.number} style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 7 }}>
+            <div style={{ display: 'flex', width: 44, marginRight: 0 }}><Cap size={30}>{row.number}</Cap></div>
+            {row.cells.map((status, i) => (
+              <div
+                key={i}
+                style={{
+                  display: 'flex', position: 'relative', width: cellW, height: 30, borderRadius: 5,
+                  border: `3px ${status === 'nothing' ? 'dashed' : 'solid'} ${status === 'nothing' ? '#b9b2a3' : INK}`, background: WHITE, overflow: 'hidden',
+                }}
+              >
+                <div style={{ display: 'flex', width: `${Math.round(FILL[status] * 100)}%`, height: '100%', background: status === 'contradicted' ? SIGNAL : INK }} />
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+      <Footer left={`Checked ${checked}. Fuller bar: more detail. Dashed: nothing new.`} url="ctrlai.com/accord" />
+    </div>
+  );
+}
+
+/** The hub's share image: the question, and the five parts as keys. */
+export function SayImage({ name, line, parts }: { name: string; line: string; parts: { title: string; state: string }[] }) {
+  return (
+    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: PAPER, color: INK, padding: '44px 64px 46px', fontFamily: SANS, borderTop: `10px solid ${SIGNAL}` }}>
+      <div style={{ display: 'flex' }}>
+        <BrandRow right={name.toUpperCase()} />
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flexGrow: 1, gap: 22 }}>
+        <Label>WHO GETS A SAY IN HOW AI IS BUILT?</Label>
+        <div style={{ display: 'flex', fontFamily: SERIF, fontWeight: 500, fontSize: 78, lineHeight: 1.03, letterSpacing: -2, maxWidth: 1040 }}>Our view: very few people.</div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginTop: 8 }}>
+          {parts.map((p, i) => (
+            <div key={p.title} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <Cap size={44} fill={p.state === 'live'}>{p.title}</Cap>
+              {i < parts.length - 1 ? <div style={{ display: 'flex', width: 18, height: 3, background: LINE }} /> : null}
+            </div>
+          ))}
+        </div>
+      </div>
+      <Footer left={line} url="ctrlai.com/say" />
     </div>
   );
 }

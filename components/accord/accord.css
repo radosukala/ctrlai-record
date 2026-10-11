@@ -1,0 +1,131 @@
+/* The accord tracker. Same system as the rest of the site: paper, ink, one signal red for what you can press, keycaps.
+   A status is a shape that fills as the evidence gets stronger, plus a word. Never color alone. */
+
+.acc-page { gap: clamp(40px, 6vw, 72px); }
+.acc-hero { display: grid; gap: 18px; padding-block: clamp(24px, 4vw, 48px) 0; }
+.acc-hero .headline { max-width: 19em; }
+
+/* ——— Key figures ——— */
+.acc-figures { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid var(--ink); margin-top: 6px; }
+.acc-figures li { display: grid; gap: 4px; align-content: start; padding: 16px 20px 16px 0; border-bottom: 1px solid var(--line); }
+.acc-figures b { font-family: var(--serif); font-weight: 400; font-size: clamp(34px, 4vw, 52px); line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.acc-figures span { font-size: 14px; line-height: 1.4; color: var(--ink-2); max-width: 20em; }
+@media (max-width: 900px) { .acc-figures { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .acc-figures { grid-template-columns: minmax(0, 1fr); } .acc-figures li { grid-template-columns: 96px minmax(0, 1fr); align-items: center; gap: 4px 14px; padding: 12px 0; } }
+
+/* ——— Status marks ——— */
+.acc-status { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+.acc-mark { --fill: 0%; position: relative; flex: none; width: 15px; height: 15px; border-radius: 50%; border: 1.6px solid var(--ink); background: conic-gradient(var(--ink) var(--fill), transparent 0); }
+.acc-status-nothing .acc-mark { border-style: dashed; border-color: var(--faint); }
+.acc-status-said .acc-mark { --fill: 33%; }
+.acc-status-detailed .acc-mark { --fill: 66%; }
+.acc-status-confirmed .acc-mark { --fill: 100%; }
+.acc-status-contradicted .acc-mark { border-radius: 3px; background: var(--white); }
+.acc-status-contradicted .acc-mark::after { content: ''; position: absolute; left: 1px; right: 1px; top: 50%; height: 2px; margin-top: -1px; background: var(--ink); transform: rotate(-45deg); }
+.acc-status-word { font-size: 13.5px; font-weight: 600; line-height: 1.2; color: var(--ink); }
+.acc-status-nothing .acc-status-word { color: var(--muted); font-weight: 500; }
+
+/* ——— The matrix ——— */
+.acc-matrix-wrap { overflow-x: auto; }
+.acc-matrix { width: 100%; border-collapse: collapse; border-top: 2px solid var(--ink); table-layout: fixed; }
+.acc-matrix th, .acc-matrix td { padding: 12px 10px 13px 0; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; font-weight: 400; }
+.acc-matrix thead th { padding-block: 10px; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+.acc-matrix thead th a { text-decoration: none; }
+.acc-matrix thead th a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.acc-matrix tbody th { width: 21%; font-size: 14.5px; font-weight: 600; line-height: 1.25; }
+.acc-rowhead { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: start; gap: 4px 10px; }
+.acc-rowhead .cap { margin-top: -2px; }
+.acc-matrix td a { display: grid; gap: 4px; text-decoration: none; padding: 2px 0; }
+.acc-matrix td a:hover .acc-status-word { text-decoration: underline; text-underline-offset: 3px; }
+.acc-matrix small, .acc-stack small { font-size: 12px; line-height: 1.3; color: var(--muted); }
+.acc-matrix-group th, .acc-matrix-group td { background: var(--paper-2); }
+.acc-matrix-group td { padding-left: 12px; }
+.acc-matrix-group td a { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 14px; }
+.acc-earlier { font-size: 12px; line-height: 1.3; color: var(--muted); border-bottom: 1px dotted var(--faint); }
+.acc-stack { display: none; }
+@media (max-width: 860px) {
+  .acc-matrix-wrap { display: none; }
+  .acc-stack { display: grid; border-top: 2px solid var(--ink); }
+  .acc-stack-co { padding: 14px 0 6px; border-bottom: 1px solid var(--line); }
+  .acc-stack-co h3 { font-family: var(--sans); font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+  .acc-stack-co h3 a { text-decoration: none; }
+  .acc-stack-co ul { display: grid; }
+  .acc-stack-co li a { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; align-items: center; gap: 2px 10px; padding: 9px 0; text-decoration: none; border-top: 1px solid var(--line-2); }
+  .acc-stack-co li a small { grid-column: 2 / -1; }
+  .acc-stack-name { font-size: 14.5px; font-weight: 500; }
+}
+
+/* ——— Legend ——— */
+.acc-legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0 28px; margin-top: 22px; }
+.acc-legend > div { display: grid; align-content: start; gap: 4px; padding: 10px 0 12px; border-top: 1px solid var(--line); font-size: 13.5px; line-height: 1.45; color: var(--ink-2); }
+.acc-legend dd { margin: 0; }
+
+/* A section whose content needs the full width (the matrix): title above, not in the rail. */
+.sec.acc-wide { grid-template-columns: minmax(0, 1fr); }
+.sec.acc-wide .sec-rail-in { position: static; grid-template-columns: minmax(0, 1fr); gap: 6px; }
+.sec.acc-wide .sec-blurb { max-width: 46em; }
+@media (min-width: 900px) { .sec.acc-wide { grid-template-columns: minmax(0, 1fr); gap: 18px 0; } }
+
+/* ——— The accord's own words ——— */
+.acc-doc { display: grid; gap: 14px; max-width: 46em; padding: clamp(18px, 3vw, 30px); background: var(--white); border: 1px solid var(--line); border-radius: 2px; font-family: var(--serif); font-size: 17.5px; line-height: 1.5; color: var(--ink); }
+.acc-doc h3 { font-size: 22px; font-weight: 600; line-height: 1.15; }
+.acc-doc .acc-doc-sub { font-size: 17px; color: var(--ink-2); margin-top: -8px; }
+.acc-promises { display: grid; }
+.acc-promise { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 4px 14px; padding: 18px 0; border-top: 1px solid var(--line); align-items: start; }
+.acc-promise:first-child { border-top: 2px solid var(--ink); }
+.acc-promise-meet { border-top: 2px solid var(--ink); }
+.acc-promise-words { font-family: var(--serif); font-size: 18px; line-height: 1.45; color: var(--ink); max-width: 36em; }
+.acc-promise-plain, .acc-promise-silent { grid-column: 2; font-size: 14.5px; line-height: 1.5; color: var(--ink-2); max-width: 40em; }
+.acc-promise-plain b, .acc-promise-silent b { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-right: 8px; }
+.acc-signers { display: flex; flex-wrap: wrap; gap: 4px 20px; font-family: var(--sans); font-size: 14px; color: var(--ink-2); padding-top: 10px; border-top: 1px solid var(--line); }
+.acc-signers b { color: var(--ink); font-weight: 600; }
+.acc-orig { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 14px; font-size: 13.5px; color: var(--muted); }
+.acc-orig a { color: var(--ink); }
+.acc-hash { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; font-size: 12px; overflow-wrap: anywhere; }
+
+/* ——— Companies ——— */
+.acc-companies { display: grid; gap: clamp(36px, 5vw, 60px); }
+.acc-company { display: grid; gap: 4px; scroll-margin-top: 16px; }
+.acc-company-head { display: grid; gap: 4px; padding-bottom: 10px; border-bottom: 2px solid var(--ink); }
+.acc-company-head h3 { font-size: clamp(26px, 3vw, 34px); }
+.acc-company-meta { font-size: 13.5px; color: var(--muted); }
+.acc-layers { display: grid; }
+.acc-layer { display: grid; gap: 7px; padding: 18px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 16px; }
+.acc-layer h4 { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; font-family: var(--sans); font-size: 15.5px; font-weight: 600; letter-spacing: 0; line-height: 1.2; }
+.acc-layer-name { margin-right: 6px; }
+.acc-summary { font-size: 16px; line-height: 1.5; color: var(--ink); max-width: 42em; }
+.acc-summary + .acc-summary { margin-top: 10px; }
+.acc-before, .acc-note { font-size: 14.5px; line-height: 1.5; color: var(--ink-2); max-width: 42em; }
+.acc-before b, .acc-note b { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-right: 6px; }
+.acc-before + .acc-before, .acc-note + .acc-note { margin-top: 8px; }
+.acc-evidence, .acc-looked { margin-top: 4px; font-size: 14px; }
+.acc-evidence > summary, .acc-looked > summary { cursor: pointer; font-weight: 600; color: var(--ink-2); padding: 4px 0; }
+.acc-evidence > summary:hover, .acc-looked > summary:hover { color: var(--ink); }
+.acc-evidence h5, .acc-looked h5, .acc-company-foot h5 { margin: 14px 0 6px; font-family: var(--sans); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.acc-ev-list { display: grid; }
+.acc-ev { display: grid; gap: 6px; padding: 12px 0; border-top: 1px solid var(--line-2); }
+.acc-ev:first-child { border-top: 0; }
+.acc-ev-claim { font-size: 15px; line-height: 1.45; color: var(--ink); max-width: 44em; }
+.acc-ev-quote { margin: 0; padding: 6px 0 6px 14px; border-left: 3px solid var(--ink); background: var(--white); max-width: 44em; }
+.acc-ev-quote p { font-family: var(--serif); font-size: 15.5px; line-height: 1.45; color: var(--ink-2); overflow-wrap: anywhere; }
+.acc-ev-src { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; font-size: 12.5px; color: var(--muted); }
+.acc-ev-src a { color: var(--ink); overflow-wrap: anywhere; }
+.acc-tag { font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; border: 1px solid var(--line); border-radius: 3px; padding: 1px 6px; background: var(--white); }
+.acc-company-foot { display: grid; gap: 6px; padding-top: 10px; }
+.acc-looked ul { display: grid; gap: 4px; padding-left: 1.1em; list-style: disc; color: var(--ink-2); font-size: 13.5px; }
+
+/* ——— Meetings and context ——— */
+.acc-meetings { display: grid; gap: 7px; padding-top: 16px; }
+.acc-context { display: grid; }
+.acc-context-item { display: grid; gap: 6px; padding: 16px 0; border-top: 1px solid var(--line); }
+.acc-context-item:first-child { border-top: 0; padding-top: 2px; }
+.acc-context-item h3 { font-size: 20px; }
+
+/* ——— How it works ——— */
+.acc-log { display: grid; margin-top: 28px; }
+.acc-log li { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 4px 16px; padding: 10px 0; border-top: 1px solid var(--line); font-size: 14.5px; }
+.acc-log time { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding-top: 3px; font-variant-numeric: tabular-nums; }
+@media (max-width: 560px) { .acc-log li { grid-template-columns: minmax(0, 1fr); } }
+.acc-cta { display: grid; gap: 14px; justify-items: start; padding: clamp(22px, 3vw, 34px); border: 1.5px solid var(--ink); border-bottom-width: 3px; border-radius: 10px; background: var(--white); }
+.acc-cta h2 { font-size: clamp(24px, 3vw, 34px); }
+.acc-cta p { max-width: 36em; color: var(--ink-2); }

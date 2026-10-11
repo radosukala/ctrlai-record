@@ -1,0 +1,372 @@
+{
+  "id": "nvidia",
+  "printedAs": "Nvidia",
+  "name": "Nvidia",
+  "signedBy": "Jensen Huang",
+  "checkedOn": "2026-10-10",
+  "searched": [
+    "Web search: Nvidia White House Accord on Super Intelligence Jensen Huang signed",
+    "Web search: Nvidia Nemotron model card safety evaluation frontier",
+    "Web search: Nvidia frontier AI safety framework risk framework published",
+    "Web search: Nvidia accord frontier commitments Nvidia statement AI companies White House independent auditor board committee",
+    "Web search: Nemotron 3 Ultra release NVIDIA blog open model parameters",
+    "Web search: NVIDIA Trustworthy AI Frontier AI Risk Assessment updated 2026",
+    "Web search: blogs.nvidia.com Jensen Huang White House superintelligence accord safety statement",
+    "Web search: White House private frontier AI framework Nvidia August 4 industry meeting security",
+    "Web search: NVIDIA Sustainability Report fiscal 2026 Trustworthy AI governance model risk assessment AI ethics committee",
+    "Web search: NVIDIA AI Red Team developer blog LLM red teaming how NVIDIA tests its models",
+    "Web search: A Safety and Security Framework for Real-World Agentic Systems NVIDIA arXiv",
+    "Web search: CAISI evaluation Nvidia Nemotron model Center for AI Standards and Innovation",
+    "Web search: NIST CAISI pre-deployment evaluation agreements Google DeepMind Microsoft xAI May 2026 announcement",
+    "Web search: Politico Zuckerberg drafted accord Huang helped win support AI labs White House lunch super intelligence",
+    "Web search: Politico Digital Future Daily Huang a lot of teeth declaration panel after signing AI accord",
+    "Web search: Jensen Huang accord teeth OR grading OR independent White House AI accord panel remarks after signing Nvidia CEO says",
+    "Web search: AI accord signatories industry safety standards body planned end of 2026 early 2027 meet regularly standards",
+    "Web search: Nvidia spokesperson accord frontier models Nvidia not frontier lab Nemotron applies accord commitments Nvidia says",
+    "Web search: AI Safety Index OR AI Lab Watch OR SaferAI rating Nvidia frontier safety framework risk management maturity",
+    "Web search: critics White House AI accord Nvidia open-weight models auditor board committee no enforcement analysis October 2026",
+    "Web search: nvidianews.nvidia.com NVIDIA Launches Nemotron Coalition of Leading Global AI Labs to Advance Open Frontier Models",
+    "Web search: SaferAI ratings Nvidia Very Weak risk management ratings.safer-ai.org",
+    "Web search: nist.gov CAISI signs agreements regarding frontier AI national security testing with Google DeepMind, Microsoft and xAI (nist.gov only)",
+    "A web search limited to politico.com (“Inside Zuckerberg and Huang's push for White House AI pact”) failed because the search tool cannot access that domain; two Politico articles of September 30 were later read in a browser.",
+    "Not run, because the research session’s search limit was used up: searches for “Nvidia board committee AI safety oversight announced October 2026 independent auditor accord Nvidia plans”, “Jensen Huang interview accord safety super intelligence Nvidia Nemotron open models safe October 2026” and “AI accord signatories companies respond board committees auditors which companies have announced since signing”. Our search for later news is therefore incomplete.",
+    "Opened and read on October 10: Nvidia’s Trustworthy AI page and AI Trust Center, its newsroom (September 28, October 8 and March 16 releases), its blog (home, recent-news and Trustworthy AI listings and four posts), its developer pages on Nemotron, the Hugging Face card for Nemotron 3 Ultra with its safety and explainability subcards, the Nemotron 3 Ultra technical report, the Frontier AI Risk Assessment, and the fiscal 2026 sustainability report.",
+    "Governance: the 2026 proxy statement and the annual report on Form 10-K, Nvidia’s committee composition and governance-documents pages, the Audit, Nominating and Corporate Governance, and Compensation Committee charters, and the Corporate Governance Policies. No charter mentions AI or model safety. EDGAR’s filing index lists no Form 8-K or proxy material after September 3.",
+    "The Internet Archive: captures of the Frontier AI Risk Assessment PDF from February 24, 2025 to September 28, 2026 are identical to the live file.",
+    "News and analysis: Nextgov, TNW, MercoPress, the Associated Press, Forbes Australia, SiliconANGLE, Fox Business, SaferAI and the NIST CAISI pages (which do not mention Nvidia).",
+    "A second review on October 10 re-checked, with the newest dated item in each: Nvidia’s newsroom and its RSS feed (no press release between September 29 and October 7; the next is dated October 8), its blogs and developer blog (October 8; Trustworthy AI posts October 6), Hugging Face’s list of the organization’s repositories (no new Nemotron language model after September 4; the Nemotron 3 Ultra card last modified August 24), investor.nvidia.com’s committee and governance-document pages (three committees; charters dated March 3, 2025) and EDGAR (newest Form 4 filed October 9; newest 8-K September 3). Nvidia’s posts on X were visible only up to the login wall (newest October 8; nothing on the accord).",
+    "That review also read Politico (two articles of September 30, in a browser), The Verge, IANS via The Morung Express, and the captions of two YouTube videos of the September 29 events (Right Side Broadcasting Network’s recording of the panel and USA TODAY’s recording of the question-and-answer session), copied from YouTube’s transcript panel. The auto-generated captions do not label speakers.",
+    "Not found in these places: any Nvidia or Huang statement on how the accord applies to Nvidia; any Nvidia page that mentions the accord; a named external auditor or evaluator of Nvidia’s models; a board committee with an AI or model-safety remit; a published cyber, biological or chemical evaluation of Nemotron 3 Ultra; an update to the Frontier AI Risk Assessment; any report of the signatories meeting after signing."
+  ],
+  "unreachable": [
+    "investor.nvidia.com and sec.gov refused automated requests; we read the proxy statement, the annual report and two investor pages in a browser and saved excerpts.",
+    "Three news pages (dnyuz, NewsBytes, Daily Signal) refused automated requests. Politico refused automated requests (HTTP 403) and the search tool cannot search it; two of its articles of September 30 were read in a browser in a second review. The Wall Street Journal report that TNW cites was not opened.",
+    "NIST’s own page for the May 5, 2026 announcement of its testing agreements now returns “Page not found”; a reprint on HPCwire, marked “Source: NIST” and dated May 5, 2026, names Google DeepMind, Microsoft and xAI and does not name Nvidia.",
+    "YouTube’s caption files could not be downloaded automatically (the download returned nothing); the auto-generated captions of the two videos were copied from YouTube’s transcript panel in a browser."
+  ],
+  "cells": {
+    "L1": {
+      "status": "nothing",
+      "summary": "We found no Nvidia document about controls on its own models dated September 29 or later. Its newsroom (items through October 8), its blog’s Trustworthy AI listing (latest item October 6) and Hugging Face’s list of its newest repositories show none. Nvidia’s September 28 announcement of an agent-safety platform came a day before the accord and is a product for organizations that run AI agents. In a video of a panel on the day of the signing, remarks that name two Nvidia products describe containing and monitoring AI agents in general terms; we list them with Nvidia’s statements about the accord and do not count them (see the note).",
+      "since": [],
+      "before": [
+        {
+          "id": "nvidia-nemotron-3-ultra-model-card",
+          "claim": "Nvidia's Hugging Face model card for Nemotron-3-Ultra-550B-A55B-NVFP4 (550B total parameters, 55B active; release date June 4, 2026; model developer NVIDIA Corporation) describes the model as a frontier-scale large language model trained by NVIDIA. The card does not define 'frontier-scale'.",
+          "publisher": "NVIDIA (on Hugging Face)",
+          "title": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4 · Hugging Face",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+          "published": "2026-06-04",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Nemotron-3-Ultra-550B-A55B-NVFP4 is a frontier-scale large language model (LLM) trained by NVIDIA",
+          "textFile": "sources/nvidia/08-ultra-hf-model-card.txt",
+          "dateNote": "the release date the card states: “Release Date June 4, 2026”"
+        },
+        {
+          "id": "nvidia-frontier-ai-risk-assessment",
+          "claim": "Nvidia's Frontier AI Risk Assessment (applicable from August 2025) says that, even though frontier AI models are not currently under development at Nvidia, its existing risk framework can be applied to identify emerging capabilities within its advanced AI models and to put in place risk-mitigation measures.",
+          "publisher": "NVIDIA",
+          "title": "FRONTIER AI RISK ASSESSMENT",
+          "url": "https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf",
+          "published": null,
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Even though frontier AI models are not currently under development at NVIDIA, our existing risk framework can be applied to identify emerging capabilities",
+          "textFile": "sources/nvidia/01-frontier-ai-risk-assessment.txt",
+          "notAfter": "2025-02-24",
+          "dateNote": "undated, “Applicable from August 2025”; the Internet Archive holds an identical copy from February 24, 2025"
+        },
+        {
+          "id": "nvidia-risk-assessment-frontier-model-definition",
+          "claim": "Nvidia's Frontier AI Risk Assessment says that, for the purposes of the assessment, a 'frontier model' is defined as a highly capable general-purpose AI model that can perform a wide variety of undefined tasks and exceeds the capabilities present in the most advanced models currently in existence.",
+          "publisher": "NVIDIA",
+          "title": "FRONTIER AI RISK ASSESSMENT",
+          "url": "https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf",
+          "published": null,
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "general-purpose AI model that can perform a wide variety of undefined tasks and exceeds the capabilities present in the most advanced models currently in existence",
+          "textFile": "sources/nvidia/01-frontier-ai-risk-assessment.txt",
+          "access": "opened",
+          "dateNote": "undated, “Applicable from August 2025”; the Internet Archive holds an identical copy from February 24, 2025",
+          "notAfter": "2025-02-24"
+        },
+        {
+          "id": "nvidia-open-agent-safety-platform-release",
+          "claim": "On 2026-09-28, the day before the accord was signed, Nvidia announced an Open Agent Safety Platform (the OpenShell runtime and a Sentry monitoring reference design) for organizations running AI agents, saying enterprises need an enforceable boundary outside the model and agent harness.",
+          "publisher": "NVIDIA",
+          "title": "NVIDIA Launches Open Agent Safety Platform to Secure Agents From Testing to Deployment",
+          "url": "https://nvidianews.nvidia.com/news/open-agent-safety-platform",
+          "published": "2026-09-28",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "enterprises need an enforceable boundary outside of the model and agent harness",
+          "textFile": "sources/nvidia/24-press-release-open-agent-safety-platform-2026-09-28.txt"
+        }
+      ],
+      "beforeSummary": "Nvidia’s Hugging Face card calls its Nemotron 3 Ultra model, released June 4, 2026, “a frontier-scale large language model”. Nvidia’s Frontier AI Risk Assessment (applicable from August 2025) defines, for its own purposes, a “frontier model” as a highly capable general-purpose AI model that “exceeds the capabilities present in the most advanced models currently in existence”, and says: “Even though frontier AI models are not currently under development at NVIDIA, our existing risk framework can be applied to identify emerging capabilities within our advanced AI models”.\n\nWe list the card and Nvidia’s September 28 release of its Open Agent Safety Platform as context, not as descriptions of how Nvidia monitors the capabilities of its own models: the card describes the model, and the release describes tools for organizations that run AI agents.",
+      "note": "The accord does not define “frontier models”. Nvidia’s Risk Assessment gives its own definition (quoted above); the Hugging Face card does not define “frontier-scale”. No Nvidia page we opened mentions the accord. We found no published Nvidia cyber, biological or chemical evaluation of Nemotron 3 Ultra. In the video of the panel on the day of the signing (its auto-generated captions do not label speakers), the passage that introduces two Nvidia products, OpenShell and BlueField, says that a model being tested has to be contained and monitored in real time from outside its environment, and that a similar system should be used at deployment; Politico attributes the panel’s “teeth” remark to Huang.\n\nThe passage speaks of what “you” have to do and does not say that Nvidia applies this to its own models, so we list it with the statements about the accord and do not count it as a statement about the first layer. On October 9 Axios reported a White House statement that notifying and remediating AI security incidents is “not optional” for AI companies; see “Around the accord”.",
+      "cs": {
+        "summary": "Nenašli jsme žádný dokument Nvidie o kontrolních mechanismech jejích vlastních modelů s datem 29. září nebo pozdějším. Její tiskové centrum (newsroom) (položky do 8. října), seznam jejího blogu k tématu Trustworthy AI (poslední položka 6. října) i seznam nejnovějších repozitářů na Hugging Face žádný neobsahují. Oznámení platformy pro bezpečnost agentů z 28. září přišlo den před dohodou a je to produkt pro organizace, které provozují AI agenty. Ve videu z panelu v den podpisu se v obecné rovině popisuje, jak se AI agenti izolují a sledují, a zaznívají přitom názvy dvou produktů Nvidie; tato vyjádření uvádíme mezi prohlášeními Nvidie o dohodě a nepočítáme je (viz poznámka)."
+      }
+    },
+    "L2": {
+      "status": "nothing",
+      "summary": "We found no announcement of a new team, appointment or reorganization for AI controls at Nvidia since the accord, in the places listed below. The Nvidia documents we cite describe roles and bodies without naming the people in them.",
+      "since": [],
+      "before": [
+        {
+          "id": "nvidia-sustainability-fy26-tai-leadership",
+          "claim": "Nvidia's FY2026 sustainability report (which says its information is accurate as of approximately June 12, 2026) says its Trustworthy AI efforts are led by its Head of AI & Legal Ethics and supported by dedicated product and risk teams; the passage does not name the person.",
+          "publisher": "NVIDIA",
+          "title": "NVIDIA Sustainability Report Fiscal Year 2026",
+          "url": "https://images.nvidia.com/aem-dam/Solutions/documents/NVIDIA-Sustainability-Report-Fiscal-Year-2026.pdf",
+          "published": null,
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "NVIDIA’s TAI efforts are led by our Head of AI & Legal Ethics and supported by dedicated product and risk teams.",
+          "textFile": "sources/nvidia/19-sustainability-report-fy2026-reading-order.txt",
+          "notAfter": "2026-06-12",
+          "dateNote": "undated; the report states that its information is accurate as of approximately June 12, 2026, and the file’s Last-Modified header is June 12, 2026"
+        },
+        {
+          "id": "nvidia-sustainability-fy26-ai-ethics-committee",
+          "claim": "The same report says an internal AI Ethics Committee, with members from engineering, business, research, public policy and legal organizations, advises on generative AI development.",
+          "publisher": "NVIDIA",
+          "title": "NVIDIA Sustainability Report Fiscal Year 2026",
+          "url": "https://images.nvidia.com/aem-dam/Solutions/documents/NVIDIA-Sustainability-Report-Fiscal-Year-2026.pdf",
+          "published": null,
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "The internal AI Ethics Committee advises on generative AI development with members from our engineering, business, research, public policy, and legal organizations.",
+          "textFile": "sources/nvidia/19-sustainability-report-fy2026-reading-order.txt",
+          "notAfter": "2026-06-12",
+          "dateNote": "undated; the report states that its information is accurate as of approximately June 12, 2026, and the file’s Last-Modified header is June 12, 2026"
+        },
+        {
+          "id": "nvidia-risk-assessment-risk-teams",
+          "claim": "Nvidia's Frontier AI Risk Assessment describes governance involving separate risk-management teams that, it says, have the authority and expertise to intervene in model development timelines, product launch decisions and strategic planning.",
+          "publisher": "NVIDIA",
+          "title": "FRONTIER AI RISK ASSESSMENT",
+          "url": "https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf",
+          "published": null,
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "separate teams tasked with risk management that have the authority and expertise to intervene in model development timelines, product launch decisions, and strategic planning",
+          "textFile": "sources/nvidia/01-frontier-ai-risk-assessment.txt",
+          "notAfter": "2025-02-24",
+          "dateNote": "undated, “Applicable from August 2025”; the Internet Archive holds an identical copy from February 24, 2025"
+        }
+      ],
+      "beforeSummary": "Nvidia’s fiscal 2026 sustainability report says its Trustworthy AI work is led by its Head of AI & Legal Ethics and supported by “dedicated product and risk teams”, and that an internal AI Ethics Committee advises on generative AI development. Its Frontier AI Risk Assessment describes separate risk-management teams with authority to intervene in launch decisions.",
+      "cs": {
+        "summary": "Od dohody jsme na místech uvedených níže nenašli žádné oznámení nového týmu, jmenování ani reorganizace pro kontrolní mechanismy umělé inteligence u Nvidie. Dokumenty Nvidie, které uvádíme, popisují role a orgány, aniž by uváděly jména osob, které v nich působí."
+      }
+    },
+    "L3": {
+      "status": "nothing",
+      "summary": "We found no external auditor or evaluator that Nvidia names for its models or its controls, and nothing dated since the accord.",
+      "since": [],
+      "before": [
+        {
+          "id": "nvidia-sustainability-fy26-third-party-tools",
+          "claim": "Nvidia's FY2026 sustainability report lists, among improvements to tools for its internal developers building Trustworthy AI models, that it integrated third-party tools to conduct independent testing of high-risk models; the bullet does not name the tools, their vendors or any outside evaluator.",
+          "publisher": "NVIDIA",
+          "title": "NVIDIA Sustainability Report Fiscal Year 2026",
+          "url": "https://images.nvidia.com/aem-dam/Solutions/documents/NVIDIA-Sustainability-Report-Fiscal-Year-2026.pdf",
+          "published": null,
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Integrated third-party tools to conduct independent testing of high-risk models.",
+          "textFile": "sources/nvidia/19-sustainability-report-fy2026-reading-order.txt",
+          "notAfter": "2026-06-12",
+          "dateNote": "undated; the report states that its information is accurate as of approximately June 12, 2026, and the file’s Last-Modified header is June 12, 2026"
+        }
+      ],
+      "beforeSummary": "Nvidia’s fiscal 2026 sustainability report says only that it integrated “third-party tools” to conduct independent testing of high-risk models, without naming them.",
+      "cs": {
+        "summary": "Nenašli jsme žádného externího auditora ani hodnotitele, kterého by Nvidia uvedla jménem pro své modely či kontrolní mechanismy, ani nic s datem od dohody."
+      }
+    },
+    "L4": {
+      "status": "nothing",
+      "summary": "We found no new board committee, charter change or appointment at Nvidia since the accord. EDGAR, checked on October 10, lists no Form 8-K or proxy material after September 3.",
+      "since": [],
+      "before": [
+        {
+          "id": "nvidia-proxy-2026-committees",
+          "claim": "Nvidia's 2026 proxy statement says its board has three committees (Audit, Compensation, and Nominating and Corporate Governance), each operating under a written charter.",
+          "publisher": "NVIDIA",
+          "title": "Proxy Statement, NOTICE OF 2026 ANNUAL MEETING OF STOCKHOLDERS (NVIDIA Corporation, Schedule 14A)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm",
+          "published": "2026-05-12",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "The Board has three committees: an AC, a CC, and a NCGC. Each of these committees operates under a written charter",
+          "textFile": "sources/nvidia/11-def14a-2026-excerpt.txt"
+        },
+        {
+          "id": "nvidia-proxy-2026-board-risk-oversight-ai",
+          "claim": "In the proxy's risk-oversight chart, 'Business model, including AI' is listed among the major risks overseen by the Board of Directors as a whole; the separate lists for the Audit, Compensation and Nominating and Corporate Governance committees do not mention AI or model safety.",
+          "publisher": "NVIDIA",
+          "title": "Proxy Statement, NOTICE OF 2026 ANNUAL MEETING OF STOCKHOLDERS (NVIDIA Corporation, Schedule 14A)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm",
+          "published": "2026-05-12",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "Business model, including AI",
+          "textFile": "sources/nvidia/11-def14a-2026-excerpt.txt"
+        },
+        {
+          "id": "nvidia-audit-committee-charter-2025",
+          "claim": "Nvidia's Audit Committee charter (effective March 3, 2025) tasks the committee with assisting the Board's oversight of cybersecurity matters and information-security policies and controls; the charter text does not mention AI or model safety.",
+          "publisher": "NVIDIA",
+          "title": "CHARTER OF THE AUDIT COMMITTEE OF THE BOARD OF DIRECTORS",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_governance/2025/Mar/07/NVIDIA-AC-Charter-March-3-2025-573883.pdf",
+          "published": "2025-03-03",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Assist the Board in its oversight of cybersecurity matters, and review the adequacy and effectiveness of the Company’s information security policies",
+          "textFile": "sources/nvidia/13-audit-committee-charter.txt",
+          "dateNote": "the date the charter takes effect; it states “Effective: March 3, 2025”"
+        },
+        {
+          "id": "nvidia-risk-assessment-mr5-independent-committee",
+          "claim": "Nvidia's Frontier AI Risk Assessment says the detailed risk assessment for its highest model-risk tier (MR5, the tier it assigns to a frontier model) should be approved by an 'independent committee', giving Nvidia's AI ethics committee as the example; the document does not describe a board committee.",
+          "publisher": "NVIDIA",
+          "title": "FRONTIER AI RISK ASSESSMENT",
+          "url": "https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf",
+          "published": null,
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "A detailed risk assessment should be complete and approved by an independent committee e.g. NVIDIA’s AI ethics committee.",
+          "textFile": "sources/nvidia/01-frontier-ai-risk-assessment.txt",
+          "notAfter": "2025-02-24",
+          "dateNote": "undated, “Applicable from August 2025”; the Internet Archive holds an identical copy from February 24, 2025"
+        }
+      ],
+      "beforeSummary": "Nvidia’s 2026 proxy statement says its board has three committees: Audit, Compensation, and Nominating and Corporate Governance. It lists “Business model, including AI” among the risks overseen by the full board. The Audit Committee’s charter covers cybersecurity and information-security controls and does not mention AI. Nvidia’s Frontier AI Risk Assessment names “an independent committee e.g. NVIDIA’s AI ethics committee” as approver for its top risk tier, which is a company committee, not a board committee.",
+      "cs": {
+        "summary": "Nenašli jsme od dohody žádný nový výbor správní rady, změnu statutu ani jmenování u Nvidie. EDGAR ke dni 10. října po 3. září nevykazuje žádný formulář 8-K ani materiály k valné hromadě."
+      }
+    }
+  },
+  "accordStatements": [
+    {
+      "id": "nvidia-huang-politico-dfd-teeth-2026-09-30",
+      "claim": "Politico's Digital Future Daily newsletter quotes Nvidia's chief executive, Jensen Huang, saying at a panel after the signing of the accord: 'I thought that the declaration has a lot of teeth'. This is the Politico report that The Next Web cited.",
+      "publisher": "Politico (Digital Future Daily)",
+      "title": "The big problem behind Trump’s AI accord",
+      "url": "https://www.politico.com/newsletters/digital-future-daily/2026/09/30/why-trumps-ai-accord-doesnt-change-anything-01100346",
+      "published": "2026-09-30",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "I thought that the declaration has a lot of teeth",
+      "textFile": "sources/nvidia/70-politico-dfd-big-problem-behind-trumps-ai-accord-2026-09-30.txt",
+      "access": "opened"
+    },
+    {
+      "id": "nvidia-huang-panel-video-teeth-captions-2026-09-29",
+      "claim": "In a video of a panel held on the day of the signing, YouTube's auto-generated captions, which carry no speaker labels and repeat some words, include the sentence 'I thought that the the the declaration has has a lot of teeth'. Politico attributes the sentence to Nvidia's chief executive, Jensen Huang.",
+      "publisher": "Right Side Broadcasting Network (YouTube)",
+      "title": "FULL: Elon Musk, Jensen Huang, Tom Brown Discuss the AI Revolution & What's Next - 09/29/26",
+      "url": "https://www.youtube.com/watch?v=388P7IFSpwE",
+      "published": "2026-09-29",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "I thought that the the the declaration has has a lot of teeth",
+      "textFile": "sources/nvidia/71-youtube-auto-captions-rsbn-panel-and-usa-today-qa-2026-09-29.txt",
+      "access": "opened"
+    },
+    {
+      "id": "nvidia-huang-panel-video-containment-monitoring-captions-2026-09-29",
+      "claim": "In the same video, a passage that introduces two Nvidia products, OpenShell and BlueField, says that while a model is being tested the agentic system and the model have to be highly contained, that it should be monitored in real time, ideally by another chip outside the agent's sandbox, and that a very similar system should be used at deployment. The auto-generated captions give no speaker; we list the passage here only because it names Nvidia products. The passage speaks of what 'you' have to do and does not say that Nvidia applies this to its own models.",
+      "publisher": "Right Side Broadcasting Network (YouTube)",
+      "title": "FULL: Elon Musk, Jensen Huang, Tom Brown Discuss the AI Revolution & What's Next - 09/29/26",
+      "url": "https://www.youtube.com/watch?v=388P7IFSpwE",
+      "published": "2026-09-29",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "And so you want to contain and you want to monitor",
+      "textFile": "sources/nvidia/71-youtube-auto-captions-rsbn-panel-and-usa-today-qa-2026-09-29.txt",
+      "access": "opened"
+    },
+    {
+      "id": "nvidia-huang-verge-new-safety-technologies-2026-09-30",
+      "claim": "The Verge's selection of the remarks of the six signatories at the White House question-and-answer session of September 29 includes Nvidia's chief executive, Jensen Huang, saying 'There’s no conflict between innovation, technology, and safety', that new technologies are needed to advance the capabilities of AI, and 'we’re also creating new technologies to advance the safety of AI'. The excerpt does not describe controls, monitoring, auditors or a committee.",
+      "publisher": "The Verge",
+      "title": "Here’s what AI leaders are saying about Trump’s new safety plan",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1002636/ai-execs-trump-self-policing-deal-comments",
+      "published": "2026-09-30",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "we’re also creating new technologies to advance the safety of AI",
+      "textFile": "sources/nvidia/72-verge-ai-leaders-saying-about-trumps-safety-plan-2026-09-30.txt",
+      "access": "opened"
+    },
+    {
+      "id": "nvidia-huang-ians-no-conflict-2026-09-30",
+      "claim": "IANS reports that Nvidia's chief executive, Jensen Huang, rejected the suggestion that safety requirements must slow technological progress, and quotes Huang saying: 'There's no conflict between innovation, technology, and safety'. The same article quotes Google's Sundar Pichai on the accord.",
+      "publisher": "IANS (via The Morung Express)",
+      "title": "Pichai backs White House AI safety accord",
+      "url": "https://morungexpress.com/pichai-backs-white-house-ai-safety-accord",
+      "published": "2026-09-30",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "There's no conflict between innovation, technology, and safety",
+      "textFile": "sources/nvidia/73-ians-morungexpress-pichai-backs-accord-2026-09-30.txt",
+      "access": "opened"
+    }
+  ],
+  "documents": [
+    {
+      "title": "FRONTIER AI RISK ASSESSMENT",
+      "url": "https://images.nvidia.com/content/pdf/NVIDIA-Frontier-AI-Risk-Assessment.pdf",
+      "published": null,
+      "whatItIs": "Nvidia's published risk framework (Preliminary and Detailed Risk Assessment, tiers MR1 to MR5) and how it would apply to frontier models, which it says Nvidia is not currently developing."
+    },
+    {
+      "title": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4 (model card), Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+      "published": "2026-06-04",
+      "whatItIs": "Model card for Nemotron 3 Ultra (550B total, 55B active parameters), which Nvidia's technical report calls the largest and most capable model in the Nemotron 3 family; links to safety, explainability, bias and privacy subcards."
+    },
+    {
+      "title": "Nemotron 3 Ultra: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning (technical report)",
+      "url": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf",
+      "published": "2026-06-09",
+      "whatItIs": "Nvidia's technical report on training and evaluating Nemotron 3 Ultra, including its safety fine-tuning data and prompt-injection training."
+    },
+    {
+      "title": "Trustworthy AI For A Better World | NVIDIA",
+      "url": "https://www.nvidia.com/en-us/ai-data-science/trustworthy-ai/",
+      "published": null,
+      "whatItIs": "Nvidia's Trustworthy AI principles page (privacy, safety and security, transparency, nondiscrimination), which links the Frontier AI Risk Assessment and refers to the White House Voluntary Commitments."
+    },
+    {
+      "title": "NVIDIA Sustainability Report Fiscal Year 2026 (Trustworthy AI section, pages 24 to 26)",
+      "url": "https://images.nvidia.com/aem-dam/Solutions/documents/NVIDIA-Sustainability-Report-Fiscal-Year-2026.pdf",
+      "published": "2026-06",
+      "whatItIs": "Annual sustainability report whose Trustworthy AI section describes the team that leads it, the internal AI Ethics Committee, model cards, risk management guidance and testing tools."
+    },
+    {
+      "title": "NVIDIA Launches Open Agent Safety Platform to Secure Agents From Testing to Deployment",
+      "url": "https://nvidianews.nvidia.com/news/open-agent-safety-platform",
+      "published": "2026-09-28",
+      "whatItIs": "Press release introducing OpenShell and Sentry, Nvidia's tools for bounding and monitoring AI agents, with a CEO quote on AI safety."
+    },
+    {
+      "title": "Proxy Statement, NOTICE OF 2026 ANNUAL MEETING OF STOCKHOLDERS (NVIDIA Corporation, Schedule 14A)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm",
+      "published": "2026-05-12",
+      "whatItIs": "Nvidia's proxy statement: board committees, risk-oversight chart (including 'Business model, including AI'), director independence."
+    },
+    {
+      "title": "CHARTER OF THE AUDIT COMMITTEE OF THE BOARD OF DIRECTORS",
+      "url": "https://s201.q4cdn.com/141608511/files/doc_governance/2025/Mar/07/NVIDIA-AC-Charter-March-3-2025-573883.pdf",
+      "published": "2025-03-03",
+      "whatItIs": "Charter of the Audit Committee, including its role in overseeing cybersecurity matters and information-security controls."
+    }
+  ]
+}

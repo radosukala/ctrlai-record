@@ -9,6 +9,7 @@ import { SITE } from '@/lib/site';
 export const NAV = [
   { href: '/', label: 'This week', also: '/week/' },
   { href: '/hall-of-fame', label: 'Hall of Fame' },
+  { href: '/say', label: 'A Say in AI', also: '/accord' },
   { href: '/about', label: 'About' },
 ];
 
@@ -36,6 +37,8 @@ export function SiteFooter() {
             <Link href="/">This week</Link>
             <a href="/feed.xml">RSS</a>
             <Link href="/hall-of-fame">Hall of Fame</Link>
+            <Link href="/say">A Say in AI</Link>
+            <Link href="/accord">Accord tracker</Link>
             <a href={SITE.suggestUrl}>Suggest something</a>
             <Link href="/about">How we pick</Link>
             <a href={SITE.repoUrl}>Source code</a>

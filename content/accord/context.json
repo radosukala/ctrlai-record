@@ -1,0 +1,580 @@
+{
+  "checkedOn": "2026-10-10",
+  "items": [
+    {
+      "id": "order",
+      "title": "The order signed the same day",
+      "text": "On September 29 President Trump also signed Executive Order 14434, “Inaugurating the Era of Super Intelligence”. To the maximum extent permitted by law, it tells executive departments and agencies to use “Super Intelligence” instead of “Artificial Intelligence” in official correspondence, public communications and other non-statutory documents, and it gives the Assistant to the President for Science and Technology 60 days to submit proposed legislative language for a federal definition, which by our arithmetic is November 28. The order puts no duty on any company, and neither it nor its fact sheet mentions the accord.",
+      "cs": {
+        "title": "Příkaz podepsaný téhož dne",
+        "text": "Dne 29. září prezident Trump podepsal také exekutivní příkaz 14434 „Inaugurating the Era of Super Intelligence“ („Zahájení éry superinteligence“). V nejširším rozsahu, který zákon dovoluje, ukládá výkonným ministerstvům a úřadům, aby v úředních dopisech, veřejné komunikaci a dalších dokumentech, které nejsou součástí zákonů, místo „Artificial Intelligence“ používaly „Super Intelligence“, a funkci Assistant to the President for Science and Technology dává 60 dní na předložení návrhu legislativního znění federální definice, což je podle našeho výpočtu 28. listopadu. Příkaz neukládá žádnou povinnost žádné firmě a ani on, ani jeho informační list dohodu nezmiňují."
+      },
+      "evidence": [
+        {
+          "id": "wh-eo-14434-2026-09-29",
+          "claim": "Executive Order 14434, signed 2026-09-29, says that to the maximum extent permitted by law executive departments and agencies shall use 'Super Intelligence' and 'SI' instead of 'Artificial Intelligence' and 'AI' in official correspondence, public communications, websites, reports, policy documents and other non-statutory documents within the executive branch (Sec. 2(a)). Sec. 2(b): nothing in that section requires altering previously issued regulations, Presidential actions, contracts, grants or other historical documents. The order text does not contain the word 'accord'.",
+          "publisher": "The White House",
+          "title": "INAUGURATING THE ERA OF SUPER INTELLIGENCE",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/",
+          "published": "2026-09-29",
+          "kind": "official",
+          "mentionsAccord": false,
+          "quote": "the executive branch shall use the terms “Super Intelligence” and “SI” in place of “Artificial Intelligence” and “AI”",
+          "textFile": "sources/context/01-eo-inaugurating-era-of-super-intelligence.txt",
+          "access": "opened"
+        },
+        {
+          "id": "wh-eo-14434-sec3b-60-days",
+          "claim": "Section 3(b) of EO 14434 is the only deadline in the order: within 60 days of the order, the Assistant to the President for Science and Technology must submit to the President proposed legislative language to establish a Federal definition of 'Super Intelligence' and 'SI'. The order states no calendar date; 60 days after 2026-09-29 is 2026-11-28, a Saturday (our arithmetic; CIO.com gives the same date). The duty falls on a White House official, not on any company, and the order does not link it to the accord.",
+          "publisher": "The White House",
+          "title": "INAUGURATING THE ERA OF SUPER INTELLIGENCE",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/",
+          "published": "2026-09-29",
+          "kind": "official",
+          "mentionsAccord": false,
+          "quote": "Within 60 days of the date of this order, the Assistant to the President for Science and Technology (APST)",
+          "textFile": "sources/context/01-eo-inaugurating-era-of-super-intelligence.txt",
+          "access": "opened"
+        },
+        {
+          "id": "fr-eo-14434-91-fr-63129",
+          "claim": "The Federal Register published EO 14434 on 2026-10-02 as FR Doc. 2026-20321, 91 FR 63129. Its Section 3(b) has the same wording as on whitehouse.gov. The proposal must include an assessment of whether, and to what extent, the definition should modify, expand upon, or otherwise supersede the existing statutory definition of 'artificial intelligence', any proposed conforming amendments, and recommendations for further Presidential or executive action.",
+          "publisher": "Federal Register (Office of the Federal Register)",
+          "title": "Inaugurating the Era of Super Intelligence",
+          "url": "https://www.federalregister.gov/documents/2026/10/02/2026-20321/inaugurating-the-era-of-super-intelligence",
+          "published": "2026-10-02",
+          "kind": "official",
+          "mentionsAccord": false,
+          "quote": "shall submit to the President proposed legislative language to establish a Federal definition of “Super Intelligence” and “SI”",
+          "textFile": "sources/context/65-federalregister-eo-14434.txt",
+          "access": "opened"
+        },
+        {
+          "id": "wh-factsheet-eo-14434",
+          "claim": "The White House fact sheet of 2026-09-29 describes EO 14434 as replacing the term in the executive branch and directing the Assistant to the President for Science and Technology to propose a federal definition. The fact sheet text does not contain the word 'accord'.",
+          "publisher": "The White House",
+          "title": "Fact Sheet: President Donald J. Trump Inaugurates The Era of Super Intelligence",
+          "url": "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-inaugurates-the-era-of-super-intelligence/",
+          "published": "2026-09-29",
+          "kind": "official",
+          "mentionsAccord": false,
+          "quote": "The Order directs the Assistant to the President for Science and Technology (APST) to propose a Federal definition of “Super Intelligence” and “SI”",
+          "textFile": "sources/context/03-factsheet-whitehouse-articles-url.txt",
+          "access": "opened"
+        },
+        {
+          "id": "cio-2026-09-30-swain-nov-28",
+          "claim": "CIO.com (Gyana Swain, 2026-09-30) says the order directs the White House's top science and technology adviser to propose legislation for a new federal definition within 60 days, 'putting the deadline at November 28'. That matches our own count of 60 days from 2026-09-29.",
+          "publisher": "CIO",
+          "title": "Trump’s answer to AI’s image problem: Industry self-regulation and a new name",
+          "url": "https://www.cio.com/article/4228944/trumps-answer-to-ais-image-problem-industry-self-regulation-and-a-new-name.html",
+          "published": "2026-09-30",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "propose legislation for a new federal definition within 60 days, putting the deadline at November 28",
+          "textFile": "sources/context/18-cio-self-regulation-new-name.txt",
+          "access": "opened"
+        }
+      ]
+    },
+    {
+      "id": "standards-body",
+      "title": "A standards body that three of the signers are reported to be planning",
+      "text": "Five days before the signing, The Information reported, citing people familiar with the matter, that Google, OpenAI and Anthropic are working on their own AI safety standards body, without government oversight, and hope to launch it by the end of 2026 or early 2027. We could read only the preview of that article, and TNW, which summarised it, said it had not verified the report. OpenAI confirmed to CNBC on September 15 that it was talking with Anthropic and Google about working together on safety; Google and Anthropic did not immediately respond to CNBC. The accord does not name this body. TNW says the reports do not name Meta or xAI as members. We found no new report of it since the signing; an October 1 analysis from the Council on Foreign Relations refers to the talks among the three as reportedly already ongoing.",
+      "cs": {
+        "title": "Orgán pro standardy, který podle zpráv plánují tři ze signatářů",
+        "text": "Pět dní před podpisem The Information s odvoláním na lidi obeznámené se situací uvedl, že Google, OpenAI a Anthropic pracují na vlastním orgánu pro bezpečnostní standardy AI, bez vládního dohledu, a doufají, že ho spustí do konce roku 2026 nebo na začátku roku 2027. Přečíst jsme mohli jen náhled toho článku a TNW, který jej shrnul, uvedl, že zprávu neověřil. OpenAI 15. září potvrdila CNBC, že s Anthropicem a Googlem jedná o spolupráci v oblasti bezpečnosti; Google a Anthropic CNBC hned neodpověděly. Dohoda tento orgán neuvádí jménem. TNW uvádí, že zprávy jako členy neuvádějí jménem Metu ani xAI. Od podpisu jsme o něm nenašli žádnou novou zprávu; analýza Council on Foreign Relations z 1. října označuje jednání těch tří jako údajně již probíhající."
+      },
+      "evidence": [
+        {
+          "id": "theinformation-2026-09-24-safa",
+          "claim": "The Information (Leo Schwartz and Stephanie Palazzolo, 2026-09-24) reported, citing people familiar with the matter, that Google, OpenAI and Anthropic are pushing forward with a plan to create a new AI safety-focused standards body on their own, without government oversight, in hopes of launching it by the end of the year or early in 2027. The public preview names no other members; the full article is behind a paywall and was not read.",
+          "publisher": "The Information",
+          "title": "Google, OpenAI and Anthropic AI Safety Group Takes Shape",
+          "url": "https://www.theinformation.com/articles/google-openai-anthropic-ai-safety-group-takes-shape",
+          "published": "2026-09-24",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "without government oversight, in hopes of launching it by the end of the year or early in 2027, according to people familiar with the matter",
+          "textFile": "sources/context/67-theinformation-safa-takes-shape.txt",
+          "access": "opened"
+        },
+        {
+          "id": "cnbc-2026-09-15-openai-confirms-talks",
+          "claim": "An OpenAI spokesperson confirmed to CNBC on 2026-09-15 that OpenAI has been talking with Anthropic and Google about working together on safety, in discussions the spokesperson said have been ongoing since Demis Hassabis's July proposal for a U.S.-led 'Standards Body'. CNBC said Google and Anthropic did not immediately respond. This is nine days before The Information's report of the planned body.",
+          "publisher": "CNBC",
+          "title": "OpenAI, Google, Anthropic discussing collaboration on AI safety issues",
+          "url": "https://www.cnbc.com/2026/09/15/open-ai-google-anthropic-safety.html",
+          "published": "2026-09-15",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "OpenAI has been engaging with other artificial intelligence companies, including Anthropic and Google, about how they can work together to address safety concerns",
+          "textFile": "sources/context/70-cnbc-2026-09-15-openai-google-anthropic-safety.txt",
+          "access": "opened"
+        },
+        {
+          "id": "tnw-2026-09-28-safa-members",
+          "claim": "TNW (2026-09-28), summarising The Information's report, writes: 'The new body would cover only the three frontier labs at the start. The reports do not name Microsoft, Meta or xAI as members.' TNW does not say which reports it means or that it read the full article. TNW gives the tentative name Standards Authority for Frontier AI and says it has not independently verified the report.",
+          "publisher": "TNW",
+          "title": "Google, OpenAI and Anthropic plan AI safety body, The Information reports",
+          "url": "https://thenextweb.com/news/standards-authority-frontier-ai-google-openai-anthropic",
+          "published": "2026-09-28",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "The new body would cover only the three frontier labs at the start. The reports do not name Microsoft, Meta or xAI as members.",
+          "textFile": "sources/context/10-tnw-safa-standards-authority.txt",
+          "access": "opened"
+        },
+        {
+          "id": "accord-text-meet-regularly",
+          "claim": "The accord's only sentence about the companies working together says the participating companies will meet regularly to establish standards and best practices. The text names no standards body and gives no date and no members for one. The PDF is an image with no text layer; the text file is the project's transcription. The PDF sits at a CloudFront address that Wikimedia Commons records as uploaded from the White House; the whitehouse.gov pages we read do not link to it.",
+          "publisher": "Shared by President Trump on Truth Social",
+          "title": "White House Accord on Super Intelligence: Joint Commitment on Frontier Responsibilities",
+          "url": "https://d3i6fh83elv35t.cloudfront.net/static/2026/09/accord.pdf",
+          "published": "2026-09-29",
+          "kind": "joint-commitment",
+          "mentionsAccord": true,
+          "quote": "The participating companies will meet regularly to establish standards and best practices to improve the safety of their systems.",
+          "textFile": "accord-text.txt",
+          "access": "opened",
+          "dateNote": "the document carries no date; AP and CBS report that the President shared it on Truth Social on September 29"
+        },
+        {
+          "id": "cfr-2026-10-01-martin-ongoing-discussions",
+          "claim": "CFR's Connor Martin (2026-10-01), writing after the signing, says discussions between OpenAI, Anthropic and Google DeepMind on working together are reportedly already ongoing, in a passage that also covers the accord's 'meet regularly' line and Dario Amodei's call for an antitrust waiver so labs can cooperate on safety.",
+          "publisher": "Council on Foreign Relations",
+          "title": "Trump’s AI Safety Pact Is Toothless. But There Is a Path Forward.",
+          "url": "https://www.cfr.org/articles/trumps-ai-safety-pact-is-toothless-but-there-is-a-path-forward",
+          "published": "2026-10-01",
+          "kind": "analysis",
+          "mentionsAccord": true,
+          "quote": "discussions are reportedly already ongoing between OpenAI, Anthropic, and Google DeepMind",
+          "textFile": "sources/context/48-cfr-ai-safety-pact-toothless.txt",
+          "access": "opened"
+        }
+      ]
+    },
+    {
+      "id": "reactions",
+      "title": "Official responses from outside the US government",
+      "text": "The only official comment from outside the US government that we found is from the United Nations, and it does not name the accord. Asked on October 1 about self-regulation by AI companies, the Secretary-General’s spokesman said the UN does not think self-regulation by the industry is sufficient to keep the risks at bay or to ensure that the benefits reach everyone. We found no statement about the accord from the European Commission, the UK government, China’s foreign ministry, the G7, the OECD or the African Union. For governments elsewhere in Asia and in Latin America we relied on a few English-language news searches, and we ran no searches in other languages. Our searches were cut short, so this shows a gap in what we found, not that nothing exists.",
+      "cs": {
+        "title": "Oficiální reakce mimo vládu USA",
+        "text": "Jediný oficiální komentář mimo vládu USA, který jsme našli, pochází od OSN a dohodu neuvádí jejím názvem. Na dotaz z 1. října ohledně samoregulace firem v oblasti AI mluvčí generálního tajemníka řekl, že OSN nepovažuje samoregulaci odvětví za dostatečnou k tomu, aby udržela rizika na uzdě a zajistila, že se přínosy dostanou ke všem. Nenašli jsme prohlášení o dohodě od Evropské komise, britské vlády, čínského ministerstva zahraničí, G7, OECD ani Africké unie. U vlád jinde v Asii a v Latinské Americe jsme se opřeli jen o několik anglických novinových vyhledávání a v jiných jazycích jsme nehledali. Naše vyhledávání bylo předčasně ukončeno, takže to ukazuje mezeru v tom, co jsme našli, ne že nic neexistuje."
+      },
+      "evidence": [
+        {
+          "id": "un-spokesperson-2026-10-01-self-regulation",
+          "claim": "On 2026-10-01 a correspondent asked the UN Secretary-General's Spokesman what the UN thinks of self-regulation by AI companies after President Trump brought AI leaders together two days earlier, describing the outcome as an agreement to 'sign up to AI safety and self-regulation'. Stéphane Dujarric answered that the UN does not think self-regulation by the industry is sufficient to keep the risks at bay or to ensure the benefits of AI reach everyone. Neither the question nor the answer uses the word 'accord', and the answer does not discuss the accord's text.",
+          "publisher": "United Nations (Office of the Spokesperson for the Secretary-General)",
+          "title": "Daily Press Briefing by the Office of the Spokesperson for the Secretary-General",
+          "url": "https://press.un.org/en/2026/db261001.doc.htm",
+          "published": "2026-10-01",
+          "kind": "official",
+          "mentionsAccord": false,
+          "quote": "we don’t think that self-regulation by the industry is sufficient to, A, keep the risks at bay",
+          "textFile": "sources/context/37-un-noon-briefing-2026-10-01-excerpt.txt",
+          "access": "opened"
+        }
+      ]
+    },
+    {
+      "id": "critics",
+      "title": "What critics say",
+      "text": "Some of the critics we found. Connor Martin, a fellow at the Council on Foreign Relations, writes that nothing in the document legally compels any signer to change its behavior. Tom Wheeler, a visiting fellow at Brookings, says it lets the companies design their own controls and select their evaluators; Brookings states that Google and Meta are general, unrestricted donors to it and that the piece is not influenced by any donation. Senator Elizabeth Warren (D-Mass.) wrote on social media, as Common Dreams reports, that self-regulation is “a recipe for disaster”.\n\nLisa Gilbert, co-president of the consumer group Public Citizen, calls a voluntary agreement at this moment “completely inadequate”. Alex Pascal, executive director of the Berkman Klein Center for Internet and Society, told AP that the only way to reduce AI’s risks and harms to Americans is robust legal liability, regulation and a fundamental change in the race dynamics among frontier developers.",
+      "cs": {
+        "title": "Co říkají kritici",
+        "text": "Někteří z kritiků, které jsme našli. Connor Martin (fellow) z Council on Foreign Relations píše, že nic v dokumentu žádného ze signatářů právně nenutí změnit chování. Tom Wheeler, visiting fellow v Brookings, říká, že firmám dovoluje navrhnout si vlastní kontrolní mechanismy a vybrat si hodnotitele; Brookings uvádí, že Google a Meta jsou jeho dárci bez účelového omezení a že text není žádným darem ovlivněn. Elizabeth Warren (D-Mass.) ze Senátu USA píše na sociálních sítích, jak uvádí Common Dreams, že samoregulace je „recept na katastrofu“.\n\nLisa Gilbert, co-president spotřebitelské organizace Public Citizen, označuje dobrovolnou dohodu v této chvíli za „zcela nedostatečnou“. Alex Pascal (executive director) z Berkman Klein Center for Internet and Society podle agentury AP uvádí, že jediný způsob, jak snížit rizika a škody AI pro Američany, je důsledná právní odpovědnost, regulace a zásadní změna dynamiky závodu mezi vývojáři nejpokročilejších modelů."
+      },
+      "evidence": [
+        {
+          "id": "cfr-2026-10-01-martin-toothless",
+          "claim": "Connor Martin, a CFR fellow who previously served as deputy director of CFIUS at the Treasury Department, writes that nothing in the accord legally compels any signer to change its behaviour and that nothing alters the companies' commercial incentives. CFR states the piece reflects the author's views only.",
+          "publisher": "Council on Foreign Relations",
+          "title": "Trump’s AI Safety Pact Is Toothless. But There Is a Path Forward.",
+          "url": "https://www.cfr.org/articles/trumps-ai-safety-pact-is-toothless-but-there-is-a-path-forward",
+          "published": "2026-10-01",
+          "kind": "analysis",
+          "mentionsAccord": true,
+          "quote": "there is nothing in the document that legally compels any of the signers to change their behavior",
+          "textFile": "sources/context/48-cfr-ai-safety-pact-toothless.txt",
+          "access": "opened"
+        },
+        {
+          "id": "brookings-2026-10-06-wheeler",
+          "claim": "Tom Wheeler, a Brookings visiting fellow, argues that the accord is 'morally binding' only and lets the companies design their own controls, select the evaluators and decide whether their procedures are followed. Brookings's page states that Google and Meta are general, unrestricted donors to the institution, and that the findings, interpretations and conclusions in the piece are the authors' own and not influenced by any donation.",
+          "publisher": "Brookings Institution",
+          "title": "Trump’s ‘morally binding’ AI pact is not enough",
+          "url": "https://www.brookings.edu/articles/trumps-morally-binding-ai-pact-is-not-enough/",
+          "published": "2026-10-06",
+          "kind": "analysis",
+          "mentionsAccord": true,
+          "quote": "allows the companies to design their own controls, select the evaluators, and determine whether those procedures are being followed",
+          "textFile": "sources/context/16-brookings-morally-binding-pact-not-enough.txt",
+          "access": "opened"
+        },
+        {
+          "id": "commondreams-2026-09-29-warren",
+          "claim": "Common Dreams (Jessica Corbett, 2026-09-29) reports that Sen. Elizabeth Warren (D-Mass.) responded to the White House event on social media, writing that self-regulation is 'a recipe for disaster'. We read Common Dreams's account, not the original post. The article also quotes Food & Water Action's Mitch Jones calling the idea that the industry will safely regulate itself 'as dangerous as it is absurd'.",
+          "publisher": "Common Dreams",
+          "title": "'As Dangerous As It Is Absurd': Trump Ripped for 'Self-Policing' AI Industry Accord",
+          "url": "https://www.commondreams.org/news/trump-ai",
+          "published": "2026-09-29",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "Self-regulation? That’s a recipe for disaster.",
+          "textFile": "sources/context/50-commondreams-dangerous-absurd.txt",
+          "access": "opened"
+        },
+        {
+          "id": "bgov-2026-10-01-public-citizen-gilbert",
+          "claim": "Bloomberg Government (2026-10-01) quotes Lisa Gilbert, co-president of the consumer group Public Citizen, calling the voluntary agreement completely inadequate.",
+          "publisher": "Bloomberg Government",
+          "title": "Tech Sector Split Over White House AI Pact With Company Leaders",
+          "url": "https://news.bgov.com/bloomberg-government-news/tech-sector-split-over-white-house-ai-pact-with-company-leaders",
+          "published": "2026-10-01",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "A voluntary agreement at a moment where the risks are multiplying is completely inadequate",
+          "textFile": "sources/context/88-bgov-tech-sector-split.txt",
+          "access": "opened"
+        },
+        {
+          "id": "ap-npr-2026-09-30-pascal",
+          "claim": "AP (as carried by an NPR member station, 2026-09-30) quotes Alex Pascal, executive director of the Berkman Klein Center for Internet and Society, saying the only way to reduce AI's risks and harms to Americans is robust legal liability, regulation and changing the race dynamics among frontier developers; AP says some critics also objected to the accord's vague, broad language.",
+          "publisher": "NPR / Associated Press",
+          "title": "Trump says top tech firms have signed accord to 'self-police' AI development",
+          "url": "https://www.stlpr.org/npr/2026-09-30/trump-says-top-tech-firms-have-signed-accord-to-self-police-ai-development",
+          "published": "2026-09-30",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "The only way to reduce the risks and harms of AI to Americans is through robust legal liability, regulation and fundamentally changing the race dynamics",
+          "textFile": "sources/context/43-npr-stlpr-trump-says-accord-self-police.txt",
+          "access": "opened"
+        }
+      ]
+    },
+    {
+      "id": "defenders",
+      "title": "What defenders say",
+      "text": "Some of the defenders we found. David Sacks, a Silicon Valley investor who previously served as Trump’s AI tsar, called the accord “far better” than an international agreement that would “probably never happen”. John Miller of the Information Technology Industry Council, a trade association whose members include four of the six signers (Google, Meta, NVIDIA and OpenAI), calls the principles voluntary but “a constructive first step”. Amit Eyal Govrin of theCUBE Research, who is also CEO of Agentcy Labs, a company that builds AI infrastructure including audit logs and evaluations, backs the accord as “the lesser of two evils” compared with Dario Amodei’s plan to slow frontier development, while faulting the labs for keeping auditors’ reports in their own boardrooms.\n\nThe law firm Alston & Bird, whose client alert invites readers to contact its team about the accord, calls the endorsement of independent audits “a meaningful policy shift” while noting that the accord is voluntary and has no enforcement mechanism. Shri Narayanan, a University of Southern California professor, told AP that the accord’s intention “balances the latitude needed for innovation with regulation”.",
+      "cs": {
+        "title": "Co říkají zastánci",
+        "text": "Někteří ze zastánců, které jsme našli. David Sacks (investice, Silicon Valley; dříve „AI car“ Trumpovy administrativy) označuje dohodu za „mnohem lepší“ než mezinárodní dohodu, která by „pravděpodobně nikdy nevznikla“. John Miller z Information Technology Industry Council, obchodního sdružení, jehož členy jsou čtyři ze šesti signatářů (Google, Meta, NVIDIA a OpenAI), označuje zásady za dobrovolné, ale za „konstruktivní první krok“. Amit Eyal Govrin z theCUBE Research, zároveň v čele Agentcy Labs, firmy budující infrastrukturu AI včetně auditních záznamů a hodnocení, dohodu podporuje jako „menší ze dvou zel“ ve srovnání s plánem zpomalit vývoj nejpokročilejších modelů, za nímž stojí Dario Amodei, zároveň ale laboratořím vytýká, že zprávy auditorů nechávají jen na úrovni svých správních rad.\n\nAdvokátní kancelář Alston & Bird, jejíž klientské upozornění vyzývá čtenáře, aby její tým ohledně dohody kontaktovali, označuje podporu nezávislých auditů za „významný posun v přístupu“, ale poznamenává, že dohoda je dobrovolná a nemá vymáhací mechanismus. Shri Narayanan (professor) z University of Southern California podle agentury AP uvádí, že záměr dohody „vyvažuje volnost potřebnou pro inovace s regulací“."
+      },
+      "evidence": [
+        {
+          "id": "aljazeera-2026-09-29-sacks",
+          "claim": "Al Jazeera (2026-09-29) describes David Sacks as a Silicon Valley investor who previously served as Trump's AI tsar, and reports that Sacks called the accord 'far better' than an international agreement that would 'probably never happen'. A separate quotation, which Al Jazeera attributes to a post on X, has Sacks saying President Trump continues to ensure that the U.S. remains the technology leader.",
+          "publisher": "Al Jazeera",
+          "title": "Trump, tech bosses sign voluntary pact pledging ‘robust’ AI safeguards",
+          "url": "https://www.aljazeera.com/news/2026/9/29/trump-top-tech-firms-sign-accord-to-self-police-ai-development",
+          "published": "2026-09-29",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "called the accord “far better” than an international agreement that would “probably never happen”",
+          "textFile": "sources/context/41-aljazeera-trump-tech-bosses-sign-pact.txt",
+          "access": "opened"
+        },
+        {
+          "id": "bgov-2026-10-01-iti-miller",
+          "claim": "Bloomberg Government (2026-10-01) quotes John Miller, executive vice president of policy and general counsel at the Information Technology Industry Council, whose members Bloomberg says include Meta and Google, saying 'These are voluntary principles, but they are a constructive first step'. ITI's own members page lists four of the six signers (see the next source).",
+          "publisher": "Bloomberg Government",
+          "title": "Tech Sector Split Over White House AI Pact With Company Leaders",
+          "url": "https://news.bgov.com/bloomberg-government-news/tech-sector-split-over-white-house-ai-pact-with-company-leaders",
+          "published": "2026-10-01",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "These are voluntary principles, but they are a constructive first step",
+          "textFile": "sources/context/88-bgov-tech-sector-split.txt",
+          "access": "opened"
+        },
+        {
+          "id": "itic-members-2026-10-10",
+          "claim": "The Information Technology Industry Council calls itself the premier global advocate for technology. Its members page (opened 2026-10-10) shows members as logos; the titles of the logo links include Google, Meta, NVIDIA and OpenAI, four of the six signers, and neither Anthropic nor xAI. The quotation is from the list of the page's 81 logo-link titles in page order, which we extracted from the page's HTML because the page shows them only as images.",
+          "publisher": "Information Technology Industry Council",
+          "title": "ITI Members",
+          "url": "https://www.itic.org/about/membership/iti-members",
+          "published": null,
+          "dateNote": "the page carries no date; opened 2026-10-10",
+          "kind": "advocacy",
+          "mentionsAccord": false,
+          "quote": "GitLab Google Hewlett Packard Enterprise … Medtronic Meta Microsoft Corporation … Nielsen NVIDIA OpenAI Palo Alto Networks",
+          "textFile": "sources/context/110-itic-members-page.txt",
+          "access": "opened"
+        },
+        {
+          "id": "thecuberesearch-2026-10-05-govrin",
+          "claim": "Amit Eyal Govrin, lead analyst for sovereign AI at theCUBE Research (2026-10-05), writes 'I back this accord' as the lesser of two evils compared with Dario Amodei's 'We Must Pace the Frontier', and faults the labs for keeping the auditors' reports in their boardrooms. The page says Govrin is also CEO of Agentcy Labs, which builds AI infrastructure including audit logs and evals, that Govrin's research is not sponsored or directed by Agentcy Labs, and that Agentcy Labs may hold commercial relationships with vendors covered in the research.",
+          "publisher": "theCUBE Research",
+          "title": "Grading Each Other’s Homework",
+          "url": "https://thecuberesearch.com/?p=324579",
+          "published": "2026-10-05",
+          "kind": "analysis",
+          "mentionsAccord": true,
+          "quote": "I back this accord. Against the alternative on the table, it’s the lesser of two evils.",
+          "textFile": "sources/context/80-thecuberesearch-accord.txt",
+          "access": "opened"
+        },
+        {
+          "id": "alston-2026-10-01-audits-shift",
+          "claim": "Law firm Alston & Bird (2026-10-01) describes the accord's endorsement of independent audits as a meaningful change from the administration's earlier position, while noting the accord is voluntary, written in 'should' terms and has no enforcement mechanism. The page is a client alert that suggests companies consider audit readiness and invites readers to contact the firm's privacy, cyber and data strategy team about the accord.",
+          "publisher": "Alston & Bird",
+          "title": "White House Secures Voluntary Industry Commitments on Independent AI Audits",
+          "url": "https://www.alstonprivacy.com/white-house-secures-voluntary-industry-commitments-on-independent-ai-audits/",
+          "published": "2026-10-01",
+          "kind": "analysis",
+          "mentionsAccord": true,
+          "quote": "The Accord instead endorses independent audits, which signals a meaningful policy shift.",
+          "textFile": "sources/context/79-alston-privacy-accord.txt",
+          "access": "opened"
+        },
+        {
+          "id": "ap-npr-2026-09-30-narayanan",
+          "claim": "AP (as carried by an NPR member station, 2026-09-30) quotes Shri Narayanan, a University of Southern California professor of electrical and computer engineering, saying the accord's intention balances the latitude needed for innovation with regulation. The same article quotes Robin Jia, a USC assistant professor of computer science, who is skeptical of putting 'so much faith in self-policing'.",
+          "publisher": "NPR / Associated Press",
+          "title": "Trump says top tech firms have signed accord to 'self-police' AI development",
+          "url": "https://www.stlpr.org/npr/2026-09-30/trump-says-top-tech-firms-have-signed-accord-to-self-police-ai-development",
+          "published": "2026-09-30",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "The intention of the accord balances the latitude needed for innovation with regulation",
+          "textFile": "sources/context/43-npr-stlpr-trump-says-accord-self-police.txt",
+          "access": "opened"
+        }
+      ]
+    },
+    {
+      "id": "government",
+      "title": "What the US government has done since",
+      "text": "On September 30 the Federal Trade Commission confirmed it is investigating Anthropic, OpenAI and other AI companies over potential risks to consumers; CBS reports the agency first opened the probe this summer, before the accord, and on October 8 a senior FTC official told Semafor the agency is close to sending investigative demands to frontier AI companies. On signing day, AP reports, Trump said someone would be named to oversee the agreement in the coming days after consulting with industry, and we found no report that this has happened.\n\nOn October 4 Trump announced a government AI task force called the “Super Intelligence Force”, led by Director of National Intelligence Jay Clayton, whom Reuters calls the administration’s AI czar; Reuters reports that Clayton said it will have 120 days to produce a report on AI’s risks and opportunities. The Hill wrote that it is possible the force will act as the committee Trump described on signing day, and a Council on Foreign Relations analyst calls it the government’s effort to operationalize the accord; AP, NPR, Reuters and TechCrunch do not describe it as the accord’s implementer, and we found no official text that does.\n\nOn October 9 Axios reported that administration officials say they are now mandating that AI companies notify and correct security incidents, after Anthropic disclosed incidents involving government systems; the statement does not say what enforcement or penalties would apply, and the article does not mention the accord. A Senate subcommittee’s page lists a September 30 hearing on rogue AI agents; it does not mention the accord.",
+      "cs": {
+        "title": "Co od té doby udělala vláda USA",
+        "text": "Federální obchodní komise (Federal Trade Commission) 30. září potvrdila, že vyšetřuje Anthropic, OpenAI a další firmy kvůli potenciálním rizikům pro spotřebitele; CBS uvádí, že agentura šetření poprvé zahájila letos v létě, tedy před dohodou, a 8. října vysoce postavená osoba z FTC sdělila Semaforu, že agentura je krátce před rozesláním vyšetřovacích požadavků firmám s nejpokročilejší AI. Trump podle AP v den podpisu řekl, že v nejbližších dnech bude po konzultaci s firmami z oboru jmenován někdo, kdo bude na dohodu dohlížet, a nenašli jsme zprávu, že se tak stalo.\n\nDne 4. října Trump oznámil vládní pracovní skupinu pro AI nazvanou „Super Intelligence Force“, vedenou ředitelem národní rozvědky Jayem Claytonem, kterého Reuters nazývá „AI carem“ administrativy; podle Reuters Clayton řekl, že skupina bude mít 120 dní na zprávu o rizicích a příležitostech AI. The Hill napsal, že je možné, že skupina bude působit jako výbor, který Trump popsal v den podpisu, a podle analýzy z Council on Foreign Relations jde o snahu vlády dohodu uvést do praxe; AP, NPR, Reuters ani TechCrunch ji nepopisují jako orgán, který dohodu uvádí do praxe, a žádný oficiální text, který by to dělal, jsme nenašli.\n\nDne 9. října Axios uvedl, že představitelé administrativy říkají, že nyní nařizují firmám v oblasti AI oznamovat bezpečnostní incidenty a napravovat je, poté, co Anthropic oznámil incidenty týkající se vládních systémů; prohlášení neříká, jaké vymáhání nebo sankce by platily, a článek dohodu nezmiňuje. Stránka podvýboru Senátu uvádí slyšení o AI agentech, které se vymkly kontrole z 30. září; dohodu nezmiňuje."
+      },
+      "evidence": [
+        {
+          "id": "cbs-2026-09-30-ftc-confirms",
+          "claim": "CBS News reported on 2026-09-30 that the FTC confirmed an investigation into Anthropic, OpenAI and other AI companies over potential risks to consumers, that the agency first opened the probe 'this summer' (which on the dates is before the accord), and that an agency spokesperson said the FTC plans to request information from the companies including the nonprofit METR. FTC officials are examining whether the companies violated the FTC Act.",
+          "publisher": "CBS News",
+          "title": "FTC investigating Anthropic, OpenAI and other companies over potential AI risks",
+          "url": "https://cbsnews.com/news/ftc-investigation-openai-anthropic-ai-safety",
+          "published": "2026-09-30",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "The Federal Trade Commission confirmed Wednesday that it has launched an investigation into Anthropic, OpenAI and other artificial intelligence companies",
+          "textFile": "sources/context/61-cbsnews-ftc-investigation.txt",
+          "access": "opened"
+        },
+        {
+          "id": "semafor-2026-10-08-ftc-cids",
+          "claim": "Semafor reported on 2026-10-08 that a senior FTC official said the agency is close to sending investigative demands to frontier AI companies. The demands are dozens of questions long and are being drafted by career staff in the Bureau of Consumer Protection, according to the official. Semafor notes it is unusual for the FTC to disclose an investigation before sending such demands.",
+          "publisher": "Semafor",
+          "title": "FTC advancing on its AI safety probe",
+          "url": "https://www.semafor.com/article/10/08/2026/ftc-advancing-on-its-ai-safety-probe",
+          "published": "2026-10-08",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "The Federal Trade Commission is close to sending investigative demands to frontier AI companies, a senior agency official told Semafor",
+          "textFile": "sources/context/59-semafor-ftc-advancing-2026-10-08.txt",
+          "access": "opened"
+        },
+        {
+          "id": "ap-npr-2026-09-30-trump-overseer",
+          "claim": "AP (as carried by an NPR member station, 2026-09-30) reported that on signing day Trump suggested about 10 people would be named to a committee to 'watch over the whole enterprise' and said someone would be named to oversee the agreement in coming days after consulting with industry. As of 2026-10-10 we found no report that this committee or overseer has been named.",
+          "publisher": "NPR / Associated Press",
+          "title": "Trump says top tech firms have signed accord to 'self-police' AI development",
+          "url": "https://www.stlpr.org/npr/2026-09-30/trump-says-top-tech-firms-have-signed-accord-to-self-police-ai-development",
+          "published": "2026-09-30",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "He also said he would name someone to oversee the agreement in coming days after consulting with industry.",
+          "textFile": "sources/context/43-npr-stlpr-trump-says-accord-self-police.txt",
+          "access": "opened"
+        },
+        {
+          "id": "ap-2026-10-04-super-intelligence-force",
+          "claim": "AP reported on 2026-10-04 that President Trump tapped Director of National Intelligence Jay Clayton to lead a new government AI task force called the 'Super Intelligence Force', with FTC chair Andrew Ferguson, Emil Michael and Scott Kupor also on it, reporting to Trump and chief of staff Susie Wiles. It was announced in a social-media post (Reuters says Truth Social); it is not one of the executive orders signed on 2026-09-29, and the whitehouse.gov presidential-actions list we fetched on 2026-10-10 shows no document for it.",
+          "publisher": "The Associated Press (via KOLD)",
+          "title": "Trump names national intelligence director Jay Clayton to lead a new federal AI task force",
+          "url": "https://www.kold.com/2026/10/04/trump-names-national-intelligence-director-jay-clayton-lead-new-federal-ai-task-force/",
+          "published": "2026-10-04",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "President Donald Trump on Sunday tapped Jay Clayton, his director of national intelligence, to lead a new government task force on artificial intelligence",
+          "textFile": "sources/context/26-ap-kold-clayton-task-force.txt",
+          "access": "opened"
+        },
+        {
+          "id": "reuters-2026-10-05-sif-120-days",
+          "claim": "Reuters (carried by Insurance Journal, page dated 2026-10-05) reported that Trump named Director of National Intelligence Jay Clayton the administration's AI czar, and that Clayton said the task force would have 120 days to produce a report assessing the risks and opportunities posed by AI and recommending what role the federal government should play. The report does not say when the 120 days start; counted from 2026-10-04 they end on 2027-02-01 (our arithmetic).",
+          "publisher": "Reuters (via Insurance Journal)",
+          "title": "Trump Names Intelligence Chief Clayton as AI Czar, to Head Task Force",
+          "url": "https://www.insurancejournal.com/news/national/2026/10/05/887860.htm",
+          "published": "2026-10-05",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "Clayton said the task force would have 120 days to produce a report assessing the risks and opportunities posed by AI",
+          "textFile": "sources/context/57-insurancejournal-ap-oct5.txt",
+          "access": "opened"
+        },
+        {
+          "id": "thehill-2026-10-04-sif-committee",
+          "claim": "The Hill (2026-10-04) notes that after the signing Trump said a committee was being considered to 'watch over the whole entity' and writes that it is possible the Super Intelligence Force will act as that committee. The Hill presents this as a possibility, not a fact.",
+          "publisher": "The Hill",
+          "title": "Trump creates Super Intelligence Force for AI oversight led by Jay Clayton",
+          "url": "https://thehill.com/homenews/administration/6128176-trump-creates-super-intelligence-force/amp/",
+          "published": "2026-10-04",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "It’s possible that the “Super Intelligence Force” will act as this committee.",
+          "textFile": "sources/context/55-thehill-trump-creates-super-intelligence-force.txt",
+          "access": "opened"
+        },
+        {
+          "id": "cfr-2026-10-07-nguyen-sif-operationalize-accord",
+          "claim": "CFR's Vinh Nguyen (2026-10-07) describes the new task force as the U.S. government's unified effort to operationalize the accord. This is the author's characterisation: the reports on the 2026-10-04 announcement that we read (AP, NPR, Reuters, TechCrunch) do not describe the task force as the accord's implementer, and we found no official text that does.",
+          "publisher": "Council on Foreign Relations",
+          "title": "Five Ways to Make the New AI Task Force a Success",
+          "url": "https://www.cfr.org/articles/five-ways-to-make-the-new-ai-task-force-a-success",
+          "published": "2026-10-07",
+          "kind": "analysis",
+          "mentionsAccord": true,
+          "quote": "The new task force is the U.S. government’s unified effort to operationalize the White House Accord on Super Intelligence",
+          "textFile": "sources/context/49-cfr-five-ways-ai-task-force.txt",
+          "access": "opened"
+        },
+        {
+          "id": "axios-2026-10-09-reporting-mandate",
+          "claim": "Axios (2026-10-09) reported that Trump administration officials say they are now mandating that AI companies notify and correct security incidents, after Anthropic disclosed incidents involving government systems. It quotes White House Super Intelligence Force leaders: 'This notification and remediation process is not optional.' Axios adds that the administration's approach to AI regulation had been voluntary at least in name, and that the statement did not make clear what enforcement mechanisms or penalties would apply. The article does not mention the accord.",
+          "publisher": "Axios",
+          "title": "Exclusive: Anthropic breaches spark White House AI reporting mandate",
+          "url": "https://www.axios.com/2026/10/09/anthropic-ai-security-white-house",
+          "published": "2026-10-09",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "officials say they are now mandating that AI companies notify and correct security incidents",
+          "textFile": "sources/context/112-axios-anthropic-breaches-reporting-mandate.txt",
+          "access": "opened"
+        },
+        {
+          "id": "hsgac-2026-09-30-rogue-ai-hearing",
+          "claim": "A Senate Homeland Security and Governmental Affairs subcommittee (Disaster Management, District of Columbia, and Census) lists a hearing titled 'Rogue AI: Securing the Homeland Against AI Agent Attacks' dated 2026-09-30, the day after signing, with witnesses from METR, Apollo Research, Georgetown Law, Dragos and the AI Futures Project. The committee page does not mention the accord.",
+          "publisher": "U.S. Senate Committee on Homeland Security & Governmental Affairs",
+          "title": "Rogue AI: Securing the Homeland Against AI Agent Attacks - Committee on Homeland Security & Governmental Affairs",
+          "url": "https://www.hsgac.senate.gov/subcommittees/dmdcc/hearings/rogue-ai-securing-the-homeland-against-ai-agent-attacks/",
+          "published": "2026-09-30",
+          "kind": "official",
+          "mentionsAccord": false,
+          "quote": "ROGUE AI: SECURING THE HOMELAND AGAINST AI AGENT ATTACKS",
+          "textFile": "sources/context/99-hsgac-rogue-ai-hearing-page.txt",
+          "access": "opened",
+          "dateNote": "the hearing date; the page shows no other date"
+        }
+      ]
+    },
+    {
+      "id": "states",
+      "title": "What states and cities have done",
+      "text": "On October 1 the California Attorney General’s office announced that it had served an investigative subpoena on OpenAI the day before, as part of a broader inquiry into cybersecurity incidents and risks involving the company and its models. On October 5 the New York City Council questioned policy executives of OpenAI, Meta, Google and Anthropic under oath at a hearing on AI risks. Neither source mentions the accord.",
+      "cs": {
+        "title": "Co udělaly státy a města",
+        "text": "Dne 1. října kancelář generálního prokurátora Kalifornie oznámila, že den předtím doručila společnosti OpenAI vyšetřovací příkaz k předložení dokumentů (subpoena) jako součást širšího šetření kybernetických incidentů a rizik spojených s firmou a jejími modely. Dne 5. října newyorská městská rada vyslechla pod přísahou vedoucí pracovníky pro veřejné politiky v OpenAI, Metě, Googlu a Anthropicu na slyšení o rizicích AI. Žádný z těchto zdrojů dohodu nezmiňuje."
+      },
+      "evidence": [
+        {
+          "id": "oag-ca-2026-10-01-bonta-subpoena",
+          "claim": "State action, not federal: California Attorney General Rob Bonta served an investigative subpoena on OpenAI on 2026-09-30 as part of the state's investigation of incidents involving OpenAI's models, including the Hugging Face incident (press release dated 2026-10-01). The press release does not mention the accord.",
+          "publisher": "California Department of Justice, Office of the Attorney General",
+          "title": "As Part of Ongoing Investigation, Attorney General Bonta Serves Investigative Subpoena on OpenAI",
+          "url": "https://oag.ca.gov/news/press-releases/part-ongoing-investigation-attorney-general-bonta-serves-investigative-subpoena",
+          "published": "2026-10-01",
+          "kind": "regulator",
+          "mentionsAccord": false,
+          "quote": "California Attorney General Rob Bonta yesterday served an investigative subpoena on OpenAI",
+          "textFile": "sources/context/92-oag-ca-bonta-subpoena-openai.txt",
+          "access": "opened"
+        },
+        {
+          "id": "nyc-council-2026-10-05-ai-hearing",
+          "claim": "The New York City Council's press release of 2026-10-05 says Council Members questioned senior policy executives at leading AI companies under oath at a hearing on AI risks. It lists the panel as policy or safety staff of OpenAI, Meta, Google and Anthropic, and says Council Members asked each to quantify the worst-case catastrophic risk of AI. We did not retrieve the testimony itself. The release does not mention the accord.",
+          "publisher": "New York City Council",
+          "title": "New York City Council Convenes Hearing on Artificial Intelligence Risks with Testimony from AI Executives, Whistleblowers, Experts",
+          "url": "https://council.nyc.gov/press/2026/10/05/3278/",
+          "published": "2026-10-05",
+          "kind": "official",
+          "mentionsAccord": false,
+          "quote": "Council Members were able to question senior policy executives at leading AI companies under oath on a host of safety issues.",
+          "textFile": "sources/context/111-nyc-council-ai-hearing-2026-10-05.txt",
+          "access": "opened"
+        }
+      ]
+    },
+    {
+      "id": "evaluators",
+      "title": "Outside evaluators on the record",
+      "text": "Two outside evaluators have said in public since the accord that they work with the developers. Apollo Research (September 29) writes that it ran a pilot red-teaming campaign against Anthropic’s auto mode and that Anthropic and OpenAI have each committed to embedded third-party evaluation with employee-like access. METR (September 30), in written testimony to a Senate subcommittee, says it gathers evidence about AI agents with access provided by developers including OpenAI, Anthropic, Google, Meta, SpaceXAI and Amazon, that their participation is voluntary, and that it is not paid or funded by them. Apollo’s post says little about what it found. METR’s testimony recounts its investigation of the OpenAI–Hugging Face incident and cites incidents at other developers, but does not say what it tested at them. Neither mentions the accord, and Nvidia is named by neither.",
+      "cs": {
+        "title": "Externí hodnotitelé veřejně",
+        "text": "Dva externí hodnotitelé od dohody veřejně uvedli, že s vývojáři pracují. Apollo Research (29. září) píše, že provedl pilotní kampaň red teamingu proti automatickému režimu Anthropicu a že Anthropic i OpenAI se zavázaly k hodnocení třetí stranou přímo uvnitř firmy (embedded evaluation) s přístupem srovnatelným se zaměstnanci. METR (30. září) v písemném svědectví před podvýborem Senátu uvádí, že shromažďuje důkazy o AI agentech s přístupem poskytnutým vývojáři včetně OpenAI, Anthropicu, Googlu, Mety, SpaceXAI a Amazonu, že jejich účast je dobrovolná a že od nich nedostává žádné platby ani financování. Příspěvek Apollo o svých zjištěních říká málo. Svědectví METR popisuje jeho vyšetřování incidentu OpenAI a Hugging Face a odkazuje na incidenty u dalších vývojářů, ale neříká, co u nich testoval. Žádný z nich dohodu nezmiňuje a Nvidia není uvedena ani u jednoho."
+      },
+      "evidence": [
+        {
+          "id": "apollo-2026-09-29-context-pilot",
+          "claim": "Apollo Research (2026-09-29) writes that it ran a pilot red-teaming campaign against Anthropic's auto mode, the permission system that decides whether a Claude Code agent's next action is allowed or blocked, identified areas for improvement and made recommendations, which Anthropic implemented. The post does not date the pilot and does not mention the accord.",
+          "publisher": "Apollo Research",
+          "title": "Embedded Evaluators are necessary for meaningful external testing",
+          "url": "https://www.apolloresearch.ai/blog/embedded-evaluators-are-necessary-for-meaningful-external-testing",
+          "published": "2026-09-29",
+          "kind": "auditor",
+          "mentionsAccord": false,
+          "quote": "Apollo ran a pilot red-teaming campaign against Anthropic's auto mode",
+          "textFile": "sources/anthropic/72-apollo-embedded-evaluators-necessary.txt",
+          "access": "opened"
+        },
+        {
+          "id": "apollo-2026-09-29-openai-commitment",
+          "claim": "The same Apollo Research post says Anthropic has unilaterally committed to embedded third-party evaluations with employee-like access and that 'OpenAI has made the same commitment', citing a tweet by Sam Altman and an OpenAI blog post. We have not opened either of those.",
+          "publisher": "Apollo Research",
+          "title": "Embedded Evaluators are necessary for meaningful external testing",
+          "url": "https://www.apolloresearch.ai/blog/embedded-evaluators-are-necessary-for-meaningful-external-testing",
+          "published": "2026-09-29",
+          "kind": "auditor",
+          "mentionsAccord": false,
+          "quote": "OpenAI has made the same commitment.",
+          "textFile": "sources/anthropic/72-apollo-embedded-evaluators-necessary.txt",
+          "access": "opened"
+        },
+        {
+          "id": "metr-2026-09-30-context-access",
+          "claim": "METR's Chris Painter (2026-09-30), in written testimony to a US Senate subcommittee, says METR has gathered evidence about frontier AI agents with access provided by leading developers including OpenAI, Anthropic, Google, Meta, SpaceXAI and Amazon, that their participation is voluntary, and that METR is not paid or funded by them. The testimony does not say what METR tested at each company and does not mention the accord.",
+          "publisher": "METR",
+          "title": "Chris Painter's testimony to the U.S. Senate on AI agent incidents",
+          "url": "https://metr.org/blog/2026-09-30-chris-painter-senate-testimony/",
+          "published": "2026-09-30",
+          "kind": "auditor",
+          "mentionsAccord": false,
+          "quote": "America’s leading AI developers such as OpenAI, Anthropic, Google, Meta, SpaceXAI, and Amazon",
+          "textFile": "sources/anthropic/73-metr-painter-senate-testimony.txt",
+          "access": "opened"
+        }
+      ]
+    }
+  ],
+  "searched": [
+    "Web search (queries not counted): the executive orders of September 29, the planned standards body, analysis and criticism of the accord, the FTC and Congress, who would oversee the agreement, and reactions from the European Commission, the UK government, China, the UN, the G7 and OECD, and governments in Africa and Latin America. Searches planned after the research session’s limit was used up were not run, including one for the joint statement by about 20 countries and the EU reported for September 22 and one for Latin American governments in Spanish.",
+    "Opened and read on October 10: whitehouse.gov (Executive Orders 14434, 14432 and 14409, the fact sheet, and the lists of presidential actions), the Federal Register, China’s foreign ministry transcripts (September 26 to October 9), the UN noon briefings (September 30 to October 9), the African Union’s press-release list, OECD.AI, gov.uk and the UK AI Security Institute’s blog, the European Commission’s AI Office page, the UN scientific panel’s home page, NIST’s CAISI page, the Senate committee’s hearing page, the Information Technology Industry Council’s members page, and the news and analysis pages cited here.",
+    "We found no accord or Super Intelligence Force document on the whitehouse.gov lists of presidential actions, executive orders, fact sheets, briefings and statements, remarks or research.",
+    "The overseer announced on signing day: we searched for a named overseer or a ten-person committee and read the coverage of the October 4 announcement of the Super Intelligence Force. We found no report naming an overseer or committee for the accord.",
+    "How we chose the voices above: we name people quoted in the sources we read, with the role and any tie that source states. The two lists are examples from those sources, not a count of opinion or a poll. We did not count how many of the pieces we read were critical and how many were supportive.",
+    "Not checked: the European Commission’s press corner and midday briefings, the UN scientific panel’s news pages, G7 presidency pages, national government sites in Asia, Africa and Latin America, UK parliamentary records, and Spanish-, Portuguese- and Asian-language media.",
+    "Not read: the Wall Street Journal, New York Times, Reuters, BBC and Politico originals (paywalled or refused automated requests), Truth Social posts, and the UN briefing of September 29.",
+    "Outside evaluators’ own pages: METR’s blog (newest post October 6) and Apollo Research’s blog (posts of September 29 to October 1). The New York City Council’s press releases of September 28 and October 5."
+  ],
+  "unreachable": [
+    "press.un.org showed a bot challenge to automated requests; the briefings were read in a browser.",
+    "The Wall Street Journal, New York Times, Reuters, BBC and Politico articles were not opened; where we cite them it is through a copy or summary that we say so.",
+    "The Information’s articles are paywalled; we read only each article’s public preview. Bloomberg Government’s article ends at a login prompt; the quotations come from the part we could read.",
+    "The accord PDF has no text layer; we read it as an image and checked our transcription against it."
+  ]
+}

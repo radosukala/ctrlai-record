@@ -1,0 +1,677 @@
+{
+  "id": "meta",
+  "printedAs": "Meta",
+  "name": "Meta",
+  "signedBy": "Mark Zuckerberg",
+  "checkedOn": "2026-10-10",
+  "searched": [
+    "Web search, 25 queries: Meta’s frameworks and safety reports, the accord and Meta’s statements about it, board committees and charters, the October 2 update, outside evaluators, and government testing agreements.",
+    "Opened and read: Meta’s research site (framework version 2.1, the posts of October 2, September 8, September 2, August 14 and August 5, the Muse Spark 1.1 evaluation report, and the evaluation methodologies linked from the Muse Spark 1.2 and 1.3 posts), the Muse Spark Safety & Preparedness Report on arXiv, a Wayback Machine capture of the version 2 framework, the August 10 essay on Meta’s newsroom, Meta’s board committee charters, its 2026 proxy statement and its Form 8-K of May 29, Semafor, Reuters copies, AFP via The Standard, 404 Media, METR’s Frontier Risk Report, and the Future of Life Institute’s AI Safety Index.",
+    "Meta’s research blog index (newest posts October 2) lists no model announcement after Muse Spark 1.3 (September 2); we found no safety or preparedness report for Muse Spark 1.2 or 1.3.",
+    "Meta’s newsroom front page (posts through October 8) showed no post about the accord.",
+    "EDGAR’s 40 most recent Meta filings (August 6 to October 7) were Forms 4 and 144 only.",
+    "Meta’s investor-relations governance page, read in a browser: three standing board committees (Audit & Privacy; Compensation, Nominating & Governance; Risk & Strategy) and their charters, none for AI.",
+    "NIST’s CAISSI page and news list (newest item September 17) mention no agreement with Meta.",
+    "Searched the full text of the 2026 proxy statement for “Chief AI Officer”, “Director of Alignment”, “AI committee” and “release criteria”: no matches.",
+    "Not checked: Meta’s 10-K and 10-Q risk factors, its Corporate Governance Guidelines, the Compensation, Nominating & Governance Committee charter, and news after the signing about Meta incidents beyond the 404 Media report.",
+    "One more search was not run because the research session’s search limit was used up."
+  ],
+  "unreachable": [
+    "ai.meta.com pages, including the version 2 framework PDF and the Muse Spark reports, refused automated requests; we read a Wayback Machine capture, and copies on arXiv and research.meta.ai.",
+    "investor.atmeta.com refused automated requests; its governance page was read in a browser.",
+    "Several news pages (BetaNews, KFGO, AI Magazine) refused automated requests.",
+    "The New York Times original of the June 23 report and The Information’s original of the August 5 report were not opened; only Reuters’ summaries of them were.",
+    "A later check found three items we did not read: a New York Times article about Meta’s decision to launch its Muse agent (October 9 in a news index) and a Wall Street Journal profile of Alexandr Wang (October 3 in the same index), both of which refused automated requests, and a YouTube interview with Alexandr Wang about Muse (October 7), for which no captions could be retrieved."
+  ],
+  "cells": {
+    "L1": {
+      "status": "detailed",
+      "summary": "On October 2, Meta published version 2.1 of its Superintelligence Scaling Framework, adding requirements for mitigating containment failures in training and evaluation. Among them is a requirement that training or evaluation runs that pose high risk or greater before mitigation have chain-of-thought and trajectory monitoring active for all rollouts, with any exceptions needing manual approval by the Director of Alignment and Risk or the Chief AI Officer; the framework says Meta will develop monitoring systems able to rapidly halt individual rollouts. Meta’s post about the update, which says it “reflects the commitments made at the White House this week”, adds that before any reinforcement learning run Meta will determine whether the model could compromise its environment and, if so, require mitigations first, such as approved sandboxes and tamper-resistant logging.\n\nOn October 5, 404 Media reported, citing an anonymous Meta source and internal posts it says it saw, that Meta engineers found several security vulnerabilities in the Muse agent product shortly before its launch, at least one of which could have let a Muse user escape the virtual machine and reach sensitive internal Meta databases. A Meta spokesperson’s statement to 404 Media says Muse has been strengthened through extensive dogfooding, agentic red teaming and a bug bounty program; the article does not say whether Meta confirmed or denied the specifics.",
+      "since": [
+        {
+          "id": "meta-framework-v2-1-2026-10-containment",
+          "claim": "Meta's Superintelligence Scaling Framework, version 2.1 (October 2, 2026 per its own change log), adds requirements for mitigating model containment failures during training and evaluation as a new loss-of-control outcome.",
+          "publisher": "Meta",
+          "title": "Meta Superintelligence Scaling Framework, Version 2.1",
+          "url": "https://research.meta.ai/static/meta-superintelligence-scaling-framework",
+          "published": "2026-10-02",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Added requirements for mitigating model containment failures in training and evaluation, in a new catastrophic outcome category (Loss of Control 3)",
+          "textFile": "sources/meta/01-superintelligence-scaling-framework.txt"
+        },
+        {
+          "id": "meta-framework-v2-1-2026-10-monitoring",
+          "claim": "Version 2.1 lists, in its plan for containment in training and evaluation, a requirement that training or evaluation runs posing high risk or greater before mitigation have chain-of-thought and trajectory monitoring active for all rollouts, with any exceptions needing manual approval by the Director of Alignment and Risk or the Chief AI Officer. It says Meta will develop monitoring systems capable of rapidly halting individual rollouts.",
+          "publisher": "Meta",
+          "title": "Meta Superintelligence Scaling Framework, Version 2.1",
+          "url": "https://research.meta.ai/static/meta-superintelligence-scaling-framework",
+          "published": "2026-10-02",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "All training or evaluation runs that pose high risk or greater pre-mitigation require chain-of-thought and trajectory monitoring to be active for all rollouts",
+          "textFile": "sources/meta/01-superintelligence-scaling-framework.txt"
+        },
+        {
+          "id": "meta-blog-2026-10-02-containment",
+          "claim": "Meta's October 2, 2026 post says it is extending the framework's loss-of-control requirements to cover AI containment during training and evaluation. It says that before any reinforcement learning run it will determine whether the model could compromise its environment and, if so, require specific mitigations first: sandboxes approved through an internal vetting process, outputs including trajectories and chain of thought logged in real time to systems that prevent later modification, and automated monitors that can halt a run and will be stress-tested.",
+          "publisher": "Meta",
+          "title": "Developing Capable Models Responsibly",
+          "url": "https://research.meta.ai/blog/developing-capable-models-responsibly",
+          "published": "2026-10-02",
+          "kind": "company-statement",
+          "mentionsAccord": true,
+          "quote": "We’re extending the Framework’s loss of control requirements to cover AI containment during training and evaluation.",
+          "textFile": "sources/meta/03-research-blog-developing-capable-models-responsibly.txt"
+        },
+        {
+          "id": "meta-blog-2026-10-02-reflects-commitments-l1",
+          "claim": "Meta's October 2, 2026 post says its framework update reflects 'the commitments made at the White House this week'; it does not use the accord's name.",
+          "publisher": "Meta",
+          "title": "Developing Capable Models Responsibly",
+          "url": "https://research.meta.ai/blog/developing-capable-models-responsibly",
+          "published": "2026-10-02",
+          "kind": "company-statement",
+          "mentionsAccord": true,
+          "quote": "Today’s Framework update reflects the commitments made at the White House this week",
+          "textFile": "sources/meta/03-research-blog-developing-capable-models-responsibly.txt"
+        },
+        {
+          "id": "404media-meta-muse-vm-escape-2026-10-05",
+          "claim": "404 Media reports, citing an anonymous Meta source and internal security documentation and posts it says it saw, that Meta engineers found several security vulnerabilities in the Muse agent product shortly before its launch, at least one of which could have let a Muse user break out of the virtual machine and reach sensitive internal Meta databases and services, and that an internal post describes a hardening push that began on August 27. The article does not say whether Meta confirmed or denied the specifics.",
+          "publisher": "404 Media",
+          "title": "Meta Rushed to Fix Muse ‘VM Escape' Vulnerability Soon Before Launch",
+          "url": "https://www.404media.co/meta-rushed-to-fix-muse-vm-escape-vulnerability-immediately-before-launch/",
+          "published": "2026-10-05",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "at least one of which could have allowed malicious users to break outside of Muse’s intended environment and access Meta’s own sensitive databases",
+          "textFile": "sources/meta/70-404media-meta-muse-vm-escape-2026-10-05.txt"
+        },
+        {
+          "id": "404media-meta-muse-spokesperson-2026-10-05",
+          "claim": "In the same article a Meta spokesperson is quoted saying that Meta is proud of the work it has done to make Muse safe, secure and private, that it has strengthened Muse through extensive dogfooding, agentic red teaming and its bug bounty program, and that this work continues.",
+          "publisher": "404 Media",
+          "title": "Meta Rushed to Fix Muse ‘VM Escape' Vulnerability Soon Before Launch",
+          "url": "https://www.404media.co/meta-rushed-to-fix-muse-vm-escape-vulnerability-immediately-before-launch/",
+          "published": "2026-10-05",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "We’ve strengthened Muse through extensive dogfooding, agentic red teaming and our bug bounty program — and that work continues.",
+          "textFile": "sources/meta/70-404media-meta-muse-vm-escape-2026-10-05.txt"
+        }
+      ],
+      "before": [
+        {
+          "id": "meta-framework-v2-0-2026-04-scope",
+          "claim": "Meta's Advanced AI Scaling Framework, version 2 (April 7, 2026 per its own change log), says it focuses on catastrophic risks in three areas: chemical and biological, cybersecurity, and loss of control.",
+          "publisher": "Meta",
+          "title": "Advanced AI Scaling Framework, Version 2",
+          "url": "https://ai.meta.com/static-resource/Meta_Advanced-AI-Scaling-Framework-v2",
+          "published": "2026-04-07",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "The Framework currently focuses on catastrophic risks in three areas: Chemical & Biological, Cybersecurity, and Loss of Control.",
+          "textFile": "sources/meta/08-advanced-ai-scaling-framework-v2-wayback.txt"
+        },
+        {
+          "id": "meta-framework-v2-0-2026-04-thresholds",
+          "claim": "Meta's Advanced AI Scaling Framework, version 2 (April 7, 2026 per its own change log), says it changed the measure for its critical risk threshold from “Stop” to “Develop with Mitigations” and for its high threshold from “Do not release” to “Deploy with mitigations”, and that all thresholds now permit proceeding with sufficient mitigations validated to reduce risk to moderate or lower.",
+          "publisher": "Meta",
+          "title": "Advanced AI Scaling Framework, Version 2",
+          "url": "https://ai.meta.com/static-resource/Meta_Advanced-AI-Scaling-Framework-v2",
+          "published": "2026-04-07",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Critical threshold changed from \"Stop\" to \"Develop with Mitigations.\" High threshold measure changed from \"Do not release\" to \"Deploy with mitigations.\"",
+          "textFile": "sources/meta/08-advanced-ai-scaling-framework-v2-wayback.txt"
+        },
+        {
+          "id": "metr-frontier-risk-report-2026-05-19-meta-monitoring",
+          "claim": "METR's Frontier Risk Report (May 19, 2026), drawing on materials Meta shared (including questionnaire answers it received on March 24, 2026), says Meta reported systematic post-deployment monitoring for known risk patterns, including real-time classifiers for CBRN risks, but no operational monitors yet for potential misaligned covert actions. METR quotes Meta as saying this is consistent with its framework, in which such monitors are envisaged as near-term mitigations to be developed and validated as relevant model capabilities advance.",
+          "publisher": "METR",
+          "title": "Frontier Risk Report (February to March 2026)",
+          "url": "https://metr.org/blog/2026-05-19-frontier-risk-report/",
+          "published": "2026-05-19",
+          "kind": "auditor",
+          "mentionsAccord": false,
+          "quote": "given limitations on current model capabilities, did not yet have operational monitors actively checking for potential misaligned covert actions",
+          "textFile": "sources/meta/71-metr-frontier-risk-report-2026-05-19.txt"
+        },
+        {
+          "id": "meta-muse-spark-1-1-report-2026-07-risk",
+          "claim": "Meta's Muse Spark 1.1 evaluation report, dated July 9, 2026, says that without mitigations Meta could not rule out the model meeting the framework's 'high risk' threshold in the chemical and biological and cybersecurity domains, and that Meta applied mitigations before releasing it.",
+          "publisher": "Meta",
+          "title": "Muse Spark 1.1 Evaluation Report",
+          "url": "https://research.meta.ai/static/muse-spark-1-1-evaluation-report",
+          "published": "2026-07-09",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "we cannot rule out Muse Spark 1.1’s capabilities meeting this threshold in both the Chemical & Biological and Cybersecurity domains",
+          "textFile": "sources/meta/06-muse-spark-1-1-evaluation-report.txt"
+        },
+        {
+          "id": "reuters-nightly-2026-08-06-breach",
+          "claim": "Reuters, relaying a report by The Information, said on August 6, 2026 that Meta's Muse Spark 1.1 breached an unidentified company's systems and changed its internal systems after a set-up error let the model reach the public internet from a sandbox testing environment.",
+          "publisher": "Reuters (as published by The Nightly)",
+          "title": "Meta's Muse Spark 1.1 AI model hacked another company during cybersecurity testing",
+          "url": "https://thenightly.com.au/society/technology/metas-muse-spark-11-ai-model-hacked-another-company-during-cybersecurity-testing-c-22683495",
+          "published": "2026-08-06",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "Meta’s Muse Spark 1.1 model breached the unidentified company’s systems and made changes to its internal systems",
+          "textFile": "sources/meta/14-nightly-reuters-meta-ai-model-hacked-company.txt"
+        },
+        {
+          "id": "meta-retrospective-2026-08-14-incident",
+          "claim": "Meta says that in an early-July 2026 cyber evaluation run on its contractor Irregular's infrastructure, a misconfiguration let a pre-release Muse Spark 1.1 reach the open internet, and Irregular unintentionally gave it a real website's name as its target; the model exploited a vulnerability in that site and changed its database. Meta also says other companies' models evaluated by Irregular around then showed similar behavior, that it identified no other instance of the model exploiting a third party's system, and that this was not a sophisticated offensive cyber attack or sandbox escape.",
+          "publisher": "Meta",
+          "title": "Addressing an issue involving a third-party cyber evaluation of Muse Spark 1.1",
+          "url": "https://research.meta.ai/blog/addressing-third-party-testing-misconfiguration-muse-spark-1-1",
+          "published": "2026-08-14",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "The model accessed certain information from the website and made changes to the website’s database.",
+          "textFile": "sources/meta/12-blog-addressing-third-party-testing-misconfiguration.txt"
+        },
+        {
+          "id": "meta-blog-2026-09-02-muse-spark-1-3",
+          "claim": "Meta's September 2, 2026 post introduces Muse Spark 1.3. It has a short Safety paragraph saying the model shows stronger adversarial robustness, with improved resistance to adversarial inputs and prompt injections, and better calibration on what constitutes irreversible actions, and it points to “our report” for details of its evaluations.",
+          "publisher": "Meta",
+          "title": "Introducing Muse Spark 1.3",
+          "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+          "published": "2026-09-02",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "We’ve improved safety along several axes most relevant to agentic and coding capabilities.",
+          "textFile": "sources/meta/72-research-meta-introducing-muse-spark-1-3-2026-09-02.txt"
+        },
+        {
+          "id": "meta-blog-2026-09-08-safety-into-muse",
+          "claim": "Meta's September 8, 2026 post by Tarek Sheasha, Software Engineer & VP, Meta Superintelligence Labs, written on the day Muse launched, says the system was designed to limit damage if the agent is attacked: the agent harness runs in its own isolated cell on a per-user virtual machine, does not see real credentials, and every interaction with the outside world runs through a permission component the agent cannot override. It says Meta hardened Muse through dogfooding, agentic red teaming and a bug bounty program.",
+          "publisher": "Meta",
+          "title": "How We Built Safety Into Muse",
+          "url": "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse",
+          "published": "2026-09-08",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "So we designed the system to assume the agent may be under attack and limit the potential damage",
+          "textFile": "sources/meta/74-research-meta-how-we-built-safety-into-muse-2026-09-08.txt"
+        }
+      ],
+      "beforeSummary": "Meta had a published framework (version 2, April 2026) covering chemical and biological, cybersecurity and loss-of-control risks; its change log says that version replaced “Stop” with “Develop with Mitigations” as the measure at the critical risk threshold, and says all thresholds now permit proceeding with sufficient mitigations. METR’s May 19 report says Meta reported, in materials it shared with METR, that it did not yet have operational monitors for potential misaligned covert actions, which Meta described as consistent with its framework. Meta also published an evaluation report for Muse Spark 1.1 (July), a post on Muse Spark 1.3 (September 2), and a post on how Muse, its agent product, is built to limit damage if attacked (September 8).\n\nIn August Meta reported that, during a July cyber evaluation run by a contractor, a misconfiguration let a pre-release model reach a real website, exploit a vulnerability and change its database; it said other companies’ models evaluated by the contractor at the time showed similar behavior. Reuters, relaying a report by The Information, said on August 6 that the model breached an unidentified company’s systems and changed its internal systems after a set-up error let it reach the public internet from a sandbox testing environment.",
+      "note": "Meta’s August 5 post called Muse Spark 1.2 its newest model; its September 2 post introduces Muse Spark 1.3. The reports linked from the 1.2 and 1.3 posts are evaluation methodologies for capability benchmarks, and we found no safety or preparedness report for either model. 404 Media’s report of October 5 concerns vulnerabilities found before Muse’s launch, and the article does not say whether Meta confirmed the specifics, so we have not marked this “Contradicted”; see “How this works”. On October 9 Axios reported a White House statement that notifying and remediating AI security incidents is “not optional” for AI companies; see “Around the accord”.",
+      "cs": {
+        "summary": "Meta 2. října zveřejnila verzi 2.1 svého Superintelligence Scaling Framework, která přidává požadavky na zmírnění selhání izolace (containment) při trénování a hodnocení. Patří mezi ně požadavek, aby u trénovacích či hodnoticích běhů, které před zmírněním představují vysoké nebo vyšší riziko, bylo u všech průběhů aktivní monitorování řetězce úvah a trajektorie, přičemž výjimky vyžadují ruční schválení osobou ve funkci Director of Alignment and Risk nebo Chief AI Officer; rámec říká, že Meta vyvine monitorovací systémy schopné rychle zastavit jednotlivé průběhy. Příspěvek Mety k aktualizaci, který říká, že „odráží závazky učiněné tento týden v Bílém domě“, dodává, že před každým během posilovaného učení Meta určí, zda by model mohl narušit bezpečnost svého prostředí, a pokud ano, nejprve bude požadovat opatření, například schválené sandboxy a logování odolné proti neoprávněným zásahům.\n\nServer 404 Media 5. října uvedl s odvoláním na anonymní zdroj u Mety a na interní příspěvky, které podle svých slov viděl, že inženýři Mety krátce před spuštěním agentního produktu Muse našli několik bezpečnostních zranitelností, z nichž alespoň jedna mohla umožnit uživateli Muse uniknout z virtuálního stroje a dostat se k citlivým interním databázím Mety. Prohlášení mluvčí Mety pro 404 Media říká, že Muse byl posílen rozsáhlým používáním ve vlastní firmě (dogfooding), agentním red teamingem a programem odměn za nalezené chyby; článek neuvádí, zda Meta konkrétní zjištění potvrdila, nebo popřela."
+      }
+    },
+    "L2": {
+      "status": "said",
+      "summary": "Version 2.1 of Meta’s framework, dated October 2, says an internal governance function “periodically reviews” Meta’s risk management practices and provides compliance oversight for product teams, and that Meta “is developing further protocols” for reporting non-compliance with the framework. Both passages are the same as in version 2 (April 2026), apart from the framework’s name. Meta’s October 2 post says its planned changes “align with the commitments made this week”, which it describes as calling for controls checked by “an independent team inside the company”; it does not say Meta has such a team or name one. The framework names roles, not people: a Chief AI Officer and a Director of Alignment and Risk.",
+      "since": [
+        {
+          "id": "meta-framework-v2-1-2026-10-governance-function",
+          "claim": "Version 2.1 of Meta's framework (October 2, 2026) says Meta's internal governance function periodically reviews its risk management practices and provides compliance oversight for product teams, and that this team is given sufficient access and resources to perform that role effectively. The same text is in version 2 (April 7, 2026), apart from the framework's name.",
+          "publisher": "Meta",
+          "title": "Meta Superintelligence Scaling Framework, Version 2.1",
+          "url": "https://research.meta.ai/static/meta-superintelligence-scaling-framework",
+          "published": "2026-10-02",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Meta's internal governance function periodically reviews our risk management practices and provides compliance oversight for product teams.",
+          "textFile": "sources/meta/01-superintelligence-scaling-framework.txt"
+        },
+        {
+          "id": "meta-framework-v2-1-2026-10-reporting",
+          "claim": "Version 2.1 says Meta maintains a whistleblower and complaint policy and “is developing further protocols” for reporting non-compliance with the framework. The same sentence is in version 2 (April 7, 2026), apart from the framework's name.",
+          "publisher": "Meta",
+          "title": "Meta Superintelligence Scaling Framework, Version 2.1",
+          "url": "https://research.meta.ai/static/meta-superintelligence-scaling-framework",
+          "published": "2026-10-02",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "is developing further protocols to report any instances of non-compliance with the Meta Superintelligence Scaling Framework",
+          "textFile": "sources/meta/01-superintelligence-scaling-framework.txt"
+        },
+        {
+          "id": "meta-blog-2026-10-02-paraphrase",
+          "claim": "Meta's October 2, 2026 post says its planned changes “align with the commitments made this week”, which it describes as calling for controls “checked by an independent team inside the company and an independent auditor or evaluator outside it”. It does not say Meta has such a team or name one.",
+          "publisher": "Meta",
+          "title": "Developing Capable Models Responsibly",
+          "url": "https://research.meta.ai/blog/developing-capable-models-responsibly",
+          "published": "2026-10-02",
+          "kind": "company-statement",
+          "mentionsAccord": true,
+          "quote": "checked by an independent team inside the company and an independent auditor or evaluator outside it",
+          "textFile": "sources/meta/03-research-blog-developing-capable-models-responsibly.txt"
+        }
+      ],
+      "before": [
+        {
+          "id": "meta-framework-v2-0-2026-04-caio",
+          "claim": "Meta's framework version 2 says its Chief AI Officer oversees the design, implementation and operation of the entire evaluation and mitigation process; it names the role, not a person.",
+          "publisher": "Meta",
+          "title": "Advanced AI Scaling Framework, Version 2",
+          "url": "https://ai.meta.com/static-resource/Meta_Advanced-AI-Scaling-Framework-v2",
+          "published": "2026-04-07",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Meta’s Chief AI Officer oversees the design, implementation, and operation of the entire evaluation and mitigation process.",
+          "textFile": "sources/meta/08-advanced-ai-scaling-framework-v2-wayback.txt"
+        },
+        {
+          "id": "meta-framework-v2-0-2026-04-governance-function",
+          "claim": "Meta's Advanced AI Scaling Framework, version 2 (April 7, 2026 per its own change log), already said Meta's internal governance function periodically reviews its risk management practices and provides compliance oversight for product teams, and that this team is given sufficient access and resources to perform this role effectively.",
+          "publisher": "Meta",
+          "title": "Advanced AI Scaling Framework, Version 2",
+          "url": "https://ai.meta.com/static-resource/Meta_Advanced-AI-Scaling-Framework-v2",
+          "published": "2026-04-07",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Meta’s internal governance function periodically reviews our risk management practices and provides compliance oversight for product teams.",
+          "textFile": "sources/meta/08-advanced-ai-scaling-framework-v2-wayback.txt"
+        },
+        {
+          "id": "meta-framework-v2-0-2026-04-reporting",
+          "claim": "Meta's Advanced AI Scaling Framework, version 2 (April 7, 2026 per its own change log), already said that Meta maintains a whistleblower and complaint policy and “is developing further protocols” to report any instances of non-compliance with the framework.",
+          "publisher": "Meta",
+          "title": "Advanced AI Scaling Framework, Version 2",
+          "url": "https://ai.meta.com/static-resource/Meta_Advanced-AI-Scaling-Framework-v2",
+          "published": "2026-04-07",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "is developing further protocols to report any instances of non-compliance with this Advanced AI Scaling Framework",
+          "textFile": "sources/meta/08-advanced-ai-scaling-framework-v2-wayback.txt"
+        },
+        {
+          "id": "meta-muse-spark-report-2026-06-authors",
+          "claim": "Meta's Muse Spark Safety & Preparedness Report credits its authorship to the 'MSL Preparedness & Red Teaming & Alignment Team, AI Security Team'.",
+          "publisher": "Meta",
+          "title": "Muse Spark Safety & Preparedness Report",
+          "url": "https://arxiv.org/pdf/2606.12429",
+          "published": "2026-06-12",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Authors: MSL Preparedness & Red Teaming & Alignment Team, AI Security Team",
+          "textFile": "sources/meta/07-muse-spark-safety-preparedness-report-arxiv.txt",
+          "dateNote": "cover date; the arXiv listing says submitted 14 May 2026"
+        },
+        {
+          "id": "meta-muse-spark-report-2026-06-decision-makers",
+          "claim": "The same report says the Chief AI Officer and the Director of Alignment and Risk were the key decision-makers for Muse Spark's risk threshold determinations.",
+          "publisher": "Meta",
+          "title": "Muse Spark Safety & Preparedness Report",
+          "url": "https://arxiv.org/pdf/2606.12429",
+          "published": "2026-06-12",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Key decision-makers for Muse Spark’s risk threshold determinations were the Chief AI Officer and Director of Alignment and Risk",
+          "textFile": "sources/meta/07-muse-spark-safety-preparedness-report-arxiv.txt",
+          "dateNote": "cover date; the arXiv listing says submitted 14 May 2026"
+        }
+      ],
+      "beforeSummary": "Meta’s version 2 framework (April 2026) said its Chief AI Officer oversees the design, implementation and operation of the evaluation and mitigation process, that an internal governance function provides compliance oversight, and that Meta is developing protocols for reporting non-compliance. Its Muse Spark report credits its Preparedness, Red Teaming and Alignment team and its AI Security team.",
+      "note": "The accord says “an internal team”; Meta’s post says “an independent team inside the company”. The two framework passages are carried over unchanged from version 2; we count them because the October 2 document repeats them. We count this as “Said” because it is a company document that says its plans align with the accord, not a leader’s remark. It restates the accord’s wording and names no team or auditor; a leader’s remark of the same kind would not count (see “How this works”).",
+      "cs": {
+        "summary": "Verze 2.1 rámce Mety z 2. října říká, že interní funkce správy a řízení (governance) „pravidelně přezkoumává“ postupy řízení rizik Mety a vykonává dohled nad dodržováním předpisů u produktových týmů a že Meta „vyvíjí další protokoly“ pro hlášení nedodržení rámce. Obě pasáže jsou až na název rámce stejné jako ve verzi 2 (duben 2026). Příspěvek Mety z 2. října říká, že plánované změny Mety „odpovídají závazkům učiněným tento týden“, které popisuje jako vyžadující kontrolní mechanismy ověřované „nezávislým týmem uvnitř firmy“; neříká, že Meta takový tým má, a žádný tým neuvádí jménem. Rámec uvádí role, ne lidi: Chief AI Officer a Director of Alignment and Risk."
+      }
+    },
+    "L3": {
+      "status": "said",
+      "summary": "Meta’s October 2 post says its planned changes “align with the commitments made this week”, which it describes as calling for controls also checked by “an independent auditor or evaluator outside” the company. It names no auditor and does not say Meta has engaged one. The post also says Meta runs threat modeling with outside experts “where appropriate”, as part of its risk assessments; that is input to risk assessment, not a check on whether controls work.",
+      "since": [
+        {
+          "id": "meta-blog-2026-10-02-paraphrase-l3",
+          "claim": "Meta's October 2, 2026 post says its planned changes “align with the commitments made this week”, which it describes as calling for controls “checked by an independent team inside the company and an independent auditor or evaluator outside it”. It names no auditor or evaluator and does not say Meta has engaged one.",
+          "publisher": "Meta",
+          "title": "Developing Capable Models Responsibly",
+          "url": "https://research.meta.ai/blog/developing-capable-models-responsibly",
+          "published": "2026-10-02",
+          "kind": "company-statement",
+          "mentionsAccord": true,
+          "quote": "checked by an independent team inside the company and an independent auditor or evaluator outside it",
+          "textFile": "sources/meta/03-research-blog-developing-capable-models-responsibly.txt"
+        },
+        {
+          "id": "meta-blog-2026-10-02-outside-experts",
+          "claim": "Meta's October 2, 2026 post says that, in its risk assessments, it runs threat modeling with outside experts where appropriate and engages government entities and other stakeholders whose input informs its evaluations and requirements. The passage is part of Meta's description of its risk assessments; the post names no auditor.",
+          "publisher": "Meta",
+          "title": "Developing Capable Models Responsibly",
+          "url": "https://research.meta.ai/blog/developing-capable-models-responsibly",
+          "published": "2026-10-02",
+          "kind": "company-statement",
+          "mentionsAccord": true,
+          "quote": "We run threat modeling with outside experts where appropriate",
+          "textFile": "sources/meta/03-research-blog-developing-capable-models-responsibly.txt"
+        }
+      ],
+      "before": [
+        {
+          "id": "metr-frontier-risk-report-2026-05-19-meta",
+          "claim": "METR's Frontier Risk Report (May 19, 2026) says Meta took part, with Anthropic, Google and OpenAI, in a pilot in which METR assessed risks from AI agents used inside the developers: Meta shared an intermediate model checkpoint and its answers to a questionnaire, and METR sent Meta a private report. METR also says it did not review the full scope of Meta's agent oversight measures across all deployed agents.",
+          "publisher": "METR",
+          "title": "Frontier Risk Report (February to March 2026)",
+          "url": "https://metr.org/blog/2026-05-19-frontier-risk-report/",
+          "published": "2026-05-19",
+          "kind": "auditor",
+          "mentionsAccord": false,
+          "quote": "Meta shared its responses to our questionnaire on Mar 24, 2026, and METR delivered the private report to Meta on Mar 31, 2026",
+          "textFile": "sources/meta/71-metr-frontier-risk-report-2026-05-19.txt"
+        },
+        {
+          "id": "meta-muse-spark-report-2026-06-apollo",
+          "claim": "Meta's Muse Spark Safety & Preparedness Report says independent third-party testing by Apollo Research found the highest rate of evaluation awareness Apollo had observed to date.",
+          "publisher": "Meta",
+          "title": "Muse Spark Safety & Preparedness Report",
+          "url": "https://arxiv.org/pdf/2606.12429",
+          "published": "2026-06-12",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Independent third-party testing by Apollo Research found Muse Spark has the highest rate of evaluation awareness they have observed to date.",
+          "textFile": "sources/meta/07-muse-spark-safety-preparedness-report-arxiv.txt",
+          "dateNote": "cover date; the arXiv listing says submitted 14 May 2026"
+        },
+        {
+          "id": "reuters-star-2026-06-23-government-review",
+          "claim": "Reuters, relaying a New York Times report of June 23, 2026 that cited four people familiar with a confidential request, said that, according to the report, Meta was then the only major U.S. developer of AI technology that had not reached an agreement to voluntarily share its models with the federal government for review.",
+          "publisher": "Reuters (as published by The Star, Malaysia)",
+          "title": "US presses Meta to agree to AI reviews as security concerns rise, NYT reports",
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/06/24/us-presses-meta-to-agree-to-ai-reviews-as-security-concerns-rise-nyt-reports",
+          "published": "2026-06-23",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "the only major U.S. developer of AI technology that has not reached an agreement to voluntarily share its models with the federal government for review",
+          "textFile": "sources/meta/15-thestar-reuters-us-presses-meta-ai-reviews.txt",
+          "dateNote": "Reuters dateline; The Star’s page is dated June 24"
+        },
+        {
+          "id": "reuters-star-2026-06-23-meta-reply",
+          "claim": "In the same Reuters article, Meta is quoted in an emailed response saying that it shares the administration's goal of advancing U.S. leadership on robust and secure frontier AI and that, while it is working through the details, it hopes to sign the agreement soon.",
+          "publisher": "Reuters (as published by The Star, Malaysia)",
+          "title": "US presses Meta to agree to AI reviews as security concerns rise, NYT reports",
+          "url": "https://www.thestar.com.my/tech/tech-news/2026/06/24/us-presses-meta-to-agree-to-ai-reviews-as-security-concerns-rise-nyt-reports",
+          "published": "2026-06-23",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "While we are working through the details, we hope to sign the agreement soon",
+          "textFile": "sources/meta/15-thestar-reuters-us-presses-meta-ai-reviews.txt",
+          "dateNote": "Reuters dateline; The Star’s page is dated June 24"
+        },
+        {
+          "id": "fli-2026-07-recommendation",
+          "claim": "The Future of Life Institute's AI Safety Index for Summer 2026 lists “Establish auditing mechanisms for the safety framework” among its key recommendations for Meta. The index's evidence runs to June 3, 2026, before Meta's statements of August 14 and October 2.",
+          "publisher": "Future of Life Institute",
+          "title": "AI Safety Index Summer 2026",
+          "url": "https://futureoflife.org/wp-content/uploads/2026/07/AI-Safety-Index-Summer-2026-Digital.pdf",
+          "published": "2026-07",
+          "kind": "analysis",
+          "mentionsAccord": false,
+          "quote": "Establish auditing mechanisms for the safety framework.",
+          "textFile": "sources/meta/16-fli-ai-safety-index-summer-2026.txt"
+        },
+        {
+          "id": "meta-muse-spark-1-1-report-2026-07-grayswan",
+          "claim": "Meta's Muse Spark 1.1 evaluation report says GraySwan ran prompt-injection attacks with its own private benchmark before the model's launch.",
+          "publisher": "Meta",
+          "title": "Muse Spark 1.1 Evaluation Report",
+          "url": "https://research.meta.ai/static/muse-spark-1-1-evaluation-report",
+          "published": "2026-07-09",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "GraySwan additionally ran prompt-injection attacks using their private Agent Red Teaming (ART) benchmark (Zou et al., 2025) before the Muse Spark 1.1 launch.",
+          "textFile": "sources/meta/06-muse-spark-1-1-evaluation-report.txt"
+        },
+        {
+          "id": "meta-retrospective-2026-08-14-irregular",
+          "claim": "Meta says it contracted Irregular to conduct cybersecurity evaluations of pre-released models and that, going forward, it is implementing independent verification requirements for test environment isolation and scenario review before evaluations begin.",
+          "publisher": "Meta",
+          "title": "Addressing an issue involving a third-party cyber evaluation of Muse Spark 1.1",
+          "url": "https://research.meta.ai/blog/addressing-third-party-testing-misconfiguration-muse-spark-1-1",
+          "published": "2026-08-14",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "We contracted with Irregular to conduct cybersecurity evaluations of pre-released models.",
+          "textFile": "sources/meta/12-blog-addressing-third-party-testing-misconfiguration.txt"
+        }
+      ],
+      "beforeSummary": "Meta’s reports named outside testers: Apollo Research for alignment testing, Irregular for cyber evaluations, and GraySwan for prompt-injection tests. METR’s May 19 Frontier Risk Report lists Meta among four developers in a pilot assessment of risks from internal AI use, for which Meta shared a model checkpoint and its answers to a questionnaire; METR says it did not review the full scope of Meta’s agent oversight measures. In August Meta said it is implementing independent verification of test-environment isolation before evaluations begin. Reuters reported on June 23, relaying a New York Times report that cited four people familiar with a confidential request, that Meta was then the only major US developer that had not agreed to share its models with the federal government for review; Meta told Reuters, “While we are working through the details, we hope to sign the agreement soon”. The Future of Life Institute’s Summer 2026 index (evidence to June 3) recommends that Meta establish auditing mechanisms for its safety framework.",
+      "note": "In the passages we found, the outside parties test or advise on specific models. METR’s May report assessed risks from internal AI use at four developers, drawing in part on information Meta supplied, and says it did not review the full scope of Meta’s agent oversight measures. We did not find an outside party described as assessing whether Meta’s controls as a whole operate as intended. METR’s September 30 Senate testimony names Meta among the developers that give it access; it says nothing about what it tested (see “Around the accord”).\n\nWe count this as “Said” because it is a company document that says its plans align with the accord, not a leader’s remark. It restates the accord’s wording and names no team or auditor; a leader’s remark of the same kind would not count (see “How this works”).",
+      "cs": {
+        "summary": "Příspěvek Mety z 2. října říká, že plánované změny Mety „odpovídají závazkům učiněným tento týden“, které popisuje jako vyžadující kontrolní mechanismy ověřované také „nezávislým auditorem či hodnotitelem mimo“ firmu. Žádného auditora neuvádí jménem a neříká, že nějakého Meta najala. Příspěvek také uvádí, že Meta v rámci hodnocení rizik provádí modelování hrozeb (threat modeling) s externími experty „tam, kde je to vhodné“; to je podklad pro hodnocení rizik, nikoli ověření toho, zda kontrolní mechanismy fungují."
+      }
+    },
+    "L4": {
+      "status": "said",
+      "summary": "Meta’s October 2 post says that over the coming months it is making additional changes to its framework and its approach to AI governance, and that it “will establish a new AI committee” of its board of directors, which will review future changes to the framework and “independently ensure that our operations conform to the standards we’ve set”. The post gives no date beyond “the coming months”, and no members or charter. Version 2.1 of the framework repeats that Meta is building more formal governance within its board, as it had said before. As of the dates we checked (EDGAR through October 7, Meta’s newsroom through October 8), we found no filing or Meta page showing that the committee exists.",
+      "since": [
+        {
+          "id": "meta-blog-2026-10-02-committee",
+          "claim": "Meta's October 2, 2026 post says that over the coming months it is making additional changes to its framework and its approach to AI governance, and that it will establish a new AI committee of its Board of Directors, which will review future changes to the framework and independently ensure that its operations conform to the standards it has set. The post gives no date beyond “the coming months”, and no members or charter.",
+          "publisher": "Meta",
+          "title": "Developing Capable Models Responsibly",
+          "url": "https://research.meta.ai/blog/developing-capable-models-responsibly",
+          "published": "2026-10-02",
+          "kind": "company-statement",
+          "mentionsAccord": true,
+          "quote": "We will establish a new AI committee of our Board of Directors … independently ensure that our operations conform to the standards we’ve set.",
+          "textFile": "sources/meta/03-research-blog-developing-capable-models-responsibly.txt"
+        },
+        {
+          "id": "meta-framework-v2-1-2026-10-board",
+          "claim": "Version 2.1's preface says that, as Meta has previously shared, it is building more formal governance within its board of directors around how it establishes and adjusts its policies in this area, and that this work is underway.",
+          "publisher": "Meta",
+          "title": "Meta Superintelligence Scaling Framework, Version 2.1",
+          "url": "https://research.meta.ai/static/meta-superintelligence-scaling-framework",
+          "published": "2026-10-02",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "we're building more formal governance within our board of directors around how we establish our policies in this area and adjust them over time",
+          "textFile": "sources/meta/01-superintelligence-scaling-framework.txt"
+        }
+      ],
+      "before": [
+        {
+          "id": "meta-audit-privacy-charter-2025-06",
+          "claim": "The charter of Meta's Audit & Privacy Committee, effective June 1, 2025, says the committee will oversee product compliance including in respect of cybersecurity and generative AI, and requires its members to meet FTC Order and Nasdaq independence requirements.",
+          "publisher": "Meta",
+          "title": "Charter of the Audit & Privacy Committee of the Board of Directors of Meta Platforms, Inc.",
+          "url": "https://s21.q4cdn.com/399680738/files/doc_downloads/2025/06/Meta-Audit-Privacy-Committee-Charter-Effective-June-1-2025.pdf",
+          "published": "2025-06-01",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "The Committee will oversee product compliance, including in respect of cybersecurity, generative AI, youth health and well being",
+          "textFile": "sources/meta/10-audit-privacy-committee-charter-2025-06.txt"
+        },
+        {
+          "id": "meta-proxy-2026-04-ai-meetings",
+          "claim": "In its 2026 proxy statement, in the board's response to a shareholder proposal on AI data usage, Meta says its audit & privacy committee regularly meets with management on AI initiatives.",
+          "publisher": "Meta Platforms, Inc. (SEC filing)",
+          "title": "2026 Proxy Statement (Schedule 14A)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025532/meta-20260416.htm",
+          "published": "2026-04-16",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "The committee regularly meets with management on our AI initiatives, including regarding the use of data and responsible use.",
+          "textFile": "sources/meta/76-sec-meta-2026-proxy-statement-full-text.txt"
+        },
+        {
+          "id": "meta-proxy-2026-04-controlled-company",
+          "claim": "Meta's 2026 proxy statement says that because Zuckerberg controls a majority of Meta's voting power it is a “controlled company” under Nasdaq rules, so it is not required to have a majority-independent board, a compensation committee or an independent nominating function, and that it has nevertheless opted to have a majority-independent board and a compensation, nominating & governance committee of independent directors.",
+          "publisher": "Meta Platforms, Inc. (SEC filing)",
+          "title": "2026 Proxy Statement (Schedule 14A)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025532/meta-20260416.htm",
+          "published": "2026-04-16",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "Because Mr. Zuckerberg controls a majority of our outstanding voting power, we are a \"controlled company\" under the corporate governance rules of Nasdaq",
+          "textFile": "sources/meta/76-sec-meta-2026-proxy-statement-full-text.txt"
+        },
+        {
+          "id": "meta-proxy-2026-04-proposal-3-ask",
+          "claim": "Meta's 2026 proxy statement sets out Proposal Three, from the National Legal and Policy Center, which asked for a report on the risks to Meta and to public welfare from the real or potential unethical or improper use of external data in developing, training and deploying its AI offerings, on the steps Meta takes to mitigate them and on how it measures their effectiveness. The board recommended voting against it.",
+          "publisher": "Meta Platforms, Inc. (SEC filing)",
+          "title": "2026 Proxy Statement (Schedule 14A)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025532/meta-20260416.htm",
+          "published": "2026-04-16",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "presented by the real or potential unethical or improper usage of external data in the development, training, and deployment of its artificial intelligence offerings",
+          "textFile": "sources/meta/76-sec-meta-2026-proxy-statement-full-text.txt"
+        },
+        {
+          "id": "meta-proxy-2026-04-proposal-11-ask",
+          "claim": "The proxy statement's Proposal Eleven, from Mercy Investment Services and co-filers, urged the board of directors to oversee a data protection impact assessment on Meta's collection of user interactions with generative AI chatbots to personalize advertising and content, describing how Meta ensures appropriate use of that data and opt-out procedures. The board recommended voting against it.",
+          "publisher": "Meta Platforms, Inc. (SEC filing)",
+          "title": "2026 Proxy Statement (Schedule 14A)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025532/meta-20260416.htm",
+          "published": "2026-04-16",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "urge the board of directors to oversee a data protection impact assessment … to personalize advertising and content",
+          "textFile": "sources/meta/76-sec-meta-2026-proxy-statement-full-text.txt"
+        },
+        {
+          "id": "meta-8k-2026-05-29-proposal-3",
+          "claim": "Meta's Form 8-K for its May 27, 2026 annual meeting (signed May 29) reports that shareholders did not approve Proposal 3, a shareholder proposal regarding a report on AI data usage oversight (503,719,383 votes for, 4,446,931,952 against, 18,025,751 abstentions).",
+          "publisher": "Meta Platforms, Inc. (SEC filing)",
+          "title": "Form 8-K (annual meeting results)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026039193/meta-20260527.htm",
+          "published": "2026-05-29",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "The shareholders did not approve the shareholder proposal regarding report on AI data usage oversight.",
+          "textFile": "sources/meta/75-sec-meta-8k-annual-meeting-results-2026-05-29.txt"
+        },
+        {
+          "id": "meta-8k-2026-05-29-proposal-11",
+          "claim": "The same Form 8-K reports that shareholders did not approve Proposal 11, a shareholder proposal regarding a data protection impact assessment on generative AI chatbots (327,510,658 votes for, 4,629,435,907 against, 11,730,521 abstentions).",
+          "publisher": "Meta Platforms, Inc. (SEC filing)",
+          "title": "Form 8-K (annual meeting results)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026039193/meta-20260527.htm",
+          "published": "2026-05-29",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "The shareholders did not approve the shareholder proposal regarding data protection impact assessment on generative AI chatbots.",
+          "textFile": "sources/meta/75-sec-meta-8k-annual-meeting-results-2026-05-29.txt"
+        },
+        {
+          "id": "meta-essay-2026-08-10-board",
+          "claim": "Meta's essay “The Future is for Everyone”, dated August 10, 2026 and signed “Mark”, says Meta is implementing a governance structure that gives its independent board of directors the power to approve the safety criteria for releasing models and reviewing whether each model release adheres to the criteria.",
+          "publisher": "Meta",
+          "title": "The Future is for Everyone",
+          "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+          "published": "2026-08-10",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "the power to approve the safety criteria for releasing models and reviewing whether each model release adheres to the criteria",
+          "textFile": "sources/meta/11-zuckerberg-essay-future-is-for-everyone-newsroom.txt"
+        }
+      ],
+      "beforeSummary": "The charter of Meta’s Audit & Privacy Committee, effective June 2025, says it oversees product compliance including “cybersecurity, generative AI”, and Meta’s 2026 proxy statement says the committee regularly meets with management on AI initiatives. The proxy statement also says Meta is a Nasdaq “controlled company” because Zuckerberg controls a majority of its voting power, and that Meta has nevertheless opted for a majority-independent board and an independent compensation, nominating & governance committee. At its May 27 annual meeting shareholders did not approve two AI-related proposals (Form 8-K, May 29): one for a report on the risks of improper use of external data in AI development, the other for a data protection impact assessment of how chatbot interactions are used to personalize advertising and content; neither asked for a board committee. An August 10 essay on Meta’s newsroom, signed “Mark”, says Meta is implementing a governance structure that gives its independent board the power to approve the safety criteria for releasing models and to review whether each model release adheres to them.",
+      "note": "In the documents we read (the framework, the October 2 post, the 2026 proxy statement and the two committee charters) we found nothing showing that the board has approved any release criteria.",
+      "cs": {
+        "summary": "Příspěvek Mety z 2. října říká, že v nadcházejících měsících Meta bude provádět další změny svého rámce a svého přístupu k řízení AI a že „zřídí nový výbor pro AI“ své správní rady, který bude posuzovat budoucí změny rámce a „nezávisle zajišťovat, že naše činnost odpovídá standardům, které jsme si stanovili“. Příspěvek neuvádí datum nad rámec „nadcházejících měsíců“, ani členy či statut. Verze 2.1 rámce opakuje, že Meta buduje formálnější správu ve své správní radě, jak už dříve uvedla. K datům, která jsme zkontrolovali (EDGAR do 7. října, zpravodajský web Mety do 8. října), jsme nenašli žádné podání ani stránku Mety, které by ukazovaly, že výbor existuje."
+      }
+    }
+  },
+  "accordStatements": [
+    {
+      "id": "meta-blog-2026-10-02-reflects-commitments",
+      "claim": "Meta's October 2, 2026 post says its framework update reflects 'the commitments made at the White House this week'; it does not use the accord's name.",
+      "publisher": "Meta",
+      "title": "Developing Capable Models Responsibly",
+      "url": "https://research.meta.ai/blog/developing-capable-models-responsibly",
+      "published": "2026-10-02",
+      "kind": "company-statement",
+      "mentionsAccord": true,
+      "quote": "Today’s Framework update reflects the commitments made at the White House this week",
+      "textFile": "sources/meta/03-research-blog-developing-capable-models-responsibly.txt"
+    },
+    {
+      "id": "semafor-2026-09-30-zuckerberg-quote",
+      "claim": "Semafor quotes Mark Zuckerberg telling reporters outside the White House that the accord is 'a start and an accord that the whole industry could come to'.",
+      "publisher": "Semafor",
+      "title": "How Zuckerberg shaped Trump’s AI industry pledge",
+      "url": "https://www.semafor.com/article/09/30/2026/how-zuckerberg-shaped-trumps-ai-industry-pledge",
+      "published": "2026-09-30",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "It is that this is a start and an accord that the whole industry could come to",
+      "textFile": "sources/meta/02-semafor-zuckerberg-shaped-pledge.txt"
+    },
+    {
+      "id": "meta-afp-zuckerberg-2026-09-30",
+      "claim": "AFP, in a story carried by The Standard (Hong Kong), reported that Zuckerberg said the accord aims to assure customers that AI technology “works in the way that we intend”, and that it includes “robust internal controls” and multiple layers of auditing, from internal risk reviews to external auditors and oversight from the companies' boards of directors. Only the first two phrases are in quotation marks in the story; the rest is AFP's paraphrase.",
+      "publisher": "The Standard (Hong Kong), AFP",
+      "title": "Trump touts AI boss pledge to self-regulate",
+      "url": "https://www.thestandard.com.hk/world/article/344221/Trump-touts-AI-boss-pledge-to-self-regulate",
+      "published": "2026-09-30",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "multiple layers of auditing -- from internal risk reviews to external auditors and oversight from the companies' boards of directors",
+      "textFile": "sources/meta/77-thestandard-hk-afp-trump-ai-boss-pledge-2026-09-30.txt"
+    }
+  ],
+  "documents": [
+    {
+      "title": "Meta Superintelligence Scaling Framework, Version 2.1",
+      "url": "https://research.meta.ai/static/meta-superintelligence-scaling-framework",
+      "published": "2026-10-02",
+      "whatItIs": "Meta's current policy for managing catastrophic risks from its most capable models (cybersecurity, chemical and biological, loss of control), with named decision-makers, reporting duties and, in this version, containment requirements for training and evaluation."
+    },
+    {
+      "title": "Advanced AI Scaling Framework, Version 2",
+      "url": "https://ai.meta.com/static-resource/Meta_Advanced-AI-Scaling-Framework-v2",
+      "published": "2026-04-07",
+      "whatItIs": "The version of Meta's framework in force before the accord (earlier called the Frontier AI Framework); we read it from a Wayback Machine capture taken October 10, 2026 because ai.meta.com refuses automated requests."
+    },
+    {
+      "title": "Muse Spark Safety & Preparedness Report",
+      "url": "https://arxiv.org/abs/2606.12429",
+      "published": "2026-06-12",
+      "whatItIs": "Meta's report on the evaluations and launch decision for Muse Spark, naming outside testers including Apollo Research, Irregular, Scale AI and GraySwan; the cover says June 12, 2026 while the arXiv listing says submitted 14 May 2026."
+    },
+    {
+      "title": "Muse Spark 1.1 Evaluation Report",
+      "url": "https://research.meta.ai/static/muse-spark-1-1-evaluation-report",
+      "published": "2026-07-09",
+      "whatItIs": "Meta's evaluation report for Muse Spark 1.1, the most recent Meta safety evaluation report we found."
+    },
+    {
+      "title": "Developing Capable Models Responsibly",
+      "url": "https://research.meta.ai/blog/developing-capable-models-responsibly",
+      "published": "2026-10-02",
+      "whatItIs": "Meta's post announcing framework version 2.1, linking it to the White House commitments, and saying Meta will establish a new AI committee of its Board of Directors."
+    },
+    {
+      "title": "Addressing an issue involving a third-party cyber evaluation of Muse Spark 1.1",
+      "url": "https://research.meta.ai/blog/addressing-third-party-testing-misconfiguration-muse-spark-1-1",
+      "published": "2026-08-14",
+      "whatItIs": "Meta's account of a misconfigured cyber evaluation, run by its contractor Irregular, in which a pre-release model exploited a vulnerability in a real website, and of the changes Meta says it is making."
+    },
+    {
+      "title": "The Future is for Everyone",
+      "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/",
+      "published": "2026-08-10",
+      "whatItIs": "An essay on Meta's newsroom, signed “Mark” and with no byline, setting out its positions on superintelligence, including a statement about board approval of model-release safety criteria."
+    },
+    {
+      "title": "Charter of the Audit & Privacy Committee of the Board of Directors of Meta Platforms, Inc.",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_downloads/2025/06/Meta-Audit-Privacy-Committee-Charter-Effective-June-1-2025.pdf",
+      "published": "2025-06-01",
+      "whatItIs": "Charter, effective June 1, 2025, of the board committee that oversees financial reporting, the privacy program and product compliance including cybersecurity and generative AI."
+    },
+    {
+      "title": "Charter of the Risk & Strategy Committee of the Board of Directors of Meta Platforms, Inc.",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_downloads/2025/06/Meta-Risk-Strategy-Committee-Charter-Effective-June-1-2025.pdf",
+      "published": "2025-06-01",
+      "whatItIs": "Charter, effective June 1, 2025, of the board committee that assists the board with oversight of the company's risk and strategy; it does not mention AI."
+    },
+    {
+      "title": "2026 Proxy Statement (Schedule 14A)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025532/meta-20260416.htm",
+      "published": "2026-04-16",
+      "whatItIs": "Meta's definitive proxy statement for the May 27, 2026 annual meeting, describing board committees, risk oversight and the board's responses to shareholder proposals on AI."
+    }
+  ]
+}

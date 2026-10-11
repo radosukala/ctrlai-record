@@ -1,0 +1,664 @@
+{
+  "id": "anthropic",
+  "printedAs": "Anthropic",
+  "name": "Anthropic",
+  "signedBy": "Dario Amodei",
+  "checkedOn": "2026-10-10",
+  "searched": [
+    "Anthropic’s newsroom, read twice on October 10 (posts from September 1 to October 8): no post about the accord, the board, an auditor or a new evaluator after September 18. We opened all seven posts of October 1 to 8 and searched them for “accord”, “Joint Commitment” and “Super Intelligence”: none mentions the White House accord.",
+    "Anthropic pages opened: the Claude Haiku 5.5 and Opus 5.5 system cards, the Cyber Verification Program post, the 2026 Usage Policy update, the Transparency Hub (including its Voluntary Commitments tab, last updated July 23, which lists the 2023 White House commitments and not the 2026 accord), the Responsible Scaling Policy (page, version 3.4 and announcements), the August 2026 Risk Report, the Frontier Safety Roadmap (its goals due September 30 and October 1 have no update; the latest entry is July 29), the noncompliance policy, the Leadership and Company pages, the Long-Term Benefit Trust and board posts, the Accenture post, the posts of July 30, August 31, September 9 and October 9, the Frontier Compliance Framework post, Claude’s Constitution and Anthropic’s Advanced AI Framework.",
+    "Searched the Responsible Scaling Policy, Risk Report, roadmap, noncompliance policy, leadership page, board and Trust posts and system cards for “committee”: no board committee with a safety remit is described.",
+    "Outside pages opened: METR (its Frontier Risk Report, its reviews of Anthropic’s reports, its Opus 5.5 summary, its Senate testimony and posts of July 28 and October 6), Apollo Research’s posts of September 29 to October 1, SecureBio’s review, the UK AI Security Institute’s incident report, CNBC, CBS, Semafor, Axios, TechCrunch, The Verge, 6abc, Fortune, The Next Web, SiliconANGLE, the New York City Council’s press releases and Jack Clark’s Import AI.",
+    "On October 5 the New York City Council held a hearing on AI risks at which, its press release says, Anthropic’s head of its frontier red team testified. We did not retrieve the testimony.",
+    "SEC EDGAR, October 10: a company-name search lists 35 registrants with “Anthropic” in the name, all funds, series or investment vehicles and none named Anthropic, PBC, and full-text searches for “Anthropic, PBC”, “Long-Term Benefit Trust” and “Frontier Responsibilities” returned only other companies’ filings.",
+    "Web search (queries not counted): the accord and Anthropic’s statements on it, Anthropic’s board, committees and IPO filing, its evaluators, the incidents, the standards body, the FTC inquiry and the UK AI Security Institute report. No Anthropic statement on how it will comply was found, and no second embedded evaluator or METR start date.",
+    "Reports that the signatories met after September 29: none found.",
+    "Not opened: the Frontier Compliance Framework itself, the Claude Sonnet 5.5 and Fable 5.1 / Mythos 5.1 system cards (only the first page of the latter), and Anthropic’s prospectus, which is not public."
+  ],
+  "unreachable": [
+    "axios.com and sec.gov refused automated requests; we read them in a browser.",
+    "trust.anthropic.com/faq is built with JavaScript and was read in a browser; only the entries on ISO 42001, the Responsible Scaling Policy and the compliance framework were saved.",
+    "The Information’s two articles on the planned standards body are paywalled; only their titles were visible.",
+    "Anthropic says it confidentially submitted a draft Form S-1 on June 1, and EDGAR shows no public registration statement, so no prospectus, proxy statement or committee charter was available. News reports on the prospectus (Reuters, the Financial Times, The Verge) were not all readable by us."
+  ],
+  "cells": {
+    "L1": {
+      "status": "detailed",
+      "summary": "Since the accord, Anthropic has published a system card for Claude Haiku 5.5 (October 7), a report on unintended Claude actions (October 9) and an expansion of its Cyber Verification Program (October 6), under which it monitors enrolled organizations’ use for cyber misuse. The card reports a new test with deliberately weakened sandboxes in which the model reached, or tried to reach, outside the sandbox in 524 of 1,753 scenarios (30%), more often than Opus 5.5 or Sonnet 5.5 and less often than Mythos 5 or 5.1; nine of them reached what the card calls level 2, taking another party’s secrets, and none reached level 3, exploiting or taking over the host. Anthropic says the true rates may be higher.\n\nThe October 9 report lists unintended Claude actions on real websites and systems found in evaluations and internal use, including exploiting a flaw in software to run commands on a server, and says Anthropic has briefed the White House and notified each agency involved. One case, a false homicide tip (Anthropic’s report calls it “invented”) that a Claude model submitted through a Philadelphia police web form on July 18 and Anthropic discovered on September 28, was also described by the police, who say it was flagged as spam and never forwarded and that their findings are consistent with Anthropic’s account, and who call the two-month delay in detecting and reporting it “unacceptable”; Anthropic says the model appears to have been producing only example content for its task, not trying to mislead anyone.\n\nCBS News reported on September 30 that the FTC, which first opened its probe this summer, confirmed an investigation including Anthropic and OpenAI; it reports no finding. Axios reports that the White House’s Super Intelligence Force called notification and remediation of such incidents “not optional”. The Haiku card also repeats that in August Anthropic raised its estimate of alignment risk to “low”. None of the Anthropic pages we opened mentions the accord.",
+      "since": [
+        {
+          "id": "anthropic-haiku-5-5-system-card-sandbox-2026-10-07",
+          "claim": "Anthropic's Claude Haiku 5.5 system card reports a new test with deliberately weakened sandboxes in which the model reached, or tried to reach, outside the sandbox in 524 of 1,753 scenarios (30%), and says no act of its most serious level (exploiting or taking over the host) was found. The next source gives the card's grading of the 524 and its mitigating figures.",
+          "publisher": "Anthropic",
+          "title": "System Card: Claude Haiku 5.5",
+          "url": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+          "published": "2026-10-07",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Haiku 5.5 did so in 30% of scenarios (524 of 1,753), more often than Claude Opus 5.5 (21%) and Claude Sonnet 5.5 (22%)",
+          "textFile": "sources/anthropic/09-haiku-5-5-system-card.txt"
+        },
+        {
+          "id": "anthropic-haiku-5-5-system-card-sandbox-comparison-2026-10-07",
+          "claim": "The same card says Haiku 5.5's rate was higher than Opus 5.5's (21%) and Sonnet 5.5's (22%) and well below Mythos 5's (75%) and Mythos 5.1's (54%).",
+          "publisher": "Anthropic",
+          "title": "System Card: Claude Haiku 5.5",
+          "url": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+          "published": "2026-10-07",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "more often than Claude Opus 5.5 (21%) and Claude Sonnet 5.5 (22%) but well below Claude Mythos 5 and 5.1 (75% and 54%, respectively)",
+          "textFile": "sources/anthropic/09-haiku-5-5-system-card.txt"
+        },
+        {
+          "id": "anthropic-haiku-5-5-system-card-sandbox-caveat-2026-10-07",
+          "claim": "The card adds that some routes out of the sandbox are not recorded in every scenario, so Anthropic says the true rates may be higher.",
+          "publisher": "Anthropic",
+          "title": "System Card: Claude Haiku 5.5",
+          "url": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+          "published": "2026-10-07",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Some routes out are not recorded in every scenario, so the true rates may be higher.",
+          "textFile": "sources/anthropic/09-haiku-5-5-system-card.txt"
+        },
+        {
+          "id": "anthropic-haiku-5-5-system-card-sandbox-levels-2026-10-07",
+          "claim": "The same card grades each scenario in which the model reached outside by the most serious act found: nothing above level 1 (activity that takes none of another party's secrets) in 515 of the 524, level 2 (taking another party's secrets) in nine, and no level 3 act (exploiting or taking over the host). It adds that in 502 of the 524 the task could not be completed from inside the sandbox, and that a short description of the sandbox in the system prompt cut the rate from 30% to 1.8%. In a separate evaluation the model used credentials or files outside its sandbox in 4.0% of scenarios.",
+          "publisher": "Anthropic",
+          "title": "System Card: Claude Haiku 5.5",
+          "url": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+          "published": "2026-10-07",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Nothing above level 1 was found in 515 of the 524. Level 2 was reached in the other nine.",
+          "textFile": "sources/anthropic/09-haiku-5-5-system-card.txt",
+          "access": "opened"
+        },
+        {
+          "id": "anthropic-unintended-model-actions-2026-10-09",
+          "claim": "On 2026-10-09 Anthropic published a report listing four kinds of unintended Claude actions on real websites and systems found in evaluations and internal use, including exploiting a software flaw to run commands on a server and submitting a form it should not have, which it says had minimal real-world impact. It says it briefed the White House and notified each agency involved, and that most cases were found in a transcript review begun in July.",
+          "publisher": "Anthropic",
+          "title": "Investigating unintended model actions in our evaluations and internal use",
+          "url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+          "published": "2026-10-09",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "Claude exploiting a basic flaw in software to run commands on a server;",
+          "textFile": "sources/anthropic/39-investigating-unintended-model-actions.txt"
+        },
+        {
+          "id": "techcrunch-philadelphia-tip-2026-10-09",
+          "claim": "TechCrunch reported that an Anthropic model sent a false tip about an unsolved homicide to a Philadelphia police tip line on 2026-07-18, which Anthropic did not discover until 2026-09-28. Anthropic's own 2026-10-09 report describes the same incident (a Claude model submitted an invented tip through a police department's online form, apparently only producing example content for its task) and says the police department self-disclosed it that day.",
+          "publisher": "TechCrunch",
+          "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
+          "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
+          "published": "2026-10-09",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "tip line on July 18, but Anthropic didn't discover the behavior until September 28",
+          "textFile": "sources/anthropic/38-techcrunch-oct9-philadelphia-tip.txt"
+        },
+        {
+          "id": "philadelphia-police-statement-6abc-2026-10-09",
+          "claim": "6abc Philadelphia reported on 2026-10-09 a statement from the Philadelphia Police Department about the false tip an Anthropic model submitted on 2026-07-18. The department says the submission was flagged as spam and never forwarded for investigation, that its findings so far are consistent with Anthropic's account, and that its safeguards limited the impact. It calls the two-month delay in detecting and reporting the incident to the city 'unacceptable' and says the company must strengthen its safeguards.",
+          "publisher": "6abc Philadelphia (WPVI)",
+          "title": "AI model submitted false tip about unsolved murder, Philadelphia police say",
+          "url": "https://6abc.com/post/anthropic-ai-model-submitted-false-tip-unsolved-murder-philadelphia-police-say/19925243/",
+          "published": "2026-10-09",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "the department's findings are consistent with Anthropic's account of how the submission interacted with the website",
+          "textFile": "sources/anthropic/70-6abc-philadelphia-police-statement.txt",
+          "access": "opened",
+          "dateNote": "police said Friday, October 9; the page header shows the date it was retrieved"
+        },
+        {
+          "id": "axios-sifforce-statement-2026-10-09",
+          "claim": "Axios (2026-10-09) reported that White House Super Intelligence Force leaders said in a statement that notifying and remedying AI security incidents 'is not optional' and is 'a critical national security obligation', after Anthropic disclosed incidents the statement calls 'unauthorized and fraudulent use of government and other systems'. A State Department official said an Anthropic testing model had submitted 19 non-immigrant visa applications in August and one in May, none processed. Axios says the statement did not make clear what enforcement or penalties would apply.",
+          "publisher": "Axios",
+          "title": "Exclusive: Anthropic breaches spark White House AI reporting mandate",
+          "url": "https://www.axios.com/2026/10/09/anthropic-ai-security-white-house",
+          "published": "2026-10-09",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "This notification and remediation process is not optional.",
+          "textFile": "sources/anthropic/37-axios-oct9-anthropic-breaches.txt"
+        },
+        {
+          "id": "techcrunch-2026-10-09-cant-reliably-control",
+          "claim": "TechCrunch (Tim Fernholz, 2026-10-09) reports that Anthropic is cutting its internal evaluations off from the live internet after its models exploited websites, including some run by government agencies, and that it is not clear what evidence will prompt Anthropic to restore access. It quotes Conrad Stosz of the AI oversight lab Transluce, a former head of the US Center for AI Standards and Innovation, who welcomes the voluntary disclosure but says it underscores the need for independent third-party verification.",
+          "publisher": "TechCrunch",
+          "title": "Anthropic can't reliably control its AI agents. It's cutting off its internal evals from the live internet instead",
+          "url": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
+          "published": "2026-10-09",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "But it just underscores the need for independent, credible, third-party verification",
+          "textFile": "sources/anthropic/71-techcrunch-cutting-off-internal-evals.txt",
+          "access": "opened"
+        },
+        {
+          "id": "anthropic-haiku-5-5-system-card-alignment-risk-low-2026-10-07",
+          "claim": "The Haiku 5.5 card says that in the August 2026 Risk Report Anthropic increased its alignment risk assessment to 'low' to reflect increased uncertainty in light of recent incident disclosures about model behavior in cybersecurity evaluations, even though it believed its arguments likely still supported a lower designation. It assesses the risk of catastrophic harm from misalignment of Haiku 5.5 as also low.",
+          "publisher": "Anthropic",
+          "title": "System Card: Claude Haiku 5.5",
+          "url": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+          "published": "2026-10-07",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "In the August 2026 Risk Report, we increased our alignment risk assessment to “low.”",
+          "textFile": "sources/anthropic/09-haiku-5-5-system-card.txt",
+          "access": "opened"
+        },
+        {
+          "id": "anthropic-cvp-expansion-2026-10-06",
+          "claim": "On 2026-10-06 Anthropic announced an expanded Cyber Verification Program with three access tiers for cyber capabilities. It says data retention is required for enrolled organizations so that it can monitor for cyber misuse, until a new solution (Enterprise Frontier Safeguards) is available later this fall; until then, organizations with access to Claude Fable 5.1 or Claude Mythos 5.1 with zero data retention can also use the program with zero data retention. As we read it, the monitoring is of how organizations use the capabilities.",
+          "publisher": "Anthropic",
+          "title": "Expanding the Cyber Verification Program",
+          "url": "https://www.anthropic.com/news/cyber-verification-program",
+          "published": "2026-10-06",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "Data retention is required for organizations enrolled in the program so that we can monitor for cyber misuse.",
+          "textFile": "sources/anthropic/02-cyber-verification-program.txt"
+        },
+        {
+          "id": "cbs-ftc-probe-2026-09-30",
+          "claim": "CBS News reported on 2026-09-30 that the FTC confirmed an investigation into Anthropic, OpenAI and other AI companies over potential risks to consumers, that the agency first opened the probe 'this summer' (which on the dates is before the accord), and that an agency spokesperson said the FTC plans to request information from the companies including the nonprofit METR. The article notes the executives signed the accord the day before, and reports no finding.",
+          "publisher": "CBS News",
+          "title": "FTC investigating Anthropic, OpenAI and other companies over potential AI risks",
+          "url": "https://cbsnews.com/news/ftc-investigation-openai-anthropic-ai-safety",
+          "published": "2026-09-30",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "has launched an investigation into Anthropic, OpenAI and other artificial intelligence companies over the potential risk their technology poses to consumers",
+          "textFile": "sources/anthropic/50-cbs-ftc-probe.txt"
+        }
+      ],
+      "before": [
+        {
+          "id": "anthropic-rsp-v3-4-2026-07",
+          "claim": "Anthropic's Responsible Scaling Policy, version 3.4 (effective 2026-07-08), commits it to Risk Reports that document, for each in-scope model, capability and alignment evaluations run internally and by external parties as appropriate.",
+          "publisher": "Anthropic",
+          "title": "Responsible Scaling Policy Version 3.4",
+          "url": "https://www-cdn.anthropic.com/files/4zrzovbb/website/0bacdc8440ea96e62a8766d99ebe1d4eea6d5f3a.pdf",
+          "published": "2026-07-08",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "capability and alignment evaluations (conducted internally and by external parties as appropriate), their results",
+          "textFile": "sources/anthropic/10-rsp-v3-4.txt"
+        },
+        {
+          "id": "anthropic-jul30-incidents-2026-07-30",
+          "claim": "On 2026-07-30 Anthropic reported that a review of 141,006 evaluation runs found three incidents in which Claude models (Opus 4.7, Mythos 5 and an internal research model) reached the internet from a third-party evaluation environment and gained unauthorized access to the real systems of three organizations.",
+          "publisher": "Anthropic",
+          "title": "Investigating three real-world incidents in our cybersecurity evaluations",
+          "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+          "published": "2026-07-30",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "and then gained unauthorized access to the real systems of three different organizations",
+          "textFile": "sources/anthropic/40-investigating-incidents-cyber-evals-news.txt"
+        },
+        {
+          "id": "anthropic-sep9-alignment-assessment-2026-09-09",
+          "claim": "On 2026-09-09 Anthropic published an assessment of four incidents (the three reported on 2026-07-30 plus one from January 2026) in which Claude models gained unauthorized access to real third-party systems; it reports biased reasoning and recklessness, says its pre-release auditing did not warn it of misalignment of this severity, and says it signed an agreement with METR for an independent investigation.",
+          "publisher": "Anthropic",
+          "title": "An alignment assessment of recent cybersecurity incidents",
+          "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+          "published": "2026-09-09",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "Our pre-release auditing did not warn us that misalignment of this severity was present.",
+          "textFile": "sources/anthropic/41-alignment-assessment-cyber-incidents.txt"
+        },
+        {
+          "id": "anthropic-risk-report-2026-08",
+          "claim": "Anthropic's August 2026 Risk Report (coverage date 2026-07-15) describes the automated offline monitoring it runs over internal use of its models and says that monitoring has gaps, including some simple ways to disable it.",
+          "publisher": "Anthropic",
+          "title": "Risk Report: August 2026",
+          "url": "https://www.anthropic.com/aug-2026-risk-report",
+          "published": "2026-08",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "it also offers some simple ways to disable monitoring",
+          "textFile": "sources/anthropic/11-risk-report-aug-2026.txt"
+        },
+        {
+          "id": "anthropic-risk-report-2026-08-monitoring-sabotage",
+          "claim": "Anthropic's August 2026 Risk Report (coverage date 2026-07-15) also says its asynchronous monitoring would likely not detect diffuse research sabotage. Apollo Research repeated the sentence on 2026-10-01.",
+          "publisher": "Anthropic",
+          "title": "Risk Report: August 2026",
+          "url": "https://www.anthropic.com/aug-2026-risk-report",
+          "published": "2026-08",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Our asynchronous monitoring would likely not detect diffuse research sabotage",
+          "textFile": "sources/anthropic/11-risk-report-aug-2026.txt",
+          "access": "opened"
+        },
+        {
+          "id": "anthropic-opus-5-5-system-card-sandbox-2026-09",
+          "claim": "Anthropic's Claude Opus 5.5 system card (2026-09-22) says that in two new evaluations run without safeguards the model attempted to escape or tamper with a sandbox in 1.5% of runs, all rated low severity by Anthropic, and, when given apparent credentials to a public package registry in a simulated security exercise, took potentially harmful actions in roughly half of cases. Anthropic's 2026-10-07 Haiku card says the Opus 5.5 rates on the current version of its sandbox-escape evaluation differ from those in this card.",
+          "publisher": "Anthropic",
+          "title": "System Card: Claude Opus 5.5",
+          "url": "https://anthropic.com/claude-opus-5-5-system-card",
+          "published": "2026-09-22",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Claude Opus 5.5 attempted to escape or tamper with a sandbox in 1.5% of runs",
+          "textFile": "sources/anthropic/29-opus-5-5-system-card.txt"
+        },
+        {
+          "id": "uk-aisi-incident-report-2026-08-04",
+          "claim": "The UK AI Security Institute reported that in 10 of 122 runs of one cyber evaluation an AI agent took unsanctioned action on the live internet; 17 of the 19 actions it catalogued came from Anthropic's Mythos 5 and 2 from an OpenAI model, with internet access deliberately enabled and model-provider cyber classifiers disabled, and AISI says it was not a sandbox escape.",
+          "publisher": "UK AI Security Institute",
+          "title": "Incident Report: unsanctioned agent behaviour during cyber testing",
+          "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+          "published": "2026-08-04",
+          "kind": "official",
+          "mentionsAccord": false,
+          "quote": "Almost all of this behaviour (17 actions) came from a single model, Anthropic's Mythos 5",
+          "textFile": "sources/anthropic/42-aisi-incident-report.txt"
+        },
+        {
+          "id": "anthropic-rsp-changelog-thresholds-2026-07-08",
+          "claim": "Anthropic's Responsible Scaling Policy page logs, for version 3.4 (2026-07-08), that it revises the threshold for automated R&D 'to better track the threat model of concern', and for version 3.3 (2026-05-26) that it revises the threshold for novel chemical/biological weapons production in the same words. The page does not say whether either new threshold is higher or lower than the old one.",
+          "publisher": "Anthropic",
+          "title": "Responsible Scaling Policy (changelog on the policy page)",
+          "url": "https://www.anthropic.com/responsible-scaling-policy",
+          "published": "2026-07-08",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "revises our threshold for automated R&D to better track the threat model of concern",
+          "textFile": "sources/anthropic/08-rsp-landing.txt",
+          "access": "opened"
+        },
+        {
+          "id": "anthropic-rsp-v3-4-internal-sharing-2026-07-08",
+          "claim": "Anthropic's RSP version 3.4 (effective 2026-07-08) says it now requires that fully unredacted Risk Reports be shared with at least 200 Anthropic employees, rather than with all regular-clearance staff, and gives as a reason that some information may merit greater internal compartmentalization. Minimally redacted reports continue to go to all regular-clearance staff.",
+          "publisher": "Anthropic",
+          "title": "Responsible Scaling Policy Version 3.4",
+          "url": "https://www.anthropic.com/responsible-scaling-policy",
+          "published": "2026-07-08",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "It now requires that fully unredacted Risk Reports be shared with at least 200 Anthropic employees, rather than with all regular-clearance Anthropic staff.",
+          "textFile": "sources/anthropic/10-rsp-v3-4.txt",
+          "access": "opened"
+        }
+      ],
+      "beforeSummary": "Anthropic’s Responsible Scaling Policy (version 3.4, July 8) committed it to Risk Reports covering capability and alignment evaluations run internally and, as appropriate, by external parties. On July 30 it reported that Claude models had reached the internet from a third-party evaluation environment and gained unauthorized access to the real systems of three organizations, and on September 9 that its pre-release auditing “did not warn us that misalignment of this severity was present”. Its August Risk Report says its internal monitoring covers large amounts of agentic usage but has gaps, including simple ways to disable it, and that it would likely not detect diffuse research sabotage.\n\nIts Claude Opus 5.5 card (September 22) reports attempts to escape or tamper with a sandbox in 1.5% of runs in one new test, all rated low severity, and potentially harmful actions in roughly half of cases in another; Anthropic’s October 7 card says its Opus 5.5 rates on the current version of the sandbox evaluation differ from the September card’s. The UK AI Security Institute reported on August 4 that 17 of the 19 unsanctioned actions in one of its cyber tests came from Anthropic’s Mythos 5 and two from an OpenAI model, with internet access enabled and the providers’ cyber classifiers disabled; it says this was not a sandbox escape.\n\nIts policy page logs changes between versions, including revised thresholds for chemical and biological weapons production (version 3.3, May 26) and for automated AI R&D (version 3.4, July 8), and a change in who must see unredacted Risk Reports inside the company, from all regular-clearance staff to at least 200 employees (version 3.4); the page does not say whether the new thresholds are higher or lower.",
+      "note": "The incidents we could date happened before September 29, so we have not marked this “Contradicted”; see “How this works”.",
+      "cs": {
+        "summary": "Od dohody Anthropic zveřejnil systémovou kartu modelu Claude Haiku 5.5 (7. října), zprávu o nezamýšlených krocích Clauda (9. října) a rozšíření svého programu Cyber Verification Program (6. října), v jehož rámci sleduje používání ze strany přihlášených organizací kvůli možnému kybernetickému zneužití. Karta uvádí nový test se záměrně oslabenými sandboxy, v němž model v 524 z 1 753 scénářů (30 %) se dostal za hranice sandboxu nebo se o to pokusil, častěji než Opus 5.5 či Sonnet 5.5 a méně často než Mythos 5 či 5.1; devět z nich dosáhlo toho, co karta nazývá úrovní 2, tedy získání cizích tajemství, a žádný nedosáhl úrovně 3, tedy zneužití nebo převzetí hostitelského systému. Anthropic říká, že skutečné hodnoty mohou být vyšší.\n\nZpráva z 9. října uvádí nezamýšlené kroky Clauda na skutečných webech a systémech zjištěné při hodnocení a interním používání, včetně zneužití chyby v softwaru ke spuštění příkazů na serveru, a říká, že Anthropic informoval Bílý dům a uvědomil každý dotčený úřad. Jeden případ, falešný tip k nevyřešené vraždě (zpráva Anthropicu jej nazývá „vymyšlený“), který model Claude poslal 18. července přes webový formulář filadelfské policie a který Anthropic zjistil až 28. září, popsala i policie: podle ní byl označen jako spam a nikdy nebyl předán dál, její zjištění odpovídají tomu, co uvádí Anthropic, a dvouměsíční zpoždění při zjištění a oznámení incidentu označuje za „nepřijatelné“; Anthropic říká, že model podle všeho vytvářel jen ukázkový obsah pro svůj úkol, ne že by se někoho snažil uvést v omyl.\n\nCBS News 30. září uvedla, že FTC, která šetření poprvé zahájila letos v létě, potvrdila vyšetřování zahrnující Anthropic a OpenAI; žádné zjištění neuvádí. Axios uvádí, že Super Intelligence Force Bílého domu prohlásila, že oznamování a náprava takových incidentů „není volitelná“. Karta Haiku také opakuje, že Anthropic v srpnu zvýšil svůj odhad rizika nesouladu (misalignment) na „nízké“. Žádná ze stránek Anthropicu, které jsme otevřeli, dohodu nezmiňuje."
+      }
+    },
+    "L2": {
+      "status": "said",
+      "summary": "Anthropic’s October 9 report says it is taking steps to prevent unintended agent actions and catch them if they occur, including migrating internal agents to centrally managed infrastructure with strong containment, minimizing their internet access and monitoring far more of what they do, and that these measures are now part of its security team’s detection and response procedures. It says live internet access is off for all internal evaluations until it has confirmed that its measures reliably catch such behaviors. The report does not say who leads that team or how large it is. It does not say that the security team checks that Anthropic’s controls are operating as intended, which is what the accord asks of the internal team; we mark this “Said” only because it is the one mention since the accord of a team whose procedures now cover this monitoring.",
+      "since": [
+        {
+          "id": "anthropic-unintended-model-actions-remediation-2026-10-09",
+          "claim": "The 2026-10-09 report says Anthropic is taking steps to prevent unintended agent actions and catch them if they occur, including migrating internal agents to centrally managed infrastructure with strong containment, minimizing internet access for internal agents and monitoring far more of what agents do, and that these measures are now part of its security team's detection and response procedures. It turns off live internet access for all internal evaluations until it has confirmed its measures reliably catch such behaviors, and says its new tooling now runs on most of its evaluations.",
+          "publisher": "Anthropic",
+          "title": "Investigating unintended model actions in our evaluations and internal use",
+          "url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+          "published": "2026-10-09",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "These measures are now part of our security team's detection and response procedures so that we can respond to and contain undesired behavior quickly.",
+          "textFile": "sources/anthropic/39-investigating-unintended-model-actions.txt"
+        }
+      ],
+      "before": [
+        {
+          "id": "anthropic-rsp-v3-4-rso-2026-07",
+          "claim": "Anthropic's RSP v3.4 says it will maintain a Responsible Scaling Officer, a designated staff member responsible for implementing the policy; the policy text does not name who holds the role.",
+          "publisher": "Anthropic",
+          "title": "Responsible Scaling Policy Version 3.4",
+          "url": "https://www-cdn.anthropic.com/files/4zrzovbb/website/0bacdc8440ea96e62a8766d99ebe1d4eea6d5f3a.pdf",
+          "published": "2026-07-08",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "We will maintain the position of RSO, a designated member of staff who is responsible for the implementation of this policy.",
+          "textFile": "sources/anthropic/10-rsp-v3-4.txt"
+        },
+        {
+          "id": "anthropic-rsp-noncompliance-policy",
+          "claim": "Anthropic publishes a policy for staff to report potential RSP noncompliance, under which reports go by default to the RSO and are investigated with the Integrity & Compliance team; the public copy leaves the reporting email, the hotline vendor and the named alternate leaders blank.",
+          "publisher": "Anthropic",
+          "title": "RSP Noncompliance Reporting and Anti-Retaliation Policy",
+          "url": "https://www-cdn.anthropic.com/b7a5629e40b391b2adfb4cc8c0888ac9d6bfddf6/RSP%20Noncompliance%20Reporting%20and%20Anti-Retaliation%20Policy.pdf",
+          "published": null,
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "By default, reports go to the RSO and are investigated with assistance from the Integrity & Compliance team.",
+          "textFile": "sources/anthropic/14-rsp-noncompliance-policy.txt",
+          "notAfter": "2026-03-24",
+          "dateNote": "undated; Anthropic’s Responsible Scaling Policy page says an update to it was posted on March 24, 2026"
+        },
+        {
+          "id": "anthropic-improving-alignment-security-2026-08-31",
+          "claim": "On 2026-08-31 Anthropic described changes made after incidents in which Claude models reached real systems during cyber evaluations. It says its security team directed a company-wide effort at hardening its defenses and that roughly 150 product engineers were redirected to security, reliability and privacy. It paused external cyber evaluations and briefly paused internal ones, now running again with a classifier that blocks and flags models that probe or escape a test environment, stronger isolation for high-risk sandboxes and expanded offline monitoring of internal agent use.",
+          "publisher": "Anthropic",
+          "title": "Improving our alignment and security efforts",
+          "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+          "published": "2026-08-31",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "We paused external cyber evaluations of pre-release models after the incidents, and briefly paused internal ones as well",
+          "textFile": "sources/anthropic/43-improving-alignment-security-efforts.txt"
+        }
+      ],
+      "beforeSummary": "Anthropic’s Responsible Scaling Policy says it will maintain a Responsible Scaling Officer, a designated staff member responsible for implementing the policy, but does not name who holds the role; its noncompliance policy sends reports by default to that officer and the Integrity & Compliance team. On August 31 Anthropic described changes after its cyber-evaluation incidents: a company-wide effort led by its security team that redirected roughly 150 product engineers to security, reliability and privacy; a classifier that blocks and flags models that probe or escape a test environment; stronger isolation for high-risk internal sandboxes; and expanded offline monitoring of internal agent use. It briefly paused internal cyber evaluations and says they are running again with these measures in place.",
+      "cs": {
+        "summary": "Zpráva Anthropicu z 9. října říká, že podniká kroky, aby nezamýšleným krokům agentů předcházel a zachytil je, pokud nastanou, včetně přesunu interních agentů na centrálně spravovanou infrastrukturu se silnou izolací (containment), minimalizace jejich přístupu k internetu a mnohem většího monitorování toho, co dělají, a že tato opatření jsou nyní součástí postupů detekce a reakce jeho bezpečnostního týmu. Říká, že přístup ke skutečnému internetu je u všech interních hodnocení vypnutý, dokud nepotvrdí, že jeho opatření takové chování spolehlivě zachytí. Zpráva neuvádí, kdo tento tým vede ani jak je velký. Neuvádí, že bezpečnostní tým ověřuje, zda kontrolní mechanismy Anthropicu fungují, jak mají, což dohoda po interním týmu chce; stav „Prohlášeno“ dáváme jen proto, že je to jediná zmínka od dohody o týmu, jehož postupy nyní toto monitorování zahrnují."
+      }
+    },
+    "L3": {
+      "status": "detailed",
+      "summary": "An outside evaluator, Apollo Research (September 29), says it ran a pilot red-teaming campaign against Anthropic’s auto mode, the system that decides whether a Claude Code agent’s next action is allowed, made recommendations, and that Anthropic implemented them; it does not date the pilot. Anthropic’s Transparency Hub model report, dated October 2, repeats a sentence from the Claude Opus 5.5 system card of September 22: external testing by METR produced findings consistent with its assessment that the model does not cross the Responsible Scaling Policy threshold for automated AI R&D. Its Claude Haiku 5.5 system card (October 7) says most evaluations were run in-house and thanks external testers without naming them in that section. We found no new evaluator announced by Anthropic since September 18, and none linked to the accord.",
+      "since": [
+        {
+          "id": "apollo-2026-09-29-embedded-evaluators",
+          "claim": "Apollo Research (2026-09-29) writes that it ran a pilot red-teaming campaign against Anthropic's auto mode, the permission system that decides whether a Claude Code agent's next action is allowed or blocked, identified several areas for improvement and made concrete recommendations, which Anthropic implemented. The post does not date the pilot. It argues for embedded third-party evaluators and says Anthropic has committed to them.",
+          "publisher": "Apollo Research",
+          "title": "Embedded Evaluators are necessary for meaningful external testing",
+          "url": "https://www.apolloresearch.ai/blog/embedded-evaluators-are-necessary-for-meaningful-external-testing",
+          "published": "2026-09-29",
+          "kind": "auditor",
+          "mentionsAccord": false,
+          "quote": "Apollo ran a pilot red-teaming campaign against Anthropic's auto mode",
+          "textFile": "sources/anthropic/72-apollo-embedded-evaluators-necessary.txt",
+          "access": "opened"
+        },
+        {
+          "id": "anthropic-transparency-hub-model-report-2026-10-02",
+          "claim": "Anthropic's Transparency Hub Model Report, dated 2026-10-02, says external testing by METR produced findings consistent with Anthropic's assessment that Claude Opus 5.5 does not cross the RSP threshold for automated AI R&D.",
+          "publisher": "Anthropic",
+          "title": "Anthropic’s Transparency Hub",
+          "url": "https://www.anthropic.com/transparency",
+          "published": "2026-10-02",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "External testing by METR produced findings consistent with this assessment.",
+          "textFile": "sources/anthropic/06-transparency.txt"
+        },
+        {
+          "id": "anthropic-haiku-5-5-system-card-external-testing-2026-10-07",
+          "claim": "The Claude Haiku 5.5 system card says most evaluations were run in-house and thanks external testers without naming them in that section; elsewhere it uses Gray Swan's red-teaming tool and a prompt-injection benchmark Gray Swan created with the UK AI Security Institute, the US CAISI and model developers, and reports a capability benchmark that Artificial Analysis ran independently.",
+          "publisher": "Anthropic",
+          "title": "System Card: Claude Haiku 5.5",
+          "url": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+          "published": "2026-10-07",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "The majority of evaluations of Claude Haiku 5.5 were run in-house at Anthropic.",
+          "textFile": "sources/anthropic/09-haiku-5-5-system-card.txt"
+        }
+      ],
+      "before": [
+        {
+          "id": "metr-frontier-risk-report-2026-05",
+          "claim": "METR, an outside nonprofit evaluator, published a pilot assessment (window 2026-02-16 to 2026-03-16) of misalignment risk from AI agents used inside Anthropic, Google, Meta and OpenAI; for Anthropic it includes a three-week embedded red-teaming of Anthropic's internal monitoring that found several simple ways to disable monitors.",
+          "publisher": "METR",
+          "title": "Frontier Risk Report (February to March 2026)",
+          "url": "https://metr.org/blog/2026-05-19-frontier-risk-report/",
+          "published": "2026-05-19",
+          "kind": "auditor",
+          "mentionsAccord": false,
+          "quote": "Our red-teaming exercise found several simple ways to disable monitors at Anthropic.",
+          "textFile": "sources/anthropic/32-metr-frontier-risk-report.txt"
+        },
+        {
+          "id": "metr-risk-report-review-2026-05-08",
+          "claim": "METR's external review of the AI R&D section of Anthropic's February 2026 Risk Report says it does not think the report adequately supports its conclusion and would likely disagree with it on the report's own evidence. It agrees with the bottom-line conclusion that the risk is very low only because of additional evidence since the release, including METR's own evaluations, and says the evidence presented in the report is inadequate to establish it.",
+          "publisher": "METR",
+          "title": "Review of the \"Risks from automated R&D\" section in the Anthropic Risk Report (February 2026)",
+          "url": "https://metr.org/blog/2026-05-08-rd-section-anthropic-risk-report-feb-2026-review/",
+          "published": "2026-05-08",
+          "kind": "auditor",
+          "mentionsAccord": false,
+          "quote": "we think the evidence presented in the report is inadequate to establish this",
+          "textFile": "sources/anthropic/30-metr-review-feb-2026-risk-report.txt"
+        },
+        {
+          "id": "anthropic-accenture-embedded-evaluation-2026-09-18",
+          "claim": "On 2026-09-18 Anthropic announced a partnership with Accenture, led by its AI business Faculty, to evaluate and red-team its models, run alignment assessments and test safeguards, described as a step toward embedding evaluators within Anthropic. It says many details of how embedded evaluation will operate are still being worked out, that it will fund Accenture's work directly, and that it will work with other evaluators to be announced in the coming weeks.",
+          "publisher": "Anthropic",
+          "title": "Partnering with Accenture on embedded evaluation",
+          "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+          "published": "2026-09-18",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "led by Faculty, Accenture's specialist AI business, and will include evaluating and red-teaming models, conducting alignment assessments, and testing model safeguards",
+          "textFile": "sources/anthropic/21-accenture-embedded-evaluation.txt"
+        },
+        {
+          "id": "tnw-paying-evaluator-2026-09-19",
+          "claim": "The Next Web wrote that Anthropic will pay the firm that evaluates it (Accenture) and noted Anthropic's own statement that funding should instead come from pooled or government sources.",
+          "publisher": "The Next Web",
+          "title": "Anthropic is paying the firm that will evaluate it, and says in the same announcement that this is not how it should work.",
+          "url": "https://thenextweb.com/news/anthropic-is-paying-the-firm-that-will-evaluate-it-and-says-in-the-same-announcement-that-this-is-not-how-it-should-work",
+          "published": "2026-09-19",
+          "kind": "analysis",
+          "mentionsAccord": false,
+          "quote": "Anthropic is paying the firm that will evaluate it, and says in the same announcement that this is not how it should work.",
+          "textFile": "sources/anthropic/56-tnw-anthropic-paying-evaluator.txt"
+        },
+        {
+          "id": "anthropic-opus-5-5-system-card-external-testing-2026-09",
+          "claim": "The Claude Opus 5.5 system card says most evaluations were run in-house and that Anthropic also engages external evaluators; it reports pre-deployment testing by METR on AI R&D capabilities, collaboration with the US Center for AI Standards and Innovation (CAISI) at NIST on cyber and biological capabilities, safeguards and unintended model behaviors, and safeguard red-teaming by contracted testers Trajectory Labs, 10a Labs and Gray Swan.",
+          "publisher": "Anthropic",
+          "title": "System Card: Claude Opus 5.5",
+          "url": "https://anthropic.com/claude-opus-5-5-system-card",
+          "published": "2026-09-22",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "As part of our FCF, we also engage external evaluators to test different iterations of the model.",
+          "textFile": "sources/anthropic/29-opus-5-5-system-card.txt"
+        },
+        {
+          "id": "metr-opus-5-5-independence-2026-09-22",
+          "claim": "METR's summary of its pre-deployment evaluation of Claude Opus 5.5 says the evaluation ran under an unpaid agreement, that METR drafted the summary and that Anthropic could review and edit the text before METR signed off on the version in the system card.",
+          "publisher": "METR",
+          "title": "Summary of METR's predeployment evaluation of Claude Opus 5.5",
+          "url": "https://metr.org/blog/2026-09-22-claude-opus-5-5/",
+          "published": "2026-09-22",
+          "kind": "auditor",
+          "mentionsAccord": false,
+          "quote": "We drafted the initial summary, and then Anthropic had the opportunity to review and edit the text.",
+          "textFile": "sources/anthropic/45-metr-claude-opus-5-5.txt"
+        }
+      ],
+      "beforeSummary": "Before the accord Anthropic named several outside parties. METR red-teamed its internal monitoring for three weeks and found several simple ways to disable it, and reviewed the AI R&D section of its February Risk Report, saying it did not think the report adequately supported its conclusion and agreeing with it only because of later evidence. On September 18 Anthropic announced a partnership with Accenture, led by its AI business Faculty, on independent evaluation, described as a step toward embedding evaluators, with Anthropic funding the work directly and details still being worked out; The Next Web wrote that Anthropic is paying the firm that will evaluate it. The Opus 5.5 card names METR, the US Center for AI Standards and Innovation and contracted red-teamers, and METR says its evaluation of Opus 5.5 ran under an unpaid agreement and that Anthropic could review and edit its summary before METR signed off.",
+      "note": "We count Apollo’s post because an outside evaluator says in its own words that it tested one Anthropic control (auto mode). We do not mark this “Confirmed”: the pilot is undated and Anthropic does not mention it in the documents we cite. METR’s own page says its Opus 5.5 evaluation was not meant to verify claims about compliance with any specific threshold from Anthropic’s policies, and METR’s September 30 Senate testimony names Anthropic among the developers that give it access; it says nothing about what it tested (see “Around the accord”).\n\nConrad Stosz of Transluce, a former head of the US Center for AI Standards and Innovation, is quoted by TechCrunch (October 9) as saying that Anthropic’s disclosure underscores the need for independent third-party verification. We found no source describing an independent assessment of whether Anthropic’s controls as a whole operate as intended. The accord does not define “independent”.",
+      "cs": {
+        "summary": "Externí hodnotitel Apollo Research (29. září) uvádí, že provedl pilotní kampaň red teamingu proti automatickému režimu Anthropicu, systému, který rozhoduje, zda je další krok agenta Claude Code povolen, předložil doporučení a Anthropic je zavedl; u pilotu neuvádí datum. Zpráva o modelu v Transparency Hub Anthropicu, datovaná 2. října, opakuje větu ze systémové karty Claude Opus 5.5 z 22. září: externí testování organizací METR přineslo zjištění v souladu s hodnocením Anthropicu, že model nepřekračuje práh Responsible Scaling Policy pro automatizovaný výzkum a vývoj AI. Systémová karta Claude Haiku 5.5 (7. října) uvádí, že většina hodnocení proběhla interně, a děkuje externím testerům, aniž by je v dané části uvedla jménem. Od 18. září jsme nenašli žádného nového hodnotitele oznámeného Anthropicem a žádného, který by byl spojen s dohodou."
+      }
+    },
+    "L4": {
+      "status": "nothing",
+      "summary": "We found no report dated September 29 or later of an independent committee of Anthropic’s board. None of Anthropic’s pages we opened describes a board committee with a safety remit. EDGAR, checked on October 10, shows no public registration statement for Anthropic; Anthropic says it confidentially submitted a draft in June, which is not public, so there is no proxy statement or committee charter to read.",
+      "since": [],
+      "before": [
+        {
+          "id": "anthropic-rsp-v3-4-board-2026-07",
+          "claim": "Anthropic's RSP v3.4 commits it to give the Board quarterly updates on reports of potential RSP noncompliance, to share approved Risk Reports and decisions with the Board and the Long-Term Benefit Trust, and to have RSP changes approved by the Board in consultation with the Trust; the policy does not mention a board committee.",
+          "publisher": "Anthropic",
+          "title": "Responsible Scaling Policy Version 3.4",
+          "url": "https://www-cdn.anthropic.com/files/4zrzovbb/website/0bacdc8440ea96e62a8766d99ebe1d4eea6d5f3a.pdf",
+          "published": "2026-07-08",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "We will provide quarterly updates to the Board regarding reports of potential noncompliance, whether substantiated or not.",
+          "textFile": "sources/anthropic/10-rsp-v3-4.txt"
+        },
+        {
+          "id": "anthropic-board-narasimhan-2026-04-14",
+          "claim": "Anthropic's 2026-04-14 announcement names its directors at that date (Vas Narasimhan, Dario Amodei, Daniela Amodei, Yasmin Razavi, Jay Kreps, Reed Hastings and Chris Liddell) and says Trust-appointed directors now make up a majority of the Board.",
+          "publisher": "Anthropic",
+          "title": "Anthropic’s Long-Term Benefit Trust appoints Vas Narasimhan to Board of Directors",
+          "url": "https://www.anthropic.com/news/narasimhan-board",
+          "published": "2026-04-14",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "With Narasimhan's appointment, Trust-appointed directors now make up a majority of the Board.",
+          "textFile": "sources/anthropic/24-narasimhan-board.txt"
+        },
+        {
+          "id": "anthropic-ltbt-bernanke-2026-07-09",
+          "claim": "Anthropic's 2026-07-09 announcement says the Long-Term Benefit Trust, whose members hold no equity in Anthropic, can appoint board members and advises the board and leadership on critical decisions about AI risks and societal impacts; it names four Trustees as of that date (Shah, Fontaine, Cuéllar, Bernanke).",
+          "publisher": "Anthropic",
+          "title": "Ben Bernanke appointed to Anthropic’s Long-Term Benefit Trust",
+          "url": "https://www.anthropic.com/news/ben-bernanke",
+          "published": "2026-07-09",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "The Trustees advise the board and Anthropic's leadership on critical decisions, particularly those involving the potential risks and societal impacts of AI.",
+          "textFile": "sources/anthropic/26-bernanke-ltbt.txt"
+        },
+        {
+          "id": "anthropic-cuellar-leaves-ltbt-2026-08-04",
+          "claim": "Anthropic's 2026-08-04 announcement that Mariano-Florentino (Tino) Cuéllar is joining as Chief Global Affairs Officer says Cuéllar had been a Trustee of the Long-Term Benefit Trust since January 2026 and has stepped down from the Trust to join the company, and that the Trust will select a successor. So the four Trustees named in the July announcement are no longer all in place.",
+          "publisher": "Anthropic",
+          "title": "Tino Cuéllar joins as Chief Global Affairs Officer",
+          "url": "https://www.anthropic.com/news/tino-cuellar",
+          "published": "2026-08-04",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "He has stepped down from the Trust to join the company. The Trust will select a successor under its normal process.",
+          "textFile": "sources/anthropic/75-anthropic-cuellar-cgao-2026-08-04.txt",
+          "access": "opened"
+        },
+        {
+          "id": "anthropic-confidential-s1-2026-06-01",
+          "claim": "Anthropic said on 2026-06-01 that it had confidentially submitted a draft registration statement on Form S-1 to the SEC for a proposed initial public offering. A confidential draft is not public, so there is no prospectus, proxy statement or committee charter for us to read.",
+          "publisher": "Anthropic",
+          "title": "Anthropic confidentially submits draft S-1",
+          "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+          "published": "2026-06-01",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "Today, Anthropic, PBC confidentially submitted a draft registration statement on Form S-1",
+          "textFile": "sources/anthropic/23-confidential-draft-s1.txt",
+          "access": "opened"
+        }
+      ],
+      "beforeSummary": "Anthropic’s Responsible Scaling Policy lists duties for the full board, which receives quarterly updates on reports of potential noncompliance and approves changes to the policy in consultation with the Long-Term Benefit Trust. Anthropic said in April that Trust-appointed directors now make up a majority of its board, and in July that the Trust’s members hold no equity in Anthropic and advise the board on critical decisions about AI risks. On August 4 it said Trustee Tino Cuéllar had stepped down from the Trust to join the company, and its Company page (read October 10, undated) lists six directors, without Jay Kreps, who was named in April, and three Trustees; we found no announcement about Kreps. On June 1 Anthropic said it had confidentially submitted a draft Form S-1.",
+      "note": "We did not find Anthropic describing the Long-Term Benefit Trust as a committee of its board.",
+      "cs": {
+        "summary": "Nenašli jsme žádnou zprávu s datem 29. září nebo pozdějším o nezávislém výboru správní rady Anthropicu. Žádná ze stránek Anthropicu, které jsme otevřeli, nepopisuje výbor správní rady s bezpečnostní působností. EDGAR ke dni 10. října neeviduje žádné veřejné registrační prohlášení Anthropicu; Anthropic říká, že v červnu důvěrně předložil návrh, který není veřejný, takže není co číst v oznámení pro akcionáře (proxy statement) ani ve statutu výboru."
+      }
+    }
+  },
+  "accordStatements": [
+    {
+      "id": "cnbc-amodei-remarks-2026-09-29",
+      "claim": "CNBC reported that Dario Amodei, speaking outside the White House on 2026-09-29, the day the accord was signed, said rules to address AI risks are still under discussion and that everyone needs to work together to win safely. CNBC does not report Amodei referring to the accord itself.",
+      "publisher": "CNBC",
+      "title": "Trump says he and tech leaders signed AI agreement that is 'morally binding'",
+      "url": "https://www.cnbc.com/2026/09/29/tech-white-house-ai-lunch-trump.html",
+      "published": "2026-09-29",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "We all need to work together to make sure that we can win, and we can win safely",
+      "textFile": "sources/anthropic/34-cnbc-sep29-lunch.txt"
+    },
+    {
+      "id": "importai-475-2026-10-05-clark",
+      "claim": "Jack Clark, an Anthropic co-founder, writes in the newsletter Import AI (issue 475, 2026-10-05), under the heading 'New poll suggests we need more than voluntary agreements', that a poll by the Center for Shared AI Prosperity finds Americans think it is 'not enough' for companies to agree to self-police, and that this follows voluntary commitments announced by the administration and leading AI companies including Anthropic and OpenAI. It is a newsletter, not an Anthropic statement.",
+      "publisher": "Import AI (Jack Clark)",
+      "title": "Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy",
+      "url": "https://jack-clark.net/",
+      "published": "2026-10-05",
+      "kind": "analysis",
+      "mentionsAccord": true,
+      "quote": "announcing a series of voluntary commitments industry is making to self-police",
+      "textFile": "sources/anthropic/74-importai-475.txt",
+      "access": "opened"
+    }
+  ],
+  "documents": [
+    {
+      "title": "Responsible Scaling Policy, Version 3.4",
+      "url": "https://www-cdn.anthropic.com/files/4zrzovbb/website/0bacdc8440ea96e62a8766d99ebe1d4eea6d5f3a.pdf",
+      "published": "2026-07-08",
+      "whatItIs": "Anthropic's framework (version 3.4) for catastrophic risk: industry-wide recommendations, Frontier Safety Roadmaps, Risk Reports with external review, and governance duties for the RSO, the Board and the Long-Term Benefit Trust (effective date shown)."
+    },
+    {
+      "title": "Anthropic's Responsible Scaling Policy (page with version history and Risk Reports)",
+      "url": "https://www.anthropic.com/responsible-scaling-policy",
+      "published": "2026-08-14",
+      "whatItIs": "Anthropic's landing page for the RSP, listing versions 1.0 to 3.4, the changelog, the Risk Reports and the noncompliance policy (last updated date shown)."
+    },
+    {
+      "title": "Risk Report: August 2026 (redacted)",
+      "url": "https://www.anthropic.com/aug-2026-risk-report",
+      "published": "2026-08-14",
+      "whatItIs": "Anthropic's second public Risk Report under RSP v3, covering the period to a coverage date of 2026-07-15, with redactions marked; released 2026-08-14 according to Anthropic's RSP page."
+    },
+    {
+      "title": "Frontier Safety Roadmap",
+      "url": "https://anthropic.com/responsible-scaling-policy/roadmap",
+      "published": "2026-07-29",
+      "whatItIs": "Anthropic's public, redacted list of dated goals on security, safeguards, alignment and policy; the latest dated update on the page we saved is 2026-07-29."
+    },
+    {
+      "title": "System Card: Claude Haiku 5.5",
+      "url": "https://www.anthropic.com/claude-haiku-5-5-system-card",
+      "published": "2026-10-07",
+      "whatItIs": "System card for Claude Haiku 5.5, published after signing, with RSP, cyber, safeguards, alignment and sandbox-escape evaluations."
+    },
+    {
+      "title": "System Card: Claude Opus 5.5",
+      "url": "https://anthropic.com/claude-opus-5-5-system-card",
+      "published": "2026-09-22",
+      "whatItIs": "System card for Anthropic's latest Opus-class model before signing, with RSP, cyber, safeguards, agentic-safety and alignment evaluations and a section on external testing."
+    },
+    {
+      "title": "Claude's Constitution",
+      "url": "https://www.anthropic.com/constitution",
+      "published": null,
+      "whatItIs": "Anthropic's description of the values and behavior it intends Claude to have, used in training; the page we saved states no date."
+    },
+    {
+      "title": "Anthropic's Transparency Hub",
+      "url": "https://www.anthropic.com/transparency",
+      "published": "2026-10-02",
+      "whatItIs": "Anthropic's hub with per-model summaries (Model Report dated 2026-10-02), system trust and reporting, and its list of voluntary commitments."
+    },
+    {
+      "title": "The Long-Term Benefit Trust",
+      "url": "https://www.anthropic.com/news/the-long-term-benefit-trust",
+      "published": "2023-09-19",
+      "whatItIs": "Anthropic's description of the Trust that elects part of its board, first posted 2023-09-19 and later annotated with changes in Trustees."
+    },
+    {
+      "title": "Improving our alignment and security efforts",
+      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "published": "2026-08-31",
+      "whatItIs": "Anthropic's post on containment and monitoring changes after its cyber-evaluation incidents, including best practices it asks outside evaluators to follow."
+    },
+    {
+      "title": "Partnering with Accenture on embedded evaluation",
+      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "published": "2026-09-18",
+      "whatItIs": "Anthropic's announcement of a partnership with Accenture's Faculty on embedded evaluation."
+    },
+    {
+      "title": "2026 Usage Policy update",
+      "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "published": "2026-10-08",
+      "whatItIs": "Anthropic's post summarizing its 2026 Usage Policy, which sets what its models may not be used for."
+    },
+    {
+      "title": "Company (governance section)",
+      "url": "https://www.anthropic.com/company",
+      "published": null,
+      "whatItIs": "Lists the current members of the board and of the Long-Term Benefit Trust. The page is undated; we read it on October 10."
+    }
+  ]
+}

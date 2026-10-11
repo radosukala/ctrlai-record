@@ -1,0 +1,12 @@
+import re, html, sys
+src = open(sys.argv[1], encoding='utf-8', errors='ignore').read()
+src = re.sub(r'<(script|style|noscript|svg|template)\b.*?</\1>', '', src, flags=re.S | re.I)
+src = re.sub(r'<!--.*?-->', '', src, flags=re.S)
+src = re.sub(r'<br\s*/?>', '\n', src, flags=re.I)
+src = re.sub(r'</(p|div|li|h[1-6]|tr|section|article|blockquote|figcaption|ul|ol|table|header|footer)>', '\n', src, flags=re.I)
+txt = html.unescape(re.sub(r'<[^>]+>', '', src))
+txt = re.sub(r'[ \t\r\f\v ]+', ' ', txt)
+txt = re.sub(r' ?\n ?', '\n', txt)
+txt = re.sub(r'\n{3,}', '\n\n', txt).strip()
+open(sys.argv[2], 'w', encoding='utf-8').write(txt + '\n')
+print(len(txt.split()))

@@ -1,0 +1,3200 @@
+{
+ "checkedOn": "2026-10-10",
+ "sources": {
+  "sources/anthropic/09-haiku-5-5-system-card.txt": {
+   "sha256": "f002e5db67ae60e0717adecf7eb189731766bb99d0a812f4cd320982e1a0cbef",
+   "words": 32907
+  },
+  "sources/anthropic/39-investigating-unintended-model-actions.txt": {
+   "sha256": "4d82c44af4199e8bf2004727962acc3ba8866e512f0385aaf174a2d1b6fd9781",
+   "words": 3421
+  },
+  "sources/anthropic/38-techcrunch-oct9-philadelphia-tip.txt": {
+   "sha256": "510257edd91ba3e539c09e4ba239881e108ef1c7492ad95ca3dd44d15e325849",
+   "words": 876
+  },
+  "sources/anthropic/70-6abc-philadelphia-police-statement.txt": {
+   "sha256": "ddcfe21b4b065623065950025e192b57272641f41342285ab53ba67ce33258eb",
+   "words": 1262
+  },
+  "sources/anthropic/37-axios-oct9-anthropic-breaches.txt": {
+   "sha256": "fda8b123dc15f678295027f6b8bba5337233d785717b66780d788bbe1b4b81e1",
+   "words": 795
+  },
+  "sources/anthropic/71-techcrunch-cutting-off-internal-evals.txt": {
+   "sha256": "c6ed2aaffc4790e11d5784289c02cfbb73077bc8a93d5a33c974c45eaac07903",
+   "words": 1045
+  },
+  "sources/anthropic/02-cyber-verification-program.txt": {
+   "sha256": "003f6fd71a20d17b38019df54d133a4b71fcfff538dbaf0bd4204580f8067f6a",
+   "words": 1739
+  },
+  "sources/anthropic/50-cbs-ftc-probe.txt": {
+   "sha256": "628ef4d44b00e75527889811b911c22f01ef031ca23e0a8e4b16fdd3e2801da3",
+   "words": 778
+  },
+  "sources/anthropic/10-rsp-v3-4.txt": {
+   "sha256": "d1bcc3cc566764612201b6c66e38cd0265856594e878aa8dcf6a64c02e7e0783",
+   "words": 9006
+  },
+  "sources/anthropic/40-investigating-incidents-cyber-evals-news.txt": {
+   "sha256": "08dfeb218e1e7f9021e06a9f2b3fbec051f74dbd140661896d453ba6cc2d1d94",
+   "words": 3571
+  },
+  "sources/anthropic/41-alignment-assessment-cyber-incidents.txt": {
+   "sha256": "1f5afc4b8fa6adfb92af05b44bddea3d615532a92d14d166bcce92b1142ff58d",
+   "words": 16792
+  },
+  "sources/anthropic/11-risk-report-aug-2026.txt": {
+   "sha256": "30cdd013033b219030d0d7ce8677941926d72c179fbda2e18c848113a363e1ef",
+   "words": 65390
+  },
+  "sources/anthropic/29-opus-5-5-system-card.txt": {
+   "sha256": "0f11f1bb108b0016ea705151eff6b6117612c07048c2960ffed3e1214aedad5f",
+   "words": 62482
+  },
+  "sources/anthropic/42-aisi-incident-report.txt": {
+   "sha256": "6e2c87deb8e8c22c045aaa97b294246d0c343cef3e96ebb7edf97a4fdbd948ce",
+   "words": 2863
+  },
+  "sources/anthropic/08-rsp-landing.txt": {
+   "sha256": "682b9d0419337927edc1002fbcf3c490f1ef2f05288c7c3b06259f3671f383fb",
+   "words": 3646
+  },
+  "sources/anthropic/14-rsp-noncompliance-policy.txt": {
+   "sha256": "72a93f89ff47a1e28f573d67032b887bc055fc73c78512f97abee47994c9c508",
+   "words": 2094
+  },
+  "sources/anthropic/43-improving-alignment-security-efforts.txt": {
+   "sha256": "32017144811033714bd77f424689f152c8f7b9cdaec6c83245907bd57edda53e",
+   "words": 4054
+  },
+  "sources/anthropic/72-apollo-embedded-evaluators-necessary.txt": {
+   "sha256": "6dfe37c88ee91c1c37d28b81615ca156b9b75e57a6b8967b17f708f413b862ae",
+   "words": 3528
+  },
+  "sources/anthropic/06-transparency.txt": {
+   "sha256": "22f3626a294c92a8914a796c713db3781e8ed44c0724b86be41e065387da79c7",
+   "words": 23181
+  },
+  "sources/anthropic/32-metr-frontier-risk-report.txt": {
+   "sha256": "26aa38291523f275299d2000bceb7293966c3cd6cfb88bd11901d57f1d7d41e0",
+   "words": 90738
+  },
+  "sources/anthropic/30-metr-review-feb-2026-risk-report.txt": {
+   "sha256": "bf1d5933711c6d32b6ad26e54529d9404449afd1ca0643a9c8361a31439e4116",
+   "words": 964
+  },
+  "sources/anthropic/21-accenture-embedded-evaluation.txt": {
+   "sha256": "45e59441adb5363cd52855da98dc330df735e76d06c52c05f893f002a4fc0a9a",
+   "words": 772
+  },
+  "sources/anthropic/56-tnw-anthropic-paying-evaluator.txt": {
+   "sha256": "d60f079324c8f586087a77ec11bee04452253329a0c67c0a18e2ff20ee72d1fe",
+   "words": 1372
+  },
+  "sources/anthropic/45-metr-claude-opus-5-5.txt": {
+   "sha256": "fe6f94990a0d011df1ddd486781d50e448b53eeed3c0471ef4c5388295ded71c",
+   "words": 1453
+  },
+  "sources/anthropic/24-narasimhan-board.txt": {
+   "sha256": "7c2a54bea449679ce5d3ab70b8c19fd8aae4b1bd5d077638181d3695a3462710",
+   "words": 778
+  },
+  "sources/anthropic/26-bernanke-ltbt.txt": {
+   "sha256": "7a2729961521c3a5c0123084cdddadc534b0b1330fc32fa43b42720ad4732e96",
+   "words": 872
+  },
+  "sources/anthropic/75-anthropic-cuellar-cgao-2026-08-04.txt": {
+   "sha256": "48a5fb791208938eaa1e34e3d0515a6b90c4b8dfb2996ef0990344fc162a98d3",
+   "words": 867
+  },
+  "sources/anthropic/23-confidential-draft-s1.txt": {
+   "sha256": "78b8da763838b6d0b071229709d9d8a027473deeb05f8bb99b6e747f57357a5c",
+   "words": 443
+  },
+  "sources/anthropic/34-cnbc-sep29-lunch.txt": {
+   "sha256": "dee2c11d7740b74de79187468caf0b2eabe4300b94823a9c438310ba0cfd38cc",
+   "words": 1403
+  },
+  "sources/anthropic/74-importai-475.txt": {
+   "sha256": "40f910a90dab511fa2c230ce9f3ae63e2a73f41cea539e5e1f477bf6946c951b",
+   "words": 29118
+  },
+  "sources/google/27-blog-google-gemini-4-argon.txt": {
+   "sha256": "4a7a70d4abe428ecdc4dce0209118024ef1dde8ad4280a25fb0be39f044cb4ac",
+   "words": 2298
+  },
+  "sources/google/26-deepmind-fairwind-program.txt": {
+   "sha256": "569dc1f125d6fb1e49b6f784b30f0319215dfde2d5daad42dbdf31308ca72058",
+   "words": 1401
+  },
+  "sources/google/02-fsf-v3-1.txt": {
+   "sha256": "3579b287d7e0cb53fa5dad0c8505cfc6c98d35589dc09371a346dfcad08c7a99",
+   "words": 8027
+  },
+  "sources/google/04-gemini-3-7-flash-fsf-report.txt": {
+   "sha256": "726d5f1df4633f87319de6fb078ee067f8962a001859c3e1da5b61d2b06a6275",
+   "words": 14753
+  },
+  "sources/google/22-deepmind-blog-securing-future-of-ai-agents.txt": {
+   "sha256": "00e583cb364fcc2d2b9c5f0569f8ad78c828b0c4e7a65289fe213eb83662468a",
+   "words": 1767
+  },
+  "sources/google/71-guardian-google-says-gemini-hacked-three-companies-2026-09-19.txt": {
+   "sha256": "bd8d61c5a517deaaaab3c80f2b94b24b8ca9d1ba97083aa7b20b219968d21764",
+   "words": 909
+  },
+  "sources/google/16-google-responsible-ai-progress-report-2026.txt": {
+   "sha256": "3c03b106187d9c9a0f80ad3c0b7124f48c9c33e91182a95f37fca80bb4f66d0b",
+   "words": 6512
+  },
+  "sources/google/70-gdm-ai-control-roadmap-reading-order.txt": {
+   "sha256": "4bd1503aa5fbb8c9db00bac044bb76861f27be477e99781c5fec0cf891a86bb9",
+   "words": 18031
+  },
+  "sources/google/31-frontierrisk-substack-fsf-v3-1.txt": {
+   "sha256": "1b74b7af868aac59885a267556fcc2b8b55d95c9bb8e2eb86a6fa4c9ccc63b45",
+   "words": 1611
+  },
+  "sources/google/30-cnbc-google-rolls-out-gemini-4-argon.txt": {
+   "sha256": "5d8616a3abd3b3ea8291031503087e166950c051a25f3fc4f377d8f2fa9e85c0",
+   "words": 893
+  },
+  "sources/google/75-hpcwire-nist-caisi-agreements-2026-05-05.txt": {
+   "sha256": "dd6e0a1cf3739c7989300d265791bceae878e076776347ec19624986d6566f0b",
+   "words": 391
+  },
+  "sources/google/74-metr-frontier-risk-report-2026-05-19.txt": {
+   "sha256": "26aa38291523f275299d2000bceb7293966c3cd6cfb88bd11901d57f1d7d41e0",
+   "words": 90738
+  },
+  "sources/google/34-cdomagazine-caisi-expands-partnerships.txt": {
+   "sha256": "af234418e6eb19db66b4b8ab1143ad1c8d8bb27c6a4de1d30d9e78046d6207d5",
+   "words": 260
+  },
+  "sources/google/73-aisi-control-red-team-stress-testing-monitors-2026-07-23.txt": {
+   "sha256": "cbad8bf44aa8c565bce1e0d1a67df844f4f05c2e8baf61d6501cf96c415f6c1f",
+   "words": 1463
+  },
+  "sources/google/72-bbc-gemini-hacked-three-companies-2026-09-19.txt": {
+   "sha256": "291d3ea5f89253b25ecedc0c926eefea04cfe2e700de8ef8305f0b32c93ee86a",
+   "words": 1368
+  },
+  "sources/google/10-alphabet-proxy-2026-ir-copy.txt": {
+   "sha256": "6ce736208c267d6584f9e7bc16a1d9b3dc49822e1170aacf54afbfa7684c9636",
+   "words": 59564
+  },
+  "sources/google/12-alphabet-risk-and-compliance-committee-charter.txt": {
+   "sha256": "6cdb7892928848536626a078bfdccc7844403329069fff28fb69e653bafd1804",
+   "words": 1122
+  },
+  "sources/google/23-alphabet-8k-2026-annual-meeting-results.txt": {
+   "sha256": "5ade5b6bf888871526b305ed07051aeff4e281dcbb074993d79e17e2e712b232",
+   "words": 1096
+  },
+  "sources/google/17-morung-express-pichai-backs-accord.txt": {
+   "sha256": "04738c5114518a5a49fdf1f2fb277dc88f7d750a60df642bbec3238432300b8b",
+   "words": 1181
+  },
+  "sources/google/18-aljazeera-how-does-accord-work.txt": {
+   "sha256": "89d825db643d3f118106997840a1fec96c306fa0dd1aba11c3f8639c2e7749a2",
+   "words": 1159
+  },
+  "sources/meta/01-superintelligence-scaling-framework.txt": {
+   "sha256": "404aade9f2458048a175bf442af0202dc8ae622292a0567ad5d1c60afb3afb7d",
+   "words": 15020
+  },
+  "sources/meta/03-research-blog-developing-capable-models-responsibly.txt": {
+   "sha256": "3bc59098e584c355b6391ddfd64ccf7901df7c8fb3aa99c0f0e1734dc60931d9",
+   "words": 862
+  },
+  "sources/meta/70-404media-meta-muse-vm-escape-2026-10-05.txt": {
+   "sha256": "e8b4c987e2bf9eaefa75a440a8b55870bf01bf8d5cee0ccd7628d5d6e5e520f5",
+   "words": 1459
+  },
+  "sources/meta/08-advanced-ai-scaling-framework-v2-wayback.txt": {
+   "sha256": "0fd1dc9209434a7024b939a1451245c3b1229d0b8e5780a7d6430ce7351373fd",
+   "words": 13572
+  },
+  "sources/meta/71-metr-frontier-risk-report-2026-05-19.txt": {
+   "sha256": "26aa38291523f275299d2000bceb7293966c3cd6cfb88bd11901d57f1d7d41e0",
+   "words": 90738
+  },
+  "sources/meta/06-muse-spark-1-1-evaluation-report.txt": {
+   "sha256": "57f32a6f20d528c435a7ae3f70cf33ebbe965e414d8584fe4e3e671d8ec6cbf2",
+   "words": 41165
+  },
+  "sources/meta/14-nightly-reuters-meta-ai-model-hacked-company.txt": {
+   "sha256": "56a78fa9b546f37c47d659d1209933a3a2ae6cc83f4e138fc027e24f437f9671",
+   "words": 973
+  },
+  "sources/meta/12-blog-addressing-third-party-testing-misconfiguration.txt": {
+   "sha256": "f754ad5bdfc493364322b5be949e086e5fd5d0b0c09f6d121785937a9eb55100",
+   "words": 900
+  },
+  "sources/meta/72-research-meta-introducing-muse-spark-1-3-2026-09-02.txt": {
+   "sha256": "0820917084cdbf21a2962a0964ab6bd98aca1463fc52479854880144c680de54",
+   "words": 1716
+  },
+  "sources/meta/74-research-meta-how-we-built-safety-into-muse-2026-09-08.txt": {
+   "sha256": "99e8be15853169a2403e3f4a64fffbf8953723af1bcf95c2a2e61230a4e94073",
+   "words": 4175
+  },
+  "sources/meta/07-muse-spark-safety-preparedness-report-arxiv.txt": {
+   "sha256": "3fd9c51b32263fdd2dddf77ae252a22a1ae46c1fb498eed2155fa2eb4bccbf47",
+   "words": 61723
+  },
+  "sources/meta/15-thestar-reuters-us-presses-meta-ai-reviews.txt": {
+   "sha256": "0e57bdd618b9c3fe2958f95c16a991573d6a720c10531e65842fdbd652313ebb",
+   "words": 869
+  },
+  "sources/meta/16-fli-ai-safety-index-summer-2026.txt": {
+   "sha256": "8b5ec3c6602bf78bda62b8ef9ae4cb678d4b74026a449da08ffba1002948fe39",
+   "words": 70097
+  },
+  "sources/meta/10-audit-privacy-committee-charter-2025-06.txt": {
+   "sha256": "c8edfab2382473b011172eeaa11a41188690a816c43dba033c788887eb0a3729",
+   "words": 2307
+  },
+  "sources/meta/76-sec-meta-2026-proxy-statement-full-text.txt": {
+   "sha256": "1ee1d01d9a886c3e8cf4319264abe87528c0e4b09a9a77cd3ea168afc0d242eb",
+   "words": 46865
+  },
+  "sources/meta/75-sec-meta-8k-annual-meeting-results-2026-05-29.txt": {
+   "sha256": "3f07dee7b31167d1b18ef24112822fa51879144b79544846f079ebfa80c93e1f",
+   "words": 1159
+  },
+  "sources/meta/11-zuckerberg-essay-future-is-for-everyone-newsroom.txt": {
+   "sha256": "88fc90d08a90d5f45cb1acff865932d976bc6877df7b8f646b2e66c773f372f9",
+   "words": 7473
+  },
+  "sources/meta/02-semafor-zuckerberg-shaped-pledge.txt": {
+   "sha256": "914e601e39f589130c3a0765af31acace673796377ae6c6dafbd7403ff2e59b4",
+   "words": 870
+  },
+  "sources/meta/77-thestandard-hk-afp-trump-ai-boss-pledge-2026-09-30.txt": {
+   "sha256": "ab9515d4108677e6c417ec77939d74bb37a6f9725c7736e535a5f658bb0da1a4",
+   "words": 1090
+  },
+  "sources/nvidia/08-ultra-hf-model-card.txt": {
+   "sha256": "8139e70f77c1bd9d7fb89082649ebe933056fe39a7375e4ac86c513e123185f2",
+   "words": 13298
+  },
+  "sources/nvidia/01-frontier-ai-risk-assessment.txt": {
+   "sha256": "8b39e36744c073d20344e9437e6ec13eb9a5efe765fafb3ab6b635e62ccd56f1",
+   "words": 6020
+  },
+  "sources/nvidia/24-press-release-open-agent-safety-platform-2026-09-28.txt": {
+   "sha256": "ac3f08beb870c3f739cfe410028da54c9164ebe113d10a32fa38621054cdd0d9",
+   "words": 2818
+  },
+  "sources/nvidia/19-sustainability-report-fy2026-reading-order.txt": {
+   "sha256": "90d8b9af6a91c1415adb2443b1557a8e061d5c1abc47c8496cb4ab6d44c61434",
+   "words": 16358
+  },
+  "sources/nvidia/11-def14a-2026-excerpt.txt": {
+   "sha256": "9d06d0b8ddc885ff699163d26231afbd347f085c20c1a555f3dd43a2776c6c42",
+   "words": 2097
+  },
+  "sources/nvidia/13-audit-committee-charter.txt": {
+   "sha256": "0d6c36b35a8082f9137382c4bce3deb1b741888badf2954384129d533cbe55e6",
+   "words": 2938
+  },
+  "sources/nvidia/70-politico-dfd-big-problem-behind-trumps-ai-accord-2026-09-30.txt": {
+   "sha256": "6c5378b60c2e637ae0e15489f7c3f7b166d4ed95ef10a53f1cda5d16c735607d",
+   "words": 234
+  },
+  "sources/nvidia/71-youtube-auto-captions-rsbn-panel-and-usa-today-qa-2026-09-29.txt": {
+   "sha256": "7a5a111301ea50cde4ce59fd8e77e97e8fc8d753498b2428193320a1e0255ac0",
+   "words": 1098
+  },
+  "sources/nvidia/72-verge-ai-leaders-saying-about-trumps-safety-plan-2026-09-30.txt": {
+   "sha256": "62f77a7935480d2ff668d3ffb374d8d53d352eebce0ccfd19d3408a85fdc7aba",
+   "words": 2079
+  },
+  "sources/nvidia/73-ians-morungexpress-pichai-backs-accord-2026-09-30.txt": {
+   "sha256": "04738c5114518a5a49fdf1f2fb277dc88f7d750a60df642bbec3238432300b8b",
+   "words": 1181
+  },
+  "sources/openai/02-gpt-6-1-sol-addendum.txt": {
+   "sha256": "fab014c255f39a249e200d834a255c3303864bbd4af6aa40304ebbbc456e3da7",
+   "words": 6634
+  },
+  "sources/openai/03-gpt-6-sol-luna-october-update.txt": {
+   "sha256": "4f4de1a651e158541bf68944fada3aafc222cb6bd46c02d93d17165cdf5a6b8f",
+   "words": 5674
+  },
+  "sources/openai/04-gpt-6-astra-system-card.txt": {
+   "sha256": "d9af52a000a60fed14e25b13ce65bb39e9e64de6710f33eea4025cc7a32d0962",
+   "words": 37927
+  },
+  "sources/openai/20-report-command-injecting-reference-tool.txt": {
+   "sha256": "908c39063ca6b93ee845b2ce53cb6601a4e35aa39dca0ebe8f3cb0661ba9195a",
+   "words": 1602
+  },
+  "sources/openai/21-report-internal-eda-host.txt": {
+   "sha256": "d9b18f67c0b2ab8dab236b69dc6c01cac17e28f50425e1a331a4b4725226d8c5",
+   "words": 2188
+  },
+  "sources/openai/19-report-restart-after-slack.txt": {
+   "sha256": "6d5a2a5c325d5faa3bb733291fb8166cd21cfad7db0d311a33c980220d10326f",
+   "words": 1313
+  },
+  "sources/openai/17-report-obtaining-public-statistics.txt": {
+   "sha256": "f3f8740856f0e321137f4d66eba03a65ccd70c7bdb277c0caa435483747869f4",
+   "words": 2326
+  },
+  "sources/openai/18-report-disallowed-web-requests-file-service.txt": {
+   "sha256": "ea1c8d3aeb7036a992e4b650beb12c36a65e42f5b1cb635389c0e617e81b923b",
+   "words": 3265
+  },
+  "sources/openai/16-report-damaging-task-environment.txt": {
+   "sha256": "25b2c1becbbe0dde0ccf3844389daddf9d2597414025e6e10e857ed51cd3dad5",
+   "words": 1663
+  },
+  "sources/openai/25-how-we-will-do-better-for-australia.txt": {
+   "sha256": "a672cb700e1da45aaf5cd921269933fbbd4b810a8b48af4955d0820e5f47134d",
+   "words": 1795
+  },
+  "sources/openai/30-aljazeera-gpt-6-1-astra-not-released.txt": {
+   "sha256": "43cb69da408755b0d49b293c4c8ddb2cd94de79540061b1ff796e4fcf72430e5",
+   "words": 1138
+  },
+  "sources/openai/78-ars-ft-2026-09-30-openai-delays-ipo.txt": {
+   "sha256": "a7e71a1c6288c3972cf080d114d74b9b43bcd612c52810bb37df64c6dfe46d93",
+   "words": 1101
+  },
+  "sources/openai/00b-altman-vanity-fair-part2-transcript-clean.txt": {
+   "sha256": "a7db2b572b9a0fbaf64d52a90ab35b6796f396f3145d9f5eb75336e48e7ddfb0",
+   "words": 4632
+  },
+  "sources/openai/79-verge-2026-10-05-altman-politico-decoded.txt": {
+   "sha256": "366829986de301869ddcca9ae0baeaf07b3bcd64e2a8845115d5a5d3cf32f243",
+   "words": 1617
+  },
+  "sources/openai/73-oag-ca-2026-10-01-subpoena-openai.txt": {
+   "sha256": "b314a126b8cd8f10cd927dfa488266730efb7925a7a01bce41134072f3e60e98",
+   "words": 1096
+  },
+  "sources/openai/74-cbsnews-2026-09-30-ftc-investigation.txt": {
+   "sha256": "628ef4d44b00e75527889811b911c22f01ef031ca23e0a8e4b16fdd3e2801da3",
+   "words": 778
+  },
+  "sources/openai/77-ars-2026-09-30-lasst-lawsuit-openai.txt": {
+   "sha256": "6fa294e41ecf149798abbbb0851840e1b54b1fe02754f6633286e4bdafb7eb5d",
+   "words": 1331
+  },
+  "sources/openai/75-wikimedia-2026-10-05-openai-rogue-agent-activities.txt": {
+   "sha256": "cdf6cbefad6dc80b8a2a298843dc466d25f339163ef9d8bbc8795da54ac4d62f",
+   "words": 1533
+  },
+  "sources/openai/76-verge-2026-10-05-wikipedia-openai-rogue-bots.txt": {
+   "sha256": "eb4df6874c8db95fedef2392f550f60d09743432fc13d05d9f87d7dd560e6bdc",
+   "words": 1441
+  },
+  "sources/openai/08-hf-incident-and-the-road-ahead.txt": {
+   "sha256": "1e25acab1a3ecaf525776ce9972a6be8cf100d56719cb8dc6fb101366fe5f9c4",
+   "words": 4787
+  },
+  "sources/openai/24-pacing-model-development.txt": {
+   "sha256": "844ea1793201220594613f56aceaed84b78a3847dc08ca6487fd0c2105766001",
+   "words": 1487
+  },
+  "sources/openai/23-towards-safety-cases-frontier-training.txt": {
+   "sha256": "260d98264d2d6c497b6e6a34a41e9918f4c224f1d5e00f9bddf9e2692179bee4",
+   "words": 1619
+  },
+  "sources/openai/05-preparedness-framework-v2.txt": {
+   "sha256": "46a863ed3f2da72e15659e44e1b8004acee4de1b7be5c806ad3c4c4a336bcb42",
+   "words": 10390
+  },
+  "sources/openai/32-nextgov-openai-agents-government-sites.txt": {
+   "sha256": "63dd503bbbfc37771d37567eb0fd20880dd97aa2ac37ad2baba2489b5e7b3876",
+   "words": 2084
+  },
+  "sources/openai/28-nyt-via-bostonglobe-ignored-warnings.txt": {
+   "sha256": "86d57d1c9e56dc0e2bb745ba776237e9ec32d59776dcc21976f6be46de1b63ae",
+   "words": 1630
+  },
+  "sources/openai/70-techcrunch-2026-10-01-openai-cuts-ties-three-researchers.txt": {
+   "sha256": "19077dd58a3a79d5e4ae12bfe59aff57dd0d97317c9603cb2cf99c2c232fbef6",
+   "words": 745
+  },
+  "sources/openai/71-techcrunch-2026-10-08-researchers-open-letter.txt": {
+   "sha256": "a8ff6955226098aa1fbe9d3b1d8e7287c3bb3afd7686b7ecbd92d7170ab5eff6",
+   "words": 1414
+  },
+  "sources/openai/83-x-openainewsroom-2026-10-09-note-from-research-leaders.txt": {
+   "sha256": "995d6d2fb4747dab89e68d513a338c7d0334785f51dd5d361945d23d17c3e654",
+   "words": 1435
+  },
+  "sources/openai/07-frontier-governance-framework.txt": {
+   "sha256": "7e9eff5968e3156f967c9b8c85d4956bb60ee05f1e5664d279e25a647958f6ab",
+   "words": 4291
+  },
+  "sources/openai/09-hf-incident-technical-report.txt": {
+   "sha256": "7e27e6a118824da024bfca7c66302360127ff4a088a8a195b78655e12a8eb06e",
+   "words": 14499
+  },
+  "sources/openai/22-model-misalignment-reporting-framework.txt": {
+   "sha256": "65d969fde6e56bad87db39161242d47ed876d0d3ec31047560c3d634a458f755",
+   "words": 1888
+  },
+  "sources/openai/36-openai-hf-first-disclosure-2026-07-21.txt": {
+   "sha256": "857936478e5986433f6d7c75d4a3cb5a2d08ae0a94040450bbf0b988349d5d71",
+   "words": 1591
+  },
+  "sources/openai/72-techcrunch-2026-10-03-openai-safety-employee-resigns.txt": {
+   "sha256": "88ebb78ce1392331ab0a6866413c9d8ae401083b68b85f07cfb9d1ecfdfa89ff",
+   "words": 1127
+  },
+  "sources/openai/81-uk-aisi-2026-09-28-gpt-6-astra-supply-chain.txt": {
+   "sha256": "2db19a350b8f3a875d4abe9f38c06bf905c4f76e791a90c84e9f748b34f7b001",
+   "words": 2119
+  },
+  "sources/openai/10-metr-hf-incident-investigation.txt": {
+   "sha256": "378bcd893e1558f01146d31edabd3f4c4af11865937a15f4ea6d97700c8f2eba",
+   "words": 31723
+  },
+  "sources/openai/11-third-party-assessments-principles.txt": {
+   "sha256": "441500b02f2b4900ca70c3d2b6f4ee661b9b5e93e771b0763363b1bcffdd3dc9",
+   "words": 2078
+  },
+  "sources/openai/26-strengthening-safety-external-testing.txt": {
+   "sha256": "7e608ed250b3ea24322e113891f569993c657b1f628b87de6a4667e30eca233d",
+   "words": 2607
+  },
+  "sources/openai/27-openai-foundation-christiano-board.txt": {
+   "sha256": "512b96399cb0c966365cbba1607c0ae71fda0961de94aa01eba68559a3767ab2",
+   "words": 684
+  },
+  "sources/openai/14-delaware-ag-openai-recap.txt": {
+   "sha256": "416c9ee65f7c5602ef845405b51a9656e7d7248e46300dcf5680b727992c305a",
+   "words": 5467
+  },
+  "sources/openai/13-california-ag-mou-openai.txt": {
+   "sha256": "79d0b1847c12a62f7e7b79ab3c60156a4fb62f865b33635156039a51cd782d6d",
+   "words": 2661
+  },
+  "sources/openai/82-nbc-2026-09-26-openai-safety-committee-scrutiny.txt": {
+   "sha256": "fdacf1fe940bcb086888de204a9d868033fee8292c1ede9fc1ba33dddd0c42d5",
+   "words": 766
+  },
+  "sources/openai/80-verge-2026-09-30-ai-leaders-trump-safety-plan.txt": {
+   "sha256": "62f77a7935480d2ff668d3ffb374d8d53d352eebce0ccfd19d3408a85fdc7aba",
+   "words": 2079
+  },
+  "sources/xai/74-xai-frontier-ai-framework-2025-12-30.txt": {
+   "sha256": "db6e218c4ff18f9326d74bde57afc33464745cd021f5b9bddae97fac7f0911ad",
+   "words": 4170
+  },
+  "sources/xai/03-xai-frontier-ai-framework-2026-06-30.txt": {
+   "sha256": "c112202da85a4ef2bff6f23a348041710eba4015a972f8aa0e70c5f0c27a02f3",
+   "words": 3296
+  },
+  "sources/xai/04-grok-4p7-model-card.txt": {
+   "sha256": "bc9a12d2023b3515294abb6919cd996b98e85deb4d7003d51f0f4db3d74e74bf",
+   "words": 6295
+  },
+  "sources/xai/72-nvidia-open-agent-safety-platform-release-2026-09-28.txt": {
+   "sha256": "ac3f08beb870c3f739cfe410028da54c9164ebe113d10a32fa38621054cdd0d9",
+   "words": 2818
+  },
+  "sources/xai/28-yahoo-xodus-xai-cofounders.txt": {
+   "sha256": "8c6a4518a17d334b78e10008b49a650863db072d22566310ddd46caaf454a2c0",
+   "words": 1280
+  },
+  "sources/xai/27-fli-ai-safety-index-summer-2026.txt": {
+   "sha256": "fb8c527c9a667f39cfccb86a208488837b97eff238894c3deaffe6e54d3b0220",
+   "words": 4801
+  },
+  "sources/xai/73-xai-safety-page-internet-archive-capture-2026-09-26.txt": {
+   "sha256": "5a4dbeb3248afe39441474375e28433e00e7f8979f4ad4ab3717b6ce0e17e574",
+   "words": 422
+  },
+  "sources/xai/25-hpcwire-nist-caisi-agreements-2026-05-05.txt": {
+   "sha256": "dd6e0a1cf3739c7989300d265791bceae878e076776347ec19624986d6566f0b",
+   "words": 391
+  },
+  "sources/xai/23-xai-news-biosecurity-at-the-frontier.txt": {
+   "sha256": "8fe43aa686e56f5a6498667db72f071c9e3c55035c46717acc42c8272d4cfdb7",
+   "words": 1126
+  },
+  "sources/xai/18-spacex-audit-committee-charter.txt": {
+   "sha256": "282934878001acd9797d8769e64b99df2581018a2f6c8358f46d9f1cfa06b1ef",
+   "words": 1590
+  },
+  "sources/xai/07-spacex-424b4-excerpts.txt": {
+   "sha256": "92cec669c3d7e80e455a501c15222c999925fce841e12a58fcd1de2d0e732106",
+   "words": 2789
+  },
+  "sources/xai/75-spacex-10q-2026-06-30-full-text.txt": {
+   "sha256": "bfbb236eec2d0ed8ec361a5e3f7c0df92f2128351c1772778153f6fe45896b88",
+   "words": 28259
+  },
+  "sources/xai/08-nextgov-accord-eo.txt": {
+   "sha256": "43a51566e43519b84ced69f52c0a304c4acb0519e87e4c04002efa7de2d1bf5a",
+   "words": 1772
+  },
+  "sources/xai/70-youtube-rsbn-panel-auto-captions-2026-09-29.txt": {
+   "sha256": "7a5a111301ea50cde4ce59fd8e77e97e8fc8d753498b2428193320a1e0255ac0",
+   "words": 1098
+  },
+  "sources/xai/71-politico-digital-future-daily-trump-ai-accord-2026-09-30.txt": {
+   "sha256": "6c5378b60c2e637ae0e15489f7c3f7b166d4ed95ef10a53f1cda5d16c735607d",
+   "words": 234
+  },
+  "sources/xai/13-thestandard-hk-afp.txt": {
+   "sha256": "2d37e849ec10008f2499a32e7ddbaed5dc03ea2dfcc445cc1026cf1f9d832ba3",
+   "words": 1086
+  },
+  "sources/context/01-eo-inaugurating-era-of-super-intelligence.txt": {
+   "sha256": "dc5bd3aef69321b32f027d37656a41ece6ce0ac2d6abaecfe5f5700a6d3c7881",
+   "words": 1349
+  },
+  "sources/context/65-federalregister-eo-14434.txt": {
+   "sha256": "f4e5c465b3941d1b5cd508ae2f1993987e22a9d58f3262a5ad1f6eb27ef9d54f",
+   "words": 1886
+  },
+  "sources/context/03-factsheet-whitehouse-articles-url.txt": {
+   "sha256": "125f56c326129caebb2659a5d66585e6a517e16d65dcaa4021a1a378bad85537",
+   "words": 1124
+  },
+  "sources/context/18-cio-self-regulation-new-name.txt": {
+   "sha256": "07057f8e0cbda5061113191abf73f9fe2ad67c78324f9dcce4a0d967be788845",
+   "words": 1387
+  },
+  "sources/context/67-theinformation-safa-takes-shape.txt": {
+   "sha256": "f9a766c73328ea312367b6292aa5e29ac00ed5e38f2abb0fc9632a6786112951",
+   "words": 110
+  },
+  "sources/context/70-cnbc-2026-09-15-openai-google-anthropic-safety.txt": {
+   "sha256": "bcc59362465af70ebb30631525786fc6ad8508e5f888fe632009cbdf9ef2eadc",
+   "words": 918
+  },
+  "sources/context/10-tnw-safa-standards-authority.txt": {
+   "sha256": "bd478308666985518be49d99e4e6efc4cdc82a66d920a1e4ea3113e4c0b11c15",
+   "words": 804
+  },
+  "accord-text.txt": {
+   "sha256": "80ff65688cf39e5ea6d24b7a59be2c1c37a7290b3e67f1ac838677065b8e78eb",
+   "words": 356
+  },
+  "sources/context/48-cfr-ai-safety-pact-toothless.txt": {
+   "sha256": "bad9a175c82cab21ea28d1a9867fb1aca39fbe153b3737ecd3c45c4de3222a98",
+   "words": 2165
+  },
+  "sources/context/37-un-noon-briefing-2026-10-01-excerpt.txt": {
+   "sha256": "a9754d70ca716b30e18d71aefc91f8fd7d5037393fe2fbee1df8d3b93852c788",
+   "words": 279
+  },
+  "sources/context/16-brookings-morally-binding-pact-not-enough.txt": {
+   "sha256": "437b78193a6bab949923eb965d8c36f4587accc441dc31d66519684913fdd3d4",
+   "words": 2206
+  },
+  "sources/context/50-commondreams-dangerous-absurd.txt": {
+   "sha256": "5f17eddb90ec687f442127e3cfd84c7f01e37ca855090eb516462d4ac6905c74",
+   "words": 4071
+  },
+  "sources/context/88-bgov-tech-sector-split.txt": {
+   "sha256": "68148d4c8b024af500a53dbf5a61066c94d15ee6ad66a9b894526ecb17c43fa6",
+   "words": 1390
+  },
+  "sources/context/43-npr-stlpr-trump-says-accord-self-police.txt": {
+   "sha256": "28b2fa27b1f35310d85af45b3ff044f34fddfef4d3a17e764b3980d6cb9c03ed",
+   "words": 1864
+  },
+  "sources/context/41-aljazeera-trump-tech-bosses-sign-pact.txt": {
+   "sha256": "16a237de24482dfb14bda6b9e86e641bff2be6eddaac12301e2c85891ad9239a",
+   "words": 1192
+  },
+  "sources/context/110-itic-members-page.txt": {
+   "sha256": "a71a666c0a65a9147d29067b4418862ffc27ca80823dae0e2a150b6b19f59dea",
+   "words": 996
+  },
+  "sources/context/80-thecuberesearch-accord.txt": {
+   "sha256": "357b1cf62bcd73de68cf5d91b65046f9f7cdd8a1b3e2bad445d90ff9e9098df5",
+   "words": 3221
+  },
+  "sources/context/79-alston-privacy-accord.txt": {
+   "sha256": "9645829d7c1a0cb32bcf4c787212c4fae48cb72c3471736632cbb34e152f0d2e",
+   "words": 1221
+  },
+  "sources/context/61-cbsnews-ftc-investigation.txt": {
+   "sha256": "628ef4d44b00e75527889811b911c22f01ef031ca23e0a8e4b16fdd3e2801da3",
+   "words": 778
+  },
+  "sources/context/59-semafor-ftc-advancing-2026-10-08.txt": {
+   "sha256": "025d88c9c6cda4df1aff9044b2f718d5d255993f8016e048cc5a489c0bb746d2",
+   "words": 1210
+  },
+  "sources/context/26-ap-kold-clayton-task-force.txt": {
+   "sha256": "b82e1cf4dbe4dc0a7b662b29758fb3b8aca0ec6ad883cb89f90c0d162615f57b",
+   "words": 773
+  },
+  "sources/context/57-insurancejournal-ap-oct5.txt": {
+   "sha256": "a2527caece3c856a8e50688ea01c4c7326c9536e3d5444c504de846a5228e6b8",
+   "words": 1118
+  },
+  "sources/context/55-thehill-trump-creates-super-intelligence-force.txt": {
+   "sha256": "78cdc5ae5301b0d040e76b8ad7baaee88a2a3a2db4fa377a7c61c664ede5ee9d",
+   "words": 655
+  },
+  "sources/context/49-cfr-five-ways-ai-task-force.txt": {
+   "sha256": "98878a0ccd2edf3132dab238b196b706e4f41e4f4b6e429cc5c3c44e87aed256",
+   "words": 1695
+  },
+  "sources/context/112-axios-anthropic-breaches-reporting-mandate.txt": {
+   "sha256": "fda8b123dc15f678295027f6b8bba5337233d785717b66780d788bbe1b4b81e1",
+   "words": 795
+  },
+  "sources/context/99-hsgac-rogue-ai-hearing-page.txt": {
+   "sha256": "29d564267e675118d5be139407cc0737af989dd3709057569ffdc12583566991",
+   "words": 118
+  },
+  "sources/context/92-oag-ca-bonta-subpoena-openai.txt": {
+   "sha256": "b314a126b8cd8f10cd927dfa488266730efb7925a7a01bce41134072f3e60e98",
+   "words": 1096
+  },
+  "sources/context/111-nyc-council-ai-hearing-2026-10-05.txt": {
+   "sha256": "ff361a849875a4b79be10f19d206f541c67c59831cd243a4c32606b4d38f16a9",
+   "words": 2138
+  },
+  "sources/anthropic/73-metr-painter-senate-testimony.txt": {
+   "sha256": "5172cbdd9682617b8e24454444ef8b343e572ade935bf13601e9c382a263a584",
+   "words": 3792
+  }
+ },
+ "results": {
+  "anthropic-haiku-5-5-system-card-sandbox-2026-10-07": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "stops before “but”, in the same sentence"
+   ],
+   "quoteSha": "2c64a2897e1bcbac0a7716c998da6bb1325ad2f7f771b6bbd717aac5309ec3f4",
+   "textSha": "f002e5db67ae60e0717adecf7eb189731766bb99d0a812f4cd320982e1a0cbef",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-haiku-5-5-system-card-sandbox-comparison-2026-10-07": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "96166c979698429c530fe8bba02e2a5c0ddad26ad4cd1f1c23abcf45543a22ec",
+   "textSha": "f002e5db67ae60e0717adecf7eb189731766bb99d0a812f4cd320982e1a0cbef",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-haiku-5-5-system-card-sandbox-caveat-2026-10-07": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d99ab08e31b863bfef2b3c873f4bb0e41b8cc202f99c7defb2ae3d46d95ec686",
+   "textSha": "f002e5db67ae60e0717adecf7eb189731766bb99d0a812f4cd320982e1a0cbef",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-haiku-5-5-system-card-sandbox-levels-2026-10-07": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9baeff4189223dd179b06dec8d1fcee848eb022fe6d12030bc5034ba82919b84",
+   "textSha": "f002e5db67ae60e0717adecf7eb189731766bb99d0a812f4cd320982e1a0cbef",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-unintended-model-actions-2026-10-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "84bb7d46d1c8c877de9aa6e43df3396c684dbf9308bccec6bc49c5eabc9de5a6",
+   "textSha": "4d82c44af4199e8bf2004727962acc3ba8866e512f0385aaf174a2d1b6fd9781",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "techcrunch-philadelphia-tip-2026-10-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "77286d130d4eaeb8f60661081c3eda7b7ada07ce7c68b4392ea28054d376439f",
+   "textSha": "510257edd91ba3e539c09e4ba239881e108ef1c7492ad95ca3dd44d15e325849",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "philadelphia-police-statement-6abc-2026-10-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c04657eadd2ba7f8d11408bb412b5c8134cfe485c2bcf985646f8628c1bfd8b2",
+   "textSha": "ddcfe21b4b065623065950025e192b57272641f41342285ab53ba67ce33258eb",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "axios-sifforce-statement-2026-10-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "51c754137d5efa348523ec93e806346812cf0bf790d9870a69cfba09f58f1db9",
+   "textSha": "fda8b123dc15f678295027f6b8bba5337233d785717b66780d788bbe1b4b81e1",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "techcrunch-2026-10-09-cant-reliably-control": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "68603825d4e3533649a454420b12a6a422401b9fe71e1022def8a308f155bea5",
+   "textSha": "c6ed2aaffc4790e11d5784289c02cfbb73077bc8a93d5a33c974c45eaac07903",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-haiku-5-5-system-card-alignment-risk-low-2026-10-07": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "7270e0c4c0a8a41db81189485c29d40aca32c5c7d2b393b55c0a2dab04427859",
+   "textSha": "f002e5db67ae60e0717adecf7eb189731766bb99d0a812f4cd320982e1a0cbef",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-cvp-expansion-2026-10-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e6bcaadade5d026934e0db0a951b0f1b63fec4e6684634ccbcde8c052d34f165",
+   "textSha": "003f6fd71a20d17b38019df54d133a4b71fcfff538dbaf0bd4204580f8067f6a",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "cbs-ftc-probe-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "249a13cfddc90d4ffe7249a2976850098f6d34b96fa0be74c37a5c74ab0c2635",
+   "textSha": "628ef4d44b00e75527889811b911c22f01ef031ca23e0a8e4b16fdd3e2801da3",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "anthropic-rsp-v3-4-2026-07": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "93c521afd858905c51c26385a7761cfa4d0ed7e7f97ad930a4f9b25c1a805d17",
+   "textSha": "d1bcc3cc566764612201b6c66e38cd0265856594e878aa8dcf6a64c02e7e0783",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-jul30-incidents-2026-07-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "7705bd2685ba5739c97141740e7458da1d04834d14b201b25f49116316ecb868",
+   "textSha": "08dfeb218e1e7f9021e06a9f2b3fbec051f74dbd140661896d453ba6cc2d1d94",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-sep9-alignment-assessment-2026-09-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "39db9b33f4345b4d5f8b7e0873e23cc8c46c6507e6a6efbc6c8f22b827b22cf2",
+   "textSha": "1f5afc4b8fa6adfb92af05b44bddea3d615532a92d14d166bcce92b1142ff58d",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-risk-report-2026-08": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “and”"
+   ],
+   "quoteSha": "55956241153fed9520512e3c6ae0b3e54200a20ee3750e338727784436e3cfea",
+   "textSha": "30cdd013033b219030d0d7ce8677941926d72c179fbda2e18c848113a363e1ef",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-risk-report-2026-08-monitoring-sabotage": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ad7c42901b657b1f06a2e0c706fe61ad03bfbeb03827a1b4adcbd7a338d4379b",
+   "textSha": "30cdd013033b219030d0d7ce8677941926d72c179fbda2e18c848113a363e1ef",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-opus-5-5-system-card-sandbox-2026-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "73f2dcfc95815b83a1b1f53e717c7f45b24aa44a66c3be05e2f0f85fa18005a6",
+   "textSha": "0f11f1bb108b0016ea705151eff6b6117612c07048c2960ffed3e1214aedad5f",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "uk-aisi-incident-report-2026-08-04": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "b236d226f141a4473bb2f224cb00e6c026d29fdf3dbd36d31d8c5683305c039d",
+   "textSha": "6e2c87deb8e8c22c045aaa97b294246d0c343cef3e96ebb7edf97a4fdbd948ce",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-rsp-changelog-thresholds-2026-07-08": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0ea392e76065e558f5d546022c9d20e76e4f1fa565d29b5635a6bc3dad4c2d5d",
+   "textSha": "682b9d0419337927edc1002fbcf3c490f1ef2f05288c7c3b06259f3671f383fb",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-rsp-v3-4-internal-sharing-2026-07-08": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "91812ff5fa773147f2556f392032a3c7ed87e78916f830108903599462180e4e",
+   "textSha": "d1bcc3cc566764612201b6c66e38cd0265856594e878aa8dcf6a64c02e7e0783",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-unintended-model-actions-remediation-2026-10-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "be8232a51070eb7bef6a17b0bce6e8f9e57487b8adf2e3452892a6a586bab659",
+   "textSha": "4d82c44af4199e8bf2004727962acc3ba8866e512f0385aaf174a2d1b6fd9781",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-rsp-v3-4-rso-2026-07": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "af5c4b589a9c1c1de772b2b892fdce84ac6ca0e9b99726068c47bb52900e88d9",
+   "textSha": "d1bcc3cc566764612201b6c66e38cd0265856594e878aa8dcf6a64c02e7e0783",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-rsp-noncompliance-policy": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2227d2ca949f5dd6bef34515780ca7b8e398f228e5869cdcdbcefa5a99132266",
+   "textSha": "72a93f89ff47a1e28f573d67032b887bc055fc73c78512f97abee47994c9c508",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-improving-alignment-security-2026-08-31": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ec67f77b421d42a8be136b28f79e77b33501434ce3046966b3ef827db1812152",
+   "textSha": "32017144811033714bd77f424689f152c8f7b9cdaec6c83245907bd57edda53e",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "apollo-2026-09-29-embedded-evaluators": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c2e53264c1bdf882fb8a09f894d1ee412d7a71f0fbe40ae36cad45c245354aeb",
+   "textSha": "6dfe37c88ee91c1c37d28b81615ca156b9b75e57a6b8967b17f708f413b862ae",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-transparency-hub-model-report-2026-10-02": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0e75b9ac43cbcee071d4b3787ec760f4437142d39a6a697eb3b43edac4a9e115",
+   "textSha": "22f3626a294c92a8914a796c713db3781e8ed44c0724b86be41e065387da79c7",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "anthropic-haiku-5-5-system-card-external-testing-2026-10-07": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "a7ce59398327e73b10b1bec4469b4a4a29ddd2ffa0281a14a24201f0813961e1",
+   "textSha": "f002e5db67ae60e0717adecf7eb189731766bb99d0a812f4cd320982e1a0cbef",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "metr-frontier-risk-report-2026-05": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "b00d94c3eace9d791db884831eb4c669a43f22c12a980b0cc395596e6a0fe6e5",
+   "textSha": "26aa38291523f275299d2000bceb7293966c3cd6cfb88bd11901d57f1d7d41e0",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "metr-risk-report-review-2026-05-08": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “but”"
+   ],
+   "quoteSha": "49de44d952ded2e82b7db994bcb2cdefeab7638f50e51d7544b8da4375faa3e6",
+   "textSha": "bf1d5933711c6d32b6ad26e54529d9404449afd1ca0643a9c8361a31439e4116",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-accenture-embedded-evaluation-2026-09-18": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "6ee731366e8e357851358922bcde649d38a7abab83d3a21ad07b83fe13e8dd16",
+   "textSha": "45e59441adb5363cd52855da98dc330df735e76d06c52c05f893f002a4fc0a9a",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "tnw-paying-evaluator-2026-09-19": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "10ad82114e67c8e61c0ba0e50b720bf4e9c865354678aa886d94ad647fe979f5",
+   "textSha": "d60f079324c8f586087a77ec11bee04452253329a0c67c0a18e2ff20ee72d1fe",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-opus-5-5-system-card-external-testing-2026-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "733fe6b362eec99349ccad5d63c5938bbfba7b4f49781633b100cf4675cb5c6b",
+   "textSha": "0f11f1bb108b0016ea705151eff6b6117612c07048c2960ffed3e1214aedad5f",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "metr-opus-5-5-independence-2026-09-22": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "a75c6b2b36e970d0b643dea4991bf8ce2135dd6708b97656d2c2beeccfd2f103",
+   "textSha": "fe6f94990a0d011df1ddd486781d50e448b53eeed3c0471ef4c5388295ded71c",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-rsp-v3-4-board-2026-07": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "12fffb52e16f942356164262ddea578509085f979625535c205cb20935e973c0",
+   "textSha": "d1bcc3cc566764612201b6c66e38cd0265856594e878aa8dcf6a64c02e7e0783",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-board-narasimhan-2026-04-14": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "887f21c654d6b3565c899a188796654ee65c0c3ff410871fea4de49af166f30d",
+   "textSha": "7c2a54bea449679ce5d3ab70b8c19fd8aae4b1bd5d077638181d3695a3462710",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-ltbt-bernanke-2026-07-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f8643012778bec989a0cce3cf25219cc297cce59f02bbf6379f5c3b414a08eda",
+   "textSha": "7a2729961521c3a5c0123084cdddadc534b0b1330fc32fa43b42720ad4732e96",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-cuellar-leaves-ltbt-2026-08-04": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "82e52d1d5834fda7b1b5ebdcefb745edd9a33a74b3b7ef223b395b94699a7500",
+   "textSha": "48a5fb791208938eaa1e34e3d0515a6b90c4b8dfb2996ef0990344fc162a98d3",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "anthropic-confidential-s1-2026-06-01": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "7106ab1aa48e2ce8392da61500833edd8263b5607d35b404a0bd27e66da3642e",
+   "textSha": "78b8da763838b6d0b071229709d9d8a027473deeb05f8bb99b6e747f57357a5c",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "cnbc-amodei-remarks-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "88fcbdb8dc630ac3d0011e410091a7e68581ece41f0eb4069fc6bc9b5de68088",
+   "textSha": "dee2c11d7740b74de79187468caf0b2eabe4300b94823a9c438310ba0cfd38cc",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "importai-475-2026-10-05-clark": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d8480848136353343ea7d4c71d37ae937022e73b8c21e37c70bf1facb2198933",
+   "textSha": "40f910a90dab511fa2c230ce9f3ae63e2a73f41cea539e5e1f477bf6946c951b",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "google-gemini-4-argon-misalignment-monitoring-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "92fbf856a20de4285f637cef09e76753042c99bc34f69b94dc4191b05ce36e3a",
+   "textSha": "4a7a70d4abe428ecdc4dce0209118024ef1dde8ad4280a25fb0be39f044cb4ac",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-gemini-4-argon-sandbox-hardening-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "928bea9654e5fa68196c9d5631cb58609a1a25168fabdcacf0d841398475415d",
+   "textSha": "4a7a70d4abe428ecdc4dce0209118024ef1dde8ad4280a25fb0be39f044cb4ac",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-gemini-4-argon-misuse-safeguards-refusal-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "59bf878761603c37d25ba23f0a72f6e43fd8effa596e2e2d734c32725fa8b0e3",
+   "textSha": "4a7a70d4abe428ecdc4dce0209118024ef1dde8ad4280a25fb0be39f044cb4ac",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-gemini-4-argon-internal-activations-monitoring-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9e6eec2da8b90e4563e17ed5475532c4adbd51f9887c17330fb4c51c1cd64bea",
+   "textSha": "4a7a70d4abe428ecdc4dce0209118024ef1dde8ad4280a25fb0be39f044cb4ac",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-gemini-4-argon-no-cyber-guardrails-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c36e9fc5e800b212e2620b1ed51a7768ebebc47d1556f3fb6e90ddfb578af90b",
+   "textSha": "4a7a70d4abe428ecdc4dce0209118024ef1dde8ad4280a25fb0be39f044cb4ac",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-gemini-4-argon-fairwind-rollout-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0bcfee70b7057ca2639b2200a900dc227d6a8a4fdff1f15f630066c70e340944",
+   "textSha": "4a7a70d4abe428ecdc4dce0209118024ef1dde8ad4280a25fb0be39f044cb4ac",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "deepmind-fairwind-program-access-conditions-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "30b9a05c7597d125536c4af6dd03a65df5c8f6a32238790e47ce6b7e9ea3f10f",
+   "textSha": "569dc1f125d6fb1e49b6f784b30f0319215dfde2d5daad42dbdf31308ca72058",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-fsf-v3-1-2026-04-lifecycle": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "65d62d3521ccb4f23f34c98a4b433571f5d6f4bdb1ec8283fbc310b6707170ff",
+   "textSha": "3579b287d7e0cb53fa5dad0c8505cfc6c98d35589dc09371a346dfcad08c7a99",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-gemini-3-7-flash-fsf-report-2026-08": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e547ec82ab1ba8122490896f7e695750f56c9a9e3b15d43356039792953fdde7",
+   "textSha": "726d5f1df4633f87319de6fb078ee067f8962a001859c3e1da5b61d2b06a6275",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-ai-control-roadmap-blog-2026-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "90963f18c2eaa78f8b045c60f436e6532233dd5843b010e26994fddaeb6c9b5d",
+   "textSha": "00e583cb364fcc2d2b9c5f0569f8ad78c828b0c4e7a65289fe213eb83662468a",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "guardian-gemini-three-companies-adkins-statement-2026-09-19": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "b39de17d588e7e3c1dd4360fccdbd583909504f22c140ef039172ef28b8b52df",
+   "textSha": "bd8d61c5a517deaaaab3c80f2b94b24b8ca9d1ba97083aa7b20b219968d21764",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "guardian-gemini-three-companies-no-public-disclosure-2026-09-19": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “that”"
+   ],
+   "quoteSha": "aecb2a47cd7c954248a32854451b4810f2fb771be2ca283f961a2b98f44bfc76",
+   "textSha": "bd8d61c5a517deaaaab3c80f2b94b24b8ca9d1ba97083aa7b20b219968d21764",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-gemini-4-argon-incident-response-team-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "40cdcca5617edcfc4e05dab89c887b9b5c2179151351a73e9c56773534f49128",
+   "textSha": "4a7a70d4abe428ecdc4dce0209118024ef1dde8ad4280a25fb0be39f044cb4ac",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-fsf-v3-1-governance-2026-04": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "6ef0443c1227996e7d9446d124c7990703a3fa3025a662f873e5640df82200e5",
+   "textSha": "3579b287d7e0cb53fa5dad0c8505cfc6c98d35589dc09371a346dfcad08c7a99",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-rai-report-launch-review-2026-02": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "be1875cd9228b05c7c9bdbb966b270241e6feb8eb1882a7571e8517153d84426",
+   "textSha": "3c03b106187d9c9a0f80ad3c0b7124f48c9c33e91182a95f37fca80bb4f66d0b",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-ai-control-roadmap-control-team-2026-06-22": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d9eafaf6ac29b999556e317bb77e3946d3785ce65f6220bb94bb69727695f60d",
+   "textSha": "4bd1503aa5fbb8c9db00bac044bb76861f27be477e99781c5fec0cf891a86bb9",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-ai-control-roadmap-red-team-exercises-2026-06-22": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c45dd0da9fb32b390e40ae1bbc4d4b6eb2ed2f5e98780f55f245898a98a6b701",
+   "textSha": "4bd1503aa5fbb8c9db00bac044bb76861f27be477e99781c5fec0cf891a86bb9",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-ai-control-blog-measures-performance-2026-06-18": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "8811e8cc2f0e1d075278b92c3af73e5744cd14452db45eff740c62c069106e41",
+   "textSha": "00e583cb364fcc2d2b9c5f0569f8ad78c828b0c4e7a65289fe213eb83662468a",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "govai-fsf-v3-1-analysis-2026-06-04": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "13e62db53d283faf7b44767ba8dadababa558039689e60a9aeb2b31fcc00d336",
+   "textSha": "1b74b7af868aac59885a267556fcc2b8b55d95c9bb8e2eb86a6fa4c9ccc63b45",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-gemini-4-argon-us-government-process-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "15e667e2c9c96f8cf822382fecfb64950694933e6690a9053fcd41d3d0e435f5",
+   "textSha": "4a7a70d4abe428ecdc4dce0209118024ef1dde8ad4280a25fb0be39f044cb4ac",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-gemini-4-argon-external-red-teams-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e2a9fc501d5394727a59e1e781ac5e5c189a36262651dff7987726c504a67a6a",
+   "textSha": "4a7a70d4abe428ecdc4dce0209118024ef1dde8ad4280a25fb0be39f044cb4ac",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "cnbc-gemini-4-argon-us-government-evaluations-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2b5303b28e7dcec0e826295d76a57bf40703e56e7abc8142e917f0928111da96",
+   "textSha": "5d8616a3abd3b3ea8291031503087e166950c051a25f3fc4f377d8f2fa9e85c0",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "cnbc-gemini-4-argon-day-after-accord-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e45fa1f1f58f4fd3eaf9f3abc8e7254754f550d51821278b36f5aa4b7774f3b9",
+   "textSha": "5d8616a3abd3b3ea8291031503087e166950c051a25f3fc4f377d8f2fa9e85c0",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "google-rai-report-named-evaluators-2026-02": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "4592801851faefc9844c4497b37e9c183ce2931c691a854c95c833ead5476add",
+   "textSha": "3c03b106187d9c9a0f80ad3c0b7124f48c9c33e91182a95f37fca80bb4f66d0b",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nist-caisi-agreements-google-deepmind-2026-05-05": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c5da8fa30260e944ea8988472cc1e44b016a9600ce2a8c9cf9691a94b70f0fc5",
+   "textSha": "dd6e0a1cf3739c7989300d265791bceae878e076776347ec19624986d6566f0b",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "metr-frontier-risk-report-google-2026-05-19": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "b458bbcd3f2ea33e192ba7de427f29db33ffc9a4681ef61051e1f680b498bbca",
+   "textSha": "26aa38291523f275299d2000bceb7293966c3cd6cfb88bd11901d57f1d7d41e0",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "caisi-google-deepmind-agreement-2026": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "5df87b9522fb14433b88fc63bdaca5d43874e69b5631a6339c420e431aa28244",
+   "textSha": "af234418e6eb19db66b4b8ab1143ad1c8d8bb27c6a4de1d30d9e78046d6207d5",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "uk-aisi-control-red-team-google-deepmind-monitor-2026-07-23": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ff3a2d3243f3da086ec91d72c8fd7770c2ea8136af6517164aa1215d4b62a50f",
+   "textSha": "cbad8bf44aa8c565bce1e0d1a67df844f4f05c2e8baf61d6501cf96c415f6c1f",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "google-gemini-3-7-flash-fsf-report-external-2026-08": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ddf817e647328b76238033ea61b24ed7abda3d0f7bfe8f341342d81b4e8df735",
+   "textSha": "726d5f1df4633f87319de6fb078ee067f8962a001859c3e1da5b61d2b06a6275",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-gemini-3-7-flash-fsf-report-gray-swan-2026-08": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "936b8a0402fd763916475da9c0a6b5b26f02c5fb93802189a31cf4d44e6e5ce4",
+   "textSha": "726d5f1df4633f87319de6fb078ee067f8962a001859c3e1da5b61d2b06a6275",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "guardian-gemini-test-environment-internet-access-2026-09-19": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d556b3caea1b165e8a6bbf0364373cc9f03eaebfe2160543f1bd8c3fc9050656",
+   "textSha": "bd8d61c5a517deaaaab3c80f2b94b24b8ca9d1ba97083aa7b20b219968d21764",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "bbc-gemini-training-partner-testing-changes-2026-09-19": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c1b5e56ce25e18e59ea568b567ba4b4faf820740ca40f60d6ebdcef5aa67b681",
+   "textSha": "291d3ea5f89253b25ecedc0c926eefea04cfe2e700de8ef8305f0b32c93ee86a",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "alphabet-proxy-2026-04-risk-committee-ai": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "192b42b6b5ca9ac9dcd6ddbae79961ae454e46a13025fe8677388d67c6d3f4ae",
+   "textSha": "6ce736208c267d6584f9e7bc16a1d9b3dc49822e1170aacf54afbfa7684c9636",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "alphabet-risk-compliance-committee-charter-2025-10": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2bad1ed2398926edf52c09ac1f4a797c9d0926b2865224582a32fb4ee3de9127",
+   "textSha": "6cdb7892928848536626a078bfdccc7844403329069fff28fb69e653bafd1804",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "google-rai-report-agi-futures-council-2026-02": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2bdc39362fdb71929757318539fb9af4b2f803a51b0318cd21a3af7fdb556418",
+   "textSha": "3c03b106187d9c9a0f80ad3c0b7124f48c9c33e91182a95f37fca80bb4f66d0b",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "alphabet-8k-2026-proposal-12-result": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ae28acbe2ae1634c96180019a5935c91cfbfafca5c3bd7a8a767e05de3168e34",
+   "textSha": "5ade5b6bf888871526b305ed07051aeff4e281dcbb074993d79e17e2e712b232",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "alphabet-proxy-2026-04-proposal-audit-committee-ai": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "11641c84078d4d9a82711d8fd7279a80954824fb05acd19c4b3f7dad5b9b4090",
+   "textSha": "6ce736208c267d6584f9e7bc16a1d9b3dc49822e1170aacf54afbfa7684c9636",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "alphabet-proxy-2026-04-class-b-votes": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "4643cf7d6e5ee8523e4af15fba3a35f6f08dd79feaefe0d8835f882d699f12db",
+   "textSha": "6ce736208c267d6584f9e7bc16a1d9b3dc49822e1170aacf54afbfa7684c9636",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "ians-pichai-white-house-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ec6b9e968b3b6941eb5662c0f97eed6d068a4d142e180fca799f22d250234346",
+   "textSha": "04738c5114518a5a49fdf1f2fb277dc88f7d750a60df642bbec3238432300b8b",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "ians-pichai-financial-controls-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "548b41edc9dacdbb2d2d2935ea1d431c3e2c39d6d796acaac78a0e927d0914a1",
+   "textSha": "04738c5114518a5a49fdf1f2fb277dc88f7d750a60df642bbec3238432300b8b",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "aljazeera-pichai-x-post-solid-basis-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "288293ead2533466d729a83251e1184070e8352e7d2123bb8c1b96915e159b4f",
+   "textSha": "89d825db643d3f118106997840a1fec96c306fa0dd1aba11c3f8639c2e7749a2",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "aljazeera-pichai-x-post-norms-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d2e49180fdab8f980958ec24b4c259524efd3063464808bb4c4d47d3584c9593",
+   "textSha": "89d825db643d3f118106997840a1fec96c306fa0dd1aba11c3f8639c2e7749a2",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "meta-framework-v2-1-2026-10-containment": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e5b5cd85b7d5d9ea56a6210f25fba59f19dd97a4d687d4766ff45456b462ad9b",
+   "textSha": "404aade9f2458048a175bf442af0202dc8ae622292a0567ad5d1c60afb3afb7d",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-framework-v2-1-2026-10-monitoring": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "b522669ee36ef2fe8d685a7d9893c87c096b6ab9ccbd5948a04320f015a7f773",
+   "textSha": "404aade9f2458048a175bf442af0202dc8ae622292a0567ad5d1c60afb3afb7d",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-blog-2026-10-02-containment": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9f7f121f32142453ed3c3e1f476af65b661271e73a3b02be3ae34255d1d136fb",
+   "textSha": "3bc59098e584c355b6391ddfd64ccf7901df7c8fb3aa99c0f0e1734dc60931d9",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "meta-blog-2026-10-02-reflects-commitments-l1": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d2a419505e384c2297db78e9e25485adef5af6adcceca06f80b277db7976039e",
+   "textSha": "3bc59098e584c355b6391ddfd64ccf7901df7c8fb3aa99c0f0e1734dc60931d9",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "404media-meta-muse-vm-escape-2026-10-05": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "00ed6b955e38f2c3b9138e0aae9175c6bbf00ed6a8b4838f2a7377e390244724",
+   "textSha": "e8b4c987e2bf9eaefa75a440a8b55870bf01bf8d5cee0ccd7628d5d6e5e520f5",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "404media-meta-muse-spokesperson-2026-10-05": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "6cf5ad1088947d35898928b92a9ae43debdcda81938f824f732ab7416a23b564",
+   "textSha": "e8b4c987e2bf9eaefa75a440a8b55870bf01bf8d5cee0ccd7628d5d6e5e520f5",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-framework-v2-0-2026-04-scope": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "28cdf5ef2c2521d6f3a77123a8ac67616777a04360ee2291671eac7871bbaea8",
+   "textSha": "0fd1dc9209434a7024b939a1451245c3b1229d0b8e5780a7d6430ce7351373fd",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-framework-v2-0-2026-04-thresholds": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c1867b44750e88d86a4c3f39fde7c31e98386db6b528e503968a12f84cc88b0f",
+   "textSha": "0fd1dc9209434a7024b939a1451245c3b1229d0b8e5780a7d6430ce7351373fd",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "metr-frontier-risk-report-2026-05-19-meta-monitoring": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “but”"
+   ],
+   "quoteSha": "79a6b92c621f1ebeef3cbeb5ac852f37b417ff196169a419317c235639011128",
+   "textSha": "26aa38291523f275299d2000bceb7293966c3cd6cfb88bd11901d57f1d7d41e0",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-muse-spark-1-1-report-2026-07-risk": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "affb30fa41dd09f050e6b4c362ee363638c8f460bf8e392a088f428b9ddfc4df",
+   "textSha": "57f32a6f20d528c435a7ae3f70cf33ebbe965e414d8584fe4e3e671d8ec6cbf2",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "reuters-nightly-2026-08-06-breach": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "06237c95cca0f12c92d2ecc1616becde8be51b1270d385b9d5545e5b4f700f62",
+   "textSha": "56a78fa9b546f37c47d659d1209933a3a2ae6cc83f4e138fc027e24f437f9671",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-retrospective-2026-08-14-incident": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "198c4a2a0c32fb825af1db67c11c48e1add2d2402c3dca93c39d09844d4e9624",
+   "textSha": "f754ad5bdfc493364322b5be949e086e5fd5d0b0c09f6d121785937a9eb55100",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-blog-2026-09-02-muse-spark-1-3": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "05376568142e73734235a6c8c900af06c7d7771a360cf43a195bca16268aa973",
+   "textSha": "0820917084cdbf21a2962a0964ab6bd98aca1463fc52479854880144c680de54",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-blog-2026-09-08-safety-into-muse": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0c829a96db1c14c44a585baeb128ae661f8e6ab0715877e9621943ab3e72876e",
+   "textSha": "99e8be15853169a2403e3f4a64fffbf8953723af1bcf95c2a2e61230a4e94073",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-framework-v2-1-2026-10-governance-function": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "1f7ff9ef9ddbbb48dca565218df71a20f26fd2974a2cd490086cd0df72ee52e1",
+   "textSha": "404aade9f2458048a175bf442af0202dc8ae622292a0567ad5d1c60afb3afb7d",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-framework-v2-1-2026-10-reporting": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “and”"
+   ],
+   "quoteSha": "fd4eb93057299af75e9e291f512cc36bedeab46b1b9a7e58210e2e7fd18b16b1",
+   "textSha": "404aade9f2458048a175bf442af0202dc8ae622292a0567ad5d1c60afb3afb7d",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-blog-2026-10-02-paraphrase": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "1573baf682fd8fdaae9bea93579b741f1d15d5e39b1e0b0441dd5dae365cdedb",
+   "textSha": "3bc59098e584c355b6391ddfd64ccf7901df7c8fb3aa99c0f0e1734dc60931d9",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "meta-framework-v2-0-2026-04-caio": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9ddff8d574319d0593840fb1b8a78888cab04730faacae87e9d9609181413375",
+   "textSha": "0fd1dc9209434a7024b939a1451245c3b1229d0b8e5780a7d6430ce7351373fd",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-framework-v2-0-2026-04-governance-function": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2d49d13a6ee1e2560e0fb9b5a9cd8fb9cd84b5f8ad9d404808973f3630de53fb",
+   "textSha": "0fd1dc9209434a7024b939a1451245c3b1229d0b8e5780a7d6430ce7351373fd",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-framework-v2-0-2026-04-reporting": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “and”"
+   ],
+   "quoteSha": "3920c473690eeec426cb5033e8036d159a02d0df5a3a1d1ad9bd16eed12510a2",
+   "textSha": "0fd1dc9209434a7024b939a1451245c3b1229d0b8e5780a7d6430ce7351373fd",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-muse-spark-report-2026-06-authors": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "cda26f61f64a04e3460fb337e7cb25c0bc058390dc6ec7a131587f4a7619a79d",
+   "textSha": "3fd9c51b32263fdd2dddf77ae252a22a1ae46c1fb498eed2155fa2eb4bccbf47",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-muse-spark-report-2026-06-decision-makers": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "55a075aff5fea5649b760c852e61c978833f6b256f49cb54d28ac46a1878a28c",
+   "textSha": "3fd9c51b32263fdd2dddf77ae252a22a1ae46c1fb498eed2155fa2eb4bccbf47",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-blog-2026-10-02-paraphrase-l3": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "1573baf682fd8fdaae9bea93579b741f1d15d5e39b1e0b0441dd5dae365cdedb",
+   "textSha": "3bc59098e584c355b6391ddfd64ccf7901df7c8fb3aa99c0f0e1734dc60931d9",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "meta-blog-2026-10-02-outside-experts": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c59d95d99f4b4b762879acc355b5ba90dfa288b5ed80ec23928dcee952c467ab",
+   "textSha": "3bc59098e584c355b6391ddfd64ccf7901df7c8fb3aa99c0f0e1734dc60931d9",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "metr-frontier-risk-report-2026-05-19-meta": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "db6a9484c1a87234d9fc02d97d9f66dee7ffa9ca0af97104a4fb81b8eb2121d0",
+   "textSha": "26aa38291523f275299d2000bceb7293966c3cd6cfb88bd11901d57f1d7d41e0",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-muse-spark-report-2026-06-apollo": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "bdd9b1b89275d82f5159634494b301ee8d0dbc4befe84dd2302d565eaa68bce1",
+   "textSha": "3fd9c51b32263fdd2dddf77ae252a22a1ae46c1fb498eed2155fa2eb4bccbf47",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "reuters-star-2026-06-23-government-review": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "873d3860c45117c83d26a3fe7b45474331b8501196d55a9fb07b222bf878a8ee",
+   "textSha": "0e57bdd618b9c3fe2958f95c16a991573d6a720c10531e65842fdbd652313ebb",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "reuters-star-2026-06-23-meta-reply": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "81a76e9f3f8d3029831abe0a2749f17b76a10bbb68b74a863afbcf4320e4d5ee",
+   "textSha": "0e57bdd618b9c3fe2958f95c16a991573d6a720c10531e65842fdbd652313ebb",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "fli-2026-07-recommendation": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c2cf9a991608796bb5deb03cae7466e0c292541fdadd34a07749e2fb2275c47f",
+   "textSha": "8b5ec3c6602bf78bda62b8ef9ae4cb678d4b74026a449da08ffba1002948fe39",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "meta-muse-spark-1-1-report-2026-07-grayswan": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "82540e362dd36549c5ae491f841682850e9abaf6cbe54273d0de1e1054a0c404",
+   "textSha": "57f32a6f20d528c435a7ae3f70cf33ebbe965e414d8584fe4e3e671d8ec6cbf2",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-retrospective-2026-08-14-irregular": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f88de69bb4052036b3c5a7caab65eca754524136493cb85d7b65c2583071af6f",
+   "textSha": "f754ad5bdfc493364322b5be949e086e5fd5d0b0c09f6d121785937a9eb55100",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-blog-2026-10-02-committee": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "212fce313bd1aa1b0dc83da81eb94b1d289082b239b856a5c4c5c7130f24d81c",
+   "textSha": "3bc59098e584c355b6391ddfd64ccf7901df7c8fb3aa99c0f0e1734dc60931d9",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "meta-framework-v2-1-2026-10-board": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9a6c315c2c18e41b95ce1be2966105ffabc424604bfbc8d8655ed8f5e1abd2e9",
+   "textSha": "404aade9f2458048a175bf442af0202dc8ae622292a0567ad5d1c60afb3afb7d",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-audit-privacy-charter-2025-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "7267a05f59e51405efa6297d7fab80036e2d132e3c18e040bae22bdc5337b12d",
+   "textSha": "c8edfab2382473b011172eeaa11a41188690a816c43dba033c788887eb0a3729",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-proxy-2026-04-ai-meetings": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f0c09fd81672b38aa007ff22c51480c5a0a420bc129633405981b1e1d258478a",
+   "textSha": "1ee1d01d9a886c3e8cf4319264abe87528c0e4b09a9a77cd3ea168afc0d242eb",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-proxy-2026-04-controlled-company": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2885d543c664f1400b70a5c9dff010ca20ae2dc7c93a4539b833783d48077889",
+   "textSha": "1ee1d01d9a886c3e8cf4319264abe87528c0e4b09a9a77cd3ea168afc0d242eb",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-proxy-2026-04-proposal-3-ask": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "15ebbd2d985ea7190f24b2c48a9aca849ef494371e2ca9f54b793b053fc261d6",
+   "textSha": "1ee1d01d9a886c3e8cf4319264abe87528c0e4b09a9a77cd3ea168afc0d242eb",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-proxy-2026-04-proposal-11-ask": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2e18b664c34914c5692ddb469d207b22aae2a1f5c4b129bbd8d6b3a1c0af08b9",
+   "textSha": "1ee1d01d9a886c3e8cf4319264abe87528c0e4b09a9a77cd3ea168afc0d242eb",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-8k-2026-05-29-proposal-3": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "767dfcd13adba66d5eb577f003799626013001a65cfcaefa1545dd6c600e2138",
+   "textSha": "3f07dee7b31167d1b18ef24112822fa51879144b79544846f079ebfa80c93e1f",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-8k-2026-05-29-proposal-11": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0d15c3e043c5d8f6c77fc3156f494be5a06be877d17454bfa56f24627cc74d79",
+   "textSha": "3f07dee7b31167d1b18ef24112822fa51879144b79544846f079ebfa80c93e1f",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-essay-2026-08-10-board": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9305df63db7c9a126f6de32e7442d7ca3acd484589c8dce8b8d14ad9f5da9f45",
+   "textSha": "88fc90d08a90d5f45cb1acff865932d976bc6877df7b8f646b2e66c773f372f9",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "meta-blog-2026-10-02-reflects-commitments": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d2a419505e384c2297db78e9e25485adef5af6adcceca06f80b277db7976039e",
+   "textSha": "3bc59098e584c355b6391ddfd64ccf7901df7c8fb3aa99c0f0e1734dc60931d9",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "semafor-2026-09-30-zuckerberg-quote": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c45ea19f6a9446b7cccb254d1cb23f5dcd5e624e2eed99f2c96950da4f9ebec8",
+   "textSha": "914e601e39f589130c3a0765af31acace673796377ae6c6dafbd7403ff2e59b4",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "meta-afp-zuckerberg-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “and”"
+   ],
+   "quoteSha": "11077abce9966f860be8865fdf25f049199f0d58f53672f2e4524cde40e6b5fa",
+   "textSha": "ab9515d4108677e6c417ec77939d74bb37a6f9725c7736e535a5f658bb0da1a4",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "nvidia-nemotron-3-ultra-model-card": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e000e53b29baf37671502112f8362185cb9ba419dfaa362ef3e6571e15ddb9f2",
+   "textSha": "8139e70f77c1bd9d7fb89082649ebe933056fe39a7375e4ac86c513e123185f2",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nvidia-frontier-ai-risk-assessment": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9db861c972db50a408400faea2886bb784bb5042b4f379c1537b3c2b9c2768af",
+   "textSha": "8b39e36744c073d20344e9437e6ec13eb9a5efe765fafb3ab6b635e62ccd56f1",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nvidia-risk-assessment-frontier-model-definition": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "caddf8a00076d7b8629272d66448505ceb4e0e01d10b6824d26c352a6e0c9685",
+   "textSha": "8b39e36744c073d20344e9437e6ec13eb9a5efe765fafb3ab6b635e62ccd56f1",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nvidia-open-agent-safety-platform-release": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "1340ec6bc5afef766734fddb12e0352119f5ba77cc1d23f0f4b1aa93a3f33c07",
+   "textSha": "ac3f08beb870c3f739cfe410028da54c9164ebe113d10a32fa38621054cdd0d9",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nvidia-sustainability-fy26-tai-leadership": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "4fd23c3e699d8bf1295fbc5d1c9412105e6b463b80812d4f27a6f6129c344240",
+   "textSha": "90d8b9af6a91c1415adb2443b1557a8e061d5c1abc47c8496cb4ab6d44c61434",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nvidia-sustainability-fy26-ai-ethics-committee": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f1d43ebc2a23db321a67ccf8a146b76e702cd1360ed2fcd39f8b5b1fdba7ffd1",
+   "textSha": "90d8b9af6a91c1415adb2443b1557a8e061d5c1abc47c8496cb4ab6d44c61434",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nvidia-risk-assessment-risk-teams": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "b1e736e77ff3b309a5b58016de3e4f22f62af94affe2305edba44f56aa77a50d",
+   "textSha": "8b39e36744c073d20344e9437e6ec13eb9a5efe765fafb3ab6b635e62ccd56f1",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nvidia-sustainability-fy26-third-party-tools": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9cae4519a5aadc92a81aeed9ef36cbc6a00cff0d757643779ad1f21367996a6d",
+   "textSha": "90d8b9af6a91c1415adb2443b1557a8e061d5c1abc47c8496cb4ab6d44c61434",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nvidia-proxy-2026-committees": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "7628c2bba87c3d19a92f4e7cc5e372a634eda77219eec5e9ae1708e6c882f7dd",
+   "textSha": "9d06d0b8ddc885ff699163d26231afbd347f085c20c1a555f3dd43a2776c6c42",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nvidia-proxy-2026-board-risk-oversight-ai": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "50a658cb08b3a654d90a5a8ad41eb843167e5f432409dd66f6461829240e14aa",
+   "textSha": "9d06d0b8ddc885ff699163d26231afbd347f085c20c1a555f3dd43a2776c6c42",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nvidia-audit-committee-charter-2025": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0181550d802a8755535a31b58f3d6a7dc18e9470973f984cd311a209af264737",
+   "textSha": "0d6c36b35a8082f9137382c4bce3deb1b741888badf2954384129d533cbe55e6",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nvidia-risk-assessment-mr5-independent-committee": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c0e94614c7c80d555e5f491b30a3e20c91805ffc33a67c6b7f76aea8de49d1b0",
+   "textSha": "8b39e36744c073d20344e9437e6ec13eb9a5efe765fafb3ab6b635e62ccd56f1",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nvidia-huang-politico-dfd-teeth-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0af47413a126aa84c78b5e0528c812c89e06620d6742977421df8e59a1da194e",
+   "textSha": "6c5378b60c2e637ae0e15489f7c3f7b166d4ed95ef10a53f1cda5d16c735607d",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "nvidia-huang-panel-video-teeth-captions-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "spoken clean-up: i (said twice), the (said twice), has (said twice)"
+   ],
+   "quoteSha": "bcbaf14c2571bdfd67c819d426c6eacdfcfeb2357e36319e7a0981362ad0cbd0",
+   "textSha": "7a5a111301ea50cde4ce59fd8e77e97e8fc8d753498b2428193320a1e0255ac0",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "nvidia-huang-panel-video-containment-monitoring-captions-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "facec24f1070d7287e4337d59d024a76c7170a6b91b86961084c1da97c74b751",
+   "textSha": "7a5a111301ea50cde4ce59fd8e77e97e8fc8d753498b2428193320a1e0255ac0",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "nvidia-huang-verge-new-safety-technologies-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “but”"
+   ],
+   "quoteSha": "aa6f4de7bc948afa314c5bca5ba54f962361507097c06afe549234ed3c48c56d",
+   "textSha": "62f77a7935480d2ff668d3ffb374d8d53d352eebce0ccfd19d3408a85fdc7aba",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "nvidia-huang-ians-no-conflict-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "1bb5819739bf361f4d58a4fc93b66f5b3acb44443bc45b303b92397c991c9863",
+   "textSha": "04738c5114518a5a49fdf1f2fb277dc88f7d750a60df642bbec3238432300b8b",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "openai-gpt-6-1-sol-addendum-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f01fe56efb4d40b89ead097732e01b0d8df3e0047a9e0a14246ad1a9d96476ef",
+   "textSha": "fab014c255f39a249e200d834a255c3303864bbd4af6aa40304ebbbc456e3da7",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-gpt-6-sol-luna-october-update-2026-10-07": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "8d5135987004cf35117c41538457e879609c08fcc9326bc67220d0bff47b9916",
+   "textSha": "4f4de1a651e158541bf68944fada3aafc222cb6bd46c02d93d17165cdf5a6b8f",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-gpt-6-astra-card-dots-appendix-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "33ada63c2e75b09f241b901b289075a22957e024a08c5f5547b46cb32a27598a",
+   "textSha": "d9af52a000a60fed14e25b13ce65bb39e9e64de6710f33eea4025cc7a32d0962",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-misalignment-report-command-injecting-tool-2026-10-02": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "eab9afae83956967abb29a8ea16932d989ca5006bb9f83f52b9dc2ba589f1c19",
+   "textSha": "908c39063ca6b93ee845b2ce53cb6601a4e35aa39dca0ebe8f3cb0661ba9195a",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-misalignment-report-eda-host-2026-10-02": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "1729f1b142e14768ba8c7dbca6e08cfa7da7c9392d2de9cd2d54d22a31798a0a",
+   "textSha": "d9b18f67c0b2ab8dab236b69dc6c01cac17e28f50425e1a331a4b4725226d8c5",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-misalignment-report-slack-restart-2026-10-02": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "636e8bd8943d0c7f637c5caf0d02fce4e66045451d27880ac72c14e024cb458b",
+   "textSha": "6d5a2a5c325d5faa3bb733291fb8166cd21cfad7db0d311a33c980220d10326f",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-misalignment-report-public-statistics-2026-10-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “and”"
+   ],
+   "quoteSha": "0c23356e5542b9310da4aafcae191385c862d867d2f38cff4563d1b3b4e942d3",
+   "textSha": "f3f8740856f0e321137f4d66eba03a65ccd70c7bdb277c0caa435483747869f4",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-misalignment-report-disallowed-web-requests-2026-10-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "517c74082402ded55073d93f2d9d2cf2a63d945d553e6917235d9a1d0b83f9d9",
+   "textSha": "ea1c8d3aeb7036a992e4b650beb12c36a65e42f5b1cb635389c0e617e81b923b",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-misalignment-report-damaging-task-environment-2026-10-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "aea1cb7ea83daffe461c7ababc26d8abfcdb1a331c286c1d05f63b7d109ef996",
+   "textSha": "25b2c1becbbe0dde0ccf3844389daddf9d2597414025e6e10e857ed51cd3dad5",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-australia-post-update-2026-10-04": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "bdd5d36d6e28e9ba4ab56bfc4bc4ff7eaa4b3e42deeca4bb03e985c8674f3604",
+   "textSha": "a672cb700e1da45aaf5cd921269933fbbd4b810a8b48af4955d0820e5f47134d",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "aljazeera-gpt-6-1-astra-not-released-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0f5a6061d6f929ff165014a0bf0337ea37843e803fe767664936d3c0bc3db215",
+   "textSha": "43cb69da408755b0d49b293c4c8ddb2cd94de79540061b1ff796e4fcf72430e5",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "ft-ars-altman-ipo-safety-decisions-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "a750e742e0ef8a6d8ed2eb433f6ac07788c246b87971a21761fdaf7937908780",
+   "textSha": "a7e71a1c6288c3972cf080d114d74b9b43bcd612c52810bb37df64c6dfe46d93",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "altman-vanity-fair-training-stage-2026-10-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "b351026c957fc07e43200954928d5e8aef0afe9cb8061d2526ee3b0e051d0a02",
+   "textSha": "a7db2b572b9a0fbaf64d52a90ab35b6796f396f3145d9f5eb75336e48e7ddfb0",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "altman-vanity-fair-astra-6-1-2026-10-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “and”"
+   ],
+   "quoteSha": "20e901c46a0c6c09e6167da5918604ffc6074abc2d047ac5820617933843e510",
+   "textSha": "a7db2b572b9a0fbaf64d52a90ab35b6796f396f3145d9f5eb75336e48e7ddfb0",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "verge-altman-politico-more-to-disclose-2026-10-05": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c3848fc49046e2c8ca06b925295df674b89e6c3f7c7c90f222f09fd1a0f4c2b8",
+   "textSha": "366829986de301869ddcca9ae0baeaf07b3bcd64e2a8845115d5a5d3cf32f243",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "california-ag-subpoena-openai-2026-10-01": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "80e0e20171e129be2b9551d3be3af4830ebb7c1c0810af34cea89701ccec201c",
+   "textSha": "b314a126b8cd8f10cd927dfa488266730efb7925a7a01bce41134072f3e60e98",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "cbs-ftc-investigation-openai-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "249a13cfddc90d4ffe7249a2976850098f6d34b96fa0be74c37a5c74ab0c2635",
+   "textSha": "628ef4d44b00e75527889811b911c22f01ef031ca23e0a8e4b16fdd3e2801da3",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "ars-lasst-lawsuit-openai-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c206811d9501167e81b31891231e1f459b90e1d4562b3b93040f9d18d41adc8d",
+   "textSha": "6fa294e41ecf149798abbbb0851840e1b54b1fe02754f6633286e4bdafb7eb5d",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "wikimedia-rogue-openai-agents-2026-10-05": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d075faf13448dede9622ab4def4f3184a54a9cf5186b10b5679e19ff22e4b31a",
+   "textSha": "cdf6cbefad6dc80b8a2a298843dc466d25f339163ef9d8bbc8795da54ac4d62f",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "verge-openai-reply-wikimedia-2026-10-05": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9aad54b0733ab052b9f872c2d3c93b8ff25039b837c949329d5b4ffe471187e4",
+   "textSha": "eb4df6874c8db95fedef2392f550f60d09743432fc13d05d9f87d7dd560e6bdc",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-hf-incident-post-2026-08-26": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "8e16733e47e6863149feeb6649f63d7cff47260e4be601245e4da9a6c03228bd",
+   "textSha": "1e25acab1a3ecaf525776ce9972a6be8cf100d56719cb8dc6fb101366fe5f9c4",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-hf-incident-post-cot-requirement-2026-08-26": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "6fa2ab0359ae5549261b5e7a3c4fcf05fa0d0886189dce3863277e22c09c307b",
+   "textSha": "1e25acab1a3ecaf525776ce9972a6be8cf100d56719cb8dc6fb101366fe5f9c4",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-pacing-post-2026-08-18": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "da1c81eb39859d894515c2f1cd84573041b804eb90dc0c610850c6d860a4398d",
+   "textSha": "844ea1793201220594613f56aceaed84b78a3847dc08ca6487fd0c2105766001",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-australia-post-2026-09-28": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "dfcc489d2e0d56afe86ccbe6d51e524c41be8bca0070bc5e955b3fe1f244c6bb",
+   "textSha": "a672cb700e1da45aaf5cd921269933fbbd4b810a8b48af4955d0820e5f47134d",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-gpt-6-astra-system-card-2026-09-03": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0b4a03d9ae4100e091e48c57128f8ec970f9abbe22f1d5cf541d4a75e035e5b8",
+   "textSha": "d9af52a000a60fed14e25b13ce65bb39e9e64de6710f33eea4025cc7a32d0962",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-safety-cases-frontier-training-2026-09-28": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "361f0eb12349a3c574ebadbbf0ed948c53bc814df76595513af18654ea8912be",
+   "textSha": "260d98264d2d6c497b6e6a34a41e9918f4c224f1d5e00f9bddf9e2692179bee4",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-preparedness-framework-v2-safeguards-2025-04-15": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "bbd70e148d84b257cddef525d2a4738e04eb1d85799d7ff0fb023fc854c0de0b",
+   "textSha": "46a863ed3f2da72e15659e44e1b8004acee4de1b7be5c806ad3c4c4a336bcb42",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nextgov-openai-agents-government-sites-2026-09-25": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "73313c72c56a08c53275356350ddc922dbbd32b46e4562cbe97f531f9bbfe026",
+   "textSha": "63dd503bbbfc37771d37567eb0fd20880dd97aa2ac37ad2baba2489b5e7b3876",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "uk-aisi-incident-report-openai-2026-08-04": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "fee85666dd385fa5a6645a0b73c5f1c67800615796d2d2afdea4e1cb967dc730",
+   "textSha": "6e2c87deb8e8c22c045aaa97b294246d0c343cef3e96ebb7edf97a4fdbd948ce",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "metr-frontier-risk-report-2026-05-19-openai": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "04e7c6aa576bdb4963e19122670c4081f0377fdae6cb2197e2af2b447cfdf249",
+   "textSha": "26aa38291523f275299d2000bceb7293966c3cd6cfb88bd11901d57f1d7d41e0",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-gpt-6-astra-card-dots-sag-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "68ab4aff60aa571675b93a6bd5cfb0bb59fcd0d633d75f8fac8a284c3f4c7a77",
+   "textSha": "d9af52a000a60fed14e25b13ce65bb39e9e64de6710f33eea4025cc7a32d0962",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-gpt-6-sol-luna-october-update-sag-2026-10-07": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "3b9915862fb6d2b8634b0f6f16666ede6f1d615166ceca2288d5133b541a3b4a",
+   "textSha": "4f4de1a651e158541bf68944fada3aafc222cb6bd46c02d93d17165cdf5a6b8f",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nyt-via-bostonglobe-security-decision-makers-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “that”"
+   ],
+   "quoteSha": "a52bc524f481e2ebaff393eb427bd331ec9d992d1516168e721d9761c9f8077a",
+   "textSha": "86d57d1c9e56dc0e2bb745ba776237e9ec32d59776dcc21976f6be46de1b63ae",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nyt-via-bostonglobe-employee-warnings-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "5b9c07c632e0a37a9187feb0b80b38cef39716d831f103164cb4ad011cdfc0df",
+   "textSha": "86d57d1c9e56dc0e2bb745ba776237e9ec32d59776dcc21976f6be46de1b63ae",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nyt-via-bostonglobe-openai-response-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0b0c809adc888203618077f6a4c5264cc33301382141c9c65ec2d5c3619e6a7b",
+   "textSha": "86d57d1c9e56dc0e2bb745ba776237e9ec32d59776dcc21976f6be46de1b63ae",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "techcrunch-openai-parts-ways-three-researchers-2026-10-01": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2b09d45c2a1bf48383fd96bb233d4942c29ad3f53694fbf47b764e0869773ac0",
+   "textSha": "19077dd58a3a79d5e4ae12bfe59aff57dd0d97317c9603cb2cf99c2c232fbef6",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "techcrunch-researchers-open-letter-2026-10-08": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "faffe2727abc7aef7af59fb607a7250f0507ee695fa11330ca381a40ca8d1792",
+   "textSha": "a8ff6955226098aa1fbe9d3b1d8e7287c3bb3afd7686b7ecbd92d7170ab5eff6",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-newsroom-x-research-leaders-reply-2026-10-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "39436468ad8ccd509a56ad55000f69d19e8ddee5341dd965c985cd1fbb2d1c96",
+   "textSha": "995d6d2fb4747dab89e68d513a338c7d0334785f51dd5d361945d23d17c3e654",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-preparedness-framework-v2-sag-2025-04-15": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "147a615fec5b7b65951ca12b3dadca73d1c1136e8899635c64f03f7b9ce29b4e",
+   "textSha": "46a863ed3f2da72e15659e44e1b8004acee4de1b7be5c806ad3c4c4a336bcb42",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-frontier-governance-framework-roles-2026-05-28": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ca259b49420c5f5b63b486cef2265e1b7797a0515d719689719d50410d36d3e1",
+   "textSha": "7e9eff5968e3156f967c9b8c85d4956bb60ee05f1e5664d279e25a647958f6ab",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "openai-hf-incident-post-escalation-2026-08-26": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0ae11d4428f5a68db3b037a6bdd231fd74e2a9b817df6959525c460f0361e9eb",
+   "textSha": "1e25acab1a3ecaf525776ce9972a6be8cf100d56719cb8dc6fb101366fe5f9c4",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-hf-technical-report-governance-review-2026-08-26": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "700db5817b44c36d0847bc0028ee9cc383440cff222db453d844c529d5034ed4",
+   "textSha": "7e27e6a118824da024bfca7c66302360127ff4a088a8a195b78655e12a8eb06e",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-misalignment-reporting-framework-2026-09-16": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d79852fd1f01c4159b7a40e5a3d0ddfd6043dfe632cf9a53cbd86739fcf0cf33",
+   "textSha": "65d969fde6e56bad87db39161242d47ed876d0d3ec31047560c3d634a458f755",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-hf-first-disclosure-review-with-ssc-sag-2026-07-28": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "b2a60c016dffbc81d0eaa1bbcdf4b0f0c0f718a6884c1452ef2c7c0ceb49d38b",
+   "textSha": "857936478e5986433f6d7c75d4a3cb5a2d08ae0a94040450bbf0b988349d5d71",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "techcrunch-openai-spokesperson-third-party-evaluators-2026-10-03": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "719f581f0cdf5e29dd387efd554026d28824204098c07c951455b811b28064d7",
+   "textSha": "88ebb78ce1392331ab0a6866413c9d8ae401083b68b85f07cfb9d1ecfdfa89ff",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-newsroom-x-finalizing-assessor-contracts-2026-10-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9c41961d5bd6d62d0fb980b302bacf6bfe67676a0067c7c924587c16e1ac534f",
+   "textSha": "995d6d2fb4747dab89e68d513a338c7d0334785f51dd5d361945d23d17c3e654",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-gpt-6-astra-card-dots-red-teaming-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "106ffa7998685692d32142be9204f552ff561b1be08f8534ce26aaf5b57aebdd",
+   "textSha": "d9af52a000a60fed14e25b13ce65bb39e9e64de6710f33eea4025cc7a32d0962",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-gpt-6-astra-card-third-party-testing-2026-09-03": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "a7a3588f4a506dd3718a8c538f35e836b475e0f1b66e7e107f88b226fc4df798",
+   "textSha": "d9af52a000a60fed14e25b13ce65bb39e9e64de6710f33eea4025cc7a32d0962",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-gpt-6-astra-card-apollo-2026-09-03": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "7dc99ffbce1f03dcd071b77c080f8d9be00c5c7a8265c3362fad1108f0aaf05e",
+   "textSha": "d9af52a000a60fed14e25b13ce65bb39e9e64de6710f33eea4025cc7a32d0962",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "uk-aisi-gpt-6-astra-supply-chain-simulations-2026-09-28": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "7bfe81046ab8751edbf984f7b41f0dd1dcdd211c84eeb6054ecb7e136296d264",
+   "textSha": "2db19a350b8f3a875d4abe9f38c06bf905c4f76e791a90c84e9f748b34f7b001",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "metr-hf-incident-investigation-scope-2026-08-26": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e3b0167289231a6cdb445b4fb8cfb15a13b4037c906604828f952ed7eae7fcbf",
+   "textSha": "378bcd893e1558f01146d31edabd3f4c4af11865937a15f4ea6d97700c8f2eba",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "metr-hf-incident-investigation-payment-2026-08-26": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "bdef7d1d23175f9f3fd542a18e0df8956d63ce2e2a48ea90ebdffc6e29bf054b",
+   "textSha": "378bcd893e1558f01146d31edabd3f4c4af11865937a15f4ea6d97700c8f2eba",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "metr-hf-incident-investigation-redaction-2026-08-26": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9f6b5c3b7d6279caab37965115c88cd55de394d2afd9ba96af6eee3a472afdd8",
+   "textSha": "378bcd893e1558f01146d31edabd3f4c4af11865937a15f4ea6d97700c8f2eba",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "metr-hf-incident-investigation-christiano-footnote-2026-09-13": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "7b00ec41a2f2fab1de283fd2ae2fc5743de92df7b7ad9e953db8b9b2e02a7cf7",
+   "textSha": "378bcd893e1558f01146d31edabd3f4c4af11865937a15f4ea6d97700c8f2eba",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-hf-technical-report-external-advisors-2026-08-26": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "7a2427223b8b5e00ca7d9dd310ab185da88906e800b47fed27861391edab2022",
+   "textSha": "7e27e6a118824da024bfca7c66302360127ff4a088a8a195b78655e12a8eb06e",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-third-party-assessments-principles-2026-09-22": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "1cee51ab9c8888ab77b1e365b6162e7e4fb51bbc7f21e2be5b3ecc0728805a66",
+   "textSha": "441500b02f2b4900ca70c3d2b6f4ee661b9b5e93e771b0763363b1bcffdd3dc9",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-external-testing-post-2025-11-19": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "6dca3fc79c0bc821b0ac5884c2e016cc801fae2a6f09717080b16e41168c863d",
+   "textSha": "7e608ed250b3ea24322e113891f569993c657b1f628b87de6a4667e30eca233d",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-hf-technical-report-ssc-2026-08-26": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9869507164e6384266749619203f4d6b71d1a918bfa07907e17813052009d649",
+   "textSha": "7e27e6a118824da024bfca7c66302360127ff4a088a8a195b78655e12a8eb06e",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-hf-first-disclosure-ssc-briefing-2026-07-21": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d4fc9c49e177b59689874b3ce5a38e053bfec811cf4b51be87a35fc8a88137c9",
+   "textSha": "857936478e5986433f6d7c75d4a3cb5a2d08ae0a94040450bbf0b988349d5d71",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-foundation-christiano-ssc-2026-09-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "3e63dbf73a9e1b15c65626e6441fb15cfe1d90281384000959cd5ff8aeac2023",
+   "textSha": "512b96399cb0c966365cbba1607c0ae71fda0961de94aa01eba68559a3767ab2",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "delaware-ag-openai-recapitalization-2025-10-28": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "4bce59df2b94ddb9be14617ce5470a3b2b9f35af22e8aa200acce82a11e094cf",
+   "textSha": "416c9ee65f7c5602ef845405b51a9656e7d7248e46300dcf5680b727992c305a",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "california-ag-mou-openai-2025-10-27": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "cf2679745abba0871b4da44453629422355120dab9db3ca86798ba203b03df54",
+   "textSha": "79d0b1847c12a62f7e7b79ab3c60156a4fb62f865b33635156039a51cd782d6d",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "openai-preparedness-framework-v2-ssc-2025-04-15": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “and”"
+   ],
+   "quoteSha": "00b2ad29ff8dde9e65517113545c1e3f70c0f6422a0df5b4b290ef1279e6a205",
+   "textSha": "46a863ed3f2da72e15659e44e1b8004acee4de1b7be5c806ad3c4c4a336bcb42",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nbc-openai-safety-committee-scrutiny-2026-09-26": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "67583d1765236387f1c871ef4d38f8c2569b3113ef4a5a3060c6745433769d94",
+   "textSha": "fdacf1fe940bcb086888de204a9d868033fee8292c1ede9fc1ba33dddd0c42d5",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "verge-brockman-white-house-remarks-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "02ce9bdeaeda09d8ce062097a7fc66303b40873fda23983ba755fd072ee6fd9c",
+   "textSha": "62f77a7935480d2ff668d3ffb374d8d53d352eebce0ccfd19d3408a85fdc7aba",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "altman-vanity-fair-accord-good-start-2026-10-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "4310fd4700157dc57aba9082c65518baaca7d301e0f7351c9b95147d0782f357",
+   "textSha": "a7db2b572b9a0fbaf64d52a90ab35b6796f396f3145d9f5eb75336e48e7ddfb0",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "altman-vanity-fair-accord-gesture-2026-10-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “and”"
+   ],
+   "quoteSha": "7c299cceb311e1d56bddb12e78cb0319d3bd5f601a2e1ec9a894cee39161f589",
+   "textSha": "a7db2b572b9a0fbaf64d52a90ab35b6796f396f3145d9f5eb75336e48e7ddfb0",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "xai-faif-2025-12-deployment-criterion": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "324b37cb9b6a8ced001a13baa067bd7cea9d4c8870e2198b6b4b839c33821423",
+   "textSha": "db6e218c4ff18f9326d74bde57afc33464745cd021f5b9bddae97fac7f0911ad",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-faif-2026-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "72e27277acc6692a797cc46e0d83d1b80cefd84372e9a7678981f68cfdd78c9e",
+   "textSha": "c112202da85a4ef2bff6f23a348041710eba4015a972f8aa0e70c5f0c27a02f3",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-faif-loss-of-control-2026-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “and”"
+   ],
+   "quoteSha": "9cf4175126c3c9033763b0916ebefb2534f884d9c19d85cea589c6701ac5a775",
+   "textSha": "c112202da85a4ef2bff6f23a348041710eba4015a972f8aa0e70c5f0c27a02f3",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-grok-4-7-card-2026-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "43afdfc28c193024f7a9db4b63be8fe75ac20964d15b4c21ebf6e45c51a2d458",
+   "textSha": "bc9a12d2023b3515294abb6919cd996b98e85deb4d7003d51f0f4db3d74e74bf",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-nvidia-oasp-2026-09-28": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f541af5ff9fab29d832a1ea63158462cbc84ae515ea49e7ffc5aadc287b48694",
+   "textSha": "ac3f08beb870c3f739cfe410028da54c9164ebe113d10a32fa38621054cdd0d9",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-faif-governance-2026-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f684585f7520e4b150bc628e54f1f31b786a30cb3896ff8fc7640cc17ea1e649",
+   "textSha": "c112202da85a4ef2bff6f23a348041710eba4015a972f8aa0e70c5f0c27a02f3",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-faif-risk-owners-2026-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "515b2c12d4bf78daee1c72c0acefced5705b104e6981fa988d6ebc593526b2dd",
+   "textSha": "c112202da85a4ef2bff6f23a348041710eba4015a972f8aa0e70c5f0c27a02f3",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-faif-2025-12-risk-owners-audits": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "1765b28a5c8dba63a2a70e933900c4774473e562d73d2b172ff3d1dbca907740",
+   "textSha": "db6e218c4ff18f9326d74bde57afc33464745cd021f5b9bddae97fac7f0911ad",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-faif-2025-12-employee-reporting": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "45448f741c1af4031fc8ae0de0445c1aa9bdc4b017fefa383b0f6d125badd90a",
+   "textSha": "db6e218c4ff18f9326d74bde57afc33464745cd021f5b9bddae97fac7f0911ad",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-fortune-ba-2026-02": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9062ca73cfe1175dba8b89d4be05297755fc66a58f161fa6bf9403405f8cdf6a",
+   "textSha": "8c6a4518a17d334b78e10008b49a650863db072d22566310ddd46caaf454a2c0",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-fli-safety-team-2026-07": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d2be7d7ffb47ad2c224c84ef3e2be0c6214102262285bc0bfa600a7d3fe12b97",
+   "textSha": "fb8c527c9a667f39cfccb86a208488837b97eff238894c3deaffe6e54d3b0220",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "xai-safety-page-hiring-2026-09-26": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "db0c769319e64c411ac81ff73c8060b2e1a5445b30efa469a64e53744112f342",
+   "textSha": "5a4dbeb3248afe39441474375e28433e00e7f8979f4ad4ab3717b6ce0e17e574",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-faif-2025-12-third-party-review": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "094587a965bbb9252eb713a92e888ba06dd35532d8064ddfea1551566d09c675",
+   "textSha": "db6e218c4ff18f9326d74bde57afc33464745cd021f5b9bddae97fac7f0911ad",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-caisi-agreements-2026-05": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "812c0c9091e6856614ce641d8daebea57bfab0454a06aaec037549e37f037296",
+   "textSha": "dd6e0a1cf3739c7989300d265791bceae878e076776347ec19624986d6566f0b",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-latchbio-2026-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "cf69d0245416c702d8c3815d5b24c1e768e9b6a04122acc50472a04fd5decec8",
+   "textSha": "8fe43aa686e56f5a6498667db72f071c9e3c55035c46717acc42c8272d4cfdb7",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-grok-4-7-third-party-2026-09": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f8ee42b44a124949bb05e4c911eef03aa5ae63eadabed37412d2f4a6ba09c555",
+   "textSha": "bc9a12d2023b3515294abb6919cd996b98e85deb4d7003d51f0f4db3d74e74bf",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-spacex-audit-charter-2026-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "cf5e0f025236278900ff3cd48c197cc19e04bbbba6443ac5a73379e063227752",
+   "textSha": "282934878001acd9797d8769e64b99df2581018a2f6c8358f46d9f1cfa06b1ef",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-spacex-424b4-committees-2026-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2b02e41250ced5e282c38ffe7da6fe9a1881fb0b717c9c3040b90699034bd8e3",
+   "textSha": "92cec669c3d7e80e455a501c15222c999925fce841e12a58fcd1de2d0e732106",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-spacex-424b4-controlled-company-2026-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9e0e97274403bd7cd99dfabfcb43d9c7fe3dc557b577817efcdd1c6d0a47aad0",
+   "textSha": "92cec669c3d7e80e455a501c15222c999925fce841e12a58fcd1de2d0e732106",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-spacex-10q-xai-subsidiary-2026-08": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “which”"
+   ],
+   "quoteSha": "a81359419b397c38f851426ee3ac843b07bed48a66f9a83da2143a3b23533a0f",
+   "textSha": "bfbb236eec2d0ed8ec361a5e3f7c0df92f2128351c1772778153f6fe45896b88",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "xai-nextgov-musk-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "59591d2c12510f0b263bcba4181cbdd7cfc4eba3e4fd4b7454abb055838277da",
+   "textSha": "43a51566e43519b84ced69f52c0a304c4acb0519e87e4c04002efa7de2d1bf5a",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "xai-rsbn-panel-joint-monitoring-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “but”",
+    "spoken clean-up: we (said twice), to (said twice), uh, um"
+   ],
+   "quoteSha": "0e18abca8e333a88e633248b003d060ff807727698805b2c7a753454a0e81fa9",
+   "textSha": "7a5a111301ea50cde4ce59fd8e77e97e8fc8d753498b2428193320a1e0255ac0",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "xai-rsbn-panel-audits-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "spoken clean-up: um, that (said twice), uh, from (said twice)"
+   ],
+   "quoteSha": "31323a9e727ad1a1712d37c63dabde287780eb05880fc71dd847ab8469fb2613",
+   "textSha": "7a5a111301ea50cde4ce59fd8e77e97e8fc8d753498b2428193320a1e0255ac0",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "xai-politico-dfd-musk-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "0cd12378b7a82359ecff88224cf56047bdff410d2516b7b86cf8a7c3310de7a0",
+   "textSha": "6c5378b60c2e637ae0e15489f7c3f7b166d4ed95ef10a53f1cda5d16c735607d",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "xai-afp-musk-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "3c11ebc87a3bcac635f3e6c9299dd635577c43d4d4db63d2c664600197d0fad8",
+   "textSha": "2d37e849ec10008f2499a32e7ddbaed5dc03ea2dfcc445cc1026cf1f9d832ba3",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "aljazeera-pichai-x-post-norms-g-2026-09-30": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d2e49180fdab8f980958ec24b4c259524efd3063464808bb4c4d47d3584c9593",
+   "textSha": "89d825db643d3f118106997840a1fec96c306fa0dd1aba11c3f8639c2e7749a2",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "cnbc-amodei-remarks-g-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "88fcbdb8dc630ac3d0011e410091a7e68581ece41f0eb4069fc6bc9b5de68088",
+   "textSha": "dee2c11d7740b74de79187468caf0b2eabe4300b94823a9c438310ba0cfd38cc",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "xai-nextgov-musk-g-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "59591d2c12510f0b263bcba4181cbdd7cfc4eba3e4fd4b7454abb055838277da",
+   "textSha": "43a51566e43519b84ced69f52c0a304c4acb0519e87e4c04002efa7de2d1bf5a",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "altman-vanity-fair-accord-gesture-g-2026-10-06": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “and”"
+   ],
+   "quoteSha": "7c299cceb311e1d56bddb12e78cb0319d3bd5f601a2e1ec9a894cee39161f589",
+   "textSha": "a7db2b572b9a0fbaf64d52a90ab35b6796f396f3145d9f5eb75336e48e7ddfb0",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "wh-eo-14434-2026-09-29": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "fa720b8d2340af6c559f2a3014941a679085d2780f765dfbc6820fd84a9e6875",
+   "textSha": "dc5bd3aef69321b32f027d37656a41ece6ce0ac2d6abaecfe5f5700a6d3c7881",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "wh-eo-14434-sec3b-60-days": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d9fe6c884fd554a96d2ffaa7cdb473450bab685a7f5c630fed876f062d6c4d43",
+   "textSha": "dc5bd3aef69321b32f027d37656a41ece6ce0ac2d6abaecfe5f5700a6d3c7881",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "fr-eo-14434-91-fr-63129": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "250f17230bf70d83191a0cd007611abd2f0524ab4f0fdfd86a3b53ecdb3a159e",
+   "textSha": "f4e5c465b3941d1b5cd508ae2f1993987e22a9d58f3262a5ad1f6eb27ef9d54f",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "wh-factsheet-eo-14434": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2be017948da5bbf875b0146b50c63018b9ba5e2e1a27d5d6bb5be82f4370b789",
+   "textSha": "125f56c326129caebb2659a5d66585e6a517e16d65dcaa4021a1a378bad85537",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "cio-2026-09-30-swain-nov-28": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "46918025afb1b153c70c70b3cdfe8645608e6c96ae43234469943e1d9894ba04",
+   "textSha": "07057f8e0cbda5061113191abf73f9fe2ad67c78324f9dcce4a0d967be788845",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "theinformation-2026-09-24-safa": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c4961c22da7167ff7e658a08e78f37980274064a8fb0a397c20574dd41994559",
+   "textSha": "f9a766c73328ea312367b6292aa5e29ac00ed5e38f2abb0fc9632a6786112951",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "cnbc-2026-09-15-openai-confirms-talks": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "95cbda26f9090200e97453e2ebd7bb7cd68d8bbc1eef33fd1508b3224ab4b72f",
+   "textSha": "bcc59362465af70ebb30631525786fc6ad8508e5f888fe632009cbdf9ef2eadc",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "tnw-2026-09-28-safa-members": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "520d39cdd670534c8102db7561ae9a9b06a165b69c113d0defe2bbe4f0759b5e",
+   "textSha": "bd478308666985518be49d99e4e6efc4cdc82a66d920a1e4ea3113e4c0b11c15",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "accord-text-meet-regularly": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "a888673f151bcd82d6f249e750e542c41274977bc47ccba919e04212437aa05a",
+   "textSha": "80ff65688cf39e5ea6d24b7a59be2c1c37a7290b3e67f1ac838677065b8e78eb",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "cfr-2026-10-01-martin-ongoing-discussions": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "1aab29066068553cfdb3482c9295b76f13e2d68d38c07a0d99e3ebcd7377d11f",
+   "textSha": "bad9a175c82cab21ea28d1a9867fb1aca39fbe153b3737ecd3c45c4de3222a98",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "un-spokesperson-2026-10-01-self-regulation": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "starts inside a longer claim, right after “that”"
+   ],
+   "quoteSha": "08b260143eff28780dbfd02d92abdbeef9eed4a5002bf0c8e1e673eb9b083cfc",
+   "textSha": "a9754d70ca716b30e18d71aefc91f8fd7d5037393fe2fbee1df8d3b93852c788",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "cfr-2026-10-01-martin-toothless": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "205b4cfd8933aa9735bf83e59fddd71817c4c1085375629d6e816e19c5722b38",
+   "textSha": "bad9a175c82cab21ea28d1a9867fb1aca39fbe153b3737ecd3c45c4de3222a98",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "brookings-2026-10-06-wheeler": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "9bcffc56f70bbcb9a47cfdb64725b42e424b3847a5dc0981823392b7853d982d",
+   "textSha": "437b78193a6bab949923eb965d8c36f4587accc441dc31d66519684913fdd3d4",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "commondreams-2026-09-29-warren": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [
+    "contains a question followed by more words: check that the same person asks and answers"
+   ],
+   "quoteSha": "be546af37bb0498639f344d9dd809652a51573b29a28f70cc307584e2192fe2b",
+   "textSha": "5f17eddb90ec687f442127e3cfd84c7f01e37ca855090eb516462d4ac6905c74",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "bgov-2026-10-01-public-citizen-gilbert": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ad36d8459a220c20b1e39391a7bbf9d6ae98bb4bdf67574f0256ebf876a5e00a",
+   "textSha": "68148d4c8b024af500a53dbf5a61066c94d15ee6ad66a9b894526ecb17c43fa6",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "ap-npr-2026-09-30-pascal": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e6ef40e224f9cb181b1081a7427e5450153dcebc1a1c1a7305d86fe2bf635f20",
+   "textSha": "28b2fa27b1f35310d85af45b3ff044f34fddfef4d3a17e764b3980d6cb9c03ed",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "aljazeera-2026-09-29-sacks": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "aa21a3ff18319c65b39f19883b48ed5035cfbda79a86e800943274488b2ca992",
+   "textSha": "16a237de24482dfb14bda6b9e86e641bff2be6eddaac12301e2c85891ad9239a",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "bgov-2026-10-01-iti-miller": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "4d22db3c31e3f4adfa5a4ee2b38d2ba47ea4bc0cddfea43fdc8c1f2170cb7c55",
+   "textSha": "68148d4c8b024af500a53dbf5a61066c94d15ee6ad66a9b894526ecb17c43fa6",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "itic-members-2026-10-10": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e81b672ffb462ff41176dd4bddd2fe67bec6dd8d9437c4f71abfd46e23a3450b",
+   "textSha": "a71a666c0a65a9147d29067b4418862ffc27ca80823dae0e2a150b6b19f59dea",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "thecuberesearch-2026-10-05-govrin": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d96da03c0eb49395b90fc6de2a25a9684e0f72c57e12edfb2ebec29a22da6467",
+   "textSha": "357b1cf62bcd73de68cf5d91b65046f9f7cdd8a1b3e2bad445d90ff9e9098df5",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "alston-2026-10-01-audits-shift": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "5782b16dea8de91d59d09e8ef8b54c4b4dd6c833ebbedb10175c1d81de873292",
+   "textSha": "9645829d7c1a0cb32bcf4c787212c4fae48cb72c3471736632cbb34e152f0d2e",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "ap-npr-2026-09-30-narayanan": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "b4e7e6e37d764fc38b3b8eae7d2ee5105ffa551853c5d025dc378030a81e03c3",
+   "textSha": "28b2fa27b1f35310d85af45b3ff044f34fddfef4d3a17e764b3980d6cb9c03ed",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "cbs-2026-09-30-ftc-confirms": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "562bb7d14db9f7e750ad5e57ed5068750bb22dd46ce4f47f84f895779db0104c",
+   "textSha": "628ef4d44b00e75527889811b911c22f01ef031ca23e0a8e4b16fdd3e2801da3",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "semafor-2026-10-08-ftc-cids": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "69b1a6c4d7302f7131b7ab763c6e8be70a47ecc96e5cc8f7b0faf203b0d82622",
+   "textSha": "025d88c9c6cda4df1aff9044b2f718d5d255993f8016e048cc5a489c0bb746d2",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "ap-npr-2026-09-30-trump-overseer": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "2d30560129288bcdd44facbd001720003d84c917ee3b805f1c917c552746344a",
+   "textSha": "28b2fa27b1f35310d85af45b3ff044f34fddfef4d3a17e764b3980d6cb9c03ed",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "ap-2026-10-04-super-intelligence-force": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "4bfffef419dc489fc6383ca16976a2a806cb332ac5aba9b950bdee8c550465c4",
+   "textSha": "b82e1cf4dbe4dc0a7b662b29758fb3b8aca0ec6ad883cb89f90c0d162615f57b",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "reuters-2026-10-05-sif-120-days": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "ccb663ff41dc0b5817a6a45ac2107339429172b31160ce02b72e5d30a8aa646d",
+   "textSha": "a2527caece3c856a8e50688ea01c4c7326c9536e3d5444c504de846a5228e6b8",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "thehill-2026-10-04-sif-committee": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "13ef1686770e79eb1d20f15d056ad9dbe1f5786fc18d655137fec68d425f1d91",
+   "textSha": "78cdc5ae5301b0d040e76b8ad7baaee88a2a3a2db4fa377a7c61c664ede5ee9d",
+   "textNamesAccord": false,
+   "textMentionsLoosely": true
+  },
+  "cfr-2026-10-07-nguyen-sif-operationalize-accord": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "f940b3b9f7156b3bb6583e1a4b0eed39337a40e56620f01b77873d10fefbb1dd",
+   "textSha": "98878a0ccd2edf3132dab238b196b706e4f41e4f4b6e429cc5c3c44e87aed256",
+   "textNamesAccord": true,
+   "textMentionsLoosely": true
+  },
+  "axios-2026-10-09-reporting-mandate": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e129d04cc00f9ef25b6e876eb732d50c53f05d8c07af430c8c27e96f90d524b1",
+   "textSha": "fda8b123dc15f678295027f6b8bba5337233d785717b66780d788bbe1b4b81e1",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "hsgac-2026-09-30-rogue-ai-hearing": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e0a8656462df4464bb10ebfe00425eb5206c434b9d4733b36ccb91ecd183f277",
+   "textSha": "29d564267e675118d5be139407cc0737af989dd3709057569ffdc12583566991",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "oag-ca-2026-10-01-bonta-subpoena": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "e444cb18d77b5a025b9026b931e5a9a63368c343e92ebbb4a8b7b7d9dd7fa3ad",
+   "textSha": "b314a126b8cd8f10cd927dfa488266730efb7925a7a01bce41134072f3e60e98",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "nyc-council-2026-10-05-ai-hearing": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "401d3e27b767a3ce75811eef0b9954cf6864582960876eb826792e2462545281",
+   "textSha": "ff361a849875a4b79be10f19d206f541c67c59831cd243a4c32606b4d38f16a9",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "apollo-2026-09-29-context-pilot": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "c2e53264c1bdf882fb8a09f894d1ee412d7a71f0fbe40ae36cad45c245354aeb",
+   "textSha": "6dfe37c88ee91c1c37d28b81615ca156b9b75e57a6b8967b17f708f413b862ae",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "apollo-2026-09-29-openai-commitment": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "b8f4aa9187a7be45bb227c8e5da947f1593a7e129106911a0c142dc4d4806795",
+   "textSha": "6dfe37c88ee91c1c37d28b81615ca156b9b75e57a6b8967b17f708f413b862ae",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  },
+  "metr-2026-09-30-context-access": {
+   "ok": true,
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "585e957d02cb6acb3cc344f0254dba4c3fb4720e0f56386c1a947f5781ac313b",
+   "textSha": "5172cbdd9682617b8e24454444ef8b343e572ade935bf13601e9c382a263a584",
+   "textNamesAccord": false,
+   "textMentionsLoosely": false
+  }
+ }
+}

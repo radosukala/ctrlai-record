@@ -1,0 +1,64 @@
+{
+  "checkedOn": "2026-10-10",
+  "status": "nothing",
+  "summary": "We found no report that the six companies have met since the accord was published, and the accord gives no schedule. Several signers have spoken in general terms about the companies working together: Sundar Pichai wrote on X, as quoted by Al Jazeera, that Google is “committed to working with other industry leaders to establish norms and build public confidence”; Dario Amodei said outside the White House that “we all need to work together”; Elon Musk said at the America.gov launch event, according to Nextgov, “We agreed to a number of things that include joint monitoring, board special committees, just generally grading each other’s homework”, without saying who “we” means; Sam Altman called the accord a gesture that will have “some power” between the companies. These remarks are general and are not a meeting, so they do not count. A separate plan for a standards body that three of the companies are reported to be making, which predates the accord, is described under “Around the accord”.",
+  "cs": {
+    "summary": "Nenašli jsme zprávu, že by se všech šest firem od zveřejnění dohody sešlo, a dohoda neuvádí žádný harmonogram. Několik signatářů v obecné rovině hovořilo o spolupráci firem: Sundar Pichai na X píše, jak cituje Al Jazeera, že Google je „odhodlán spolupracovat s dalšími předními firmami odvětví na stanovení norem a budování důvěry veřejnosti“; Dario Amodei před Bílým domem říká, že „všichni musíme spolupracovat“; Elon Musk na akci k zahájení America.gov podle Nextgov říká: „Dohodli jsme se na řadě věcí, mezi nimi společné monitorování, zvláštní výbory správní rady, prostě vzájemné hodnocení domácích úkolů“, bez upřesnění, koho „my“ zahrnuje; Sam Altman označuje dohodu za gesto, které bude mít mezi firmami „určitou váhu“. Tato prohlášení jsou obecná a nejsou schůzkou, takže se nepočítají. Samostatný plán orgánu pro standardy, který podle zpráv připravují tři z firem a který předchází dohodě, je popsán v části „Kolem dohody“."
+  },
+  "evidence": [],
+  "statements": [
+    {
+      "id": "aljazeera-pichai-x-post-norms-g-2026-09-30",
+      "claim": "Al Jazeera also quotes the same post by Pichai as stating a commitment to work with other industry leaders to establish norms and build public confidence.",
+      "publisher": "Al Jazeera",
+      "title": "How does Trump’s White House AI accord work?",
+      "url": "https://www.aljazeera.com/news/2026/9/30/how-does-trumps-white-house-ai-accord-work",
+      "published": "2026-09-30",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "We are committed to working with other industry leaders to establish norms and build public confidence.",
+      "textFile": "sources/google/18-aljazeera-how-does-accord-work.txt"
+    },
+    {
+      "id": "cnbc-amodei-remarks-g-2026-09-29",
+      "claim": "CNBC reported that Dario Amodei, speaking outside the White House on 2026-09-29, the day the accord was signed, said rules to address AI risks are still under discussion and that everyone needs to work together to win safely.",
+      "publisher": "CNBC",
+      "title": "Trump says he and tech leaders signed AI agreement that is 'morally binding'",
+      "url": "https://www.cnbc.com/2026/09/29/tech-white-house-ai-lunch-trump.html",
+      "published": "2026-09-29",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "We all need to work together to make sure that we can win, and we can win safely",
+      "textFile": "sources/anthropic/34-cnbc-sep29-lunch.txt"
+    },
+    {
+      "id": "xai-nextgov-musk-g-2026-09-29",
+      "claim": "Nextgov reported that Musk, speaking at the America.gov launch event on the afternoon of 29 September 2026, said “We agreed to a number of things that include joint monitoring, board special committees, just generally grading each other’s homework”. Nextgov does not say who “we” refers to.",
+      "publisher": "Nextgov/FCW",
+      "title": "White House unveils ‘super intelligence’ executive order and industry accord",
+      "url": "https://nextgov.com/artificial-intelligence/2026/09/white-house-unveils-super-intelligence-executive-order-and-industry-accord/416325",
+      "published": "2026-09-29",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "We agreed to a number of things that include joint monitoring, board special committees, just generally grading each other’s homework",
+      "textFile": "sources/xai/08-nextgov-accord-eo.txt"
+    },
+    {
+      "id": "altman-vanity-fair-accord-gesture-g-2026-10-06",
+      "claim": "In the same interview Altman said that in some sense the accord has no real power, but that there is social force behind such things and that Altman thinks it will have some power between the companies.",
+      "publisher": "Vanity Fair (Fair Game podcast)",
+      "title": "Sam Altman on Donald Trump, Xi Jinping, and the Risk of Extinction (Part Two)",
+      "url": "https://www.youtube.com/watch?v=05pEkW9WUxc",
+      "published": "2026-10-06",
+      "kind": "company-statement",
+      "mentionsAccord": true,
+      "quote": "it's a gesture people will point to it and I think it'll have some power inside in between these companies.",
+      "textFile": "sources/openai/00b-altman-vanity-fair-part2-transcript-clean.txt"
+    }
+  ],
+  "searched": [
+    "Each company’s newsroom, blog and investor pages, the White House’s lists of presidential actions and statements, and news coverage of the accord, for any report of a meeting of the signatories after September 29: none found. Nine news pages on the accord were scanned for meetings and a standards body.",
+    "The Information’s report of September 24 on a planned standards body (paywalled; read through its public preview and through The Next Web, TNW, TechRepublic, Fortune and CNBC) is about three of the six companies and predates the accord.",
+    "Searches for post-signing follow-ups were cut short when the research session’s search limit was used up, so a later report may exist that we did not find."
+  ]
+}

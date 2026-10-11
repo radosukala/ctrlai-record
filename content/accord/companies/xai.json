@@ -1,0 +1,450 @@
+{
+  "id": "xai",
+  "printedAs": "XAI",
+  "name": "xAI",
+  "signedBy": "Elon Musk",
+  "entity": "The signature page prints “XAI”; we found no page saying which legal entity signed. SpaceX’s quarterly report (filed August 4) says SpaceX acquired X.AI Holdings Corp. (“xAI”) on February 2, 2026 and that it became a wholly-owned subsidiary, and calls X.AI Corp. and X.AI LLC indirect subsidiaries; its June 11 prospectus defines “xAI” as X.AI Holdings LLC. xAI’s own documents use other names: the framework says xAI LLC, the Grok 4.7 card says SpaceXAI is a doing-business-as name of XAI LLC, and the website footer says SpaceXAI LLC. We could not tie these names to the filing names or to the signature. SpaceX’s board is the only board we found.",
+  "checkedOn": "2026-10-10",
+  "searched": [
+    "Web search (queries not counted): xAI’s corporate structure, SpaceX’s prospectus and board, the accord and Musk’s statements, xAI’s safety framework and team, government testing agreements, and any committee announced since the accord. Two later searches (an event transcript, and any xAI or SpaceX response after the accord) were not run because the research session’s search limit was used up.",
+    "Opened and read on October 10: x.ai (legal, safety, news, company and security pages, and posts on joining SpaceX and on biosecurity), xAI’s Frontier AI Framework of June 30, 2026, its December 2025 framework, its Grok 4.5, 4.6 and 4.7 model cards, and its August 2025 Risk Management Framework. xAI’s news and About pages list nothing after September 28.",
+    "SpaceX: its updates page (newest entry October 8, none on the accord), its investor-relations page and leadership page with the committee table, its two committee charters and Code of Conduct, its October 9 “Supplemental Company Policies and Practices” (which assigns oversight of privacy, data security and business ethics to the Audit Committee and describes no committee for AI controls), and its second-quarter earnings-call transcript.",
+    "SEC EDGAR for SpaceX: the filings list and 8-K list (newest 8-K August 14; none mentions the accord), the June 2026 prospectus, the quarterly report for the period ended June 30 (saved in full), and three 8-Ks.",
+    "X, opened without signing in: the posts visible on xAI’s, Musk’s and SpaceX’s accounts (six xAI posts dated September 21 to October 8; none about the accord). We could not read full timelines.",
+    "NIST’s CAISSI page (formerly CAISI) and news list (newest item September 17), where the May 5 announcement no longer loads; a reprint of that announcement; Nvidia’s September 28 release; a video of the September 29 panel (automatic captions), Politico’s Digital Future Daily, and news and analysis pages on the accord (Nextgov, AFP via The Standard, Fox Business, Euronews, TechRepublic, Crowell, and others); the Future of Life Institute’s AI Safety Index, Fortune and WIRED."
+  ],
+  "unreachable": [
+    "x.ai, HPCwire and TechRepublic refused automated requests; we read them in a browser. sec.gov refused our usual requests: the prospectus was read in a browser, and the passages we quote were copied by hand and checked against the live text; the quarterly report was saved in full.",
+    "X timelines and search need a login, which we did not use.",
+    "NIST’s own page for the May 5 announcement returns “Page not found” (checked October 10); a reprint was used and is labelled as one. The originals of the Verge, Washington Post and The Information reports on xAI’s safety team and the planned standards body were not opened.",
+    "We found no official transcript of Musk’s remarks at the September 29 events. The video we used has automatic captions without speaker names, so who said what rests on news reports (Nextgov, AFP and Politico)."
+  ],
+  "cells": {
+    "L1": {
+      "status": "nothing",
+      "summary": "We found nothing from xAI on this layer dated September 29 or later. Its news and About pages list nothing after September 28, and neither SpaceX’s updates page nor EDGAR shows anything on it. The latest model card, for Grok 4.7, is dated September 21, before the accord.",
+      "since": [],
+      "before": [
+        {
+          "id": "xai-faif-2025-12-deployment-criterion",
+          "claim": "xAI's Frontier Artificial Intelligence Framework, last updated December 30, 2025, said its risk acceptance criterion for system deployment was maintaining an answer rate of less than 1 out of 20 on restricted queries, measured on an internal benchmark of benign and restricted biology and chemistry queries developed with SecureBio.",
+          "publisher": "xAI (SpaceXAI)",
+          "title": "xAI Frontier Artificial Intelligence Framework (December 2025)",
+          "url": "https://data.x.ai/2025-12-31-xai-frontier-artificial-intelligence-framework.pdf",
+          "published": "2025-12-30",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Our risk acceptance criteria for system deployment is maintaining an answer rate of less than 1 out of 20 on restricted queries.",
+          "textFile": "sources/xai/74-xai-frontier-ai-framework-2025-12-30.txt"
+        },
+        {
+          "id": "xai-faif-2026-06",
+          "claim": "xAI's Frontier AI Framework, effective 30 June 2026, names four risk domains (chemical, biological, radiological and nuclear; offensive cybersecurity; loss of control; harmful manipulation) and says xAI will run a full risk assessment of its frontier models at least once a year.",
+          "publisher": "xAI (SpaceXAI)",
+          "title": "xAI Frontier Artificial Intelligence Framework",
+          "url": "https://media.x.ai/v1/website/xai-frontier-artificial-intelligence-framework-30-june-2026-99c40684.pdf",
+          "published": "2026-06-30",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "xAI will conduct a full systemic risk assessment and mitigation process of our frontier models at least once a year.",
+          "textFile": "sources/xai/03-xai-frontier-ai-framework-2026-06-30.txt"
+        },
+        {
+          "id": "xai-faif-loss-of-control-2026-06",
+          "claim": "The framework says xAI's practice on loss of control centers on scalable model oversight, training against high-risk model behaviors such as deception and sycophancy, and robust evaluation and red-teaming of model-driven agents in controlled sandboxes.",
+          "publisher": "xAI (SpaceXAI)",
+          "title": "xAI Frontier Artificial Intelligence Framework",
+          "url": "https://media.x.ai/v1/website/xai-frontier-artificial-intelligence-framework-30-june-2026-99c40684.pdf",
+          "published": "2026-06-30",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "robust evaluation and red-teaming of model-driven agents in controlled sandboxes",
+          "textFile": "sources/xai/03-xai-frontier-ai-framework-2026-06-30.txt"
+        },
+        {
+          "id": "xai-grok-4-7-card-2026-09",
+          "claim": "The Grok 4.7 model card, dated 21 September 2026, reports xAI's own cyber, biological and chemical capability tests run without production safeguards, plus separate refusal and jailbreak tests of the safeguards.",
+          "publisher": "xAI (SpaceXAI)",
+          "title": "Model Card: Grok 4.7",
+          "url": "https://media.x.ai/v1/website/card4p7-3a96f40b.pdf",
+          "published": "2026-09-21",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Capability tests are run without the safeguards we use in production, which would otherwise mask the model’s full capability",
+          "textFile": "sources/xai/04-grok-4p7-model-card.txt"
+        },
+        {
+          "id": "xai-nvidia-oasp-2026-09-28",
+          "claim": "Nvidia's September 28, 2026 press release launching its Open Agent Safety Platform says SpaceXAI is using the platform for Cursor coding agents and Grok models, and quotes Mike Nicolls, president at SpaceXAI, saying that safety should be enforced outside the model by additional controls the agent can't get past.",
+          "publisher": "NVIDIA",
+          "title": "NVIDIA Launches Open Agent Safety Platform to Secure Agents From Testing to Deployment",
+          "url": "https://nvidianews.nvidia.com/news/open-agent-safety-platform",
+          "published": "2026-09-28",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "SpaceXAI is using NVIDIA Open Agent Safety Platform for Cursor coding agents and Grok models.",
+          "textFile": "sources/xai/72-nvidia-open-agent-safety-platform-release-2026-09-28.txt"
+        }
+      ],
+      "beforeSummary": "xAI’s Frontier AI Framework, effective June 30, 2026, names four risk domains (chemical, biological, radiological and nuclear; offensive cybersecurity; loss of control; harmful manipulation) and says xAI will run a full risk assessment of its frontier models at least once a year. The Grok 4.7 card reports xAI’s own cyber, biological and chemical capability tests, run without production safeguards. On September 28 Nvidia’s release announcing its Open Agent Safety Platform said SpaceXAI is using it for Cursor coding agents and Grok models, and quoted SpaceXAI’s president saying that safety should be enforced outside the model by additional controls the agent can’t get past. xAI’s December 2025 framework had given a numeric deployment criterion for restricted biology and chemistry queries (an answer rate of less than 1 out of 20); we did not find a numeric criterion in the June 30, 2026 framework.",
+      "note": "These are xAI’s own descriptions of its controls, apart from Nvidia’s release, which quotes a SpaceXAI executive. None of the documents mentions the accord. On October 9 Axios reported a White House statement that notifying and remediating AI security incidents is “not optional” for AI companies; see “Around the accord”.",
+      "cs": {
+        "summary": "Nenašli jsme od xAI nic k této vrstvě s datem 29. září či později. Její stránky News a About neuvádějí nic po 28. září a ani stránka novinek SpaceX, ani EDGAR k tomu nic neobsahují. Poslední karta modelu, pro Grok 4.7, je z 21. září, tedy z doby před dohodou."
+      }
+    },
+    "L2": {
+      "status": "nothing",
+      "summary": "We found no named team, head of safety or risk, or announcement about one since the accord. xAI’s framework says it integrates the approach of designating “risk owners”, without naming them.",
+      "since": [],
+      "before": [
+        {
+          "id": "xai-faif-governance-2026-06",
+          "claim": "The framework's short Governance section says xAI maintains internal governance structures and practices and ongoing legal and compliance reviews; it names no team, role or person.",
+          "publisher": "xAI (SpaceXAI)",
+          "title": "xAI Frontier Artificial Intelligence Framework",
+          "url": "https://media.x.ai/v1/website/xai-frontier-artificial-intelligence-framework-30-june-2026-99c40684.pdf",
+          "published": "2026-06-30",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "xAI maintains internal governance structures and practices designed to meet the requirements of applicable laws",
+          "textFile": "sources/xai/03-xai-frontier-ai-framework-2026-06-30.txt"
+        },
+        {
+          "id": "xai-faif-risk-owners-2026-06",
+          "claim": "The framework's incident-reporting section says that, to foster accountability, xAI integrates the approach of designating risk owners, including assigning responsibility for proactively mitigating identified risks and monitoring for critical incidents or imminent threats, and lists channels through which these may be identified (red-teaming, real-time monitoring, employee escalation and others).",
+          "publisher": "xAI (SpaceXAI)",
+          "title": "xAI Frontier Artificial Intelligence Framework",
+          "url": "https://media.x.ai/v1/website/xai-frontier-artificial-intelligence-framework-30-june-2026-99c40684.pdf",
+          "published": "2026-06-30",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "we integrate the approach of designating risk owners, including assigning responsibility for proactively mitigating identified risks and monitoring for critical incidents or imminent threats",
+          "textFile": "sources/xai/03-xai-frontier-ai-framework-2026-06-30.txt"
+        },
+        {
+          "id": "xai-faif-2025-12-risk-owners-audits",
+          "claim": "xAI's Frontier Artificial Intelligence Framework, last updated December 30, 2025, said risk owners were responsible for periodic audits to enforce framework implementation, in addition to mitigating identified risks and monitoring for critical incidents or imminent threats.",
+          "publisher": "xAI (SpaceXAI)",
+          "title": "xAI Frontier Artificial Intelligence Framework (December 2025)",
+          "url": "https://data.x.ai/2025-12-31-xai-frontier-artificial-intelligence-framework.pdf",
+          "published": "2025-12-30",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Risk owners are also responsible for periodic audits to enforce framework implementation.",
+          "textFile": "sources/xai/74-xai-frontier-ai-framework-2025-12-30.txt"
+        },
+        {
+          "id": "xai-faif-2025-12-employee-reporting",
+          "claim": "xAI's Frontier Artificial Intelligence Framework, last updated December 30, 2025, said xAI employees could anonymously report concerns about non-adherence to the framework, with protections from retaliation, and that employees have whistleblower protections enabling them to raise concerns with government agencies about imminent threats to public safety.",
+          "publisher": "xAI (SpaceXAI)",
+          "title": "xAI Frontier Artificial Intelligence Framework (December 2025)",
+          "url": "https://data.x.ai/2025-12-31-xai-frontier-artificial-intelligence-framework.pdf",
+          "published": "2025-12-30",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Internally, we allow xAI employees to anonymously report concerns about nonadherence, with protections from retaliation.",
+          "textFile": "sources/xai/74-xai-frontier-ai-framework-2025-12-30.txt"
+        },
+        {
+          "id": "xai-fortune-ba-2026-02",
+          "claim": "Fortune reported on 11 February 2026 that xAI co-founder Jimmy Ba, who led research and safety efforts, announced a departure from the company, and that six of xAI's 12 original founders had left.",
+          "publisher": "Fortune (via Yahoo Finance)",
+          "title": "X-odus: Half of xAI’s founding team has left Elon Musk’s AI company, potentially complicating his plans for a blockbuster SpaceX IPO",
+          "url": "https://finance.yahoo.com/news/x-odus-half-xai-founding-153600169.html",
+          "published": "2026-02-11",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "Jimmy Ba, a cofounder who led research and safety efforts at the company, announced his departure on Tuesday via an X post",
+          "textFile": "sources/xai/28-yahoo-xodus-xai-cofounders.txt"
+        },
+        {
+          "id": "xai-fli-safety-team-2026-07",
+          "claim": "The Future of Life Institute's AI Safety Index, Summer 2026 (evidence to 3 June 2026, before xAI's framework of 30 June 2026), lists building a substantial safety team among its key recommendations for xAI and says there is no evidence of a meaningful safety team.",
+          "publisher": "Future of Life Institute",
+          "title": "AI Safety Index — Summer 2026",
+          "url": "https://futureoflife.org/ai-safety-index-summer-2026/",
+          "published": "2026-07",
+          "kind": "analysis",
+          "mentionsAccord": false,
+          "quote": "There is no evidence of a meaningful safety team or any ongoing engagement with existential-safety concerns.",
+          "textFile": "sources/xai/27-fli-ai-safety-index-summer-2026.txt"
+        },
+        {
+          "id": "xai-safety-page-hiring-2026-09-26",
+          "claim": "xAI's Safety page says its safety team is actively hiring researchers and engineers; it names no one on the team. The page shows no date; an Internet Archive capture of September 26, 2026 has the same text.",
+          "publisher": "xAI (SpaceXAI)",
+          "title": "Safety | SpaceXAI",
+          "url": "https://web.archive.org/web/20260926152645/https://x.ai/safety",
+          "published": null,
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "Our safety team is actively hiring researchers and engineers.",
+          "textFile": "sources/xai/73-xai-safety-page-internet-archive-capture-2026-09-26.txt",
+          "dateNote": "the page shows no date; text from an Internet Archive capture of September 26, 2026",
+          "notAfter": "2026-09-26"
+        }
+      ],
+      "beforeSummary": "xAI’s framework says it maintains internal governance structures and designates risk owners responsible for mitigating risks and monitoring for critical incidents; it names no team or person, and “risk owners” is a role it does not fill with names. xAI’s safety page (undated; an archived copy of September 26 has the same text) says its safety team is actively hiring and names no one. Before the accord, Fortune reported in February that co-founder Jimmy Ba, who led research and safety efforts, had left, and the Future of Life Institute’s July index (evidence to June 3) said it found no evidence of a meaningful safety team. xAI’s December 2025 framework also said risk owners are responsible for periodic audits to enforce its implementation and that employees can anonymously report concerns about non-adherence, with protections from retaliation; we did not find those passages in the June 30, 2026 framework.",
+      "note": "We found no xAI response to those reports. Fortune’s report and the cut-off of the Future of Life Institute’s evidence (June 3) predate xAI’s June 30 framework.",
+      "cs": {
+        "summary": "Od dohody jsme nenašli žádný pojmenovaný tým, osobu odpovědnou za bezpečnost či rizika ani oznámení o nich. Rámec xAI říká, že xAI začleňuje přístup určování „vlastníků rizik“, aniž by uvedl jejich jména."
+      }
+    },
+    "L3": {
+      "status": "nothing",
+      "summary": "We found nothing from xAI or SpaceX dated since the accord about an auditor or evaluator engaged to check its model controls.",
+      "since": [],
+      "before": [
+        {
+          "id": "xai-faif-2025-12-third-party-review",
+          "claim": "xAI's Frontier Artificial Intelligence Framework, last updated December 30, 2025, said that, as necessities dictate, xAI may provide vetted and qualified external red teams or appropriate government agencies with unredacted versions of the information it publishes under the heading “Public transparency and third-party review”.",
+          "publisher": "xAI (SpaceXAI)",
+          "title": "xAI Frontier Artificial Intelligence Framework (December 2025)",
+          "url": "https://data.x.ai/2025-12-31-xai-frontier-artificial-intelligence-framework.pdf",
+          "published": "2025-12-30",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "we may also provide vetted and qualified external red teams or appropriate government agencies unredacted versions",
+          "textFile": "sources/xai/74-xai-frontier-ai-framework-2025-12-30.txt"
+        },
+        {
+          "id": "xai-caisi-agreements-2026-05",
+          "claim": "A reprint of a NIST press release (credited “Source: NIST”) says that on 5 May 2026 the US Center for AI Standards and Innovation announced new agreements with Google DeepMind, Microsoft and xAI under which it will conduct pre-deployment evaluations and targeted research on frontier AI.",
+          "publisher": "HPCwire (reprint of a NIST press release)",
+          "title": "NIST’s CAISI Announces New Frontier AI Testing Agreements with Google DeepMind, Microsoft, xAI",
+          "url": "https://www.hpcwire.com/off-the-wire/nists-caisi-announces-new-frontier-ai-testing-agreements-with-google-deepmind-microsoft-xai/",
+          "published": "2026-05-05",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "CAISI will conduct pre-deployment evaluations and targeted research to better assess frontier AI capabilities",
+          "textFile": "sources/xai/25-hpcwire-nist-caisi-agreements-2026-05-05.txt"
+        },
+        {
+          "id": "xai-latchbio-2026-09",
+          "claim": "On 1 September 2026 xAI published a post saying LatchBio had released an independent analysis of Grok 4.6 on LatchBio's biological capability and red-teaming benchmarks, and that third-party evaluators complement xAI's own internal evaluations.",
+          "publisher": "xAI (SpaceXAI)",
+          "title": "Biosecurity at the frontier",
+          "url": "https://x.ai/news/biosafety-at-the-frontier",
+          "published": "2026-09-01",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "Today, LatchBio published an independent analysis of Grok 4.6 on their biological capability and biological red-teaming benchmark suites.",
+          "textFile": "sources/xai/23-xai-news-biosecurity-at-the-frontier.txt"
+        },
+        {
+          "id": "xai-grok-4-7-third-party-2026-09",
+          "claim": "The Grok 4.7 card says xAI gave an unrestricted configuration of the model to third-party evaluators (not named in that passage), who corroborated its internal cyber results, and it calls CathedralBench an independent third-party cyber evaluation.",
+          "publisher": "xAI (SpaceXAI)",
+          "title": "Model Card: Grok 4.7",
+          "url": "https://media.x.ai/v1/website/card4p7-3a96f40b.pdf",
+          "published": "2026-09-21",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "We additionally provided an unrestricted configuration of Grok 4.7 to third-party evaluators, who corroborated the results of our internal evaluations",
+          "textFile": "sources/xai/04-grok-4p7-model-card.txt"
+        }
+      ],
+      "beforeSummary": "The US Center for AI Standards and Innovation announced in May an agreement with xAI for pre-deployment evaluations. On September 1 xAI published a post saying LatchBio had released an independent analysis of Grok 4.6, and the Grok 4.7 card says third-party evaluators, not named in that passage, received an unrestricted version and corroborated xAI’s cyber results. xAI’s December 2025 framework also said xAI may provide vetted external red teams or government agencies with unredacted versions of what it publishes; we did not find that passage in the June 30, 2026 framework.",
+      "note": "NIST’s page for the May agreements no longer loads; the center is now named CAISSI. In the xAI, SpaceX and NIST pages we read, we found no outside party described as checking whether xAI’s controls as a whole operate as intended. METR’s September 30 Senate testimony names SpaceXAI among the developers that give it access; it says nothing about what it tested (see “Around the accord”).",
+      "cs": {
+        "summary": "Nenašli jsme od xAI ani SpaceX nic s datem od zveřejnění dohody o auditorovi či hodnotiteli najatém k ověřování kontrolních mechanismů jejich modelů."
+      }
+    },
+    "L4": {
+      "status": "nothing",
+      "summary": "We found no committee of SpaceX’s board for AI controls, and nothing since the accord that announces one. SpaceX, whose quarterly report says it acquired X.AI Holdings Corp. (“xAI”) and that xAI became its wholly-owned subsidiary, lists an Audit Committee and a Compensation and Nominating Committee. Its “Supplemental Company Policies and Practices”, dated October 9, says the Audit Committee oversees privacy and data security matters and business ethics; it describes no committee for AI controls.",
+      "since": [],
+      "before": [
+        {
+          "id": "xai-spacex-audit-charter-2026-06",
+          "claim": "SpaceX's Audit Committee charter, effective 11 June 2026, makes the committee, whose members must be independent directors, responsible for overseeing the company's risk management including data privacy, data security and artificial intelligence.",
+          "publisher": "Space Exploration Technologies Corp. (SpaceX)",
+          "title": "Audit Committee Charter",
+          "url": "https://s21.q4cdn.com/184289198/files/doc_downloads/Audit_Committee_Charter.pdf",
+          "published": "2026-06-11",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "the Company’s risk management, including data privacy, data security and artificial intelligence",
+          "textFile": "sources/xai/18-spacex-audit-committee-charter.txt"
+        },
+        {
+          "id": "xai-spacex-424b4-committees-2026-06",
+          "claim": "SpaceX's IPO prospectus dated 11 June 2026 says that in connection with the offering its board established an audit committee and a compensation and nominating committee.",
+          "publisher": "Space Exploration Technologies Corp. (SpaceX)",
+          "title": "Space Exploration Technologies - 424(b)(4)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+          "published": "2026-06-11",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "our board established an audit committee and a compensation and nominating committee",
+          "textFile": "sources/xai/07-spacex-424b4-excerpts.txt"
+        },
+        {
+          "id": "xai-spacex-424b4-controlled-company-2026-06",
+          "claim": "SpaceX's IPO prospectus dated 11 June 2026 says SpaceX will be a Nasdaq “controlled company” and intends to use certain of the exemptions available to such companies; as a result it does not expect its compensation and nominating committee to be composed entirely of independent directors. It says the board will have eight directors, and names five of them as independent.",
+          "publisher": "Space Exploration Technologies Corp. (SpaceX)",
+          "title": "Space Exploration Technologies - 424(b)(4)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+          "published": "2026-06-11",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "we do not expect to have a compensation and nominating committee that is composed entirely of independent directors",
+          "textFile": "sources/xai/07-spacex-424b4-excerpts.txt"
+        },
+        {
+          "id": "xai-spacex-10q-xai-subsidiary-2026-08",
+          "claim": "SpaceX's Form 10-Q for the quarter ended 30 June 2026 says SpaceX acquired X.AI Holdings Corp. (“xAI”) on 2 February 2026 and that xAI became a wholly-owned subsidiary of SpaceX. Elsewhere it calls X.AI Corp. and X.AI LLC indirect subsidiaries of SpaceX.",
+          "publisher": "Space Exploration Technologies Corp. (SpaceX)",
+          "title": "Form 10-Q for the quarterly period ended June 30, 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
+          "published": "2026-08-04",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "xAI became a wholly-owned subsidiary of the Company",
+          "textFile": "sources/xai/75-spacex-10q-2026-06-30-full-text.txt"
+        }
+      ],
+      "beforeSummary": "SpaceX’s June 2026 prospectus says its board established an audit committee and a compensation and nominating committee, that SpaceX will be a Nasdaq “controlled company” and intends to use certain exemptions, and that it does not expect its compensation and nominating committee to be composed entirely of independent directors; it names five of its eight directors as independent. Its Audit Committee charter, effective June 11, lists “artificial intelligence” among the risks it oversees. SpaceX’s August quarterly report says it acquired X.AI Holdings Corp. (“xAI”) in February and that xAI became a wholly-owned subsidiary.",
+      "note": "At the America.gov launch event on September 29, Musk said, according to Nextgov, “We agreed to a number of things that include joint monitoring, board special committees, just generally grading each other’s homework”. That remark is listed under the company’s statements about the accord and does not count toward the status. SpaceX’s October 9 document mentions AI in a list of legal and regulatory frameworks (“relating to privacy, cybersecurity, AI, data protection, lawful access, content moderation, and digital platform regulation”) and, elsewhere, in connection with data centers and compute; its sentence about “independent external assessors” concerns the information-security program, not AI models. We could not work out how xAI’s several corporate names relate, and we found no separate board or committee at the xAI subsidiary.",
+      "cs": {
+        "summary": "Nenašli jsme žádný výbor správní rady SpaceX pro kontrolní mechanismy umělé inteligence ani žádné oznámení takového výboru od zveřejnění dohody. SpaceX, jejíž čtvrtletní zpráva uvádí, že koupila X.AI Holdings Corp. („xAI“) a že xAI se stala jejím plně vlastněným dceřiným podnikem, uvádí Audit Committee a Compensation and Nominating Committee. Dokument SpaceX „Supplemental Company Policies and Practices“ z 9. října říká, že Audit Committee dohlíží na ochranu soukromí a bezpečnost dat i na obchodní etiku; žádný výbor pro kontrolní mechanismy umělé inteligence nepopisuje."
+      }
+    }
+  },
+  "accordStatements": [
+    {
+      "id": "xai-nextgov-musk-2026-09-29",
+      "claim": "Nextgov reported that Musk, speaking at the America.gov launch event on the afternoon of 29 September 2026, said “We agreed to a number of things that include joint monitoring, board special committees, just generally grading each other’s homework”. Nextgov does not say who “we” refers to.",
+      "publisher": "Nextgov/FCW",
+      "title": "White House unveils ‘super intelligence’ executive order and industry accord",
+      "url": "https://nextgov.com/artificial-intelligence/2026/09/white-house-unveils-super-intelligence-executive-order-and-industry-accord/416325",
+      "published": "2026-09-29",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "We agreed to a number of things that include joint monitoring, board special committees, just generally grading each other’s homework",
+      "textFile": "sources/xai/08-nextgov-accord-eo.txt"
+    },
+    {
+      "id": "xai-rsbn-panel-joint-monitoring-2026-09-29",
+      "claim": "In Right Side Broadcasting Network's video of the September 29 panel after the White House lunch, a speaker says they signed a joint declaration on SI safety and agreed to joint monitoring, board special committees and “grading each other's homework”. YouTube's automatic captions give no speaker names; news reports (Nextgov, AFP, Politico) attribute the “homework” remark to Musk, and the attribution here rests on them.",
+      "publisher": "Right Side Broadcasting Network (YouTube)",
+      "title": "FULL: Elon Musk, Jensen Huang, Tom Brown Discuss the AI Revolution & What's Next - 09/29/26",
+      "url": "https://www.youtube.com/watch?v=388P7IFSpwE",
+      "published": "2026-09-29",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "we agreed to to a number of things that uh include joint monitoring um board special committees",
+      "textFile": "sources/xai/70-youtube-rsbn-panel-auto-captions-2026-09-29.txt"
+    },
+    {
+      "id": "xai-rsbn-panel-audits-2026-09-29",
+      "claim": "In the same passage the speaker lists, among what the declaration includes, rigorous internal controls, an internal audit that escalates, external audits from a third party, and industry sharing of best practices. The captions give no speaker names; the passage follows the “grading each other's homework” remark that news reports attribute to Musk.",
+      "publisher": "Right Side Broadcasting Network (YouTube)",
+      "title": "FULL: Elon Musk, Jensen Huang, Tom Brown Discuss the AI Revolution & What's Next - 09/29/26",
+      "url": "https://www.youtube.com/watch?v=388P7IFSpwE",
+      "published": "2026-09-29",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "internal audit um that that escalates uh external audits um from from a third party",
+      "textFile": "sources/xai/70-youtube-rsbn-panel-auto-captions-2026-09-29.txt"
+    },
+    {
+      "id": "xai-politico-dfd-musk-2026-09-30",
+      "claim": "Politico's Digital Future Daily newsletter reported that SpaceXAI CEO Elon Musk said, “We agreed to ... generally grading each other's homework, which is a lot better if people just grade their own homework.” The ellipsis is in Politico's text.",
+      "publisher": "Politico (Digital Future Daily)",
+      "title": "The big problem behind Trump's AI accord",
+      "url": "https://www.politico.com/newsletters/digital-future-daily/2026/09/30/why-trumps-ai-accord-doesnt-change-anything-01100346",
+      "published": "2026-09-30",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "We agreed to ... generally grading each other's homework, which is a lot better if people just grade their own homework.",
+      "textFile": "sources/xai/71-politico-digital-future-daily-trump-ai-accord-2026-09-30.txt"
+    },
+    {
+      "id": "xai-afp-musk-2026-09-30",
+      "claim": "AFP, in a story carried by The Standard (Hong Kong), reported that Musk said the executives had essentially agreed to \"grading each other's homework, which is a lot better than if people just grade their own homework for obvious reasons\".",
+      "publisher": "The Standard (Hong Kong), AFP",
+      "title": "Trump touts AI boss pledge to self-regulate",
+      "url": "https://www.thestandard.com.hk/world/article/344221/Trump-touts-AI-boss-pledge-to-self-regulate",
+      "published": "2026-09-30",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "grading each other's homework, which is a lot better than if people just grade their own homework for obvious reasons",
+      "textFile": "sources/xai/13-thestandard-hk-afp.txt"
+    }
+  ],
+  "documents": [
+    {
+      "title": "xAI Frontier Artificial Intelligence Framework",
+      "url": "https://media.x.ai/v1/website/xai-frontier-artificial-intelligence-framework-30-june-2026-99c40684.pdf",
+      "published": "2026-06-30",
+      "whatItIs": "xAI's current published policy for managing risks from its frontier models: risk domains, assessment and acceptance, safeguards, security, incident reporting and a short governance section."
+    },
+    {
+      "title": "xAI Frontier Artificial Intelligence Framework (December 2025)",
+      "url": "https://data.x.ai/2025-12-31-xai-frontier-artificial-intelligence-framework.pdf",
+      "published": "2025-12-30",
+      "whatItIs": "xAI's published framework before the June 30, 2026 version, last updated December 30, 2025 (the file name says December 31). x.ai's safety page linked it as the Frontier AI Framework in an archived copy of June 16, 2026."
+    },
+    {
+      "title": "Model Card: Grok 4.7",
+      "url": "https://media.x.ai/v1/website/card4p7-3a96f40b.pdf",
+      "published": "2026-09-21",
+      "whatItIs": "xAI's model card for Grok 4.7, the latest model on its safety page, with benchmark results and cyber, biological, chemical, jailbreak and output-safety evaluations."
+    },
+    {
+      "title": "Model Card: Grok 4.6",
+      "url": "https://media.x.ai/v1/website/card-4p6-4cd2dc57.pdf",
+      "published": "2026-08-12",
+      "whatItIs": "xAI's model card for Grok 4.6, the previous model, with its own evaluation results; revised on 17 August 2026."
+    },
+    {
+      "title": "xAI Risk Management Framework",
+      "url": "https://data.x.ai/2025-08-20-xai-risk-management-framework.pdf",
+      "published": "2025-08-20",
+      "whatItIs": "xAI's earlier risk policy, last updated 20 August 2025; the 30 June 2026 framework does not say whether it replaces this one."
+    },
+    {
+      "title": "Safety | SpaceXAI",
+      "url": "https://x.ai/safety",
+      "published": null,
+      "whatItIs": "xAI's Trust and Safety page, which links the framework and model cards and gives safety and security reporting contacts."
+    },
+    {
+      "title": "Audit Committee Charter (Space Exploration Technologies Corp.)",
+      "url": "https://s21.q4cdn.com/184289198/files/doc_downloads/Audit_Committee_Charter.pdf",
+      "published": "2026-06-11",
+      "whatItIs": "Charter of SpaceX's board Audit Committee, which lists artificial intelligence among the risk-management topics it oversees."
+    },
+    {
+      "title": "Compensation and Nominating Committee Charter (Space Exploration Technologies Corp.)",
+      "url": "https://s21.q4cdn.com/184289198/files/doc_downloads/Compensation_and_Nominating_Committee_Charter.pdf",
+      "published": "2026-06-11",
+      "whatItIs": "Charter of SpaceX's other board committee; it says SpaceX relies on the Nasdaq controlled-company exemption for this committee."
+    },
+    {
+      "title": "Supplemental Company Policies and Practices (Space Exploration Technologies Corp.)",
+      "url": "https://s21.q4cdn.com/184289198/files/doc_downloads/2026/10/Supplemental-Policies-and-Practices.pdf",
+      "published": "2026-10-09",
+      "whatItIs": "A SpaceX summary of its human-capital, ethics, privacy, data-security, product-quality and community practices, which says which board committee oversees ethics and data-security matters."
+    },
+    {
+      "title": "SpaceX - Leadership (investor relations)",
+      "url": "https://ir.spacex.com/leadership/default.aspx",
+      "published": null,
+      "whatItIs": "SpaceX's investor-relations page listing officers, directors, the two board committees and their members, and links to governance documents."
+    },
+    {
+      "title": "Space Exploration Technologies - 424(b)(4)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+      "published": "2026-06-11",
+      "whatItIs": "SpaceX's IPO prospectus, describing its board, committees, controlled-company status and the February 2026 acquisition of xAI."
+    },
+    {
+      "title": "Form 10-Q for the quarterly period ended June 30, 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
+      "published": "2026-08-04",
+      "whatItIs": "SpaceX's latest quarterly report, which describes xAI as a wholly-owned subsidiary and reports an AI segment."
+    }
+  ]
+}

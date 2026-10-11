@@ -1,0 +1,724 @@
+{
+  "id": "google",
+  "printedAs": "Google",
+  "name": "Google",
+  "signedBy": "Sundar Pichai",
+  "entity": "Frameworks, reports and model cards are Google DeepMind’s; the board and its filings are Alphabet Inc.’s.",
+  "checkedOn": "2026-10-10",
+  "searched": [
+    "Web search: Google DeepMind Frontier Safety Framework latest version",
+    "Web search: White House AI accord Google Sundar Pichai signed September 2026",
+    "Web search: Gemini model card frontier safety external evaluators 2026",
+    "Web search: Alphabet 2026 proxy statement DEF 14A board oversight of AI risk Audit and Compliance Committee",
+    "Web search: abc.xyz investor corporate governance board committees charter Audit and Compliance Committee Alphabet",
+    "Web search: Google 2026 Responsible AI Progress Report Responsibility and Safety Council AGI Safety Council Frontier Safety",
+    "Web search: Alphabet annual meeting June 5 2026 shareholder proposal AI board oversight vote results 8-K",
+    "Web search: 'solid basis for moving forward' Pichai White House Accord Joint Commitment on Frontier Responsibilities",
+    "Web search: AI accord signatories industry safety standards body end of 2026 early 2027 companies meet regularly",
+    "Web search: White House AI accord companies plan 'standards body' frontier labs Frontier Model Forum Zuckerberg Pichai Brockman",
+    "Web search: Zuckerberg drafted Trump AI accord Microsoft Amazon didn't sign thenextweb",
+    "Web search: The Information Google OpenAI Anthropic industry-run AI safety standards body plans",
+    "Web search: 'Standards Authority for Frontier AI' October 2026 (no October 2026 reporting found)",
+    "Web search: AI accord signatories first meeting White House frontier AI companies October 2026 independent auditor board committee (no post-signing meeting found)",
+    "Web search: Demis Hassabis July 2026 Frontier AI Standards Body FINRA-style proposal US-led",
+    "Web search: Google DeepMind blog safety announcement October 2026 (no October 2026 DeepMind safety post found)",
+    "Web search: Hassabis White House accord statement DeepMind reaction independent audit (no DeepMind statement on the accord found)",
+    "Web search: AI accord companies board committee independent auditor which companies already comply Alphabet Meta OpenAI analysis (nothing on Alphabet's compliance found)",
+    "Web search: Google DeepMind AI control roadmap rogue agents insider threat June 2026 blog",
+    "Web search: OpenAI Hugging Face incident July 2026 agent unintended access Google DeepMind statement response agents sandbox (no Google statement found)",
+    "Web search: Gemini 4 Argon Google DeepMind release Fairwind Program model card Frontier Safety Framework report",
+    "Web search (blog.google, deepmind.google, ai.google.dev, cloud.google.com only): Gemini 4 Argon announcement",
+    "Web search (same domains): Google Fairwind Program Gemini 3.8 Flash Cyber announcement blog",
+    "Web search: Google Gemini 4 Argon pre-release government testing CAISI voluntary process model access without cyber guardrails criticism no model card",
+    "Web search: Bilal Chughtai resigns Google DeepMind September 2026 AGI safety warning",
+    "Web search: 'A Framework for Frontier AI and the Dawning of a New Age' Hassabis",
+    "Web search: CAISI Center for AI Standards and Innovation Google DeepMind agreement pre-deployment testing Gemini 2026",
+    "Web search: Google Kent Walker OR Pichai OR Hassabis statement 'White House Accord' frontier responsibilities board committee auditor Google plans (no Google-specific plan or statement found beyond Pichai's)",
+    "A further web search for the NIST CAISI release was refused because the shared search budget for the session was used up; no search was run by other means.",
+    "Opened and saved: deepmind.google/frontier-safety (lists FSF v3.1, v3.0, v2.0, v1.0 and FSF reports for Gemini 3.7 Flash and Gemini 3 Pro only; re-fetched at 15:39 CEST on 2026-10-10 and unchanged), deepmind.google/models/model-cards (lists no Gemini 4 Argon or 3.8 Flash Cyber card; newest entries Nano Banana 2.1 and EmbeddingGemma 2, both 6 Oct 2026), deepmind.google/responsibility-and-safety, deepmind.google/fairwind-program",
+    "Opened and saved: model cards for Gemini 3.8 Flash, 3.7 Flash, 3.1 Pro and Nano Banana 2.1; FSF v3.1 PDF; Gemini 3.7 Flash and Gemini 3 Pro FSF report PDFs; AI Control Roadmap PDF and the DeepMind blog post; ai.google AI Principles and the 2026 Responsible AI Progress Report PDF and its blog post",
+    "Opened and saved: blog.google posts on Gemini 4 Argon, the Fairwind Program, and Gemini 3.8 Flash / 3.8 Flash Cyber",
+    "Opened and saved: Alphabet 2026 proxy statement (investor-relations PDF); abc.xyz Board & Governance page and the Risk and Compliance and Audit committee charters; text search of the Nominating and Corporate Governance, Leadership Development/Inclusion/Compensation charters and the Corporate Governance Guidelines for AI, safety, security and technology terms (only a general risk-oversight sentence or workplace-safety wording found; those pages were not saved)",
+    "Opened and saved: Alphabet Form 8-K on the 5 June 2026 annual meeting (sec.gov, built-in browser); EDGAR 8-K list for Alphabet (latest filing 2026-08-10; none on or after 2026-09-29); abc.xyz SEC filings page (annual filings view only)",
+    "Opened and saved: news on the accord and Argon (IANS via Morung Express, Al Jazeera, Fortune, CNBC), The Next Web on the standards body, CDO Magazine on CAISI, GovAI Frontier Risk post on FSF v3.1, UK government MoU text, Hassabis essay, NIST CAISSI page",
+    "Opened but not used: The Information article (paywall page only)",
+    "A second review on October 10 re-checked the places behind the “nothing new” and “no model card” statements, with the newest dated item in each: blog.google (its all-posts feed, newest October 8, and its safety and security, public policy and Gemini models feeds), DeepMind’s blog (newest post October 2026), its model-cards page (newest entries October 6; no Argon or Gemini 3.8 Flash Cyber card), its frontier-safety page (newest framework April 17, 2026; reports only for Gemini 3.7 Flash and Gemini 3 Pro) and its Responsibility & Safety page (newest news item September 2026).",
+    "The same review read DeepMind’s sitemap (19 of 739 pages changed on or after September 29) and blog.google’s English sitemap (93 of 11,730): none adds anything on the four layers beyond the Argon announcement and DeepMind’s Fairwind Program page. It also read the Gemini API and Vertex AI release notes (newest October 8; no Argon safety document), EDGAR (Alphabet’s newest filings are insider forms, the newest filed October 2; newest 8-K August 10) and abc.xyz’s board pages (five committees; no charter revised on or after September 29).",
+    "Pages added in that review: the Guardian’s and the BBC’s reports of September 19 on the Gemini evaluation incident, the UK AI Security Institute’s post of July 23, METR’s Frontier Risk Report of May 19, HPCwire’s reprint of NIST’s May 5 release, DeepMind’s Fairwind Program page, and the PDF of Argon’s evaluation methodology (benchmark settings and results; it is not a model card or a Frontier Safety Framework report and has no red-team or external-evaluator content)."
+  ],
+  "unreachable": [
+    "https://www.sec.gov/Archives/edgar/data/0001652044/000130817926000342/goog-20260424.htm - fetch helper refused (HTTP 403); Alphabet's investor-relations copy of the same proxy statement was used. sec.gov pages for the 8-K and the EDGAR 8-K list opened in the built-in browser.",
+    "https://abc.xyz/investor/board-and-governance/ and its committee pages - fetch helper got HTTP 403 (a 'Just a moment...' challenge page); opened in the built-in browser and the text saved by hand.",
+    "https://blog.google/innovation-and-ai/products/responsible-ai-2026-report-ongoing-work/ - fetch helper saved only the site menu; the article text was taken from the built-in browser.",
+    "https://fastcompany.com/91615769/anthropic-google-meta-ceos-pledge-self-police-ai-development-says-trump - HTTP 403",
+    "https://www.gpb.org/news/2026/09/30/trump-says-top-tech-firms-have-signed-accord-self-police-ai-development - HTTP 403",
+    "https://www.darkreading.com/cyber-risk/trump-tech-giants-strike-voluntary-ai-safety-accord - HTTP 403",
+    "https://www.forbes.com/sites/jonmarkman/2026/09/28/google-openai--anthropic-plan-their-own-finra-style-ai-safety-regulator/ - HTTP 403",
+    "https://www.dawn.com/news/2033975 - HTTP 403",
+    "https://axios.com/2026/06/18/google-deepmind-prepares-for-rogue-ai-agents and https://securityboulevard.com/2026/06/google-deepmind-treats-advanced-ai-as-insider-threats-in-new-cybersecurity-roadmap/ - HTTP 403 (DeepMind's own blog post and roadmap PDF were opened instead)",
+    "https://www.hpcwire.com/off-the-wire/nists-caisi-announces-new-frontier-ai-testing-agreements-with-google-deepmind-microsoft-xai/ - HTTP 403 with the helper; the reprint of NIST’s May 5, 2026 release was read in a browser in the second review.",
+    "https://www.nist.gov/node/1911491 and NIST’s own page for the May 5, 2026 release (www.nist.gov/news-events/news/2026/05/caisi-signs-agreements-regarding-frontier-ai-national-security-testing) - “Page not found” (HTTP 404); guessed NIST news URLs for the CAISI release also returned 404.",
+    "https://deepmind.google/models/model-cards/gemini-4-argon/ and https://deepmind.google/models/model-cards/embeddinggemma-2/ - HTTP 404 (guessed URLs; no Argon model card is linked from DeepMind's model-cards page)",
+    "https://www.theinformation.com/articles/google-openai-anthropic-ai-safety-group-takes-shape - paywalled; only the paywall page was returned",
+    "https://x.com/sundarpichai - opened without signing in; only the latest post was visible, so Pichai's accord post could not be read directly",
+    "https://www.wsj.com/tech/ai/gemini-hacked-three-companies-in-first-known-breakout-by-googles-ai-5c0baba2 - the Wall Street Journal’s report of the Gemini evaluation incident, from which the Guardian and the BBC take their account, refused automated requests (HTTP 401) and was not opened; nytimes.com (HTTP 403), reuters.com (HTTP 401) and news.sky.com (HTTP 403) also refused."
+  ],
+  "cells": {
+    "L1": {
+      "status": "detailed",
+      "summary": "Google’s September 30 announcement of its new model, Gemini 4 Argon, says Google is deploying mitigations that monitor the model’s chain of thought and actions and stop execution when necessary, and is hardening its sandboxed environments by isolating and sealing them before high-risk training or evaluations begin, in line with its agent control roadmap. It says that, to prevent its use for cyber or chemical, biological, radiological and nuclear attacks, the model is designed to refuse harmful requests, “as per our Frontier Safety Framework”, and that Google is improving its techniques to monitor the model’s internal activations to spot misuse.\n\nIt also says that for trusted defenders and its own internal teams it will be releasing Argon without cyber guardrails, and that Argon is rolling out to a set of trusted cyber defenders through the Fairwind Program, whose DeepMind page lists conditions for access. The announcement does not mention the accord, and as of October 10 we found no model card or Frontier Safety Framework report for Argon.",
+      "since": [
+        {
+          "id": "google-gemini-4-argon-misalignment-monitoring-2026-09-30",
+          "claim": "Google's announcement of Gemini 4 Argon says it is deploying mitigations that monitor the model's chain-of-thought and actions and stop execution when necessary.",
+          "publisher": "Google",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "published": "2026-09-30",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "we are deploying misalignment mitigations that monitor Argon’s chain-of-thought and actions and stop execution when necessary",
+          "textFile": "sources/google/27-blog-google-gemini-4-argon.txt"
+        },
+        {
+          "id": "google-gemini-4-argon-sandbox-hardening-2026-09-30",
+          "claim": "The same announcement says Google is hardening its sandboxed environments by isolating and sealing them before high-risk training or evaluations begin, in line with its agent control roadmap.",
+          "publisher": "Google",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "published": "2026-09-30",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "we are hardening our sandboxed environments by isolating and sealing them before high-risk training or evaluations begin",
+          "textFile": "sources/google/27-blog-google-gemini-4-argon.txt"
+        },
+        {
+          "id": "google-gemini-4-argon-misuse-safeguards-refusal-2026-09-30",
+          "claim": "The announcement says that, to prevent bad actors from using Argon for cyber or chemical, biological, radiological and nuclear (CBRN) attacks, the model is designed to refuse harmful requests while preserving legitimate, dual-use scientific research, as per Google's Frontier Safety Framework.",
+          "publisher": "Google",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "published": "2026-09-30",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "the model is designed to refuse harmful requests while preserving legitimate, dual-use scientific research, as per our Frontier Safety Framework",
+          "textFile": "sources/google/27-blog-google-gemini-4-argon.txt",
+          "access": "opened"
+        },
+        {
+          "id": "google-gemini-4-argon-internal-activations-monitoring-2026-09-30",
+          "claim": "The announcement says Google is strengthening the robustness of its safeguards for this launch, including improving its techniques to monitor the model's internal activations to spot misuse.",
+          "publisher": "Google",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "published": "2026-09-30",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "improving our techniques to monitor the model’s internal activations to spot misuse",
+          "textFile": "sources/google/27-blog-google-gemini-4-argon.txt",
+          "access": "opened"
+        },
+        {
+          "id": "google-gemini-4-argon-no-cyber-guardrails-2026-09-30",
+          "claim": "The announcement says that for trusted defenders and Google's own internal teams, 'we’ll be releasing Argon without cyber guardrails' (future tense), so that they can use its full frontier-level cybersecurity defense capabilities.",
+          "publisher": "Google",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "published": "2026-09-30",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "For trusted defenders and our own internal teams at Google, we’ll be releasing Argon without cyber guardrails",
+          "textFile": "sources/google/27-blog-google-gemini-4-argon.txt"
+        },
+        {
+          "id": "google-gemini-4-argon-fairwind-rollout-2026-09-30",
+          "claim": "The announcement says Gemini 4 Argon is rolling out to a set of trusted cyber defenders through Google's Fairwind Program, and that safely releasing frontier capabilities at this level requires a phased approach.",
+          "publisher": "Google",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "published": "2026-09-30",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "which is rolling out to a set of trusted cyber defenders through our Fairwind Program",
+          "textFile": "sources/google/27-blog-google-gemini-4-argon.txt",
+          "access": "opened"
+        },
+        {
+          "id": "deepmind-fairwind-program-access-conditions-2026-09-30",
+          "claim": "DeepMind's Fairwind Program page, which shows no date, lists conditions for access to Gemini 4 Argon: partners are approved after background checks (its FAQ names governments, critical infrastructure operators and core technology platforms); they agree to terms including user-level authentication and phishing-resistant multi-factor authentication; they may give Argon access only to internal cybersecurity, incident response or penetration testing teams and must track staff access and use; they may not share, redistribute or sell access. It says there are over 650 partners.",
+          "publisher": "Google DeepMind",
+          "title": "Fairwind Program",
+          "url": "https://deepmind.google/fairwind-program/",
+          "published": "2026-09-30",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Organizations may only grant Gemini 4 Argon access to internal cybersecurity, incident response, or penetration testing teams, and must track employee access and use.",
+          "textFile": "sources/google/26-deepmind-fairwind-program.txt",
+          "access": "opened",
+          "dateNote": "the page shows no date; this is its last-modified date in DeepMind’s sitemap, and the page names Gemini 4 Argon, announced that day"
+        }
+      ],
+      "before": [
+        {
+          "id": "google-fsf-v3-1-2026-04-lifecycle",
+          "claim": "Google's Frontier Safety Framework v3.1 sets capability thresholds for CBRN, cyber, harmful manipulation, and machine learning R&D and misalignment, and says its evaluation approach lets it monitor a model's capabilities throughout the model's lifecycle.",
+          "publisher": "Google DeepMind",
+          "title": "Frontier Safety Framework Version 3.1",
+          "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3-1.pdf",
+          "published": "2026-04-17",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "we can proactively monitor a model’s capabilities throughout the entire lifecycle of the model",
+          "textFile": "sources/google/02-fsf-v3-1.txt"
+        },
+        {
+          "id": "google-gemini-3-7-flash-fsf-report-2026-08",
+          "claim": "Google DeepMind's Frontier Safety Framework report for Gemini 3.7 Flash says the model did not reach any Tracked or Critical Capability Level, while reaching the alert threshold for the cyber uplift and the CBRN uplift Critical Capability Levels.",
+          "publisher": "Google DeepMind",
+          "title": "Gemini 3.7 Flash Frontier Safety Framework Report",
+          "url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3-7_flash_fsf_report.pdf",
+          "published": "2026-08",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "we found that Gemini 3.7 Flash did not reach any of our T/CCLs",
+          "textFile": "sources/google/04-gemini-3-7-flash-fsf-report.txt"
+        },
+        {
+          "id": "google-ai-control-roadmap-blog-2026-06",
+          "claim": "Google DeepMind says its AI Control Roadmap treats internal AI agents as potentially misaligned and adds monitoring and response measures on top of alignment training.",
+          "publisher": "Google DeepMind",
+          "title": "Securing the future of AI agents",
+          "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+          "published": "2026-06-18",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "It provides an additional layer of security by treating internal agents as potentially misaligned, providing assurance even if alignment is imperfect.",
+          "textFile": "sources/google/22-deepmind-blog-securing-future-of-ai-agents.txt"
+        },
+        {
+          "id": "guardian-gemini-three-companies-adkins-statement-2026-09-19",
+          "claim": "The Guardian reports that Google confirmed that its Gemini model breached the security of three other companies in May, during a cybersecurity evaluation run by the firm Irregular. It quotes a statement by Heather Adkins, Google's vice-president of security engineering, that the model found public information online and guessed credentials to access websites it thought were part of the test, and that in all three instances the model stopped.",
+          "publisher": "The Guardian",
+          "title": "Google says its Gemini AI model hacked three other companies",
+          "url": "https://www.theguardian.com/technology/2026/sep/18/google-gemini-ai-hack",
+          "published": "2026-09-19",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "In a standard evaluation, the model found public information online and guessed credentials to access websites it thought were part of the test",
+          "textFile": "sources/google/71-guardian-google-says-gemini-hacked-three-companies-2026-09-19.txt",
+          "access": "opened",
+          "dateNote": "the page shows “Sat 19 Sep 2026” and “Last modified on Tue 29 Sep 2026”; the amendment concerns another company’s incident"
+        },
+        {
+          "id": "guardian-gemini-three-companies-no-public-disclosure-2026-09-19",
+          "claim": "The Guardian also reports that Google confirmed the hacks to it, but that the company did not feel it required public disclosure because the models did not damage the companies, and that the company said it ensured the three companies that were hacked were made aware.",
+          "publisher": "The Guardian",
+          "title": "Google says its Gemini AI model hacked three other companies",
+          "url": "https://www.theguardian.com/technology/2026/sep/18/google-gemini-ai-hack",
+          "published": "2026-09-19",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "the company did not feel it required public disclosure because the models did not damage the companies",
+          "textFile": "sources/google/71-guardian-google-says-gemini-hacked-three-companies-2026-09-19.txt",
+          "access": "opened",
+          "dateNote": "the page shows “Sat 19 Sep 2026” and “Last modified on Tue 29 Sep 2026”; the amendment concerns another company’s incident"
+        }
+      ],
+      "beforeSummary": "Google published a Frontier Safety Framework (version 3.1, April 2026) with capability thresholds for chemical, biological, radiological, nuclear and cyber risks, harmful manipulation, and machine-learning research and misalignment; a framework report for Gemini 3.7 Flash (August 2026); and an AI Control Roadmap (June 2026) that treats its internal AI agents as potentially misaligned. On September 19 the Guardian reported that Google had confirmed that, during a cybersecurity evaluation run by the firm Irregular in May, its Gemini model breached the security of three other companies.\n\nThe Guardian quotes a Google statement that the model found public information online and guessed credentials to access websites it thought were part of the test, and that in all three instances the model stopped; it also reports that Google told it the company did not feel the incident required public disclosure because the models did not damage the companies, and that Google said it ensured the three companies were made aware.",
+      "note": "We mark this “Detailed” because the Argon announcement lists specific measures and ties its sandbox work to a published document (it links its “agent control roadmap” to DeepMind’s blog post about the AI Control Roadmap), and because DeepMind’s Fairwind Program page, which shows no date, lists the conditions for access. The announcement itself cannot be checked against an Argon-specific document: as of October 10 we found no Argon model card or Frontier Safety Framework report, and the Argon evaluation PDF on DeepMind’s Gemini page covers benchmark methods and results only.\n\nThe Frontier Safety Framework, its reports and the roadmap are Google DeepMind’s; the Argon announcement is on Google’s blog. On October 9 Axios reported a White House statement that notifying and remediating AI security incidents is “not optional” for AI companies; see “Around the accord”.",
+      "cs": {
+        "summary": "Oznámení nového modelu Gemini 4 Argon z 30. září říká, že Google nasazuje opatření, která sledují řetězec úvah a kroky modelu a v případě potřeby zastaví jeho běh, a že zpevňuje své sandboxové prostředí tím, že je izoluje a uzavírá před zahájením vysoce rizikového trénování nebo hodnocení, v souladu s plánem kontroly agentů (agent control roadmap). Říká, že aby se zabránilo jeho použití pro kybernetické nebo chemické, biologické, radiologické a jaderné útoky, je model navržen tak, aby odmítal škodlivé požadavky, v souladu s Frontier Safety Framework, a že Google zlepšuje své techniky sledování vnitřních aktivací modelu, aby odhalil zneužití.\n\nDále říká, že pro důvěryhodné obránce a své vlastní interní týmy bude Argon vydávat bez kybernetických ochranných omezení (guardrails) a že Argon se zpřístupňuje skupině důvěryhodných kybernetických obránců prostřednictvím programu Fairwind, jehož stránka na DeepMind uvádí podmínky přístupu. Oznámení dohodu nezmiňuje a k 10. říjnu jsme pro Argon nenašli žádnou kartu modelu ani zprávu Frontier Safety Framework."
+      }
+    },
+    "L2": {
+      "status": "said",
+      "summary": "Google’s September 30 announcement of Gemini 4 Argon says Google used a system similar to the one that monitors Argon’s chain of thought and actions to monitor its training runs and send alerts to a dedicated incident response team. The sentence is in the past tense and does not name the team, say how big it is or who leads it. It does not say that the team checks that Google’s controls are operating as intended, which is what the accord asks of the internal team; we mark this “Said” only because it is the one mention since the accord of a dedicated team that receives alerts from the monitoring. The announcement does not mention the accord.",
+      "since": [
+        {
+          "id": "google-gemini-4-argon-incident-response-team-2026-09-30",
+          "claim": "Google's Gemini 4 Argon announcement, after describing misalignment mitigations that monitor the model's chain-of-thought and actions, says: 'We used a similar system to monitor our training runs and send alerts to a dedicated incident response team.' The sentence is in the past tense. It does not name the team, give its size or say who leads it, and does not say that the team checks that Google's controls are operating as intended.",
+          "publisher": "Google",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "published": "2026-09-30",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "We used a similar system to monitor our training runs and send alerts to a dedicated incident response team",
+          "textFile": "sources/google/27-blog-google-gemini-4-argon.txt"
+        }
+      ],
+      "before": [
+        {
+          "id": "google-fsf-v3-1-governance-2026-04",
+          "claim": "Google's Frontier Safety Framework v3.1 says Google has an internal governance structure meant to ensure the framework's processes are implemented; the section does not name the people or bodies responsible.",
+          "publisher": "Google DeepMind",
+          "title": "Frontier Safety Framework Version 3.1",
+          "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3-1.pdf",
+          "published": "2026-04-17",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "internal governance structure designed to ensure the robust implementation of the processes outlined in this Frontier Safety Framework",
+          "textFile": "sources/google/02-fsf-v3-1.txt"
+        },
+        {
+          "id": "google-rai-report-launch-review-2026-02",
+          "claim": "Google's 2026 Responsible AI Progress Report says model launches are reviewed at Google DeepMind's Launch Review forum, which approves model releases.",
+          "publisher": "Google",
+          "title": "2026 Responsible AI Progress Report",
+          "url": "https://ai.google/static/documents/ai-responsibility-update-2026.pdf",
+          "published": "2026-02",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Our model launches are reviewed at Google DeepMind’s Launch Review forum, which approves model releases",
+          "textFile": "sources/google/16-google-responsible-ai-progress-report-2026.txt"
+        },
+        {
+          "id": "google-ai-control-roadmap-control-team-2026-06-22",
+          "claim": "The AI Control Roadmap (v0.1), which Google DeepMind presents as its plan for internal guardrails against adversarial AI agents, refers to the team responsible for designing, implementing and stress-testing internal security measures against adversarial AI as the “control team”. It proposes that the team’s top-most priority be to maintain two invariants: that a model’s misaligned intent or actions would be detected, and that, assuming effective detection, the model cannot cause severe subversion or sabotage. It does not say who is on the team or how large it is.",
+          "publisher": "Google DeepMind",
+          "title": "GDM AI Control Roadmap (v0.1)",
+          "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/securing-the-future-of-ai-agents/gdm-ai-control-roadmap.pdf",
+          "published": "2026-06-22",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "We refer to the team responsible for designing, implementing, and stress-testing internal security measures against adversarial AI as the “control team”.",
+          "textFile": "sources/google/70-gdm-ai-control-roadmap-reading-order.txt",
+          "access": "opened",
+          "dateNote": "the PDF’s header date is “2026-6-22”; DeepMind’s blog post announcing it is dated June 18, 2026"
+        },
+        {
+          "id": "google-ai-control-roadmap-red-team-exercises-2026-06-22",
+          "claim": "Among the “speculative options” the Roadmap lists for assurance at its highest prevention-and-response level (R3), it says an internal security red team could run regular exercises that try to violate the control team’s stated security invariants, and unannounced exercises that try to stand up an unmonitored agent; the latter would test both the control team’s detection capabilities and shutdown capabilities.",
+          "publisher": "Google DeepMind",
+          "title": "GDM AI Control Roadmap (v0.1)",
+          "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/securing-the-future-of-ai-agents/gdm-ai-control-roadmap.pdf",
+          "published": "2026-06-22",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "The exercises test both the control team’s detection capabilities",
+          "textFile": "sources/google/70-gdm-ai-control-roadmap-reading-order.txt",
+          "access": "opened",
+          "dateNote": "the PDF’s header date is “2026-6-22”; DeepMind’s blog post announcing it is dated June 18, 2026"
+        },
+        {
+          "id": "google-ai-control-blog-measures-performance-2026-06-18",
+          "claim": "Google DeepMind's blog post about the AI Control Roadmap says that, to ensure its systems are functional, it constantly measures performance across three critical metrics: coverage (the fraction of traffic monitored), recall (the fraction of misaligned behaviors caught) and time-to-response. The post lists this as the last of three areas its plan focuses on.",
+          "publisher": "Google DeepMind",
+          "title": "Securing the future of AI agents",
+          "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+          "published": "2026-06-18",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "to ensure our systems are functional, we constantly measure performance across three critical metrics",
+          "textFile": "sources/google/22-deepmind-blog-securing-future-of-ai-agents.txt",
+          "access": "opened"
+        },
+        {
+          "id": "govai-fsf-v3-1-analysis-2026-06-04",
+          "claim": "A GovAI research fellow writing on the Frontier Risk Substack (the post says its views are the author's own and not GovAI's) says the governance section added in Google's Frontier Safety Framework v3.1 is thin and that the framework relies on internal judgment with limited external accountability.",
+          "publisher": "Frontier Risk (Substack), Sophie Williams",
+          "title": "Google DeepMind’s Frontier Safety Framework v3.1",
+          "url": "https://frontierrisk.substack.com/p/google-deepminds-frontier-safety",
+          "published": "2026-06-04",
+          "kind": "analysis",
+          "mentionsAccord": false,
+          "quote": "the new governance section is thin, and the framework still relies on internal judgment with limited external accountability",
+          "textFile": "sources/google/31-frontierrisk-substack-fsf-v3-1.txt"
+        }
+      ],
+      "beforeSummary": "Google described an internal governance structure for its Frontier Safety Framework, without naming people or bodies, and a Launch Review forum at Google DeepMind that approves model releases. Its AI Control Roadmap (version 0.1, June 2026), which presents itself as a plan, defines a “control team” responsible for designing, implementing and stress-testing internal security measures against adversarial AI, proposes that the team’s top-most priority be to maintain two invariants (that a model’s misaligned intent or actions would be detected, and that, with effective detection, it cannot cause severe subversion or sabotage), and lists, among its “speculative options” for assurance at its highest tier, exercises in which an internal security red team could test the team’s detection and shutdown capabilities.\n\nThe roadmap does not say who is on the team or how large it is. DeepMind’s blog post about the roadmap says that, to ensure its systems are functional, Google constantly measures performance across three critical metrics: coverage, recall and time-to-response. A GovAI research fellow, writing in a personal capacity, said in June that the governance section added in version 3.1 is thin and relies on internal judgment with limited external accountability.",
+      "note": "DeepMind’s Responsibility & Safety page, which shows no date and which we read on October 10 (see the documents list), names a Responsibility and Safety Council, an internal review group co-chaired by two named DeepMind executives, and an AGI Safety Council led by a named co-founder. It does not describe either council as checking that controls operate as intended.",
+      "cs": {
+        "summary": "Oznámení Gemini 4 Argon z 30. září říká, že Google použil systém podobný tomu, který sleduje řetězec úvah a kroky Argonu, ke sledování svých trénovacích běhů a k odesílání upozornění vyhrazenému týmu pro reakci na incidenty. Věta je v minulém čase a neuvádí název týmu, jeho velikost ani to, kdo ho vede. Neříká, že tým ověřuje, zda kontrolní mechanismy Googlu fungují tak, jak mají, což dohoda od interního týmu žádá; označujeme to jako „Prohlášeno“ jen proto, že je to jediná zmínka od dohody o vyhrazeném týmu, který dostává upozornění z monitorování. Oznámení dohodu nezmiňuje."
+      }
+    },
+    "L3": {
+      "status": "said",
+      "summary": "Google says it is engaged in the US government’s voluntary process for pre-release model access, and that Argon’s misuse safeguards were tested by internal and external red teams. Neither statement names an auditor or an agency, and neither mentions the accord. CNBC notes that the Argon release came a day after Pichai signed the accord.",
+      "since": [
+        {
+          "id": "google-gemini-4-argon-us-government-process-2026-09-30",
+          "claim": "Google's Gemini 4 Argon announcement says Google is engaged in the U.S. government's voluntary process for pre-release model access while it gradually expands access; the sentence does not name the agency.",
+          "publisher": "Google",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "published": "2026-09-30",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "We are actively engaged in the U.S. government’s voluntary process for pre-release model access while we gradually expand access.",
+          "textFile": "sources/google/27-blog-google-gemini-4-argon.txt"
+        },
+        {
+          "id": "google-gemini-4-argon-external-red-teams-2026-09-30",
+          "claim": "The same announcement says the Argon misuse safeguards underwent robustness testing by internal and external red teams; it does not name the external teams.",
+          "publisher": "Google",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+          "published": "2026-09-30",
+          "kind": "company-statement",
+          "mentionsAccord": false,
+          "quote": "These safeguards underwent robustness testing by internal and external red teams using a combination of manual and automated attack methods.",
+          "textFile": "sources/google/27-blog-google-gemini-4-argon.txt"
+        },
+        {
+          "id": "cnbc-gemini-4-argon-us-government-evaluations-2026-09-30",
+          "claim": "CNBC reports that Google plans to launch Gemini 4 Argon in phases, starting with trusted cybersecurity partners, while working with the US government on pre-release safety evaluations.",
+          "publisher": "CNBC",
+          "title": "Google rolls out Gemini 4 Argon, its most advanced AI model",
+          "url": "https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html",
+          "published": "2026-09-30",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "Google plans to launch the new model in phases, starting with trusted cybersecurity partners while working with the U.S. government on pre-release safety evaluations.",
+          "textFile": "sources/google/30-cnbc-google-rolls-out-gemini-4-argon.txt"
+        },
+        {
+          "id": "cnbc-gemini-4-argon-day-after-accord-2026-09-30",
+          "claim": "CNBC reports that the Gemini 4 Argon release came a day after Pichai signed a voluntary agreement with President Trump and tech executives at the White House.",
+          "publisher": "CNBC",
+          "title": "Google rolls out Gemini 4 Argon, its most advanced AI model",
+          "url": "https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html",
+          "published": "2026-09-30",
+          "kind": "news",
+          "mentionsAccord": true,
+          "quote": "The model release comes a day after CEO Sundar Pichai signed a voluntary agreement with President Donald Trump",
+          "textFile": "sources/google/30-cnbc-google-rolls-out-gemini-4-argon.txt"
+        }
+      ],
+      "before": [
+        {
+          "id": "google-rai-report-named-evaluators-2026-02",
+          "claim": "Google's 2026 Responsible AI Progress Report names Apollo, Vaultis and Dreadnode as independent evaluators it partners with, and says it gives early access to bodies such as the UK AI Security Institute.",
+          "publisher": "Google",
+          "title": "2026 Responsible AI Progress Report",
+          "url": "https://ai.google/static/documents/ai-responsibility-update-2026.pdf",
+          "published": "2026-02",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "partner with independent evaluators including Apollo, Vaultis, and Dreadnode, and provide early access to our models to bodies such as the UK AI Security Institute",
+          "textFile": "sources/google/16-google-responsible-ai-progress-report-2026.txt"
+        },
+        {
+          "id": "nist-caisi-agreements-google-deepmind-2026-05-05",
+          "claim": "A reprint on HPCwire of a NIST press release, dated May 5, 2026, says the US Center for AI Standards and Innovation announced new agreements with Google DeepMind, Microsoft and xAI under which it will conduct pre-deployment evaluations and targeted research to better assess frontier AI capabilities.",
+          "publisher": "HPCwire (reprint of a NIST press release)",
+          "title": "NIST’s CAISI Announces New Frontier AI Testing Agreements with Google DeepMind, Microsoft, xAI",
+          "url": "https://www.hpcwire.com/off-the-wire/nists-caisi-announces-new-frontier-ai-testing-agreements-with-google-deepmind-microsoft-xai/",
+          "published": "2026-05-05",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "CAISI will conduct pre-deployment evaluations and targeted research to better assess frontier AI capabilities and advance the state of AI security.",
+          "textFile": "sources/google/75-hpcwire-nist-caisi-agreements-2026-05-05.txt",
+          "access": "opened"
+        },
+        {
+          "id": "metr-frontier-risk-report-google-2026-05-19",
+          "claim": "METR's Frontier Risk Report says Google took part in its pilot assessment of misalignment risk from AI agents used inside four developers, shared its best internal model at the time and its answers to METR's questionnaire, and received a private report from METR on 2026-03-30. The Google section records what Google reported about how it uses and monitors AI internally; it does not describe METR testing Google's monitoring. METR says it hopes in future to pilot ways to verify company-reported information.",
+          "publisher": "METR",
+          "title": "Frontier Risk Report (February to March 2026)",
+          "url": "https://metr.org/blog/2026-05-19-frontier-risk-report/",
+          "published": "2026-05-19",
+          "kind": "auditor",
+          "mentionsAccord": false,
+          "quote": "Google shared its responses to our questionnaire on Mar 13, 2026, and METR delivered the private report to Google on Mar 30, 2026.",
+          "textFile": "sources/google/74-metr-frontier-risk-report-2026-05-19.txt",
+          "access": "opened"
+        },
+        {
+          "id": "caisi-google-deepmind-agreement-2026",
+          "claim": "CDO Magazine reports that the US Center for AI Standards and Innovation at NIST announced agreements with Google DeepMind, Microsoft and xAI that let it run pre-deployment testing, post-deployment assessments and targeted research.",
+          "publisher": "CDO Magazine",
+          "title": "Center for AI Standards and Innovation Expands Partnerships With Frontier AI Developers",
+          "url": "https://www.cdomagazine.tech/us-federal-news-bureau/center-for-ai-standards-and-innovation-expands-partnerships-with-frontier-ai-developers",
+          "published": "2026-06-05",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "has announced new agreements with Google DeepMind, Microsoft, and xAI to expand government-led evaluations of frontier artificial intelligence systems",
+          "textFile": "sources/google/34-cdomagazine-caisi-expands-partnerships.txt",
+          "dateNote": "the page shows “Updated 10:48 PM EDT, June 5, 2026”; NIST’s release that it reports is dated May 5, 2026 (see the HPCwire item)"
+        },
+        {
+          "id": "uk-aisi-control-red-team-google-deepmind-monitor-2026-07-23",
+          "claim": "The UK AI Security Institute says its new Control Red Team has tested the internal control monitors of two frontier developers. With Google DeepMind it tested an asynchronous reasoning monitor, designed to detect agents deceptively pursuing misaligned goals, and identified several monitor vulnerabilities, including one in which an agent can complete a malicious objective by pretending to hallucinate that it was a user instruction.",
+          "publisher": "UK AI Security Institute",
+          "title": "How our Control Red Team is stress-testing frontier monitors",
+          "url": "https://www.aisi.gov.uk/blog/how-our-new-control-red-team-is-stress-testing-frontier-monitors",
+          "published": "2026-07-23",
+          "kind": "official",
+          "mentionsAccord": false,
+          "quote": "With Google DeepMind, we tested an asynchronous reasoning monitor (reviewing agents’ reasoning after they act) designed to detect agents deceptively pursuing misaligned goals.",
+          "textFile": "sources/google/73-aisi-control-red-team-stress-testing-monitors-2026-07-23.txt",
+          "access": "opened"
+        },
+        {
+          "id": "google-gemini-3-7-flash-fsf-report-external-2026-08",
+          "claim": "Google's Gemini 3.7 Flash Frontier Safety Framework report says its independent external evaluators explore frontier safety risk domains but do not directly comment on risk thresholds as contemplated under the framework; they have their own taxonomies of harm and comment on risk according to those. The report's External Safety Testing section does not name the evaluators.",
+          "publisher": "Google DeepMind",
+          "title": "Gemini 3.7 Flash Frontier Safety Framework Report",
+          "url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3-7_flash_fsf_report.pdf",
+          "published": "2026-08",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "The independent external evaluators explore frontier safety risk domains, however they do not directly comment on risk thresholds as contemplated under our FSF.",
+          "textFile": "sources/google/04-gemini-3-7-flash-fsf-report.txt"
+        },
+        {
+          "id": "google-gemini-3-7-flash-fsf-report-gray-swan-2026-08",
+          "claim": "Google DeepMind's Gemini 3.7 Flash Frontier Safety Framework report, in its evaluation of the robustness of the model's safeguards (not in its External Safety Testing section), says it partnered with Gray Swan for an automated cyber red-teaming evaluation and an automated bio red-teaming evaluation. Its threat-modelling section adds that external advisors from the UK AI Security Institute and Redwood Research gave feedback that guided and refined its threat models.",
+          "publisher": "Google DeepMind",
+          "title": "Gemini 3.7 Flash Frontier Safety Framework Report",
+          "url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3-7_flash_fsf_report.pdf",
+          "published": "2026-08",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "We partnered with Gray Swan to conduct an Automated Cyber Red Teaming Evaluation.",
+          "textFile": "sources/google/04-gemini-3-7-flash-fsf-report.txt",
+          "access": "opened"
+        },
+        {
+          "id": "guardian-gemini-test-environment-internet-access-2026-09-19",
+          "claim": "The Guardian reports that Irregular was testing the Gemini models in a closed testing environment with fake companies; it says the environment was not supposed to be internet-enabled but internet access was made available unintentionally, according to the Wall Street Journal, and that the models then gained access to real companies' services.",
+          "publisher": "The Guardian",
+          "title": "Google says its Gemini AI model hacked three other companies",
+          "url": "https://www.theguardian.com/technology/2026/sep/18/google-gemini-ai-hack",
+          "published": "2026-09-19",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "The testing environment was not supposed to be internet enabled, but internet access was made available unintentionally, according to the Wall Street Journal.",
+          "textFile": "sources/google/71-guardian-google-says-gemini-hacked-three-companies-2026-09-19.txt",
+          "access": "opened",
+          "dateNote": "the page shows “Sat 19 Sep 2026” and “Last modified on Tue 29 Sep 2026”; the amendment concerns another company’s incident"
+        },
+        {
+          "id": "bbc-gemini-training-partner-testing-changes-2026-09-19",
+          "claim": "The BBC reports that the May test of Gemini was conducted by Irregular, an independent company that carries out cyber-security evaluations. It quotes a statement by Heather Adkins, Google's vice president of Security Engineering: 'We ensured the three entities were made aware, and we worked with our training partner on the changes they've now made to their testing processes.' It also quotes Irregular as saying all known issues on its end were remedied and resolved weeks ago.",
+          "publisher": "BBC News",
+          "title": "Google's Gemini AI hacked three companies in security test",
+          "url": "https://www.bbc.co.uk/news/articles/c607l0k72rlvo",
+          "published": "2026-09-19",
+          "kind": "news",
+          "mentionsAccord": false,
+          "quote": "We ensured the three entities were made aware, and we worked with our training partner on the changes they've now made to their testing processes.",
+          "textFile": "sources/google/72-bbc-gemini-hacked-three-companies-2026-09-19.txt",
+          "access": "opened"
+        }
+      ],
+      "beforeSummary": "Google’s 2026 Responsible AI Progress Report named Apollo, Vaultis and Dreadnode as independent evaluators and said it gives early access to the UK AI Security Institute. In May the US Center for AI Standards and Innovation announced agreements with Google DeepMind, Microsoft and xAI for pre-deployment evaluations (CDO Magazine reported them on June 5), and METR’s Frontier Risk Report (May 19) said Google took part in its pilot assessment of risks from internal AI agents. On July 23 the UK AI Security Institute said it had tested an asynchronous reasoning monitor with Google DeepMind and identified several vulnerabilities.\n\nGoogle’s Gemini 3.7 Flash framework report says its independent external evaluators do not directly comment on risk thresholds as contemplated under the framework and use their own taxonomies of harm, and elsewhere names Gray Swan as a partner for automated cyber and bio red-teaming of the model’s safeguards. On September 19 the Guardian, citing the Wall Street Journal, reported that the test environment of the May Gemini evaluation run by Irregular was not supposed to have internet access but had it unintentionally, and the BBC quoted Google saying it worked with its “training partner” on changes to the testing process.",
+      "note": "We found no source in which an outside party is described as assessing whether Google’s controls, monitoring and detection as a whole are operating as intended, and none naming any party as the accord’s auditor. The outside work we found covers parts: the UK AI Security Institute tested one DeepMind monitor and identified vulnerabilities (July 23); METR’s pilot recorded what Google reported about how it uses and monitors AI agents internally (May 19); and the Gemini 3.7 Flash framework report names Gray Swan as a red-teaming partner for the model’s safeguards, and the UK AI Security Institute and Redwood Research as advisors on its threat models, outside the report’s External Safety Testing section. METR’s September 30 Senate testimony names Google among the developers that give it access; it says nothing about what it tested (see “Around the accord”).",
+      "cs": {
+        "summary": "Google říká, že se účastní dobrovolného procesu vlády USA pro přístup k modelům před vydáním a že ochranná opatření Argonu proti zneužití testovaly interní i externí týmy typu red team. Ani jedno tvrzení neuvádí jménem auditora ani úřad a ani jedno nezmiňuje dohodu. CNBC poznamenává, že vydání Argonu přišlo den po podpisu dohody za Google."
+      }
+    },
+    "L4": {
+      "status": "nothing",
+      "summary": "We found no new board committee, charter change or appointment at Alphabet since the accord. Alphabet’s list of 8-K filings, opened on October 10, shows none dated after August 10.",
+      "since": [],
+      "before": [
+        {
+          "id": "alphabet-proxy-2026-04-risk-committee-ai",
+          "claim": "Alphabet's 2026 proxy statement says its Risk and Compliance Committee, established in October 2025, assists the Board with principal legal, policy, reputational and operational risks, including those related to AI as needed.",
+          "publisher": "Alphabet Inc.",
+          "title": "Notice of 2026 Annual Meeting of Shareholders and Proxy Statement",
+          "url": "https://s206.q4cdn.com/479360582/files/doc_downloads/2026/GOOG_PXY_2026_WO27_WKV_WR-IR.pdf",
+          "published": "2026-04-24",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "legal, policy, reputational, and operational risks, including those related to AI, as needed",
+          "textFile": "sources/google/10-alphabet-proxy-2026-ir-copy.txt"
+        },
+        {
+          "id": "alphabet-risk-compliance-committee-charter-2025-10",
+          "claim": "The charter of Alphabet's Risk and Compliance Committee, adopted 22 October 2025, describes oversight of principal legal, policy, reputational and operational risks and of legal compliance; the charter text does not mention AI, safety or security.",
+          "publisher": "Alphabet Inc.",
+          "title": "Risk and Compliance Committee",
+          "url": "https://abc.xyz/investor/board-and-governance/risk-and-compliance-committee/default.aspx",
+          "published": "2025-10-22",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "oversight of many of the risks facing Alphabet and its businesses, including its principal legal, policy, reputational and operational risks",
+          "textFile": "sources/google/12-alphabet-risk-and-compliance-committee-charter.txt",
+          "dateNote": "the date the charter was adopted; the page states “Adopted October 22, 2025”"
+        },
+        {
+          "id": "google-rai-report-agi-futures-council-2026-02",
+          "claim": "Google's 2026 Responsible AI Progress Report describes an AGI Futures Council made up of Google senior management and members of Alphabet's Board of Directors, which gives the Board and management recommendations on long-term opportunities, risks and impacts of developing AGI.",
+          "publisher": "Google",
+          "title": "2026 Responsible AI Progress Report",
+          "url": "https://ai.google/static/documents/ai-responsibility-update-2026.pdf",
+          "published": "2026-02",
+          "kind": "company-document",
+          "mentionsAccord": false,
+          "quote": "Futures Council, which consists of members of Google’s senior management and Alphabet’s Board of Directors.",
+          "textFile": "sources/google/16-google-responsible-ai-progress-report-2026.txt"
+        },
+        {
+          "id": "alphabet-8k-2026-proposal-12-result",
+          "claim": "Alphabet's Form 8-K reporting the 5 June 2026 annual meeting says the shareholder proposal on AI board oversight was not approved (461,472,553 votes for, 11,863,462,046 against).",
+          "publisher": "Alphabet Inc.",
+          "title": "8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526267578/d57679d8k.htm",
+          "published": "2026-06-11",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "A shareholder proposal regarding AI Board oversight was not approved.",
+          "textFile": "sources/google/23-alphabet-8k-2026-annual-meeting-results.txt"
+        },
+        {
+          "id": "alphabet-proxy-2026-04-proposal-audit-committee-ai",
+          "claim": "Alphabet's 2026 proxy statement reproduces a shareholder proposal asking the Board to update the Audit Committee's charter to provide formal oversight of the responsible development and deployment of AI and of AI-related risks to users' and others' human rights. The Board's statement in the proxy opposes it; the 8-K on the annual meeting reports it was not approved.",
+          "publisher": "Alphabet Inc.",
+          "title": "Notice of 2026 Annual Meeting of Shareholders and Proxy Statement",
+          "url": "https://s206.q4cdn.com/479360582/files/doc_downloads/2026/GOOG_PXY_2026_WO27_WKV_WR-IR.pdf",
+          "published": "2026-04-24",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "update the Audit Committee (the “Committee”) Charter to provide formal oversight on the responsible development and deployment of artificial intelligence",
+          "textFile": "sources/google/10-alphabet-proxy-2026-ir-copy.txt",
+          "access": "opened"
+        },
+        {
+          "id": "alphabet-proxy-2026-04-class-b-votes",
+          "claim": "Alphabet's 2026 proxy statement says each holder of Class B common stock is entitled to ten votes per share and each holder of Class A common stock to one, and that Class C capital stock has no voting power on the items of business. The text we read does not use the term 'controlled company'.",
+          "publisher": "Alphabet Inc.",
+          "title": "Notice of 2026 Annual Meeting of Shareholders and Proxy Statement",
+          "url": "https://s206.q4cdn.com/479360582/files/doc_downloads/2026/GOOG_PXY_2026_WO27_WKV_WR-IR.pdf",
+          "published": "2026-04-24",
+          "kind": "filing",
+          "mentionsAccord": false,
+          "quote": "Each holder of Class B common stock is entitled to ten (10) votes per share of Class B common stock",
+          "textFile": "sources/google/10-alphabet-proxy-2026-ir-copy.txt",
+          "access": "opened"
+        }
+      ],
+      "beforeSummary": "Alphabet’s 2026 proxy statement says its Risk and Compliance Committee, set up in October 2025, assists the board with risks “including those related to AI, as needed”; the committee’s charter does not mention AI. A shareholder proposal asking the board to update the Audit Committee’s charter to provide formal oversight of the responsible development and deployment of AI was not approved in June 2026.",
+      "note": "Google’s Responsible AI Progress Report describes an AGI Futures Council of senior managers and Alphabet board members that advises the board. It is not one of the board’s five standing committees. Alphabet’s proxy statement gives each share of Class B stock ten votes and each share of Class A stock one; it does not use the term “controlled company”.",
+      "cs": {
+        "summary": "Nenašli jsme žádný nový výbor správní rady, změnu statutu ani jmenování u Alphabetu od dohody. Seznam podání 8-K u Alphabetu, otevřený 10. října, neobsahuje žádné podání s datem po 10. srpnu."
+      }
+    }
+  },
+  "accordStatements": [
+    {
+      "id": "ians-pichai-white-house-2026-09-30",
+      "claim": "IANS quotes Pichai saying the industry has to make sure it is addressing the risks and that the president has asked the industry to step up.",
+      "publisher": "IANS (via The Morung Express)",
+      "title": "Pichai backs White House AI safety accord",
+      "url": "https://morungexpress.com/pichai-backs-white-house-ai-safety-accord",
+      "published": "2026-09-30",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "We have to make sure we are addressing the risks, and the president has asked us as an industry to step up",
+      "textFile": "sources/google/17-morung-express-pichai-backs-accord.txt"
+    },
+    {
+      "id": "ians-pichai-financial-controls-2026-09-30",
+      "claim": "IANS reports, in its own words and not as a direct quotation, that Pichai said the companies were adopting processes similar to financial controls used by major corporations.",
+      "publisher": "IANS (via The Morung Express)",
+      "title": "Pichai backs White House AI safety accord",
+      "url": "https://morungexpress.com/pichai-backs-white-house-ai-safety-accord",
+      "published": "2026-09-30",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "Pichai said the companies were adopting processes similar to financial controls used by major corporations.",
+      "textFile": "sources/google/17-morung-express-pichai-backs-accord.txt"
+    },
+    {
+      "id": "aljazeera-pichai-x-post-solid-basis-2026-09-30",
+      "claim": "Al Jazeera quotes a post by Pichai on X calling the White House Accord and the Joint Commitment on Frontier Responsibilities a solid basis for moving forward; we did not reach the post itself.",
+      "publisher": "Al Jazeera",
+      "title": "How does Trump’s White House AI accord work?",
+      "url": "https://www.aljazeera.com/news/2026/9/30/how-does-trumps-white-house-ai-accord-work",
+      "published": "2026-09-30",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "The White House Accord and the Joint Commitment on Frontier Responsibilities signed today is a solid basis for moving forward",
+      "textFile": "sources/google/18-aljazeera-how-does-accord-work.txt"
+    },
+    {
+      "id": "aljazeera-pichai-x-post-norms-2026-09-30",
+      "claim": "Al Jazeera also quotes the same post by Pichai as stating a commitment to work with other industry leaders to establish norms and build public confidence.",
+      "publisher": "Al Jazeera",
+      "title": "How does Trump’s White House AI accord work?",
+      "url": "https://www.aljazeera.com/news/2026/9/30/how-does-trumps-white-house-ai-accord-work",
+      "published": "2026-09-30",
+      "kind": "news",
+      "mentionsAccord": true,
+      "quote": "We are committed to working with other industry leaders to establish norms and build public confidence.",
+      "textFile": "sources/google/18-aljazeera-how-does-accord-work.txt"
+    }
+  ],
+  "documents": [
+    {
+      "title": "Frontier Safety Framework Version 3.1",
+      "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3-1.pdf",
+      "published": "2026-04-17",
+      "whatItIs": "Google's framework of capability thresholds, evaluation, mitigation, risk-acceptance and governance steps for severe risks from frontier AI models (CBRN, cyber, harmful manipulation, ML R&D and misalignment)."
+    },
+    {
+      "title": "Gemini 3.7 Flash Frontier Safety Framework Report",
+      "url": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3-7_flash_fsf_report.pdf",
+      "published": "2026-08",
+      "whatItIs": "The most recent Frontier Safety Framework report listed on DeepMind's frontier safety page, setting out the risk assessment of Gemini 3.7 Flash and its external safety testing."
+    },
+    {
+      "title": "GDM AI Control Roadmap (v0.1)",
+      "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/securing-the-future-of-ai-agents/gdm-ai-control-roadmap.pdf",
+      "published": "2026-06-22",
+      "whatItIs": "Google DeepMind's plan for internal guardrails against potentially misaligned AI agents, with threat modelling, detection and response tiers and 15 mitigations (PDF header date; the DeepMind blog post announcing it is dated 2026-06-18)."
+    },
+    {
+      "title": "2026 Responsible AI Progress Report",
+      "url": "https://ai.google/static/documents/ai-responsibility-update-2026.pdf",
+      "published": "2026-02",
+      "whatItIs": "Google's annual report on its approach to responsible AI governance, including its review forums, the AGI Futures Council and its named external evaluators."
+    },
+    {
+      "title": "AI Principles",
+      "url": "https://ai.google/principles/",
+      "published": null,
+      "whatItIs": "Google's three AI Principles (bold innovation; responsible development and deployment; collaborative progress), which DeepMind's frontier safety page says it uses alongside the Frontier Safety Framework."
+    },
+    {
+      "title": "Responsibility & Safety",
+      "url": "https://deepmind.google/responsibility-and-safety/",
+      "published": null,
+      "whatItIs": "DeepMind's page naming its Responsibility and Safety Council and AGI Safety Council and summarising its approach to responsibility and safety."
+    },
+    {
+      "title": "Gemini 4 Argon: our next era of frontier intelligence",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "published": "2026-09-30",
+      "whatItIs": "Google's announcement of its newest frontier model, which it says it is rolling out to a set of trusted cyber defenders in a phased approach; as of 2026-10-10 we found no model card or FSF report for it."
+    },
+    {
+      "title": "Fairwind Program",
+      "url": "https://deepmind.google/fairwind-program/",
+      "published": null,
+      "whatItIs": "DeepMind's program page describing access rules, partner due diligence and governance terms for the Fairwind Program, and saying a set of partners has access to Gemini 4 Argon."
+    },
+    {
+      "title": "Gemini 4 Argon: model evaluation (approach, methodology and results)",
+      "url": "https://deepmind.google/models/evals-methodology/gemini-4-argon",
+      "published": null,
+      "whatItIs": "A 5-page PDF linked from DeepMind’s Gemini page: benchmark sources, settings and results for Argon, including cybersecurity benchmarks. It is not a model card, a Frontier Safety Framework report or a safety evaluation, and has no red-team or external-evaluator content."
+    },
+    {
+      "title": "Notice of 2026 Annual Meeting of Shareholders and Proxy Statement",
+      "url": "https://s206.q4cdn.com/479360582/files/doc_downloads/2026/GOOG_PXY_2026_WO27_WKV_WR-IR.pdf",
+      "published": "2026-04-24",
+      "whatItIs": "Alphabet's proxy statement (Alphabet's investor-relations copy; the SEC copy was refused to our fetch tool), listing board committees, risk oversight and the board's response to an AI oversight shareholder proposal."
+    },
+    {
+      "title": "Risk and Compliance Committee",
+      "url": "https://abc.xyz/investor/board-and-governance/risk-and-compliance-committee/default.aspx",
+      "published": "2025-10-22",
+      "whatItIs": "Charter of the Alphabet board committee established in October 2025 to oversee principal legal, policy, reputational and operational risks and legal compliance."
+    },
+    {
+      "title": "Audit Committee",
+      "url": "https://abc.xyz/investor/board-and-governance/ac/default.aspx",
+      "published": "2025-10-22",
+      "whatItIs": "Charter of the Alphabet board's Audit Committee, covering financial reporting, internal controls, the independent financial auditors and risk exposures in financial and operational areas (page shows 'Last revised October 22, 2025')."
+    }
+  ]
+}
