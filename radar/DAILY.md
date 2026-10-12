@@ -30,7 +30,8 @@ Write `RUN/triage.json`:
   "light": { "L1": [ {…item…}, … ] } }
 ```
 Items are copied whole from `candidates.jsonl`. Put at most 4 groups in each `D…` key and at most 30 items in each `L…`
-key. Write the ids you skipped to `RUN/skipped.txt`, one per line, so tomorrow's run doesn't offer them again.
+key. **Append** the ids you skipped to `RUN/skipped.txt`, one per line (never overwrite it), so later runs don't offer
+them again.
 
 ## 3. Prepare audio and video texts (one at a time)
 ```bash

@@ -20,6 +20,8 @@ if [ "${FREE_GB:-0}" -lt 2 ]; then echo "STOP: only ${FREE_GB} GB free on the di
 RADAR_DOCS="$(npx tsx -e "import { RADAR_DOCS } from './scripts/radar/paths'; console.log(RADAR_DOCS)")"
 DIR="$RADAR_DOCS/$RUN"
 mkdir -p "$DIR/entries" "$DIR/sources"
+# A second run the same day keeps the first one's triage beside it; skipped.txt is only ever appended to.
+[ -f "$DIR/triage.json" ] && mv "$DIR/triage.json" "$DIR/triage.$(date +%H%M%S).json"
 npx tsx scripts/radar/ingest.ts --from "$FROM" --to "$RUN" --run "$RUN" | tail -3
 sed "s|{{RUN}}|$DIR|g" radar/AGENT-BRIEF.md > "$DIR/AGENT-BRIEF.md"
 npx tsx scripts/radar/candidates.ts --run "$RUN"

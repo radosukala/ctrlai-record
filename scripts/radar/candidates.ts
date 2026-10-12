@@ -12,9 +12,9 @@ const run = process.argv[process.argv.indexOf('--run') + 1];
 if (!run) { console.error('usage: candidates.ts --run NAME'); process.exit(2); }
 const dir = join(RADAR_DOCS, run);
 
-// Everything earlier runs already wrote an entry for, or decided to skip.
+// Everything a run (an earlier one, or this one before a restart) already wrote an entry for, or decided to skip.
 const done = new Set<string>();
-for (const r of readdirSync(RADAR_DOCS).filter(d => d !== run && existsSync(join(RADAR_DOCS, d, 'items.jsonl')))) {
+for (const r of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS, d, 'items.jsonl')))) {
   const entries = join(RADAR_DOCS, r, 'entries');
   if (existsSync(entries)) for (const f of readdirSync(entries)) done.add(f.split('.')[0]);
   const skipped = join(RADAR_DOCS, r, 'skipped.txt');

@@ -8,7 +8,7 @@
  *
  * Run folders hold other people's text and live in docs-internal/radar/ (git-excluded), or wherever RADAR_DOCS points.
  */
-import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { parseFeed, parseGovUk, parseHn, relevant, type Item, type Source } from './feeds';
 import { radarDir } from './paths';
 
@@ -94,6 +94,15 @@ async function worker() {
 async function main() {
 await Promise.all(Array.from({ length: 6 }, worker));
 
+// A second run into the same folder (the same day) adds to what the first one found; it never drops an item an entry
+// may already point to.
+if (existsSync(`${dir}/items.jsonl`)) {
+  for (const line of readFileSync(`${dir}/items.jsonl`, 'utf8').split('\n').filter(Boolean)) {
+    const old = JSON.parse(line) as Item & { kept: boolean };
+    const now = all.get(old.id);
+    if (!now) all.set(old.id, old); else if (old.kept) now.kept = true;
+  }
+}
 const items = [...all.values()].sort((a, b) => b.published.localeCompare(a.published));
 writeFileSync(`${dir}/items.jsonl`, items.map(i => JSON.stringify(i)).join('\n') + '\n');
 writeFileSync(`${dir}/health.json`, JSON.stringify({ ranAt: new Date().toISOString(), from: FROM, to: TO, sources: health }, null, 1) + '\n');
