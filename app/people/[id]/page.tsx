@@ -16,7 +16,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const p = getPerson((await params).id);
   if (!p) return {};
-  return { title: `${p.name} on AI`, description: `What ${p.name} said about AI safety and control, with each quotation checked against its source.`, robots: { index: false, follow: false } };
+  return { title: `${p.name} on AI`, description: `What ${p.name} said about AI safety and control, with each quotation checked against its source.` };
 }
 
 const ROLE: Record<string, string> = { speaker: 'Speaks', author: 'Wrote it', subject: 'About them', mentioned: 'Mentioned' };

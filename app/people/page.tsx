@@ -8,7 +8,6 @@ import { TOPIC } from '@/content/base/taxonomy';
 export const metadata: Metadata = {
   title: 'On the record',
   description: 'Everyone who spoke or wrote about AI safety and control in the sources we monitor, with what they said, checked.',
-  robots: { index: false, follow: false },
 };
 
 export default function PeoplePage() {

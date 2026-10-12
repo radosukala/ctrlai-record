@@ -160,6 +160,16 @@ for (const run of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS
   });
 }
 
+// One entry per source across runs: a later run's reading replaces an earlier one, but the first slug stays,
+// because a slug is a permalink.
+const byId = new Map<string, Entry>();
+for (const e of entries) {
+  const prev = byId.get(e.id);
+  if (prev) { console.log(`  ${e.id}: run ${e.run} replaces run ${prev.run}`); e.slug = prev.slug; }
+  byId.set(e.id, e);
+}
+entries.splice(0, entries.length, ...byId.values());
+
 // Slugs are permalinks: they must be unique.
 const seen = new Set<string>();
 for (const e of entries) {

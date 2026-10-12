@@ -11,6 +11,13 @@ const NAMES = namesJson as Record<string, string>;
 const PERSON = new Map(PEOPLE.map(p => [p.id, p]));
 
 export const getEntry = (slug: string) => ENTRIES.find(e => e.slug === slug);
+
+/** The newest day any entry carries, and the entries published in the seven days up to it (the front page's week). */
+export const LATEST_DAY = ENTRIES.reduce((d, e) => (e.published > d ? e.published : d), '');
+const daysBefore = (day: string, n: number) => new Date(Date.parse(`${day}T12:00:00Z`) - n * 864e5).toISOString().slice(0, 10);
+export const recent = (days = 7, from = LATEST_DAY) => ENTRIES.filter(e => e.published > daysBefore(from, days) && e.published <= from);
+export const WEEK = recent(7);
+export const WEEK_FROM = WEEK.reduce((d, e) => (!d || e.published < d ? e.published : d), '');
 export const getPerson = (id: string) => PERSON.get(id);
 export const isPerson = (id: string) => PERSON.has(id);
 /** A speaker's display name: a person's name, or an organization's. */

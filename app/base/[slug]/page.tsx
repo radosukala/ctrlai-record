@@ -16,7 +16,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const e = getEntry((await params).slug);
   if (!e) return {};
-  return { title: e.title, description: e.summary, robots: { index: false, follow: false }, alternates: { canonical: `/base/${e.slug}` } };
+  return { title: e.title, description: e.summary, alternates: { canonical: `/base/${e.slug}` } };
 }
 
 const clock = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
