@@ -43,7 +43,10 @@ captions with a minute between requests. It can take an hour when there are long
 never fetch captions in parallel: on Oct 12 2026 that got this Mac's connection blocked by YouTube for the day.
 
 ## 4. Reading agents
-Launch one agent per `D…` key and one per `L…` key, in parallel (the Agent tool; `sonnet` is enough for light keys):
+Launch one agent per `D…` key and one per `L…` key, in parallel, with the Agent tool. **Model: `sonnet` for every agent**,
+with one exception: a `D…` key holding a long interview (about an hour or more, several speakers), where working out who
+said what is hardest, gets `opus`. Quotation accuracy doesn't depend on the model: code checks every quotation, against two
+transcripts for audio.
 
 > You are a reading agent for Ctrl AI's Radar. First read RUN/AGENT-BRIEF.md and follow it exactly. Your items are
 > `deep["D1"]` in RUN/triage.json. Work from /Users/rado/code/ctrlai-com-radar. Run the checker until every remaining
