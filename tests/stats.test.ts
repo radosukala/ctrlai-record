@@ -36,7 +36,7 @@ test('the snapshot has a date, and every video and X post was measured', () => {
 });
 
 test('an X post shows how often it was kept and argued over, using replies', () => {
-  const post = ISSUES[0].picks.find(pick => pick.url.includes('x.com'))!;
+  const post = ISSUES.flatMap(issue => issue.picks).find(pick => pick.url.includes('x.com'))!;
   const keys = signals(post, 'week').map(signal => signal.key);
   assert.deepEqual(keys, ['reach', 'pace', 'liked', 'kept', 'argued']);
 });

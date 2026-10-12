@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og';
 import { ISSUES, getIssue } from '@/content/issues';
-import { capsRange, OG_SIZE, ogFonts, PickCard } from '@/lib/og';
+import { OG_SIZE, ogFonts, PickCard, rangeLabel } from '@/lib/og';
 
 /** A card for each pick, for its maker to post: /week/<slug>/card/<pick id>. */
 
@@ -18,8 +18,8 @@ export async function GET(_request: Request, { params }: { params: Promise<{ slu
   return new ImageResponse(
     <PickCard
       pick={issue.picks[index]}
-      label="PICKED FOR THIS WEEK IN AI CONTROL"
-      right={`ISSUE ${issue.number} · ${capsRange(issue.from, issue.to)}`}
+      label="Picked for This week in AI control"
+      right={`Issue ${issue.number} · ${rangeLabel(issue.from, issue.to)}`}
       footer={`Pick ${index + 1} of ${issue.picks.length} worth your time this week`}
       url={`ctrlai.com/week/${issue.slug}`}
     />,

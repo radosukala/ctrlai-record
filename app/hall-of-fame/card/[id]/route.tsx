@@ -19,8 +19,8 @@ export async function GET(_request: Request, { params }: { params: Promise<{ id:
   return new ImageResponse(
     <PickCard
       pick={entry}
-      label={nominee ? 'NOMINATED TO THE HALL OF FAME' : 'IN THE HALL OF FAME'}
-      right={section.title.toUpperCase()}
+      label={nominee ? 'Nominated to the Hall of Fame' : 'In the Hall of Fame'}
+      right={section.title}
       footer={`One of ${ENTRIES.length} things you shouldn’t miss about AI control`}
       url="ctrlai.com/hall-of-fame"
     />,

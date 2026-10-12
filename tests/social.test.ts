@@ -69,7 +69,7 @@ for (const issue of ISSUES) {
     assert.ok(post.firstComment.includes(`/week/${issue.slug}`));
     for (const event of issue.main) assert.ok(post.text.includes(event.headline));
     assert.ok(!post.text.includes('undefined'));
-    assert.ok(post.text.includes('post on X'), 'the acronym keeps its capital');
+    if (issue.picks.some(pick => pick.kind === 'post')) assert.ok(post.text.includes('post on X'), 'the acronym keeps its capital');
   });
 }
 

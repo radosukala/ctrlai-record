@@ -223,7 +223,7 @@ export default function AboutPage() {
               {' '}<a href={SITE.contentLicenseUrl}>{SITE.contentLicense}</a>; the works we link to belong to their makers. The code is
               {' '}<a href={SITE.codeLicenseUrl}>{SITE.codeLicense}</a>.
             </p>
-            <p><Link href="/">Back to this week →</Link></p>
+            <p><Link href="/week">Back to this week →</Link></p>
           </div>
         </Section>
       </div>

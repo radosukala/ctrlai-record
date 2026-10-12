@@ -1,22 +1,14 @@
 import type { Metadata } from 'next';
-import { LATEST } from '@/content/issues';
+import { BaseHome } from '@/components/base/BaseHome';
 import { FilmHero } from '@/components/FilmHero';
-import { IssueView } from '@/components/IssueView';
 import { FILM_PUBLIC } from '@/content/incidents/openai-hf/publish';
-import { SITE, dateRange } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Ctrl AI · This week in AI control' },
-  description: SITE.description,
+  title: { absolute: 'Ctrl AI · What is happening in AI safety and control, checked' },
+  description: 'Everything that mattered in AI safety, alignment and control, in one place: what was said, by whom, why it matters to you, and every quotation checked against its source.',
   alternates: { canonical: '/' },
-  openGraph: { title: `This week in AI control · Issue ${LATEST.number}, ${dateRange(LATEST.from, LATEST.to)}`, description: LATEST.summary },
 };
 
 export default function Home() {
-  return (
-    <>
-      {FILM_PUBLIC ? <FilmHero /> : null}
-      <IssueView issue={LATEST} isLatest />
-    </>
-  );
+  return <BaseHome film={FILM_PUBLIC ? <FilmHero /> : null} />;
 }

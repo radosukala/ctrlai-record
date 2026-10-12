@@ -7,7 +7,8 @@ import { newsletterEnabled } from '@/lib/newsletter/config';
 import { SITE } from '@/lib/site';
 
 export const NAV = [
-  { href: '/', label: 'This week', also: '/week/' },
+  { href: '/', label: 'The Base', also: ['/base/', '/people'] },
+  { href: '/week', label: 'This week' },
   { href: '/hall-of-fame', label: 'Hall of Fame' },
   { href: '/say', label: 'A Say in AI', also: '/accord' },
   { href: '/about', label: 'About' },
@@ -34,7 +35,8 @@ export function SiteFooter() {
             <p className="footer-line">The feed forgets. This page doesn’t.</p>
           </div>
           <nav className="footer-links" aria-label="Footer">
-            <Link href="/">This week</Link>
+            <Link href="/">The Base</Link>
+            <Link href="/week">This week</Link>
             <a href="/feed.xml">RSS</a>
             <Link href="/hall-of-fame">Hall of Fame</Link>
             <Link href="/say">A Say in AI</Link>

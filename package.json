@@ -20,8 +20,11 @@
     "film:voices": "tsx --env-file-if-exists=.env.local scripts/film-voices.ts"
   },
   "dependencies": {
+    "@fontsource-variable/archivo": "^5.3.0",
     "@fontsource-variable/newsreader": "^5.3.0",
     "@fontsource-variable/schibsted-grotesk": "^5.3.0",
+    "@fontsource-variable/source-serif-4": "^5.3.1",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
     "@fontsource/newsreader": "^5.3.0",
     "@fontsource/schibsted-grotesk": "^5.3.0",
     "@vercel/analytics": "^2.0.1",

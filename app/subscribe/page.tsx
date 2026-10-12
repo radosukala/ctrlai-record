@@ -36,7 +36,7 @@ export default function SubscribePage() {
               <li><strong>Seven worth your time.</strong> Videos, posts, articles and papers, in the order we’d open them, with why and how people responded.</li>
               <li><strong>Where to start.</strong> A link to the Hall of Fame, for the people you forward it to.</li>
             </ul>
-            <p>See what it looks like: <Link href="/">the latest issue, issue {LATEST.number}</Link>.</p>
+            <p>See what it looks like: <Link href="/week">the latest issue, issue {LATEST.number}</Link>.</p>
           </div>
         </Section>
       </div>

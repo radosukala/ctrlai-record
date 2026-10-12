@@ -1,5 +1,6 @@
-/* The film. A dark screen set into the paper page: ink-black, paper-white lines, one red used only for the attack. */
-.film { --f-ink: #080706; --f-paper: #f4f1ea; --f-red: #ff5428; background: var(--f-ink); color: var(--f-paper); border-radius: 10px; overflow: hidden; overflow: clip; border: 1px solid #1d1a17; }
+/* The film. A dark screen set into the paper page: ink-black, paper-white lines, one red used only for the attack.
+   It keeps the typefaces it was made and rendered with (Newsreader, Schibsted Grotesk), so the web film matches the MP4. */
+.film { --serif: 'Newsreader Variable', 'Newsreader', Georgia, serif; --sans: 'Schibsted Grotesk Variable', 'Schibsted Grotesk', -apple-system, 'Helvetica Neue', Arial, sans-serif; --f-ink: #080706; --f-paper: #f4f1ea; --f-red: #ff5428; background: var(--f-ink); color: var(--f-paper); border-radius: 10px; overflow: hidden; overflow: clip; border: 1px solid #1d1a17; }
 .film-stage { position: relative; width: 100%; aspect-ratio: 16 / 9; background: var(--f-ink); overflow: hidden; overflow: clip; container-type: inline-size; }
 @media (max-width: 720px) { .film-stage { aspect-ratio: 4 / 5; } }
 .film-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }

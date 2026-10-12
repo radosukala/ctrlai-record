@@ -23,7 +23,7 @@ export function IssueView({ issue, isLatest }: { issue: Issue; isLatest: boolean
               <span>{dateRange(issue.from, issue.to)}</span>
             </p>
             <h1 className="headline">{issue.summary}</h1>
-            {isLatest ? null : <p className="small muted">This is an earlier issue. <Link href="/">The latest is here.</Link></p>}
+            {isLatest ? null : <p className="small muted">This is an earlier issue. <Link href="/week">The latest is here.</Link></p>}
           </div>
           <nav className="index" aria-label="In this issue">
             <a href="#happened"><span className="cap">1</span><b>What happened</b><small>{issue.main.length} events and {issue.also.length} in brief, each confirmed by two reports</small></a>

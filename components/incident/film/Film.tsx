@@ -15,6 +15,8 @@ import { AGENTS_ON_OFFER, CLIPS, FilmVoices, NARRATOR_ON_OFFER, VOICES_ARE_DRAFT
 import { FILM_SHORT_PATH } from '@/content/incidents/openai-hf/publish';
 import { SITE } from '@/lib/site';
 import '../incident.css';
+import '@fontsource-variable/newsreader/standard.css';
+import '@fontsource-variable/schibsted-grotesk/wght.css';
 import './film.css';
 
 /** The still the film opens on, behind the title: the hall turning red (a screen time). */

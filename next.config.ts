@@ -20,8 +20,8 @@ const config: NextConfig = {
   // Share images read these fonts from disk at runtime; make sure serverless bundles include them.
   outputFileTracingIncludes: {
     '/**/*': [
-      './node_modules/@fontsource/dm-sans/files/dm-sans-latin*-{400,600}-normal.woff',
-      './node_modules/@fontsource/instrument-serif/files/instrument-serif-latin*-400-*.woff',
+      './lib/og-fonts/*.woff',
+      './node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin*-{400,600}-normal.woff',
     ],
   },
   async redirects() {

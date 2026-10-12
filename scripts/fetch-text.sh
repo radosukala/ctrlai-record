@@ -7,7 +7,7 @@ url="$1"; out="$2"
 here="$(cd "$(dirname "$0")" && pwd)"
 tmp="$(mktemp -d)"
 mkdir -p "$(dirname "$out")"
-code=$(curl -sL --max-time 40 -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36" -H "Accept-Language: en-US,en;q=0.9" -o "$tmp/raw" -w "%{http_code} %{content_type}" "$url")
+code=$(curl -sL --compressed --max-time 40 -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36" -H "Accept-Language: en-US,en;q=0.9" -o "$tmp/raw" -w "%{http_code} %{content_type}" "$url")
 status="${code%% *}"; ctype="${code#* }"
 if [ "$status" != "200" ]; then echo "FAILED http=$status url=$url"; rm -rf "$tmp"; exit 1; fi
 if echo "$ctype" | grep -qi pdf; then

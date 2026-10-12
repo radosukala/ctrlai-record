@@ -1,0 +1,892 @@
+{
+ "note": "The sources the Radar reads. Public on purpose: every claim about what is happening is \"in the sources we monitor\". Adding a source is a one-line change. tier 1 = the speaker's or organization's own channel or an official record; 2 = a major outlet's own reporting; 3 = discovery only (needs a tier 1 or 2 source before anything is published). filter: on-topic = everything is read; ai = AI sources, read when it touches safety, control or governance; general = read only when it is about AI and touches safety, control, governance, work or rights.",
+ "updated": "2026-10-12",
+ "sources": [
+  {
+   "id": "yt-dwarkesh-patel-youtube",
+   "name": "Dwarkesh Patel (YouTube)",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXl4i9dYBrFOabk0xGmbkRA",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "yt-80-000-hours-youtube",
+   "name": "80,000 Hours (YouTube)",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCafjal1QYJ3rb0Y9xZk1Ezg",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "yt-ai-in-context",
+   "name": "AI In Context",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCjcxIgL0n3OYKWUSgYCuSkA",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "yt-robert-miles-ai-safety",
+   "name": "Robert Miles AI Safety",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLB7AzTwc6VFZrBsO2ucBMg",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "yt-computerphile",
+   "name": "Computerphile",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC9-y-6csu5WGm29I7JiwpnA",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "yt-rational-animations",
+   "name": "Rational Animations",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCgqt1RE0k0MIr0LoyJRy2lg",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "yt-kurzgesagt",
+   "name": "Kurzgesagt",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "yt-ai-explained",
+   "name": "AI Explained",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNJ1Ymd5yFuUPtn21xtRbbw",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "yt-hard-fork-youtube",
+   "name": "Hard Fork (YouTube)",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZcR2SVWaGWNlMqPxvQS3vw",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "yt-lex-fridman-youtube",
+   "name": "Lex Fridman (YouTube)",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSHZKyawb77ixDdsGog4iWA",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "yt-60-minutes",
+   "name": "60 Minutes",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsN32BtMd0IoByjJRNF12cw",
+   "tier": 1,
+   "filter": "general",
+   "capped": true
+  },
+  {
+   "id": "yt-c-span",
+   "name": "C-SPAN",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCb--64Gl51jIEVE-GLDAVTg",
+   "tier": 1,
+   "filter": "general",
+   "capped": true
+  },
+  {
+   "id": "yt-forbes-breaking-news",
+   "name": "Forbes Breaking News",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCg40OxZ1GYh3u3jBntB6DLg",
+   "tier": 1,
+   "filter": "general",
+   "capped": true
+  },
+  {
+   "id": "yt-bloomberg-television",
+   "name": "Bloomberg Television",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCIALMKvObZNtJ6AmdCLP7Lg",
+   "tier": 1,
+   "filter": "general",
+   "capped": true
+  },
+  {
+   "id": "yt-cnbc-television",
+   "name": "CNBC Television",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrp_UI8XtuYfpiqluWLD7Lw",
+   "tier": 1,
+   "filter": "general",
+   "capped": true
+  },
+  {
+   "id": "yt-the-diary-of-a-ceo",
+   "name": "The Diary Of A CEO",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCGq-a57w-aPwyi3pW7XLiHw",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "yt-machine-learning-street-talk-youtube",
+   "name": "Machine Learning Street Talk (YouTube)",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCMLtBahI5DMrt0NPvDSoIRQ",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "yt-future-of-life-institute-youtube",
+   "name": "Future of Life Institute (YouTube)",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC-rCCy3FQ-GItDimSR9lhzw",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "yt-center-for-ai-safety",
+   "name": "Center for AI Safety",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCY_K5gXsXHtuiP8mj3BiWxA",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "yt-anthropic",
+   "name": "Anthropic",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrDwWp7EBBv4NwvScIpBDOA",
+   "tier": 1,
+   "filter": "ai",
+   "lab": true
+  },
+  {
+   "id": "yt-openai",
+   "name": "OpenAI",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXZCJLdBC09xxGZ6gcdrc6A",
+   "tier": 1,
+   "filter": "ai",
+   "lab": true
+  },
+  {
+   "id": "yt-google-deepmind",
+   "name": "Google DeepMind",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCP7jMXSY2xbc3KCAE0MHQ-A",
+   "tier": 1,
+   "filter": "ai",
+   "lab": true
+  },
+  {
+   "id": "yt-controlai",
+   "name": "ControlAI",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCxEXSuI8mtYhgE3HInhuhog",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "yt-doom-debates-youtube",
+   "name": "Doom Debates (YouTube)",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCote8RH_wwSLza2Qb0GAQJw",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "yt-pbs-newshour",
+   "name": "PBS NewsHour",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC6ZFN9Tx6xh-skXCuRHCDpQ",
+   "tier": 1,
+   "filter": "general",
+   "capped": true
+  },
+  {
+   "id": "yt-nbc-news",
+   "name": "NBC News",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCeY0bbntWzzVIaj2z3QigXg",
+   "tier": 1,
+   "filter": "general",
+   "capped": true
+  },
+  {
+   "id": "yt-cnn",
+   "name": "CNN",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCupvZG-5ko_eiXAupbDfxWw",
+   "tier": 1,
+   "filter": "general",
+   "capped": true
+  },
+  {
+   "id": "yt-fox-news",
+   "name": "Fox News",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXIJgqnII2ZOINSWNOGFThA",
+   "tier": 1,
+   "filter": "general",
+   "capped": true
+  },
+  {
+   "id": "yt-the-white-house",
+   "name": "The White House",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCYxRlFDqcWM4y7FfpiAN3KQ",
+   "tier": 1,
+   "filter": "ai",
+   "capped": true
+  },
+  {
+   "id": "yt-ted",
+   "name": "TED",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCAuUUnT6oDeKwE6v1NGQxug",
+   "tier": 1,
+   "filter": "general",
+   "capped": true
+  },
+  {
+   "id": "yt-all-in-podcast",
+   "name": "All-In Podcast",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCESLZhusAkFfsNsApnjF_Cg",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "yt-the-cognitive-revolution-youtube",
+   "name": "The Cognitive Revolution (YouTube)",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCjNRVMBVI30Sak_p6HRWhIA",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "pod-the-ezra-klein-show",
+   "name": "The Ezra Klein Show",
+   "kind": "podcast",
+   "url": "https://feeds.simplecast.com/kEKXbjuJ",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "pod-dwarkesh-podcast",
+   "name": "Dwarkesh Podcast",
+   "kind": "podcast",
+   "url": "https://apple.dwarkesh-podcast.workers.dev/feed.rss",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "pod-80-000-hours-podcast",
+   "name": "80,000 Hours Podcast",
+   "kind": "podcast",
+   "url": "https://feeds.transistor.fm/80000-hours-podcast",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "pod-axrp-the-ai-x-risk-research-podcast",
+   "name": "AXRP - the AI X-risk Research Podcast",
+   "kind": "podcast",
+   "url": "https://rss.libsyn.com/shows/312947/destinations/2517215.xml",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "pod-hard-fork",
+   "name": "Hard Fork",
+   "kind": "podcast",
+   "url": "https://feeds.simplecast.com/6HKOhNgS",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "pod-lex-fridman-podcast",
+   "name": "Lex Fridman Podcast",
+   "kind": "podcast",
+   "url": "https://lexfridman.com/feed/podcast/",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "pod-machine-learning-street-talk",
+   "name": "Machine Learning Street Talk",
+   "kind": "podcast",
+   "url": "https://anchor.fm/s/1e4a0eac/podcast/rss",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "pod-future-of-life-institute-podcast",
+   "name": "Future of Life Institute Podcast",
+   "kind": "podcast",
+   "url": "https://feeds.transistor.fm/future-of-life-institute-podcast-4e4d1fa5-a878-4cb2-91be-91c3ce266dfd",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "pod-the-cognitive-revolution",
+   "name": "The Cognitive Revolution",
+   "kind": "podcast",
+   "url": "https://feeds.megaphone.fm/RINTP3108857801",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "pod-your-undivided-attention",
+   "name": "Your Undivided Attention",
+   "kind": "podcast",
+   "url": "https://feeds.simplecast.com/rZ0cYk12",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "pod-doom-debates",
+   "name": "Doom Debates!",
+   "kind": "podcast",
+   "url": "https://api.substack.com/feed/podcast/1777870.rss",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "pod-the-inside-view",
+   "name": "The Inside View",
+   "kind": "podcast",
+   "url": "https://anchor.fm/s/56df2194/podcast/rss",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "pod-conversations-with-tyler",
+   "name": "Conversations with Tyler",
+   "kind": "podcast",
+   "url": "https://rss.libsyn.com/shows/137081/destinations/850607.xml",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "pod-the-lawfare-podcast",
+   "name": "The Lawfare Podcast",
+   "kind": "podcast",
+   "url": "https://feeds.acast.com/public/shows/60518a52f69aa815d2dba41c",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "pod-decoder-with-nilay-patel",
+   "name": "Decoder with Nilay Patel",
+   "kind": "podcast",
+   "url": "https://feeds.megaphone.fm/recodedecode",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "pod-interesting-times",
+   "name": "Interesting Times",
+   "kind": "podcast",
+   "url": "https://feeds.simplecast.com/bS1LZG8m",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "pod-the-ai-policy-podcast",
+   "name": "The AI Policy Podcast",
+   "kind": "podcast",
+   "url": "https://feeds.megaphone.fm/CSIS8973369418",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "pod-chinatalk",
+   "name": "ChinaTalk",
+   "kind": "podcast",
+   "url": "https://feeds.megaphone.fm/CHTAL4990341033",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "pod-no-priors-artificial-intelligence-te",
+   "name": "No Priors: Artificial Intelligence | Technology | Startups",
+   "kind": "podcast",
+   "url": "https://feeds.megaphone.fm/nopriors",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "pod-latent-space-the-ai-engineer-podcast",
+   "name": "Latent Space: The AI Engineer Podcast",
+   "kind": "podcast",
+   "url": "https://api.substack.com/feed/podcast/1084089.rss",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "yt-the-ezra-klein-show",
+   "name": "The Ezra Klein Show",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCnxuOd8obvLLtf5_-YKFbiQ",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "yt-center-for-humane-technology",
+   "name": "Center for Humane Technology",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCFECM-p3CF81Tp_l2sJsiyg",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "yt-bloomberg-tech",
+   "name": "Bloomberg Tech",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrM7B7SL_g1edFOnmj-SDKg",
+   "tier": 1,
+   "filter": "general",
+   "capped": true
+  },
+  {
+   "id": "yt-pauseai",
+   "name": "PauseAI",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwCuYsNEbmjQF2YEKP_bexg",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "yt-species-documenting-agi",
+   "name": "Species | Documenting AGI",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCEENWVBdvDy-QWfuQoXC9HQ",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "yt-house-energy-and-commerce-committee",
+   "name": "House Energy and Commerce Committee",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC5s1kIfkfWbap31d5ef-VtQ",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "yt-house-science-space-and-technology-co",
+   "name": "House Science, Space, and Technology Committee",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCtoUE3dJ-mLUo5dwGs7hXOw",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "yt-senator-josh-hawley",
+   "name": "Senator Josh Hawley",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCMzt8xq6qQ3XQ_DlNfJx0-w",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "zvi-mowshowitz",
+   "name": "Zvi Mowshowitz",
+   "kind": "blog",
+   "url": "https://thezvi.substack.com/feed",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "transformer",
+   "name": "Transformer",
+   "kind": "blog",
+   "url": "https://www.transformernews.ai/feed",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "import-ai",
+   "name": "Import AI",
+   "kind": "blog",
+   "url": "https://importai.substack.com/feed",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "ai-as-normal-technology",
+   "name": "AI as Normal Technology",
+   "kind": "blog",
+   "url": "https://www.normaltech.ai/feed",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "astral-codex-ten",
+   "name": "Astral Codex Ten",
+   "kind": "blog",
+   "url": "https://www.astralcodexten.com/feed",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "marcus-on-ai",
+   "name": "Marcus on AI",
+   "kind": "blog",
+   "url": "https://garymarcus.substack.com/feed",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "noahpinion",
+   "name": "Noahpinion",
+   "kind": "blog",
+   "url": "https://www.noahpinion.blog/feed",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "ai-safety-newsletter",
+   "name": "AI Safety Newsletter",
+   "kind": "blog",
+   "url": "https://newsletter.safe.ai/feed",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "understanding-ai",
+   "name": "Understanding AI",
+   "kind": "blog",
+   "url": "https://www.understandingai.org/feed",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "metr",
+   "name": "METR",
+   "kind": "blog",
+   "url": "https://metr.org/feed.xml",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "redwood-research-blog",
+   "name": "Redwood Research blog",
+   "kind": "blog",
+   "url": "https://blog.redwoodresearch.org/feed",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "future-of-life-institute",
+   "name": "Future of Life Institute",
+   "kind": "blog",
+   "url": "https://futureoflife.org/feed/",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "cset-georgetown",
+   "name": "CSET Georgetown",
+   "kind": "blog",
+   "url": "https://cset.georgetown.edu/feed/",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "openai-news",
+   "name": "OpenAI news",
+   "kind": "blog",
+   "url": "https://openai.com/news/rss.xml",
+   "tier": 1,
+   "filter": "ai",
+   "lab": true
+  },
+  {
+   "id": "openai-alignment-blog",
+   "name": "OpenAI alignment blog",
+   "kind": "blog",
+   "url": "https://alignment.openai.com/rss.xml",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "anthropic-news",
+   "name": "Anthropic news",
+   "kind": "blog",
+   "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
+   "tier": 1,
+   "filter": "ai",
+   "lab": true
+  },
+  {
+   "id": "google-deepmind-blog",
+   "name": "Google DeepMind blog",
+   "kind": "blog",
+   "url": "https://deepmind.google/blog/rss.xml",
+   "tier": 1,
+   "filter": "ai",
+   "lab": true
+  },
+  {
+   "id": "google-ai-blog",
+   "name": "Google AI blog",
+   "kind": "blog",
+   "url": "https://blog.google/technology/ai/rss/",
+   "tier": 1,
+   "filter": "ai",
+   "lab": true
+  },
+  {
+   "id": "meta-newsroom",
+   "name": "Meta newsroom",
+   "kind": "blog",
+   "url": "https://about.fb.com/news/feed/",
+   "tier": 1,
+   "filter": "ai",
+   "lab": true
+  },
+  {
+   "id": "microsoft-on-the-issues",
+   "name": "Microsoft On the Issues",
+   "kind": "blog",
+   "url": "https://blogs.microsoft.com/on-the-issues/feed/",
+   "tier": 1,
+   "filter": "ai",
+   "lab": true
+  },
+  {
+   "id": "hugging-face-blog",
+   "name": "Hugging Face blog",
+   "kind": "blog",
+   "url": "https://huggingface.co/blog/feed.xml",
+   "tier": 1,
+   "filter": "ai",
+   "lab": true
+  },
+  {
+   "id": "the-guardian-ai",
+   "name": "The Guardian: AI",
+   "kind": "blog",
+   "url": "https://www.theguardian.com/technology/artificialintelligenceai/rss",
+   "tier": 2,
+   "filter": "general"
+  },
+  {
+   "id": "nyt-technology",
+   "name": "NYT Technology",
+   "kind": "blog",
+   "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+   "tier": 2,
+   "filter": "general"
+  },
+  {
+   "id": "bbc-technology",
+   "name": "BBC Technology",
+   "kind": "blog",
+   "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+   "tier": 2,
+   "filter": "general"
+  },
+  {
+   "id": "the-verge-ai",
+   "name": "The Verge AI",
+   "kind": "blog",
+   "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+   "tier": 2,
+   "filter": "general"
+  },
+  {
+   "id": "ars-technica-ai",
+   "name": "Ars Technica AI",
+   "kind": "blog",
+   "url": "https://arstechnica.com/ai/feed/",
+   "tier": 2,
+   "filter": "general"
+  },
+  {
+   "id": "techcrunch-ai",
+   "name": "TechCrunch AI",
+   "kind": "blog",
+   "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+   "tier": 2,
+   "filter": "general"
+  },
+  {
+   "id": "mit-technology-review-ai",
+   "name": "MIT Technology Review AI",
+   "kind": "blog",
+   "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+   "tier": 2,
+   "filter": "general"
+  },
+  {
+   "id": "wired-ai",
+   "name": "Wired AI",
+   "kind": "blog",
+   "url": "https://www.wired.com/feed/tag/ai/latest/rss",
+   "tier": 2,
+   "filter": "general"
+  },
+  {
+   "id": "yt-siliconversations",
+   "name": "Siliconversations",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCaItA_xyCNvDSf-DLkzClRg",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "yt-house-judiciary-democrats",
+   "name": "House Judiciary Democrats",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCVvv3JRCVQAl6ovogDum4hA",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "yt-commerce-republicans",
+   "name": "Commerce Republicans",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0lKQz7pObyGEYLz-CIUvUw",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "yt-house-armed-services-committee",
+   "name": "House Armed Services Committee",
+   "kind": "youtube",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCD506yORW2voSanqEgLOUIQ",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "white-house-presidential-actions",
+   "name": "White House: presidential actions",
+   "kind": "gov",
+   "url": "https://www.whitehouse.gov/presidential-actions/feed/",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "un-news",
+   "name": "UN News",
+   "kind": "gov",
+   "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "gov-uk-search-artificial-intelligence",
+   "name": "GOV.UK search: artificial intelligence",
+   "kind": "gov",
+   "url": "https://www.gov.uk/search/all.atom?keywords=artificial+intelligence&order=updated-newest",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "un-press-releases",
+   "name": "UN press releases",
+   "kind": "gov",
+   "url": "https://press.un.org/en/rss.xml",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "white-house-briefings-and-statements",
+   "name": "White House: briefings and statements",
+   "kind": "gov",
+   "url": "https://www.whitehouse.gov/briefings-statements/feed/",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "un-news-un-affairs",
+   "name": "UN News: UN affairs",
+   "kind": "gov",
+   "url": "https://news.un.org/feed/subscribe/en/news/topic/un-affairs/feed/rss.xml",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "uk-ai-security-institute",
+   "name": "UK AI Security Institute",
+   "kind": "gov",
+   "url": "https://www.gov.uk/government/organisations/ai-security-institute.atom",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "white-house-fact-sheets",
+   "name": "White House: fact sheets",
+   "kind": "gov",
+   "url": "https://www.whitehouse.gov/fact-sheets/feed/",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "uk-department-for-science-innovation-and",
+   "name": "UK Department for Science, Innovation and Technology",
+   "kind": "gov",
+   "url": "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology.atom",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "gov-uk-search-api",
+   "name": "GOV.UK search API",
+   "kind": "gov-api",
+   "url": "https://www.gov.uk/api/search.json?q=artificial+intelligence&order=-public_timestamp&count=100",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "white-house-articles",
+   "name": "White House: articles",
+   "kind": "gov",
+   "url": "https://www.whitehouse.gov/articles/feed/",
+   "tier": 1,
+   "filter": "general"
+  },
+  {
+   "id": "lesswrong",
+   "name": "LessWrong",
+   "kind": "forum",
+   "url": "https://www.lesswrong.com/feed.xml?view=new",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "ai-alignment-forum",
+   "name": "AI Alignment Forum",
+   "kind": "forum",
+   "url": "https://www.alignmentforum.org/feed.xml?view=new",
+   "tier": 1,
+   "filter": "on-topic"
+  },
+  {
+   "id": "arxiv-ai-safety-query",
+   "name": "arXiv (AI safety query)",
+   "kind": "arxiv",
+   "url": "https://export.arxiv.org/api/query",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "hacker-news-50-points",
+   "name": "Hacker News (50+ points)",
+   "kind": "hn",
+   "url": "https://hn.algolia.com/api/v1/search_by_date?tags=story&numericFilters=points>=50&hitsPerPage=200",
+   "tier": 3,
+   "filter": "general"
+  }
+ ]
+}

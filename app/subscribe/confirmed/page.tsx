@@ -17,7 +17,7 @@ export default function ConfirmedPage() {
             <h1 className="headline">You’re <em>in.</em></h1>
             <p className="lede">The next issue will arrive in your inbox. A welcome email with the latest issue is on its way.</p>
             <p>
-              <Link href="/" className="key key-primary">Read issue {LATEST.number} now</Link>{' '}
+              <Link href="/week" className="key key-primary">Read issue {LATEST.number} now</Link>{' '}
               <Link href="/hall-of-fame#start-here" className="key">Six videos to start with</Link>
             </p>
           </div>
