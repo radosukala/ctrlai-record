@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { BaseHome } from '@/components/base/BaseHome';
 import { FilmHero } from '@/components/FilmHero';
+import { DayBeforeBand } from '@/components/scenario/DayBeforeBand';
 import { FILM_PUBLIC } from '@/content/incidents/openai-hf/publish';
+import { DAY_BEFORE_PUBLIC } from '@/content/scenarios/day-before/publish';
 
 export const metadata: Metadata = {
   title: { absolute: 'Ctrl AI · What is happening in AI safety and control, checked' },
@@ -10,5 +12,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <BaseHome film={FILM_PUBLIC ? <FilmHero /> : null} />;
+  return <BaseHome film={FILM_PUBLIC || DAY_BEFORE_PUBLIC ? <>{FILM_PUBLIC ? <FilmHero /> : null}{DAY_BEFORE_PUBLIC ? <DayBeforeBand /> : null}</> : null} />;
 }

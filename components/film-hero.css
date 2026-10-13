@@ -15,6 +15,9 @@
 .film-hero-link:hover { text-decoration-color: currentColor; }
 .film-hero-fine { margin: 6px 0 0; max-width: 54em; font-family: var(--sans); font-size: 12.5px; line-height: 1.5; color: rgba(255, 255, 255, 0.55); }
 .film-hero-dev { margin: 0 0 6px; padding: 6px 10px; background: #ffd6aa; color: #1c1209; font-family: var(--sans); font-size: 12px; font-weight: 600; border-radius: 3px; max-width: 54em; }
+/* "The day before": the same band, a little lower, with the lit model city behind it. */
+.day-before-band { background: #080706 url('/day-before/poster.jpg') right center / cover no-repeat; }
+.day-before-band .film-hero-in { min-height: clamp(380px, 54svh, 540px); }
 @media (max-width: 720px) {
   .film-hero { background-position: 70% center; }
   .film-hero::before { background: linear-gradient(180deg, rgba(8, 7, 6, 0.55) 0%, rgba(8, 7, 6, 0.8) 55%, rgba(8, 7, 6, 0.95) 100%); }

@@ -174,7 +174,7 @@ export function createPlayer(root: HTMLElement, film: Film, opts: PlayerOptions 
         actx = new AC();
         master = actx.createGain(); master.gain.value = 1; meter = actx.createAnalyser(); meter.fftSize = 512; master.connect(meter); meter.connect(actx.destination);
         musicBus = actx.createGain(); musicBus.gain.value = 0; musicMeter = actx.createAnalyser(); musicMeter.fftSize = 512; musicBus.connect(musicMeter); musicMeter.connect(actx.destination);
-        for (const src of new Set(clips.map(c => c.src))) void load(src);
+        for (const src of new Set([...clips, ...film.decisions.flatMap(d => (d.clip ? [d.clip] : []))].map(c => c.src))) void load(src);
         const first = film.scenes.find(s => s.mood && beds.some(b => b.id === s.mood)); // the first bed is wanted at once
         if (first) void decodeBed(beds.find(b => b.id === first.mood)!.src);
       }
@@ -198,6 +198,19 @@ export function createPlayer(root: HTMLElement, film: Film, opts: PlayerOptions 
     const node = actx.createBufferSource(); node.buffer = buf; node.connect(master);
     node.start(0, offset);
     voice = { id: want.id, at: want.at, node, ctxStart: actx.currentTime, offset };
+  };
+  // The narrator reads a question while the film waits for the choice. The film's clock is stopped then, so this voice runs on real time.
+  let question: AudioBufferSourceNode | null = null;
+  const stopQuestion = () => { if (question) { try { question.stop(); } catch { /* already ended */ } question = null; } };
+  const startQuestion = (d: Decision) => {
+    stopQuestion();
+    if (!actx || !master || voiceOff || !d.clip) return;
+    const buf = decoded.get(d.clip.src);
+    if (!buf) return;
+    if (actx.state === 'suspended') void actx.resume().catch(() => {});
+    const node = actx.createBufferSource(); node.buffer = buf; node.connect(master); node.start(0);
+    node.onended = () => { if (question === node) question = null; };
+    question = node;
   };
   const sceneAt = (tt: number) => film.scenes.find(s => tt >= s.t0 && tt < s.t1) ?? film.scenes[film.scenes.length - 1];
   let idleSince = 0, slept = false;
@@ -230,7 +243,7 @@ export function createPlayer(root: HTMLElement, film: Film, opts: PlayerOptions 
     }
     // How loud: ducked under the narrator (a little before, and a second and a half after), kept going while the film waits for a choice,
     // gone while the viewer has paused, faded slowly when the film ends.
-    const duck = !voiceOff && clips.some(c => t >= c.at - 0.3 && t < c.at + c.dur + 1.5) ? 0.4 : 1;
+    const duck = !voiceOff && (question || clips.some(c => t >= c.at - 0.3 && t < c.at + c.dur + 1.5)) ? 0.4 : 1;
     const level = musicOff || userPaused || ended || !live ? 0 : MUSIC_LEVEL * duck * (pausedAt ? 0.9 : 1);
     musicBus.gain.setTargetAtTime(level, now, ended ? 1.8 : musicOff || userPaused ? 0.12 : duck < 1 ? 0.25 : 0.7);
     // While the viewer has paused every sound is frozen together (and the loops do not drift); when the film moves again they go on.
@@ -243,10 +256,10 @@ export function createPlayer(root: HTMLElement, film: Film, opts: PlayerOptions 
     if (musicBtn) { musicBtn.textContent = musicOff ? 'Music off' : 'Music on'; musicBtn.setAttribute('aria-pressed', String(musicOff)); }
     syncSound();
   };
-  const setVoiceOff = (off: boolean) => { voiceOff = off; writeFlag('voice-off', off); applyFlags(); };
+  const setVoiceOff = (off: boolean) => { voiceOff = off; writeFlag('voice-off', off); if (off) stopQuestion(); applyFlags(); };
   const setMusicOff = (off: boolean) => { musicOff = off; writeFlag('music-off', off); applyFlags(); };
   /** M: everything off, or, when everything is already off, everything on. */
-  const toggleAll = () => { const off = !(voiceOff && musicOff) ; voiceOff = off; musicOff = off; writeFlag('voice-off', off); writeFlag('music-off', off); applyFlags(); };
+  const toggleAll = () => { const off = !(voiceOff && musicOff) ; voiceOff = off; musicOff = off; if (off) stopQuestion(); writeFlag('voice-off', off); writeFlag('music-off', off); applyFlags(); };
 
   // ---- the picture ----
   let W = 0, H = 0, scale = 1, t = Math.max(0, Math.min(film.duration, opts.startAt ?? 0)), blackExtra = 0;
@@ -267,6 +280,8 @@ export function createPlayer(root: HTMLElement, film: Film, opts: PlayerOptions 
   const activeTl = () => film.cues.find(c => c.k === 'tl' && t >= c.a && t < c.b) as Extract<Cue, { k: 'tl' }> | undefined;
   let pausedAt: Decision | null = null;
 
+  /** A decision is open for a choice from the moment its options are up (a third of a second into their fade) until they give way to the argument, if it has not been answered. */
+  const openFor = (d: Decision) => !capture && t >= d.askAt + 0.3 && t < d.pauseAt + d.hold - 0.5 && answers[d.id] === undefined;
   const draw = (tt: number, black = 0) => {
     t = clamp(tt, 0, film.duration); blackExtra = black;
     resize();
@@ -284,7 +299,7 @@ export function createPlayer(root: HTMLElement, film: Film, opts: PlayerOptions 
       if (show && Math.abs(op - it.op) > 0.005) { it.el.style.opacity = String(op); it.op = op; }
       if (it.cue.k === 'ask') {
         const id = it.cue.id, d = film.decisions.find(x => x.id === id)!;
-        const choose = it.el.querySelector<HTMLElement>('.dbf-choose'); if (choose) choose.hidden = !(pausedAt && pausedAt.id === id);
+        const choose = it.el.querySelector<HTMLElement>('.dbf-choose'); if (choose) choose.hidden = !(pausedAt?.id === id || openFor(d));
         // once the options have been up for `hold` seconds they give way to the arguments, and the viewer's own pick is kept as one line
         const settled = t >= d.pauseAt + d.hold - 0.5, o = d.opts.find(x => x.k === answers[id]);
         it.el.classList.toggle('is-settled', settled);
@@ -293,7 +308,7 @@ export function createPlayer(root: HTMLElement, film: Film, opts: PlayerOptions 
       }
     }
     shade.style.opacity = String(titleOp);
-    root.classList.toggle('dbf-asking', !!pausedAt || film.decisions.some(d => !capture && t >= d.pauseAt - 0.01 && t < d.pauseAt + d.hold - 0.5 && answers[d.id] === undefined));
+    root.classList.toggle('dbf-asking', !!pausedAt || film.decisions.some(openFor));
     const lab = activeLabel(), tl = activeTl();
     if (hudLabel) hudLabel.textContent = lab ? lab.text : '';
     if (tlEl && tlTrack && tlLabels) {
@@ -313,20 +328,26 @@ export function createPlayer(root: HTMLElement, film: Film, opts: PlayerOptions 
   // ---- time ----
   let playing = false, started = false, raf = 0, last = 0, dirty = true;
   const intervals: number[] = []; let lastAdapt = 0;
+  /** Only the decisions the playhead has passed stay answered: go back before one and it is asked again, start over and all of them are. */
+  const forgetAhead = () => {
+    let changed = false;
+    for (const d of film.decisions) if (d.askAt > t + 0.01 && answers[d.id] !== undefined) { delete answers[d.id]; changed = true; }
+    if (changed) { save(); syncPicks(); renderLedger(); }
+  };
   const finishChoice = () => { pausedAt = null; syncPicks(); renderLedger(); dirty = true; };
   const choose = (k: string) => {
-    const d = pausedAt ?? film.decisions.find(x => t >= x.pauseAt - 0.01 && t < x.pauseAt + x.hold - 0.5);
+    const d = pausedAt ?? film.decisions.find(x => t >= x.askAt + 0.3 && t < x.pauseAt + x.hold - 0.5);
     if (!d || !d.opts.some(o => o.k === k)) return;
-    answers[d.id] = k; save();
+    answers[d.id] = k; save(); stopQuestion();
     if (pausedAt) { pausedAt = null; playing = true; }
     finishChoice();
   };
-  const skip = () => { if (!pausedAt) return; answers[pausedAt.id] = answers[pausedAt.id] ?? ''; if (!answers[pausedAt.id]) delete answers[pausedAt.id]; pausedAt = null; playing = true; finishChoice(); };
+  const skip = () => { if (!pausedAt) return; stopQuestion(); answers[pausedAt.id] = answers[pausedAt.id] ?? ''; if (!answers[pausedAt.id]) delete answers[pausedAt.id]; pausedAt = null; playing = true; finishChoice(); };
   const advance = (dt: number) => {
     const next = t + dt;
     if (!capture) {
       const d = film.decisions.find(x => x.pauseAt > t && x.pauseAt <= next && answers[x.id] === undefined);
-      if (d) { t = d.pauseAt; pausedAt = d; playing = false; dirty = true; return; }
+      if (d) { t = d.pauseAt; pausedAt = d; playing = false; dirty = true; startQuestion(d); return; }
     }
     t = next;
     if (t >= film.duration) { t = film.duration; playing = false; }
@@ -350,11 +371,11 @@ export function createPlayer(root: HTMLElement, film: Film, opts: PlayerOptions 
     if (pausedAt) return;
     leavePoster();
     unlockAudio();
-    if (t >= film.duration - 0.05) t = 0;
+    if (t >= film.duration - 0.05) { t = 0; forgetAhead(); }
     started = true; startBtn && (startBtn.hidden = true); playing = true; dirty = true;
   };
-  const pause = () => { playing = false; dirty = true; syncSound(); };
-  const seek = (s: number) => { if (posterMode) { posterMode = false; root.classList.remove('dbf-poster'); } pausedAt = null; t = clamp(s, 0, film.duration); dirty = true; if (!started) { started = true; startBtn && (startBtn.hidden = true); } draw(t, blackExtra); };
+  const pause = () => { playing = false; dirty = true; stopQuestion(); syncSound(); };
+  const seek = (s: number) => { if (posterMode) { posterMode = false; root.classList.remove('dbf-poster'); } stopQuestion(); pausedAt = null; t = clamp(s, 0, film.duration); forgetAhead(); dirty = true; if (!started) { started = true; startBtn && (startBtn.hidden = true); } draw(t, blackExtra); };
   const stepTo = (dir: 1 | -1) => {
     const cur = t, stops = film.stops;
     const target = dir > 0 ? stops.find(s => s > cur + 0.3) ?? film.duration : [...stops].reverse().find(s => s < cur - 1.2) ?? 0;
@@ -370,7 +391,7 @@ export function createPlayer(root: HTMLElement, film: Film, opts: PlayerOptions 
   voiceBtn?.addEventListener('click', () => setVoiceOff(!voiceOff));
   musicBtn?.addEventListener('click', () => setMusicOff(!musicOff));
   // A film that plays while nobody can see it would run on with its voice: it stops when the tab is hidden.
-  const onHidden = () => { if (document.hidden && playing) pause(); };
+  const onHidden = () => { if (document.hidden) { stopQuestion(); if (playing) pause(); } };
   document.addEventListener('visibilitychange', onHidden);
   applyFlags();
   root.addEventListener('click', e => { const b = (e.target as HTMLElement).closest<HTMLElement>('.dbf-pill[data-k]'); if (b) choose(b.dataset.k ?? ''); });
@@ -402,7 +423,7 @@ export function createPlayer(root: HTMLElement, film: Film, opts: PlayerOptions 
     setSize: (w: number, h: number) => { sizeOverride = [w, h]; draw(t, blackExtra); },
     card: (kind: 'title' | 'end', visible = 1, black = 0) => { draw(kind === 'end' ? film.duration : (film.scenes[0]?.t0 ?? 0) + 44, black); void visible; },
     get t() { return t; }, get T() { return t; }, get duration() { return film.duration; }, get answers() { return answers; }, get paused() { return pausedAt?.id ?? null; },
-    get scale() { return scale; }, get decisions() { return film.decisions; }, get voice() { return voice?.id ?? null; }, get voiceOff() { return voiceOff; }, get musicOff() { return musicOff; }, get mood() { return bedNow?.id ?? null; }, get decoded() { return decoded.size; }, get bedsDecoded() { return bedBuf.size; }, get audioRunning() { return actx?.state === 'running'; }, get audioState() { return actx?.state ?? 'none'; }, get musicGain() { return musicBus?.gain.value ?? 0; },
+    get scale() { return scale; }, get decisions() { return film.decisions; }, get voice() { return voice?.id ?? null; }, get questionVoice() { return question !== null; }, get asking() { return !!pausedAt || film.decisions.some(openFor); }, get voiceOff() { return voiceOff; }, get musicOff() { return musicOff; }, get mood() { return bedNow?.id ?? null; }, get decoded() { return decoded.size; }, get bedsDecoded() { return bedBuf.size; }, get audioRunning() { return actx?.state === 'running'; }, get audioState() { return actx?.state ?? 'none'; }, get musicGain() { return musicBus?.gain.value ?? 0; },
     /** How loud the music is right now (0 to 1): for tools that cannot listen. */
     musicLevel: () => { if (!musicMeter) return 0; const d = new Float32Array(musicMeter.fftSize); musicMeter.getFloatTimeDomainData(d); let sum = 0; for (const x of d) sum += x * x; return Math.sqrt(sum / d.length); }, get audioTime() { return actx?.currentTime ?? 0; },
     /** How loud the narrator is right now (0 to 1, root mean square of the output): for tools that cannot listen. */

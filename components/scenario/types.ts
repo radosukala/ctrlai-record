@@ -24,10 +24,14 @@ export type Decision = {
   id: string;
   /** Short name, used in the hot wash. */
   name: string;
-  /** The web player stops here until the viewer chooses. A video holds on the options instead (the ask cue lasts past this). */
+  /** When the question and its options come up: from here the viewer can choose. */
+  askAt: number;
+  /** The web player stops here, a moment after the question is up, and waits until the viewer chooses. A video holds on the options instead (the ask cue lasts past this). */
   pauseAt: number;
   /** Seconds after `pauseAt` that the options stay up before they give way to what people on the record have said. */
   hold: number;
+  /** The narrator reading the question, played while the film waits (it is not on the film's clock: the clock is stopped). */
+  clip?: Clip;
   opts: { k: string; b: string }[];
   /** What the hot wash shows when nobody has chosen yet: an example, marked as one. */
   example: string;

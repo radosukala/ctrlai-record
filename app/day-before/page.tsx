@@ -8,7 +8,7 @@ import { FILM } from '@/content/scenarios/day-before/film';
 import { absoluteUrl } from '@/lib/site';
 
 const TITLE = 'The day before';
-const MINUTES = Math.floor(FILM.duration / 60);
+const MINUTES = Math.round(FILM.duration / 60);
 const DESCRIPTION = `A ${MINUTES}-minute rehearsal for the day after an AI breach, on a model city that is not real. You make five decisions; between them, people on the record argue the other side. Every quotation is word for word, with its source.`;
 
 export const metadata: Metadata = {

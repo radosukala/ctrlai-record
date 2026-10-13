@@ -7,6 +7,7 @@ import { HN_THRESHOLD } from '@/lib/stats';
 import { SITE } from '@/lib/site';
 import { AnalyticsSettingsButton } from '@/components/Analytics';
 import { Section } from '@/components/Section';
+import { DAY_BEFORE_MINUTES, DAY_BEFORE_PATH, DAY_BEFORE_PUBLIC } from '@/content/scenarios/day-before/publish';
 import { newsletterEnabled } from '@/lib/newsletter/config';
 
 export const metadata: Metadata = {
@@ -53,6 +54,14 @@ export default function AboutPage() {
                 Face incident</Link>, as a page and as a <Link href={FILM_PATH}>film of {minutes} minutes</Link>. It rests only on what OpenAI, METR,
                 Redwood Research and Hugging Face have published; every date, number and quotation has its source, and our own view is marked as ours.
                 It is not an official account from any of them, and the film’s voices are synthetic.
+              </p>
+            ) : null}
+            {DAY_BEFORE_PUBLIC ? (
+              <p>
+                <strong>Rehearsals.</strong> <Link href={DAY_BEFORE_PATH}>The day before</Link> is a rehearsal for the day after a large AI-enabled
+                cyberattack: about {DAY_BEFORE_MINUTES} minutes on a model city that is not real, five decisions that are yours, and, between them, what
+                people on the record have said about each option. Every quotation is word for word with its source, and the page says where a voice
+                only partly fits the side it stands for. The narrator’s voice is synthetic and the music is composed in code.
               </p>
             ) : null}
           </div>

@@ -80,12 +80,14 @@ const builder = (t0: number) => {
       else cues.push({ k: 'card', a: A(u), b: A(u + dur), id, side, chip: c.chip, kind: c.kind, html: quoteHtml(c), src: c.src, top });
     },
     note: (u: number, html: string, dur: number) => { cues.push({ k: 'note', a: A(u), b: A(u + dur), html }); },
-    /** The question and its options go up; the narrator reads the question. Returns the scene time at which that is done (the question's own time if it is not recorded). */
-    ask: (u: number, id: string, h: string, until: number, p?: string) => {
+    /**
+     * The question and its options go up. The narrator reads the question while the film waits for the choice, not on the film's clock
+     * (the clock is stopped by then), so the recording comes back to be kept with the decision rather than put on the timeline.
+     */
+    ask: (u: number, id: string, h: string, until: number, p?: string): { clip?: Clip } => {
       const { spoken, m } = record(p ? `${h} ${p}` : h, 'question');
-      const end = m ? voiceAt(spoken, m, Math.max(u + LEAD, spoke + GAP)) : u;
       cues.push({ k: 'ask', a: A(u), b: A(until), id, h, p, timer: 'YOU HAVE 03:00' });
-      return end;
+      return { clip: m ? { id: lineId(spoken), at: 0, dur: m.seconds, src: `/day-before/voices/${m.file}`, text: spoken } : undefined };
     },
     custom: (c: Cue) => { cues.push(c); },
   };
@@ -97,9 +99,12 @@ let clock = 0;
 const nextT0 = (len: number) => { const t0 = clock; clock += len; return { t0, t1: clock }; };
 
 /** Seconds between a decision's question appearing and the viewer being asked (the video holds on the options for the same time after). */
-const ASK_TO_PAUSE = 10, HOLD = 8;
-/** The quiet after the narrator has read a question, before the film stops and waits: the viewer is never stopped mid-sentence. */
-const QUIET = 1.4;
+/**
+ * A decision is quick to answer and quick to answer back. The film stops as soon as the question is up (its options have faded in), the
+ * narrator reads the question while it waits, and the options can be chosen from that moment. After a choice the pick is shown for a
+ * second and a half, and then the argument begins.
+ */
+const PAUSE_AFTER_ASK = 0.8, HOLD = 1.6;
 
 // ---------------------------------------------------------------------------------------------------------------------
 // 0 · Cold open
@@ -188,26 +193,27 @@ const s3 = (): Built => {
 type Dec = { id: string; name: string; h: string; p?: string; opts: [string, string][]; example: string };
 const decisions: Decision[] = [];
 const decide = (b: ReturnType<typeof builder>, t0: number, d: Dec, askU: number, until: number): { pause: number; next: number } => {
-  const read = b.ask(askU, d.id, d.h, until, d.p);
-  const pauseU = Math.max(askU + ASK_TO_PAUSE, read + QUIET);
-  decisions.push({ id: d.id, name: d.name, pauseAt: t0 + pauseU, hold: HOLD, opts: d.opts.map(([k, o]) => ({ k, b: o })), example: d.example });
+  const { clip } = b.ask(askU, d.id, d.h, until, d.p);
+  const pauseU = askU + PAUSE_AFTER_ASK;
+  decisions.push({ id: d.id, name: d.name, askAt: t0 + askU, pauseAt: t0 + pauseU, hold: HOLD, clip, opts: d.opts.map(([k, o]) => ({ k, b: o })), example: d.example });
   return { pause: pauseU, next: pauseU + HOLD };
 };
 
 // 4 · Decision 1: the brake
-const R4 = track([[0, 70], [108, 84]]);
+const LEN4 = 83;
+const R4 = track([[0, 70], [LEN4, 84]]);
 const P4 = outageAt(-30, 12, R4, 22);
 const s4 = (): Built => {
-  const { t0, t1 } = nextT0(108); const b = builder(t0);
-  b.label('Decision 1 of 5 · The brake', 1, 107); b.tl(0, 1, 107); b.stamp('DAY 0 · 01:08', undefined, 2, 106);
+  const { t0, t1 } = nextT0(LEN4); const b = builder(t0);
+  b.label('Decision 1 of 5 · The brake', 1, LEN4 - 1); b.tl(0, 1, LEN4 - 1); b.stamp('DAY 0 · 01:08', undefined, 2, LEN4 - 2);
   b.cap(3, 'Three and a half hours in. The first decision.');
   const { next } = decide(b, t0, { id: 'brake', name: 'The brake', h: 'Do you pull the emergency brake?', p: 'Some AI systems may be involved. Some AI systems also defend the hospitals and the grid.', example: 'B · Suspend only the systems you suspect',
-    opts: [['A', 'Switch off every frontier AI service for 72 hours'], ['B', 'Suspend only the systems you suspect'], ['C', 'Keep everything running and watch closely']] }, 10, 106);
+    opts: [['A', 'Switch off every frontier AI service for 72 hours'], ['B', 'Suspend only the systems you suspect'], ['C', 'Keep everything running and watch closely']] }, 10, LEN4 - 2);
   b.cap(next, 'Each choice costs something. Here is what people on the record have said.');
-  b.card(next + 7, 'nadella-brake', 'left'); b.card(next + 16, 'beyer-jacobs', 'right'); b.card(next + 25, 'guthrie', 'left'); b.card(next + 34, 'axios-viability', 'right'); b.card(next + 43, 'anthropic-defence', 'left');
-  b.cap(next + 63, 'Whichever you chose, nobody could be sure it was right. The night went on.');
+  b.card(next + 5.4, 'nadella-brake', 'left'); b.card(next + 14.4, 'beyer-jacobs', 'right'); b.card(next + 23.4, 'guthrie', 'left'); b.card(next + 32.4, 'axios-viability', 'right'); b.card(next + 41.4, 'anthropic-defence', 'left');
+  b.cap(next + 61.4, 'Whichever you chose, nobody could be sure it was right. The night went on.');
   return { cues: b.cues, def: { id: 'brake', title: 'The brake', t0, t1, state: (u) => base({
-    cam: camera([{ t: 0, pos: [-80, 64, 126], look: [10, 3, -4], fov: 38 }, { t: 108, pos: [-62, 54, 112], look: [10, 3, -4], fov: 38 }])(u),
+    cam: camera([{ t: 0, pos: [-80, 64, 126], look: [10, 3, -4], fov: 38 }, { t: LEN4, pos: [-62, 54, 112], look: [10, 3, -4], fov: 38 }])(u),
     power: (x, z) => P4(x, z, u), lampPower: 0.55, carList: carsAt(city, u, P4, 's4'),
     rings: [{ x: -30, z: 12, r: R4(u), dash: true, a: 0.9 }], blur: { y: 400, band: 300, amount: 5 },
   }) } };
@@ -216,17 +222,18 @@ const s4 = (): Built => {
 // 5 · Decision 2: what to say
 const P5 = outageAt(-30, 12, () => 90, 22);
 const crowdHospital = crowd(0, 25.2, 3.2, 26, 41), crowdAssembly = crowd(0, -16.2, 3.4, 22, 42);
+const LEN5 = 85;
 const s5 = (): Built => {
-  const { t0, t1 } = nextT0(102); const b = builder(t0);
-  b.label('Decision 2 of 5 · What to say', 1, 101); b.tl(0, 1, 101); b.stamp('DAY 0 · 04:00', 'Photographs are spreading.', 2, 100);
+  const { t0, t1 } = nextT0(LEN5); const b = builder(t0);
+  b.label('Decision 2 of 5 · What to say', 1, LEN5 - 1); b.tl(0, 1, LEN5 - 1); b.stamp('DAY 0 · 04:00', 'Photographs are spreading.', 2, LEN5 - 2);
   b.cap(3, 'Six hours in. The first photographs are everywhere. Journalists are outside. You must say something. Or you must not.');
   const { next } = decide(b, t0, { id: 'say', name: 'What to say', h: 'What do you tell the public, and when?', example: 'A · Say what you know now, including that you do not know who',
-    opts: [['A', 'Say what you know now, including that you do not know who'], ['B', 'Wait until you are sure'], ['C', 'Say only what people must do']] }, 13.8, 100);
+    opts: [['A', 'Say what you know now, including that you do not know who'], ['B', 'Wait until you are sure'], ['C', 'Say only what people must do']] }, 13.8, LEN5 - 2);
   b.cap(next, 'Each choice costs something. Here is what people on the record have said.');
-  b.card(next + 7, 'wh-not-optional', 'right'); b.card(next + 16, 'stosz', 'left'); b.card(next + 25, 'marcus-disclosure', 'right'); b.card(next + 34, 'ncsc-premature', 'left'); b.card(next + 43, 'metr-agent', 'right');
-  b.cap(next + 63, 'Whatever was said, the morning came.');
+  b.card(next + 5.4, 'wh-not-optional', 'right'); b.card(next + 14.4, 'stosz', 'left'); b.card(next + 23.4, 'marcus-disclosure', 'right'); b.card(next + 32.4, 'ncsc-premature', 'left'); b.card(next + 41.4, 'metr-agent', 'right');
+  b.cap(next + 61.4, 'Whatever was said, the morning came.');
   return { cues: b.cues, def: { id: 'say', title: 'What to say', t0, t1, state: (u) => base({
-    cam: camera([{ t: 0, pos: [-30, 40, 70], look: [0, 3, -5], fov: 40 }, { t: 100, pos: [-8, 38, 78], look: [0, 3, -5], fov: 40 }])(u),
+    cam: camera([{ t: 0, pos: [-30, 40, 70], look: [0, 3, -5], fov: 40 }, { t: LEN5 - 2, pos: [-8, 38, 78], look: [0, 3, -5], fov: 40 }])(u),
     power: (x, z) => P5(x, z, u), lampPower: 0.4, carList: carsAt(city, u, P5, 's5'),
     pegs: [...arrivals(crowdHospital, u, 6, 60, 3), ...arrivals(crowdAssembly, u, 10, 70, 4)],
     // signals spreading from the dark districts: the photographs
@@ -258,19 +265,20 @@ const s6 = (): Built => {
 
 // 7 · Decision 3: emergency powers
 const crowdSquare = crowd(0, -14.2, 3.2, 18, 31);
+const LEN7 = 76;
 const s7 = (): Built => {
-  const { t0, t1 } = nextT0(104); const b = builder(t0);
-  b.label('Decision 3 of 5 · Emergency powers', 1, 103); b.tl(2, 1, 103); b.stamp('DAY 3 · 22:00', 'The Assembly sits through the night.', 2, 102);
+  const { t0, t1 } = nextT0(LEN7); const b = builder(t0);
+  b.label('Decision 3 of 5 · Emergency powers', 1, LEN7 - 1); b.tl(2, 1, LEN7 - 1); b.stamp('DAY 3 · 22:00', 'The Assembly sits through the night.', 2, LEN7 - 2);
   b.cap(3, 'Day three, ten at night. The Assembly sits through the dark. The government asks for emergency powers. It does not say for how long.');
   const { next } = decide(b, t0, { id: 'powers', name: 'Emergency powers', h: 'How much power, for how long?', example: 'B · Narrow powers, 30 days, a court can review',
-    opts: [['A', 'Broad powers, no end date'], ['B', 'Narrow powers, 30 days, a court can review'], ['C', 'No new powers: use the law that exists']] }, 13.4, 102);
+    opts: [['A', 'Broad powers, no end date'], ['B', 'Narrow powers, 30 days, a court can review'], ['C', 'No new powers: use the law that exists']] }, 14.6, LEN7 - 2);
   b.cap(next, 'Each choice costs something. Here is what people on the record have said.');
-  b.card(next + 7, 'botvinick-powers', 'right'); b.card(next + 16, 'narayan-power', 'left'); b.card(next + 25, 'reason-grab', 'right'); b.card(next + 34, 'axios-crisis', 'left');
-  b.cap(next + 54, 'Whatever was decided, the clock started.');
+  b.card(next + 5.4, 'botvinick-powers', 'right'); b.card(next + 14.4, 'narayan-power', 'left'); b.card(next + 23.4, 'reason-grab', 'right'); b.card(next + 32.4, 'axios-crisis', 'left');
+  b.cap(next + 52.4, 'Whatever was decided, the clock started.');
   return { cues: b.cues, def: { id: 'powers', title: 'Emergency powers', t0, t1, state: (u) => {
     const h = 4.6 * smooth(ramp(u, 24, 27));
     return base({
-      cam: camera([{ t: 0, pos: [0, 5.0, 14], look: [0, 0.4, -21.5], fov: 44 }, { t: 104, pos: [0, 3.6, 8], look: [0, 0.4, -21.5], fov: 44 }])(u),
+      cam: camera([{ t: 0, pos: [0, 5.0, 14], look: [0, 0.4, -21.5], fov: 44 }, { t: LEN7, pos: [0, 3.6, 8], look: [0, 0.4, -21.5], fov: 44 }])(u),
       power: islands(0.03), lampPower: 0.46, cars: 'none',
       spot: { pos: [-12, 30, 2], target: [0, 3, -21.5], cone: 0.2, soft: 0.2, power: 0.5, R: 70 },
       pegs: arrivals(crowdSquare, u, 2, 40, 6),
@@ -282,19 +290,20 @@ const s7 = (): Built => {
 };
 
 // 8 · Decision 4: the pause
-const R8 = track([[0, 26], [104, 18]]);
+const LEN8 = 90;
+const R8 = track([[0, 26], [LEN8, 18]]);
 const P8 = outageAt(-50, 28, R8, 16);
 const s8 = (): Built => {
-  const { t0, t1 } = nextT0(106); const b = builder(t0);
-  b.label('Decision 4 of 5 · The pause', 1, 105); b.tl(3, 1, 105); b.stamp('DAY 7', 'The inquiry has not named anyone.', 2, 104);
+  const { t0, t1 } = nextT0(LEN8); const b = builder(t0);
+  b.label('Decision 4 of 5 · The pause', 1, LEN8 - 1); b.tl(3, 1, LEN8 - 1); b.stamp('DAY 7', 'The inquiry has not named anyone.', 2, LEN8 - 2);
   b.cap(3, 'Day seven. The inquiry is still working. It has not named anyone. The markets have fallen for six days. A pause on training new frontier systems is on the table.');
   const { next } = decide(b, t0, { id: 'pause', name: 'The pause', h: 'Do you pause?', example: 'B · Keep going, with independent testing before any release',
-    opts: [['A', 'Pause new frontier training for 90 days'], ['B', 'Keep going, with independent testing before any release'], ['C', 'Carry on as before']] }, 17.4, 104);
+    opts: [['A', 'Pause new frontier training for 90 days'], ['B', 'Keep going, with independent testing before any release'], ['C', 'Carry on as before']] }, 17.4, LEN8 - 2);
   b.cap(next, 'Each choice costs something. Here is what people on the record have said.');
-  b.card(next + 7, 'hermer', 'right'); b.card(next + 16, 'trump-race', 'left'); b.card(next + 25, 'narayanan', 'right'); b.card(next + 34, 'axios-economy', 'left'); b.card(next + 43, 'imf-vamvakidis', 'right'); b.card(next + 52, 'kurzgesagt', 'left');
-  b.cap(next + 63, 'A week ago this was an argument. Now it is a vote.');
+  b.card(next + 5.4, 'hermer', 'right'); b.card(next + 14.4, 'trump-race', 'left'); b.card(next + 23.4, 'narayanan', 'right'); b.card(next + 32.4, 'axios-economy', 'left'); b.card(next + 41.4, 'imf-vamvakidis', 'right'); b.card(next + 50.4, 'kurzgesagt', 'left');
+  b.cap(next + 61.4, 'A week ago this was an argument. Now it is a vote.');
   return { cues: b.cues, def: { id: 'pause', title: 'The pause', t0, t1, state: (u) => base({
-    cam: camera([{ t: 0, pos: [-10, 130, 152], look: [0, 0, 0], fov: 40 }, { t: 104, pos: [10, 124, 148], look: [0, 0, 0], fov: 40 }])(u),
+    cam: camera([{ t: 0, pos: [-10, 130, 152], look: [0, 0, 0], fov: 40 }, { t: LEN8, pos: [10, 124, 148], look: [0, 0, 0], fov: 40 }])(u),
     power: (x, z) => P8(x, z, u), lampPower: 0.9, carList: carsAt(city, u, P8, 's8'), flicker: 0.04,
     rings: [{ x: -50, z: 28, r: R8(u), dash: true, a: 0.8 }], blur: { y: 480, band: 340, amount: 4 },
   }) } };
@@ -310,25 +319,25 @@ const tableBoxes = (): Box[] => {
 const TABLE = tableBoxes();
 const group = (ids: [number, 1 | -1][]) => ids.map(([i, s], n) => ({ ...seat(i, s), z: seat(i, s).z + s * 0.5, tone: (n * 0.31) % 1 }));
 const seatsA = group([[0, -1], [1, -1], [4, -1], [5, 1]]), seatsB = group([[2, -1], [3, -1], [1, 1]]), seatsC = group([[0, 1], [2, 1], [3, 1], [4, 1], [5, -1]]);
-const LEN9 = 132;
+const LEN9 = 110;
 const s9 = (): Built => {
   const { t0, t1 } = nextT0(LEN9); const b = builder(t0);
   b.label('Decision 5 of 5 · Who writes the rules', 1, LEN9 - 1); b.tl(4, 1, LEN9 - 1); b.stamp('DAY 10', 'The first law is being drafted.', 2, LEN9 - 2);
   b.cap(3, 'Day ten. The first law is being drafted. A room has been booked. The question is who is in it.');
   const { next } = decide(b, t0, { id: 'rules', name: 'Who writes the rules', h: 'Who is in the room?', p: 'Disclosure: Ctrl AI is building a place where people can take part in questions like this. Option C is closest to it.', example: 'C · Add a panel of ordinary people, chosen by lot',
-    opts: [['A', 'The companies and the officials, quickly'], ['B', 'Add independent experts'], ['C', 'Add a panel of ordinary people, chosen by lot']] }, 11.2, LEN9 - 2);
+    opts: [['A', 'The companies and the officials, quickly'], ['B', 'Add independent experts'], ['C', 'Add a panel of ordinary people, chosen by lot']] }, 11.8, LEN9 - 2);
   b.cap(next, 'Each choice costs something. Here is what people on the record have said.');
-  b.card(next + 7, 'axios-purpose', 'right'); b.card(next + 16, 'turner-koch', 'left'); b.card(next + 25, 'altman-evaluators', 'right'); b.card(next + 34, 'botvinick-duty', 'left');
-  b.card(next + 52, 'irish-assembly', 'left'); b.card(next + 61, 'vandamme-accountability', 'right'); b.card(next + 70, 'courant-watered-down', 'left');
-  b.cap(next + 90, 'Whoever is in the room will write the rules for everyone else.');
+  b.card(next + 5.4, 'axios-purpose', 'right'); b.card(next + 14.4, 'turner-koch', 'left'); b.card(next + 23.4, 'altman-evaluators', 'right'); b.card(next + 32.4, 'botvinick-duty', 'left');
+  b.card(next + 50.4, 'irish-assembly', 'left'); b.card(next + 59.4, 'vandamme-accountability', 'right'); b.card(next + 68.4, 'courant-watered-down', 'left');
+  b.cap(next + 88.4, 'Whoever is in the room will write the rules for everyone else.');
   return { cues: b.cues, def: { id: 'rules', title: 'Who writes the rules', t0, t1, state: (u) => {
     const ring = (list: { x: number; z: number }[], at: number, text: string) => list.length ? { x: list[0].x, y: 1.2, z: list[0].z, text, dx: 0, dy: -46, a: ramp(u, at + 1, at + 3) } : null;
-    const pegs = [...arrivals(seatsA, u, 6, 14, 3), ...arrivals(seatsB, u, next + 7, next + 12, 4), ...arrivals(seatsC, u, next + 52, next + 59, 5)];
+    const pegs = [...arrivals(seatsA, u, 6, 14, 3), ...arrivals(seatsB, u, next + 5.4, next + 10.4, 4), ...arrivals(seatsC, u, next + 50.4, next + 57.4, 5)];
     return base({
       cam: camera([{ t: 0, pos: [0, 8, 12], look: [0, 0.4, -9.5], fov: 44 }, { t: LEN9, pos: [0, 5.2, 7], look: [0, 0.5, -9.5], fov: 44 }])(u),
       power: islands(0.03), lampPower: 0.5, cars: 'none', extraBoxes: TABLE, pegs,
       spot: { pos: [-14, 30, 4], target: [0, 0, -12], cone: 0.26, soft: 0.2, power: 0.55, R: 70 },
-      annots: [ring(seatsA, 6, 'A'), ring(seatsB, next + 7, 'B'), ring(seatsC, next + 52, 'C')].filter(Boolean) as State['annots'],
+      annots: [ring(seatsA, 6, 'A'), ring(seatsB, next + 5.4, 'B'), ring(seatsC, next + 50.4, 'C')].filter(Boolean) as State['annots'],
       pools: [{ x: 0, z: -9, r: 9, col: [255, 226, 180], a: 0.35 }], blur: { y: 470, band: 320, amount: 4 },
     });
   } } };

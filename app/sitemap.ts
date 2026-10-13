@@ -5,6 +5,7 @@ import { FILM_PATH, FILM_PUBLIC, INCIDENT_PATH } from '@/content/incidents/opena
 import { newsletterEnabled } from '@/lib/newsletter/config';
 import { CHECKED_ON } from '@/content/accord';
 import { ENTRIES, onRecord } from '@/content/base';
+import { DAY_BEFORE_PATH, DAY_BEFORE_PUBLIC } from '@/content/scenarios/day-before/publish';
 import { absoluteUrl } from '@/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -21,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl('/about'), changeFrequency: 'monthly', priority: 0.5 },
     ...(newsletterEnabled() ? [{ url: absoluteUrl('/subscribe'), changeFrequency: 'monthly' as const, priority: 0.6 }] : []),
     ...(FILM_PUBLIC ? [{ url: absoluteUrl(FILM_PATH), changeFrequency: 'monthly' as const, priority: 0.9 }, { url: absoluteUrl(INCIDENT_PATH), changeFrequency: 'monthly' as const, priority: 0.8 }] : []),
+    ...(DAY_BEFORE_PUBLIC ? [{ url: absoluteUrl(DAY_BEFORE_PATH), changeFrequency: 'monthly' as const, priority: 0.8 }] : []),
     ...ISSUES.map(issue => ({ url: absoluteUrl(`/week/${issue.slug}`), lastModified: issue.to, changeFrequency: 'yearly' as const, priority: 0.8 })),
     // The Base: every entry, and everyone who spoke or wrote in one (people only mentioned have no page worth indexing).
     { url: absoluteUrl('/people'), changeFrequency: 'daily', priority: 0.7 },

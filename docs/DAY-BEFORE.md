@@ -27,8 +27,9 @@ The `EXERCISE · NOT REAL` tag and the disclosure line are on every frame. A car
 | `content/scenarios/day-before/music.ts`, `music.manifest.json`, `public/day-before/music/` | the score: nine moods, which scenes each plays under, and the rendered beds |
 | `scripts/day-before-score.ts`, `lib/film-synth.ts` | compose and render the score in code (`npx tsx scripts/day-before-score.ts`; `--report` to measure without keeping) |
 | `content/scenarios/day-before/verification.json` | the result of the last verification, with a hash of each quotation |
-| `content/scenarios/day-before/publish.ts` | whether the page is served and whether it is listed. Since 13 October 2026 it is served (live) and not listed: `noindex`, out of the sitemap, linked from nowhere. Switching `DAY_BEFORE_PUBLIC` and adding a link is what announces it |
+| `content/scenarios/day-before/publish.ts` | whether the page is served and whether it is listed. Served since 13 October 2026; listed (indexable, in the sitemap, a band on the homepage under the first film's, a paragraph on the About page) since the same day, on Rado's word. `DAY_BEFORE_PUBLIC = false` takes it back to live but unlisted. `DAY_BEFORE_MINUTES` is the length the homepage and About name; a test keeps it true |
 | `app/day-before/page.tsx` | the page: a short introduction, the film, then every quotation with its source. Share images are the title card |
+| `components/scenario/DayBeforeBand.tsx`, `public/day-before/poster.jpg` | the homepage band (styles in `components/film-hero.css`) |
 
 ## Adding or changing a quotation
 
@@ -38,6 +39,10 @@ The `EXERCISE · NOT REAL` tag and the disclosure line are on every frame. A car
 4. `DOCS_INTERNAL=<path to docs-internal> npx tsx scripts/verify-day-before.ts`, then `npm test`.
 
 A card shown on screen at the same time as another must be on the other side (the left or the right); a long quotation goes on the left, where there is more room.
+
+## A decision is quick to answer and quick to answer back
+
+A viewer once waited a long time to be able to choose, and again before anything happened after he had. So: the film stops 0.8 s after a question is up (once its options have faded in), the narrator reads the question while the film waits (on real time: the film's clock is stopped), and the options can be chosen from the moment they are up, even a moment before the film stops (then it does not stop at all). After a choice the pick is shown for 1.6 s, the options fade into "You chose B · …", and the argument begins. Only decisions the playhead has passed stay answered: going back before one asks it again, starting over asks them all. `tests/day-before.test.ts` demands the 1.5 s and the 3 s; `docs-internal` has `responsive-test.mjs` that measures them on the real player.
 
 ## The player
 

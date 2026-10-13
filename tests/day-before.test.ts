@@ -87,7 +87,7 @@ test('the film is one unbroken timeline of scenes, with every cue inside it', ()
   assert.ok(FILM.duration > 600 && FILM.duration < 1200, `the film is ${FILM.duration} s`);
 });
 
-test('there are five decisions; each pauses inside its scene with its question and options up', () => {
+test('there are five decisions; each is quick to answer and quick to answer back, with its question and options up', () => {
   assert.equal(FILM.decisions.length, 5);
   const asks = FILM.cues.filter((c): c is Extract<Cue, { k: 'ask' }> => c.k === 'ask');
   assert.equal(asks.length, 5);
@@ -96,8 +96,13 @@ test('there are five decisions; each pauses inside its scene with its question a
     const scene = FILM.scenes.find(s => d.pauseAt > s.t0 && d.pauseAt < s.t1);
     assert.ok(scene, `${d.id} pauses outside every scene`);
     assert.ok(d.pauseAt - scene.t0 > 5, `${d.id} pauses before it has been set up`);
-    assert.ok(d.hold >= 5, `${d.id} leaves the viewer ${d.hold} s with the options`);
+    // Responsiveness: the film stops as soon as the question is up, the options can be chosen from then on, and after a choice the argument
+    // begins within a few seconds. (A viewer once waited a long time for each of these.)
+    assert.ok(d.pauseAt - d.askAt <= 1.5, `${d.id} waits ${(d.pauseAt - d.askAt).toFixed(1)} s after its question is up before it stops`);
+    assert.ok(d.hold >= 1 && d.hold <= 3, `${d.id} leaves ${d.hold} s between a choice and the argument`);
+    assert.ok(d.askAt < d.pauseAt && d.askAt > scene.t0, `${d.id}: the question comes up outside its scene`);
     assert.deepEqual(d.opts.map(o => o.k), ['A', 'B', 'C']);
+    assert.ok(d.clip && d.clip.dur > 0.5 && d.clip.text.length > 5, `${d.id}: the narrator has not been recorded reading the question`);
     assert.ok(d.opts.some(o => d.example === `${o.k} · ${o.b}`), `${d.id}: the example is not one of its options`);
     const ask = asks.find(a => a.id === d.id);
     assert.ok(ask, `${d.id} has no question on screen`);
@@ -195,7 +200,8 @@ test('every line is recorded, on a paid plan, for the words as they are now, and
 
 test('the voice never talks over itself, is never cut by a pause or the end of its scene, and a caption waits for it', () => {
   const clips = FILM.clips ?? [];
-  assert.ok(clips.length >= NARRATION.length);
+  // The five questions are read while the film waits, on real time, so they are kept with their decision, not on the timeline.
+  assert.equal(clips.length, FILM.cues.filter(c => c.k === 'caption').length + 1, 'every caption is spoken, and so is the closing line');
   const sorted = [...clips].sort((a, b) => a.at - b.at);
   sorted.forEach((c, i) => { if (i) assert.ok(c.at >= sorted[i - 1].at + sorted[i - 1].dur + 0.3 - 1e-6, `${c.id} starts over the line before it`); });
   const caps = FILM.cues.filter((c): c is Extract<Cue, { k: 'caption' }> => c.k === 'caption');
@@ -240,4 +246,30 @@ test('every scene has a mood, every mood has a bed, and the beds are rendered, o
 
 test('the score is quiet: every bed is mastered under the voice, with headroom', () => {
   for (const [id, bed] of Object.entries(score.beds)) assert.ok(bed.loudness !== undefined && bed.loudness < -17 && bed.loudness > -26, `${id} is ${bed.loudness} LUFS`);
+});
+
+// ——— Where it is listed ———————————————————————————————————————————————————————————————————————————————————————————
+
+import { DAY_BEFORE_MINUTES, DAY_BEFORE_PUBLIC, DAY_BEFORE_SHOWN } from '../content/scenarios/day-before/publish';
+
+const source = (f: string) => fs.readFileSync(f, 'utf8');
+
+test('the length named on the homepage and the About page is the film\'s', () => {
+  assert.equal(DAY_BEFORE_MINUTES, Math.round(FILM.duration / 60));
+});
+
+test('the page, the sitemap, the homepage and the About page all follow the one switch', () => {
+  assert.ok(DAY_BEFORE_SHOWN || !DAY_BEFORE_PUBLIC, 'a page that is not served cannot be listed');
+  assert.match(source('app/day-before/page.tsx'), /robots: DAY_BEFORE_PUBLIC \?/, 'the page does not follow DAY_BEFORE_PUBLIC');
+  assert.match(source('app/sitemap.ts'), /DAY_BEFORE_PUBLIC \? \[/, 'the sitemap does not follow DAY_BEFORE_PUBLIC');
+  assert.match(source('app/page.tsx'), /DAY_BEFORE_PUBLIC \? <DayBeforeBand/, 'the homepage does not follow DAY_BEFORE_PUBLIC');
+  assert.match(source('app/about/page.tsx'), /DAY_BEFORE_PUBLIC \? \(/, 'the About page does not follow DAY_BEFORE_PUBLIC');
+});
+
+test('what the homepage band says about the film is what the film says about itself', () => {
+  const band = source('components/scenario/DayBeforeBand.tsx');
+  assert.match(band, /imagined/);
+  assert.match(band, /synthetic/);
+  assert.match(band, /Anthropic/);
+  assert.ok(fs.existsSync('public/day-before/poster.jpg'), 'the band\'s picture is missing');
 });
