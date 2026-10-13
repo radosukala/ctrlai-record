@@ -59,11 +59,11 @@ export function onRecord(entries: Entry[] = ENTRIES): OnRecord[] {
     .sort((a, b) => b.spoke - a.spoke || b.quotes - a.quotes || b.entries - a.entries || a.person.name.localeCompare(b.person.name));
 }
 
-/** Machine-proposed positions from a person's checked quotations, per proposition. Never shown as a verdict. */
+/** Positions a person confirmed for this person's checked quotations, per proposition. Machine proposals stay hidden. */
 export function positionsOf(personId: string) {
   const out = new Map<PropositionId, { stance: Stance; quote: string; entry: Entry; on: string }[]>();
   for (const q of quotesBy(personId)) {
-    for (const p of q.positions ?? []) {
+    for (const p of (q.positions ?? []).filter(x => x.by === 'editor')) {
       const list = out.get(p.q) ?? [];
       list.push({ stance: p.stance, quote: q.text, entry: q.entry, on: q.entry.published });
       out.set(p.q, list);

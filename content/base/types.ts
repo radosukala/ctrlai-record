@@ -22,6 +22,18 @@ export type PropositionId =
 
 export type Stance = 'agree' | 'lean-agree' | 'mixed' | 'lean-disagree' | 'disagree';
 
+/**
+ * What a source adds to what was already known: the reason a question's answer might change. The Radar labels every
+ * entry, so a question page can say what changed since the last revision and a returning reader can see it.
+ *   evidence    a new finding, incident, measurement or test result
+ *   commitment  a new promise or policy someone announces about their own conduct
+ *   decision    a law, ruling, regulation or official action actually taken
+ *   correction  corrects, retracts or contradicts something reported or claimed before
+ *   argument    a new argument, proposal or position, without new evidence
+ *   repeat      known facts or arguments again (an explainer, a recap, a familiar view)
+ */
+export type ChangeKind = 'evidence' | 'commitment' | 'decision' | 'correction' | 'argument' | 'repeat';
+
 export type EntryKind = 'news' | 'video' | 'podcast' | 'essay' | 'research' | 'official' | 'hearing';
 
 export type Quote = {
@@ -40,7 +52,8 @@ export type Quote = {
   /** For audio: the words were also found in a second, independent transcript of the same audio. */
   second?: boolean;
   warnings?: string[];
-  positions?: { q: PropositionId; stance: Stance }[];
+  /** Where this one quotation stands. `machine` labels are proposed by the agent and never shown; `editor` ones a person confirmed. */
+  positions?: { q: PropositionId; stance: Stance; by: 'machine' | 'editor' }[];
 };
 
 export type Entry = {
@@ -58,6 +71,8 @@ export type Entry = {
   views?: number;
   also: { outlet: string; title: string; url: string }[];
   summary: string;
+  /** What this source changes, in at most 25 words of our own. */
+  change?: { kind: ChangeKind; note: string };
   lenses: Partial<Record<LensId, string>>;
   topics: TopicId[];
   people: { id: string; role: 'speaker' | 'author' | 'subject' | 'mentioned'; title?: string }[];

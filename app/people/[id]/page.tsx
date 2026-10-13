@@ -55,12 +55,12 @@ export default async function PersonPage({ params }: { params: Promise<{ id: str
       ) : null}
 
       {positions.size ? (
-        <Section id="positions" title={<>Where they <em>stand</em></>} blurb="Labels a machine proposed from the quotations above, one line per statement. As weeks accumulate, this is where a change of view shows up, with both quotations side by side." rail={<p className="sec-note">A label describes one quotation, never the person.</p>}>
+        <Section id="positions" title={<>Where they <em>stand</em></>} blurb="Where each quotation above stands, as a person confirmed it, one line per statement. As weeks accumulate, this is where a change of view shows up, with both quotations side by side." rail={<p className="sec-note">A label describes one quotation, never the person.</p>}>
           <div className="b-positions">
             {[...positions.entries()].map(([prop, list]) => (
               <div key={prop} className="b-position">
                 <h3>{PROPOSITION[prop as PropositionId].text}</h3>
-                <span className="b-stance">{STANCE_LABEL[list[list.length - 1].stance]}<small>latest, machine label</small></span>
+                <span className="b-stance">{STANCE_LABEL[list[list.length - 1].stance]}<small>latest, confirmed</small></span>
                 <ol>
                   {list.map((s, i) => (
                     <li key={i}><time>{shortDate(s.on)}</time><span>{STANCE_LABEL[s.stance]}: “{s.quote.length > 160 ? `${s.quote.slice(0, 157)}…` : s.quote}”</span></li>

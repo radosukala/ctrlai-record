@@ -76,9 +76,11 @@ quotations and our own words only; the archive is never published.
 ## What the checker proves, and what it does not
 
 It proves the words are in the text we saved. It does not prove who said them (automatic captions carry no speaker names),
-that they were meant as quoted, or that the source is right. Speakers marked `speakerCertain: false` need a person to listen.
-Positions (`positions` on a quotation) are machine labels about one quotation, never about a person, and are not published
-until a person confirms each one.
+that they were meant as quoted, or that the source is right. A quotation marked `speakerCertain: false` says on the page that
+its speaker is known from context, not confirmed by listening.
+Positions (`positions` on a quotation) describe one quotation, never a person. The agent's are stored as proposals
+(`by: "machine"`) and never shown; a person confirms or corrects them with `npx tsx scripts/radar/labels.ts`
+(`content/base/confirmed.json`), and only those are shown.
 
 ## Known gaps (run of Oct 12, 2026)
 

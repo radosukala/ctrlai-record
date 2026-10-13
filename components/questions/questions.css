@@ -1,0 +1,33 @@
+/* A question, answered. Built on the Base's styles; the claim kinds are words, never color alone. */
+
+.q-answer { display: grid; gap: 8px; max-width: 44em; padding: 16px 0 4px; border-top: 2px solid var(--ink); }
+.q-answer-label { font-size: 12px; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--muted); }
+
+.q-claims { display: grid; }
+.q-claims li { display: grid; gap: 6px; padding: 14px 0 15px; border-top: 1px solid var(--line); scroll-margin-top: 16px; }
+.q-claims li:first-child { border-top: 0; padding-top: 2px; }
+.q-claims p { font-family: var(--serif); font-size: 18px; line-height: 1.5; color: var(--ink-2); max-width: 40em; }
+.q-kind { font-size: 11px; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; color: var(--muted); }
+.q-cites { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; color: var(--muted); }
+.q-cites a { color: var(--ink-2); }
+.q-cites b { color: var(--ink); font-weight: 600; }
+.q-challenge { margin-left: auto; color: var(--muted) !important; text-decoration-style: dotted; }
+
+.q-disagree { display: grid; gap: 22px; }
+.q-point { display: grid; gap: 10px; padding-top: 4px; scroll-margin-top: 16px; }
+.q-point h3 { font-size: clamp(20px, 2vw, 24px); font-weight: 500; line-height: 1.2; }
+.q-point ul { display: grid; border-left: 2px solid var(--ink); }
+.q-point li { display: grid; gap: 4px; padding: 10px 0 10px 16px; border-top: 1px solid var(--line-2); }
+.q-point li:first-child { border-top: 0; }
+.q-point li p { font-family: var(--serif); font-size: 17.5px; line-height: 1.45; color: var(--ink-2); max-width: 40em; }
+.q-depends { font-size: 15px; color: var(--ink-2); max-width: 44em; }
+
+.q-deeper { display: grid; gap: 8px; font-size: 16px; }
+.q-revisions { display: grid; }
+.q-revisions li { display: grid; grid-template-columns: max-content max-content minmax(0, 1fr); gap: 4px 16px; padding: 10px 0; border-top: 1px solid var(--line); font-size: 15px; }
+.q-revisions time { color: var(--muted); }
+.q-revisions p { color: var(--ink-2); }
+.q-loop { display: grid; gap: 6px; margin-top: 24px; padding: 14px 16px 16px; background: var(--paper-2); border-left: 3px solid var(--ink); max-width: 44em; }
+.q-loop h3 { font-family: var(--sans); font-size: 12px; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; }
+.q-loop p { font-size: 15px; line-height: 1.55; color: var(--ink-2); }
+@media (max-width: 640px) { .q-revisions li { grid-template-columns: minmax(0, 1fr); } .q-challenge { margin-left: 0; } }

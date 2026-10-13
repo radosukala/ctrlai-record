@@ -1,4 +1,4 @@
-import type { EntryKind, LensId, PropositionId, Stance, TopicId } from './types';
+import type { ChangeKind, EntryKind, LensId, PropositionId, Stance, TopicId } from './types';
 
 /** The questions the Base is organized around. A reader's way in; each entry touches one to three. */
 export const TOPICS: { id: TopicId; label: string; question: string }[] = [
@@ -24,6 +24,11 @@ export const LENSES: { id: LensId | 'all' | 'press'; label: string; who: string;
   { id: 'press', label: 'Journalists and teachers', who: 'Entries with quotations checked against the source, ready to cite', heading: '' },
 ];
 export const LENS_HEADING: Record<LensId, string> = { public: 'What it means for you', policy: 'For lawmakers', research: 'For researchers', ideas: 'The question it raises' };
+
+export const CHANGE_LABEL: Record<ChangeKind, string> = {
+  evidence: 'New evidence', commitment: 'New commitment', decision: 'Decision taken', correction: 'Correction',
+  argument: 'New argument', repeat: 'Familiar ground',
+};
 
 export const KIND_LABEL: Record<EntryKind, string> = {
   news: 'News', video: 'Video', podcast: 'Podcast', essay: 'Essay', research: 'Research', official: 'Official', hearing: 'Hearing',

@@ -52,6 +52,7 @@ returns a summary, not the page. Don't download anything except page text and ca
   "views": 453122,                        // only if triage has it
   "also": [{ "outlet": "Hacker News", "title": "…", "url": "…" }],
   "summary": "≤60 words, our words.",
+  "change": { "kind": "evidence | commitment | decision | correction | argument | repeat", "note": "≤25 words: what this adds" },
   "lenses": { "public": "…", "policy": "…", "research": "…", "ideas": "…" },
   "topics": ["beyond-control"],
   "people": [{ "id": "satya-nadella", "name": "Satya Nadella", "role": "speaker", "title": "CEO, Microsoft" }],
@@ -75,6 +76,13 @@ returns a summary, not the page. Don't download anything except page text and ca
 
 **summary**: say what the source is and what it reports or argues, attributed ("The Verge reports…", "In a 71-minute
 interview, Ladish argues…"). Never state a contested claim as fact. Neutral words: no "shocking", "slams", "admits".
+
+**change**: what this source adds to what was already known, so readers can see what moved.
+`evidence` a new finding, incident, measurement or test result · `commitment` a new promise or policy someone announces
+about their own conduct · `decision` a law, ruling, regulation or official action actually taken · `correction` it corrects,
+retracts or contradicts something reported before · `argument` a new argument or proposal without new evidence ·
+`repeat` known facts or arguments again (explainers, recaps, familiar views). Be strict: most commentary is `argument` or
+`repeat`. The note says what is new, in our words ("First disclosure that…", "Repeats the case for…").
 
 **lenses**: one sentence each (≤30 words), only where it genuinely matters:
 - `public`: what it means for an ordinary person, in plain words
@@ -106,10 +114,10 @@ anywhere in our text: repeat the name or restructure.
   and never joins different passages. No [brackets]. No paraphrase inside quote marks.
 - The speaker must be clear from the source itself ("X said", the person's own essay, the person's own channel, or a
   caption passage where context makes it unambiguous). Auto captions have no speaker names: if not certain, set
-  `speakerCertain: false` (a person listens before it is published).
+  `speakerCertain: false` (the page then says the speaker is known from context, not confirmed by listening).
 - A reporter's or outlet's own sentence may be quoted only as the outlet's words (`speaker` = outlet id) and only when useful.
 - `positions`: only when the quote clearly takes a side on one of these propositions; otherwise leave it out. Machine
-  labels, never published without a person confirming. Stance: agree | lean-agree | mixed | lean-disagree | disagree.
+  labels: they are stored as proposals and shown only after a person confirms them (`scripts/radar/labels.ts`). Stance: agree | lean-agree | mixed | lean-disagree | disagree.
   `loss-of-control` Advanced AI could slip out of meaningful human control ·
   `labs-self-govern` AI companies can be trusted to govern their own safety ·
   `pre-release-testing` Independent testing should be required before release ·

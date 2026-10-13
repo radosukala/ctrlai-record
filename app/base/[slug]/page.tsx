@@ -76,7 +76,7 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
       ) : null}
 
       {e.quotes.length ? (
-        <Section id="words" title={<>In their <em>own words</em></>} blurb="Every quotation was found, word for word, in the text we saved from the source." rail={<p className="sec-note">{WORDS_FROM[e.transcript]}</p>}>
+        <Section id="words" title={<>In their <em>own words</em></>} blurb="Every quotation was found, word for word, in the text we saved from the source. That shows the words are there; it does not make them true, or prove the speaker meant them as quoted." rail={<p className="sec-note">{WORDS_FROM[e.transcript]}</p>}>
           <div className="b-quotes">
             {e.quotes.map(q => {
               const link = q.at !== undefined ? jump(e.url, q.at) : undefined;
@@ -88,7 +88,7 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
                     {q.context ? <span className="muted">{q.context}</span> : null}
                   </figcaption>
                   <div className="b-check">
-                    <span className="b-checked">{q.match === 'exact' ? 'Matches the source exactly' : 'Same words as the source; punctuation differs'}</span>
+                    <span className="b-checked">{q.match === 'exact' ? 'Found word for word in the source' : 'Found word for word in the source; punctuation differs'}</span>
                     {link ? <a className="b-at" href={link}>Hear it at {clock(q.at!)} ↗</a> : null}
                     {q.second ? <span className="b-checked">Also in a second, independent transcript</span> : null}
                     {!q.speakerCertain ? <span className="b-warn">Speaker known from context, not confirmed by listening</span> : null}

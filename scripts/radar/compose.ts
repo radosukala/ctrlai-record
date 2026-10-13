@@ -24,6 +24,7 @@ const norm = (s: string) => s.normalize('NFKC').replace(/\s+/g, ' ').trim();
 const KINDS = new Set(['news', 'video', 'podcast', 'essay', 'research', 'official', 'hearing']);
 const LENSES = new Set(['public', 'policy', 'research', 'ideas']);
 const ROLES = new Set(['speaker', 'author', 'subject', 'mentioned']);
+const CHANGES = new Set(['evidence', 'commitment', 'decision', 'correction', 'argument', 'repeat']);
 const STANCES = new Set(['agree', 'lean-agree', 'mixed', 'lean-disagree', 'disagree']);
 const PROPS = new Set(['loss-of-control', 'labs-self-govern', 'pre-release-testing', 'slow-down', 'race-with-china', 'international-agreement', 'liability', 'speak-up']);
 
@@ -38,6 +39,8 @@ const people = new Map<string, Person>();
 const names: Record<string, string> = {};
 const verification: Record<string, { ok: boolean; mode?: string; reason?: string; quoteSha: string; textSha?: string; second?: { agreement: number; missing: string[] } }> = {};
 const runs: Record<string, unknown>[] = [];
+// Stance labels a person has confirmed (or corrected), by quotation id. Only these are ever shown.
+const CONFIRMED = JSON.parse(readFileSync('content/base/confirmed.json', 'utf8')) as Record<string, { q: string; stance: string }[]>;
 const problems: string[] = [];
 let dropped = 0;
 
@@ -83,6 +86,7 @@ for (const run of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS
     for (const t of d.topics ?? []) if (!TOPIC[t]) problems.push(`${where}: unknown topic ${t}`);
     for (const l of Object.keys(d.lenses ?? {})) if (!LENSES.has(l)) problems.push(`${where}: unknown lens ${l}`);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(d.published)) problems.push(`${where}: published must be YYYY-MM-DD, got ${d.published}`);
+    if (d.change && !CHANGES.has(d.change.kind)) problems.push(`${where}: unknown change kind ${d.change.kind}`);
 
     // People: one record per id, with every title a source gave.
     const entryPeople: Entry['people'] = [];
@@ -133,7 +137,8 @@ for (const run of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS
             match: v.mode,
             ...(second !== undefined ? { second: true } : {}),
             ...(v.warnings.length ? { warnings: v.warnings } : {}),
-            ...(q.positions?.length ? { positions: q.positions.filter(p => PROPS.has(p.q) && STANCES.has(p.stance)) as Quote['positions'] } : {}),
+            ...(CONFIRMED[id] ? { positions: CONFIRMED[id].filter(p => PROPS.has(p.q) && STANCES.has(p.stance)).map(p => ({ ...p, by: 'editor' })) as Quote['positions'] }
+              : q.positions?.length ? { positions: q.positions.filter(p => PROPS.has(p.q) && STANCES.has(p.stance)).map(p => ({ ...p, by: 'machine' })) as Quote['positions'] } : {}),
           });
         });
       }
@@ -145,8 +150,8 @@ for (const run of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS
     entries.push({
       id: d.id, slug: d.slug, kind: d.kind, title: d.title, url: d.url, outlet: d.outlet, published: d.published,
       ...(d.minutes ? { minutes: d.minutes } : {}), ...(d.views ? { views: d.views } : {}),
-      also: d.also ?? [], summary: d.summary, lenses: d.lenses ?? {}, topics: d.topics ?? [], people: entryPeople,
-      orgs: (d.orgs ?? []).map(slugify), quotes, importance: d.importance, access: d.access, transcript: d.transcript ?? 'none',
+      also: d.also ?? [], summary: d.summary, ...(d.change ? { change: d.change } : {}), lenses: d.lenses ?? {}, topics: d.topics ?? [], people: entryPeople,
+      orgs: (d.orgs ?? []).map(slugify), quotes, importance: d.access === 'excerpt' ? (Math.min(d.importance, 2) as Entry['importance']) : d.importance, access: d.access, transcript: d.transcript ?? 'none',
       // Claude wrote the draft, so anything that names Anthropic or Claude is marked, whatever the agent said.
       conflict: !!d.conflict || (d.orgs ?? []).includes('anthropic') || /\banthropic\b|\bclaude\b/i.test(`${d.title} ${d.summary}`), run, via, review: { by: 'machine' }, ...(d.notes ? { notes: d.notes } : {}),
     });

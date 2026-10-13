@@ -60,3 +60,15 @@ test('our own words use no gendered pronouns', () => {
     for (const s of ours) assert.ok(!PRONOUN.test(s), `${e.slug}: "${s.match(PRONOUN)?.[0]}" in "${s.slice(0, 80)}…"`);
   }
 });
+
+test('a description-only entry is never a top story', () => {
+  for (const e of ENTRIES) if (e.access === 'excerpt') assert.ok(e.importance < 3, `${e.slug} is a top story but we only read its description`);
+});
+
+test('only stance labels a person confirmed are shown', async () => {
+  const { positionsOf } = await import('../content/base');
+  for (const p of PEOPLE) for (const list of positionsOf(p.id).values()) for (const s of list) {
+    const q = ENTRIES.flatMap(e => e.quotes).find(x => x.text === s.quote);
+    assert.ok(q?.positions?.some(x => x.by === 'editor'), `${p.id}: a machine label would be shown`);
+  }
+});
