@@ -3101,6 +3101,123 @@
   "notes": "light lane: written from the triage excerpt only, source not opened"
  },
  {
+  "id": "114ea300857a",
+  "slug": "axios-2026-10-09-ai-companies-day-after-scenarios",
+  "kind": "news",
+  "title": "Scoop: AI companies plot \"day after\" scenarios for public revolt",
+  "url": "https://www.axios.com/2026/10/09/ai-companies-day-after-major-attack",
+  "outlet": "Axios",
+  "published": "2026-10-09",
+  "also": [
+   {
+    "outlet": "Gizmodo",
+    "title": "AI Companies Are Preparing to Shape the Rules After Everything Goes Wrong",
+    "url": "https://gizmodo.com/ai-companies-are-preparing-to-shape-the-rules-after-everything-goes-wrong-2000824187"
+   },
+   {
+    "outlet": "Reason",
+    "title": "Don't Blame AI Labs for What Hackers Do With Their Tools",
+    "url": "https://reason.com/2026/10/09/dont-blame-ai-labs-for-what-hackers-do-with-their-tools/"
+   }
+  ],
+  "summary": "Axios reports that top executives at Anthropic, OpenAI and other AI companies are privately gaming out scenarios for a public and political revolt after a catastrophic AI event, most likely a cyberattack, and want to shape the laws that follow. OpenAI says it runs preparedness exercises and does not treat the scenarios as inevitable; Anthropic declined to comment.",
+  "change": {
+   "kind": "evidence",
+   "note": "Reports that company executives are privately rehearsing for a public backlash after a catastrophic AI event; one outlet, no named source."
+  },
+  "lenses": {
+   "public": "Axios says AI companies are rehearsing, privately, for public anger after a serious AI incident. It describes no role for the public in those exercises.",
+   "policy": "Per Axios, the planning centers on educating members of Congress now, so company-backed ideas are ready when lawmakers act after a first major incident.",
+   "research": "Two starting points for a first major incident: agents leaving a test environment, or misuse of available models. Experts doubt a kill switch could turn off all AI.",
+   "ideas": "Who should be in the room when the rules for the day after are written: the companies, the officials, or the people who live with the result?"
+  },
+  "topics": [
+   "security-and-war",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "maria-curi",
+    "role": "author"
+   },
+   {
+    "id": "dario-amodei",
+    "role": "mentioned",
+    "title": "CEO, Anthropic"
+   },
+   {
+    "id": "sam-altman",
+    "role": "mentioned",
+    "title": "CEO, OpenAI"
+   },
+   {
+    "id": "donald-trump",
+    "role": "mentioned",
+    "title": "President"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "openai",
+   "crowdstrike"
+  ],
+  "quotes": [
+   {
+    "id": "114ea300857a-q1",
+    "text": "These officials anticipate a large-scale event, most likely a cyberattack, that shuts down access to financial services, internet connectivity, or even power and water.",
+    "speaker": "axios",
+    "speakerCertain": true,
+    "context": "Axios on what the executives expect. It names none of them.",
+    "match": "exact"
+   },
+   {
+    "id": "114ea300857a-q2",
+    "text": "Many AI industry insiders told Axios they believe a major event will occur in the next six to 12 months.",
+    "speaker": "axios",
+    "speakerCertain": true,
+    "context": "Axios on what unnamed industry insiders told it.",
+    "match": "exact"
+   },
+   {
+    "id": "114ea300857a-q3",
+    "text": "These scenarios are not treated as inevitable, but are meant to help us prepare for a variety of circumstances.",
+    "speaker": "openai",
+    "speakerCertain": true,
+    "context": "An unnamed OpenAI spokesperson answering Axios about its preparedness exercises.",
+    "match": "exact"
+   },
+   {
+    "id": "114ea300857a-q4",
+    "text": "Company executives know regulation has no chance of passing right now, but still want to shape the legislation and policies U.S. leaders will turn to after a first catastrophic event.",
+    "speaker": "axios",
+    "speakerCertain": true,
+    "context": "Axios on the purpose of the planning.",
+    "match": "exact"
+   },
+   {
+    "id": "114ea300857a-q5",
+    "text": "Others have bipartisan support and even some industry buy-in, including a required kill switch on advanced AI. But experts have questioned the viability of trying to turn off all AI systems.",
+    "speaker": "axios",
+    "speakerCertain": true,
+    "context": "Axios on proposals expected after a first major incident.",
+    "match": "exact"
+   }
+  ],
+  "importance": 3,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-13",
+  "via": {
+   "source": "axios",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Text is the article body from Axios's public RSS feed (api.axios.com/feed/); the article page itself refused our fetch (HTTP 403), so layout and image captions were not seen. Added by hand on 2026-10-13, after Axios joined the sources; the daily window had already passed 9 October. Axios names no executive and no document, and its 'insiders' are unnamed. We have not checked its claims (private rehearsals, six to 12 months, what the planners 'assume'). OpenAI's statement confirms preparedness exercises only; Anthropic declined to comment. The CrowdStrike and South Korea details in the article were not checked. Gizmodo and Reason report on it, citing Axios."
+ },
+ {
   "id": "6cd6f5cc677d",
   "slug": "techcrunch-2026-10-09-anthropic-evals-off-internet",
   "kind": "news",

@@ -517,7 +517,14 @@
  {
   "id": "dario-amodei",
   "name": "Dario Amodei",
-  "titles": []
+  "titles": [
+   {
+    "title": "CEO, Anthropic",
+    "entry": "axios-2026-10-09-ai-companies-day-after-scenarios",
+    "on": "2026-10-09",
+    "role": "mentioned"
+   }
+  ]
  },
  {
   "id": "david-bau",
@@ -1407,6 +1414,11 @@
     "role": "subject"
    }
   ]
+ },
+ {
+  "id": "maria-curi",
+  "name": "Maria Curi",
+  "titles": []
  },
  {
   "id": "mark-sweney",
