@@ -37,7 +37,7 @@ function claimFields(q: NonNullable<Draft['quotes']>[number], speaker: string, d
   const out: Partial<Quote> = {};
   if (q.said) {
     if (!DATE.test(q.said)) problems.push(`${where}: said must be YYYY-MM-DD, got ${q.said}`);
-    else if (q.said > d.published) problems.push(`${where}: a quotation said (${q.said}) after its source was published (${d.published})`);
+    else if (q.said > (d.published.length === 7 ? `${d.published}-31` : d.published)) problems.push(`${where}: a quotation said (${q.said}) after its source was published (${d.published})`);
     else if (q.said !== d.published) out.said = q.said;
   }
   if (q.type) {
@@ -143,7 +143,8 @@ for (const run of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS
     if (!KINDS.has(d.kind)) problems.push(`${where}: unknown kind ${d.kind}`);
     for (const t of d.topics ?? []) if (!TOPIC[t]) problems.push(`${where}: unknown topic ${t}`);
     for (const l of Object.keys(d.lenses ?? {})) if (!LENSES.has(l)) problems.push(`${where}: unknown lens ${l}`);
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(d.published)) problems.push(`${where}: published must be YYYY-MM-DD, got ${d.published}`);
+    // A month alone when the source gives no day (a working paper dated "April 2026"): never a made-up day.
+    if (!/^\d{4}-\d{2}(-\d{2})?$/.test(d.published)) problems.push(`${where}: published must be YYYY-MM-DD, or YYYY-MM when the source gives only a month; got ${d.published}`);
     if (d.change && !CHANGES.has(d.change.kind)) problems.push(`${where}: unknown change kind ${d.change.kind}`);
 
     // People: one record per id, with every title a source gave.

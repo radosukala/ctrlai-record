@@ -101,7 +101,7 @@ export type Entry = {
   title: string;
   url: string;
   outlet: string;
-  /** YYYY-MM-DD, the source's own date. */
+  /** YYYY-MM-DD, the source's own date; YYYY-MM when the source gives only a month. */
   published: string;
   minutes?: number;
   views?: number;

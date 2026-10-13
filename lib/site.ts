@@ -26,10 +26,10 @@ export function longDate(value: string): string {
   return `${MONTHS[Number(m) - 1]} ${Number(d)}, ${y}`;
 }
 
-/** "2026-09-28" → "Sep 28". */
+/** "2026-09-28" → "Sep 28"; a month alone, "2026-04" → "Apr 2026" (no false precision). */
 export function shortDate(value: string): string {
-  const [, m, d] = value.split('-');
-  return `${SHORT[Number(m) - 1]} ${Number(d)}`;
+  const [y, m, d] = value.split('-');
+  return d ? `${SHORT[Number(m) - 1]} ${Number(d)}` : `${SHORT[Number(m) - 1]} ${y}`;
 }
 
 /** "September 27 – October 4, 2026", sharing the year (and month) where they match. */

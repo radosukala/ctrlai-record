@@ -17,7 +17,7 @@ test('every quotation says whether it is first-hand or reported, and none is dat
   const TYPES = new Set(['position', 'prediction', 'account', 'factual', 'finding', 'commitment', 'proposal', 'value', 'question']);
   for (const e of ENTRIES) for (const q of e.quotes) {
     assert.ok(q.hand === 'first' || q.hand === 'reported', `${q.id}: first-hand or reported?`);
-    if (q.said) assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(q.said) && q.said <= e.published, `${q.id}: said ${q.said}, after its source (${e.published})?`);
+    if (q.said) assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(q.said) && q.said <= (e.published.length === 7 ? `${e.published}-31` : e.published), `${q.id}: said ${q.said}, after its source (${e.published})?`);
     if (q.type) assert.ok(TYPES.has(q.type), `${q.id}: unknown claim type ${q.type}`);
   }
 });
@@ -57,7 +57,7 @@ test('slugs are unique permalinks, dates are days, topics exist', () => {
     assert.ok(!slugs.has(e.slug), `duplicate slug ${e.slug}`);
     slugs.add(e.slug);
     assert.match(e.slug, /^[a-z0-9-]+$/, `${e.slug} is not a clean slug`);
-    assert.match(e.published, /^\d{4}-\d{2}-\d{2}$/);
+    assert.match(e.published, /^\d{4}-\d{2}(-\d{2})?$/);
     assert.ok(e.topics.length >= 1 && e.topics.length <= 3, `${e.slug} needs one to three questions`);
     for (const t of e.topics) assert.ok(TOPIC[t], `${e.slug}: unknown question ${t}`);
   }
