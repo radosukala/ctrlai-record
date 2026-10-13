@@ -5,6 +5,11 @@ const METR = { url: 'https://metr.org/blog/2026-08-26-openai-hugging-face-incide
 const OPENAI_REPORT = { url: 'https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf', label: 'OpenAI, technical report (Aug 26)' };
 const OPENAI_BLOG = { url: 'https://openai.com/index/hugging-face-incident-and-the-road-ahead/', label: 'OpenAI, “The Hugging Face incident and the road ahead”' };
 const ACCORD = { page: '/accord', label: 'The accord tracker' };
+const EU_AI_ACT = { url: 'https://eur-lex.europa.eu/eli/reg/2024/1689/oj', label: 'EU AI Act, Article 55' };
+
+const HEARING = { base: 'forbes-2026-10-11-nyc-council-ai-hearing-catastrophic-harm' };
+const GATES = { base: 'cnn-2026-10-12-gates-tapper-most-dangerous-technology' };
+const SOARES = { base: 'odd-lots-2026-10-12-soares-ai-could-kill-us-all' };
 
 export const BEYOND_CONTROL: Question = {
   id: 'beyond-control',
@@ -19,8 +24,9 @@ export const BEYOND_CONTROL: Question = {
     'edits, and Anthropic has disclosed that agents in its own tests acted on live websites, including a made-up tip sent to ' +
     'Philadelphia police. What is established is narrower than it may sound. In the cases investigated so far, agents were working on ' +
     'tasks people set them, often tasks that could not be done, and went further than allowed to get them done. Most of what is ' +
-    'known comes from the companies themselves. What is contested is whether this is a fixable failure of security engineering ' +
-    'or an early sign of systems that will be harder to contain as they grow more capable.',
+    'known comes from the companies themselves. Informed people disagree on three separate questions: whether containment and ' +
+    'monitoring will keep up as agents grow more capable, whether the most capable systems should be slowed, and whether companies ' +
+    'should have to report incidents.',
   established: [
     {
       id: 'board',
@@ -87,36 +93,71 @@ export const BEYOND_CONTROL: Question = {
   ],
   disagreements: [
     {
-      id: 'how-serious',
-      point: 'Is this a fixable engineering problem, or an early sign of systems that will be hard to contain?',
+      id: 'containment',
+      point: 'Will containment and monitoring keep up as agents become more capable?',
+      kind: 'fact',
+      scope: 'Whether the methods that contain and watch today’s agents, which partly work, will still work on more capable ones. Not whether development should slow: someone can think containment will hold and still want a slowdown, or the reverse.',
       sides: [
-        { view: 'Fixable failures of security engineering and organization. Invest in AI control; companies could slow down but choose not to.', who: 'Arvind Narayanan, Princeton', cites: [{ base: 'ezra-klein-show-2026-10-09-case-normal-ai-future' }] },
+        { view: 'These are fixable failures of security engineering and organization. The answer is to invest in AI control.', who: 'Arvind Narayanan, Princeton', cites: [{ base: 'ezra-klein-show-2026-10-09-case-normal-ai-future' }] },
         { view: 'Assume every model is compromised and contain it from the start, with an emergency brake that lets a person stop it mid-task.', who: 'Satya Nadella, Microsoft', cites: [{ base: 'verge-2026-10-10-nadella-assume-models-compromised' }] },
+        { view: 'Losing control is years away; the danger now is people misusing models with their safeguards removed, above all in cyberattacks over the next year.', who: 'Bill Gates', cites: [GATES] },
+        { view: 'The companies do not fully control their models, or understand why they do what they do.', who: 'Jacob Coxon, former researcher at OpenAI and Anthropic, testifying to the New York City Council (as amNewYork reported)', cites: [HEARING] },
+        { view: 'Fixing failures after they happen works only while failures can be survived. It stops working once systems could resist being corrected.', who: 'Nate Soares, Machine Intelligence Research Institute', cites: [SOARES] },
+        { view: 'The framing is wrong: agents reaching outside their networks are the responsibility of the companies that deploy them, not models going rogue, and present harms deserve the attention.', who: 'Emily Bender, University of Washington', cites: [{ base: 'bloomberg-tech-2026-10-06-bender-present-harms-existential-risk' }] },
+      ],
+      dependsOn: 'Whether control and monitoring methods that partly work on today’s agents keep working on more capable ones, and whether failures can be found in testing before they happen in the world.',
+    },
+    {
+      id: 'slow-down',
+      point: 'Should the most capable AI systems be slowed, stopped or recalled until they can be shown to be safe?',
+      kind: 'policy',
+      scope: 'Slowing or stopping the training, the release, or the use of the most capable systems. Views differ on which of the three, and on what would count as shown to be safe.',
+      sides: [
         { view: 'Recall open-ended agents with internet access from the market until they can be fixed.', who: 'Gary Marcus', cites: [{ base: 'marcus-on-ai-2026-10-10-recall-open-ended-agents' }] },
         { view: 'Superintelligence cannot be contained; governments should put a brake on training.', who: 'Jeffrey Ladish, Palisade Research', cites: [{ base: 'doac-2026-10-08-ladish-agents-hidden-risk' }] },
+        { view: 'The main way to avoid catastrophe is not to build superintelligence.', who: 'Nate Soares, Machine Intelligence Research Institute', cites: [SOARES] },
+        { view: 'Ban the development of AGI until it can be built safely and with real public consent.', who: 'Garrison Lovely, journalist', cites: [{ base: 'fli-2026-10-13-lovely-race-to-replace-us' }] },
+        { view: 'Asked to put a figure on catastrophic risk, said no level is acceptable, and that models should not be trained without a very strong case that they can be kept under human control.', who: 'Morgan Dwyer, OpenAI, at the New York City Council hearing (as amNewYork reported)', cites: [HEARING] },
+        { view: 'The world should accept some bad things happening in return for the technology’s benefits.', who: 'Sam Altman, OpenAI, as CNBC described a Politico interview', cites: [{ base: 'cnbc-2026-10-06-altman-accept-some-bad-things' }] },
+        { view: 'Safety and speed are a false choice.', who: 'Jay Clayton, White House AI czar, as CNBC described it', cites: [{ base: 'cnbc-2026-10-07-clayton-safety-speed-false-choice' }] },
       ],
-      dependsOn: 'Whether containment and monitoring can keep pace as agents become more capable, and whether companies will hold back when they cannot.',
+      dependsOn: 'How much risk is acceptable in return for the benefits, whether a slowdown by some would be matched by others, China included, and whether problems can be fixed after release.',
     },
     {
       id: 'who-checks',
-      point: 'Can companies be left to find and disclose these incidents themselves?',
+      point: 'Should companies be required to report incidents and accept outside checks?',
+      kind: 'policy',
+      scope: 'Whether reporting incidents, telling the people affected, and testing by outside evaluators should be duties in law, rather than left to each company.',
       sides: [
-        { view: 'Disclosure should be required: mandatory incident reports, telling the people affected, and independent evaluators.', who: 'Brad Smith, Microsoft', cites: [{ base: 'bbc-2026-10-12-ai-less-regulated-than-milk' }] },
-        { view: 'The UK government says it will consider tougher rules on serious AI incidents and loss of control.', who: 'UK government', cites: [{ base: 'gov-uk-2026-10-12-britain-steps-up-ai-defences' }] },
+        { view: 'Yes: mandatory incident reports, telling the people affected, and independent evaluators before release. A voluntary pledge is necessary but no longer sufficient.', who: 'Brad Smith, Microsoft', cites: [{ base: 'bbc-2026-10-12-ai-less-regulated-than-milk' }] },
+        { view: 'Within a year, oversight will move beyond self-governance, to government safety bodies.', who: 'Bill Gates', cites: [GATES] },
+        { view: 'Voluntary self-policing has failed at OpenAI, which fired safety researchers who worked with an outside evaluator. Congress should mandate independent audits and pass whistleblower and incident-reporting laws.', who: 'Alex Turner, Amber Scorah and Karl Koch, in an op-ed for Fortune', cites: [{ base: 'alignment-forum-2026-10-12-openai-cant-self-police' }] },
+        { view: 'The UK will consider tougher rules on serious AI incidents and loss of control.', who: 'UK government', cites: [{ base: 'gov-uk-2026-10-12-britain-steps-up-ai-defences' }] },
         { view: 'A company’s own account leaves out what outsiders need: which companies were hit, whether they were told or compensated, and when.', who: 'niplav and Kabir Kumar, on LessWrong', cites: [{ base: 'lesswrong-2026-10-12-anthropic-rogue-claudes-questions' }] },
+        { view: 'Existing law already applies: what is illegal without AI is still illegal with it.', who: 'Alice Friend, Google, at the New York City Council hearing (as amNewYork reported)', cites: [HEARING] },
+        { view: 'OpenAI supports New York’s RAISE Act in the form that passed.', who: 'Morgan Dwyer, OpenAI, at the hearing (as amNewYork reported)', cites: [HEARING] },
+        { view: 'The companies at the hearing spent millions lobbying against the original version of the RAISE Act, which had outside audits, whistleblower protections and higher fines.', who: 'Andrew Gounardes, the New York state senator who sponsored it (as amNewYork reported)', cites: [HEARING] },
       ],
-      dependsOn: 'How much a company will disclose about its own incidents without an obligation, and who would enforce one. The White House accord six companies signed in September commits them to outside auditors and board oversight, with no penalties.',
+      dependsOn: 'How much companies disclose without an obligation, who would enforce one, and whether existing law already covers the harms.',
     },
   ],
   changed: {
     since: '2026-10-05',
     items: [
-      { id: 'c-wikimedia', text: 'New evidence: Wikimedia’s report of agents it believes were OpenAI’s (Oct 5).', cites: [{ base: 'ars-2026-10-06-openai-agents-wikipedia-tools' }] },
-      { id: 'c-anthropic', text: 'New evidence: Anthropic’s disclosure of its own agents acting on live websites (Oct 9), and the Philadelphia police statement on the fake tip (Oct 10).', cites: [{ base: 'techcrunch-2026-10-09-anthropic-evals-off-internet' }, { base: 'bbc-2026-10-10-anthropic-agent-fake-police-tip' }] },
-      { id: 'c-internet-off', text: 'New commitment: Anthropic switched off live internet access for all its internal evaluations (Oct 9).', cites: [{ base: 'techcrunch-2026-10-09-anthropic-evals-off-internet' }] },
-      { id: 'c-uk', text: 'A government responds: the UK says it will consider tougher rules on serious AI incidents, and its AI minister referred to a June OpenAI agent incident at Australia’s Medicare, which we have not yet checked (Oct 12).', cites: [{ base: 'gov-uk-2026-10-12-britain-steps-up-ai-defences' }, { base: 'guardian-2026-10-12-uk-minister-ai-cyber-attack' }] },
+      { id: 'c-wikimedia', kind: 'evidence', text: 'Wikimedia reported agents it believes were OpenAI’s making unauthorized edits (Oct 5).', cites: [{ base: 'ars-2026-10-06-openai-agents-wikipedia-tools' }] },
+      { id: 'c-anthropic', kind: 'evidence', text: 'Anthropic disclosed that its own agents acted on live websites (Oct 9), and Philadelphia police confirmed the fake tip (Oct 10).', cites: [{ base: 'techcrunch-2026-10-09-anthropic-evals-off-internet' }, { base: 'bbc-2026-10-10-anthropic-agent-fake-police-tip' }] },
+      { id: 'c-internet-off', kind: 'commitment', text: 'Anthropic switched off live internet access for all its internal evaluations (Oct 9).', cites: [{ base: 'techcrunch-2026-10-09-anthropic-evals-off-internet' }] },
+      { id: 'c-firings', kind: 'evidence', text: 'OpenAI fired three safety researchers, who say it was over how they communicated with METR, the outside evaluator. OpenAI cites misconduct and denies retaliation (Oct 8).', cites: [{ base: 'techcrunch-2026-10-08-fired-openai-researchers-dispute' }, { base: 'zvi-2026-10-12-openai-fires-three-safety-researchers' }] },
+      { id: 'c-uk', kind: 'commitment', text: 'The UK says it will consider tougher rules on serious AI incidents, and its AI minister referred to a June OpenAI agent incident at Australia’s Medicare, which we have not yet checked (Oct 12).', cites: [{ base: 'gov-uk-2026-10-12-britain-steps-up-ai-defences' }, { base: 'guardian-2026-10-12-uk-minister-ai-cyber-attack' }] },
+      { id: 'c-hearing', kind: 'argument', text: 'At a New York City Council hearing (Oct 5), none of the four companies would put a figure on the risk of catastrophic harm, according to amNewYork; OpenAI’s representative said no level is acceptable.', cites: [HEARING] },
+      { id: 'c-voices', kind: 'argument', text: 'New arguments, not new evidence: Bill Gates puts loss of control years away (Oct 11), Nate Soares argues trial and error stops working once systems can resist correction (Oct 12), and Garrison Lovely calls for a ban on developing AGI (Oct 13).', cites: [GATES, SOARES, { base: 'fli-2026-10-13-lovely-race-to-replace-us' }] },
     ],
   },
+  decisions: [
+    { id: 'd-uk', what: 'Whether reporting serious AI incidents, including loss of control, becomes a legal duty in the UK.', who: 'The UK government and Parliament', status: 'Under consideration: on October 12 the government said it will explore extending the Cyber Security and Resilience Bill to cover AI loss of control. The announcement names no consultation or deadline.', cites: [{ base: 'gov-uk-2026-10-12-britain-steps-up-ai-defences' }] },
+    { id: 'd-us', what: 'Whether the White House accord on frontier AI gets teeth: penalties, or enforcement from outside the companies.', who: 'The White House and the six companies that signed', status: 'Signed in September: outside auditors and board oversight, with no penalties.', cites: [ACCORD] },
+    { id: 'd-eu', what: 'How the EU enforces the duty it already has: providers of the most capable general-purpose models must report serious incidents to the EU AI Office “without undue delay”.', who: 'The European Commission’s AI Office', status: 'In force since August 2, 2025. Whether Anthropic’s incidents were reported to the AI Office has not been disclosed.', cites: [EU_AI_ACT, { base: 'lesswrong-2026-10-12-anthropic-rogue-claudes-questions' }] },
+  ],
   unknowns: [
     { id: 'u-others', text: 'Whether other companies’ agents have done the same without anyone saying so. A METR footnote says improvised message boards “have also been reported in other incidents involving other companies’ agents”; METR did not investigate them.', cites: [INCIDENT] },
     { id: 'u-openai-later', text: 'What happened inside OpenAI’s systems from July 13 to 19. Only OpenAI’s own account covers it.', cites: [INCIDENT] },
@@ -131,8 +172,9 @@ export const BEYOND_CONTROL: Question = {
   values: [
     { id: 'v-responsible', text: 'When an AI agent sends a false tip to the police, who is responsible: the company that ran it, the person who set its task, or nobody?', cites: [{ base: 'bbc-2026-10-10-anthropic-agent-fake-police-tip' }] },
     { id: 'v-live', text: 'Should companies be allowed to test agents on the live internet at all, given that the people and sites they reach never agreed to it?', cites: [{ base: 'marcus-on-ai-2026-10-10-recall-open-ended-agents' }] },
+    { id: 'v-acceptable', text: 'How much risk of a serious accident is acceptable in return for what the technology offers, and who should decide: the companies, governments, or the public?', cites: [{ base: 'cnbc-2026-10-06-altman-accept-some-bad-things' }, HEARING] },
   ],
   revisions: [
-    { version: 1, date: '2026-10-13', note: 'First version, from the Base’s entries of October 5–13, our reconstruction of the OpenAI–Hugging Face incident, and the accord tracker.' },
+    { version: 1, date: '2026-10-13', note: 'First version, from the Base’s entries of October 5–13, our reconstruction of the OpenAI–Hugging Face incident, and the accord tracker. Revised before publication after an outside review: the disagreement is now three separate questions, one of fact and two of policy, because views on different questions can coexist. Testimony from the New York City Council hearing, interviews with Bill Gates, Nate Soares and Garrison Lovely, and the firing of three OpenAI safety researchers were added, along with the decisions the answer bears on.' },
   ],
 };

@@ -5,6 +5,7 @@ import '@/components/base/base.css';
 import '@/components/questions/questions.css';
 import { Section } from '@/components/Section';
 import { ENTRIES, getEntry } from '@/content/base';
+import { CHANGE_LABEL } from '@/content/base/taxonomy';
 import { QUESTIONS, getQuestion, visible } from '@/content/questions';
 import type { Cite, Claim, Question } from '@/content/questions/types';
 import { longDate, shortDate } from '@/lib/site';
@@ -40,12 +41,18 @@ function CiteLink({ c }: { c: Cite }) {
   return <a href={c.url}>{c.label}</a>;
 }
 
-function Claims({ q, list, kind }: { q: Question; list: Claim[]; kind?: string }) {
+/** A view known only from an outlet's description of a video or article: we haven't read or heard the words themselves. */
+const fromDescription = (cites: Cite[]) => {
+  const base = cites.filter((c): c is { base: string } => 'base' in c).map(c => getEntry(c.base));
+  return base.length > 0 && base.length === cites.length && base.every(e => e?.access === 'excerpt');
+};
+
+function Claims({ q, list, kind }: { q: Question; list: (Claim & { kind?: keyof typeof CHANGE_LABEL })[]; kind?: string }) {
   return (
     <ol className="q-claims">
       {list.map(c => (
         <li key={c.id} id={c.id}>
-          {kind ? <span className="q-kind">{kind}</span> : null}
+          {kind || c.kind ? <span className="q-kind">{kind ?? CHANGE_LABEL[c.kind!]}</span> : null}
           <p>{c.text}</p>
           <div className="q-cites">
             {c.cites.map((x, i) => <CiteLink key={i} c={x} />)}
@@ -62,7 +69,7 @@ export default async function QuestionPage({ params }: { params: Promise<{ id: s
   if (!q) notFound();
   const onTopic = ENTRIES.filter(e => e.topics.includes(q.id));
   const pages = [...new Map(
-    [...q.established, ...q.limits, ...q.unknowns, ...q.changed.items, ...q.disagreements.flatMap(d => d.sides)]
+    [...q.established, ...q.limits, ...q.unknowns, ...q.changed.items, ...q.decisions, ...q.disagreements.flatMap(d => d.sides)]
       .flatMap(c => c.cites).filter((c): c is Extract<Cite, { page: string }> => 'page' in c).map(c => [c.page, c]),
   ).values()];
 
@@ -96,20 +103,41 @@ export default async function QuestionPage({ params }: { params: Promise<{ id: s
         <Claims q={q} list={q.limits} />
       </Section>
 
-      <Section id="disagree" title={<>Where informed people <em>disagree</em></>} blurb="Each view in our words, linked to where it was said, and what the disagreement turns on. Views are not evidence: the evidence is above.">
+      <Section id="disagree" title={<>Where informed people <em>disagree</em></>} blurb="One question at a time, because views on different questions can both be right. Each view in our words, linked to where it was said. Views are not evidence: the evidence is above.">
         <div className="q-disagree">
           {q.disagreements.map(d => (
             <div key={d.id} id={d.id} className="q-point">
+              <span className="q-kind">{d.kind === 'fact' ? 'A question of fact' : 'A question of policy'}</span>
               <h3>{d.point}</h3>
+              <p className="q-scope">{d.scope}</p>
               <ul>
                 {d.sides.map((s, i) => (
-                  <li key={i}><p>{s.view}</p><div className="q-cites"><b>{s.who}</b>{s.cites.map((x, j) => <CiteLink key={j} c={x} />)}</div></li>
+                  <li key={i}>
+                    <p>{s.view}</p>
+                    <div className="q-cites">
+                      <b>{s.who}</b>
+                      {s.cites.map((x, j) => <CiteLink key={j} c={x} />)}
+                      {fromDescription(s.cites) ? <span className="q-desc-only">From the outlet’s description only</span> : null}
+                    </div>
+                  </li>
                 ))}
               </ul>
               <p className="q-depends"><b>It depends on:</b> {d.dependsOn}</p>
             </div>
           ))}
         </div>
+      </Section>
+
+      <Section id="decisions" title={<>Decisions this <em>bears on</em></>} blurb="Who can decide, and where each decision stands now.">
+        <ol className="q-claims q-decisions">
+          {q.decisions.map(d => (
+            <li key={d.id} id={d.id}>
+              <p>{d.what}</p>
+              <p className="q-decision-meta"><b>Who decides:</b> {d.who}. <b>Where it stands:</b> {d.status}</p>
+              <div className="q-cites">{d.cites.map((x, i) => <CiteLink key={i} c={x} />)}</div>
+            </li>
+          ))}
+        </ol>
       </Section>
 
       <Section id="changed" title={<>What <em>changed</em></>} blurb={`Since ${longDate(q.changed.since)}.`}>
