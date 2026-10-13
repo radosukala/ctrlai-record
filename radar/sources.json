@@ -1,6 +1,6 @@
 {
  "note": "The sources the Radar reads. Public on purpose: every claim about what is happening is \"in the sources we monitor\". Adding a source is a one-line change. tier 1 = the speaker's or organization's own channel or an official record; 2 = a major outlet's own reporting; 3 = discovery only (needs a tier 1 or 2 source before anything is published). filter: on-topic = everything is read; ai = AI sources, read when it touches safety, control or governance; general = read only when it is about AI and touches safety, control, governance, work or rights.",
- "updated": "2026-10-12",
+ "updated": "2026-10-13",
  "sources": [
   {
    "id": "yt-dwarkesh-patel-youtube",
@@ -677,6 +677,30 @@
    "name": "The Guardian: AI",
    "kind": "blog",
    "url": "https://www.theguardian.com/technology/artificialintelligenceai/rss",
+   "tier": 2,
+   "filter": "general"
+  },
+  {
+   "id": "axios",
+   "name": "Axios",
+   "kind": "blog",
+   "url": "https://api.axios.com/feed/",
+   "tier": 2,
+   "filter": "general"
+  },
+  {
+   "id": "politico-technology",
+   "name": "Politico Technology",
+   "kind": "blog",
+   "url": "https://rss.politico.com/technology.xml",
+   "tier": 2,
+   "filter": "general"
+  },
+  {
+   "id": "politico-digital-future-daily",
+   "name": "Politico Digital Future Daily",
+   "kind": "blog",
+   "url": "https://rss.politico.com/morningtech.xml",
    "tier": 2,
    "filter": "general"
   },
