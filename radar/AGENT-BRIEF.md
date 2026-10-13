@@ -74,6 +74,8 @@ returns a summary, not the page. Don't download anything except page text and ca
     "replication": "only if the source says whether others reproduced it"
   },
   "relations": [{ "rel": "supports | challenges | qualifies | implements | supersedes", "to": "<slug of an earlier Base entry>", "note": "≤25 words" }],
+  "story": "openai-safety-researchers-fired",   // when other entries cover the same event or thread (see below)
+  "storyTitle": "OpenAI fires three safety researchers",   // ONLY when starting a new story
   "importance": 3,
   "textFile": "sources/<main.id>.txt",
   "textUrl": "the URL the saved text actually came from",
@@ -159,6 +161,13 @@ entry, say so. `implements`: an action that carries out a commitment reported ea
 newer version of the same thing. Find earlier entries in the database (rebuilt after every run):
 `sqlite3 /Users/rado/code/ctrlai-archive/index/base.sqlite "select slug, published, title from entries where title like '%Hugging Face%' or summary like '%Hugging Face%' order by published desc limit 10"`
 Only relate entries that are clearly about the same thing; leave `relations` out otherwise.
+
+**story**: when this source covers an event or thread that other entries also cover (a hearing and its clips, an
+incident and the reports that followed, an interview and its excerpts), give the story's id. Reuse an existing one:
+`cat content/base/stories.json`, or `sqlite3 /Users/rado/code/ctrlai-archive/index/base.sqlite "select story, count(*),
+min(published) from entries where story is not null group by story"`. Start a new story only when the event will
+plainly have more than one entry: a kebab-case id plus `storyTitle`, a neutral title of the event in our words
+("Anthropic's agents act on live websites", not a headline). A one-off source gets no story.
 
 **No false precision.** Never give a time, number or date more precisely than the source does. Dates in our text are the
 source's dates. Numbers are the source's numbers, attributed.

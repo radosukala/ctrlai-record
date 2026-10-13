@@ -35,7 +35,7 @@ db.exec(`
 create table meta (key text primary key, value text);
 create table entries (id text primary key, slug text unique, kind text, title text, url text, outlet text, published text,
   minutes int, views int, importance int, access text, transcript text, conflict int, change_kind text, change_note text,
-  summary text, lenses text, run text, via_source text, notes text);
+  summary text, lenses text, run text, via_source text, notes text, story text);
 create table entry_topics (entry_id text, topic text);
 create table entry_orgs (entry_id text, org text);
 create table entry_people (entry_id text, person_id text, role text, title text);
@@ -66,7 +66,7 @@ create view claims as
 
 const ins = (sql: string) => db.prepare(sql);
 db.exec('begin');
-const iEntry = ins('insert into entries values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
+const iEntry = ins('insert into entries values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)');
 const iTopic = ins('insert into entry_topics values (?,?)');
 const iOrg = ins('insert into entry_orgs values (?,?)');
 const iEP = ins('insert into entry_people values (?,?,?,?)');
@@ -78,7 +78,7 @@ const iPos = ins('insert into quote_positions values (?,?,?,?)');
 for (const e of ENTRIES) {
   iEntry.run(e.id, e.slug, e.kind, e.title, e.url, e.outlet, e.published, e.minutes ?? null, e.views ?? null, e.importance,
     e.access, e.transcript, e.conflict ? 1 : 0, e.change?.kind ?? null, e.change?.note ?? null, e.summary,
-    JSON.stringify(e.lenses), e.run, e.via.source, e.notes ?? null);
+    JSON.stringify(e.lenses), e.run, e.via.source, e.notes ?? null, z(e.story));
   for (const t of e.topics) iTopic.run(e.id, t);
   for (const o of e.orgs) iOrg.run(e.id, o);
   for (const p of e.people) iEP.run(e.id, p.id, p.role, p.title ?? null);

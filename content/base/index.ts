@@ -1,8 +1,9 @@
-import type { Entry, Person, PropositionId, Stance, TopicId } from './types';
+import type { Entry, Person, PropositionId, Stance, Story, TopicId } from './types';
 import entriesJson from './entries.json';
 import peopleJson from './people.json';
 import namesJson from './names.json';
 import runsJson from './runs.json';
+import storiesJson from './stories.json';
 
 export const ENTRIES = entriesJson as Entry[];
 export const PEOPLE = peopleJson as Person[];
@@ -89,3 +90,8 @@ export const totals = () => ({
   quotes: ENTRIES.reduce((n, e) => n + e.quotes.length, 0),
   people: onRecord().length,
 });
+
+/** Stories: events or threads several entries cover. */
+export const STORIES = storiesJson as Story[];
+export const getStory = (id: string) => STORIES.find(s => s.id === id);
+export const entriesOfStory = (id: string) => ENTRIES.filter(e => e.story === id);

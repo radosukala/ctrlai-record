@@ -20,7 +20,7 @@ cd "$tmp/site"
 ARCHIVE_DIR="$tmp/archive" npx tsx scripts/radar/compose.ts > "$tmp/compose.log" 2>&1 || { tail -20 "$tmp/compose.log"; echo "FAILED: the Base could not be rebuilt from the archive"; exit 1; }
 tail -1 "$tmp/compose.log"
 fail=0
-for f in entries people names runs verification; do
+for f in entries people names runs verification stories; do
   if cmp -s "content/base/$f.json" "$tmp/published/$f.json"; then echo "  same: $f.json"; else echo "  DIFFERENT: $f.json"; fail=1; fi
 done
 ARCHIVE_DIR="$tmp/archive" npx tsx scripts/radar/build-db.ts 2>/dev/null | tail -1

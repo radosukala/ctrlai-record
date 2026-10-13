@@ -130,7 +130,12 @@ export type Entry = {
   evidence?: Evidence;
   /** How this entry bears on earlier ones in the Base, by their slug. */
   relations?: { rel: RelationKind; to: string; note: string }[];
+  /** The story it belongs to, when several entries cover one event or thread (content/base/stories.json). */
+  story?: string;
 };
+
+/** A story: one event or thread that several entries cover, across outlets and days. Built by compose from the entries. */
+export type Story = { id: string; title: string; first: string; last: string; entries: number };
 
 export type Person = {
   id: string;

@@ -73,9 +73,12 @@ type Draft = Omit<Entry, 'quotes' | 'run' | 'via' | 'review' | 'people'> & {
   people?: { id: string; name: string; role: string; title?: string }[];
   quotes?: { text: string; speaker: string; speakerCertain?: boolean; context?: string; positions?: { q: string; stance: string }[]; said?: string; type?: string; hand?: string }[];
   textFile?: string;
+  /** A new story's title, given by the first entry that uses its id. */
+  storyTitle?: string;
 };
 
 const entries: Entry[] = [];
+const storyTitles = new Map<string, string>();
 const people = new Map<string, Person>();
 const names: Record<string, string> = {};
 const verification: Record<string, { ok: boolean; mode?: string; reason?: string; quoteSha: string; textSha?: string; second?: { agreement: number; missing: string[] } }> = {};
@@ -127,6 +130,10 @@ for (const run of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS
     const rawOutlet = d.outlet;
     d.outlet = OUTLET[d.outlet] ?? d.outlet;
     const where = `${run}/${file}`;
+    if (d.story) {
+      if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(d.story)) problems.push(`${where}: story id must be kebab-case, got ${d.story}`);
+      if (d.storyTitle && !storyTitles.has(d.story)) storyTitles.set(d.story, d.storyTitle);
+    }
     if ((d.importance as number) === 0) continue;
     if (!KINDS.has(d.kind)) problems.push(`${where}: unknown kind ${d.kind}`);
     for (const t of d.topics ?? []) if (!TOPIC[t]) problems.push(`${where}: unknown topic ${t}`);
@@ -203,6 +210,7 @@ for (const run of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS
       // Claude wrote the draft, so anything that names Anthropic or Claude is marked, whatever the agent said.
       conflict: !!d.conflict || (d.orgs ?? []).includes('anthropic') || /\banthropic\b|\bclaude\b/i.test(`${d.title} ${d.summary}`), run, via, review: { by: 'machine' }, ...(d.notes ? { notes: d.notes } : {}),
       ...(d.evidence ? { evidence: d.evidence } : {}), ...(d.relations?.length ? { relations: d.relations } : {}),
+      ...(d.story ? { story: d.story } : {}),
     });
     runEntries++;
   }
@@ -241,6 +249,16 @@ for (const e of entries) {
   }
 }
 
+// Stories: every story id needs a title from one of its entries, and a story is only worth an id with two entries or more.
+const stories = new Map<string, { id: string; title: string; first: string; last: string; entries: number }>();
+for (const e of entries) {
+  if (!e.story) continue;
+  const s = stories.get(e.story) ?? { id: e.story, title: storyTitles.get(e.story) ?? '', first: e.published, last: e.published, entries: 0 };
+  s.entries++; if (e.published < s.first) s.first = e.published; if (e.published > s.last) s.last = e.published;
+  stories.set(e.story, s);
+}
+for (const s of stories.values()) if (!s.title) problems.push(`story ${s.id} has no title: give storyTitle on one of its entries`);
+
 // Slugs are permalinks: they must be unique.
 const seen = new Set<string>();
 for (const e of entries) {
@@ -277,6 +295,7 @@ const files: Record<string, unknown> = {
   'names.json': names,
   'runs.json': runs,
   'verification.json': verification,
+  'stories.json': [...stories.values()].sort((a, b) => b.last.localeCompare(a.last) || a.id.localeCompare(b.id)),
 };
 if (goneEntries.length || goneQuotes.length) {
   const log = existsSync(`${OUT}/removals.json`) ? JSON.parse(readFileSync(`${OUT}/removals.json`, 'utf8')) as unknown[] : [];
