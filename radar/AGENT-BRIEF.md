@@ -62,8 +62,18 @@ returns a summary, not the page. Don't download anything except page text and ca
     "speaker": "satya-nadella",           // a people[].id, or an outlet id when the words are the outlet's own prose
     "speakerCertain": true,
     "context": "≤30 words: where and why it was said",
+    "type": "position",                   // position | prediction | account | factual | finding | commitment | proposal | value | question
+    "said": "YYYY-MM-DD",                 // ONLY when the words were said on another day than `published` (a hearing before its clip)
     "positions": [{ "q": "labs-self-govern", "stance": "lean-disagree" }]
   }],
+  "evidence": {                            // ONLY for kind "research", or a source whose point is a measurement or statistics
+    "design": "what was done: an experiment on seven models; a survey of 2,000 workers; payroll records of 1.2 million employees",
+    "finding": "the main result, with the source's own numbers",
+    "limits": "what it does not show, as the authors or the design limit it",
+    "status": "preprint | peer-reviewed | working-paper | report | official-statistics | company-report",
+    "replication": "only if the source says whether others reproduced it"
+  },
+  "relations": [{ "rel": "supports | challenges | qualifies | implements | supersedes", "to": "<slug of an earlier Base entry>", "note": "≤25 words" }],
   "importance": 3,
   "textFile": "sources/<main.id>.txt",
   "textUrl": "the URL the saved text actually came from",
@@ -126,6 +136,29 @@ anywhere in our text: repeat the name or restructure.
   `international-agreement` An international agreement on AI is needed ·
   `liability` AI companies should be legally liable for the harms their systems cause ·
   `speak-up` People inside AI companies should be free to warn the public
+
+**type** (every quotation): what the words claim. `position` where the speaker stands on what should be done or
+believed · `prediction` what they expect to happen · `account` what they say they saw or did (testimony) · `factual` a
+statement of fact about the world · `finding` a research result as its authors state it · `commitment` a promise about
+their own or their organization's conduct · `proposal` a specific measure they want · `value` a judgment of what matters
+or is right · `question` a question they put. Opinions are compared with opinions, findings with findings: get this right.
+
+**said**: the date the words were spoken or written, only when it differs from `published` and the source states it (a
+hearing held on Oct 5 whose clip was posted on Oct 11; an interview the source says was recorded earlier). Never guess.
+
+**hand** (rarely needed): the Radar records whether a quotation is the speaker's own text or transcribed words
+(`first`) or someone else's quotation of them (`reported`, e.g. a quote inside a news story). It works this out itself;
+set it only when that would be wrong, for example a news site publishing a full transcript of a speech (`first`).
+
+**evidence**: for research, and for any source whose point is a measurement, give the design, the finding with the
+source's own numbers, the limits as stated, and the status. A preprint is a preprint; a company's own report is a
+`company-report`. This is how a reader weighs a finding, so keep it plain and exact.
+
+**relations**: when this source directly supports, challenges, qualifies, implements or supersedes a specific earlier
+entry, say so. `implements`: an action that carries out a commitment reported earlier. `supersedes`: a correction or a
+newer version of the same thing. Find earlier entries in the database (rebuilt after every run):
+`sqlite3 /Users/rado/code/ctrlai-archive/index/base.sqlite "select slug, published, title from entries where title like '%Hugging Face%' or summary like '%Hugging Face%' order by published desc limit 10"`
+Only relate entries that are clearly about the same thing; leave `relations` out otherwise.
 
 **No false precision.** Never give a time, number or date more precisely than the source does. Dates in our text are the
 source's dates. Numbers are the source's numbers, attributed.

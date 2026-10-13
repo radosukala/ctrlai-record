@@ -231,3 +231,7 @@
 .b-list-top { border-top: 1px solid var(--ink); }
 .b-hero { display: grid; gap: 18px; padding-block: clamp(24px, 4vw, 48px) 0; }
 .b-hero .headline { max-width: 20em; }
+
+/* How an entry bears on earlier ones (relations). */
+.b-related { display: grid; gap: 10px; font-size: 16px; line-height: 1.5; max-width: 44em; }
+.b-related b { font-weight: 600; }

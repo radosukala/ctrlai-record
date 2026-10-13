@@ -36,6 +36,24 @@ export type ChangeKind = 'evidence' | 'commitment' | 'decision' | 'correction' |
 
 export type EntryKind = 'news' | 'video' | 'podcast' | 'essay' | 'research' | 'official' | 'hearing';
 
+/**
+ * What a quotation claims, so opinions are never mixed up with findings or promises when they are compared:
+ *   position     where the speaker stands on what should be done or believed
+ *   prediction   what the speaker expects to happen
+ *   account      what the speaker says they saw or did (testimony)
+ *   factual      a statement of fact about the world, made by the speaker
+ *   finding      a research result, as its authors state it
+ *   commitment   a promise about the speaker's own or their organization's conduct
+ *   proposal     a specific measure the speaker wants
+ *   value        a judgment of what matters or is right
+ *   question     a question the speaker puts
+ */
+export type ClaimType = 'position' | 'prediction' | 'account' | 'factual' | 'finding' | 'commitment' | 'proposal' | 'value' | 'question';
+
+/** How one entry bears on another: the links that let a reader follow a claim to the evidence for or against it, and a
+ *  commitment through to what was done. */
+export type RelationKind = 'supports' | 'challenges' | 'qualifies' | 'implements' | 'supersedes';
+
 export type Quote = {
   /** `<entry id>-<first 8 hex of the sha256 of its words>`: tied to the words, never to their place in the list. */
   id: string;
@@ -54,6 +72,24 @@ export type Quote = {
   warnings?: string[];
   /** Where this one quotation stands. `machine` labels are proposed by the agent and never shown; `editor` ones a person confirmed. */
   positions?: { q: PropositionId; stance: Stance; by: 'machine' | 'editor' }[];
+  /** YYYY-MM-DD when the words were said or written, if not the source's own date (a hearing before its clip was posted). */
+  said?: string;
+  type?: ClaimType;
+  /** first: the speaker's own text or a transcript of their own words. reported: quoted by someone else, so the selection
+   *  of words is the reporter's. */
+  hand?: 'first' | 'reported';
+};
+
+/** For research and measurements: how a finding was reached, so a reader can weigh it. */
+export type Evidence = {
+  /** What was done: an experiment on seven models, a survey of 2,000 workers, payroll records of 1.2 million employees. */
+  design: string;
+  finding: string;
+  /** What it does not show, as the authors or the design limit it. */
+  limits: string;
+  status: 'preprint' | 'peer-reviewed' | 'working-paper' | 'report' | 'official-statistics' | 'company-report';
+  /** Whether others have reproduced it, when known. */
+  replication?: string;
 };
 
 export type Entry = {
@@ -91,6 +127,9 @@ export type Entry = {
   via: { source: string; tier: 1 | 2 | 3 };
   review: { by: 'machine' | 'editor'; on?: string };
   notes?: string;
+  evidence?: Evidence;
+  /** How this entry bears on earlier ones in the Base, by their slug. */
+  relations?: { rel: RelationKind; to: string; note: string }[];
 };
 
 export type Person = {

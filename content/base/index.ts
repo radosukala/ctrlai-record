@@ -6,7 +6,11 @@ import runsJson from './runs.json';
 
 export const ENTRIES = entriesJson as Entry[];
 export const PEOPLE = peopleJson as Person[];
-export const RUNS = runsJson as { run: string; from: string; to: string; ranAt: string; sources: number; answered: number; items: number; kept: number; entries: number; quotes: number }[];
+export const RUNS = runsJson as { run: string; from: string; to: string; ranAt: string; sources: number; answered: number; items: number; kept: number; entries: number; quotes: number; kind?: 'research'; label?: string }[];
+/** The daily Radar's runs, without research passes (sources gathered for one question), and the newest of them. */
+export const DAILY_RUNS = RUNS.filter(r => r.kind !== 'research');
+export const LATEST_RUN = DAILY_RUNS[DAILY_RUNS.length - 1];
+export const runOf = (run: string) => RUNS.find(r => r.run === run);
 const NAMES = namesJson as Record<string, string>;
 const PERSON = new Map(PEOPLE.map(p => [p.id, p]));
 
@@ -18,6 +22,12 @@ const daysBefore = (day: string, n: number) => new Date(Date.parse(`${day}T12:00
 export const recent = (days = 7, from = LATEST_DAY) => ENTRIES.filter(e => e.published > daysBefore(from, days) && e.published <= from);
 export const WEEK = recent(7);
 export const WEEK_FROM = WEEK.reduce((d, e) => (!d || e.published < d ? e.published : d), '');
+/** This week's entries that changed something: new evidence, a decision, a commitment or a correction, most important
+ *  first. Arguments and familiar ground are not changes. */
+export const CHANGED_THIS_WEEK = WEEK.filter(e => e.change && !['argument', 'repeat'].includes(e.change.kind))
+  .sort((a, b) => b.importance - a.importance || (b.access === 'excerpt' ? -1 : 0) - (a.access === 'excerpt' ? -1 : 0) || b.published.localeCompare(a.published));
+/** An entry we could only read the description of: shown as a link on its story, not as an entry of its own. */
+export const linkOnly = (e: Entry) => e.access === 'excerpt';
 export const getPerson = (id: string) => PERSON.get(id);
 export const isPerson = (id: string) => PERSON.has(id);
 /** A speaker's display name: a person's name, or an organization's. */

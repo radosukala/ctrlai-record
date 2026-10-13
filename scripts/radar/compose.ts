@@ -26,6 +26,31 @@ import { secondOpinion } from './second';
 const sha = (s: string) => createHash('sha256').update(s).digest('hex');
 const norm = (s: string) => s.normalize('NFKC').replace(/\s+/g, ' ').trim();
 /** A quotation's id comes from its words, not from its place in the list, so a confirmed label can never move to other words. */
+/**
+ * When the words were said, what kind of claim they make, and whether they are the speaker's own text or a transcript of
+ * their own words (first-hand) or someone else's quotation of them (reported). An agent can set all three; when it
+ * doesn't say, first-hand is worked out from the source: the speaker wrote it, we hold a transcript of their words, it is
+ * an official statement, or it is the outlet's own text. Anything else, such as a quotation inside a news story, is
+ * reported.
+ */
+function claimFields(q: NonNullable<Draft['quotes']>[number], speaker: string, d: Draft, where: string): Partial<Quote> {
+  const out: Partial<Quote> = {};
+  if (q.said) {
+    if (!DATE.test(q.said)) problems.push(`${where}: said must be YYYY-MM-DD, got ${q.said}`);
+    else if (q.said > d.published) problems.push(`${where}: a quotation said (${q.said}) after its source was published (${d.published})`);
+    else if (q.said !== d.published) out.said = q.said;
+  }
+  if (q.type) {
+    if (CLAIMS.has(q.type)) out.type = q.type as Quote['type'];
+    else problems.push(`${where}: unknown claim type ${q.type}`);
+  }
+  if (q.hand && q.hand !== 'first' && q.hand !== 'reported') problems.push(`${where}: hand must be first or reported, got ${q.hand}`);
+  const role = (d.people ?? []).find(p => slugify(p.id || p.name) === speaker)?.role;
+  const ownOutlet = slugify(d.outlet) === speaker;
+  out.hand = (q.hand as Quote['hand']) ?? (role === 'author' || ownOutlet || d.kind === 'official' || (d.transcript ?? 'none') !== 'none' ? 'first' : 'reported');
+  return out;
+}
+
 const quoteId = (entry: string, text: string, taken: Set<string>) => {
   const base = `${entry}-${sha(norm(text)).slice(0, 8)}`;
   let id = base;
@@ -39,10 +64,14 @@ const ROLES = new Set(['speaker', 'author', 'subject', 'mentioned']);
 const CHANGES = new Set(['evidence', 'commitment', 'decision', 'correction', 'argument', 'repeat']);
 const STANCES = new Set(['agree', 'lean-agree', 'mixed', 'lean-disagree', 'disagree']);
 const PROPS = new Set(['loss-of-control', 'labs-self-govern', 'pre-release-testing', 'slow-down', 'race-with-china', 'international-agreement', 'liability', 'speak-up']);
+const CLAIMS = new Set(['position', 'prediction', 'account', 'factual', 'finding', 'commitment', 'proposal', 'value', 'question']);
+const RELATIONS = new Set(['supports', 'challenges', 'qualifies', 'implements', 'supersedes']);
+const EVIDENCE = new Set(['preprint', 'peer-reviewed', 'working-paper', 'report', 'official-statistics', 'company-report']);
+const DATE = /^\d{4}-\d{2}-\d{2}$/;
 
 type Draft = Omit<Entry, 'quotes' | 'run' | 'via' | 'review' | 'people'> & {
   people?: { id: string; name: string; role: string; title?: string }[];
-  quotes?: { text: string; speaker: string; speakerCertain?: boolean; context?: string; positions?: { q: string; stance: string }[] }[];
+  quotes?: { text: string; speaker: string; speakerCertain?: boolean; context?: string; positions?: { q: string; stance: string }[]; said?: string; type?: string; hand?: string }[];
   textFile?: string;
 };
 
@@ -155,6 +184,7 @@ for (const run of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS
             match: v.mode,
             ...(second !== undefined ? { second: true } : {}),
             ...(v.warnings.length ? { warnings: v.warnings } : {}),
+            ...claimFields(q, speaker, d, where),
             ...(CONFIRMED[id] ? { positions: CONFIRMED[id].filter(p => PROPS.has(p.q) && STANCES.has(p.stance)).map(p => ({ ...p, by: 'editor' })) as Quote['positions'] }
               : q.positions?.length ? { positions: q.positions.filter(p => PROPS.has(p.q) && STANCES.has(p.stance)).map(p => ({ ...p, by: 'machine' })) as Quote['positions'] } : {}),
           });
@@ -172,12 +202,15 @@ for (const run of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS
       orgs: (d.orgs ?? []).map(slugify), quotes, importance: d.access === 'excerpt' ? (Math.min(d.importance, 2) as Entry['importance']) : d.importance, access: d.access, transcript: d.transcript ?? 'none',
       // Claude wrote the draft, so anything that names Anthropic or Claude is marked, whatever the agent said.
       conflict: !!d.conflict || (d.orgs ?? []).includes('anthropic') || /\banthropic\b|\bclaude\b/i.test(`${d.title} ${d.summary}`), run, via, review: { by: 'machine' }, ...(d.notes ? { notes: d.notes } : {}),
+      ...(d.evidence ? { evidence: d.evidence } : {}), ...(d.relations?.length ? { relations: d.relations } : {}),
     });
     runEntries++;
   }
   const h = health.sources as Record<string, { ok: boolean }>;
   runs.push({
     run, from: health.from, to: health.to, ranAt: health.ranAt,
+    // A research pass (sources gathered on one question, not one day's sources) says so, and is never "the latest run".
+    ...(health.kind === 'research' ? { kind: 'research', label: health.label } : {}),
     sources: Object.keys(h).length, answered: Object.values(h).filter(s => s.ok).length,
     items: lines.length, kept: lines.filter(l => l.kept).length, entries: runEntries, quotes: runQuotes,
   });
@@ -192,6 +225,21 @@ for (const e of entries) {
   byId.set(e.id, e);
 }
 entries.splice(0, entries.length, ...byId.values());
+
+// Evidence and relations: a research entry says how its finding was reached; a relation points at an entry that exists.
+const slugs = new Set(entries.map(e => e.slug));
+for (const e of entries) {
+  if (e.evidence) {
+    const v = e.evidence;
+    if (!EVIDENCE.has(v.status)) problems.push(`${e.slug}: unknown evidence status ${v.status}`);
+    if (!v.design?.trim() || !v.finding?.trim() || !v.limits?.trim()) problems.push(`${e.slug}: evidence needs design, finding and limits`);
+  }
+  for (const r of e.relations ?? []) {
+    if (!RELATIONS.has(r.rel)) problems.push(`${e.slug}: unknown relation ${r.rel}`);
+    if (!slugs.has(r.to)) problems.push(`${e.slug}: ${r.rel} ${r.to}, which is not an entry in the Base`);
+    if (r.to === e.slug) problems.push(`${e.slug}: relates to itself`);
+  }
+}
 
 // Slugs are permalinks: they must be unique.
 const seen = new Set<string>();

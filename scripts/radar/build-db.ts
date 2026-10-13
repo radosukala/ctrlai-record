@@ -42,9 +42,11 @@ create table entry_people (entry_id text, person_id text, role text, title text)
 create table entry_also (entry_id text, outlet text, title text, url text);
 create table people (id text primary key, name text);
 create table person_titles (person_id text, title text, entry_slug text, on_date text, role text);
--- said_on is the source's date for now; the date the words were said is a field still to come.
+-- said_on: when the words were said (a quotation's own date when the source gives one, else the source's date).
 create table quotes (id text primary key, entry_id text, speaker text, text text, context text, speaker_certain int,
-  match text, second int, at_seconds int, said_on text);
+  match text, second int, at_seconds int, said_on text, type text, hand text);
+create table evidence (entry_id text primary key, design text, finding text, limits text, status text, replication text);
+create table relations (entry_id text, rel text, to_slug text, note text);
 create table quote_positions (quote_id text, proposition text, stance text, by text);
 create table runs (run text primary key, from_date text, to_date text, ran_at text, sources int, answered int, items int,
   kept int, entries int, quotes int);
@@ -57,7 +59,7 @@ create table documents (id text primary key, url text, title text, outlet text, 
   path text, collections text, base_entries text);
 create table texts (doc_id text, method text, file text, words int, obtained_on text, sha256 text, text text);
 create view claims as
-  select q.id, q.said_on, q.speaker, coalesce(p.name, q.speaker) as name, q.text, q.context, q.speaker_certain,
+  select q.id, q.said_on, q.speaker, coalesce(p.name, q.speaker) as name, q.type, q.hand, q.text, q.context, q.speaker_certain,
          e.slug, e.outlet, e.kind, e.url, e.published
   from quotes q join entries e on e.id = q.entry_id left join people p on p.id = q.speaker;
 `);
@@ -69,7 +71,9 @@ const iTopic = ins('insert into entry_topics values (?,?)');
 const iOrg = ins('insert into entry_orgs values (?,?)');
 const iEP = ins('insert into entry_people values (?,?,?,?)');
 const iAlso = ins('insert into entry_also values (?,?,?,?)');
-const iQuote = ins('insert into quotes values (?,?,?,?,?,?,?,?,?,?)');
+const iQuote = ins('insert into quotes values (?,?,?,?,?,?,?,?,?,?,?,?)');
+const iEvidence = ins('insert into evidence values (?,?,?,?,?,?)');
+const iRelation = ins('insert into relations values (?,?,?,?)');
 const iPos = ins('insert into quote_positions values (?,?,?,?)');
 for (const e of ENTRIES) {
   iEntry.run(e.id, e.slug, e.kind, e.title, e.url, e.outlet, e.published, e.minutes ?? null, e.views ?? null, e.importance,
@@ -79,8 +83,10 @@ for (const e of ENTRIES) {
   for (const o of e.orgs) iOrg.run(e.id, o);
   for (const p of e.people) iEP.run(e.id, p.id, p.role, p.title ?? null);
   for (const a of e.also) iAlso.run(e.id, a.outlet, a.title, a.url);
+  if (e.evidence) iEvidence.run(e.id, e.evidence.design, e.evidence.finding, e.evidence.limits, e.evidence.status, z(e.evidence.replication));
+  for (const r of e.relations ?? []) iRelation.run(e.id, r.rel, r.to, r.note);
   for (const q of e.quotes) {
-    iQuote.run(q.id, e.id, q.speaker, q.text, q.context ?? null, q.speakerCertain ? 1 : 0, q.match, q.second ? 1 : 0, q.at ?? null, e.published);
+    iQuote.run(q.id, e.id, q.speaker, q.text, q.context ?? null, q.speakerCertain ? 1 : 0, q.match, q.second ? 1 : 0, q.at ?? null, q.said ?? e.published, z(q.type), z(q.hand));
     for (const p of q.positions ?? []) iPos.run(q.id, p.q, p.stance, p.by);
   }
 }

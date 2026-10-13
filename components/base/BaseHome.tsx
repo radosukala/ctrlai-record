@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import Link from 'next/link';
 import '@/components/base/base.css';
 import { BaseBrowser, type Row } from '@/components/base/BaseBrowser';
-import { ENTRIES, LATEST_DAY, RUNS, WEEK, WEEK_FROM, nameOf, onRecord, currentTitle, isPerson } from '@/content/base';
+import { ENTRIES, LATEST_DAY, LATEST_RUN, RUNS, WEEK, WEEK_FROM, nameOf, onRecord, currentTitle, isPerson } from '@/content/base';
 import { KIND_LABEL, LENS_HEADING, TOPIC, TOPICS } from '@/content/base/taxonomy';
 import type { Entry, LensId, Quote } from '@/content/base/types';
 import { LATEST } from '@/content/issues';
@@ -49,7 +49,7 @@ function Head({ id, title, note }: { id: string; title: ReactNode; note?: ReactN
  * entries keep their permalinks at /base/<slug> and stay on the person pages.
  */
 export function BaseHome({ film }: { film?: ReactNode }) {
-  const run = RUNS[RUNS.length - 1];
+  const run = LATEST_RUN;
   // The latest run on its own, so every number in its funnel counts the same thing.
   const ran = run ? ENTRIES.filter(e => e.run === run.run) : [];
   // A run can be re-read later, so "updated" is the newest read of any run, not the last run's date.

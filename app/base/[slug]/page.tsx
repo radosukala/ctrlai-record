@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import '@/components/base/base.css';
 import { Section } from '@/components/Section';
-import { ENTRIES, currentTitle, getEntry, isPerson, nameOf } from '@/content/base';
+import { ENTRIES, currentTitle, getEntry, isPerson, nameOf, runOf } from '@/content/base';
 import { KIND_LABEL, LENS_HEADING, TOPIC } from '@/content/base/taxonomy';
 import type { Entry, LensId } from '@/content/base/types';
 import { SITE, longDate } from '@/lib/site';
@@ -38,6 +38,17 @@ const WORDS_FROM: Record<Entry['transcript'], string> = {
   none: 'From the source’s own text.',
 };
 const ROLE: Record<string, string> = { speaker: 'Speaks', author: 'Wrote it', subject: 'About them', mentioned: 'Mentioned' };
+const EVIDENCE_STATUS: Record<NonNullable<Entry['evidence']>['status'], string> = {
+  'preprint': 'A preprint: not yet peer reviewed',
+  'peer-reviewed': 'Peer reviewed',
+  'working-paper': 'A working paper: not yet peer reviewed',
+  'report': 'A report',
+  'official-statistics': 'Official statistics',
+  'company-report': 'The company’s own report about its own work',
+};
+const RELATION_LABEL: Record<NonNullable<Entry['relations']>[number]['rel'], string> = {
+  supports: 'Supports', challenges: 'Challenges', qualifies: 'Qualifies', implements: 'Carries out', supersedes: 'Corrects or replaces',
+};
 
 export default async function EntryPage({ params }: { params: Promise<{ slug: string }> }) {
   const e = getEntry((await params).slug);
@@ -91,6 +102,8 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
                     <span className="b-checked">{q.match === 'exact' ? 'Found word for word in the source' : 'Found word for word in the source; punctuation differs'}</span>
                     {link ? <a className="b-at" href={link}>Hear it at {clock(q.at!)} ↗</a> : null}
                     {q.second ? <span className="b-checked">Also in a second, independent transcript</span> : null}
+                    {q.hand === 'reported' ? <span className="b-warn">As quoted in the text we read, not the speaker’s own text or a transcript of their words</span> : null}
+                    {q.said ? <span className="muted">Said on {longDate(q.said)}</span> : null}
                     {!q.speakerCertain ? <span className="b-warn">Speaker known from context, not confirmed by listening</span> : null}
                     {q.warnings?.map(w => <span key={w} className="b-warn">{w}</span>)}
                   </div>
@@ -98,6 +111,25 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
               );
             })}
           </div>
+        </Section>
+      ) : null}
+
+      {e.evidence ? (
+        <Section id="evidence" title={<>How the finding was <em>reached</em></>} blurb="In our words, from the source. Weigh the finding by how it was made.">
+          <dl className="b-facts">
+            <dt>What was done</dt><dd>{e.evidence.design}</dd>
+            <dt>What it found</dt><dd>{e.evidence.finding}</dd>
+            <dt>What it does not show</dt><dd>{e.evidence.limits}</dd>
+            <dt>Status</dt><dd>{EVIDENCE_STATUS[e.evidence.status]}{e.evidence.replication ? `. ${e.evidence.replication}` : ''}</dd>
+          </dl>
+        </Section>
+      ) : null}
+
+      {e.relations?.length ? (
+        <Section id="related" title={<>How it bears on <em>the record</em></>}>
+          <ul className="b-related">
+            {e.relations.map(r => { const t = getEntry(r.to); return t ? <li key={r.to + r.rel}><b>{RELATION_LABEL[r.rel]}</b> <Link href={`/base/${t.slug}`}>{t.title}</Link> <span className="muted">({t.outlet}, {longDate(t.published)}). {r.note}</span></li> : null; })}
+          </ul>
         </Section>
       ) : null}
 
@@ -110,7 +142,7 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
           <dt>What we read</dt>
           <dd>{ACCESS[e.access]}</dd>
           <dt>Found by</dt>
-          <dd>The Radar, run of {longDate(e.run)}, via <code>{e.via.source}</code> (tier {e.via.tier}: {e.via.tier === 1 ? 'the source’s own channel or an official record' : e.via.tier === 2 ? 'a major outlet’s own reporting' : 'discovery only'})</dd>
+          <dd>{runOf(e.run)?.kind === 'research' ? <>A research pass: {runOf(e.run)!.label}</> : <>The Radar, run of {longDate(e.run)}</>}, via <code>{e.via.source}</code> (tier {e.via.tier}: {e.via.tier === 1 ? 'the source’s own channel or an official record' : e.via.tier === 2 ? 'a major outlet’s own reporting' : 'discovery only'})</dd>
           <dt>Cite this</dt>
           <dd><div className="b-cite">{cite}</div></dd>
         </dl>

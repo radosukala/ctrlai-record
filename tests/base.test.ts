@@ -13,6 +13,24 @@ import { TOPIC } from '../content/base/taxonomy';
 const verification = JSON.parse(readFileSync('content/base/verification.json', 'utf8')) as Record<string, { ok: boolean; quoteSha: string }>;
 const sha = (s: string) => createHash('sha256').update(s).digest('hex');
 
+test('every quotation says whether it is first-hand or reported, and none is dated after its source', () => {
+  const TYPES = new Set(['position', 'prediction', 'account', 'factual', 'finding', 'commitment', 'proposal', 'value', 'question']);
+  for (const e of ENTRIES) for (const q of e.quotes) {
+    assert.ok(q.hand === 'first' || q.hand === 'reported', `${q.id}: first-hand or reported?`);
+    if (q.said) assert.ok(/^\d{4}-\d{2}-\d{2}$/.test(q.said) && q.said <= e.published, `${q.id}: said ${q.said}, after its source (${e.published})?`);
+    if (q.type) assert.ok(TYPES.has(q.type), `${q.id}: unknown claim type ${q.type}`);
+  }
+});
+
+test('research we read in full says how its finding was reached, and every relation points at an entry', () => {
+  const slugs = new Set(ENTRIES.map(e => e.slug));
+  for (const e of ENTRIES) {
+    if (e.kind === 'research' && e.access === 'full') assert.ok(e.evidence, `${e.slug}: research read in full needs evidence (design, finding, limits, status)`);
+    if (e.evidence) for (const k of ['design', 'finding', 'limits', 'status'] as const) assert.ok(e.evidence[k]?.trim(), `${e.slug}: evidence.${k} is empty`);
+    for (const r of e.relations ?? []) { assert.ok(slugs.has(r.to), `${e.slug}: relation to ${r.to}, not an entry`); assert.notEqual(r.to, e.slug); }
+  }
+});
+
 test('a quotation’s id comes from its words, so a confirmed label can never move to other words', () => {
   for (const e of ENTRIES) for (const q of e.quotes) {
     const want = `${e.id}-${sha(q.text.normalize('NFKC').replace(/\s+/g, ' ').trim()).slice(0, 8)}`;
