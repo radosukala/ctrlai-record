@@ -27,6 +27,13 @@ echo "== Archive"
 ARCHIVE_DIR="$ARCHIVE_DIR" npx tsx scripts/radar/archive.ts --run "$RUN" | tail -1
 ( cd "$ARCHIVE_DIR" && git add -A && { git diff --cached --quiet || git -c user.name=radosukala -c user.email=sukala@me.com commit -q -m "Radar run $RUN"; } && git pull -q --rebase && git push -q ) || echo "WARNING: the archive could not be pushed; it is safe locally in $ARCHIVE_DIR"
 
+echo "== Internal documents"
+# Ctrl AI's working folder (plans, research, film sources) is its own private repository; keep it pushed too.
+INTERNAL="${INTERNAL_DIR:-/Users/rado/code/ctrlai-com/docs-internal}"
+if [ -d "$INTERNAL/.git" ]; then
+  ( cd "$INTERNAL" && git add -A && { git diff --cached --quiet || git -c user.name=radosukala -c user.email=sukala@me.com commit -q -m "Daily backup $RUN"; } && git pull -q --rebase && git push -q && echo "pushed" ) || echo "WARNING: the internal documents could not be pushed; they are safe locally in $INTERNAL"
+fi
+
 echo "== Database"
 npx tsx scripts/radar/build-db.ts 2>/dev/null | tail -1 || echo "WARNING: the database could not be rebuilt; the record itself is safe"
 
