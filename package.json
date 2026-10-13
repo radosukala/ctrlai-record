@@ -17,7 +17,8 @@
     "newsletter": "tsx --env-file-if-exists=.env.local scripts/newsletter.ts",
     "social": "tsx scripts/social.ts",
     "accord:verify": "tsx scripts/verify-accord.ts",
-    "film:voices": "tsx --env-file-if-exists=.env.local scripts/film-voices.ts"
+    "film:voices": "tsx --env-file-if-exists=.env.local scripts/film-voices.ts",
+    "day-before:voices": "tsx --env-file-if-exists=.env.local scripts/day-before-voices.ts"
   },
   "dependencies": {
     "@fontsource-variable/archivo": "^5.3.0",

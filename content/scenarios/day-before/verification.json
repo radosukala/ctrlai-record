@@ -1,0 +1,298 @@
+{
+ "checkedOn": "2026-10-13",
+ "results": {
+  "axios-lede": {
+   "ok": true,
+   "via": "file",
+   "where": "radar/2026-10-13/sources/114ea300857a.txt",
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "845accf9c20c0731a55e7659599f005188c08f819aab2632663a506840b25cc1",
+   "sourceSha": "1f5c626e2597871c2790fb5aebe861b94617ab83772e09cf40cc25723d690257"
+  },
+  "openai-spokesperson": {
+   "ok": true,
+   "via": "base",
+   "where": "axios-2026-10-09-ai-companies-day-after-scenarios 114ea300857a-q3",
+   "mode": "exact",
+   "quoteSha": "571015ea7ad219e97bdba8b40688cb68b733450ce824953457166aeb79846a97",
+   "sourceSha": "571015ea7ad219e97bdba8b40688cb68b733450ce824953457166aeb79846a97"
+  },
+  "uk-gov-quicker": {
+   "ok": true,
+   "via": "base",
+   "where": "gov-uk-2026-10-12-britain-steps-up-ai-defences bd54737b8d3a-q4",
+   "mode": "exact",
+   "quoteSha": "4649a67e3786c7da4bf425cd445540d93638af250fa8232a5b1f19d8fb9639a3",
+   "sourceSha": "72202180d9d0a318797dd083652bc8104867bb22950acdf4ccfda5429d958295"
+  },
+  "narayan-inevitable": {
+   "ok": true,
+   "via": "base",
+   "where": "guardian-2026-10-12-uk-minister-ai-cyber-attack a316645db3cd-q1",
+   "mode": "exact",
+   "quoteSha": "56369efad548645a13fb38edff0c3c48b114d753a60ca4b10bb9bd76fbad0d3f",
+   "sourceSha": "56369efad548645a13fb38edff0c3c48b114d753a60ca4b10bb9bd76fbad0d3f"
+  },
+  "wh-not-optional": {
+   "ok": true,
+   "via": "file",
+   "where": "accord-2026-10/sources/anthropic/37-axios-oct9-anthropic-breaches.txt",
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "51c754137d5efa348523ec93e806346812cf0bf790d9870a69cfba09f58f1db9",
+   "sourceSha": "fda8b123dc15f678295027f6b8bba5337233d785717b66780d788bbe1b4b81e1"
+  },
+  "guardian-medicare": {
+   "ok": true,
+   "via": "file",
+   "where": "radar/2026-10-13/sources/a316645db3cd.txt",
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "1bfc7ea9b92f257f51a15625598bde12d4db88017fa211ceb4a94319cac70f5a",
+   "sourceSha": "fa2aaa0a1d8103b9845dae60b7503e97249963f34e037681a1c6f7ba9563898b"
+  },
+  "axios-blame": {
+   "ok": true,
+   "via": "file",
+   "where": "radar/2026-10-13/sources/114ea300857a.txt",
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "3c02f9aa22fef0ebcbc9c258d031b89cdaacf1589e81c76e0db6157f17a04277",
+   "sourceSha": "1f5c626e2597871c2790fb5aebe861b94617ab83772e09cf40cc25723d690257"
+  },
+  "openai-first-known": {
+   "ok": true,
+   "via": "incident",
+   "where": "t-first-known",
+   "mode": "exact",
+   "quoteSha": "aa5815491fa25a90eca823ecde8777786726b06258b91126cda7813fa27d65ea",
+   "sourceSha": "aa5815491fa25a90eca823ecde8777786726b06258b91126cda7813fa27d65ea"
+  },
+  "nadella-brake": {
+   "ok": true,
+   "via": "base",
+   "where": "verge-2026-10-10-nadella-assume-models-compromised 35dc91695d5d-q1",
+   "mode": "exact",
+   "quoteSha": "3dc9d793a231a900a107f938583fd5d023f669e568acfd5c915ac4b87718d943",
+   "sourceSha": "995c7ac38a8d74401189fd8ebddaa64b93cd1490ef8e5cd59e212f6cb84ae388"
+  },
+  "beyer-jacobs": {
+   "ok": true,
+   "via": "base",
+   "where": "transformer-2026-10-09-democrats-battle-ai-regulation 2ee15e5e5538-q2",
+   "mode": "exact",
+   "quoteSha": "0098afa8246a6891e9082fec78a84ca0253ec66b3921f4e0f03d93f6c9315eb2",
+   "sourceSha": "0098afa8246a6891e9082fec78a84ca0253ec66b3921f4e0f03d93f6c9315eb2"
+  },
+  "guthrie": {
+   "ok": true,
+   "via": "base",
+   "where": "transformer-2026-10-09-democrats-battle-ai-regulation 2ee15e5e5538-q5",
+   "mode": "exact",
+   "quoteSha": "de0790a6e7674b56c5814e9fb8133eba027c2f0cc384695ab62a577ac0a8d8a6",
+   "sourceSha": "de0790a6e7674b56c5814e9fb8133eba027c2f0cc384695ab62a577ac0a8d8a6"
+  },
+  "axios-viability": {
+   "ok": true,
+   "via": "base",
+   "where": "axios-2026-10-09-ai-companies-day-after-scenarios 114ea300857a-q5",
+   "mode": "exact",
+   "quoteSha": "155aee76b47624da8fafc5b70aa9a5d596f6a076b413e7dbc9573d58f3791c4b",
+   "sourceSha": "d85222f868175c3e71bb76e7149f2e2227e8ff6561cbe99b1ebf7b1e83ef2fdf"
+  },
+  "anthropic-defence": {
+   "ok": true,
+   "via": "base",
+   "where": "anthropic-2026-10-08-cyber-mission db9c355075ab-q2",
+   "mode": "exact",
+   "quoteSha": "844e2e030a1fbc426f652e78123ef0e5630f11180c663c3f165eb598eaa924f9",
+   "sourceSha": "844e2e030a1fbc426f652e78123ef0e5630f11180c663c3f165eb598eaa924f9"
+  },
+  "stosz": {
+   "ok": true,
+   "via": "base",
+   "where": "techcrunch-2026-10-09-anthropic-evals-off-internet 6cd6f5cc677d-q2",
+   "mode": "exact",
+   "quoteSha": "9fac9d1653f64c436e1775a3aaf2dafaa807c38afd562d888405118446e687b3",
+   "sourceSha": "9fac9d1653f64c436e1775a3aaf2dafaa807c38afd562d888405118446e687b3"
+  },
+  "marcus-disclosure": {
+   "ok": true,
+   "via": "base",
+   "where": "marcus-on-ai-2026-10-10-recall-open-ended-agents ba6de7f0c69d-q2",
+   "mode": "exact",
+   "quoteSha": "d228760a3969273a0a214fa74dbd63e3cc05983a0695b363b5d7c684b2c6290d",
+   "sourceSha": "67fc6c500593e9fd26dd52f10535ffbd97a8c956168822e69ed9ca51eccc396f"
+  },
+  "metr-agent": {
+   "ok": true,
+   "via": "incident",
+   "where": "q-notify-no-user",
+   "mode": "exact",
+   "quoteSha": "168f2e9d0af7ff02362dde63cfefaaba3b07b6a22ede45ad427d0aa986a5551b",
+   "sourceSha": "168f2e9d0af7ff02362dde63cfefaaba3b07b6a22ede45ad427d0aa986a5551b"
+  },
+  "botvinick-powers": {
+   "ok": true,
+   "via": "base",
+   "where": "guardian-2026-10-12-ai-safety-democracy-botvinick 3cfc9df9ae6f-q2",
+   "mode": "exact",
+   "quoteSha": "3926eda0edb47bcebca41c2be7e7ca41f105d55978b86110e9266374458fe639",
+   "sourceSha": "3926eda0edb47bcebca41c2be7e7ca41f105d55978b86110e9266374458fe639"
+  },
+  "narayan-power": {
+   "ok": true,
+   "via": "base",
+   "where": "gov-uk-2026-10-12-britain-steps-up-ai-defences bd54737b8d3a-q2",
+   "mode": "exact",
+   "quoteSha": "3b8ffe1e8680ea27d8b7c58af6b099b869f0586bedefb49c180504bccbf8c635",
+   "sourceSha": "5e58e4d0ba605d1e83badddd07efc41d73848717805de62878425eb8d8bdf3ad"
+  },
+  "reason-grab": {
+   "ok": true,
+   "via": "file",
+   "where": "day-before/sources/reason-2026-10-09.txt",
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "08a25aa9630da75a981cd706055493199e13aabb03bdebcab28d7934c10dced1",
+   "sourceSha": "d66a834891e30ee83c80f944a7fbfc9153cd92a8715381e9dc7a28b15e3fb74a"
+  },
+  "axios-crisis": {
+   "ok": true,
+   "via": "file",
+   "where": "radar/2026-10-13/sources/114ea300857a.txt",
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "016b554a8435eeeae1dca97e04d12b37f260f9d6786433228e60ccfed0d92348",
+   "sourceSha": "1f5c626e2597871c2790fb5aebe861b94617ab83772e09cf40cc25723d690257"
+  },
+  "hermer": {
+   "ok": true,
+   "via": "base",
+   "where": "guardian-2026-10-12-hermer-ai-regulation-fridge a9d7b43afcbf-q2",
+   "mode": "exact",
+   "quoteSha": "409fb6f53083971350ce92281de8a5e72087fad75fbbc335d98631fb1b18bc1a",
+   "sourceSha": "409fb6f53083971350ce92281de8a5e72087fad75fbbc335d98631fb1b18bc1a"
+  },
+  "narayanan": {
+   "ok": true,
+   "via": "base",
+   "where": "ezra-klein-show-2026-10-09-case-normal-ai-future 207fdcf5bba4-q4",
+   "mode": "exact",
+   "quoteSha": "da14b206b11655692cc45522aa3cee3b9c1f72c9d15c5ad77c508acd0add6b74",
+   "sourceSha": "2b025ebe8b265c5b53a0607c9c7af01fd3e2b6a403fd061578d4edbb46130883"
+  },
+  "kurzgesagt": {
+   "ok": true,
+   "via": "base",
+   "where": "kurzgesagt-2026-10-05-ai-crossed-terrifying-line 6652e7f31b24-q4",
+   "mode": "exact",
+   "quoteSha": "5d63877c4f2ecbf2127abf093e24a619a9173b17e87071b4d0d1047f2a252cb3",
+   "sourceSha": "ffb3101a011c91f96b6f785781ffff2763fb2e1d8b496b6b56bbde5172607d60"
+  },
+  "axios-economy": {
+   "ok": true,
+   "via": "file",
+   "where": "radar/2026-10-13/sources/114ea300857a.txt",
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "35f0466953cb6ddbe30b9f314eb17abfd80a14158746192540b039886f1de028",
+   "sourceSha": "1f5c626e2597871c2790fb5aebe861b94617ab83772e09cf40cc25723d690257"
+  },
+  "imf-vamvakidis": {
+   "ok": true,
+   "via": "base",
+   "where": "guardian-2026-10-13-imf-ai-share-crash-risk 9e58dc30161b-q1",
+   "mode": "exact",
+   "quoteSha": "8aed1334000463c56f0e86d311a00e9d835fdb466b6e87d59e5d94e5dae18fc6",
+   "sourceSha": "a0933179cb071a8cb2476e9fc5413d2f6be59d953c0a77d643d343c25b6da5c1"
+  },
+  "axios-purpose": {
+   "ok": true,
+   "via": "base",
+   "where": "axios-2026-10-09-ai-companies-day-after-scenarios 114ea300857a-q4",
+   "mode": "exact",
+   "quoteSha": "300213b35cabdce8683026bd4d5b10a5f2e72332d697d30f877b4f672eccd996",
+   "sourceSha": "300213b35cabdce8683026bd4d5b10a5f2e72332d697d30f877b4f672eccd996"
+  },
+  "turner-koch": {
+   "ok": true,
+   "via": "base",
+   "where": "alignment-forum-2026-10-12-openai-cant-self-police a238db455f17-q2",
+   "mode": "exact",
+   "quoteSha": "d39846825f504cdeddf4d56986307d70d41ac42174d1528e9a4402c4f0292f3a",
+   "sourceSha": "d39846825f504cdeddf4d56986307d70d41ac42174d1528e9a4402c4f0292f3a"
+  },
+  "altman-evaluators": {
+   "ok": true,
+   "via": "base",
+   "where": "lesswrong-2026-10-12-employee-like-not-employee-level c6d3830417d0-q3",
+   "mode": "exact",
+   "quoteSha": "00a77670eee0d92d5e678fbd001cf2317af9229c26d008c519683ca44b0308f1",
+   "sourceSha": "00a77670eee0d92d5e678fbd001cf2317af9229c26d008c519683ca44b0308f1"
+  },
+  "botvinick-duty": {
+   "ok": true,
+   "via": "base",
+   "where": "guardian-2026-10-12-ai-safety-democracy-botvinick 3cfc9df9ae6f-q4",
+   "mode": "exact",
+   "quoteSha": "c8388fd521c968665490f2ba76443bc534dbb31328793e5e68774d47ba432fef",
+   "sourceSha": "c8388fd521c968665490f2ba76443bc534dbb31328793e5e68774d47ba432fef"
+  },
+  "axios-first-example": {
+   "ok": true,
+   "via": "file",
+   "where": "radar/2026-10-13/sources/114ea300857a.txt",
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d039cb203cd47e599c05e9149f35aa446ca5c34be8035d0b3343461b2ea9812d",
+   "sourceSha": "1f5c626e2597871c2790fb5aebe861b94617ab83772e09cf40cc25723d690257"
+  },
+  "ncsc-premature": {
+   "ok": true,
+   "via": "file",
+   "where": "day-before/sources/g1-ncsc-comms.txt",
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "d16ed06a755115c2d8d2b47bf2e71cf686a0214aa2a12ecda8b9437870af1b16",
+   "sourceSha": "dd49a9a7a91e1496e5f30868835cd3cddc6b11a8aefdc10dcb584d0f18ee0140"
+  },
+  "trump-race": {
+   "ok": true,
+   "via": "file",
+   "where": "day-before/sources/g2-npr.txt",
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "7b56f7de645bcaeb26a78c8fe2f98fff32b9cec37e5387068b828079197e2754",
+   "sourceSha": "263b8a2a33d3afab938b07cb742314626c841d7316a482837c4dac76dd77c39e"
+  },
+  "irish-assembly": {
+   "ok": true,
+   "via": "file",
+   "where": "day-before/sources/g3-oecd-opsi-irish.txt",
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "3ddeb829477df0b12edf61d35ad98abc74a16230f2f8cec074d1e001c26d9efa",
+   "sourceSha": "5209d8c1a8b8ff8e67441697e654ebc5c3060ede85c60842e3d701397da08f57"
+  },
+  "vandamme-accountability": {
+   "ok": true,
+   "via": "file",
+   "where": "day-before/sources/g3-uclouvain-accountability.txt",
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "b23a7f06ffcd82923036957626944c6d6e168af529e1d23e85943f667afccb04",
+   "sourceSha": "0189793e97b137b8136538c3b7d32c6db15f00965cf6f27ba46f376396f8fef5"
+  },
+  "courant-watered-down": {
+   "ok": true,
+   "via": "file",
+   "where": "day-before/sources/g3-publicdeliberation-ccc.txt",
+   "mode": "exact",
+   "warnings": [],
+   "quoteSha": "aeff6b8122fbc91f289b836de01c6991dd3144a0ed20156066eeaf868eb11d5a",
+   "sourceSha": "614943c1171005692f2234b1f39588a30fc0ac2c98ff2dd0e24372920001ff5c"
+  }
+ }
+}
