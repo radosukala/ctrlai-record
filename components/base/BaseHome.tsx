@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import Link from 'next/link';
 import '@/components/base/base.css';
 import { BaseBrowser, type Row } from '@/components/base/BaseBrowser';
-import { ENTRIES, RUNS, nameOf, onRecord, totals, currentTitle, isPerson } from '@/content/base';
+import { ENTRIES, LATEST_DAY, RUNS, WEEK, WEEK_FROM, nameOf, onRecord, currentTitle, isPerson } from '@/content/base';
 import { KIND_LABEL, LENS_HEADING, TOPIC, TOPICS } from '@/content/base/taxonomy';
 import type { Entry, LensId, Quote } from '@/content/base/types';
 import { LATEST } from '@/content/issues';
@@ -43,12 +43,19 @@ function Head({ id, title, note }: { id: string; title: ReactNode; note?: ReactN
 /**
  * The Base as the front page. Built like a front page, not a landing page: the week in one line, the lead story with
  * the quotation that carries it, the other top stories, what was said (each quotation checked), the nine questions
- * the record is organized around, then the whole record, who is on it, and how it was made.
+ * the record is organized around, then the week's record, who is on it, and how the latest run was made.
+ *
+ * The Radar adds a run every day, so the page reads the last seven days of the Base (WEEK), never all of it. Older
+ * entries keep their permalinks at /base/<slug> and stay on the person pages.
  */
 export function BaseHome({ film }: { film?: ReactNode }) {
   const run = RUNS[RUNS.length - 1];
-  const t = totals();
-  const rows: Row[] = ENTRIES.map(e => ({
+  // The latest run on its own, so every number in its funnel counts the same thing.
+  const ran = run ? ENTRIES.filter(e => e.run === run.run) : [];
+  // A run can be re-read later, so "updated" is the newest read of any run, not the last run's date.
+  const updated = RUNS.reduce((d, r) => (r.ranAt > d ? r.ranAt : d), '').slice(0, 10);
+  const weekQuotes = WEEK.reduce((n, e) => n + e.quotes.length, 0);
+  const rows: Row[] = WEEK.map(e => ({
     slug: e.slug, kind: e.kind, title: e.title, outlet: e.outlet, published: e.published, summary: e.summary,
     lenses: e.lenses, topics: e.topics, people: e.people.filter(p => p.role !== 'mentioned').map(p => ({ id: p.id, name: nameOf(p.id) })),
     quotes: e.quotes.length, importance: e.importance, access: e.access,
@@ -56,7 +63,7 @@ export function BaseHome({ film }: { film?: ReactNode }) {
   }));
 
   // The lead: the newest top story that carries a checked quotation from a named speaker.
-  const top = ENTRIES.filter(e => e.importance === 3).sort(newest);
+  const top = WEEK.filter(e => e.importance === 3).sort(newest);
   const lead = top.find(e => e.quotes.some(usable)) ?? top[0];
   const leadQuote = lead?.quotes.find(usable);
   const rest = top.filter(e => e !== lead);
@@ -64,7 +71,7 @@ export function BaseHome({ film }: { film?: ReactNode }) {
   // Said this week: one checked quotation per person, from the most important entries first, newest first.
   const seen = new Set<string>(leadQuote ? [leadQuote.speaker] : []);
   const said: { q: Quote; e: Entry }[] = [];
-  for (const e of [...ENTRIES].sort((a, b) => b.importance - a.importance || newest(a, b))) {
+  for (const e of [...WEEK].sort((a, b) => b.importance - a.importance || newest(a, b))) {
     if (e.importance < 2) continue;
     const q = e.quotes.find(x => usable(x) && !seen.has(x.speaker) && isPerson(x.speaker));
     if (!q) continue;
@@ -76,14 +83,14 @@ export function BaseHome({ film }: { film?: ReactNode }) {
   // Each question shows its two most important entries, without repeating one another's where it can.
   const shown = new Set<string>();
   const questions = TOPICS.map((tp, i) => {
-    const list = ENTRIES.filter(e => e.topics.includes(tp.id)).sort((a, b) => b.importance - a.importance || newest(a, b));
+    const list = WEEK.filter(e => e.topics.includes(tp.id)).sort((a, b) => b.importance - a.importance || newest(a, b));
     const fresh = list.filter(e => !shown.has(e.slug));
     const latest = [...fresh, ...list.filter(e => shown.has(e.slug))].slice(0, 2);
     latest.forEach(e => shown.add(e.slug));
     return { ...tp, n: i + 1, count: list.length, latest };
   }).filter(q => q.count);
   const leadLenses = lead ? (['policy', 'research', 'ideas'] as LensId[]).filter(l => lead.lenses[l]) : [];
-  const people = onRecord().slice(0, 12);
+  const people = onRecord(WEEK).slice(0, 12);
 
   return (
     <>
@@ -91,9 +98,9 @@ export function BaseHome({ film }: { film?: ReactNode }) {
       <section className="f-mast" aria-labelledby="week-line">
         <p className="dateline">
           <b>The Base</b>
-          {run ? <span>{dateRange(run.from, run.to)}</span> : null}
-          {run ? <span>{fmt(run.sources)} sources read on {day(run.ranAt.slice(0, 10))}</span> : null}
-          <span>{fmt(t.entries)} entries · {fmt(t.quotes)} quotations checked</span>
+          {WEEK_FROM ? <span>{dateRange(WEEK_FROM, LATEST_DAY)}</span> : null}
+          {updated ? <span>updated {day(updated)}</span> : null}
+          <span>{fmt(WEEK.length)} entries · {fmt(weekQuotes)} quotations checked</span>
         </p>
         <h1 id="week-line" className="f-week">{LATEST.summary}</h1>
         <div className="f-mast-foot">
@@ -201,12 +208,13 @@ export function BaseHome({ film }: { film?: ReactNode }) {
       {run ? (
         <section className="f-sec" aria-labelledby="how">
           <Head id="how" title="How this was made" note="So you can judge how far to trust it." />
-          <ol className="f-funnel" aria-label="This run, step by step">
-            <li><b>{fmt(run.sources)}</b><span>sources in <a href={`${SITE.repoUrl}/blob/main/radar/sources.json`}>the public list</a>, read on {day(run.ranAt.slice(0, 10))}</span></li>
+          <p className="f-funnel-title">The latest run, {day(run.ranAt.slice(0, 10))}</p>
+          <ol className="f-funnel" aria-label="The latest run, step by step">
+            <li><b>{fmt(run.answered)}</b><span>of the {fmt(run.sources)} sources in <a href={`${SITE.repoUrl}/blob/main/radar/sources.json`}>the public list</a> answered</span></li>
             <li><b>{fmt(run.items)}</b><span>items they published, {dateRange(run.from, run.to)}</span></li>
             <li><b>{fmt(run.kept)}</b><span>kept by a wide keyword filter</span></li>
-            <li><b>{fmt(t.entries)}</b><span>picked for an entry by Claude, {fmt(t.read)} read in full</span></li>
-            <li><b>{fmt(t.quotes)}</b><span>quotations found word for word in the saved text</span></li>
+            <li><b>{fmt(ran.length)}</b><span>picked for an entry by Claude, {fmt(ran.filter(e => e.access !== 'excerpt').length)} read in full</span></li>
+            <li><b>{fmt(ran.reduce((n, e) => n + e.quotes.length, 0))}</b><span>quotations found word for word in the saved text</span></li>
           </ol>
           <div className="prose f-how">
             <p>Claude picked the items worth an entry by their title and description. The most important were read in full, with captions for videos; the rest are written from the publisher’s own description, and marked as such. Agents wrote the summaries and the four “why it matters” lines. Code then checked every quotation against the text we saved: the words must be there, in order, without a dropped “not”. That proves the words are in the source. It does not prove the person meant them as quoted, and automatic captions carry no speaker names, so a quotation whose speaker we could only tell from context says so.</p>
