@@ -1,6 +1,6 @@
 /**
- * Reading the feeds the Radar polls: RSS, Atom (YouTube, arXiv, GOV.UK, forums), and two JSON APIs (Hacker News, GOV.UK
- * search). No dependencies: feeds are small and regular, so a few patterns read them. What comes back is untrusted text;
+ * Reading the feeds the Radar polls: RSS, Atom (YouTube, arXiv, GOV.UK, forums), and three JSON APIs (Hacker News, GOV.UK
+ * search, YouTube's Data API). No dependencies: feeds are small and regular, so a few patterns read them. What comes back is untrusted text;
  * nothing here acts on it.
  */
 import { createHash } from 'node:crypto';
@@ -146,6 +146,47 @@ export function parseFeed(src: Source, xml: string): Item[] {
     out.push(it);
   }
   return out;
+}
+
+/** A channel's uploads playlist in YouTube's Data API: the channel id with UU in place of UC. */
+export function uploadsPlaylist(feedUrl: string): string | undefined {
+  try {
+    const id = new URL(feedUrl).searchParams.get('channel_id');
+    return id?.startsWith('UC') ? `UU${id.slice(2)}` : undefined;
+  } catch { return undefined; }
+}
+
+/** An ISO 8601 length (PT1H2M3S, P1DT2H) in seconds. */
+export function isoDuration(s?: string): number | undefined {
+  const m = s?.match(/^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?)?$/);
+  if (!m) return undefined;
+  const [d, h, min, sec] = m.slice(1).map(x => Number(x ?? 0));
+  return ((d * 24 + h) * 60 + min) * 60 + sec || undefined;
+}
+
+type YouTubeVideo = {
+  id: string;
+  snippet: { title: string; description?: string; publishedAt: string; channelTitle?: string; liveBroadcastContent?: string };
+  contentDetails?: { duration?: string };
+  statistics?: { viewCount?: string };
+  liveStreamingDetails?: { actualStartTime?: string };
+};
+
+/** YouTube's Data API `videos` answer, as the same items the channel's RSS feed gives, plus each video's length. Streams
+ * and premieres that are live or still to come have nothing to read yet, so they wait for a later run; a stream is dated
+ * by when it went out, not when it was scheduled, so that later run's window still holds it. */
+export function parseYouTubeVideos(src: Source, json: string): Item[] {
+  const data = JSON.parse(json) as { items?: YouTubeVideo[] };
+  return (data.items ?? []).filter(v => (v.snippet.liveBroadcastContent ?? 'none') === 'none').map(v => {
+    const published = v.liveStreamingDetails?.actualStartTime ?? v.snippet.publishedAt;
+    const it = base(src, v.snippet.title, `https://www.youtube.com/watch?v=${v.id}`, published, v.snippet.description ?? '');
+    it.videoId = v.id;
+    if (v.snippet.channelTitle) it.author = v.snippet.channelTitle;
+    const d = isoDuration(v.contentDetails?.duration);
+    if (d) it.durationSec = d;
+    if (v.statistics?.viewCount) it.views = Number(v.statistics.viewCount);
+    return it;
+  });
 }
 
 export function parseHn(src: Source, json: string): Item[] {

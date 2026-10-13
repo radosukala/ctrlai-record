@@ -22,7 +22,7 @@ Private working files (other people's text) live in `docs-internal/radar/<run>/`
 points. In a linked worktree the scripts look in the main checkout's `docs-internal/radar` first.
 
 ```bash
-npx tsx scripts/radar/ingest.ts --from 2026-10-05 --to 2026-10-12   # items.jsonl + health.json
+npx tsx scripts/radar/ingest.ts --from 2026-10-05 --to 2026-10-12   # items.jsonl + health.json (YouTube via the Data API if YOUTUBE_API_KEY is set, else RSS)
 # triage: pick which items get a full read and which a short entry → triage.json
 # read: agents follow docs-internal/radar/<run>/AGENT-BRIEF.md and write entries/<id>.json, saving the source text
 npx tsx scripts/radar/check-entry.ts docs-internal/radar/<run>/entries/*.json   # every quotation, against the saved text
