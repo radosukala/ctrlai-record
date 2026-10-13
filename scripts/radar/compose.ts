@@ -54,6 +54,11 @@ const OUTLET: Record<string, string> = {
   'CSET Georgetown': 'CSET', '80,000 Hours Podcast': '80,000 Hours', 'Ars Technica AI': 'Ars Technica', 'MIT Technology Review AI': 'MIT Technology Review',
   'The Ezra Klein Show (YT)': 'The Ezra Klein Show', 'BBC Technology': 'BBC News', 'Kurzgesagt – In a Nutshell': 'Kurzgesagt',
 };
+/** Organizations quoted as speakers whose name is not just their id in title case. */
+const DISPLAY: Record<string, string> = {
+  openai: 'OpenAI', imf: 'IMF', 'uk-government': 'UK government',
+  'lancet-commission-global-threats-to-health': 'Lancet Commission on 21st Century Global Threats to Health',
+};
 /** The text of `<source>.second.transcript.json` (or `.second.txt`) beside a saved source, if there is one. */
 function secondTranscript(textPath: string): string | undefined {
   const json = textPath.replace(/\.txt$/, '.second.transcript.json');
@@ -129,7 +134,7 @@ for (const run of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS
             (verification[id] as Record<string, unknown>).second = agreement;
           }
           const speaker = slugify(q.speaker);
-          if (!people.has(speaker) && !names[speaker]) names[speaker] = [d.outlet, rawOutlet].some(o => slugify(o) === speaker) ? d.outlet : speaker.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+          if (!people.has(speaker) && !names[speaker]) names[speaker] = DISPLAY[speaker] ?? ([d.outlet, rawOutlet].some(o => slugify(o) === speaker) ? d.outlet : speaker.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' '));
           quotes.push({
             id, text: q.text, speaker, speakerCertain: q.speakerCertain !== false,
             ...(q.context ? { context: q.context } : {}),
