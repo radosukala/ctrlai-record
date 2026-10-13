@@ -73,6 +73,30 @@
   ]
  },
  {
+  "id": "alex-turner",
+  "name": "Alex Turner",
+  "titles": [
+   {
+    "title": "independent AI alignment researcher",
+    "entry": "alignment-forum-2026-10-12-openai-cant-self-police",
+    "on": "2026-10-12",
+    "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "amber-scorah",
+  "name": "Amber Scorah",
+  "titles": [
+   {
+    "title": "founder of Back Channel",
+    "entry": "alignment-forum-2026-10-12-openai-cant-self-police",
+    "on": "2026-10-12",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "amelie-knecht",
   "name": "Amelie Knecht",
   "titles": [
@@ -133,6 +157,11 @@
   ]
  },
  {
+  "id": "anna-marbut",
+  "name": "Anna Marbut",
+  "titles": []
+ },
+ {
   "id": "anna-sztyber-betley",
   "name": "Anna Sztyber-Betley",
   "titles": [
@@ -141,6 +170,18 @@
     "entry": "arxiv-2026-10-07-subliminal-learning-transfers-backdoors",
     "on": "2026-10-07",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "anthony-albanese",
+  "name": "Anthony Albanese",
+  "titles": [
+   {
+    "title": "prime minister",
+    "entry": "guardian-2026-10-13-pocock-albanese-ai-letter",
+    "on": "2026-10-13",
+    "role": "subject"
    }
   ]
  },
@@ -169,6 +210,18 @@
     "title": "Professor of computer science, Princeton University; director, Center for Information Technology Policy",
     "entry": "ezra-klein-show-2026-10-09-case-normal-ai-future",
     "on": "2026-10-09",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "athanasios-vamvakidis",
+  "name": "Athanasios Vamvakidis",
+  "titles": [
+   {
+    "title": "deputy director of the IMF's monetary and capital department",
+    "entry": "guardian-2026-10-13-imf-ai-share-crash-risk",
+    "on": "2026-10-13",
     "role": "speaker"
    }
   ]
@@ -256,6 +309,11 @@
  {
   "id": "byron-c-wallace",
   "name": "Byron C. Wallace",
+  "titles": []
+ },
+ {
+  "id": "casens",
+  "name": "casens",
   "titles": []
  },
  {
@@ -388,6 +446,18 @@
   ]
  },
  {
+  "id": "dan-jarvis",
+  "name": "Dan Jarvis",
+  "titles": [
+   {
+    "title": "security minister",
+    "entry": "guardian-2026-10-12-uk-minister-ai-cyber-attack",
+    "on": "2026-10-12",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
   "id": "dan-kagan-kans",
   "name": "Dan Kagan-Kans",
   "titles": []
@@ -396,6 +466,12 @@
   "id": "dan-milmo",
   "name": "Dan Milmo",
   "titles": [
+   {
+    "title": "Global technology editor, The Guardian",
+    "entry": "guardian-2026-10-12-uk-minister-ai-cyber-attack",
+    "on": "2026-10-12",
+    "role": "author"
+   },
    {
     "title": "Global technology editor",
     "entry": "guardian-2026-10-10-uk-foreign-ai-turing-institute",
@@ -461,6 +537,18 @@
     "title": "Co-host, All-In Podcast",
     "entry": "all-in-2026-10-10-claude-conscious-pope",
     "on": "2026-10-10",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "david-pocock",
+  "name": "David Pocock",
+  "titles": [
+   {
+    "title": "independent senator and committee member",
+    "entry": "guardian-2026-10-13-pocock-albanese-ai-letter",
+    "on": "2026-10-13",
     "role": "speaker"
    }
   ]
@@ -699,6 +787,11 @@
   "titles": []
  },
  {
+  "id": "giselle-au-nhien-nguyen",
+  "name": "Giselle Au-Nhien Nguyen",
+  "titles": []
+ },
+ {
   "id": "greg-casar",
   "name": "Greg Casar",
   "titles": [
@@ -758,6 +851,30 @@
   "id": "hayden-field",
   "name": "Hayden Field",
   "titles": []
+ },
+ {
+  "id": "heather-stewart",
+  "name": "Heather Stewart",
+  "titles": [
+   {
+    "title": "reporter, The Guardian, in Bangkok",
+    "entry": "guardian-2026-10-13-imf-ai-share-crash-risk",
+    "on": "2026-10-13",
+    "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "henry-de-zoete",
+  "name": "Henry de Zoete",
+  "titles": [
+   {
+    "title": "head of the UK's AI Security Institute",
+    "entry": "guardian-2026-10-12-uk-minister-ai-cyber-attack",
+    "on": "2026-10-12",
+    "role": "mentioned"
+   }
+  ]
  },
  {
   "id": "hidenori-tanaka",
@@ -955,6 +1072,11 @@
   "titles": []
  },
  {
+  "id": "jerusalem-demsas",
+  "name": "Jerusalem Demsas",
+  "titles": []
+ },
+ {
   "id": "jessica-glenza",
   "name": "Jessica Glenza",
   "titles": []
@@ -979,6 +1101,23 @@
  {
   "id": "jingnan-zheng",
   "name": "Jingnan Zheng",
+  "titles": []
+ },
+ {
+  "id": "jo-briskey",
+  "name": "Jo Briskey",
+  "titles": [
+   {
+    "title": "Labor MP and inquiry chair",
+    "entry": "guardian-2026-10-13-pocock-albanese-ai-letter",
+    "on": "2026-10-13",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "jo-jiao",
+  "name": "Jo Jiao",
   "titles": []
  },
  {
@@ -1011,6 +1150,18 @@
   ]
  },
  {
+  "id": "jonno-duniam",
+  "name": "Jonno Duniam",
+  "titles": [
+   {
+    "title": "Liberal senator and deputy chair",
+    "entry": "guardian-2026-10-13-pocock-albanese-ai-letter",
+    "on": "2026-10-13",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "jordan-schneider",
   "name": "Jordan Schneider",
   "titles": []
@@ -1019,6 +1170,18 @@
   "id": "joseph-egan",
   "name": "Joseph Egan",
   "titles": []
+ },
+ {
+  "id": "josh-butler",
+  "name": "Josh Butler",
+  "titles": [
+   {
+    "title": "Guardian Australia",
+    "entry": "guardian-2026-10-13-pocock-albanese-ai-letter",
+    "on": "2026-10-13",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "josh-hawley",
@@ -1048,6 +1211,11 @@
   "titles": []
  },
  {
+  "id": "kabir-kumar",
+  "name": "Kabir Kumar",
+  "titles": []
+ },
+ {
   "id": "kanishka-narayan",
   "name": "Kanishka Narayan",
   "titles": [
@@ -1056,6 +1224,24 @@
     "entry": "gov-uk-2026-10-12-britain-steps-up-ai-defences",
     "on": "2026-10-12",
     "role": "speaker"
+   },
+   {
+    "title": "UK AI minister",
+    "entry": "guardian-2026-10-12-uk-minister-ai-cyber-attack",
+    "on": "2026-10-12",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "karl-koch",
+  "name": "Karl Koch",
+  "titles": [
+   {
+    "title": "founder of The AI Whistleblower Initiative",
+    "entry": "alignment-forum-2026-10-12-openai-cant-self-police",
+    "on": "2026-10-12",
+    "role": "author"
    }
   ]
  },
@@ -1067,6 +1253,11 @@
  {
   "id": "kate-conger",
   "name": "Kate Conger",
+  "titles": []
+ },
+ {
+  "id": "keltan",
+  "name": "keltan",
   "titles": []
  },
  {
@@ -1085,6 +1276,18 @@
   "id": "kirsten-horton",
   "name": "Kirsten Horton",
   "titles": []
+ },
+ {
+  "id": "krishani-dhanji",
+  "name": "Krishani Dhanji",
+  "titles": [
+   {
+    "title": "Guardian Australia",
+    "entry": "guardian-2026-10-13-pocock-albanese-ai-letter",
+    "on": "2026-10-13",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "kyle-miller",
@@ -1117,6 +1320,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "linch",
+  "name": "Linch",
+  "titles": []
  },
  {
   "id": "liron-shapira",
@@ -1213,6 +1421,11 @@
  {
   "id": "matt-burgess",
   "name": "Matt Burgess",
+  "titles": []
+ },
+ {
+  "id": "matt-yglesias",
+  "name": "Matt Yglesias",
   "titles": []
  },
  {
@@ -1326,6 +1539,11 @@
   "titles": []
  },
  {
+  "id": "niplav",
+  "name": "niplav",
+  "titles": []
+ },
+ {
   "id": "noam-shazeer",
   "name": "Noam Shazeer",
   "titles": []
@@ -1406,6 +1624,18 @@
     "title": "Meta Superintelligence Labs",
     "entry": "arxiv-2026-10-09-reward-hacking-spreads-between-agents",
     "on": "2026-10-09",
+    "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "richard-hermer",
+  "name": "Richard Hermer",
+  "titles": [
+   {
+    "title": "Labour life peer, former attorney general for England and Wales",
+    "entry": "guardian-2026-10-12-hermer-ai-regulation-fridge",
+    "on": "2026-10-12",
     "role": "author"
    }
   ]
@@ -1574,6 +1804,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "simon-mendelsohn",
+  "name": "Simon Mendelsohn",
+  "titles": []
  },
  {
   "id": "steven-bartlett",
