@@ -37,7 +37,7 @@ export type ChangeKind = 'evidence' | 'commitment' | 'decision' | 'correction' |
 export type EntryKind = 'news' | 'video' | 'podcast' | 'essay' | 'research' | 'official' | 'hearing';
 
 export type Quote = {
-  /** Stable within the entry: `<entry id>-q<n>`. */
+  /** `<entry id>-<first 8 hex of the sha256 of its words>`: tied to the words, never to their place in the list. */
   id: string;
   text: string;
   /** A Person id, or an organization id when the words are an outlet's or an organization's own. */

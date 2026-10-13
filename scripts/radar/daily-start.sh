@@ -17,6 +17,15 @@ git merge -q --ff-only origin/main || { echo "STOP: main can't be fast-forwarded
 FREE_GB=$(df -g /System/Volumes/Data | awk 'NR==2 {print $4}')
 if [ "${FREE_GB:-0}" -lt 2 ]; then echo "STOP: only ${FREE_GB} GB free on the disk"; exit 1; fi
 
+# The run folders live in the private archive repository. Bring it up to date first, committing anything an earlier run
+# left behind, so this run builds on the latest record and nothing stays only on this Mac.
+ARCHIVE_DIR="$(npx tsx -e "import { ARCHIVE_DIR } from './scripts/radar/paths'; console.log(ARCHIVE_DIR)" 2>/dev/null)" || { echo "STOP: the private archive is not where the Radar expects it (../ctrlai-archive)"; exit 1; }
+(
+  cd "$ARCHIVE_DIR"
+  if [ -n "$(git status --porcelain)" ]; then git add -A && git -c user.name=radosukala -c user.email=sukala@me.com commit -q -m "Radar: files an earlier run left uncommitted"; fi
+  git pull -q --rebase
+) || { echo "STOP: the private archive could not be updated (git pull failed in $ARCHIVE_DIR)"; exit 1; }
+git -C "$ARCHIVE_DIR" push -q || echo "WARNING: the private archive could not be pushed now; daily-finish.sh pushes it again"
 RADAR_DOCS="$(npx tsx -e "import { RADAR_DOCS } from './scripts/radar/paths'; console.log(RADAR_DOCS)")"
 DIR="$RADAR_DOCS/$RUN"
 mkdir -p "$DIR/entries" "$DIR/sources"

@@ -33,7 +33,7 @@ const ACCESS: Record<string, string> = {
 /** Where the quoted words come from, by the kind of text we checked them against. */
 const WORDS_FROM: Record<Entry['transcript'], string> = {
   auto: 'From YouTube’s automatic captions, which carry no speaker names and can mishear words. Where the speaker is known only from context, the quotation says so.',
-  official: 'From the captions uploaded with the video.',
+  official: 'From the publisher’s own transcript.',
   stt: 'From our own transcript of the episode’s audio, made by machine. Speaker names come from what is said, not from a voice match.',
   none: 'From the source’s own text.',
 };

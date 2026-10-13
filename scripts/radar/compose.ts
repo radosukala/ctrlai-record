@@ -8,10 +8,14 @@
  *   content/base/runs.json          what each run read and kept, so the site can say "in the sources we monitor"
  *   content/base/verification.json  per quotation: how it matched, and hashes, so tests can tell if anything was edited after
  *
- *   npx tsx scripts/radar/compose.ts
+ *   npx tsx scripts/radar/compose.ts [--allow-removals "why"]
+ *
+ * Nothing is written unless the whole build passes, and then all files are replaced together. An entry or a quotation
+ * that is on the site and missing from the new build stops it: a removal has to be deliberate, with a reason, and is
+ * logged in content/base/removals.json.
  */
 import { createHash } from 'node:crypto';
-import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { joinTranscript, verifyQuote } from '../../lib/verify-quote';
 import type { Entry, Person, Quote } from '../../content/base/types';
@@ -21,6 +25,14 @@ import { secondOpinion } from './second';
 
 const sha = (s: string) => createHash('sha256').update(s).digest('hex');
 const norm = (s: string) => s.normalize('NFKC').replace(/\s+/g, ' ').trim();
+/** A quotation's id comes from its words, not from its place in the list, so a confirmed label can never move to other words. */
+const quoteId = (entry: string, text: string, taken: Set<string>) => {
+  const base = `${entry}-${sha(norm(text)).slice(0, 8)}`;
+  let id = base;
+  for (let n = 2; taken.has(id); n++) id = `${base}-${n}`;
+  taken.add(id);
+  return id;
+};
 const KINDS = new Set(['news', 'video', 'podcast', 'essay', 'research', 'official', 'hearing']);
 const LENSES = new Set(['public', 'policy', 'research', 'ideas']);
 const ROLES = new Set(['speaker', 'author', 'subject', 'mentioned']);
@@ -118,8 +130,9 @@ for (const run of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS
         // A second, independent transcript of the same audio, when one was made: a quotation must be in both.
         const second = secondTranscript(textPath);
         const textSha = sha(norm(text));
-        d.quotes.forEach((q, i) => {
-          const id = `${d.id}-q${i + 1}`;
+        const taken = new Set<string>();
+        d.quotes.forEach(q => {
+          const id = quoteId(d.id, q.text, taken);
           const v = verifyQuote(q.text, text, offsets, { sourceBrackets: !offsets });
           verification[id] = v.ok ? { ok: true, mode: v.mode, quoteSha: sha(q.text), textSha } : { ok: false, reason: v.reason, quoteSha: sha(q.text) };
           if (!v.ok) { dropped++; console.log(`  dropped ${id}: ${v.reason}`); return; }
@@ -189,13 +202,39 @@ for (const e of entries) {
 entries.sort((a, b) => b.published.localeCompare(a.published) || b.importance - a.importance || a.slug.localeCompare(b.slug));
 for (const p of people.values()) p.titles.sort((a, b) => b.on.localeCompare(a.on));
 
-writeFileSync('content/base/entries.json', JSON.stringify(entries, null, 1) + '\n');
-writeFileSync('content/base/people.json', JSON.stringify([...people.values()].sort((a, b) => a.id.localeCompare(b.id)), null, 1) + '\n');
-writeFileSync('content/base/names.json', JSON.stringify(names, null, 1) + '\n');
-writeFileSync('content/base/runs.json', JSON.stringify(runs, null, 1) + '\n');
-writeFileSync('content/base/verification.json', JSON.stringify(verification, null, 1) + '\n');
+// Nothing on the site disappears by accident: compare with what is published now, by entry id and by each quotation's words.
+const OUT = 'content/base';
+const published = existsSync(`${OUT}/entries.json`) ? JSON.parse(readFileSync(`${OUT}/entries.json`, 'utf8')) as Entry[] : [];
+const words = (e: Entry, q: Quote) => `${e.id}:${sha(norm(q.text))}`;
+const nowEntries = new Set(entries.map(e => e.id));
+const nowQuotes = new Set(entries.flatMap(e => e.quotes.map(q => words(e, q))));
+const goneEntries = published.filter(e => !nowEntries.has(e.id)).map(e => e.slug);
+const goneQuotes = published.filter(e => nowEntries.has(e.id)).flatMap(e => e.quotes.filter(q => !nowQuotes.has(words(e, q))).map(q => ({ entry: e.slug, text: q.text })));
+const allow = process.argv.indexOf('--allow-removals');
+const reason = allow > 0 ? process.argv[allow + 1]?.trim() : undefined;
+if (allow > 0 && !reason) problems.push('--allow-removals needs a reason: --allow-removals "why these go"');
+if ((goneEntries.length || goneQuotes.length) && !reason) {
+  for (const slug of goneEntries) problems.push(`entry ${slug} is on the site but missing from this build (its run folder or entry file is gone?)`);
+  for (const q of goneQuotes) problems.push(`a quotation in ${q.entry} is on the site but missing from this build: “${q.text.slice(0, 70)}…”`);
+}
 
 const q = entries.reduce((n, e) => n + e.quotes.length, 0);
 console.log(`\n${entries.length} entries, ${people.size} people, ${q} quotations verified, ${dropped} dropped. ${problems.length} problems.`);
 for (const p of problems) console.log('  PROBLEM ' + p);
-process.exit(problems.length ? 1 : 0);
+if (problems.length) { console.log('Nothing written: content/base is unchanged.'); process.exit(1); }
+
+const files: Record<string, unknown> = {
+  'entries.json': entries,
+  'people.json': [...people.values()].sort((a, b) => a.id.localeCompare(b.id)),
+  'names.json': names,
+  'runs.json': runs,
+  'verification.json': verification,
+};
+if (goneEntries.length || goneQuotes.length) {
+  const log = existsSync(`${OUT}/removals.json`) ? JSON.parse(readFileSync(`${OUT}/removals.json`, 'utf8')) as unknown[] : [];
+  files['removals.json'] = [...log, { on: new Date().toISOString().slice(0, 10), reason, entries: goneEntries, quotations: goneQuotes }];
+  console.log(`Removed on purpose (${reason}): ${goneEntries.length} entries, ${goneQuotes.length} quotations; logged in ${OUT}/removals.json.`);
+}
+// Write every file beside its target first, then swap them in, so a failure never leaves half a Base.
+for (const [name, data] of Object.entries(files)) writeFileSync(`${OUT}/${name}.tmp`, JSON.stringify(data, null, 1) + '\n');
+for (const name of Object.keys(files)) renameSync(`${OUT}/${name}.tmp`, `${OUT}/${name}`);

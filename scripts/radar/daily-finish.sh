@@ -8,7 +8,7 @@ RUN="$1"
 cd "$(git rev-parse --show-toplevel)"
 RADAR_DOCS="$(npx tsx -e "import { RADAR_DOCS } from './scripts/radar/paths'; console.log(RADAR_DOCS)")"
 DIR="$RADAR_DOCS/$RUN"
-ARCHIVE_DIR="${ARCHIVE_DIR:-/Users/rado/code/ctrlai-archive}"
+ARCHIVE_DIR="$(npx tsx -e "import { ARCHIVE_DIR } from './scripts/radar/paths'; console.log(ARCHIVE_DIR)")"
 shopt -s nullglob
 ENTRIES=("$DIR"/entries/*.json)
 if [ ${#ENTRIES[@]} -eq 0 ]; then echo "No entries in $DIR/entries: nothing to publish."; exit 0; fi
@@ -16,7 +16,8 @@ if [ ${#ENTRIES[@]} -eq 0 ]; then echo "No entries in $DIR/entries: nothing to p
 echo "== Quotations"
 npx tsx scripts/radar/check-entry.ts "${ENTRIES[@]}" | tail -3 || { echo "STOP: a quotation failed its check; fix or remove it, then run this again"; exit 1; }
 echo "== Compose"
-npx tsx scripts/radar/compose.ts | tail -4
+npx tsx scripts/radar/compose.ts > "$DIR/compose.log" 2>&1 || { grep -E "PROBLEM|dropped|Nothing written" "$DIR/compose.log" | head -20; echo "STOP: the Base could not be built; nothing was written or pushed (see $DIR/compose.log)"; exit 1; }
+tail -2 "$DIR/compose.log"
 echo "== Types and tests"
 npx tsc --noEmit || { echo "STOP: type errors; nothing pushed"; git checkout -- content/base; exit 1; }
 if ! npm test > "$DIR/test.log" 2>&1; then grep -E "✖|AssertionError" "$DIR/test.log" | head -20; echo "STOP: tests fail (see $DIR/test.log); nothing pushed"; git checkout -- content/base; exit 1; fi
@@ -25,6 +26,9 @@ grep -E "^ℹ (tests|pass|fail)" "$DIR/test.log"
 echo "== Archive"
 ARCHIVE_DIR="$ARCHIVE_DIR" npx tsx scripts/radar/archive.ts --run "$RUN" | tail -1
 ( cd "$ARCHIVE_DIR" && git add -A && { git diff --cached --quiet || git -c user.name=radosukala -c user.email=sukala@me.com commit -q -m "Radar run $RUN"; } && git pull -q --rebase && git push -q ) || echo "WARNING: the archive could not be pushed; it is safe locally in $ARCHIVE_DIR"
+
+echo "== Database"
+npx tsx scripts/radar/build-db.ts 2>/dev/null | tail -1 || echo "WARNING: the database could not be rebuilt; the record itself is safe"
 
 echo "== Publish"
 git add content/base

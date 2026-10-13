@@ -8,7 +8,7 @@ lawmakers, researchers and philosophers, so each entry also says why it matters 
 person is the worst thing that can happen here; an honest "we could not read the source" is fine.
 
 - Repo (run every command from here): `/Users/rado/code/ctrlai-com-radar`
-- Run folder (RUN): `{{RUN}}` (private, git-excluded)
+- Run folder (RUN): `{{RUN}}` (in the private archive repository; never published)
 - Your items: `RUN/triage.json` → `deep.<your group>` (or `light.<your group>`). Each group has a `main` item and maybe
   `also` items (other coverage of the same story).
 - Write one file per group: `RUN/entries/<main.id>.json`. Save source text to `RUN/sources/<main.id>.txt`.

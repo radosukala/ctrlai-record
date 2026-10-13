@@ -18,7 +18,8 @@ for (const r of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS, 
   const entries = join(RADAR_DOCS, r, 'entries');
   if (existsSync(entries)) for (const f of readdirSync(entries)) done.add(f.split('.')[0]);
   const skipped = join(RADAR_DOCS, r, 'skipped.txt');
-  if (existsSync(skipped)) for (const id of readFileSync(skipped, 'utf8').split(/\s+/)) if (id) done.add(id);
+  // One skip per line: the id, then (from Oct 14 2026) a few words on why.
+  if (existsSync(skipped)) for (const line of readFileSync(skipped, 'utf8').split('\n')) { const id = line.trim().split(/\s+/)[0]; if (id) done.add(id); }
 }
 
 const items = readFileSync(join(dir, 'items.jsonl'), 'utf8').split('\n').filter(Boolean).map(l => JSON.parse(l));

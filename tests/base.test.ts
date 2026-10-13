@@ -13,6 +13,13 @@ import { TOPIC } from '../content/base/taxonomy';
 const verification = JSON.parse(readFileSync('content/base/verification.json', 'utf8')) as Record<string, { ok: boolean; quoteSha: string }>;
 const sha = (s: string) => createHash('sha256').update(s).digest('hex');
 
+test('a quotation’s id comes from its words, so a confirmed label can never move to other words', () => {
+  for (const e of ENTRIES) for (const q of e.quotes) {
+    const want = `${e.id}-${sha(q.text.normalize('NFKC').replace(/\s+/g, ' ').trim()).slice(0, 8)}`;
+    assert.ok(q.id === want || q.id.startsWith(`${want}-`), `${q.id} is not derived from its words`);
+  }
+});
+
 test('every quotation shown was checked against its source, and has not changed since', () => {
   for (const e of ENTRIES) for (const q of e.quotes) {
     const v = verification[q.id];

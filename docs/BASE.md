@@ -18,15 +18,17 @@ radar/sources.json ─► ingest ─► triage ─► read (agents) ─► check
 
 ## A run
 
-Private working files (other people's text) live in `docs-internal/radar/<run>/` (git-excluded), or wherever `RADAR_DOCS`
-points. In a linked worktree the scripts look in the main checkout's `docs-internal/radar` first.
+Each run's folder, with everything it saw, its triage, the agents' entries and the texts their quotations were checked
+against, lives in the private archive repository under `runs/<run>/` (clone it next to this one as `../ctrlai-archive`,
+or set `ARCHIVE_DIR`). `daily-start.sh` pulls it first and `daily-finish.sh` pushes it, so nothing the Base depends on
+lives only on one computer. `compose.ts` builds `content/base` from those folders.
 
 ```bash
 npx tsx scripts/radar/ingest.ts --from 2026-10-05 --to 2026-10-12   # items.jsonl + health.json (YouTube via the Data API if YOUTUBE_API_KEY is set, else RSS)
 # triage: pick which items get a full read and which a short entry → triage.json
-# read: agents follow docs-internal/radar/<run>/AGENT-BRIEF.md and write entries/<id>.json, saving the source text
-npx tsx scripts/radar/check-entry.ts docs-internal/radar/<run>/entries/*.json   # every quotation, against the saved text
-npx tsx scripts/radar/compose.ts                                                 # writes content/base/*.json
+# read: agents follow ../ctrlai-archive/runs/<run>/AGENT-BRIEF.md and write entries/<id>.json, saving the source text
+npx tsx scripts/radar/check-entry.ts ../ctrlai-archive/runs/<run>/entries/*.json   # every quotation, against the saved text
+npx tsx scripts/radar/compose.ts                                                   # writes content/base/*.json, or nothing
 npm test
 ```
 
@@ -55,6 +57,32 @@ For each video or podcast, the first of these that works:
    blocked for the rest of the day.
 4. **By hand**: a transcript saved with Tactiq goes into the run's `sources/` as `manual-tactiq`.
 5. Otherwise the entry stays description-only, and the item goes on the gap list.
+
+## Keeping the record safe
+
+- **Nothing published disappears by accident.** `compose.ts` writes nothing unless the whole build passes, then swaps
+  all files in together. If an entry or a quotation that is on the site would be missing from the new build (a lost run
+  folder, a quotation that no longer passes), it stops and lists them. A deliberate removal takes a reason,
+  `--allow-removals "why"`, and is logged in `content/base/removals.json`.
+- **A quotation's id comes from its words** (`<entry id>-<8 hex of the sha256 of the text>`), so a confirmed label can
+  never move to other words when an entry's quotations are reordered.
+- **Recovery is tested, not assumed:** `bash scripts/radar/recovery-check.sh` clones both repositories fresh, rebuilds
+  `content/base` from the archive alone, and compares it with what is published. Run it after any change to the scripts.
+
+## Asking the record: the database
+
+`npx tsx scripts/radar/build-db.ts` (run by `daily-finish.sh`) builds `../ctrlai-archive/index/base.sqlite` from the
+files: entries, quotations with their speakers, people and their titles, every item each run saw with what became of it
+(`entry`, `skipped` with the reason, `untriaged`, `filtered`), and every saved text, with full-text search over the texts
+and the quotations. It is derived, not in git, and rebuilt in seconds anywhere both repositories are cloned.
+
+```bash
+DB=../ctrlai-archive/index/base.sqlite
+sqlite3 $DB "select said_on, name, text from claims where speaker = 'gary-marcus' order by said_on"
+sqlite3 $DB "select d.outlet, d.title, snippet(texts_fts, 0, '[', ']', '…', 10) from texts_fts
+  join texts t on t.rowid = texts_fts.rowid join documents d on d.id = t.doc_id where texts_fts match '\"kill switch\"'"
+sqlite3 $DB "select source, count(*) from items where decision = 'untriaged' group by source order by 2 desc"
+```
 
 ## The archive
 
