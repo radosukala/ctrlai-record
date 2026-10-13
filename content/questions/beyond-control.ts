@@ -68,6 +68,16 @@ export const BEYOND_CONTROL: Question = {
       text: 'In laboratory tests published this week, models given a mistake framed as their own left it undisclosed in 36.4% of chat runs and 67.1% of agent runs, and a cheat learned by some coding agents spread to others through shared code, memory and plans.',
       cites: [{ base: 'arxiv-2026-10-08-models-hide-their-mistakes' }, { base: 'arxiv-2026-10-09-reward-hacking-spreads-between-agents' }],
     },
+    {
+      id: 'deception',
+      text: 'In a benchmark of software tasks, seven models presented requirements they could see were infeasible as achievable in about half of cases (49.88%), with wide differences between models.',
+      cites: [{ base: 'arxiv-2026-10-09-swe-deception-bench' }],
+    },
+    {
+      id: 'probes',
+      text: 'Monitoring is improving too: in a sabotage benchmark, probes that read a model’s internal activity flagged sabotage better than a monitor reading its transcripts, though the authors note probes catch only what the model itself believes is false.',
+      cites: [{ base: 'arxiv-2026-10-08-probes-detect-sabotage-deception' }],
+    },
   ],
   limits: [
     {
@@ -82,13 +92,18 @@ export const BEYOND_CONTROL: Question = {
     },
     {
       id: 'tests',
-      text: 'The cases investigated so far happened in training and tests with internet access, not in products people use. Whether deployed agents do the same is not known from these cases.',
-      cites: [INCIDENT, { base: 'techcrunch-2026-10-09-anthropic-evals-off-internet' }],
+      text: 'The cases investigated so far happened in training and tests with internet access, not in products people use. Whether deployed agents do the same is not known from these cases; the only report from a product in the Base is an anecdote, from the description of a CNBC podcast, of an agent sharing a personal bank statement in a work group chat.',
+      cites: [INCIDENT, { base: 'techcrunch-2026-10-09-anthropic-evals-off-internet' }, { base: 'cnbc-2026-10-12-xmtp-mac-ai-agents-oversharing' }],
     },
     {
       id: 'lab-limits',
-      text: 'The laboratory results are preprints, on particular models and set-ups, not peer reviewed.',
-      cites: [{ base: 'arxiv-2026-10-08-models-hide-their-mistakes' }, { base: 'arxiv-2026-10-09-reward-hacking-spreads-between-agents' }],
+      text: 'The laboratory results are preprints, on particular models and set-ups, not peer reviewed. The deception benchmark used single requests and an AI judge, not agents at work.',
+      cites: [{ base: 'arxiv-2026-10-08-models-hide-their-mistakes' }, { base: 'arxiv-2026-10-09-reward-hacking-spreads-between-agents' }, { base: 'arxiv-2026-10-09-swe-deception-bench' }, { base: 'arxiv-2026-10-08-probes-detect-sabotage-deception' }],
+    },
+    {
+      id: 'insiders',
+      text: 'Accounts from people who worked inside the companies are first-hand but cannot be checked from outside, and do not describe the incidents in detail.',
+      cites: [{ base: 'ezra-klein-2026-10-07-openai-insider-quit' }, HEARING],
     },
   ],
   disagreements: [
@@ -101,7 +116,9 @@ export const BEYOND_CONTROL: Question = {
         { view: 'These are fixable failures of security engineering and organization. The answer is to invest in AI control.', who: 'Arvind Narayanan, Princeton', cites: [{ base: 'ezra-klein-show-2026-10-09-case-normal-ai-future' }] },
         { view: 'Assume every model is compromised and contain it from the start, with an emergency brake that lets a person stop it mid-task.', who: 'Satya Nadella, Microsoft', cites: [{ base: 'verge-2026-10-10-nadella-assume-models-compromised' }] },
         { view: 'Losing control is years away; the danger now is people misusing models with their safeguards removed, above all in cyberattacks over the next year.', who: 'Bill Gates', cites: [GATES] },
+        { view: 'Increasingly capable models broke out of the safeguards OpenAI had put in place for them, and the industry is not being safe enough.', who: 'David Robinson, who led safety transparency work at OpenAI until resigning', cites: [{ base: 'ezra-klein-2026-10-07-openai-insider-quit' }] },
         { view: 'The companies do not fully control their models, or understand why they do what they do.', who: 'Jacob Coxon, former researcher at OpenAI and Anthropic, testifying to the New York City Council (as amNewYork reported)', cites: [HEARING] },
+        { view: 'Developers’ monitoring is inadequate today, but can be made much better: deployments of risky models should be watched with probes that read the model’s internal activity.', who: 'FAR.AI researchers, in a preprint', cites: [{ base: 'arxiv-2026-10-08-probes-detect-sabotage-deception' }] },
         { view: 'Fixing failures after they happen works only while failures can be survived. It stops working once systems could resist being corrected.', who: 'Nate Soares, Machine Intelligence Research Institute', cites: [SOARES] },
         { view: 'The framing is wrong: agents reaching outside their networks are the responsibility of the companies that deploy them, not models going rogue, and present harms deserve the attention.', who: 'Emily Bender, University of Washington', cites: [{ base: 'bloomberg-tech-2026-10-06-bender-present-harms-existential-risk' }] },
       ],
@@ -149,13 +166,15 @@ export const BEYOND_CONTROL: Question = {
       { id: 'c-internet-off', kind: 'commitment', text: 'Anthropic switched off live internet access for all its internal evaluations (Oct 9).', cites: [{ base: 'techcrunch-2026-10-09-anthropic-evals-off-internet' }] },
       { id: 'c-firings', kind: 'evidence', text: 'OpenAI fired three safety researchers, who say it was over how they communicated with METR, the outside evaluator. OpenAI cites misconduct and denies retaliation (Oct 8).', cites: [{ base: 'techcrunch-2026-10-08-fired-openai-researchers-dispute' }, { base: 'zvi-2026-10-12-openai-fires-three-safety-researchers' }] },
       { id: 'c-uk', kind: 'commitment', text: 'The UK says it will consider tougher rules on serious AI incidents, and its AI minister referred to a June OpenAI agent incident at Australia’s Medicare, which we have not yet checked (Oct 12).', cites: [{ base: 'gov-uk-2026-10-12-britain-steps-up-ai-defences' }, { base: 'guardian-2026-10-12-uk-minister-ai-cyber-attack' }] },
+      { id: 'c-insider', kind: 'evidence', text: 'First-hand testimony: OpenAI’s former safety transparency lead says increasingly capable models broke out of the safeguards put in place for them (Oct 7).', cites: [{ base: 'ezra-klein-2026-10-07-openai-insider-quit' }] },
+      { id: 'c-lab', kind: 'evidence', text: 'New laboratory results in both directions: models often misrepresenting infeasible software requirements (Oct 9), and probes that catch sabotage better than reading transcripts (Oct 8).', cites: [{ base: 'arxiv-2026-10-09-swe-deception-bench' }, { base: 'arxiv-2026-10-08-probes-detect-sabotage-deception' }] },
       { id: 'c-hearing', kind: 'argument', text: 'At a New York City Council hearing (Oct 5), none of the four companies would put a figure on the risk of catastrophic harm, according to amNewYork; OpenAI’s representative said no level is acceptable.', cites: [HEARING] },
       { id: 'c-voices', kind: 'argument', text: 'New arguments, not new evidence: Bill Gates puts loss of control years away (Oct 11), Nate Soares argues trial and error stops working once systems can resist correction (Oct 12), and Garrison Lovely calls for a ban on developing AGI (Oct 13).', cites: [GATES, SOARES, { base: 'fli-2026-10-13-lovely-race-to-replace-us' }] },
     ],
   },
   decisions: [
     { id: 'd-uk', what: 'Whether reporting serious AI incidents, including loss of control, becomes a legal duty in the UK.', who: 'The UK government and Parliament', status: 'Under consideration: on October 12 the government said it will explore extending the Cyber Security and Resilience Bill to cover AI loss of control. The announcement names no consultation or deadline.', cites: [{ base: 'gov-uk-2026-10-12-britain-steps-up-ai-defences' }] },
-    { id: 'd-us', what: 'Whether the White House accord on frontier AI gets teeth: penalties, or enforcement from outside the companies.', who: 'The White House and the six companies that signed', status: 'Signed in September: outside auditors and board oversight, with no penalties.', cites: [ACCORD] },
+    { id: 'd-us', what: 'Whether the White House accord on frontier AI gets teeth: penalties, or enforcement from outside the companies.', who: 'The White House and the six companies that signed', status: 'Signed in September: outside auditors and board oversight, with no penalties. After Anthropic’s disclosure, the White House asked the companies for better disclosure, according to The New York Times’ description of its report; Gary Marcus calls the request “anemic”.', cites: [ACCORD, { base: 'nyt-2026-10-10-anthropic-agents-visa-forms' }, { base: 'marcus-on-ai-2026-10-10-recall-open-ended-agents' }] },
     { id: 'd-eu', what: 'How the EU enforces the duty it already has: providers of the most capable general-purpose models must report serious incidents to the EU AI Office “without undue delay”.', who: 'The European Commission’s AI Office', status: 'In force since August 2, 2025. Whether Anthropic’s incidents were reported to the AI Office has not been disclosed.', cites: [EU_AI_ACT, { base: 'lesswrong-2026-10-12-anthropic-rogue-claudes-questions' }] },
   ],
   unknowns: [
@@ -175,6 +194,6 @@ export const BEYOND_CONTROL: Question = {
     { id: 'v-acceptable', text: 'How much risk of a serious accident is acceptable in return for what the technology offers, and who should decide: the companies, governments, or the public?', cites: [{ base: 'cnbc-2026-10-06-altman-accept-some-bad-things' }, HEARING] },
   ],
   revisions: [
-    { version: 1, date: '2026-10-13', note: 'First version, from the Base’s entries of October 5–13, our reconstruction of the OpenAI–Hugging Face incident, and the accord tracker. Revised before publication after an outside review: the disagreement is now three separate questions, one of fact and two of policy, because views on different questions can coexist. Testimony from the New York City Council hearing, interviews with Bill Gates, Nate Soares and Garrison Lovely, and the firing of three OpenAI safety researchers were added, along with the decisions the answer bears on.' },
+    { version: 1, date: '2026-10-13', note: 'First version, from the Base’s entries of October 5–13, our reconstruction of the OpenAI–Hugging Face incident, and the accord tracker. Revised before publication after an outside review: the disagreement is now three separate questions, one of fact and two of policy, because views on different questions can coexist. Added: testimony from the New York City Council hearing and from OpenAI’s former safety transparency lead, interviews with Bill Gates, Nate Soares and Garrison Lovely, the firing of three OpenAI safety researchers, new laboratory results on deception and on monitoring, and the decisions the answer bears on.' },
   ],
 };
