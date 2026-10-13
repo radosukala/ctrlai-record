@@ -1,0 +1,6 @@
+/* Who someone is: roles and parties from the registry, each with where it came from. */
+.b-roles { display: grid; max-width: 44em; }
+.b-roles li { display: grid; grid-template-columns: minmax(0, 1fr) max-content; gap: 4px 16px; padding: 9px 0; border-top: 1px solid var(--line); font-size: 16px; }
+.b-roles li:first-child { border-top: 0; }
+.b-roles .muted { font-size: 13px; text-align: right; }
+@media (max-width: 640px) { .b-roles li { grid-template-columns: minmax(0, 1fr); } .b-roles .muted { text-align: left; } }

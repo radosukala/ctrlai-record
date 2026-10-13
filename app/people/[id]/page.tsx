@@ -2,11 +2,16 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import '@/components/base/base.css';
+import '@/components/registry/registry.css';
 import { Section } from '@/components/Section';
 import { PEOPLE, entriesFor, getPerson, positionsOf, quotesBy } from '@/content/base';
 import { KIND_LABEL, PROPOSITION, STANCE_LABEL } from '@/content/base/taxonomy';
 import type { PropositionId } from '@/content/base/types';
+import { GROUP_LABEL, groupAt, orgOf, partyName, partyOf, recordOf } from '@/content/registry';
 import { longDate, shortDate } from '@/lib/site';
+
+/** "2019" → "2019", "2019-03" → "March 2019", "2019-03-04" → "4 March 2019": as precise as the source. */
+const when = (d?: string) => (d ? longDate(d) : '');
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -27,6 +32,8 @@ export default async function PersonPage({ params }: { params: Promise<{ id: str
   const entries = entriesFor(p.id);
   const quotes = quotesBy(p.id).sort((a, b) => b.entry.published.localeCompare(a.entry.published));
   const positions = positionsOf(p.id);
+  const record = recordOf(p.id);
+  const roles = [...(record?.memberships ?? [])].sort((a, b) => (b.to ?? '9999').localeCompare(a.to ?? '9999') || (b.from ?? '').localeCompare(a.from ?? ''));
 
   return (
     <div className="shell page b-page">
@@ -37,6 +44,24 @@ export default async function PersonPage({ params }: { params: Promise<{ id: str
         <p className="small muted">Titles as the sources gave them. In {entries.length} {entries.length === 1 ? 'entry' : 'entries'}, with {quotes.length} checked {quotes.length === 1 ? 'quotation' : 'quotations'}.</p>
       </header>
 
+      {roles.length || record?.wikidata ? (
+        <Section id="who" title={<>Who they <em>are</em></>} blurb="Roles and parties from Wikidata and from the sources in the Base, as precise as each gives them. When we compare what groups say, each statement counts in the group the person belonged to that day.">
+          <ul className="b-roles">
+            {roles.map((m, i) => {
+              const party = m.party ? partyOf(m.party) : undefined;
+              const dates = m.from || m.to ? `${when(m.from)}–${m.to ? when(m.to) : m.ended ? 'ended' : 'now'}` : m.ended ? 'former' : '';
+              return (
+                <li key={i}>
+                  <span>{m.role}, {orgOf(m.org)?.name ?? m.org}{party ? ` (${partyName(party)})` : ''}</span>
+                  <span className="muted">{dates}{dates ? ' · ' : ''}{m.source.by === 'wikidata' && m.source.ref ? <a href={`https://www.wikidata.org/wiki/${m.source.ref}`}>Wikidata</a> : m.source.by === 'source' && m.source.ref ? <Link href={`/base/${m.source.ref}`}>source</Link> : m.source.by === 'agent' ? 'to be checked' : 'editor'}</span>
+                </li>
+              );
+            })}
+          </ul>
+          {record?.wikidata ? <p className="small muted">Wikidata: <a href={`https://www.wikidata.org/wiki/${record.wikidata}`}>{record.wikidata}</a></p> : null}
+        </Section>
+      ) : null}
+
       {quotes.length ? (
         <Section id="said" title={<>What they <em>said</em></>} blurb="Newest first. Each quotation was found word for word in the source.">
           <div className="b-quotes">
@@ -45,7 +70,7 @@ export default async function PersonPage({ params }: { params: Promise<{ id: str
                 <blockquote>“<span className="hl">{q.text}</span>”</blockquote>
                 <figcaption>
                   <span><Link href={`/base/${q.entry.slug}#${q.id}`}>{q.entry.title}</Link></span>
-                  <span className="muted">{q.entry.outlet}, {longDate(q.entry.published)}{q.context ? `. ${q.context}` : ''}</span>
+                  <span className="muted">{q.entry.outlet}, {longDate(q.said ?? q.entry.published)}{q.said ? ' (said)' : ''}. Speaking as: {GROUP_LABEL[groupAt(p.id, q.said ?? q.entry.published)]}{q.hand === 'reported' ? '. As quoted by the source, not their own text' : ''}{q.context ? `. ${q.context}` : ''}</span>
                 </figcaption>
                 {!q.speakerCertain ? <div className="b-check"><span className="b-warn">Speaker known from context, not confirmed by listening</span></div> : null}
               </figure>

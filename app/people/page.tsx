@@ -4,6 +4,7 @@ import '@/components/base/base.css';
 import { Section } from '@/components/Section';
 import { ENTRIES, currentTitle, onRecord } from '@/content/base';
 import { TOPIC } from '@/content/base/taxonomy';
+import { GROUP_LABEL, groupAt, partyAt, partyName } from '@/content/registry';
 import { longDate } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -25,12 +26,13 @@ export default function PeoplePage() {
       </header>
       <Section id="all" title={<>Everyone, <em>so far</em></>} blurb={`${all.length} people spoke or wrote. People only mentioned are not counted.`}>
         <table className="b-people">
-          <thead><tr><th className="b-rank">#</th><th>Person</th><th className="hide-sm">Questions</th><th className="n">Entries</th><th className="n">Quotes</th></tr></thead>
+          <thead><tr><th className="b-rank">#</th><th>Person</th><th className="hide-sm">Group</th><th className="hide-sm">Questions</th><th className="n">Entries</th><th className="n">Quotes</th></tr></thead>
           <tbody>
             {all.map((r, i) => (
               <tr key={r.person.id}>
                 <td className="b-rank">{i + 1}</td>
                 <td><Link href={`/people/${r.person.id}`}>{r.person.name}</Link>{currentTitle(r.person.id) ? <small>{currentTitle(r.person.id)}</small> : null}</td>
+                <td className="hide-sm"><small>{GROUP_LABEL[groupAt(r.person.id, last)]}{partyAt(r.person.id, last) ? `, ${partyName(partyAt(r.person.id, last)!)}` : ''}</small></td>
                 <td className="hide-sm"><small>{r.topics.slice(0, 3).map(id => TOPIC[id].label).join(' · ')}</small></td>
                 <td className="n">{r.spoke}</td>
                 <td className="n">{r.quotes}</td>

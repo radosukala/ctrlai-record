@@ -45,7 +45,7 @@ function claimFields(q: NonNullable<Draft['quotes']>[number], speaker: string, d
     else problems.push(`${where}: unknown claim type ${q.type}`);
   }
   if (q.hand && q.hand !== 'first' && q.hand !== 'reported') problems.push(`${where}: hand must be first or reported, got ${q.hand}`);
-  const role = (d.people ?? []).find(p => slugify(p.id || p.name) === speaker)?.role;
+  const role = (d.people ?? []).find(p => personId(slugify(p.id || p.name)) === speaker)?.role;
   const ownOutlet = slugify(d.outlet) === speaker;
   out.hand = (q.hand as Quote['hand']) ?? (role === 'author' || ownOutlet || d.kind === 'official' || (d.transcript ?? 'none') !== 'none' ? 'first' : 'reported');
   return out;
@@ -76,6 +76,11 @@ type Draft = Omit<Entry, 'quotes' | 'run' | 'via' | 'review' | 'people'> & {
   /** A new story's title, given by the first entry that uses its id. */
   storyTitle?: string;
 };
+
+// One person, one id: the registry lists ids the Base has used for the same person, and compose merges them.
+const PERSON_ALIAS = new Map<string, string>();
+for (const r of JSON.parse(readFileSync('content/registry/people.json', 'utf8')) as { id: string; aliasIds?: string[] }[]) for (const a of r.aliasIds ?? []) PERSON_ALIAS.set(a, r.id);
+const personId = (id: string) => PERSON_ALIAS.get(id) ?? id;
 
 const entries: Entry[] = [];
 const storyTitles = new Map<string, string>();
@@ -144,7 +149,7 @@ for (const run of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS
     // People: one record per id, with every title a source gave.
     const entryPeople: Entry['people'] = [];
     for (const p of d.people ?? []) {
-      const id = slugify(p.id || p.name);
+      const id = personId(slugify(p.id || p.name));
       if (!ROLES.has(p.role)) problems.push(`${where}: unknown role ${p.role} for ${id}`);
       const rec = people.get(id) ?? { id, name: p.name, titles: [] };
       if (p.title && !rec.titles.some(t => t.title === p.title)) rec.titles.push({ title: p.title, entry: d.slug, on: d.published, role: p.role as Person['titles'][number]['role'] });
@@ -182,7 +187,7 @@ for (const run of readdirSync(RADAR_DOCS).filter(d => existsSync(join(RADAR_DOCS
             agreement = { agreement: Math.round(o.agreement * 1000) / 1000, missing: o.missing };
             (verification[id] as Record<string, unknown>).second = agreement;
           }
-          const speaker = slugify(q.speaker);
+          const speaker = personId(slugify(q.speaker));
           if (!people.has(speaker) && !names[speaker]) names[speaker] = DISPLAY[speaker] ?? ([d.outlet, rawOutlet].some(o => slugify(o) === speaker) ? d.outlet : speaker.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' '));
           quotes.push({
             id, text: q.text, speaker, speakerCertain: q.speakerCertain !== false,

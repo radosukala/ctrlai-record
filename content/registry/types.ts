@@ -70,11 +70,15 @@ export type PersonRecord = {
   id: string;
   name: string;
   aliases?: string[];
+  /** Other person ids the Base has used for the same person (agents slug names differently); compose merges them. */
+  aliasIds?: string[];
   /** A Wikidata id, only when the match is certain from what the sources say about the person. */
   wikidata?: string;
   /** Where they mainly act, ISO 3166-1 alpha-2. */
   country?: string;
   memberships: Membership[];
+  /** Their group when no membership says it: a writer or journalist with no employer, an independent researcher. */
+  occupation?: Group;
   /** Kept in the list of people we follow: their public statements are looked for actively, not only when quoted. */
   followed?: boolean;
   notes?: string;
@@ -82,11 +86,11 @@ export type PersonRecord = {
 
 /**
  * The groups the Base compares, worked out from memberships at a date (see groupAt in index.ts). The order below is
- * the order of precedence when someone belongs to several: an elected official who once worked at a lab counts as an
- * elected official.
+ * the order of precedence when someone belongs to several: a politician who once worked at a lab counts as a politician.
+ * Politicians are legislators (elected or appointed) and elected heads of government; officials are appointed.
  */
 export type Group =
-  | 'elected-official' | 'government-official' | 'regulator' | 'international-official'
+  | 'politician' | 'government-official' | 'regulator' | 'international-official'
   | 'ai-developer-leader' | 'ai-developer-staff' | 'former-ai-developer-staff'
   | 'academic' | 'nonprofit-researcher' | 'think-tank' | 'advocate'
   | 'tech-industry' | 'business' | 'investor' | 'civil-society' | 'journalist' | 'other';

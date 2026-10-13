@@ -1,0 +1,4609 @@
+[
+ {
+  "id": "aalok-mehta",
+  "name": "Aalok Mehta",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "csis",
+    "role": "Director, Wadhwani AI Center",
+    "source": {
+     "by": "source",
+     "ref": "ai-policy-podcast-2026-10-08-data-center-backlash-jasmine-sun",
+     "on": "2026-10-08"
+    }
+   }
+  ],
+  "notes": "CSIS's own announcement (2025) confirms the post and lists earlier roles at OpenAI (U.S. policy lead) and Google (responsible AI policy lead); those are not in our sources or on Wikidata, so they are not recorded as memberships."
+ },
+ {
+  "id": "adam-gleave",
+  "name": "Adam Gleave",
+  "wikidata": "Q139885465",
+  "memberships": [
+   {
+    "org": "far-ai",
+    "role": "Chief executive officer",
+    "leadership": true,
+    "source": {
+     "by": "wikidata",
+     "ref": "Q139885400",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Entry arxiv-2026-10-08-probes-detect-sabotage-deception lists all five authors under FAR.AI; the CEO role is Wikidata's (CEO statement on the FAR.AI item)."
+ },
+ {
+  "id": "adam-schiff",
+  "name": "Adam Schiff",
+  "wikidata": "Q350843",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-senate",
+    "role": "Senator for California",
+    "party": "us-democratic",
+    "from": "2024-12-08",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q350843",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "us-house",
+    "role": "Representative for California",
+    "party": "us-democratic",
+    "from": "2001-01-03",
+    "to": "2024-12-08",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q350843",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "adnan-amjad",
+  "name": "Adnan Amjad",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "deloitte",
+    "role": "US Cyber Leader, Deloitte & Touche LLP",
+    "source": {
+     "by": "source",
+     "ref": "anthropic-2026-10-08-cyber-mission",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ajeya-cotra",
+  "name": "Ajeya Cotra",
+  "memberships": [],
+  "notes": "No title or affiliation in our sources (an 80,000 Hours episode description calls her one of three independent investigators into the Hugging Face attacks; that is the description's claim, not a membership)."
+ },
+ {
+  "id": "alex-bores",
+  "name": "Alex Bores",
+  "wikidata": "Q117328293",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "new-york-state-assembly",
+    "role": "Member of the New York State Assembly (73rd district)",
+    "party": "us-democratic",
+    "from": "2023-01-01",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q117328293",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Party is not on Wikidata and the Assembly's own member pages do not print it; taken from the Wikipedia lead ('A member of the Democratic Party') and press coverage of his congressional run."
+ },
+ {
+  "id": "alex-f-spies",
+  "name": "Alex F. Spies",
+  "memberships": [
+   {
+    "org": "far-ai",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-08-probes-detect-sabotage-deception",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "alex-gibney",
+  "name": "Alex Gibney",
+  "wikidata": "Q2832952",
+  "country": "US",
+  "memberships": [],
+  "notes": "Documentary film director, named in a CNBC entry about the documentary 'Musk'; confirmed as its director by press coverage. No organization."
+ },
+ {
+  "id": "alex-kastner",
+  "name": "Alex Kastner",
+  "memberships": [],
+  "notes": "Author of a post on Redwood Research's blog (entry redwood-research-2026-10-05); the entry gives no title and does not say he works there, so no membership is recorded."
+ },
+ {
+  "id": "alex-sobel",
+  "name": "Alex Sobel",
+  "wikidata": "Q30164792",
+  "country": "GB",
+  "memberships": [
+   {
+    "org": "uk-house-of-commons",
+    "role": "Member of Parliament (Labour Co-operative); Leeds Central and Headingley since 2024, Leeds North West before",
+    "party": "uk-labour",
+    "from": "2017-06-08",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q30164792",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Sits for Labour and the Co-operative Party (Wikidata: group 'Labour Co-operative'); recorded as Labour."
+ },
+ {
+  "id": "alex-turner",
+  "name": "Alex Turner",
+  "memberships": [
+   {
+    "org": "google-deepmind",
+    "role": "Researcher",
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "forbes-2026-10-11-nyc-council-ai-hearing-catastrophic-harm",
+     "on": "2026-10-11"
+    }
+   }
+  ],
+  "notes": "Also described as an independent AI alignment researcher (Alignment Forum piece, 2026-10-12). Published as TurnTrout. No Wikidata item identified."
+ },
+ {
+  "id": "alice-friend",
+  "name": "Alice Friend",
+  "memberships": [
+   {
+    "org": "google",
+    "role": "Director of AI and Emerging Tech Policy",
+    "source": {
+     "by": "source",
+     "ref": "forbes-2026-10-11-nyc-council-ai-hearing-catastrophic-harm",
+     "on": "2026-10-11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "alvaro-bedoya",
+  "name": "Alvaro Bedoya",
+  "wikidata": "Q108540232",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-ftc",
+    "role": "Commissioner",
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "bloomberg-tech-2026-10-06-odd-lots-ai-extinction-debate",
+     "on": "2026-10-06"
+    }
+   }
+  ],
+  "notes": "Wikidata has no employer or position for this item; the match rests on the name, 'American attorney (born 1982)' and the Wikipedia lead (FTC commissioner from 2022 until his purported firing or resignation in 2025)."
+ },
+ {
+  "id": "amber-scorah",
+  "name": "Amber Scorah",
+  "memberships": [
+   {
+    "org": "back-channel",
+    "role": "Founder",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "alignment-forum-2026-10-12-openai-cant-self-police",
+     "on": "2026-10-12"
+    }
+   }
+  ],
+  "notes": "Wikidata Q75184690 (a podcast-guest stub) was not used: nothing in it can be compared with our title."
+ },
+ {
+  "id": "amelie-knecht",
+  "name": "Amelie Knecht",
+  "country": "DE",
+  "memberships": [
+   {
+    "org": "university-of-stuttgart",
+    "role": "Researcher, AI Safety Research Group",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-08-models-hide-their-mistakes",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "amy-klobuchar",
+  "name": "Amy Klobuchar",
+  "wikidata": "Q22237",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-senate",
+    "role": "Senator for Minnesota",
+    "party": "us-democratic",
+    "from": "2007-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q22237",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Sits for the Minnesota Democratic-Farmer-Labor Party, Minnesota's affiliate of the Democratic Party (Wikidata lists both); recorded as Democratic."
+ },
+ {
+  "id": "andis-draguns",
+  "name": "Andis Draguns",
+  "memberships": [
+   {
+    "org": "contramont-research",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-models-provably-hide-capabilities",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "andrea-miotti",
+  "name": "Andrea Miotti",
+  "memberships": [
+   {
+    "org": "controlai",
+    "role": "Founder and CEO",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "controlai-2026-10-11-andrea-miotti-point-of-no-return",
+     "on": "2026-10-11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "andrew-gounardes",
+  "name": "Andrew Gounardes",
+  "wikidata": "Q60676416",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "new-york-state-senate",
+    "role": "Member of the New York State Senate (26th district; 22nd before 2023)",
+    "party": "us-democratic",
+    "from": "2019-01-01",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q60676416",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "andrew-turner",
+  "name": "Andrew Turner",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "booz-allen",
+    "role": "President of Commercial Cyber",
+    "source": {
+     "by": "source",
+     "ref": "anthropic-2026-10-08-cyber-mission",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "anna-marbut",
+  "name": "Anna Marbut",
+  "memberships": [],
+  "notes": "The entry lists Goodfire among its organizations but does not say Marbut works there; no membership recorded."
+ },
+ {
+  "id": "anna-sztyber-betley",
+  "name": "Anna Sztyber-Betley",
+  "country": "PL",
+  "memberships": [
+   {
+    "org": "truthful-ai",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-07-subliminal-learning-transfers-backdoors",
+     "on": "2026-10-07"
+    }
+   },
+   {
+    "org": "warsaw-university-of-technology",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-07-subliminal-learning-transfers-backdoors",
+     "on": "2026-10-07"
+    }
+   }
+  ]
+ },
+ {
+  "id": "anthony-albanese",
+  "name": "Anthony Albanese",
+  "wikidata": "Q335697",
+  "country": "AU",
+  "memberships": [
+   {
+    "org": "australian-government",
+    "role": "Prime Minister of Australia",
+    "leadership": true,
+    "party": "au-labor",
+    "from": "2022-05-23",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q335697",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "australian-house-of-representatives",
+    "role": "Member for Grayndler",
+    "party": "au-labor",
+    "from": "1996-03-02",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q335697",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "anthony-ha",
+  "name": "Anthony Ha",
+  "memberships": []
+ },
+ {
+  "id": "arvind-narayanan",
+  "name": "Arvind Narayanan",
+  "wikidata": "Q16442100",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "princeton-university",
+    "role": "Professor of computer science; director, Center for Information Technology Policy",
+    "source": {
+     "by": "source",
+     "ref": "ezra-klein-show-2026-10-09-case-normal-ai-future",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "athanasios-vamvakidis",
+  "name": "Athanasios Vamvakidis",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Deputy director, monetary and capital department",
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-13-imf-ai-share-crash-risk",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bahrad-a-sokhansanj",
+  "name": "Bahrad A. Sokhansanj",
+  "memberships": [],
+  "notes": "The entry lists three affiliations (Independent, Institute for Law and AI, Johns Hopkins University) without saying which author holds which; none recorded."
+ },
+ {
+  "id": "beatrice-fihn",
+  "name": "Beatrice Fihn",
+  "wikidata": "Q41655043",
+  "memberships": [
+   {
+    "org": "ican",
+    "role": "Executive director",
+    "leadership": true,
+    "from": "2014-07-01",
+    "to": "2023-01-31",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q41655043",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "ControlAI describes her as having led the campaign that won the 2017 Nobel Peace Prize (ICAN). No membership in ControlAI is stated; she is quoted backing its bill."
+ },
+ {
+  "id": "ben-glocker",
+  "name": "Ben Glocker",
+  "memberships": [],
+  "notes": "Wikidata Q51771142 (researcher, Imperial College London) is a possible match but nothing in our sources gives his field or affiliation, so it was not used."
+ },
+ {
+  "id": "bernie-sanders",
+  "name": "Bernie Sanders",
+  "wikidata": "Q359442",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-senate",
+    "role": "Senator for Vermont",
+    "party": "us-independent",
+    "from": "2007-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q359442",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "us-house",
+    "role": "Representative for Vermont (at-large)",
+    "party": "us-independent",
+    "from": "1991-01-03",
+    "to": "2007-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q359442",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Independent; caucuses with the Democrats. Source title: 'Senator (I-VT)'."
+ },
+ {
+  "id": "bill-gates",
+  "name": "Bill Gates",
+  "wikidata": "Q5284",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "microsoft",
+    "role": "Co-founder",
+    "leadership": true,
+    "from": "1975-04-04",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q2283",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "microsoft",
+    "role": "Chief executive officer",
+    "leadership": true,
+    "from": "1975-04",
+    "to": "2000-01",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q2283",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "microsoft",
+    "role": "Board member",
+    "leadership": true,
+    "from": "1981",
+    "to": "2020",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q2283",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "gates-foundation",
+    "role": "Chair",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "cnn-2026-10-12-gates-tapper-most-dangerous-technology",
+     "on": "2026-10-12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "brad-smith",
+  "name": "Brad Smith",
+  "wikidata": "Q50300377",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "microsoft",
+    "role": "President",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "bbc-2026-10-12-ai-less-regulated-than-milk",
+     "on": "2026-10-12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bradley-tusk",
+  "name": "Bradley Tusk",
+  "wikidata": "Q4955052",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "tusk-ventures",
+    "role": "Founder and CEO",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-09-tusk-anthropic-ipo-safety",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "brendan-foody",
+  "name": "Brendan Foody",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "mercor",
+    "role": "CEO",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "cbs-60-minutes-2026-10-05-humans-teaching-ai-jobs",
+     "on": "2026-10-05"
+    }
+   }
+  ],
+  "notes": "Wikidata Q136682908 has no data at all, so it cannot be compared with our title and was not used."
+ },
+ {
+  "id": "brett-guthrie",
+  "name": "Brett Guthrie",
+  "wikidata": "Q910794",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-house",
+    "role": "Representative for Kentucky's 2nd district",
+    "party": "us-republican",
+    "from": "2009-01-06",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q910794",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "us-house-energy-and-commerce-committee",
+    "role": "Chair",
+    "leadership": true,
+    "party": "us-republican",
+    "source": {
+     "by": "source",
+     "ref": "transformer-2026-10-09-democrats-battle-ai-regulation",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "brian-x-chen",
+  "name": "Brian X. Chen",
+  "memberships": [],
+  "notes": "Writes a first-person piece for The New York Times (entry nyt-2026-10-12-chatgpt-for-teens-worried); the entry gives no title."
+ },
+ {
+  "id": "bronson-schoen",
+  "name": "Bronson Schoen",
+  "memberships": [],
+  "notes": "Co-author of a post on OpenAI's alignment research blog (entry openai-alignment-blog-2026-10-07); the entry gives no title and does not say the authors are OpenAI staff, so no membership is recorded."
+ },
+ {
+  "id": "byron-c-wallace",
+  "name": "Byron C. Wallace",
+  "memberships": []
+ },
+ {
+  "id": "casens",
+  "name": "casens",
+  "memberships": [],
+  "notes": "Pseudonymous forum author (LessWrong handle); no real name, title or affiliation in our sources."
+ },
+ {
+  "id": "chamath-palihapitiya",
+  "name": "Chamath Palihapitiya",
+  "wikidata": "Q16734050",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "all-in-podcast",
+    "role": "Co-host",
+    "source": {
+     "by": "source",
+     "ref": "all-in-2026-10-10-claude-conscious-pope",
+     "on": "2026-10-10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "chris-cundy",
+  "name": "Chris Cundy",
+  "memberships": [
+   {
+    "org": "far-ai",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-08-probes-detect-sabotage-deception",
+     "on": "2026-10-08"
+    }
+   }
+  ],
+  "notes": "Wikidata Q130802977 (AI researcher, Stanford 2024) is a plausible match but nothing in it confirms FAR.AI, so it was not used."
+ },
+ {
+  "id": "chris-olah",
+  "name": "Chris Olah",
+  "aliases": [
+   "Christopher Olah"
+  ],
+  "wikidata": "Q50358648",
+  "memberships": [
+   {
+    "org": "anthropic",
+    "role": "Co-founder",
+    "leadership": true,
+    "from": "2021-01-26",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q116758847",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Same person as the record christopher-olah (the Base has two ids for him).",
+  "aliasIds": [
+   "christopher-olah"
+  ]
+ },
+ {
+  "id": "christian-schroeder-de-witt",
+  "name": "Christian Schroeder de Witt",
+  "country": "GB",
+  "memberships": [
+   {
+    "org": "university-of-oxford",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-models-provably-hide-capabilities",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "christina-ruffini",
+  "name": "Christina Ruffini",
+  "memberships": [
+   {
+    "org": "bloomberg",
+    "role": "Host, Bloomberg This Weekend",
+    "source": {
+     "by": "source",
+     "ref": "bloomberg-tv-2026-10-10-roose-agi-chronicles-race",
+     "on": "2026-10-10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "christopher-erceg",
+  "name": "Christopher Erceg",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Deputy director",
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-13-imf-erceg-ai-debt-risks",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "christopher-marte",
+  "name": "Christopher Marte",
+  "wikidata": "Q109536946",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "new-york-city-council",
+    "role": "Member of the New York City Council (1st district)",
+    "party": "us-democratic",
+    "from": "2022-01-01",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q109536946",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "christopher-murray",
+  "name": "Christopher Murray",
+  "aliases": [
+   "Christopher J.L. Murray"
+  ],
+  "wikidata": "Q14948672",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "institute-for-health-metrics-and-evaluation",
+    "role": "Director",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-11-lancet-threats-humanity-2100",
+     "on": "2026-10-11"
+    }
+   },
+   {
+    "org": "lancet-commission-global-threats-to-health",
+    "role": "Co-chair",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-11-lancet-threats-humanity-2100",
+     "on": "2026-10-11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ciaran-m-gilligan-lee",
+  "name": "Ciarán M. Gilligan-Lee",
+  "memberships": []
+ },
+ {
+  "id": "clara-shih",
+  "name": "Clara Shih",
+  "wikidata": "Q16222044",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "salesforce",
+    "role": "Oversaw major AI divisions (until January)",
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "cbs-60-minutes-2026-10-05-humans-teaching-ai-jobs",
+     "on": "2026-10-05"
+    }
+   },
+   {
+    "org": "meta",
+    "role": "Oversaw major AI divisions (until January)",
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "cbs-60-minutes-2026-10-05-humans-teaching-ai-jobs",
+     "on": "2026-10-05"
+    }
+   }
+  ],
+  "notes": "Source: 'Until January, oversaw major AI divisions at Salesforce and then Meta; founded a nonprofit for young workers' (CBS, 2026-10-05). The year of 'January' is not stated, so no end dates are given; the nonprofit is not named. Wikipedia still says she leads Meta's Business AI group."
+ },
+ {
+  "id": "clare-duffy",
+  "name": "Clare Duffy",
+  "memberships": [
+   {
+    "org": "cnn",
+    "role": "Journalist",
+    "source": {
+     "by": "source",
+     "ref": "cnn-2026-10-09-zuckerberg-trump-ai-policy",
+     "on": "2026-10-09"
+    }
+   }
+  ],
+  "notes": "Entry summary: \"CNN's Clare Duffy\"; her role is not stated."
+ },
+ {
+  "id": "coleman-lowndes",
+  "name": "Coleman Lowndes",
+  "memberships": [],
+  "notes": "Listed from a feed byline on a New York Times video; the entry does not state the role."
+ },
+ {
+  "id": "connor-leahy",
+  "name": "Connor Leahy",
+  "wikidata": "Q130469388",
+  "memberships": [
+   {
+    "org": "controlai",
+    "role": "US Executive Director",
+    "source": {
+     "by": "source",
+     "ref": "controlai-2026-10-07-leahy-cbs-no-self-regulation",
+     "on": "2026-10-07"
+    }
+   }
+  ]
+ },
+ {
+  "id": "conrad-stosz",
+  "name": "Conrad Stosz",
+  "memberships": [
+   {
+    "org": "transluce",
+    "role": "Official",
+    "source": {
+     "by": "source",
+     "ref": "techcrunch-2026-10-09-anthropic-evals-off-internet",
+     "on": "2026-10-09"
+    }
+   },
+   {
+    "org": "us-caisi",
+    "role": "Head",
+    "leadership": true,
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "techcrunch-2026-10-09-anthropic-evals-off-internet",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dan-goodin",
+  "name": "Dan Goodin",
+  "memberships": [
+   {
+    "org": "ars-technica",
+    "role": "Senior Security Editor",
+    "source": {
+     "by": "source",
+     "ref": "ars-2026-10-06-openai-agents-wikipedia-tools",
+     "on": "2026-10-06"
+    }
+   }
+  ],
+  "notes": "Wikidata Q136296476 (journalist at Ars Technica) was not used: it gives birth year 2000, which cannot be the long-time Ars security editor."
+ },
+ {
+  "id": "dan-gunter",
+  "name": "Dan Gunter",
+  "memberships": [
+   {
+    "org": "insane-cyber",
+    "role": "CEO and Founder",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "anthropic-2026-10-08-cyber-mission",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dan-jarvis",
+  "name": "Dan Jarvis",
+  "wikidata": "Q727587",
+  "country": "GB",
+  "memberships": [
+   {
+    "org": "uk-house-of-commons",
+    "role": "Member of Parliament for Barnsley North (Barnsley Central until 2024)",
+    "party": "uk-labour",
+    "from": "2011-03-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q727587",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "uk-government",
+    "role": "Minister of State for Security",
+    "from": "2024-07-06",
+    "to": "2026-06-11",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q727587",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "uk-government",
+    "role": "Secretary of State for Defence",
+    "leadership": true,
+    "from": "2026-06-11",
+    "to": "2026-07-20",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q727587",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "uk-government",
+    "role": "Security minister",
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-12-uk-minister-ai-cyber-attack",
+     "on": "2026-10-12"
+    }
+   }
+  ],
+  "notes": "Wikidata ends his first security-minister term on 2026-06-11 and has no entry for the second; our source (Guardian, 2026-10-12) calls him security minister, which fits Wikipedia's 'Minister of State for Security since July 2026'. Recorded as Labour (Wikipedia: Labour and Co-operative)."
+ },
+ {
+  "id": "dan-kagan-kans",
+  "name": "Dan Kagan-Kans",
+  "memberships": []
+ },
+ {
+  "id": "dan-milmo",
+  "name": "Dan Milmo",
+  "memberships": [
+   {
+    "org": "the-guardian",
+    "role": "Global technology editor",
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-12-uk-minister-ai-cyber-attack",
+     "on": "2026-10-12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dan-mossing",
+  "name": "Dan Mossing",
+  "memberships": [],
+  "notes": "Co-author of a post on OpenAI's alignment research blog (entry openai-alignment-blog-2026-10-07); the entry gives no title and does not say the authors are OpenAI staff, so no membership is recorded."
+ },
+ {
+  "id": "daniel-bernard",
+  "name": "Daniel Bernard",
+  "memberships": [
+   {
+    "org": "crowdstrike",
+    "role": "Chief Business Officer",
+    "source": {
+     "by": "source",
+     "ref": "anthropic-2026-10-08-cyber-mission",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "daniel-kokotajlo",
+  "name": "Daniel Kokotajlo",
+  "wikidata": "Q75738671",
+  "memberships": [
+   {
+    "org": "openai",
+    "role": "Researcher",
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "forbes-2026-10-11-nyc-council-ai-hearing-catastrophic-harm",
+     "on": "2026-10-11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "danny-jones",
+  "name": "Danny Jones",
+  "memberships": [],
+  "notes": "Named in a ControlAI entry as the owner of the podcast (\"Danny Jones's podcast\") that Connor Leahy appears on; no title or affiliation in our sources. The name has many Wikidata matches; none could be tied to this podcaster."
+ },
+ {
+  "id": "dario-amodei",
+  "name": "Dario Amodei",
+  "wikidata": "Q103335665",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "anthropic",
+    "role": "CEO",
+    "leadership": true,
+    "from": "2021-02",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q116758847",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "anthropic",
+    "role": "Co-founder",
+    "leadership": true,
+    "from": "2021-01-26",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q116758847",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "openai",
+    "role": "Employee",
+    "to": "2020-12",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q103335665",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Source title: 'CEO, Anthropic' (mentioned in several entries). OpenAI role is recorded only as employment because Wikidata gives no title."
+ },
+ {
+  "id": "daron-acemoglu",
+  "name": "Daron Acemoglu",
+  "aliases": [
+   "Daron Acemoğlu"
+  ],
+  "wikidata": "Q718581",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "mit",
+    "role": "Professor",
+    "source": {
+     "by": "source",
+     "ref": "cbs-60-minutes-2026-10-05-humans-teaching-ai-jobs",
+     "on": "2026-10-05"
+    }
+   }
+  ]
+ },
+ {
+  "id": "david-bau",
+  "name": "David Bau",
+  "memberships": [],
+  "notes": "Wikidata Q87252044 (computer scientist, Northeastern University) is a very likely match, but our sources give no affiliation for this author and the paper could not be found, so it was not used."
+ },
+ {
+  "id": "david-e-sanger",
+  "name": "David E. Sanger",
+  "wikidata": "Q1174291",
+  "country": "US",
+  "memberships": [],
+  "notes": "Byline on a New York Times article (entry nyt-2026-10-10-anthropic-agents-visa-forms); Wikipedia: chief Washington correspondent of The New York Times. No membership recorded: our sources and Wikidata state no employer."
+ },
+ {
+  "id": "david-faber",
+  "name": "David Faber",
+  "wikidata": "Q5233518",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "cnbc",
+    "role": "CNBC journalist",
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-07-clayton-safety-speed-false-choice",
+     "on": "2026-10-07"
+    }
+   }
+  ]
+ },
+ {
+  "id": "david-friedberg",
+  "name": "David Friedberg",
+  "wikidata": "Q112898833",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "all-in-podcast",
+    "role": "Co-host",
+    "source": {
+     "by": "source",
+     "ref": "all-in-2026-10-10-claude-conscious-pope",
+     "on": "2026-10-10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "david-gura",
+  "name": "David Gura",
+  "wikidata": "Q87448304",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "bloomberg",
+    "role": "Host, Bloomberg This Weekend",
+    "source": {
+     "by": "source",
+     "ref": "bloomberg-tv-2026-10-10-roose-agi-chronicles-race",
+     "on": "2026-10-10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "david-pocock",
+  "name": "David Pocock",
+  "wikidata": "Q2777809",
+  "country": "AU",
+  "memberships": [
+   {
+    "org": "australian-senate",
+    "role": "Senator for the Australian Capital Territory",
+    "party": "au-independent",
+    "from": "2022-05-21",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q2777809",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "australian-parliament",
+    "role": "Member of the parliamentary AI committee",
+    "party": "au-independent",
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-13-pocock-albanese-ai-letter",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Independent: the Parliament of Australia's own member page lists him as Independent since 2022-05-21 and shows a seat on its Joint Select Committee on Artificial Intelligence. Source title: 'independent senator and committee member'."
+ },
+ {
+  "id": "david-rein",
+  "name": "David Rein",
+  "memberships": [],
+  "notes": "Only listed contributor of a METR blog post written in METR's voice (entry metr-2026-10-06); the entry gives no title and does not say he is employed there, so no membership is recorded."
+ },
+ {
+  "id": "david-robinson",
+  "name": "David Robinson",
+  "memberships": [
+   {
+    "org": "openai",
+    "role": "Safety transparency lead",
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "ezra-klein-2026-10-07-openai-insider-quit",
+     "on": "2026-10-07"
+    }
+   }
+  ],
+  "notes": "Sources describe him as having left OpenAI: 'Former safety transparency lead, OpenAI'; 'OpenAI safety lead, described as having quit'. The departure date is not given."
+ },
+ {
+  "id": "david-sacks",
+  "name": "David Sacks",
+  "wikidata": "Q5238174",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "all-in-podcast",
+    "role": "Co-host",
+    "source": {
+     "by": "source",
+     "ref": "all-in-2026-10-10-claude-conscious-pope",
+     "on": "2026-10-10"
+    }
+   }
+  ],
+  "notes": "Press reports, not in our sources or on Wikidata and so not recorded as memberships: White House AI and crypto czar until 2026-03-26; now co-chair of PCAST."
+ },
+ {
+  "id": "david-wallace-wells",
+  "name": "David Wallace-Wells",
+  "wikidata": "Q61766571",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "the-new-york-times",
+    "role": "Opinion writer",
+    "source": {
+     "by": "source",
+     "ref": "hard-fork-2026-10-09-anthropic-ai-morals",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "don-beyer",
+  "name": "Don Beyer",
+  "wikidata": "Q3036086",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-house",
+    "role": "Representative for Virginia's 8th district",
+    "party": "us-democratic",
+    "from": "2015-01-06",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q3036086",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "donald-trump",
+  "name": "Donald Trump",
+  "aliases": [
+   "Donald J. Trump"
+  ],
+  "wikidata": "Q22686",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-white-house",
+    "role": "President of the United States",
+    "leadership": true,
+    "party": "us-republican",
+    "from": "2025-01-20",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q22686",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "us-white-house",
+    "role": "President of the United States",
+    "leadership": true,
+    "party": "us-republican",
+    "from": "2017-01-20",
+    "to": "2021-01-20",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q22686",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "dongcheng-zhang",
+  "name": "Dongcheng Zhang",
+  "memberships": []
+ },
+ {
+  "id": "dylan-freedman",
+  "name": "Dylan Freedman",
+  "memberships": [
+   {
+    "org": "the-new-york-times",
+    "role": "Journalist",
+    "source": {
+     "by": "source",
+     "ref": "nyt-2026-10-09-why-ai-agents-go-rogue",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ed-ludlow",
+  "name": "Ed Ludlow",
+  "memberships": []
+ },
+ {
+  "id": "ed-zitron",
+  "name": "Ed Zitron",
+  "memberships": [],
+  "notes": "Wikidata Q57747258 (publicist, author, podcaster) fits the name, but our entry only lists him as mentioned, with no role, so it was not used."
+ },
+ {
+  "id": "eduardo-porter",
+  "name": "Eduardo Porter",
+  "memberships": []
+ },
+ {
+  "id": "edward-hu",
+  "name": "Edward Hu",
+  "memberships": []
+ },
+ {
+  "id": "eitan-waks",
+  "name": "Eitan Waks",
+  "memberships": []
+ },
+ {
+  "id": "eli-tan",
+  "name": "Eli Tan",
+  "memberships": []
+ },
+ {
+  "id": "eliezer-yudkowsky",
+  "name": "Eliezer Yudkowsky",
+  "wikidata": "Q704195",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "miri",
+    "role": "Founder",
+    "leadership": true,
+    "from": "2000",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q2040269",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "elizabeth-dias",
+  "name": "Elizabeth Dias",
+  "memberships": [
+   {
+    "org": "the-new-york-times",
+    "role": "National religion correspondent",
+    "source": {
+     "by": "source",
+     "ref": "hard-fork-2026-10-09-anthropic-ai-morals",
+     "on": "2026-10-09"
+    }
+   }
+  ],
+  "notes": "Wikidata Q123744928 ('American journalist') was not used: it names no employer, so it cannot be compared with our title."
+ },
+ {
+  "id": "elon-musk",
+  "name": "Elon Musk",
+  "wikidata": "Q317521",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "tesla",
+    "role": "CEO",
+    "leadership": true,
+    "from": "2008-10",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q478214",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "spacex",
+    "role": "CEO",
+    "leadership": true,
+    "from": "2002",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q193701",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "spacexai",
+    "role": "Founder and leader",
+    "leadership": true,
+    "from": "2023-03-09",
+    "source": {
+     "by": "agent",
+     "ref": "Q120599684",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "openai",
+    "role": "Co-founder",
+    "leadership": true,
+    "from": "2015-12-11",
+    "to": "2019",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q317521",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "us-doge",
+    "role": "Employee",
+    "from": "2025-01-20",
+    "to": "2025-05-30",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q317521",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Mentioned in two entries (as a tech leader promoting basic income; as the subject of a documentary). No title in our sources; all memberships are Wikidata's. The OpenAI end date is the end of the employer statement, not of his status as co-founder."
+ },
+ {
+  "id": "emil-michael",
+  "name": "Emil Michael",
+  "wikidata": "Q18560065",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "pentagon",
+    "role": "Under Secretary for Research and Engineering and Chief Technology Officer, Department of Defense",
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-06-pentagon-emil-michael-interview",
+     "on": "2026-10-06"
+    }
+   },
+   {
+    "org": "uber",
+    "role": "Vice President of Business",
+    "from": "2013",
+    "to": "2017-06",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q18560065",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Wikidata's description still says 'Vice President of Business at Uber'; the Wikipedia lead confirms the same person has been under secretary of defense for research and engineering since 2025. Named by press as one of four vice chairs of the new Super Intelligence Force, which our title does not state."
+ },
+ {
+  "id": "emily-bender",
+  "name": "Emily Bender",
+  "aliases": [
+   "Emily M. Bender"
+  ],
+  "wikidata": "Q33122366",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "university-of-washington",
+    "role": "Professor",
+    "source": {
+     "by": "source",
+     "ref": "bloomberg-tech-2026-10-06-bender-present-harms-existential-risk",
+     "on": "2026-10-06"
+    }
+   }
+  ]
+ },
+ {
+  "id": "emily-tavenner",
+  "name": "Emily Tavenner",
+  "memberships": [
+   {
+    "org": "cset",
+    "role": "Interviewer (CSET interview post)",
+    "source": {
+     "by": "source",
+     "ref": "cset-georgetown-2026-10-06-should-we-track-ai-chips",
+     "on": "2026-10-06"
+    }
+   }
+  ],
+  "notes": "Entry summary: \"CSET's Emily Tavenner interviews Jacob Feldgoise\"; her title is not stated."
+ },
+ {
+  "id": "erin-crawley",
+  "name": "Erin Crawley",
+  "memberships": [],
+  "notes": "The entry lists CBS-NTT Program in Physics of Intelligence (Harvard) and NTT Research without saying which author holds which; none recorded."
+ },
+ {
+  "id": "erin-griffith",
+  "name": "Erin Griffith",
+  "memberships": [
+   {
+    "org": "the-new-york-times",
+    "role": "Tech reporter",
+    "source": {
+     "by": "source",
+     "ref": "hard-fork-2026-10-09-anthropic-ai-morals",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "eryk-salvaggio",
+  "name": "Eryk Salvaggio",
+  "memberships": [
+   {
+    "org": "university-of-cambridge",
+    "role": "AI researcher and Gates Scholar",
+    "source": {
+     "by": "source",
+     "ref": "ars-2026-10-06-openai-agents-wikipedia-tools",
+     "on": "2026-10-06"
+    }
+   }
+  ],
+  "notes": "Wikidata Q124215589 (artist, research advisor at the Siegel Family Endowment) does not match our title and was not used."
+ },
+ {
+  "id": "estelle-caswell",
+  "name": "Estelle Caswell",
+  "memberships": []
+ },
+ {
+  "id": "evan-miyazono",
+  "name": "Evan Miyazono",
+  "memberships": [],
+  "notes": "The entry lists Atlas Ignota among its organizations but does not say he works there. Wikidata Q59669085 (researcher, Caltech and Stanford) was not used: no field or employer to compare."
+ },
+ {
+  "id": "evgenii-opryshko",
+  "name": "Evgenii Opryshko",
+  "memberships": []
+ },
+ {
+  "id": "ezekiel-emanuel",
+  "name": "Ezekiel Emanuel",
+  "aliases": [
+   "Zeke Emanuel"
+  ],
+  "wikidata": "Q5423140",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "university-of-pennsylvania",
+    "role": "Vice provost and professor of Medical Ethics and Health Policy",
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-12-emanuel-ai-healthcare-physicians",
+     "on": "2026-10-12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ezra-klein",
+  "name": "Ezra Klein",
+  "wikidata": "Q605",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "the-new-york-times",
+    "role": "Host, The Ezra Klein Show",
+    "source": {
+     "by": "source",
+     "ref": "ezra-klein-2026-10-07-openai-insider-quit",
+     "on": "2026-10-07"
+    }
+   }
+  ]
+ },
+ {
+  "id": "garrison-lovely",
+  "name": "Garrison Lovely",
+  "wikidata": "Q125358500",
+  "country": "US",
+  "memberships": [],
+  "notes": "Source title: 'Author and journalist' (no organization). In the podcast he says he is joining the board of Irreplaceable and donating royalties to it; the board seat could not be verified, so it is not recorded.",
+  "occupation": "journalist"
+ },
+ {
+  "id": "gary-marcus",
+  "name": "Gary Marcus",
+  "aliases": [
+   "Gary F. Marcus"
+  ],
+  "wikidata": "Q3348133",
+  "memberships": [
+   {
+    "org": "robust-ai",
+    "role": "Co-founder and former CEO",
+    "leadership": true,
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "bloomberg-tech-2026-10-08-marcus-openai-safeguards-control",
+     "on": "2026-10-08"
+    }
+   },
+   {
+    "org": "new-york-university",
+    "role": "Professor Emeritus",
+    "source": {
+     "by": "source",
+     "ref": "marcus-2026-10-05-nyc-hearing-ai-risks",
+     "on": "2026-10-05"
+    }
+   }
+  ]
+ },
+ {
+  "id": "george-kurtz",
+  "name": "George Kurtz",
+  "wikidata": "Q50082669",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "crowdstrike",
+    "role": "Founder and CEO",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-06-crowdstrike-kurtz-ai-safety",
+     "on": "2026-10-06"
+    }
+   }
+  ]
+ },
+ {
+  "id": "george-williamson",
+  "name": "George Williamson",
+  "memberships": [
+   {
+    "org": "alan-turing-institute",
+    "role": "Head",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-10-uk-foreign-ai-turing-institute",
+     "on": "2026-10-10"
+    }
+   }
+  ],
+  "notes": "No Wikidata item identified. Wikipedia and the Institute say a George Williamson (formerly director of HMGCC) became its chief executive in 2026; our source says 'Head of the Alan Turing Institute'."
+ },
+ {
+  "id": "gillian-hadfield",
+  "name": "Gillian Hadfield",
+  "wikidata": "Q20675526",
+  "memberships": [],
+  "notes": "Entry arxiv-2026-10-07-comprehension-audits-automated-ai-research lists three affiliations (Independent, Institute for Law and AI, Johns Hopkins University) without saying which author holds which; none recorded. The Wikidata item (legal scholar, University of Toronto from 2018) looks out of date and is not used for memberships."
+ },
+ {
+  "id": "giselle-au-nhien-nguyen",
+  "name": "Giselle Au-Nhien Nguyen",
+  "memberships": [],
+  "notes": "Author of a Guardian opinion piece about being interviewed by an AI for a preschool education job; the entry gives no title."
+ },
+ {
+  "id": "greg-casar",
+  "name": "Greg Casar",
+  "wikidata": "Q104148369",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-house",
+    "role": "Representative for Texas's 35th district",
+    "party": "us-democratic",
+    "from": "2023-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q104148369",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "guanghui-wang",
+  "name": "Guanghui Wang",
+  "memberships": []
+ },
+ {
+  "id": "gus-docker",
+  "name": "Gus Docker",
+  "memberships": [
+   {
+    "org": "future-of-life-institute",
+    "role": "Host, Future of Life Institute Podcast",
+    "source": {
+     "by": "source",
+     "ref": "fli-2026-10-13-lovely-race-to-replace-us",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "guy-ritchie",
+  "name": "Guy Ritchie",
+  "wikidata": "Q192990",
+  "country": "GB",
+  "memberships": [],
+  "notes": "English film director, mentioned in a Guardian article on British directors. No organization."
+ },
+ {
+  "id": "hafsa-khalil",
+  "name": "Hafsa Khalil",
+  "memberships": []
+ },
+ {
+  "id": "hanna-dohmen",
+  "name": "Hanna Dohmen",
+  "memberships": [],
+  "notes": "Co-author of the CSET report discussed in entry cset-georgetown-2026-10-06; the entry does not say she is CSET staff, so no membership is recorded."
+ },
+ {
+  "id": "harpreet-sidhu",
+  "name": "Harpreet Sidhu",
+  "memberships": [
+   {
+    "org": "accenture",
+    "role": "Global Cybersecurity Lead",
+    "source": {
+     "by": "source",
+     "ref": "anthropic-2026-10-08-cyber-mission",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "harshul-joshi",
+  "name": "Harshul Joshi",
+  "memberships": [
+   {
+    "org": "pwc",
+    "role": "Partner, US OT/ICS Security Lead, Cyber Data and Tech Risk",
+    "source": {
+     "by": "source",
+     "ref": "anthropic-2026-10-08-cyber-mission",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hayden-field",
+  "name": "Hayden Field",
+  "memberships": []
+ },
+ {
+  "id": "heather-stewart",
+  "name": "Heather Stewart",
+  "wikidata": "Q27967826",
+  "memberships": [
+   {
+    "org": "the-guardian",
+    "role": "Reporter",
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-13-imf-ai-share-crash-risk",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Wikipedia: economics editor of The Guardian."
+ },
+ {
+  "id": "henry-de-zoete",
+  "name": "Henry de Zoete",
+  "country": "GB",
+  "memberships": [
+   {
+    "org": "uk-ai-security-institute",
+    "role": "Head of the UK's AI Security Institute",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-12-uk-minister-ai-cyber-attack",
+     "on": "2026-10-12"
+    }
+   }
+  ],
+  "notes": "No Wikidata item found. Press reports say he was appointed director of the AI Security Institute in 2026; he was the prime minister's AI adviser in 2023-24."
+ },
+ {
+  "id": "hidenori-tanaka",
+  "name": "Hidenori Tanaka",
+  "memberships": [],
+  "notes": "The entry lists CBS-NTT Program in Physics of Intelligence (Harvard) and NTT Research without saying which author holds which; none recorded. Name has many Wikidata matches; none could be tied to this author."
+ },
+ {
+  "id": "himaghna-bhattacharjee",
+  "name": "Himaghna Bhattacharjee",
+  "memberships": [
+   {
+    "org": "meta-superintelligence-labs",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-reward-hacking-spreads-between-agents",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hiroaki-koiwa",
+  "name": "Hiroaki Koiwa",
+  "memberships": [
+   {
+    "org": "hitachi",
+    "role": "Head of Cyber CoE, AI & Software Services Business Unit, Hitachi, Ltd.",
+    "source": {
+     "by": "source",
+     "ref": "anthropic-2026-10-08-cyber-mission",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ibrahim-abubakar",
+  "name": "Ibrahim Abubakar",
+  "wikidata": "Q37608078",
+  "country": "GB",
+  "memberships": [
+   {
+    "org": "ucl",
+    "role": "Professor of infectious disease epidemiology",
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-11-lancet-threats-humanity-2100",
+     "on": "2026-10-11"
+    }
+   },
+   {
+    "org": "lancet-commission-global-threats-to-health",
+    "role": "Commission member",
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-11-lancet-threats-humanity-2100",
+     "on": "2026-10-11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "igor-gilitschenski",
+  "name": "Igor Gilitschenski",
+  "memberships": []
+ },
+ {
+  "id": "isak-czeresnia-etinger",
+  "name": "Isak Czeresnia Etinger",
+  "memberships": [],
+  "notes": "Author of a post on OpenAI's alignment research blog (entry openai-alignment-blog-2026-10-06); the entry gives no title and does not say he is OpenAI staff, so no membership is recorded."
+ },
+ {
+  "id": "jack-clark",
+  "name": "Jack Clark",
+  "wikidata": "Q135111322",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "anthropic",
+    "role": "Employee",
+    "from": "2021",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q135111322",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "openai",
+    "role": "Employee",
+    "from": "2016",
+    "to": "2020",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q135111322",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Author of the Import AI newsletter (entries import-ai-2026-10-05 and -10-12); our sources give no title. Wikidata lists only employment, not his role."
+ },
+ {
+  "id": "jack-richings",
+  "name": "Jack Richings",
+  "memberships": []
+ },
+ {
+  "id": "jacob-coxon",
+  "name": "Jacob Coxon",
+  "wikidata": "Q141395021",
+  "memberships": [
+   {
+    "org": "openai",
+    "role": "Researcher",
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "forbes-2026-10-11-nyc-council-ai-hearing-catastrophic-harm",
+     "on": "2026-10-11"
+    }
+   },
+   {
+    "org": "anthropic",
+    "role": "Researcher",
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "forbes-2026-10-11-nyc-council-ai-hearing-catastrophic-harm",
+     "on": "2026-10-11"
+    }
+   }
+  ],
+  "notes": "Source: 'Former researcher, OpenAI and Anthropic'; CNBC and the Council say Anthropic only, amNY and The Next Web say both (see the Forbes entry notes)."
+ },
+ {
+  "id": "jacob-feldgoise",
+  "name": "Jacob Feldgoise",
+  "memberships": [],
+  "notes": "Interviewed about, and co-author of, a CSET report (entry cset-georgetown-2026-10-06); the entry does not say he is CSET staff, so no membership is recorded."
+ },
+ {
+  "id": "jake-tapper",
+  "name": "Jake Tapper",
+  "wikidata": "Q6125032",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "cnn",
+    "role": "Host",
+    "source": {
+     "by": "source",
+     "ref": "cnn-2026-10-12-gates-tapper-most-dangerous-technology",
+     "on": "2026-10-12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "jakub-pachocki",
+  "name": "Jakub Pachocki",
+  "wikidata": "Q123478068",
+  "memberships": [],
+  "notes": "Mentioned without a title. Wikidata lists OpenAI employment ending 2023-11-17, which conflicts with Wikipedia ('OpenAI's chief scientist'); no membership recorded."
+ },
+ {
+  "id": "james-manyika",
+  "name": "James Manyika",
+  "wikidata": "Q105842353",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "google",
+    "role": "SVP",
+    "from": "2022-01",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q105842353",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "james-surdam",
+  "name": "James Surdam",
+  "memberships": []
+ },
+ {
+  "id": "jan-betley",
+  "name": "Jan Betley",
+  "memberships": [
+   {
+    "org": "truthful-ai",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-07-subliminal-learning-transfers-backdoors",
+     "on": "2026-10-07"
+    }
+   }
+  ],
+  "notes": "Wikidata Q64867668 was not used: its aliases (J Nicholas Betley, Betley JN) point to a different researcher."
+ },
+ {
+  "id": "jan-dubinski",
+  "name": "Jan Dubiński",
+  "country": "PL",
+  "memberships": [
+   {
+    "org": "truthful-ai",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-07-subliminal-learning-transfers-backdoors",
+     "on": "2026-10-07"
+    }
+   },
+   {
+    "org": "warsaw-university-of-technology",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-07-subliminal-learning-transfers-backdoors",
+     "on": "2026-10-07"
+    }
+   }
+  ]
+ },
+ {
+  "id": "jasmine-sun",
+  "name": "Jasmine Sun",
+  "memberships": [],
+  "notes": "Source title: 'Writer' (no organization). Wikidata Q89710948 is a medical researcher and was rejected."
+ },
+ {
+  "id": "jasmine-wang",
+  "name": "Jasmine Wang",
+  "memberships": [
+   {
+    "org": "openai",
+    "role": "Safety researcher",
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "techcrunch-2026-10-08-fired-openai-researchers-dispute",
+     "on": "2026-10-08"
+    }
+   }
+  ],
+  "notes": "Fired by OpenAI according to our sources (she and two colleagues dispute the stated reason). Wikidata Q130793821 has no data and was not used."
+ },
+ {
+  "id": "jason-calacanis",
+  "name": "Jason Calacanis",
+  "wikidata": "Q3807391",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "all-in-podcast",
+    "role": "Co-host",
+    "source": {
+     "by": "source",
+     "ref": "all-in-2026-10-10-claude-conscious-pope",
+     "on": "2026-10-10"
+    }
+   }
+  ]
+ },
+ {
+  "id": "jay-chaudhry",
+  "name": "Jay Chaudhry",
+  "wikidata": "Q69873545",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "zscaler",
+    "role": "Founder and CEO",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-06-zscaler-chaudhry-ai-agents",
+     "on": "2026-10-06"
+    }
+   }
+  ]
+ },
+ {
+  "id": "jay-clayton",
+  "name": "Jay Clayton",
+  "wikidata": "Q28122984",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-odni",
+    "role": "Director of National Intelligence",
+    "leadership": true,
+    "from": "2026",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q28122984",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "us-white-house",
+    "role": "AI czar",
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-07-clayton-safety-speed-false-choice",
+     "on": "2026-10-07"
+    }
+   }
+  ],
+  "notes": "Our sources give two titles (AI czar, White House; Director of National Intelligence). Both are right: the Senate confirmed him as DNI in late July 2026 (Wikidata start 2026-07-28; Wikipedia says August) and Trump named him chair of the Super Intelligence Force on 2026-10-04, which Wikipedia calls White House AI czar. Start year only, because sources disagree on the month."
+ },
+ {
+  "id": "jay-obernolte",
+  "name": "Jay Obernolte",
+  "wikidata": "Q16849797",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-house",
+    "role": "Representative for California's 23rd district",
+    "party": "us-republican",
+    "from": "2021-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q16849797",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "jd-vance",
+  "name": "JD Vance",
+  "aliases": [
+   "J. D. Vance"
+  ],
+  "wikidata": "Q28935729",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-white-house",
+    "role": "Vice President of the United States",
+    "party": "us-republican",
+    "from": "2025-01-20",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q28935729",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "us-senate",
+    "role": "Senator for Ohio",
+    "party": "us-republican",
+    "from": "2023-01-03",
+    "to": "2025-01-10",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q28935729",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "jeffrey-ladish",
+  "name": "Jeffrey Ladish",
+  "memberships": [
+   {
+    "org": "palisade-research",
+    "role": "Executive director",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "doac-2026-10-08-ladish-agents-hidden-risk",
+     "on": "2026-10-08"
+    }
+   },
+   {
+    "org": "anthropic",
+    "role": "Former employee (role not stated)",
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "doac-2026-10-08-ladish-agents-hidden-risk",
+     "on": "2026-10-08"
+    }
+   }
+  ],
+  "notes": "The Anthropic line comes from the entry's conflict note ('Ladish previously worked at Anthropic'); no Wikidata item found."
+ },
+ {
+  "id": "jenny-nitishinskaya",
+  "name": "Jenny Nitishinskaya",
+  "memberships": [],
+  "notes": "Co-author of a post on OpenAI's alignment research blog (entry openai-alignment-blog-2026-10-07); the entry gives no title and does not say the authors are OpenAI staff, so no membership is recorded."
+ },
+ {
+  "id": "jerusalem-demsas",
+  "name": "Jerusalem Demsas",
+  "wikidata": "Q123229423",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "the-argument",
+    "role": "Host (The Argument)",
+    "source": {
+     "by": "source",
+     "ref": "chinatalk-2026-10-12-yglesias-demsas-china-ai-pod",
+     "on": "2026-10-12"
+    }
+   }
+  ],
+  "notes": "Entry: a crossover with 'their show The Argument' (with Matt Yglesias). Wikipedia calls her the founder and editor of The Argument; our sources do not."
+ },
+ {
+  "id": "jessica-glenza",
+  "name": "Jessica Glenza",
+  "memberships": []
+ },
+ {
+  "id": "jia-li",
+  "name": "Jia Li",
+  "country": "CN",
+  "memberships": [
+   {
+    "org": "tsinghua-university",
+    "role": "Researcher, College of AI",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-swe-deception-bench",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "jin-yu-young",
+  "name": "Jin Yu Young",
+  "memberships": []
+ },
+ {
+  "id": "jingnan-zheng",
+  "name": "Jingnan Zheng",
+  "memberships": []
+ },
+ {
+  "id": "jo-briskey",
+  "name": "Jo Briskey",
+  "wikidata": "Q134312684",
+  "country": "AU",
+  "memberships": [
+   {
+    "org": "australian-house-of-representatives",
+    "role": "Member for Maribyrnong",
+    "party": "au-labor",
+    "from": "2025-05-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q134312684",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "australian-parliament",
+    "role": "Chair of the parliamentary AI inquiry (committee)",
+    "leadership": true,
+    "party": "au-labor",
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-13-pocock-albanese-ai-letter",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "jo-jiao",
+  "name": "Jo Jiao",
+  "memberships": [
+   {
+    "org": "mats",
+    "role": "Safety apprentice (2026)",
+    "source": {
+     "by": "source",
+     "ref": "lesswrong-2026-10-12-research-lessons-mats-redwood",
+     "on": "2026-10-12"
+    }
+   },
+   {
+    "org": "redwood-research",
+    "role": "Safety apprentice (2026)",
+    "source": {
+     "by": "source",
+     "ref": "lesswrong-2026-10-12-research-lessons-mats-redwood",
+     "on": "2026-10-12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "joe-weisenthal",
+  "name": "Joe Weisenthal",
+  "wikidata": "Q107452067",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "bloomberg",
+    "role": "Co-host, Odd Lots",
+    "source": {
+     "by": "source",
+     "ref": "odd-lots-2026-10-12-soares-ai-could-kill-us-all",
+     "on": "2026-10-12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "johana-bhuiyan",
+  "name": "Johana Bhuiyan",
+  "memberships": [],
+  "notes": "Guardian news author; the entry gives no title. Wikidata Q122313916 ('American journalist') names no employer, so it was not used."
+ },
+ {
+  "id": "john-thune",
+  "name": "John Thune",
+  "wikidata": "Q462981",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-senate",
+    "role": "Senator for South Dakota",
+    "party": "us-republican",
+    "from": "2005-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q462981",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "us-senate",
+    "role": "Senate Majority Leader",
+    "leadership": true,
+    "party": "us-republican",
+    "from": "2025-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q462981",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "us-house",
+    "role": "Representative for South Dakota (at-large)",
+    "party": "us-republican",
+    "from": "1997-01-07",
+    "to": "2003-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q462981",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "jon-lavender",
+  "name": "Jon Lavender",
+  "memberships": [
+   {
+    "org": "dragos",
+    "role": "Chief Technology Officer",
+    "source": {
+     "by": "source",
+     "ref": "anthropic-2026-10-08-cyber-mission",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "jon-wertheim",
+  "name": "Jon Wertheim",
+  "memberships": [
+   {
+    "org": "cbs",
+    "role": "Correspondent, 60 Minutes",
+    "source": {
+     "by": "source",
+     "ref": "cbs-60-minutes-2026-10-05-humans-teaching-ai-jobs",
+     "on": "2026-10-05"
+    }
+   }
+  ],
+  "notes": "Wikidata Q15443102 (sports journalist, Sports Illustrated) is probably the same person, but nothing in it mentions CBS or 60 Minutes, so it was not used."
+ },
+ {
+  "id": "jonno-duniam",
+  "name": "Jonno Duniam",
+  "aliases": [
+   "Jonathon Duniam"
+  ],
+  "wikidata": "Q25268390",
+  "country": "AU",
+  "memberships": [
+   {
+    "org": "australian-senate",
+    "role": "Senator for Tasmania",
+    "party": "au-liberal",
+    "from": "2016-07-01",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q25268390",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "australian-parliament",
+    "role": "Deputy chair of the parliamentary AI inquiry (committee)",
+    "party": "au-liberal",
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-13-pocock-albanese-ai-letter",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Wikipedia: in June 2026 he announced he will resign from Parliament before the end of the year; still a senator in our source (2026-10-13)."
+ },
+ {
+  "id": "jordan-schneider",
+  "name": "Jordan Schneider",
+  "memberships": [
+   {
+    "org": "chinatalk",
+    "role": "Host",
+    "source": {
+     "by": "source",
+     "ref": "chinatalk-2026-10-12-yglesias-demsas-china-ai-pod",
+     "on": "2026-10-12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "joseph-egan",
+  "name": "Joseph Egan",
+  "memberships": []
+ },
+ {
+  "id": "josh-butler",
+  "name": "Josh Butler",
+  "country": "AU",
+  "memberships": [
+   {
+    "org": "the-guardian",
+    "role": "Journalist, Guardian Australia",
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-13-pocock-albanese-ai-letter",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "josh-hawley",
+  "name": "Josh Hawley",
+  "wikidata": "Q23020745",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-senate",
+    "role": "Senator for Missouri",
+    "party": "us-republican",
+    "from": "2019-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q23020745",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "julia-boorstin",
+  "name": "Julia Boorstin",
+  "wikidata": "Q117221806",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "cnbc",
+    "role": "Correspondent",
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-10-hollywood-films-tech-leaders",
+     "on": "2026-10-10"
+    }
+   }
+  ],
+  "notes": "Entry summary: \"CNBC's Julia Boorstin\". Wikidata description: Senior Media and Entertainment Correspondent, CNBC; Wikipedia: Senior Media & Tech Correspondent."
+ },
+ {
+  "id": "julian-e-barnes",
+  "name": "Julian E. Barnes",
+  "memberships": [],
+  "notes": "Byline on a New York Times article (entry nyt-2026-10-10-anthropic-agents-visa-forms); no title in our sources. Wikidata Q114429160 ('American journalist') names no employer, so it was not used."
+ },
+ {
+  "id": "julie-menin",
+  "name": "Julie Menin",
+  "wikidata": "Q6308392",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "new-york-city-council",
+    "role": "Speaker",
+    "leadership": true,
+    "party": "us-democratic",
+    "source": {
+     "by": "source",
+     "ref": "forbes-2026-10-11-nyc-council-ai-hearing-catastrophic-harm",
+     "on": "2026-10-11"
+    }
+   }
+  ],
+  "notes": "Party from Wikidata (P102: Democratic Party); Wikipedia: has represented the 5th district since 2022."
+ },
+ {
+  "id": "junwei-quan",
+  "name": "Junwei Quan",
+  "memberships": []
+ },
+ {
+  "id": "kabir-kumar",
+  "name": "Kabir Kumar",
+  "memberships": [],
+  "notes": "Co-author of a LessWrong post (with niplav); no title or affiliation in our sources."
+ },
+ {
+  "id": "kanishka-narayan",
+  "name": "Kanishka Narayan",
+  "wikidata": "Q126852903",
+  "country": "GB",
+  "memberships": [
+   {
+    "org": "uk-house-of-commons",
+    "role": "Member of Parliament for Vale of Glamorgan",
+    "party": "uk-labour",
+    "from": "2024-07-04",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q126852903",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "uk-government",
+    "role": "Minister of State for Artificial Intelligence",
+    "from": "2026-07-20",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q126852903",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "uk-government",
+    "role": "Parliamentary Under-Secretary of State for AI (AI minister)",
+    "from": "2025-09-07",
+    "to": "2026-07-20",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q126852903",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Source titles: 'AI Minister', 'UK AI minister'. Wikidata labels the 2025-26 post 'Parliamentary Under-Secretary of State for AI and Digital Government'; Wikipedia says 'AI and Online Safety'. The role text above leaves the portfolio name out."
+ },
+ {
+  "id": "karl-koch",
+  "name": "Karl Koch",
+  "memberships": [
+   {
+    "org": "ai-whistleblower-initiative",
+    "role": "Founder",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "alignment-forum-2026-10-12-openai-cant-self-police",
+     "on": "2026-10-12"
+    }
+   }
+  ],
+  "notes": "Wikidata search returns only unrelated Karl Kochs."
+ },
+ {
+  "id": "kat-lay",
+  "name": "Kat Lay",
+  "memberships": [],
+  "notes": "Guardian author of a news article; the entry notes that her role is not stated."
+ },
+ {
+  "id": "kate-conger",
+  "name": "Kate Conger",
+  "wikidata": "Q130359664",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "the-new-york-times",
+    "role": "Journalist",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q130359664",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "kate-rooney",
+  "name": "Kate Rooney",
+  "wikidata": "Q106603872",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "cnbc",
+    "role": "Reporter",
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-06-altman-accept-some-bad-things",
+     "on": "2026-10-06"
+    }
+   }
+  ]
+ },
+ {
+  "id": "keltan",
+  "name": "keltan",
+  "memberships": [],
+  "notes": "Pseudonymous forum author (LessWrong handle). The post says the views are the author's own, not MIRI's, which hints at a MIRI connection; no employment is stated, so none is recorded."
+ },
+ {
+  "id": "kevin-roose",
+  "name": "Kevin Roose",
+  "wikidata": "Q24248260",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "the-new-york-times",
+    "role": "Technology columnist; co-host of Hard Fork",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q24248260",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Sources give 'Technology journalist and author' and 'Author, AGI Chronicles' with no employer. Wikidata lists none; Wikipedia says he worked for The New York Times as technology columnist and Hard Fork host, in the past tense, so the current employer is not recorded."
+ },
+ {
+  "id": "kim-herlihy",
+  "name": "Kim Herlihy",
+  "memberships": [
+   {
+    "org": "vorys",
+    "role": "Trial lawyer and partner",
+    "source": {
+     "by": "source",
+     "ref": "cbs-60-minutes-2026-10-05-humans-teaching-ai-jobs",
+     "on": "2026-10-05"
+    }
+   }
+  ]
+ },
+ {
+  "id": "kirsten-horton",
+  "name": "Kirsten Horton",
+  "memberships": []
+ },
+ {
+  "id": "krishani-dhanji",
+  "name": "Krishani Dhanji",
+  "country": "AU",
+  "memberships": [
+   {
+    "org": "the-guardian",
+    "role": "Journalist, Guardian Australia",
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-13-pocock-albanese-ai-letter",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "kyle-khan-mullins",
+  "name": "Kyle Khan-Mullins",
+  "memberships": [
+   {
+    "org": "forbes",
+    "role": "Reporter",
+    "source": {
+     "by": "source",
+     "ref": "forbes-2026-10-09-congress-data-center-investors",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "kyle-miller",
+  "name": "Kyle Miller",
+  "memberships": [],
+  "notes": "Co-author of the CSET report discussed in entry cset-georgetown-2026-10-06; the entry does not say he is CSET staff, so no membership is recorded. The name has many Wikidata matches; none could be tied to this author."
+ },
+ {
+  "id": "kyung-lah",
+  "name": "Kyung Lah",
+  "wikidata": "Q492598",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "cnn",
+    "role": "Senior Investigative Correspondent",
+    "source": {
+     "by": "source",
+     "ref": "cnn-2026-10-13-data-center-backlash-small-towns",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "laura-chung",
+  "name": "Laura Chung",
+  "memberships": []
+ },
+ {
+  "id": "leo-zeitler",
+  "name": "Leo Zeitler",
+  "memberships": []
+ },
+ {
+  "id": "lila-ibrahim",
+  "name": "Lila Ibrahim",
+  "wikidata": "Q52274773",
+  "memberships": [
+   {
+    "org": "google-deepmind",
+    "role": "Chief AI Readiness Officer",
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-06-deepmind-ibrahim-responsible-ai",
+     "on": "2026-10-06"
+    }
+   },
+   {
+    "org": "google-deepmind",
+    "role": "Chief operating officer",
+    "from": "2018",
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-06-deepmind-ibrahim-responsible-ai",
+     "on": "2026-10-06"
+    }
+   }
+  ],
+  "notes": "The COO role and the 2018 start come from a companion clip description quoted in the entry notes (CNBC: with DeepMind since 2018, recently moved from chief operating officer). Wikidata has no employer for her; the match rests on the name, Purdue, and the Wikipedia article for the DeepMind executive."
+ },
+ {
+  "id": "lily-hay-newman",
+  "name": "Lily Hay Newman",
+  "memberships": [],
+  "notes": "Wired author; the entry gives no title. Wikidata Q111385327 ('journalist') names no employer, so it was not used."
+ },
+ {
+  "id": "lin-yang",
+  "name": "Lin Yang",
+  "country": "CN",
+  "memberships": [
+   {
+    "org": "fudan-university",
+    "role": "Researcher, College of Computer Science and Artificial Intelligence",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-swe-deception-bench",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "linch",
+  "name": "Linch",
+  "memberships": [],
+  "notes": "Forum handle (LessWrong / EA Forum author); no real name, title or affiliation in our sources."
+ },
+ {
+  "id": "liron-shapira",
+  "name": "Liron Shapira",
+  "memberships": [],
+  "notes": "Speaker in a Doom Debates episode; the entry gives no title."
+ },
+ {
+  "id": "liz-lloyd",
+  "name": "Liz Lloyd",
+  "aliases": [
+   "Elizabeth Lloyd",
+   "Baroness Lloyd of Effra"
+  ],
+  "wikidata": "Q6660218",
+  "country": "GB",
+  "memberships": [
+   {
+    "org": "uk-government",
+    "role": "Cyber Minister",
+    "source": {
+     "by": "source",
+     "ref": "gov-uk-2026-10-12-britain-steps-up-ai-defences",
+     "on": "2026-10-12"
+    }
+   },
+   {
+    "org": "uk-house-of-lords",
+    "role": "Member of the House of Lords (Baroness Lloyd of Effra)",
+    "from": "2025-10-13",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q6660218",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Life peer, appointed rather than elected, so no party is recorded. Our source (GOV.UK, 2026-10-12) calls her Cyber Minister without naming the department."
+ },
+ {
+  "id": "logan-graham",
+  "name": "Logan Graham",
+  "wikidata": "Q125766681",
+  "memberships": [
+   {
+    "org": "anthropic",
+    "role": "Head of the frontier red team",
+    "source": {
+     "by": "source",
+     "ref": "forbes-2026-10-11-nyc-council-ai-hearing-catastrophic-harm",
+     "on": "2026-10-11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "lori-trahan",
+  "name": "Lori Trahan",
+  "wikidata": "Q56486676",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-house",
+    "role": "Representative for Massachusetts's 3rd district",
+    "party": "us-democratic",
+    "from": "2019-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q56486676",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "lucas-florin",
+  "name": "Lucas Florin",
+  "country": "DE",
+  "memberships": [
+   {
+    "org": "university-of-stuttgart",
+    "role": "Researcher, AI Safety Research Group",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-08-models-hide-their-mistakes",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "luis-wenus",
+  "name": "Luis Wenus",
+  "memberships": [
+   {
+    "org": "nolla-health",
+    "role": "CEO",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "techspot-2026-10-06-utah-ai-prescribes-acne",
+     "on": "2026-10-06"
+    }
+   }
+  ]
+ },
+ {
+  "id": "maddy-varner",
+  "name": "Maddy Varner",
+  "memberships": [],
+  "notes": "Wired author; the entry gives no title. Wikidata Q56709092 (data journalist, The Markup) is probably the same person, who has since moved to WIRED, but nothing in our sources confirms it."
+ },
+ {
+  "id": "mahesh-pasupuleti",
+  "name": "Mahesh Pasupuleti",
+  "memberships": [
+   {
+    "org": "meta-superintelligence-labs",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-reward-hacking-spreads-between-agents",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "maria-cantwell",
+  "name": "Maria Cantwell",
+  "wikidata": "Q22250",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-senate",
+    "role": "Senator for Washington",
+    "party": "us-democratic",
+    "from": "2001-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q22250",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "us-house",
+    "role": "Representative for Washington's 1st district",
+    "party": "us-democratic",
+    "from": "1993-01-03",
+    "to": "1995-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q22250",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "maria-curi",
+  "name": "Maria Curi",
+  "memberships": [],
+  "notes": "Axios author; the entry gives no title."
+ },
+ {
+  "id": "mark-sweney",
+  "name": "Mark Sweney",
+  "memberships": [],
+  "notes": "Guardian author; the entry gives no title."
+ },
+ {
+  "id": "mark-zuckerberg",
+  "name": "Mark Zuckerberg",
+  "wikidata": "Q36215",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "meta",
+    "role": "CEO, chair and co-founder",
+    "leadership": true,
+    "from": "2004-02-04",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q380",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "matt-burgess",
+  "name": "Matt Burgess",
+  "memberships": [],
+  "notes": "Wired author; the entry gives no title. The name has several Wikidata matches; none could be tied to this author."
+ },
+ {
+  "id": "matt-yglesias",
+  "name": "Matt Yglesias",
+  "wikidata": "Q6791456",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "the-argument",
+    "role": "Host (The Argument)",
+    "source": {
+     "by": "source",
+     "ref": "chinatalk-2026-10-12-yglesias-demsas-china-ai-pod",
+     "on": "2026-10-12"
+    }
+   }
+  ],
+  "notes": "Entry: a crossover with 'their show The Argument' (with Jerusalem Demsas)."
+ },
+ {
+  "id": "matthew-botvinick",
+  "name": "Matthew Botvinick",
+  "wikidata": "Q67256247",
+  "memberships": [
+   {
+    "org": "yale-law-school",
+    "role": "Senior fellow",
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-12-ai-safety-democracy-botvinick",
+     "on": "2026-10-12"
+    }
+   },
+   {
+    "org": "anthropic",
+    "role": "Research position (current)",
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-12-ai-safety-democracy-botvinick",
+     "on": "2026-10-12"
+    }
+   },
+   {
+    "org": "google-deepmind",
+    "role": "Researcher",
+    "from": "2016",
+    "ended": true,
+    "source": {
+     "by": "wikidata",
+     "ref": "Q67256247",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "The Guardian bio (2026-10-12): has held research positions in the AI industry, including at Google DeepMind and currently Anthropic, but writes in his Yale role. DeepMind is marked ended on that wording; Wikidata gives the 2016 start and no end."
+ },
+ {
+  "id": "max-read",
+  "name": "Max Read",
+  "memberships": [
+   {
+    "org": "hard-fork",
+    "role": "Guest host",
+    "source": {
+     "by": "source",
+     "ref": "hard-fork-2026-10-09-anthropic-ai-morals",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "melania-poonacha",
+  "name": "Melania Poonacha",
+  "memberships": [],
+  "notes": "Source title: 'Physician' (no organization)."
+ },
+ {
+  "id": "michael-kratsios",
+  "name": "Michael Kratsios",
+  "wikidata": "Q50754818",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-ostp",
+    "role": "Director",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-09-kratsios-superintelligence-accelerate-science",
+     "on": "2026-10-09"
+    }
+   },
+   {
+    "org": "us-white-house",
+    "role": "Assistant to the President",
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-09-kratsios-superintelligence-accelerate-science",
+     "on": "2026-10-09"
+    }
+   }
+  ],
+  "notes": "Source title: 'Director, White House Office of Science and Technology Policy; assistant to President Trump'. Wikidata only has his first-term role (Chief Technology Officer, start 2019-08-02, no end date), not recorded."
+ },
+ {
+  "id": "michael-oriordan",
+  "name": "Michael O'Riordan",
+  "memberships": []
+ },
+ {
+  "id": "michael-patrick-clarkson",
+  "name": "Michael Patrick Clarkson",
+  "memberships": [],
+  "notes": "Source title: 'Writer and director, Delisted' (a film); no organization."
+ },
+ {
+  "id": "mike-isaac",
+  "name": "Mike Isaac",
+  "wikidata": "Q61765343",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "the-new-york-times",
+    "role": "Technology reporter",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q61765343",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "The Wikidata item's English Wikipedia link points to his book 'Super Pumped', not to a biography."
+ },
+ {
+  "id": "mikita-balesni",
+  "name": "Mikita Balesni",
+  "memberships": [
+   {
+    "org": "openai",
+    "role": "Safety researcher",
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "techcrunch-2026-10-08-fired-openai-researchers-dispute",
+     "on": "2026-10-08"
+    }
+   }
+  ],
+  "notes": "Fired by OpenAI according to our sources (disputes the stated reason). No Wikidata item found."
+ },
+ {
+  "id": "mitchell-labiak",
+  "name": "Mitchell Labiak",
+  "country": "GB",
+  "memberships": [
+   {
+    "org": "bbc",
+    "role": "Business reporter",
+    "source": {
+     "by": "source",
+     "ref": "bbc-2026-10-12-ai-less-regulated-than-milk",
+     "on": "2026-10-12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "moreno-carullo",
+  "name": "Moreno Carullo",
+  "memberships": [
+   {
+    "org": "nozomi-networks",
+    "role": "Co-Founder and CTO",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "anthropic-2026-10-08-cyber-mission",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "morgan-dwyer",
+  "name": "Morgan Dwyer",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "openai",
+    "role": "Head of policy development and operations",
+    "source": {
+     "by": "source",
+     "ref": "forbes-2026-10-11-nyc-council-ai-hearing-catastrophic-harm",
+     "on": "2026-10-11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "mustafa-suleyman",
+  "name": "Mustafa Suleyman",
+  "wikidata": "Q16847797",
+  "memberships": [
+   {
+    "org": "microsoft",
+    "role": "CEO, Microsoft AI",
+    "leadership": true,
+    "from": "2024-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q16847797",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "inflection-ai",
+    "role": "CEO",
+    "leadership": true,
+    "ended": true,
+    "source": {
+     "by": "wikidata",
+     "ref": "Q16847797",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "google-deepmind",
+    "role": "Co-founder",
+    "leadership": true,
+    "from": "2010",
+    "ended": true,
+    "source": {
+     "by": "wikidata",
+     "ref": "Q16847797",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Microsoft start date is Wikidata's. The Inflection AI and DeepMind roles are Wikidata's (role qualifiers, no dates); marked ended because he now leads Microsoft AI (Wikipedia: 'co-founder and former head of applied AI at DeepMind')."
+ },
+ {
+  "id": "nancy-pelosi",
+  "name": "Nancy Pelosi",
+  "wikidata": "Q170581",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-house",
+    "role": "Representative for California",
+    "party": "us-democratic",
+    "from": "1987-06-02",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q170581",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "us-house",
+    "role": "Speaker of the House",
+    "leadership": true,
+    "party": "us-democratic",
+    "from": "2019-01-03",
+    "to": "2023-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q170581",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "us-house",
+    "role": "Speaker of the House",
+    "leadership": true,
+    "party": "us-democratic",
+    "from": "2007-01-04",
+    "to": "2011-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q170581",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "nate-soares",
+  "name": "Nate Soares",
+  "wikidata": "Q136721135",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "miri",
+    "role": "President",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "odd-lots-2026-10-12-soares-ai-could-kill-us-all",
+     "on": "2026-10-12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "nathan-labenz",
+  "name": "Nathan Labenz",
+  "memberships": [],
+  "notes": "Host of The Cognitive Revolution (entry cognitive-revolution-2026-10-08); no title in our sources. Wikidata Q125172331 is a bare researcher record and was not used."
+ },
+ {
+  "id": "ned-lamont",
+  "name": "Ned Lamont",
+  "wikidata": "Q1973878",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "state-of-connecticut",
+    "role": "Governor of Connecticut",
+    "leadership": true,
+    "party": "us-democratic",
+    "from": "2019-01-09",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q1973878",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "nikesh-arora",
+  "name": "Nikesh Arora",
+  "wikidata": "Q7034852",
+  "memberships": [
+   {
+    "org": "palo-alto-networks",
+    "role": "CEO",
+    "leadership": true,
+    "from": "2018-06-11",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q7128508",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "nilay-patel",
+  "name": "Nilay Patel",
+  "wikidata": "Q7036921",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "the-verge",
+    "role": "Editor-in-chief",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q7036921",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Host of Decoder (entry decoder-2026-10-05-adam-schiff-ai-regulation, whose notes say the transcript is on The Verge); no title in our sources, role is Wikidata's."
+ },
+ {
+  "id": "niplav",
+  "name": "niplav",
+  "memberships": [],
+  "notes": "Pseudonymous forum author (LessWrong handle); no real name, title or affiliation in our sources."
+ },
+ {
+  "id": "noam-shazeer",
+  "name": "Noam Shazeer",
+  "wikidata": "Q30251943",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "google",
+    "role": "Employee",
+    "from": "2000",
+    "to": "2021",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q30251943",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "character-ai",
+    "role": "Employee",
+    "from": "2021",
+    "to": "2024",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q30251943",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "google",
+    "role": "Employee",
+    "from": "2024",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q30251943",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Mentioned without a title in a ChinaTalk description. Memberships are Wikidata's employer statements (no roles given; affiliation listed as Google Brain and Google DeepMind)."
+ },
+ {
+  "id": "orthonormal",
+  "name": "orthonormal",
+  "memberships": [],
+  "notes": "Pseudonymous forum author (Alignment Forum handle); the post gives no real name or affiliation."
+ },
+ {
+  "id": "oskar-j-hollinsworth",
+  "name": "Oskar J. Hollinsworth",
+  "memberships": [
+   {
+    "org": "far-ai",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-08-probes-detect-sabotage-deception",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "owain-evans",
+  "name": "Owain Evans",
+  "wikidata": "Q126287505",
+  "memberships": [
+   {
+    "org": "truthful-ai",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-07-subliminal-learning-transfers-backdoors",
+     "on": "2026-10-07"
+    }
+   }
+  ]
+ },
+ {
+  "id": "paul-christiano",
+  "name": "Paul Christiano",
+  "wikidata": "Q64769299",
+  "country": "US",
+  "memberships": [],
+  "notes": "Mentioned without a title in the OpenAI-insider interview (David Robinson says Christiano 'joined our board'; unchecked in the entry). Wikidata lists OpenAI as employer without dates, so no membership is recorded; Wikipedia: founder and executive director of the Alignment Research Center and a member of the OpenAI Foundation's board."
+ },
+ {
+  "id": "paul-tudor-jones",
+  "name": "Paul Tudor Jones",
+  "wikidata": "Q7154092",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "tudor-investment-corporation",
+    "role": "Founder and CIO",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-13-tudor-jones-2027-outlook",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "robin-hood-foundation",
+    "role": "Founder and board member",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-13-tudor-jones-2027-outlook",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "pegah-ghahremani",
+  "name": "Pegah Ghahremani",
+  "memberships": [
+   {
+    "org": "meta-superintelligence-labs",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-reward-hacking-spreads-between-agents",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "rachel-bujalski",
+  "name": "Rachel Bujalski",
+  "memberships": [],
+  "notes": "Listed from a feed byline on a New York Times article; her role is not stated in the entry."
+ },
+ {
+  "id": "rachel-karten",
+  "name": "Rachel Karten",
+  "memberships": [
+   {
+    "org": "link-in-bio",
+    "role": "Author",
+    "source": {
+     "by": "source",
+     "ref": "bloomberg-tech-2026-10-06-odd-lots-ai-extinction-debate",
+     "on": "2026-10-06"
+    }
+   }
+  ]
+ },
+ {
+  "id": "raja-krishnamoorthi",
+  "name": "Raja Krishnamoorthi",
+  "wikidata": "Q7285471",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-house",
+    "role": "Representative for Illinois's 8th district",
+    "party": "us-democratic",
+    "from": "2017-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q7285471",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "raymond-douglas",
+  "name": "Raymond Douglas",
+  "memberships": [
+   {
+    "org": "acs-research",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-models-provably-hide-capabilities",
+     "on": "2026-10-09"
+    }
+   }
+  ],
+  "notes": "Wikidata Q51353730 (a researcher with the same name, no field) was not used."
+ },
+ {
+  "id": "rebecca-bellan",
+  "name": "Rebecca Bellan",
+  "wikidata": "Q137053000",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "techcrunch",
+    "role": "Senior Reporter",
+    "source": {
+     "by": "source",
+     "ref": "techcrunch-2026-10-08-fired-openai-researchers-dispute",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "reza-aghajani",
+  "name": "Reza Aghajani",
+  "memberships": [
+   {
+    "org": "meta-superintelligence-labs",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-reward-hacking-spreads-between-agents",
+     "on": "2026-10-09"
+    }
+   }
+  ],
+  "notes": "Wikidata has two Reza Aghajani items (a Brown PhD, a UC San Diego researcher); neither could be tied to this author."
+ },
+ {
+  "id": "richard-hermer",
+  "name": "Richard Hermer",
+  "aliases": [
+   "Lord Hermer",
+   "Baron Hermer"
+  ],
+  "wikidata": "Q105188058",
+  "country": "GB",
+  "memberships": [
+   {
+    "org": "uk-government",
+    "role": "Attorney General for England and Wales",
+    "leadership": true,
+    "from": "2024-07-05",
+    "to": "2026-07-20",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q105188058",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "uk-house-of-lords",
+    "role": "Life peer (Baron Hermer)",
+    "party": "uk-labour",
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-12-hermer-ai-regulation-fridge",
+     "on": "2026-10-12"
+    }
+   }
+  ],
+  "notes": "Appointed peer, not elected; party Labour as in the source ('Labour life peer') and Wikidata. Left the Attorney General post in the July 2026 change of prime minister (Wikidata end 2026-07-20; press: replaced by Ellie Reeves)."
+ },
+ {
+  "id": "ridley-scott",
+  "name": "Ridley Scott",
+  "wikidata": "Q56005",
+  "country": "GB",
+  "memberships": [],
+  "notes": "English film director, mentioned in a Guardian article on British directors. No organization."
+ },
+ {
+  "id": "rob-thubron",
+  "name": "Rob Thubron",
+  "wikidata": "Q104054469",
+  "country": "GB",
+  "memberships": [
+   {
+    "org": "techspot",
+    "role": "Journalist",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q104054469",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Author of the TechSpot article in entry techspot-2026-10-06-utah-ai-prescribes-acne; Wikidata: British journalist and editor at TechSpot."
+ },
+ {
+  "id": "rob-wiblin",
+  "name": "Rob Wiblin",
+  "memberships": [
+   {
+    "org": "80000-hours",
+    "role": "Host, 80,000 Hours Podcast",
+    "source": {
+     "by": "source",
+     "ref": "80000-hours-2026-10-09-ai-explained-openai-security",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "robbie-hiser",
+  "name": "Robbie Hiser",
+  "memberships": [],
+  "notes": "Source title: 'Music producer' (no organization)."
+ },
+ {
+  "id": "robert-reich",
+  "name": "Robert Reich",
+  "wikidata": "Q718828",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-department-of-labor",
+    "role": "Secretary of Labor",
+    "leadership": true,
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "guardian-2026-10-09-reich-ai-liability-lawsuits",
+     "on": "2026-10-09"
+    }
+   }
+  ],
+  "notes": "Source title: 'Former US secretary of labor; professor of public policy emeritus' (no university named; Wikidata lists Harvard, Brandeis and UC Berkeley without dates, so none is recorded). Wikipedia: Secretary of Labor 1993-1997."
+ },
+ {
+  "id": "rohan-subramani",
+  "name": "Rohan Subramani",
+  "memberships": []
+ },
+ {
+  "id": "romaine-bostick",
+  "name": "Romaine Bostick",
+  "wikidata": "Q117249870",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "bloomberg",
+    "role": "Anchor",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q117249870",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Interviewer in a Bloomberg Tech clip (entry bloomberg-tech-2026-10-08); Wikidata description: Anchor, Bloomberg Markets."
+ },
+ {
+  "id": "ronald-j-bodkin",
+  "name": "Ronald J. Bodkin",
+  "memberships": [],
+  "notes": "The entry lists three affiliations (Independent, Institute for Law and AI, Johns Hopkins University) without saying which author holds which; none recorded."
+ },
+ {
+  "id": "ronald-reagan",
+  "name": "Ronald Reagan",
+  "wikidata": "Q9960",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-white-house",
+    "role": "President of the United States",
+    "leadership": true,
+    "party": "us-republican",
+    "from": "1981-01-20",
+    "to": "1989-01-20",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q9960",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Historical figure, mentioned in a Guardian column on 'Reagan-era' promises."
+ },
+ {
+  "id": "ruben-gallego",
+  "name": "Ruben Gallego",
+  "wikidata": "Q16218474",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-senate",
+    "role": "Senator for Arizona",
+    "party": "us-democratic",
+    "from": "2025-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q16218474",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "us-house",
+    "role": "Representative for Arizona",
+    "party": "us-democratic",
+    "from": "2015-01-06",
+    "to": "2025-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q16218474",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "rumman-chowdhury",
+  "name": "Rumman Chowdhury",
+  "wikidata": "Q41241224",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "humane-intelligence",
+    "role": "Founder and CEO",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-09-chowdhury-regulation-could-speed-adoption",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sam-altman",
+  "name": "Sam Altman",
+  "wikidata": "Q7407093",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "openai",
+    "role": "CEO",
+    "leadership": true,
+    "from": "2019-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q21708200",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "openai",
+    "role": "Co-founder",
+    "leadership": true,
+    "from": "2015-12",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q21708200",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Source titles: 'CEO, OpenAI' and 'OpenAI'. Wikidata shows him removed as CEO 2023-11-17 and reinstated 2023-11-22; recorded as one continuous membership."
+ },
+ {
+  "id": "sam-rubin",
+  "name": "Sam Rubin",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "palo-alto-networks",
+    "role": "Senior Vice President, Unit 42",
+    "source": {
+     "by": "source",
+     "ref": "anthropic-2026-10-08-cyber-mission",
+     "on": "2026-10-08"
+    }
+   }
+  ],
+  "notes": "Wikidata Q7408096 (Sam Rubin, entertainment reporter at KTLA, 1960-2024) is a different person."
+ },
+ {
+  "id": "sara-jacobs",
+  "name": "Sara Jacobs",
+  "wikidata": "Q50825637",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-house",
+    "role": "Representative for California's 51st district (53rd until 2023)",
+    "party": "us-democratic",
+    "from": "2021-01-03",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q50825637",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sarah-hastings-woodhouse",
+  "name": "Sarah Hastings-Woodhouse",
+  "memberships": [
+   {
+    "org": "uk-ai-security-institute",
+    "role": "Communications officer",
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "doom-debates-2026-10-07-hastings-woodhouse-ai-weird",
+     "on": "2026-10-07"
+    }
+   }
+  ],
+  "notes": "Source titles: 'AI safety writer and researcher'; the entry summary calls her a former UK AI Security Institute communications officer."
+ },
+ {
+  "id": "satya-nadella",
+  "name": "Satya Nadella",
+  "wikidata": "Q7426870",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "microsoft",
+    "role": "CEO",
+    "leadership": true,
+    "from": "2014-02-04",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q7426870",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "sayash-kapoor",
+  "name": "Sayash Kapoor",
+  "memberships": [],
+  "notes": "Co-author with Arvind Narayanan of the essay 'AI as Normal Technology' (Ezra Klein entries). Wikidata Q133824454 (AI researcher) is a plausible match but names no employer, so it was not used."
+ },
+ {
+  "id": "scott-kupor",
+  "name": "Scott Kupor",
+  "wikidata": "Q111711045",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "super-intelligence-force",
+    "role": "Vice chair",
+    "source": {
+     "by": "source",
+     "ref": "fox-news-2026-10-11-kupor-protect-americans-win-ai-race",
+     "on": "2026-10-11"
+    }
+   },
+   {
+    "org": "us-opm",
+    "role": "Director",
+    "leadership": true,
+    "from": "2025",
+    "source": {
+     "by": "agent",
+     "ref": "https://en.wikipedia.org/wiki/Scott_Kupor",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "andreessen-horowitz",
+    "role": "Partner",
+    "from": "2009",
+    "ended": true,
+    "source": {
+     "by": "wikidata",
+     "ref": "Q111711045",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Wikidata still describes him as an Andreessen Horowitz partner (employer start 2009, no end). OPM's own release (opm.gov, 'ICYMI: OPM Director Kupor discusses American leadership in super intelligence on Fox Business') names him OPM Director and 'Vice Chair of the White House Super Intelligence Task Force', which settles that this is the same person. The OPM role and its start year come from the Wikipedia lead (agent-checked); the end of the a16z membership is inferred from it."
+ },
+ {
+  "id": "sean-okane",
+  "name": "Sean O'Kane",
+  "memberships": []
+ },
+ {
+  "id": "sebastian-prasanna",
+  "name": "Sebastian Prasanna",
+  "memberships": [],
+  "notes": "Author of a post on Redwood Research's blog (entry redwood-2026-10-09); the entry gives no title and does not say he works there, so no membership is recorded."
+ },
+ {
+  "id": "shakeel-hashim",
+  "name": "Shakeel Hashim",
+  "memberships": [],
+  "notes": "Lead author of the Transformer briefing (entry transformer-2026-10-09); the entry gives no title."
+ },
+ {
+  "id": "shane-cahill",
+  "name": "Shane Cahill",
+  "memberships": [
+   {
+    "org": "meta",
+    "role": "Director for privacy and AI legislation",
+    "source": {
+     "by": "source",
+     "ref": "forbes-2026-10-11-nyc-council-ai-hearing-catastrophic-harm",
+     "on": "2026-10-11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "shane-mac",
+  "name": "Shane Mac",
+  "memberships": [
+   {
+    "org": "xmtp-labs",
+    "role": "Co-founder and CEO",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-12-xmtp-mac-ai-agents-oversharing",
+     "on": "2026-10-12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "shawna-miller",
+  "name": "Shawna Miller",
+  "memberships": [],
+  "notes": "Source title: 'Winemaker' (no organization)."
+ },
+ {
+  "id": "sheera-frenkel",
+  "name": "Sheera Frenkel",
+  "memberships": [
+   {
+    "org": "the-new-york-times",
+    "role": "Journalist",
+    "source": {
+     "by": "source",
+     "ref": "nyt-2026-10-09-why-ai-agents-go-rogue",
+     "on": "2026-10-09"
+    }
+   }
+  ],
+  "notes": "Wikidata Q107561022 ('American journalist and writer') names no employer, so it was not used."
+ },
+ {
+  "id": "shi-min-hu",
+  "name": "Shi-Min Hu",
+  "wikidata": "Q88461269",
+  "country": "CN",
+  "memberships": [
+   {
+    "org": "tsinghua-university",
+    "role": "Researcher, Department of Computer Science and Technology",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-swe-deception-bench",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "siddhi-nayak",
+  "name": "Siddhi Nayak",
+  "memberships": [],
+  "notes": "Speaker in a Bloomberg Tech clip on India's IT workforce; the entry notes that her role is not stated."
+ },
+ {
+  "id": "simon-mendelsohn",
+  "name": "Simon Mendelsohn",
+  "memberships": []
+ },
+ {
+  "id": "sri-jegarajah",
+  "name": "Sri Jegarajah",
+  "memberships": [
+   {
+    "org": "cnbc",
+    "role": "Journalist",
+    "source": {
+     "by": "source",
+     "ref": "cnbc-2026-10-13-imf-erceg-ai-debt-risks",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Entry summary: \"CNBC's Sri Jegarajah\"; her role is not stated."
+ },
+ {
+  "id": "steven-bartlett",
+  "name": "Steven Bartlett",
+  "wikidata": "Q108914793",
+  "country": "GB",
+  "memberships": [
+   {
+    "org": "diary-of-a-ceo",
+    "role": "Host",
+    "source": {
+     "by": "source",
+     "ref": "doac-2026-10-08-ladish-agents-hidden-risk",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "stuart-russell",
+  "name": "Stuart Russell",
+  "aliases": [
+   "Stuart J. Russell"
+  ],
+  "wikidata": "Q3656334",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "university-of-california-berkeley",
+    "role": "Professor",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q3656334",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Source title: 'Professor, author of an AI textbook' (no university named); Berkeley is Wikidata's employer for this item."
+ },
+ {
+  "id": "sumeet-ramesh-motwani",
+  "name": "Sumeet Ramesh Motwani",
+  "country": "GB",
+  "memberships": [
+   {
+    "org": "university-of-oxford",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-models-provably-hide-capabilities",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "swyx",
+  "name": "swyx",
+  "memberships": [],
+  "notes": "Known by the handle 'swyx'; the entry gives no real name or affiliation. Wikidata Q113480887 (a podcast-guest stub with the alias swyx) was not used."
+ },
+ {
+  "id": "sydney-von-arx",
+  "name": "Sydney Von Arx",
+  "memberships": [
+   {
+    "org": "nightingale",
+    "role": "Founder",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "techcrunch-2026-10-09-anthropic-evals-off-internet",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "taylor-lorenz",
+  "name": "Taylor Lorenz",
+  "wikidata": "Q89135464",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "user-mag",
+    "role": "Founder",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "bloomberg-tech-2026-10-06-odd-lots-ai-extinction-debate",
+     "on": "2026-10-06"
+    }
+   }
+  ]
+ },
+ {
+  "id": "terrence-obrien",
+  "name": "Terrence O'Brien",
+  "memberships": [
+   {
+    "org": "the-verge",
+    "role": "Weekend Editor",
+    "source": {
+     "by": "source",
+     "ref": "verge-2026-10-10-nadella-assume-models-compromised",
+     "on": "2026-10-10"
+    }
+   }
+  ],
+  "notes": "Wikidata Q136558442 (journalist and editor, employer Engadget) is probably the same person, but it names no Verge role, so it was not used."
+ },
+ {
+  "id": "theresa-loconsolo",
+  "name": "Theresa Loconsolo",
+  "memberships": []
+ },
+ {
+  "id": "thilo-hagendorff",
+  "name": "Thilo Hagendorff",
+  "wikidata": "Q113812257",
+  "country": "DE",
+  "memberships": [
+   {
+    "org": "university-of-stuttgart",
+    "role": "Researcher, AI Safety Research Group",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-08-models-hide-their-mistakes",
+     "on": "2026-10-08"
+    }
+   }
+  ],
+  "notes": "The Wikidata item has an English Wikipedia article (research group leader at the University of Stuttgart, AI safety)."
+ },
+ {
+  "id": "thomas-friedman",
+  "name": "Thomas Friedman",
+  "aliases": [
+   "Thomas L. Friedman"
+  ],
+  "wikidata": "Q310950",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "the-new-york-times",
+    "role": "Columnist",
+    "source": {
+     "by": "source",
+     "ref": "c-span-2026-10-08-friedman-collaborate-china-ai",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "thomas-sohmers",
+  "name": "Thomas Sohmers",
+  "memberships": [
+   {
+    "org": "positron",
+    "role": "CTO",
+    "source": {
+     "by": "source",
+     "ref": "cognitive-revolution-2026-10-08-the-curve-notes-tokens-salaries",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "tigist-diriba",
+  "name": "Tigist Diriba",
+  "memberships": [
+   {
+    "org": "far-ai",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-08-probes-detect-sabotage-deception",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "tim-fernholz",
+  "name": "Tim Fernholz",
+  "memberships": [
+   {
+    "org": "techcrunch",
+    "role": "Senior Reporter",
+    "source": {
+     "by": "source",
+     "ref": "techcrunch-2026-10-09-anthropic-evals-off-internet",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "tom-dupre-la-tour",
+  "name": "Tom Dupre la Tour",
+  "aliases": [
+   "Tom Dupré la Tour"
+  ],
+  "wikidata": "Q59487883",
+  "memberships": [
+   {
+    "org": "openai",
+    "role": "Researcher",
+    "source": {
+     "by": "agent",
+     "ref": "https://www.github.com/TomDLT",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Co-author of a post on OpenAI's alignment research blog (entry openai-alignment-blog-2026-10-07); the entry gives no title. Wikidata Q59487883 is a stub, matched through its GitHub username (tomdlt); that GitHub profile reads 'Researcher at @openai', which is the source of the membership (checked by the agent, not stated in our sources)."
+ },
+ {
+  "id": "tomek-korbak",
+  "name": "Tomek Korbak",
+  "memberships": [
+   {
+    "org": "openai",
+    "role": "Safety researcher",
+    "ended": true,
+    "source": {
+     "by": "source",
+     "ref": "techcrunch-2026-10-08-fired-openai-researchers-dispute",
+     "on": "2026-10-08"
+    }
+   }
+  ],
+  "notes": "Fired by OpenAI according to our sources (disputes the stated reason). No Wikidata item found."
+ },
+ {
+  "id": "tony-baker",
+  "name": "Tony Baker",
+  "memberships": [
+   {
+    "org": "rockwell-automation",
+    "role": "VP, Digital Trust & Chief Product Security Officer",
+    "source": {
+     "by": "source",
+     "ref": "anthropic-2026-10-08-cyber-mission",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "torsten-slok",
+  "name": "Torsten Slok",
+  "wikidata": "Q41799671",
+  "memberships": [
+   {
+    "org": "apollo-global-management",
+    "role": "Chief Economist",
+    "source": {
+     "by": "source",
+     "ref": "bloomberg-television-2026-10-12-slok-housing-ai-bank-run",
+     "on": "2026-10-12"
+    }
+   }
+  ],
+  "notes": "Wikidata gives only 'economist'; the match rests on the unique name."
+ },
+ {
+  "id": "tracy-alloway",
+  "name": "Tracy Alloway",
+  "wikidata": "Q106804600",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "bloomberg",
+    "role": "Co-host, Odd Lots",
+    "source": {
+     "by": "source",
+     "ref": "odd-lots-2026-10-12-soares-ai-could-kill-us-all",
+     "on": "2026-10-12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ulysse-schaller",
+  "name": "Ulysse Schaller",
+  "country": "DE",
+  "memberships": [
+   {
+    "org": "university-of-stuttgart",
+    "role": "Researcher, AI Safety Research Group",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-08-models-hide-their-mistakes",
+     "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "veronica-irwin",
+  "name": "Veronica Irwin",
+  "memberships": [],
+  "notes": "Co-author of the Transformer briefing (entry transformer-2026-10-09); the entry gives no title."
+ },
+ {
+  "id": "victoria-nockles",
+  "name": "Victoria Nockles",
+  "memberships": []
+ },
+ {
+  "id": "vladimir-nesov",
+  "name": "Vladimir Nesov",
+  "memberships": [],
+  "notes": "The entry derives the name from the username Vladimir_Nesov (comment on an Alignment Forum post); no title or affiliation. Treated as a forum handle."
+ },
+ {
+  "id": "walter-isaacson",
+  "name": "Walter Isaacson",
+  "wikidata": "Q681012",
+  "country": "US",
+  "memberships": [],
+  "notes": "Source title: 'Author of The Innovators' (no organization). Wikipedia: professor at Tulane University and interviewer for Amanpour & Company; Wikidata lists no dated employer."
+ },
+ {
+  "id": "xiaojun-xu",
+  "name": "Xiaojun Xu",
+  "memberships": [],
+  "notes": "Co-author of a post on OpenAI's alignment research blog (entry openai-alignment-blog-2026-10-07); the entry gives no title and does not say the authors are OpenAI staff, so no membership is recorded. The name has many Wikidata matches; none could be tied to this author."
+ },
+ {
+  "id": "xilin-wang",
+  "name": "Xilin Wang",
+  "memberships": []
+ },
+ {
+  "id": "xing-zhang",
+  "name": "Xing Zhang",
+  "memberships": []
+ },
+ {
+  "id": "xiting-liu",
+  "name": "Xiting Liu",
+  "country": "CN",
+  "memberships": [
+   {
+    "org": "tsinghua-university",
+    "role": "Researcher, Department of Computer Science and Technology",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-swe-deception-bench",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "yanwei-cui",
+  "name": "Yanwei Cui",
+  "memberships": []
+ },
+ {
+  "id": "yi-zhang",
+  "name": "Yi Zhang",
+  "memberships": []
+ },
+ {
+  "id": "yitong-zhang",
+  "name": "Yitong Zhang",
+  "country": "CN",
+  "memberships": [
+   {
+    "org": "tsinghua-university",
+    "role": "Researcher, College of AI",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-swe-deception-bench",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "yoshua-bengio",
+  "name": "Yoshua Bengio",
+  "wikidata": "Q3572699",
+  "country": "CA",
+  "memberships": [
+   {
+    "org": "lawzero",
+    "role": "Co-president",
+    "leadership": true,
+    "source": {
+     "by": "source",
+     "ref": "transformer-2026-10-08-bengio-leave-frontier-labs",
+     "on": "2026-10-08"
+    }
+   },
+   {
+    "org": "universite-de-montreal",
+    "role": "Professor",
+    "from": "1993",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q3572699",
+     "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "yuchen-zhu",
+  "name": "Yuchen Zhu",
+  "memberships": []
+ },
+ {
+  "id": "yuepeng-hu",
+  "name": "Yuepeng Hu",
+  "memberships": [
+   {
+    "org": "meta-superintelligence-labs",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-reward-hacking-spreads-between-agents",
+     "on": "2026-10-09"
+    }
+   },
+   {
+    "org": "duke-university",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-09-reward-hacking-spreads-between-agents",
+     "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "zak-stein",
+  "name": "Zak Stein",
+  "memberships": [],
+  "notes": "Source title: 'Researcher focused on child development, education, and existential risk' (no organization; the video title says Harvard psychologist, the description does not)."
+ },
+ {
+  "id": "zeyi-yang",
+  "name": "Zeyi Yang",
+  "memberships": [],
+  "notes": "Author of a New York Times technology-feed article; the entry gives no title. Wikidata Q141100403 ('New York-based, China-born journalist') names no employer, so it was not used."
+ },
+ {
+  "id": "zohran-mamdani",
+  "name": "Zohran Mamdani",
+  "wikidata": "Q28034971",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "new-york-city",
+    "role": "Mayor of New York City",
+    "leadership": true,
+    "party": "us-democratic",
+    "from": "2026-01-01",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q28034971",
+     "on": "2026-10-13"
+    }
+   },
+   {
+    "org": "new-york-state-assembly",
+    "role": "Member of the New York State Assembly (36th district)",
+    "party": "us-democratic",
+    "from": "2021-01-01",
+    "to": "2025-12-31",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q28034971",
+     "on": "2026-10-13"
+    }
+   }
+  ],
+  "notes": "Wikidata lists Democratic Party, Democratic Socialists of America and Working Families Party; recorded as Democratic."
+ },
+ {
+  "id": "zongming-qiao",
+  "name": "Zongming Qiao",
+  "country": "CN",
+  "memberships": [
+   {
+    "org": "xiaomi",
+    "role": "Researcher (Xiaomi LLM-Core Team)",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2026-10-08-mimo-v2-6-scaling-rl-self-improvement",
+     "on": "2026-10-08"
+    }
+   }
+  ],
+  "notes": "Entry notes: the technical report's authors are the Xiaomi LLM-Core Team plus 147 others."
+ },
+ {
+  "id": "zvi-mowshowitz",
+  "name": "Zvi Mowshowitz",
+  "wikidata": "Q8075542",
+  "country": "US",
+  "memberships": [],
+  "notes": "Author of the Don't Worry About the Vase blog. The Wikidata item calls him a Magic: The Gathering player; Wikipedia confirms the same person now writes mainly about AI. No organization in our sources.",
+  "occupation": "journalist"
+ }
+]
