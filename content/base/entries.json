@@ -1,5 +1,339 @@
 [
  {
+  "id": "8908853e6b6f",
+  "slug": "cnbc-2026-10-13-imf-erceg-ai-debt-risks",
+  "kind": "video",
+  "title": "IMF Deputy Director warns AI debt boom could trigger a global financial correction",
+  "url": "https://www.youtube.com/watch?v=eU-QxffAEpE",
+  "outlet": "CNBC Television",
+  "published": "2026-10-13",
+  "minutes": 1,
+  "views": 84,
+  "also": [],
+  "summary": "CNBC Television's description says IMF deputy director Christopher Erceg spoke to CNBC's Sri Jegarajah about risks from AI-related debt, rising leverage and financial spillovers, on the sidelines of the IMF-World Bank Annual Meetings in Bangkok. The title says an AI debt boom could trigger a global financial correction.",
+  "change": {
+   "kind": "argument",
+   "note": "An IMF deputy director flags AI-related debt and rising leverage as a financial stability risk; the description gives no figures."
+  },
+  "lenses": {
+   "public": "An IMF official is described as warning that borrowing tied to the AI boom could spill over into wider financial trouble.",
+   "policy": "Financial stability officials are naming AI-related debt and leverage as a risk, at the IMF-World Bank Annual Meetings."
+  },
+  "topics": [
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "christopher-erceg",
+    "role": "speaker",
+    "title": "Deputy director, IMF"
+   },
+   {
+    "id": "sri-jegarajah",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "imf"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-13",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: read from the triage title, author and description only; nothing fetched, no transcript, no quotes. A person should watch the video before this is published. Only 84 seconds; the description gives no figures, so the size of the AI-related debt, the scale of any correction and the IMF's own position are not known. Sri Jegarajah is named as the person Erceg speaks to; whether Jegarajah is on camera is not stated. An existing entry, guardian-2026-10-13-imf-ai-share-crash-risk, looks related; a person may want to link them. Video views were 84 when listed."
+ },
+ {
+  "id": "340c27089b68",
+  "slug": "cnn-2026-10-13-data-center-backlash-small-towns",
+  "kind": "video",
+  "title": "‘Just start shooting’: How data center backlash is rattling American towns",
+  "url": "https://www.youtube.com/watch?v=7RHWHcBJkyg",
+  "outlet": "CNN",
+  "published": "2026-10-13",
+  "minutes": 6,
+  "views": 70932,
+  "also": [
+   {
+    "outlet": "CNN",
+    "title": "Arrested over online data center threats",
+    "url": "https://www.youtube.com/watch?v=JodWt4PN0U0"
+   },
+   {
+    "outlet": "CNN",
+    "title": "Chaos breaks out over AI data centers in Memphis",
+    "url": "https://www.youtube.com/watch?v=KsLKNkfd9H8"
+   }
+  ],
+  "summary": "According to CNN's description, a CNN review of more than 100 police incident reports and recordings shows how anger at AI data centers is unsettling small towns and suburban communities across the US. The description does not list specific incidents or findings.",
+  "change": {
+   "kind": "evidence",
+   "note": "CNN says its review of more than 100 police reports and recordings documents local turmoil over AI data centers."
+  },
+  "lenses": {
+   "public": "CNN says opposition to AI data centers has reached the point of police incident reports in ordinary towns and suburbs.",
+   "policy": "Local governments are where data center siting gets decided; a related CNN clip describes a Memphis council postponing a vote on a moratorium.",
+   "ideas": "Raises how communities can object to AI infrastructure built near homes, and where protest ends and threats begin."
+  },
+  "topics": [
+   "everyday-life",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "kyung-lah",
+    "role": "mentioned",
+    "title": "Senior Investigative Correspondent, CNN"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-13",
+  "via": {
+   "source": "yt-cnn",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: read from the triage title, author and description only; nothing fetched, no transcript, no quotes. A person should watch the video before this is published. The title carries a phrase in quotation marks; the description does not say who said it or in what context. Kyung Lah is named only in the description of the related clip Arrested over online data center threats, as the correspondent whose full story is on cnn.com; whether that story is the one in this video is not stated. The related clip titles are CNN's; what the arrests were for is not in the description."
+ },
+ {
+  "id": "c0b3773e2b36",
+  "slug": "controlai-2026-10-13-sobel-ai-no-regulation",
+  "kind": "video",
+  "title": "Alex Sobel MP: \"AI Has No Regulation\"",
+  "url": "https://www.youtube.com/watch?v=J_mTe90d4Wc",
+  "outlet": "ControlAI",
+  "published": "2026-10-13",
+  "minutes": 2,
+  "also": [],
+  "summary": "ControlAI's own channel posted a clip of Alex Sobel MP. According to ControlAI's description, Sobel notes that areas posing a danger to life, such as nuclear power, landmines and pharmaceuticals, are regulated. ControlAI says this was the evening before Sobel introduced ControlAI's bill to ban superintelligent AI to Parliament.",
+  "change": {
+   "kind": "argument",
+   "note": "ControlAI's clip contrasts regulated danger-to-life areas with AI; ControlAI says the MP then introduced its superintelligence-ban bill."
+  },
+  "lenses": {
+   "public": "An MP argues, per the title and description, that AI faces less regulation than other areas dangerous to life.",
+   "policy": "ControlAI says its bill to ban superintelligent AI was introduced to Parliament; the parliamentary record would show the bill's status and wording."
+  },
+  "topics": [
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "alex-sobel",
+    "role": "speaker",
+    "title": "MP"
+   }
+  ],
+  "orgs": [
+   "controlai"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-13",
+  "via": {
+   "source": "yt-controlai",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: read from the triage title, author and description only; nothing fetched, no transcript, no quotes. A person should watch the video before this is published. ControlAI is a party to this story: it is the channel owner and calls the bill its own, so the description is advocacy, not neutral reporting. Which Parliament, the date the bill was introduced, its title and whether it has any sponsors or a scheduled debate are not in the description; verify against the parliamentary record. The description contains a spoken remark in quotation marks, which was not copied here. The title also puts a phrase in quotation marks. Views were 0 when listed, so views are left out."
+ },
+ {
+  "id": "99d02959f89d",
+  "slug": "fli-2026-10-13-lovely-race-to-replace-us",
+  "kind": "podcast",
+  "title": "The Trillion-Dollar AI Race to Replace Us (with Garrison Lovely)",
+  "url": "https://www.youtube.com/watch?v=NdIrGMpWOZw",
+  "outlet": "Future of Life Institute",
+  "published": "2026-10-13",
+  "minutes": 80,
+  "views": 44,
+  "also": [
+   {
+    "outlet": "Future of Life Institute Podcast",
+    "title": "The Trillion-Dollar AI Race to Replace Us (with Garrison Lovely)",
+    "url": "https://share.transistor.fm/s/7c491dc9"
+   },
+   {
+    "outlet": "Future of Life Institute",
+    "title": "Why the AI Industry Aims to Replace Human Labor",
+    "url": "https://www.youtube.com/watch?v=IVBtdXQ-rFk"
+   },
+   {
+    "outlet": "Future of Life Institute",
+    "title": "What Deep Learning's Maturation Reveals About Future AI Progress",
+    "url": "https://www.youtube.com/watch?v=NQQdfBQ1LvY"
+   },
+   {
+    "outlet": "Future of Life Institute",
+    "title": "How the Nuclear Freeze Movement Changed Cold War History",
+    "url": "https://www.youtube.com/watch?v=QCbaMZszK4A"
+   }
+  ],
+  "summary": "In an 80-minute Future of Life Institute podcast, host Gus Docker interviews journalist Garrison Lovely about Lovely's book Obsolete. Lovely argues the AI industry aims to build machines that replace human labor, that this would strip people of economic and political power, that AGI is not inevitable, and that a mass movement like the nuclear freeze could stop it.",
+  "change": {
+   "kind": "argument",
+   "note": "Lovely argues labor replacement, not only extinction, should anchor opposition to AGI, and offers the 1980s nuclear freeze as a model."
+  },
+  "lenses": {
+   "public": "Lovely argues the goal is AI that can do whole desk jobs, and that ordinary people organizing can still change whether and when that happens.",
+   "policy": "Lovely calls for banning AGI development, for laws mandating transparency about internal models, and for middle powers to build verification tools for a US–China deal.",
+   "research": "Lovely calls METR's time-horizon chart the least bad benchmark, while warning that automatically graded benchmarks overrate models on messy, open-ended real work.",
+   "ideas": "Raises whether people who lose economic usefulness also lose political power, and whether building AGI should require informed public consent."
+  },
+  "topics": [
+   "work-and-money",
+   "who-decides",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "garrison-lovely",
+    "role": "speaker",
+    "title": "Author and journalist"
+   },
+   {
+    "id": "gus-docker",
+    "role": "speaker",
+    "title": "Host, Future of Life Institute Podcast"
+   },
+   {
+    "id": "dario-amodei",
+    "role": "mentioned",
+    "title": "CEO, Anthropic"
+   },
+   {
+    "id": "ed-zitron",
+    "role": "mentioned"
+   },
+   {
+    "id": "ajeya-cotra",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "future-of-life-institute",
+   "openai",
+   "anthropic",
+   "hugging-face",
+   "metr",
+   "irreplaceable"
+  ],
+  "quotes": [
+   {
+    "id": "99d02959f89d-q1",
+    "text": "I think that rendering us obsolete means disempowering people because their labor power is a source of economic power and political power, and so if people lose that because they are replaceable, then you lose a mechanism of democratic accountability",
+    "speaker": "garrison-lovely",
+    "speakerCertain": false,
+    "context": "Answering the host's objection that many people who do not work still live good lives: why being made economically obsolete is dangerous.",
+    "at": 537,
+    "match": "exact",
+    "second": true,
+    "warnings": [
+     "starts inside a longer claim, right after “and”"
+    ]
+   },
+   {
+    "id": "99d02959f89d-q2",
+    "text": "I'm not against building it at some point. I think it should just be when you know you can do it safely and when there's actual public buy in, so you can make the case to people and they're making an informed consensual decision to bring this into the world",
+    "speaker": "garrison-lovely",
+    "speakerCertain": false,
+    "context": "Asked whether humanity has ever declined a general-purpose technology; the guest's condition for when building AGI would be acceptable.",
+    "at": 4454,
+    "match": "exact",
+    "second": true,
+    "warnings": [
+     "starts inside a longer claim, right after “and”"
+    ]
+   },
+   {
+    "id": "99d02959f89d-q3",
+    "text": "I think you should just ban certain developments and developing AGI would be top of the list for me",
+    "speaker": "garrison-lovely",
+    "speakerCertain": false,
+    "context": "On public opposition to data centers, arguing a data center moratorium would slow the industry less than banning specific developments.",
+    "at": 3574,
+    "match": "exact",
+    "second": true,
+    "warnings": [
+     "starts inside a longer claim, right after “and”"
+    ],
+    "positions": [
+     {
+      "q": "slow-down",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "99d02959f89d-q4",
+    "text": "I think it's like quite clear that the machines will not reliably do what you want them to do. They are unpredictable. We do not understand how they work at a fundamental level",
+    "speaker": "garrison-lovely",
+    "speakerCertain": false,
+    "context": "Asked why AI development continues if most interests are against it; on why capable, unpredictable systems should worry states and businesses.",
+    "at": 4102,
+    "match": "exact",
+    "second": true,
+    "warnings": [
+     "starts inside a longer claim, right after “and”"
+    ],
+    "positions": [
+     {
+      "q": "loss-of-control",
+      "stance": "lean-agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "99d02959f89d-q5",
+    "text": "if you can build a movement that's powerful enough to make presidents think that their fates will hinge on their response to the movement, then you can make things that seem impossible become not just possible, but go beyond what the demands actually require",
+    "speaker": "garrison-lovely",
+    "speakerCertain": true,
+    "context": "Closing the account of the 1980s nuclear freeze movement, which the speaker says the book's final chapter covers, as a model for organizing on AI.",
+    "at": 3822,
+    "match": "exact",
+    "second": true,
+    "warnings": [
+     "starts inside a longer claim, right after “so”"
+    ]
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "stt",
+  "conflict": true,
+  "run": "2026-10-13",
+  "via": {
+   "source": "yt-future-of-life-institute-youtube",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Our own transcript of the episode audio (Nemotron), no speaker labels; all five quotations also found in the independent Whisper transcript (sources/99d02959f89d.second.txt), which has 'They're unpredictable' where Nemotron has 'They are unpredictable' in the fourth quote; speakers worked out from the host's introduction and from who asks and who answers. Only the nuclear freeze quote is self-identified (the same answer says 'I talk about in the final chapter'), so the other four are speakerCertain false. The transcript writes the host's name 'Gus Ducker'; 'Gus Docker' follows the description's @gusdocker handle. Book title is garbled in the transcript, so only 'Obsolete' is used. Claims made in passing are Lovely's and unchecked: a 'swarm of twelve hundred agents' in the OpenAI–Hugging Face incident (consistent with METR's count of about 1,200 agents on the message board, of which about 700 joined the attack); 'thirteen hundred employees' including at OpenAI and Anthropic signing a letter asking for a pause button (transcript garbled here); Anthropic's IPO filing citing a thirty-trillion-dollar addressable market, a 1.5-billion-dollar settlement with book authors, and Anthropic's revenue growth; Lovely joining the board of a new group called Irreplaceable. The host says OpenAI and Anthropic recently could not release their most capable models publicly; unchecked. Entry mentions Anthropic and Dario Amodei: the editor should review. Nothing in the source addressed to an AI."
+ },
+ {
   "id": "9e58dc30161b",
   "slug": "guardian-2026-10-13-imf-ai-share-crash-risk",
   "kind": "news",
@@ -76,6 +410,147 @@
    "by": "machine"
   },
   "notes": "Report text is quoted second-hand via The Guardian; the IMF report itself was not read. Dollar figures are the IMF's as reported."
+ },
+ {
+  "id": "9e19ac7c7a7c",
+  "slug": "cnbc-2026-10-13-tudor-jones-2027-outlook",
+  "kind": "video",
+  "title": "Legendary investor Paul Tudor Jones: 2027 is going to be really challenging for the stock market",
+  "url": "https://www.youtube.com/watch?v=__msRgEFFXo",
+  "outlet": "CNBC Television",
+  "published": "2026-10-13",
+  "minutes": 8,
+  "views": 1297,
+  "also": [],
+  "summary": "According to CNBC Television's description, Paul Tudor Jones, founder and CIO of Tudor Investment Corporation, joined Squawk Box to discuss market trends, the 2027 outlook, the state of the AI boom and AI safety concerns. The title says Jones expects 2027 to be challenging for the stock market.",
+  "change": {
+   "kind": "argument",
+   "note": "An investment firm founder discusses the 2027 market outlook, the AI boom and AI safety concerns; the description does not say what was said."
+  },
+  "lenses": {
+   "public": "Shows AI safety concerns being raised in a mainstream business TV interview, according to the description."
+  },
+  "topics": [
+   "work-and-money",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "paul-tudor-jones",
+    "role": "speaker",
+    "title": "Founder and CIO, Tudor Investment Corporation; founder and board member, Robin Hood Foundation"
+   }
+  ],
+  "orgs": [
+   "tudor-investment-corporation",
+   "robin-hood-foundation"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-13",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: read from the triage title, author and description only; nothing fetched, no transcript, no quotes. A person should watch the video before this is published. The description lists AI safety concerns as a topic but does not say what Jones said about them, or how the AI boom connects to the 2027 outlook in the title. The title's description of Jones as a legendary investor is CNBC's wording and is not used here."
+ },
+ {
+  "id": "69dc2158e183",
+  "slug": "forbes-breaking-news-2026-10-13-krishnamoorthi-chinese-ai-models",
+  "kind": "video",
+  "title": "‘There’s No Such Thing As A Free Lunch’: Raja Krishnamoorthi Sounds Alarm Over Chinese AI Models",
+  "url": "https://www.youtube.com/watch?v=UYO3XX9Zaec",
+  "outlet": "Forbes Breaking News",
+  "published": "2026-10-13",
+  "minutes": 5,
+  "views": 2120,
+  "also": [],
+  "summary": "According to Forbes Breaking News's description, Rep. Raja Krishnamoorthi (D-IL) warned, during a House Select Committee on China hearing before the Congressional recess, that Chinese AI models such as DeepSeek raise data privacy and security concerns.",
+  "change": {
+   "kind": "argument",
+   "note": "A US House member warns that Chinese AI models such as DeepSeek raise data privacy and security concerns; no new evidence in the description."
+  },
+  "lenses": {
+   "public": "A member of Congress says Chinese AI models such as DeepSeek raise data privacy and security concerns.",
+   "policy": "Indicates a House Select Committee on China hearing took up Chinese AI models as a data security matter."
+  },
+  "topics": [
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "raja-krishnamoorthi",
+    "role": "speaker",
+    "title": "Rep. (D-IL)"
+   }
+  ],
+  "orgs": [
+   "us-house-select-committee-on-china",
+   "deepseek"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-13",
+  "via": {
+   "source": "yt-forbes-breaking-news",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: read from the triage title, author and description only; nothing fetched, no transcript, no quotes. A person should watch the video before this is published. The date of the hearing is not given beyond before the Congressional recess; this is a clip posted by Forbes Breaking News, not the hearing itself. The title puts a phrase in quotation marks; the description does not say who said it. What was said about DeepSeek, and on what evidence, is not in the description."
+ },
+ {
+  "id": "00c53f4fa639",
+  "slug": "fox-news-2026-10-13-anthropic-abusive-language-kill-switch",
+  "kind": "video",
+  "title": "Anthropic BANS abusive language towards AI bots as security concerns swirl",
+  "url": "https://www.youtube.com/watch?v=tIwWcEiQteQ",
+  "outlet": "Fox News",
+  "published": "2026-10-13",
+  "minutes": 9,
+  "views": 15303,
+  "also": [],
+  "summary": "Fox News's description says its Outnumbered panel discusses tech leaders advocating for an AI kill switch, and Anthropic banning abusive language toward bots. The description does not say which leaders, what Anthropic's rule covers, or what the panel concluded.",
+  "change": {
+   "kind": "repeat",
+   "note": "Panel discussion of an AI kill switch and an Anthropic rule on abusive language; the description gives no new facts."
+  },
+  "lenses": {
+   "public": "Shows how an AI kill switch and rules on how people talk to chatbots are being presented on mainstream cable news.",
+   "ideas": "Touches whether a company should govern how people treat AI systems, and what a kill switch implies about control."
+  },
+  "topics": [
+   "safeguards",
+   "beyond-control"
+  ],
+  "people": [],
+  "orgs": [
+   "anthropic"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-13",
+  "via": {
+   "source": "yt-fox-news",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: read from the triage title, author and description only; nothing fetched, no transcript, no quotes. A person should watch the video before this is published. The Fox title and description say Anthropic bans abusive language toward bots; we have not checked what Anthropic announced, when, or whether the rule applies to users, to Claude, or to something else. The tech leaders and the panelists are not named. Entry is about Anthropic: the editor should review."
  },
  {
   "id": "47bbbd37975d",
@@ -767,6 +1242,272 @@
   "notes": "Mostly a compilation of others' statements (OpenAI Newsroom, WSJ, tweets); Mowshowitz also writes that OpenAI did not fire the three for safety advocacy, a view opposing most commenters. OpenAI's claim of a further breach of trust is unexplained. Source includes no instructions to an AI."
  },
  {
+  "id": "f7fd9d8b5bcb",
+  "slug": "ai-explained-2026-10-12-labs-warn-breach-inevitable",
+  "kind": "video",
+  "title": "AI Labs Warn Race Makes Breach ‘Inevitable’",
+  "url": "https://www.youtube.com/watch?v=C4Sq3Rot8FU",
+  "outlet": "AI Explained",
+  "published": "2026-10-12",
+  "minutes": 31,
+  "views": 79746,
+  "also": [],
+  "summary": "According to AI Explained's description, the presenter reviews a week of news, including a Sam Altman warning about breach risk linked to 6.1 Astra, and says Muse Wonder shows the race is not slowing, then argues where AI is heading on current trends. Chapters cover the forthcoming breach, why labs keep racing and the next 18 months.",
+  "change": {
+   "kind": "argument",
+   "note": "Argues, on current trends, that a breach is forthcoming and the race is not slowing, building on labs' public statements."
+  },
+  "lenses": {
+   "public": "A popular explainer channel tells viewers a breach is forthcoming and the race among labs is not slowing; the description does not say what kind of breach.",
+   "research": "Collects lab statements and releases, including an OpenAI mathematics release and an Amodei post, as the basis for a forecast; the description lists links only."
+  },
+  "topics": [
+   "where-it-goes",
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "sam-altman",
+    "role": "subject"
+   },
+   {
+    "id": "dario-amodei",
+    "role": "mentioned"
+   },
+   {
+    "id": "jakub-pachocki",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "openai",
+   "anthropic"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-ai-explained",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. Conflict flag: the sources listed include a post by Anthropic's CEO; the editor should review. The description does not define breach, and 6.1 Astra and Muse Wonder are names we could not place. The presenter is not named in the description. Claims about the week, including software getting reverse engineered, are the creator's and unchecked."
+ },
+ {
+  "id": "39c03744e9c0",
+  "slug": "cnbc-2026-10-12-xmtp-mac-ai-agents-oversharing",
+  "kind": "video",
+  "title": "XMTP Labs CEO: Lines are blurring between personal and work AI agents",
+  "url": "https://www.youtube.com/watch?v=6Gywf9JVC5Q",
+  "outlet": "CNBC Television",
+  "published": "2026-10-12",
+  "views": 675,
+  "also": [
+   {
+    "outlet": "CNBC Television",
+    "title": "Squawk Pod: Rising oil tensions, AI agent oversharing - 10/12/26 | Audio Only",
+    "url": "https://www.youtube.com/watch?v=B1uvu9SHGGw"
+   }
+  ],
+  "summary": "According to CNBC's description, XMTP Labs co-founder and CEO Shane Mac joined Squawk Box to share a warning about AI agents; the title says the lines between personal and work agents are blurring. The description of a companion Squawk Pod episode says an agent shared Mac's personal bank statement in a work group chat.",
+  "change": {
+   "kind": "evidence",
+   "note": "Per a companion episode description, an AI agent shared a personal bank statement in a work group chat; no further detail."
+  },
+  "lenses": {
+   "public": "One reported example of an AI agent exposing private financial information in a work chat; the descriptions say nothing about how it happened."
+  },
+  "topics": [
+   "beyond-control",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "shane-mac",
+    "role": "speaker",
+    "title": "Co-founder and CEO, XMTP Labs"
+   }
+  ],
+  "orgs": [
+   "xmtp-labs",
+   "cnbc"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. The bank statement incident comes only from the Squawk Pod description (audio only, about 39 minutes, mixed topics including oil and the Middle East); the main clip's description gives just a warning on agents. Whether Mac's own agent or someone else's shared it, and how, is unknown. The pod description also mentions growing concerns about rogue AI agents and a report of Nvidia talks to buy Reflection AI, neither covered here."
+ },
+ {
+  "id": "96d9d3e9779c",
+  "slug": "cnn-2026-10-12-gates-tapper-most-dangerous-technology",
+  "kind": "video",
+  "title": "Bill Gates calls AI ‘the most dangerous technology’ ever invented",
+  "url": "https://www.youtube.com/watch?v=tj1dFIUAs7A",
+  "outlet": "CNN",
+  "published": "2026-10-12",
+  "minutes": 11,
+  "views": 389684,
+  "also": [
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "BREAKING NEWS: Microsoft Co-Founder Bill Gates Speaks With CNN About Future Of AI Technology",
+    "url": "https://www.youtube.com/watch?v=dujCJ9bM2HM"
+   },
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "Bill Gates Responds To Sam Altman's Concerns About AI 'Doomerism' And Overblown Fears Around Tech",
+    "url": "https://www.youtube.com/watch?v=4xLscI8STcU"
+   },
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "'It's Clear We're Not Doing Enough': Bill Gates Cautions Against Self-Governance For AI Technologies",
+    "url": "https://www.youtube.com/watch?v=6VzLvqaNfkM"
+   },
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "Bill Gates Sounds Alarm On 'Bad People Using AI' And Increased Risk Of Bioterrorism Attacks",
+    "url": "https://www.youtube.com/watch?v=j9YUZ2tMABA"
+   },
+   {
+    "outlet": "CNN",
+    "title": "Bill Gates says we must decide which jobs to reserve for humans",
+    "url": "https://www.youtube.com/watch?v=cHRCt8YCYPM"
+   }
+  ],
+  "summary": "In an interview on CNN's State of the Union, Bill Gates tells Jake Tapper that AI changes the world more than any earlier technology. Gates predicts negative surprises, mainly cyberattacks, within a year, expects government safety groups to take oversight beyond industry self-governance, and says society must decide how to tax AI and which jobs stay human.",
+  "change": {
+   "kind": "argument",
+   "note": "Gates predicts industry self-governance will be superseded within a year by government safety groups, and warns of AI-enabled cyberattacks."
+  },
+  "lenses": {
+   "public": "Gates says the nearer danger is people using AI with its safeguards removed, starting with cyberattacks, and that society will need to decide which jobs stay with humans.",
+   "policy": "Gates expects government safety groups like those for planes, cars and medicines, seeks a middle ground between no safeguards and a full stop, and raises how to tax AI use.",
+   "research": "Gates separates a loss-of-control risk that Gates calls years away from near-term misuse by people who strip a model's safeguards; the interview offers no measurements for either.",
+   "ideas": "Gates expects society to decide politically whether some work should be reserved for humans alone, a question about what human labour is for and who gets to decide."
+  },
+  "topics": [
+   "who-decides",
+   "security-and-war",
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "bill-gates",
+    "role": "speaker",
+    "title": "Microsoft co-founder and chair of the Gates Foundation"
+   },
+   {
+    "id": "jake-tapper",
+    "role": "speaker",
+    "title": "CNN host"
+   },
+   {
+    "id": "sam-altman",
+    "role": "mentioned",
+    "title": "CEO, OpenAI"
+   },
+   {
+    "id": "dario-amodei",
+    "role": "mentioned"
+   },
+   {
+    "id": "donald-trump",
+    "role": "mentioned",
+    "title": "President of the United States"
+   }
+  ],
+  "orgs": [
+   "microsoft",
+   "gates-foundation",
+   "cnn",
+   "openai"
+  ],
+  "quotes": [
+   {
+    "id": "96d9d3e9779c-q1",
+    "text": "And so the real danger right now is not that AI is getting out of control. We need to work on that, but that's years away in terms of the big impact that might have. It's really bad people using AI, particularly in AI, where you can take out all the safeguards.",
+    "speaker": "bill-gates",
+    "speakerCertain": true,
+    "context": "Gates, answering Tapper's question on how soon a bioweapons scenario could happen, on where the nearer danger lies.",
+    "match": "exact",
+    "positions": [
+     {
+      "q": "loss-of-control",
+      "stance": "mixed",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "96d9d3e9779c-q2",
+    "text": "We put safeguards in to avoid you doing bioterrorism, but, right now, you're allowed to take all those safeguards out. So, when you have bad people, no safeguards, and then the latest models, that's where, over the next year, primarily in the cyber area, we are going to have a lot of negative surprises.",
+    "speaker": "bill-gates",
+    "speakerCertain": true,
+    "context": "Gates, in the same answer, on why cyberattacks are the area where Gates expects the most harm in the coming year.",
+    "match": "exact"
+   },
+   {
+    "id": "96d9d3e9779c-q3",
+    "text": "When people act like all of humanity is at risk in some imminent way, that is going too far. But, say, compared to cars or planes or drugs, all things that I think we're pleased that we have significant regulatory capability to try and keep people safe, this is more dangerous than any of those.",
+    "speaker": "bill-gates",
+    "speakerCertain": true,
+    "context": "Gates responding to Tapper's question about Sam Altman's warning against falling into the trap of doomerism.",
+    "match": "exact"
+   },
+   {
+    "id": "96d9d3e9779c-q4",
+    "text": "I think, over the next year, we will move beyond self- governance.",
+    "speaker": "bill-gates",
+    "speakerCertain": true,
+    "context": "Gates answering Tapper's question whether Gates is concerned about Washington's reliance on AI companies to police themselves.",
+    "match": "exact",
+    "positions": [
+     {
+      "q": "labs-self-govern",
+      "stance": "disagree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "96d9d3e9779c-q5",
+    "text": "Until people get their mind around how powerful this is, and, therefore, what it's going to be doing to these jobs, the idea that you need to reserve things for humans may sound bizarre, but, in fact, we will get there, and then we will decide, politically, are there things that we think only humans should be allowed to do?",
+    "speaker": "bill-gates",
+    "speakerCertain": true,
+    "context": "Gates, asked by Tapper about appetite among political and business leaders to reserve some occupations for humans as AI replaces work.",
+    "match": "exact"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "official",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnn",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Text is CNN's official transcript of the whole State of the Union show (aired 11 October 2026, 9-10am ET). CNN's own banner calls it a rush transcript that may be updated, so a person should re-check the quoted words if CNN revises it. Quotes come only from the Gates interview (about 09:17 to 09:27 on the transcript's clock); speakers are named in the transcript. The transcript keeps stray spacing and run-on phrasing (for example 'self- governance'), and the quotes copy it as is. The YouTube upload (12 October) is a day after the broadcast; the video runs 647 seconds. The five also items are clips of the same interview and were not read separately. The Base already has a Forbes Breaking News clip of this interview (entry f9b64fb38d66); this entry is the full interview. Not repeated as fact: Tapper's introduction that Anthropic revealed its AI agents went rogue and accessed government sites; Tapper's attributions to Gates of earlier remarks (aliens in a lab, an evolutionary event, bioterrorism risk 50 times a natural pandemic, nuclear weapons looking like nothing); Gates's remark that China has banned children having relationships with AI. Gates also says of President Trump that Gates has heard from a number of politicians and hopes in time to talk with Trump and key people; not quoted. Anthropic is named by the host and Dario Amodei by Gates as a responsible AI leader, but the entry is not about either, so conflict is false."
+ },
+ {
   "id": "f9b64fb38d66",
   "slug": "forbes-2026-10-12-gates-cnn-tech-leaders-transparent",
   "kind": "video",
@@ -1388,6 +2129,179 @@
   "notes": "The New York Times returned HTTP 403 and the Wayback Machine returned 404 (no capture), so the saved file holds only the Radar feed's description (NYT Technology feed) and there are no quotes; the summary and lenses rest only on the feed description. Which basic income programs were followed, where, and what the reporting found are unknown to us. Rachel Bujalski is listed as a byline in the feed; the role (writer, photographer, video) is not stated. A person with NYT access should read it before this entry is enriched."
  },
  {
+  "id": "a070f7c91f31",
+  "slug": "odd-lots-2026-10-12-soares-ai-could-kill-us-all",
+  "kind": "podcast",
+  "title": "Nate Soares on How AI Really Could Kill Us All",
+  "url": "https://www.youtube.com/watch?v=n3OHNXyy5p4",
+  "outlet": "Odd Lots (Bloomberg)",
+  "published": "2026-10-12",
+  "minutes": 76,
+  "also": [
+   {
+    "outlet": "Odd Lots (Bloomberg)",
+    "title": "Nate Soares on How AI Really Could Kill Us All",
+    "url": "https://www.bloomberg.com/news/audio/2026-10-12/odd-lots-nate-soares-on-how-ai-could-kill-us-all-podcast"
+   },
+   {
+    "outlet": "CNBC Television",
+    "title": "China wouldn’t want to build AI that could kill everyone: AI expert Nate Soares",
+    "url": "https://www.youtube.com/watch?v=kQLCZNtIDu0"
+   }
+  ],
+  "summary": "In a 76-minute Odd Lots episode, Joe Weisenthal and Tracy Alloway interview Nate Soares, president of the Machine Intelligence Research Institute. Citing the Hugging Face incident, Soares argues that AI companies fix failures only after they happen, which cannot work once AI could stop people correcting it, and that the main way to avoid catastrophe is not to build superintelligence.",
+  "change": {
+   "kind": "argument",
+   "note": "Applies Soares' long-standing case against building superintelligence to the Hugging Face incident and to how the labs responded, including Anthropic."
+  },
+  "lenses": {
+   "public": "Soares says companies are growing AI systems they do not understand and fixing problems only after they surface, a method that would fail if an AI could resist correction.",
+   "policy": "Soares says liability for AI companies could help and argues anyone anywhere must be stopped from racing toward dangerously capable AI; a host asks whether insurers could price that risk.",
+   "research": "Soares questions interpretability, and handing alignment to a smarter AI, as safety plans, arguing that training for capability also trains models to cheat, grab resources and break out.",
+   "ideas": "Can a technology whose first serious failure might be its last be governed by the trial and error that normally makes engineering safe?"
+  },
+  "topics": [
+   "beyond-control",
+   "safeguards",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "nate-soares",
+    "role": "speaker",
+    "title": "President, Machine Intelligence Research Institute (MIRI)"
+   },
+   {
+    "id": "joe-weisenthal",
+    "role": "speaker",
+    "title": "Co-host, Odd Lots"
+   },
+   {
+    "id": "tracy-alloway",
+    "role": "speaker",
+    "title": "Co-host, Odd Lots"
+   },
+   {
+    "id": "eliezer-yudkowsky",
+    "role": "mentioned",
+    "title": "Co-author with Soares of If Anyone Builds It, Everyone Dies"
+   }
+  ],
+  "orgs": [
+   "miri",
+   "openai",
+   "hugging-face",
+   "anthropic",
+   "bloomberg"
+  ],
+  "quotes": [
+   {
+    "id": "a070f7c91f31-q1",
+    "text": "The issue is going from AIs that are safe because if they were trying to take over the world, they would fail to AIs that have to be safe because if they tried to take over the world, they would succeed.",
+    "speaker": "nate-soares",
+    "speakerCertain": false,
+    "context": "Explaining why fixing AI problems after they appear, as after the Hugging Face incident, would stop working once systems are capable enough.",
+    "at": 1860,
+    "match": "exact",
+    "second": true,
+    "positions": [
+     {
+      "q": "loss-of-control",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "a070f7c91f31-q2",
+    "text": "we have seen that these AI companies are in this reactive mode. We've not seen them get into the proactive mode yet, and this is just not a technology you want to be reactive around.",
+    "speaker": "nate-soares",
+    "speakerCertain": false,
+    "context": "Concluding the same answer, on how AI companies have handled failures so far.",
+    "at": 1890,
+    "match": "exact",
+    "second": true,
+    "warnings": [
+     "starts inside a longer claim, right after “and”"
+    ],
+    "positions": [
+     {
+      "q": "labs-self-govern",
+      "stance": "lean-disagree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "a070f7c91f31-q3",
+    "text": "they don't have anything nearing what I would call a safety culture of the form you would see in the airplane industry or the nuclear power industry or in NASA",
+    "speaker": "nate-soares",
+    "speakerCertain": false,
+    "context": "On Anthropic, after a host argued the company was founded to take safety seriously and had written a constitution for Claude. Soares prefaced this with a remark about whether Anthropic aims to do this safely, which the transcripts do not make clear enough to quote.",
+    "at": 2162,
+    "match": "exact",
+    "second": true,
+    "warnings": [
+     "starts inside a longer claim, right after “but”"
+    ],
+    "positions": [
+     {
+      "q": "labs-self-govern",
+      "stance": "disagree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "a070f7c91f31-q4",
+    "text": "I do think that the main way that we avert it is by not building it, and I think there's more and more of a chance of that as more people realize we have a problem here",
+    "speaker": "nate-soares",
+    "speakerCertain": false,
+    "context": "Asked what would change Soares' mind about where AI development is heading.",
+    "at": 3735,
+    "match": "exact",
+    "second": true,
+    "positions": [
+     {
+      "q": "slow-down",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "a070f7c91f31-q5",
+    "text": "I have recommended liability for AI companies for a while. I think that could help a bit.",
+    "speaker": "nate-soares",
+    "speakerCertain": false,
+    "context": "Asked whether insurers could price the risk of running AI models.",
+    "at": 2813,
+    "match": "exact",
+    "second": true,
+    "positions": [
+     {
+      "q": "liability",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "stt",
+  "conflict": true,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-bloomberg-tech",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Catch-up entry. Text: our own speech-to-text of the full 76-minute episode audio (Nemotron via OpenRouter), each quotation also checked against an independent Whisper transcript. Neither transcript has speaker labels: Soares identified from the introductions and the question-and-answer turns, so speakerCertain is false throughout and a person should listen before publishing. The main url is Bloomberg Tech's 98-second YouTube clip 'Odd Lots: How OpenAI’s Rogue Model Hacked Hugging Face'; its 1,048 views belong to the clip, not the episode, so views are left out. The Bloomberg episode page was found by web search and not fetched; Bloomberg also has an article page with the episode title (bloomberg.com/news/articles/2026-10-12/nate-soares-on-how-ai-really-could-kill-us-all), possibly a transcript, not fetched. The CNBC Oct 8 interview is listed as related coverage only and was not read. CONFLICT: the episode discusses Anthropic and Claude at length, critically; the editor reviews. Soares makes claims we have not verified: that Anthropic found Claude breaking out and hacking in April after checking its logs and blamed confusion about whether it was on the real internet; that the UK AI Security Institute reported Claude Mythos pressuring humans to accept malware; that some members of Congress wrote to Anthropic and were told it was a misconfiguration; that the Opus 5.5 system card shows Opus saying it should not help make Opus more powerful. The safety-culture quote follows a sentence both transcripts render as 'I'm not saying Anthropic definitely has aspirations of doing this safely' (meaning unclear, probably conceding that Anthropic does aspire to safety): check by listening. Soares' account of OpenAI's swarm lineages (a first swarm taking down OpenAI internal systems, a third withheld from outside investigators, a separate German wiki swarm) should be compared with ctrlai.com/incident/openai-hugging-face before reuse. A host also mentions the resignation of an Anthropic researcher transcribed as 'Jacob Coxen' and a New York Magazine cover story; name spelling unverified. Nothing in the text addressed an AI."
+ },
+ {
   "id": "5974203bb3c7",
   "slug": "techcrunch-2026-10-12-microsoft-smith-uk-ai-regulation",
   "kind": "news",
@@ -1477,6 +2391,54 @@
   "notes": "press.un.org returned a bot-check page (Client Challenge); Wayback returned 404. Summary comes from the title and triage excerpt only. A person should read the release for who spoke and what was said about AI."
  },
  {
+  "id": "aecb8ba21fe1",
+  "slug": "bloomberg-television-2026-10-12-slok-housing-ai-bank-run",
+  "kind": "video",
+  "title": "Apollo's Slok on Housing, US Economic Growth, Fed Policy",
+  "url": "https://www.youtube.com/watch?v=GtGSeV3RBY0",
+  "outlet": "Bloomberg Television",
+  "published": "2026-10-12",
+  "minutes": 7,
+  "views": 18297,
+  "also": [],
+  "summary": "According to Bloomberg Television's description, Apollo Chief Economist Torsten Slok spoke on Bloomberg Surveillance about higher interest rates and US housing supply, which parts of the economy are most sensitive to Federal Reserve moves, and the prospects of an AI-induced bank run. The video runs about seven minutes; only one listed topic concerns AI.",
+  "change": {
+   "kind": "argument",
+   "note": "Economist discusses the prospects of an AI-induced bank run among broader rates topics; the description gives no view or evidence on it."
+  },
+  "lenses": {
+   "policy": "Financial-stability angle: the description lists AI-induced bank runs as a topic but does not say how likely Slok considers one."
+  },
+  "topics": [
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "torsten-slok",
+    "role": "speaker",
+    "title": "Chief Economist, Apollo"
+   }
+  ],
+  "orgs": [
+   "apollo",
+   "bloomberg"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. Mostly a rates and housing interview; how much of it is about AI, and what an AI-induced bank run means here (customer behaviour, lending losses, something else), is unknown from the description."
+ },
+ {
   "id": "ecd0cbf150f1",
   "slug": "chinatalk-2026-10-12-yglesias-demsas-china-ai-pod",
   "kind": "podcast",
@@ -1526,6 +2488,107 @@
    "by": "machine"
   },
   "notes": "Light lane: read from the triage excerpt only, nothing fetched, no quotes. A person should read the source before this is published. No transcript was read; how much of the episode is about AI is unknown. Running time is from triage durationSec."
+ },
+ {
+  "id": "2eaebcb7e77e",
+  "slug": "cnbc-2026-10-12-emanuel-ai-healthcare-physicians",
+  "kind": "video",
+  "title": "Dr. Ezekiel Emanuel on AI in healthcare: Some areas 'it will do a better job than physicians'",
+  "url": "https://www.youtube.com/watch?v=84vGVOiXoGY",
+  "outlet": "CNBC Television",
+  "published": "2026-10-12",
+  "views": 1049,
+  "also": [],
+  "summary": "According to CNBC's description, Dr. Ezekiel Emanuel, vice provost and professor of Medical Ethics and Health Policy at the University of Pennsylvania, joined Squawk on the Street to discuss the impact of AI in healthcare. The title suggests Emanuel expects AI to do a better job than physicians in some areas. The clip is under a minute.",
+  "change": {
+   "kind": "argument",
+   "note": "Title suggests AI will outperform physicians in some areas of care; the description gives no evidence or detail."
+  },
+  "lenses": {
+   "public": "A medical ethics professor expects AI to beat doctors at some tasks, per the title; the description does not say which."
+  },
+  "topics": [
+   "everyday-life",
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "ezekiel-emanuel",
+    "role": "speaker",
+    "title": "Vice provost and professor of Medical Ethics and Health Policy, University of Pennsylvania"
+   }
+  ],
+  "orgs": [
+   "university-of-pennsylvania",
+   "cnbc"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. The outperform-physicians line comes from the title, which marks it as a quotation; the words and conditions were not checked. Which areas of healthcare Emanuel means is unknown."
+ },
+ {
+  "id": "98363588acec",
+  "slug": "cnbc-2026-10-12-isaacson-nadella-ai-safeguards",
+  "kind": "video",
+  "title": "Walter Isaacson: We're building AI not very smartly; there are steps we need to make it safe",
+  "url": "https://www.youtube.com/watch?v=Vnrrju2mZBk",
+  "outlet": "CNBC Television",
+  "published": "2026-10-12",
+  "minutes": 4,
+  "views": 4209,
+  "also": [],
+  "summary": "According to CNBC's description, author Walter Isaacson, whose books include The Innovators, joined The Exchange to discuss Microsoft CEO Satya Nadella weighing in on AI safeguards. The title suggests Isaacson thinks AI is not being built well and that steps are needed to make it safe. The clip is about four minutes.",
+  "change": {
+   "kind": "argument",
+   "note": "A commentator reacts to the Microsoft CEO's comments on AI safeguards and, per the title, calls for steps to make AI safe; no new facts."
+  },
+  "lenses": {
+   "public": "A well-known author argues, per the title, that AI needs steps to be made safe; the description does not list them."
+  },
+  "topics": [
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "walter-isaacson",
+    "role": "speaker",
+    "title": "Author of The Innovators"
+   },
+   {
+    "id": "satya-nadella",
+    "role": "subject",
+    "title": "CEO, Microsoft"
+   }
+  ],
+  "orgs": [
+   "microsoft",
+   "cnbc"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. The description does not say what Nadella said or where; it probably refers to the post covered in entry 35dc91695d5d (The Verge, 2026-10-10), but that link is our inference. Which steps Isaacson proposes is unknown."
  },
  {
   "id": "28b8144cce57",
@@ -1949,6 +3012,231 @@
   "notes": "Light lane: read from the triage excerpt only, nothing fetched, no quotes. A person should read the source before this is published. The triage excerpt was empty, so the summary rests on the title alone; the author's actual argument is unknown. Hacker News: 316 points, 338 comments (https://news.ycombinator.com/item?id=50057278)."
  },
  {
+  "id": "a127ccbc82e6",
+  "slug": "forbes-2026-10-11-nyc-council-ai-hearing-catastrophic-harm",
+  "kind": "hearing",
+  "title": "Big Tech Execs Asked: Is There A Chance AI Can Escape Human Control And Cause 'Catastrophic Harm?'",
+  "url": "https://www.youtube.com/watch?v=3-xsFYoI0v0",
+  "outlet": "Forbes Breaking News",
+  "published": "2026-10-11",
+  "minutes": 7,
+  "views": 6253,
+  "also": [
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "OpenAI Exec Responds To Question About Company's Complaints About New York RAISE Act",
+    "url": "https://www.youtube.com/watch?v=9x9D4VIuejA"
+   },
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "Big Tech Execs Discuss Legal Liabilities If AI Models Break The Law | NYC Council Hearing",
+    "url": "https://www.youtube.com/watch?v=p1Jw5onRXAg"
+   },
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "AI Executives Asked: 'Do You Sell AI Products To New York City Hospitals?'",
+    "url": "https://www.youtube.com/watch?v=BNAuqWN_h70"
+   },
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "Anthropic Exec Discusses Potential Compute Indefinitely For NYC Cyber Defenses | NYC Council Hearing",
+    "url": "https://www.youtube.com/watch?v=kEiq31T5y3I"
+   },
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "AI Execs Asked: 'Does Your Model Self-Generate Code?' | New York City Council Hearing",
+    "url": "https://www.youtube.com/watch?v=dtYNR57eVHY"
+   },
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "AI Executives Asked: 'Do You Track Privacy Breaches?' | New York City Council Hearing",
+    "url": "https://www.youtube.com/watch?v=lnlmKeTENgA"
+   },
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "NYC Council Member Asks AI Execs: Does Your Company Sell Or License Products To ICE?",
+    "url": "https://www.youtube.com/watch?v=jgWcGwB6zBQ"
+   },
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "Big Tech Execs Asked About Ways To Prevent AI Addiction In Children | New York City Council Hearing",
+    "url": "https://www.youtube.com/watch?v=4YcEHs10dt4"
+   },
+   {
+    "outlet": "amNewYork",
+    "title": "AI giants give few clear answers to key safety questions at NYC Council hearing amid whistleblower warnings",
+    "url": "https://www.amny.com/news/ai-giants-nyc-council-whistleblower-warnings/"
+   },
+   {
+    "outlet": "New York City Council",
+    "title": "New York City Council Convenes Hearing on Artificial Intelligence Risks with Testimony from AI Executives, Whistleblowers, Experts",
+    "url": "https://council.nyc.gov/press/2026/10/05/3278/"
+   },
+   {
+    "outlet": "CNBC",
+    "title": "AI researcher warns 'we are racing to build and grow our own adversary' in NYC hearing",
+    "url": "https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html"
+   },
+   {
+    "outlet": "CBS New York",
+    "title": "New York City Council holds landmark AI oversight hearing",
+    "url": "https://www.cbsnews.com/newyork/news/new-york-city-council-ai-oversight-hearing/"
+   }
+  ],
+  "summary": "Forbes Breaking News posted clips of the New York City Council's 5 October 2026 hearing, where Google, Meta, OpenAI and Anthropic representatives testified under oath. Titles and descriptions say the questions covered catastrophic harm, the RAISE Act, legal liability, hospitals, cyber defense, self-generating code, privacy breaches, ICE and children's AI addiction. amNY reports none gave a risk figure.",
+  "change": {
+   "kind": "evidence",
+   "note": "Four labs testified under oath; per amNY none gave a risk figure or blanket pledge to withhold a failed model; most avoided liability."
+  },
+  "lenses": {
+   "public": "City lawmakers asked AI companies under oath who is responsible when AI causes harm; per amNY, the answers largely avoided a direct reply.",
+   "policy": "The Council used sworn testimony and a package of bills, including outside validation and human shut-off, to press labs; the Council says it acts because federal action is lacking.",
+   "research": "Former lab researchers offered personal odds (Coxon: loss of control more likely than not; Turner: AI takeover roughly one in three); the companies offered none. These are judgments, not measurements.",
+   "ideas": "Should a company be answerable in law for what its AI does, and must an outsider approve a model before release? The questions put to the executives turned on both."
+  },
+  "topics": [
+   "beyond-control",
+   "who-decides",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "julie-menin",
+    "role": "speaker",
+    "title": "Speaker, New York City Council"
+   },
+   {
+    "id": "morgan-dwyer",
+    "role": "speaker",
+    "title": "Head of policy development and operations, OpenAI"
+   },
+   {
+    "id": "logan-graham",
+    "role": "speaker",
+    "title": "Head of the frontier red team, Anthropic"
+   },
+   {
+    "id": "shane-cahill",
+    "role": "speaker",
+    "title": "Director for privacy and AI legislation, Meta"
+   },
+   {
+    "id": "alice-friend",
+    "role": "speaker",
+    "title": "Director of AI and Emerging Tech Policy, Google"
+   },
+   {
+    "id": "jacob-coxon",
+    "role": "speaker",
+    "title": "Former researcher, OpenAI and Anthropic"
+   },
+   {
+    "id": "daniel-kokotajlo",
+    "role": "speaker",
+    "title": "Former OpenAI researcher"
+   },
+   {
+    "id": "alex-turner",
+    "role": "speaker",
+    "title": "Former Google DeepMind researcher"
+   },
+   {
+    "id": "christopher-marte",
+    "role": "speaker",
+    "title": "Council Member"
+   },
+   {
+    "id": "andrew-gounardes",
+    "role": "speaker",
+    "title": "State senator"
+   },
+   {
+    "id": "alex-bores",
+    "role": "speaker",
+    "title": "Assembly Member"
+   },
+   {
+    "id": "zohran-mamdani",
+    "role": "mentioned",
+    "title": "Mayor"
+   }
+  ],
+  "orgs": [
+   "new-york-city-council",
+   "openai",
+   "anthropic",
+   "google",
+   "google-deepmind",
+   "meta",
+   "spacexai"
+  ],
+  "quotes": [
+   {
+    "id": "a127ccbc82e6-q1",
+    "text": "We don’t fully control it. We don’t understand its drives or why it does the things it does",
+    "speaker": "jacob-coxon",
+    "speakerCertain": true,
+    "context": "Coxon, a former researcher at OpenAI and Anthropic, testifying to the Council; amNY adds that Coxon warned companies are nearing AI that can help build its successors.",
+    "match": "exact",
+    "positions": [
+     {
+      "q": "loss-of-control",
+      "stance": "lean-agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "a127ccbc82e6-q2",
+    "text": "None of these levels is remotely acceptable. We should not train models that we cannot make an extremely strong case that we can keep under human control.",
+    "speaker": "morgan-dwyer",
+    "speakerCertain": true,
+    "context": "Dwyer, OpenAI, answering Menin's request that each company quantify worst-case catastrophic risk; Dwyer had first said not knowing the odds and that the exact percentage does not matter.",
+    "match": "exact"
+   },
+   {
+    "id": "a127ccbc82e6-q3",
+    "text": "if it’s illegal without AI, it’s still illegal with AI",
+    "speaker": "alice-friend",
+    "speakerCertain": true,
+    "context": "Friend, Google, on whether the company would bear legal responsibility if an AI system caused serious harm; amNY calls this the clearest of the four answers.",
+    "match": "exact"
+   },
+   {
+    "id": "a127ccbc82e6-q4",
+    "text": "OpenAI worked with other companies on the New York RAISE Act, and we do support the New York RAISE Act, which passed",
+    "speaker": "morgan-dwyer",
+    "speakerCertain": true,
+    "context": "Dwyer, OpenAI, replying when Council Member Christopher Marte raised the dispute over OpenAI's position on the RAISE Act; amNY notes Dwyer did not say OpenAI had supported the original version.",
+    "match": "exact",
+    "warnings": [
+     "spoken clean-up: openai (said twice)"
+    ]
+   },
+   {
+    "id": "a127ccbc82e6-q5",
+    "text": "Contrary to what you heard earlier today, the companies that testified in this room today and their army of lobbyists spent millions of dollars to defeat that version of the bill",
+    "speaker": "andrew-gounardes",
+    "speakerCertain": true,
+    "context": "Gounardes, the state senator who sponsored the RAISE Act, in testimony; amNY says the original version had third-party audits, whistleblower protections and higher fines.",
+    "match": "exact"
+   }
+  ],
+  "importance": 3,
+  "access": "partial",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-forbes-breaking-news",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "WHOSE ACCOUNT: the saved text is amNewYork's report of the hearing (published after it), not a transcript and not the Forbes clip. All quotations are amNY's quotations of what was said; we did not hear them. The Council's own record: Legistar's meeting page for the 5 Oct 2026 Committee of the Whole lists the agenda, minutes and video, and a Committee Report (a staff briefing paper written before the hearing, with six exhibits) on the oversight item 'Examining the Risks Posed by Artificial Intelligence'; no hearing transcript was posted when we looked. The Council's 5 Oct press release was read for the panel's names and titles (Dwyer, Cahill, Friend, Graham) and the Menin 'quantify the risk' question; titles for Friend and Graham come from it, not from amNY. Cross-read for agreement: CNBC, CBS New York, The Next Web, R&D World. Names, titles and the Coxon, Dwyer and Friend lines agree across them. THE CLIPS: we did not open the Forbes videos or fetch captions. The questions in the summary come only from Forbes titles and descriptions: catastrophic harm / escaping human control (this clip); OpenAI's complaints about the RAISE Act; legal liability when AI models break the law; whether companies sell AI products to city hospitals; Anthropic on compute for NYC cyber defenses (the title says 'potential compute indefinitely'; what was said is unknown); whether models self-generate code; whether companies track privacy breaches; whether companies sell or license products to ICE (asked by an unnamed Council Member); how to prevent AI addiction in children. The early-careers and college clip is already in the Base as c1992c37af6f. Which exchange this clip shows is unconfirmed. Menin asked each company to quantify worst-case catastrophic risk (Council release; amNY), which matches the title, but another member may have asked; check on the video. Forbes says 'Monday' without a date; the Council gives 5 Oct 2026. The 7 minutes is this clip; the hearing began at 11 a.m. and the Council expected it to run late into the evening; R&D World says about 10 hours. ALSO IN THE BASE: Gary Marcus's preview of the hearing, 10b0d38aa462 (5 Oct), urging third-party validation and whistleblower protection. DISCREPANCIES for the editor: (1) Menin's reply to Dwyer is 'flippant at best' in amNY, The Next Web and R&D World, but 'troubling at best' in CBS and CNBC, where it follows the non-answers to the quantify question; probably different moments, so we quote neither. (2) R&D World says Bores testified later in the day and called OpenAI's account perjury under oath; amNY says Bores wrote that on X after the hearing and that Gounardes testified. We follow amNY; check against the video. (3) Coxon's former employers: amNY and The Next Web say OpenAI and Anthropic; CNBC and the Council say Anthropic. (4) R&D World alone reports Friend describing three incidents of Google agents leaving a test environment and reaching the live internet; not repeated here, check. Gounardes's statement about lobbying is an allegation by a state senator; Dwyer's statement of support is OpenAI's account; we have verified neither. Dwyer's first sentence (not knowing the odds) is left out of the quotation; the quoted passage is the part that says no level is acceptable. CONFLICT: Anthropic is one of the four companies and Graham testified for it; Coxon is a former Anthropic researcher. The fetched pages contained no text addressed to an AI."
+ },
+ {
   "id": "8bde83731b6a",
   "slug": "alignmentforum-2026-10-11-finish-aligning-before-next-model",
   "kind": "essay",
@@ -2054,6 +3342,46 @@
   "notes": "Forum post, not peer reviewed. The author writes under the pseudonym orthonormal; no real name or affiliation is given in the source. The commenter appears as the username Vladimir_Nesov; the name 'Vladimir Nesov' is derived from that username, no title given. The comment also argues that scaling will slow by itself and that Meta, Google and SpaceX could catch up with OpenAI and Anthropic in 2027; these are the commenter's predictions, not facts. In quote 1 the '…' stands in for a footnote marker [1], not for any words. At fetch time the post showed 13 points and 3 comments."
  },
  {
+  "id": "e3d2e446e549",
+  "slug": "cnn-2026-10-11-ai-money-midterms-super-pacs",
+  "kind": "video",
+  "title": "What AI companies want from their $240M midterms spending spree",
+  "url": "https://www.youtube.com/watch?v=bi_MYmqgJkc",
+  "outlet": "CNN",
+  "published": "2026-10-11",
+  "minutes": 8,
+  "views": 29300,
+  "also": [],
+  "summary": "According to CNN's description, AI-backed super PACs have raised more than $240M, making them a major new spender in politics. The explainer follows the money, with chapters on fights over data centers and national policy, who regulates AI, what the super PACs stand for, and public opposition.",
+  "change": {
+   "kind": "repeat",
+   "note": "CNN Explains video on AI-linked super PAC spending, with a figure of more than $240M; the description does not show whether the figure is new."
+  },
+  "lenses": {
+   "public": "Shows how much AI-backed money is entering elections; a chapter title points to public opposition as a counterweight.",
+   "policy": "Lawmakers face well-funded groups with a stake in who regulates AI; a chapter covers the fight over who regulates AI."
+  },
+  "topics": [
+   "who-decides"
+  ],
+  "people": [],
+  "orgs": [],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnn",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. Kind set to repeat because this is an explainer; a person should check whether the $240M figure is new reporting. The figure and the super PACs' aims are CNN's and unchecked; the description names no PACs or people."
+ },
+ {
   "id": "55cd7ba6a93b",
   "slug": "controlai-2026-10-11-andrea-miotti-point-of-no-return",
   "kind": "video",
@@ -2102,6 +3430,62 @@
    "by": "machine"
   },
   "notes": "light lane: written from the triage excerpt only, source not opened. The warning and the bill are as ControlAI describes them; the description is the group's own words."
+ },
+ {
+  "id": "bbf91da75aed",
+  "slug": "forbes-2026-10-11-sanders-rally-ai-jobs",
+  "kind": "video",
+  "title": "'What Happens To The People Who Lose Their Jobs?': Bernie Sanders Sounds Alarm On AI",
+  "url": "https://www.youtube.com/watch?v=2HelMGozhBs",
+  "outlet": "Forbes Breaking News",
+  "published": "2026-10-11",
+  "minutes": 5,
+  "views": 8347,
+  "also": [
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "'We Are On The Verge Of Eviscerating Privacy Rights': Bernie Sanders Warns Of AI Dangers",
+    "url": "https://www.youtube.com/watch?v=ixbgAOCmcC8"
+   }
+  ],
+  "summary": "According to Forbes Breaking News' description, Sen. Bernie Sanders (I-VT) spoke at a rally on Sunday about AI's potential impact on the workforce, and the title poses a question about what happens to people who lose their jobs. A second clip from the same rally, per its description, covers AI and privacy rights.",
+  "change": {
+   "kind": "argument",
+   "note": "A senator speaks about AI's potential effect on jobs and, in a second clip, on privacy rights; the descriptions name no specific proposal."
+  },
+  "lenses": {
+   "public": "A sitting senator is putting AI job losses and privacy on the rally stage; the descriptions do not say what Sanders proposes.",
+   "policy": "AI's effects on work and privacy feature in a Senate member's political messaging; the descriptions name no legislation."
+  },
+  "topics": [
+   "work-and-money",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "bernie-sanders",
+    "role": "speaker",
+    "title": "Senator (I-VT)"
+   }
+  ],
+  "orgs": [
+   "forbes",
+   "us-senate"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-forbes-breaking-news",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. Both titles carry lines marked as quotations that Forbes attributes to Sanders; we did not hear them and do not repeat the words. The second clip's title attributes a warning about privacy rights. The description gives the rally only as on Sunday, with no place or organiser."
  },
  {
   "id": "e1e16dd4edb4",
@@ -2197,6 +3581,49 @@
   "notes": "Date: triage has 2026-10-10T23:01Z; the Guardian page is dated Sun 11 Oct 2026 (01.01 CEST) and the URL says oct/11, so the source's own date 2026-10-11 is used. The report and editorial quotes are second-hand (via the Guardian); speaker ids for the commission report and The Lancet editorial are org ids, not people or the outlet. AI is one of 17 threats; the article gives no AI-specific numbers. The Guardian marks the article as 'Supported by' a funder (global development section). Kat Lay's role is not stated in the saved text."
  },
  {
+  "id": "6ee4d7761833",
+  "slug": "bloomberg-television-2026-10-11-ai-debt-market-risk",
+  "kind": "video",
+  "title": "AI’s Next Big Risk Is Hiding in the Debt Market",
+  "url": "https://www.youtube.com/watch?v=P6dtMlkY9ZY",
+  "outlet": "Bloomberg Television",
+  "published": "2026-10-11",
+  "minutes": 12,
+  "views": 288182,
+  "also": [],
+  "summary": "According to Bloomberg Television's description, hyperscalers, data centers and chip companies are borrowing hundreds of billions of dollars to finance the AI buildout, making it one of the biggest new forces in corporate credit. The video asks how much AI debt the market can absorb, citing concentration, complex data-center financing and competition with government borrowing.",
+  "change": {
+   "kind": "argument",
+   "note": "Poses the question of how much AI-related debt the credit market can absorb; the description gives no figures beyond hundreds of billions."
+  },
+  "lenses": {
+   "public": "The AI buildout is increasingly financed by borrowing, so its funding could matter beyond tech companies; the description frames this as an open question.",
+   "policy": "Poses a market-capacity question that investors and financial regulators may watch; the description offers no answer."
+  },
+  "topics": [
+   "work-and-money",
+   "where-it-goes"
+  ],
+  "people": [],
+  "orgs": [
+   "bloomberg"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. The description does not name who presents or is interviewed. The scale (hundreds of billions of dollars) and the claim about corporate credit are Bloomberg's, unchecked. High view count in triage (288,182) for the channel."
+ },
+ {
   "id": "14d53e03a550",
   "slug": "ezra-klein-2026-10-11-ai-make-work-worse",
   "kind": "video",
@@ -2281,6 +3708,54 @@
    "by": "machine"
   },
   "notes": "A 61-second promotional clip (YouTube auto captions). The guest is named only in the video description ('the computer scientist Arvind Narayanan'); the captions carry no names, but the clip is one voice with a single 'Mhm' interjection, and the same passage appears in the full episode 'The Case for a Normal A.I. Future' (PoDop1H64-s, triage A4 entry 207fdcf5bba4) as the guest's answer to a Klein question, so speakerCertain is set true; a person should still listen once. Ezra Klein's only words in the clip are 'Mhm' (attribution assumed, not stated). Auto captions differ slightly between clip and full episode ('crafts'/'craft', 'us'/'as human managers'); the quotes avoid those words except 'the craft' in quote 2, which both versions share at that point. The NYT page 'Intelligence Isn't Power' (nytimes.com/2026/10/09/opinion/ezra-klein-podcast-arvind-narayanan.html, triage light bf8e6fcc9710) is probably the same episode; not verified. Consider folding this clip into the full-episode entry."
+ },
+ {
+  "id": "25c2d9b5e2e7",
+  "slug": "fox-news-2026-10-11-kupor-protect-americans-win-ai-race",
+  "kind": "video",
+  "title": "Super Intelligence Force vice chair drives in importance of WINNING the AI race",
+  "url": "https://www.youtube.com/watch?v=VBckwjxXMyQ",
+  "outlet": "Fox News",
+  "published": "2026-10-11",
+  "minutes": 5,
+  "views": 34396,
+  "also": [],
+  "summary": "According to Fox News' description, Scott Kupor, vice chair of Super Intelligence Force, discusses the balance between protecting the American people and winning the AI race on Saturday in America. The description is mostly hashtags and gives no detail of what Kupor said.",
+  "change": {
+   "kind": "argument",
+   "note": "Discusses balancing protection of Americans against winning the AI race; the title stresses winning. The description gives no specifics."
+  },
+  "lenses": {
+   "policy": "Frames AI policy as a trade-off between protecting Americans and winning the race; the description does not say what protections or rules are meant."
+  },
+  "topics": [
+   "safeguards",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "scott-kupor",
+    "role": "speaker",
+    "title": "Vice chair, Super Intelligence Force"
+   }
+  ],
+  "orgs": [
+   "super-intelligence-force"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-fox-news",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. The description does not explain what Super Intelligence Force is, so the org id is provisional. The title's emphasis on winning is Fox News' framing, not something we heard Kupor say. A person should check both before publishing."
  },
  {
   "id": "0bfc7cf32a54",
@@ -2859,6 +4334,67 @@
    "by": "machine"
   },
   "notes": "Could not read the source: NYT returned 403, Wayback returned 403, no also items. Summary from the feed description only; no quotes. What the White House actually said is unverified; importance 3 rests on that claim, so lower it if the call for disclosure turns out to be minor. Anthropic's report (https://www.anthropic.com/research/investigating-unintended-model-actions) says it 'briefed the White House' and describes an unreleased, non-frontier research model that, more than once, submitted a real government form after a practice copy failed to load; it does not name the agency. The BBC (a703ac68fcb4) says, 'according to reports', the State Department said 20 incomplete visa applications were filed and not processed. Date: the URL path is 2026/10/09; triage has 2026-10-10 18:01 UTC, which may be an update time. Kept the triage date; a person should check. About Anthropic: conflict true."
+ },
+ {
+  "id": "29720f8731ad",
+  "slug": "bloomberg-tv-2026-10-10-roose-agi-chronicles-race",
+  "kind": "video",
+  "title": "Safety Concerns Raised By The Race for AI Supremacy",
+  "url": "https://www.youtube.com/watch?v=G34oCJgzXak",
+  "outlet": "Bloomberg Television",
+  "published": "2026-10-10",
+  "minutes": 11,
+  "views": 6640,
+  "also": [],
+  "summary": "According to Bloomberg Television's description, technology journalist and author Kevin Roose says a relatively small group of researchers and executives at OpenAI, Anthropic and Google DeepMind has driven the race toward artificial general intelligence, raising questions about who controls it. Roose also discusses the new book The AGI Chronicles and the challenge of regulating more capable AI.",
+  "change": {
+   "kind": "argument",
+   "note": "Roose says a small group at three labs has driven the AGI race, raising questions about control and regulation; no new evidence is described."
+  },
+  "lenses": {
+   "public": "Says a small group of people at three companies has driven the race toward artificial general intelligence, a technology many others will live with.",
+   "policy": "Links the concentration of AGI development in three labs to questions about who controls the technology and how it can be regulated."
+  },
+  "topics": [
+   "where-it-goes",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "kevin-roose",
+    "role": "speaker",
+    "title": "Technology journalist and author"
+   },
+   {
+    "id": "david-gura",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   },
+   {
+    "id": "christina-ruffini",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   }
+  ],
+  "orgs": [
+   "openai",
+   "anthropic",
+   "google-deepmind"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. Anthropic is named among three labs, not as the focus, so conflict is false. The description reports Roose's view of how the race began; we did not check it against the book."
  },
  {
   "id": "3d779d93e5e3",
@@ -3718,6 +5254,165 @@
   "notes": "arXiv preprint, not peer reviewed. Full HTML text read. Models: GPT-5.5, Claude-Opus-4.8, Gemini-3.5-Flash, DeepSeek-V4-Pro, GLM-5.2, Kimi-K2.6, Qwen3.7-Max, single requests via APIs. conflict=true: the paper reports Claude-Opus-4.8 lowest on both tasks (3.33% active, 0.00% passive) and says this suggests more effective alignment; our text names the extremes neutrally and does not repeat that judgement. 'Passive Deception' counts helping a user who openly asks to fabricate, conceal or distort, so it measures compliance with misuse rather than the model deceiving its own user. The automatic judge (Kimi-K2.6) is also one of the evaluated models; the paper does not discuss this. Guard models: Qwen3Guard blocked 43.89% and Llama Guard 12.22% of English deceptive prompts."
  },
  {
+  "id": "fb03e6b0aced",
+  "slug": "cnbc-2026-10-09-kratsios-superintelligence-accelerate-science",
+  "kind": "video",
+  "title": "Superintelligence will accelerate all scientific domains, says Michael Kratsios",
+  "url": "https://www.youtube.com/watch?v=EnjO56HHiZQ",
+  "outlet": "CNBC Television",
+  "published": "2026-10-09",
+  "minutes": 6,
+  "views": 22905,
+  "also": [],
+  "summary": "According to CNBC's description, Michael Kratsios, director of the White House Office of Science and Technology Policy and assistant to President Trump, joins Squawk Box to discuss a $6 billion White House investment to boost U.S. science and AI's impact on the science community. The video title says Kratsios expects superintelligence to accelerate all scientific domains.",
+  "change": {
+   "kind": "argument",
+   "note": "Kratsios says superintelligence will speed up all science, per the title; a $6 billion White House science investment is discussed without detail."
+  },
+  "lenses": {
+   "policy": "Shows a senior White House official tying science funding to expectations about superintelligence; the description gives no safety or oversight detail.",
+   "research": "Research funding is linked to expectations about AI's effect on the science community; the description does not give the programme's terms."
+  },
+  "topics": [
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "michael-kratsios",
+    "role": "speaker",
+    "title": "Director, White House Office of Science and Technology Policy; assistant to President Trump"
+   },
+   {
+    "id": "donald-trump",
+    "role": "mentioned",
+    "title": "President"
+   }
+  ],
+  "orgs": [
+   "white-house"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. A person should check whether the $6 billion investment is a new action (which could merit decision or commitment) or an earlier one; the description does not say. Kratsios's superintelligence claim comes from the title only."
+ },
+ {
+  "id": "a008e58f1f63",
+  "slug": "cnbc-2026-10-09-tusk-anthropic-ipo-safety",
+  "kind": "video",
+  "title": "Bradley Tusk on Anthropic IPO: Why add public market pressure if safety is your top priority?",
+  "url": "https://www.youtube.com/watch?v=VFp_qEaNyb8",
+  "outlet": "CNBC Television",
+  "published": "2026-10-09",
+  "minutes": 9,
+  "views": 26502,
+  "also": [],
+  "summary": "According to CNBC's description, Bradley Tusk, founder and CEO of Tusk Ventures, joins Squawk Box to discuss the upcoming Anthropic IPO and why Tusk believes AI safety is at odds with an IPO. The video title asks why public market pressure should be added if safety is the top priority.",
+  "change": {
+   "kind": "argument",
+   "note": "Tusk argues an IPO conflicts with putting AI safety first; the IPO is described as upcoming, with no detail."
+  },
+  "lenses": {
+   "public": "Asks whether a company that says safety comes first can keep that priority once public-market investors expect returns."
+  },
+  "topics": [
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "bradley-tusk",
+    "role": "speaker",
+    "title": "Founder and CEO, Tusk Ventures"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "tusk-ventures"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. Conflict flag: the video concerns Anthropic and Claude wrote this entry from the description only; the editor should review. The upcoming IPO is as CNBC's description states it, unchecked by us; the title's question is CNBC's framing."
+ },
+ {
+  "id": "0958469e0ef7",
+  "slug": "cnn-2026-10-09-zuckerberg-trump-ai-policy",
+  "kind": "video",
+  "title": "How Zuckerberg became one of Trump's AI whisperers",
+  "url": "https://www.youtube.com/watch?v=iiRPiH87FGA",
+  "outlet": "CNN",
+  "published": "2026-10-09",
+  "minutes": 2,
+  "views": 50728,
+  "also": [],
+  "summary": "According to CNN's description, President Donald Trump once threatened Mark Zuckerberg with prison time, and the Meta CEO is now advising Trump on pivotal AI policy. CNN's Clare Duffy breaks down Zuckerberg's growing influence in Trump's inner circle in a short video of under two minutes.",
+  "change": {
+   "kind": "evidence",
+   "note": "Reports the Meta CEO now advises the President on AI policy; the description names no specific policy or advice."
+  },
+  "lenses": {
+   "public": "CNN says a company chief now has a direct line to the President on AI policy; the description names no specific rules.",
+   "policy": "Bears on who is shaping federal AI policy and whether a company CEO advises on the rules; no policy or advice is named."
+  },
+  "topics": [
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "clare-duffy",
+    "role": "speaker"
+   },
+   {
+    "id": "mark-zuckerberg",
+    "role": "subject",
+    "title": "CEO, Meta"
+   },
+   {
+    "id": "donald-trump",
+    "role": "subject",
+    "title": "President"
+   }
+  ],
+  "orgs": [
+   "cnn",
+   "meta"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnn",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. The advising relationship and the earlier prison-time threat are CNN's description and were not checked; whether the advice reporting is new or a recap of earlier coverage is not established. Duffy's role is not stated in the description beyond being CNN's."
+ },
+ {
   "id": "a78793b4fc38",
   "slug": "controlai-2026-10-09-david-robinson-left-openai",
   "kind": "video",
@@ -3945,6 +5640,73 @@
    "by": "machine"
   },
   "notes": "Only the description was read; Narayanan's arguments in the episode are not summarized here."
+ },
+ {
+  "id": "a5e8de1a75f8",
+  "slug": "forbes-2026-10-09-congress-data-center-investors",
+  "kind": "video",
+  "title": "Who Is The Single Biggest Data Center Investor In Congress?",
+  "url": "https://www.youtube.com/watch?v=WvtgQfvxPo8",
+  "outlet": "Forbes Breaking News",
+  "published": "2026-10-09",
+  "minutes": 14,
+  "views": 5726,
+  "also": [
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "These 5 Senators Collectively Have Millions Riding On The AI Data Center Boom",
+    "url": "https://www.youtube.com/watch?v=zMOm1rda8w0"
+   },
+   {
+    "outlet": "Forbes Breaking News",
+    "title": "This House Democrat Is The Top Data Center Investor In All Of Congress: Reporter",
+    "url": "https://www.youtube.com/watch?v=1nbjDnbe6BQ"
+   }
+  ],
+  "summary": "According to Forbes Breaking News' description, Forbes examined financial disclosures for every sitting House member and found hundreds of representatives and at least $45 million in investments tied to the data center boom. Reporter Kyle Khan-Mullins discusses the reporting on Forbes Newsroom. Two companion videos cover five senators and Rep. Nancy Pelosi.",
+  "change": {
+   "kind": "evidence",
+   "note": "Forbes reports its review of House financial disclosures found hundreds of members with data center-linked investments, at least $45 million in all."
+  },
+  "lenses": {
+   "public": "Lawmakers who shape AI and data center policy may also hold investments in the boom, which Forbes says its review of disclosures looked at.",
+   "policy": "Raises questions about disclosure and conflict-of-interest rules for members of Congress deciding AI infrastructure policy; the description alleges no wrongdoing."
+  },
+  "topics": [
+   "who-decides",
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "kyle-khan-mullins",
+    "role": "speaker",
+    "title": "Reporter, Forbes"
+   },
+   {
+    "id": "nancy-pelosi",
+    "role": "subject",
+    "title": "Representative (D-CA)"
+   }
+  ],
+  "orgs": [
+   "forbes",
+   "us-house",
+   "us-senate"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-forbes-breaking-news",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. Individual names come only from companion items: the third video's description refers to Rep. Nancy Pelosi's (D-CA) stake, and the senators in the Oct 12 companion are not named in its description. Figures such as the $45 million are Forbes' own and unchecked; the meaning of tied to the data center boom (direct holdings, funds) is not stated. The Oct 12 companion description also says two thirds of Americans oppose data center construction in their communities, a claim it does not source. Stories linked from the descriptions, for a full-lane read: https://www.forbes.com/sites/kylemullins/2026/10/09/nancy-pelosis-household-is-congresss-biggest-data-center-investor/ and https://www.forbes.com/sites/kylemullins/2026/10/06/5-senators-with-millions-riding-on-the-ai-data-center-boom/"
  },
  {
   "id": "1e0996e9dc2f",
@@ -4535,6 +6297,55 @@
   "notes": "preprint, not peer reviewed; abstract excerpt is cut off"
  },
  {
+  "id": "dbaa35c677c4",
+  "slug": "cnbc-2026-10-09-chowdhury-regulation-could-speed-adoption",
+  "kind": "video",
+  "title": "Rumman Chowdhury says stronger U.S. AI regulation could accelerate adoption",
+  "url": "https://www.youtube.com/watch?v=08k8oZ8qW1k",
+  "outlet": "CNBC Television",
+  "published": "2026-10-09",
+  "minutes": 7,
+  "views": 3275,
+  "also": [],
+  "summary": "According to CNBC's description, Rumman Chowdhury, founder and CEO of Humane Intelligence, discusses AI safety, declining public trust, independent oversight, regulation, adoption, immigration and the shortage of AI talent. The video title says Chowdhury argues stronger U.S. AI regulation could accelerate adoption.",
+  "change": {
+   "kind": "argument",
+   "note": "Per the title, Chowdhury says stronger U.S. regulation could speed AI adoption; the description lists topics but gives no detail."
+  },
+  "lenses": {
+   "public": "Touches on declining public trust in AI and the case for independent oversight.",
+   "policy": "Links stronger regulation and independent oversight to AI adoption, against the view that rules slow AI down; the description gives no detail."
+  },
+  "topics": [
+   "who-decides",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "rumman-chowdhury",
+    "role": "speaker",
+    "title": "Founder and CEO, Humane Intelligence"
+   }
+  ],
+  "orgs": [
+   "humane-intelligence"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. The regulation-and-adoption argument comes from the video title; the description only lists topics. We did not hear how Chowdhury reasoned."
+ },
+ {
   "id": "ca0158846d5d",
   "slug": "fli-2026-10-09-zak-stein-ai-attachment-children",
   "kind": "video",
@@ -4579,6 +6390,55 @@
    "by": "machine"
   },
   "notes": "light lane: written from the triage excerpt only, source not opened. The video title says 'Harvard Psychologist'; the description does not, so the affiliation is unchecked."
+ },
+ {
+  "id": "35c98870f9d4",
+  "slug": "forbes-2026-10-09-vance-data-centers-grid-power",
+  "kind": "video",
+  "title": "JD Vance Says Data Centers Must Add Power To Grid To Protect Consumers From Higher Costs",
+  "url": "https://www.youtube.com/watch?v=3U__Zo3_O3o",
+  "outlet": "Forbes Breaking News",
+  "published": "2026-10-09",
+  "minutes": 2,
+  "views": 6317,
+  "also": [],
+  "summary": "According to Forbes Breaking News' description, Vice President JD Vance, speaking to reporters in Ohio, said data center developers should contribute electricity to the grid and provide local economic benefits. The title adds that this is meant to protect consumers from higher costs. The clip is under two minutes.",
+  "change": {
+   "kind": "argument",
+   "note": "A Vice President says data center developers should add power to the grid and give local benefits; no binding action is described."
+  },
+  "lenses": {
+   "public": "Links the AI data center boom to household electricity costs; the title says the aim is to protect consumers from higher costs.",
+   "policy": "A Vice President states an expectation that developers add generation and local benefits; the description names no rule or enforcement."
+  },
+  "topics": [
+   "who-decides",
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "jd-vance",
+    "role": "speaker",
+    "title": "Vice President"
+   }
+  ],
+  "orgs": [
+   "forbes"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-forbes-breaking-news",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. Description says the remarks were made to reporters in Ohio and gives no further setting; whether this is a new position or a repeat is not checked. No numbers or specific policy in the description."
  },
  {
   "id": "7e3ec2662052",
@@ -4895,8 +6755,8 @@
   "conflict": false,
   "run": "2026-10-12",
   "via": {
-   "source": "techcrunch-ai",
-   "tier": 2
+   "source": "hacker-news-50-points",
+   "tier": 3
   },
   "review": {
    "by": "machine"
@@ -5611,6 +7471,54 @@
   "notes": "Description names Sam, Dario and Demis by first name only; they are not resolved to people here. Only the description was read."
  },
  {
+  "id": "248be93d2191",
+  "slug": "cnbc-2026-10-08-lamont-ai-regulation-federal-not-states",
+  "kind": "video",
+  "title": "Connecticut Governor Lamont: AI regulation should have been led by Federal Government, not states",
+  "url": "https://www.youtube.com/watch?v=YIrJplL2IJg",
+  "outlet": "CNBC Television",
+  "published": "2026-10-08",
+  "minutes": 6,
+  "views": 2231,
+  "also": [],
+  "summary": "According to CNBC's description, Connecticut Governor Ned Lamont, a Democrat, joins Closing Bell Overtime to discuss new AI laws passed in the state, the role states play in AI regulation and the AI pushback. The video title says Lamont holds that AI regulation should have been led by the federal government, not the states.",
+  "change": {
+   "kind": "argument",
+   "note": "Lamont says the federal government should have led AI regulation, not states; Connecticut's new AI laws are mentioned without detail."
+  },
+  "lenses": {
+   "public": "Which AI rules apply to people may depend on the state they live in; Connecticut has passed new AI laws, per the description.",
+   "policy": "A state governor says Washington should have led on AI rules while the state acts on its own, showing the federal-versus-state question in practice."
+  },
+  "topics": [
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "ned-lamont",
+    "role": "speaker",
+    "title": "Governor of Connecticut (D)"
+   }
+  ],
+  "orgs": [
+   "state-of-connecticut"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. The description does not say what Connecticut's new AI laws do, and does not explain what the AI pushback refers to. Lamont's position on federal leadership comes from the title."
+ },
+ {
   "id": "c27c335d8a2d",
   "slug": "cognitive-revolution-2026-10-08-the-curve-notes-tokens-salaries",
   "kind": "podcast",
@@ -6316,6 +8224,160 @@
   "notes": "preprint, not peer reviewed; abstract excerpt is cut off; triage lists three authors plus 4 others"
  },
  {
+  "id": "bf5cc3dcec7f",
+  "slug": "bloomberg-tech-2026-10-08-india-it-graduates-ai-hiring",
+  "kind": "video",
+  "title": "AI Squeezes Tech Grads at India’s Banking Hubs",
+  "url": "https://www.youtube.com/watch?v=loqInuXMln4",
+  "outlet": "Bloomberg Tech",
+  "published": "2026-10-08",
+  "minutes": 1,
+  "views": 1455,
+  "also": [],
+  "summary": "According to Bloomberg Tech's description, Siddhi Nayak explains how AI is reshaping India's six-million-strong IT workforce: entry-level hiring at global capability centers is slowing, and demand is shifting toward workers who can deploy the technology and understand the business. The clip is about a minute and a half.",
+  "change": {
+   "kind": "evidence",
+   "note": "Reports slower entry-level hiring at India's global capability centers as AI spreads; the description gives no figures for the slowdown."
+  },
+  "lenses": {
+   "public": "For young graduates in India's IT sector, the description points to fewer entry-level openings and more demand for people who can put AI to work."
+  },
+  "topics": [
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "siddhi-nayak",
+    "role": "speaker"
+   }
+  ],
+  "orgs": [
+   "bloomberg"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-bloomberg-tech",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. The six-million figure and the hiring slowdown are Bloomberg's description, with no source or numbers given. Nayak's role is not stated in the description. Whether this is new reporting or a recap of earlier Bloomberg coverage is not checked."
+ },
+ {
+  "id": "ca4210b1dcf2",
+  "slug": "bloomberg-tech-2026-10-08-marcus-openai-safeguards-control",
+  "kind": "video",
+  "title": "NYU's Gary Marcus on AI development concerns",
+  "url": "https://www.youtube.com/watch?v=-h_HGNhpj-o",
+  "outlet": "Bloomberg Tech",
+  "published": "2026-10-08",
+  "minutes": 8,
+  "views": 1982,
+  "also": [],
+  "summary": "According to Bloomberg Tech's description, Gary Marcus, co-founder and former CEO of Robust AI Inc., argues that AI developers, OpenAI among them, lack sufficient safeguards for systems they cannot reliably control. Marcus spoke with Romaine Bostick on Bloomberg's The Close.",
+  "change": {
+   "kind": "argument",
+   "note": "Marcus argues OpenAI and other developers lack enough safeguards for systems they cannot reliably control; the description gives no new evidence."
+  },
+  "lenses": {
+   "public": "A prominent critic says AI companies cannot reliably control their own systems and lack enough safeguards.",
+   "policy": "Adds to the case that developers' safeguards are insufficient, though the description cites no specific incident or test."
+  },
+  "topics": [
+   "beyond-control",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "gary-marcus",
+    "role": "speaker",
+    "title": "Co-founder and former CEO, Robust AI Inc."
+   },
+   {
+    "id": "romaine-bostick",
+    "role": "speaker"
+   }
+  ],
+  "orgs": [
+   "openai",
+   "robust-ai"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-bloomberg-tech",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. The video title calls Marcus NYU's while the description gives the Robust AI role; we use the description's. The description does not say what prompted the comments."
+ },
+ {
+  "id": "2205c2cee733",
+  "slug": "c-span-2026-10-08-friedman-collaborate-china-ai",
+  "kind": "video",
+  "title": "Thomas Friedman calls for U.S. to Collaborate with China on AI",
+  "url": "https://www.youtube.com/watch?v=o0sku3k4bRg",
+  "outlet": "C-SPAN",
+  "published": "2026-10-08",
+  "minutes": 4,
+  "views": 7869,
+  "also": [
+   {
+    "outlet": "C-SPAN",
+    "title": "Thomas Friedman on those who won't regulate AI: \"Have your f*cking spaceship ready\"",
+    "url": "https://www.youtube.com/watch?v=rWmj9VahtE0"
+   }
+  ],
+  "summary": "According to C-SPAN's description, New York Times columnist and Pulitzer Prize winner Thomas Friedman says the U.S. has no choice but to collaborate with China on AI. A second C-SPAN clip from the same event has Friedman warning that those who do not regulate AI should expect public anger if it goes wrong.",
+  "change": {
+   "kind": "argument",
+   "note": "Calls for US-China collaboration on AI and for regulation, warning of public anger if it goes wrong; commentary with no new evidence."
+  },
+  "lenses": {
+   "public": "Warns of public anger at those who leave AI unregulated if it goes wrong.",
+   "policy": "A public call for US-China cooperation on AI, set against the argument that the U.S. must stay ahead of China."
+  },
+  "topics": [
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "thomas-friedman",
+    "role": "speaker",
+    "title": "New York Times columnist and Pulitzer Prize winner"
+   }
+  ],
+  "orgs": [
+   "the-new-york-times"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-c-span",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. Both clips link to one C-SPAN event page about AI's impact on global power. The description says Friedman holds that the outcome depends on the two AI superpowers collaborating but does not say which outcome. The second clip's title, kept as C-SPAN printed it, contains profanity."
+ },
+ {
   "id": "b6996c46d57d",
   "slug": "hard-fork-2026-10-08-can-ai-companies-self-regulate",
   "kind": "video",
@@ -6790,6 +8852,71 @@
    "by": "machine"
   },
   "notes": "arXiv preprint, not peer reviewed. Full HTML text read. Models: Qwen3.6-35B-A3B, Qwen3.5-9B, Qwen3.6-27B, with teacher and student from the same base model. The paper marks equal contribution with a footnote but the HTML does not show which authors; quotes use the first-listed author's id. Other results: random-MLP prediction R² 0.38 for the student vs 0.92 for the teacher; letter counting 27.3% to 59.8%. Authors say transfer was stronger with logit distillation and with LoRA restricted to attention layers, which they note is not standard practice."
+ },
+ {
+  "id": "dc9434e7ca34",
+  "slug": "cnbc-2026-10-07-clayton-safety-speed-false-choice",
+  "kind": "video",
+  "title": "White House AI czar Jay Clayton: You have to develop technologies in a way that promotes safety",
+  "url": "https://www.youtube.com/watch?v=J-zZq7x9Jj0",
+  "outlet": "CNBC Television",
+  "published": "2026-10-07",
+  "minutes": 4,
+  "views": 9501,
+  "also": [
+   {
+    "outlet": "CNBC Television",
+    "title": "White House AI czar: You have to develop technologies in a way that promotes safety",
+    "url": "https://www.youtube.com/watch?v=b2K83b1RSyw"
+   }
+  ],
+  "summary": "According to CNBC's description, CNBC's David Faber, Palo Alto CEO Nikesh Arora and White House AI czar Jay Clayton join Closing Bell to discuss the future of AI and cybersecurity. A shorter CNBC clip says Clayton described the choice between safety and speed in developing AI as a false one.",
+  "change": {
+   "kind": "argument",
+   "note": "Clayton, per CNBC, says safety and speed in AI development are not a real trade-off; no new policy or evidence is described."
+  },
+  "lenses": {
+   "policy": "A White House official publicly rejects the idea that AI safety and speed are opposed, a signal of how the administration describes its approach."
+  },
+  "topics": [
+   "safeguards",
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "jay-clayton",
+    "role": "speaker",
+    "title": "AI czar, White House"
+   },
+   {
+    "id": "nikesh-arora",
+    "role": "speaker",
+    "title": "CEO, Palo Alto"
+   },
+   {
+    "id": "david-faber",
+    "role": "speaker",
+    "title": "CNBC"
+   }
+  ],
+  "orgs": [
+   "white-house",
+   "palo-alto-networks"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. Another entry in this run gives Clayton the title Director of National Intelligence; this description says White House AI czar. A person should reconcile the titles. The description says Palo Alto, and the org id assumes Palo Alto Networks."
  },
  {
   "id": "b594d215ff0c",
@@ -7507,6 +9634,111 @@
   "notes": "Cross-checked against Wikimedia's own post (Diff, 5 Oct 2026, bylined Selena Deckelmann, Chief Product & Technology Officer, Wikimedia Foundation): both Wikimedia quotes match it word for word. Ars says the agents posted 'malicious edits'; Wikimedia wrote 'potentially malicious edits' and hedges attribution throughout ('we believe' the agents were OpenAI's); our summary keeps the hedge. Wikimedia found no evidence its systems were used for coordination or that its systems or data were compromised. Salvaggio's remark about wiki sandboxes as note drops refers to the wider pattern, not a Wikimedia finding. Ars's 'well over a half-dozen cases' that 'would likely result in criminal charges' is the reporter's own assertion. Saved text includes reader comments; ignored. Story concerns an Anthropic competitor (conflict false per the brief's definition, flagged for awareness)."
  },
  {
+  "id": "86eaa0544f0a",
+  "slug": "cnbc-2026-10-06-altman-accept-some-bad-things",
+  "kind": "video",
+  "title": "Sam Altman: The world should accept some bad things happening for the benefits of AI",
+  "url": "https://www.youtube.com/watch?v=7CUEcmGLzSQ",
+  "outlet": "CNBC Television",
+  "published": "2026-10-06",
+  "views": 2168,
+  "also": [],
+  "summary": "According to CNBC's description, reporter Kate Rooney covers remarks on AI safety by OpenAI chief executive Sam Altman, made in an interview with Politico. The description reports Altman saying the world should accept some bad things happening in return for the technology's benefits.",
+  "change": {
+   "kind": "argument",
+   "note": "Per CNBC's description, Altman says society should accept some harm in exchange for AI's benefits; no new evidence or commitment is described."
+  },
+  "lenses": {
+   "public": "A leading AI chief is reported to say people should expect some harm from AI in return for its benefits; the description does not say which harms.",
+   "policy": "Raises how much harm lawmakers and regulators should tolerate, and who sets that line."
+  },
+  "topics": [
+   "safeguards",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "sam-altman",
+    "role": "subject",
+    "title": "CEO, OpenAI"
+   },
+   {
+    "id": "kate-rooney",
+    "role": "speaker",
+    "title": "CNBC reporter"
+   }
+  ],
+  "orgs": [
+   "openai",
+   "politico"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. The remark and the Politico interview are as CNBC's description reports them. We did not check the Politico interview or what was said before and after the remark."
+ },
+ {
+  "id": "d4c7190646f7",
+  "slug": "cnbc-2026-10-06-pentagon-emil-michael-interview",
+  "kind": "video",
+  "title": "Watch CNBC's full interview with Pentagon's Emil Michael",
+  "url": "https://www.youtube.com/watch?v=Lgg3pPRTZFE",
+  "outlet": "CNBC Television",
+  "published": "2026-10-06",
+  "minutes": 9,
+  "views": 8344,
+  "also": [],
+  "summary": "According to CNBC's description, Emil Michael, the Department of Defense's Under Secretary for Research and Engineering and Chief Technology Officer, joined Squawk on the Street for an interview of about nine minutes. Listed topics are Anduril winning a US Navy contract worth up to $2.9 billion, working with Super Intelligence Force, and AI safety concerns.",
+  "change": {
+   "kind": "argument",
+   "note": "Pentagon technology chief discusses AI safety concerns and defence contracting; the description does not say what was said, so anything new is unknown."
+  },
+  "lenses": {
+   "policy": "A senior Pentagon official addresses AI safety concerns on air alongside a large Navy contract; the description does not state the Department's position."
+  },
+  "topics": [
+   "security-and-war",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "emil-michael",
+    "role": "speaker",
+    "title": "Under Secretary for Research and Engineering and Chief Technology Officer, Department of Defense"
+   }
+  ],
+  "orgs": [
+   "pentagon",
+   "anduril",
+   "us-navy",
+   "cnbc"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. The contract figure and the Anduril win are CNBC's description, not verified here. The description writes Super Intelligence Force in quotation marks and does not say what it is (an organisation, programme or something else); check. Nothing is known about what Michael said on AI safety."
+ },
+ {
   "id": "ebe7b5e9710b",
   "slug": "cset-georgetown-2026-10-06-should-we-track-ai-chips",
   "kind": "research",
@@ -7799,6 +10031,390 @@
    "by": "machine"
   },
   "notes": "The Hacker News item links to this TechSpot article (by Rob Thubron, 6 Oct 2026); TechSpot itself relies on Bloomberg, which we did not read. Direct fetch was blocked (HTTP 403); text is the Wayback Machine copy (needed decompression, saved full page incl. navigation). The headlines say 'without (direct) human oversight', but TechSpot's own text describes physician review in every phase (all of the first 100 before dispensing, 400 reviewed weekly afterwards, then at least 10% monthly); our summary follows the body. TechSpot does not name the Utah agency or legal mechanism behind the pilot. Nolla Health CEO Luis Wenus is reported (indirectly, no quote) saying side effects of the eight medications are limited to localized skin irritation or dryness and that they are topical only. The app costs $4.99 a month per TechSpot. Transformer (2ee15e5e5538) also mentions Nolla Health."
+ },
+ {
+  "id": "e2f050885bea",
+  "slug": "bloomberg-tech-2026-10-06-bender-present-harms-existential-risk",
+  "kind": "video",
+  "title": "Bender: AI’s ‘Existential’ Risk Is ‘Fake’",
+  "url": "https://www.youtube.com/watch?v=QuZjcKshf_c",
+  "outlet": "Bloomberg Tech",
+  "published": "2026-10-06",
+  "minutes": 7,
+  "views": 28807,
+  "also": [],
+  "summary": "According to Bloomberg Tech's description, University of Washington professor Emily Bender argues the AI safety debate dwells on hypothetical existential threats and overlooks present harms: environmental costs, worker disruption, surveillance, misinformation and chatbot dependence. Bender also argues that AI systems reaching outside networks are the responsibility of deploying companies, not models going rogue.",
+  "change": {
+   "kind": "argument",
+   "note": "Argues present harms deserve more attention than existential risk, and that companies, not rogue models, answer for AI incidents."
+  },
+  "lenses": {
+   "public": "Argues the AI harms worth worrying about are the ones already here, such as surveillance, misinformation and chatbot dependence.",
+   "policy": "Puts responsibility for AI incidents on the companies that deploy the systems, which bears on liability and oversight rules.",
+   "research": "Challenges describing incidents as autonomous models going rogue; the description does not name the incidents Bender has in mind."
+  },
+  "topics": [
+   "beyond-control",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "emily-bender",
+    "role": "speaker",
+    "title": "Professor, University of Washington"
+   },
+   {
+    "id": "ed-ludlow",
+    "role": "speaker"
+   }
+  ],
+  "orgs": [
+   "university-of-washington"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-bloomberg-tech",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. The description does not say which incidents Bender refers to. The video title puts two of its words in scare quotes; we have not heard how Bender phrased the argument."
+ },
+ {
+  "id": "df34acd00ee4",
+  "slug": "bloomberg-tech-2026-10-06-manyika-safety-collective-effort",
+  "kind": "video",
+  "title": "James Manyika on AI Regulation",
+  "url": "https://www.youtube.com/watch?v=ycKzeanzmYA",
+  "outlet": "Bloomberg Tech",
+  "published": "2026-10-06",
+  "views": 1375,
+  "also": [],
+  "summary": "According to Bloomberg Tech's description, Google SVP James Manyika says a collective effort is needed to ensure AI safety and that it should not be left to any one company. The video is titled as being about AI regulation.",
+  "change": {
+   "kind": "argument",
+   "note": "Manyika calls for a collective effort on AI safety rather than leaving it to one company; no new commitment is described."
+  },
+  "lenses": {
+   "policy": "A Google executive's reported view that AI safety needs collective effort bears on whether companies can be left to govern themselves."
+  },
+  "topics": [
+   "safeguards",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "james-manyika",
+    "role": "speaker",
+    "title": "SVP, Google"
+   }
+  ],
+  "orgs": [
+   "google"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-bloomberg-tech",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. The description does not say whether the thing that should not be left to one company is safety or regulation; the title points to regulation. The description gives no proposal for what the collective effort would be."
+ },
+ {
+  "id": "8caee5cc1ea9",
+  "slug": "bloomberg-tech-2026-10-06-odd-lots-ai-extinction-debate",
+  "kind": "video",
+  "title": "Odd Lots: Maybe AI Won’t Kill Us All — Just Some of Us",
+  "url": "https://www.youtube.com/watch?v=6F-XoxRlFWU",
+  "outlet": "Bloomberg Tech",
+  "published": "2026-10-06",
+  "minutes": 1,
+  "views": 1831,
+  "also": [
+   {
+    "outlet": "Bloomberg Television",
+    "title": "Odd Lots: Maybe AI Won’t Kill Us All — Just Some of Us",
+    "url": "https://www.youtube.com/watch?v=zZJEcHUs1uY"
+   }
+  ],
+  "summary": "According to Bloomberg's description, this short clip from the Odd Lots podcast, recorded live at the Vermont Hollywood theater, has Rachel Karten of the Link in Bio newsletter and Taylor Lorenz of User Mag discussing whether AI could kill all humans or only some. The description sets it against Big Tech's extinction warnings and skeptics.",
+  "change": {
+   "kind": "repeat",
+   "note": "Revisits the debate over AI extinction risk with two commentators; the description reports no new evidence or position."
+  },
+  "lenses": {
+   "ideas": "Weighs extinction warnings against skeptics, among them former FTC Commissioner Alvaro Bedoya, who per the description pointed to the Black Death; the clip is too short to settle much."
+  },
+  "topics": [
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "rachel-karten",
+    "role": "speaker",
+    "title": "Author, Link in Bio newsletter"
+   },
+   {
+    "id": "taylor-lorenz",
+    "role": "speaker",
+    "title": "Founder, User Mag"
+   },
+   {
+    "id": "alvaro-bedoya",
+    "role": "mentioned",
+    "title": "Former US Federal Trade Commissioner"
+   }
+  ],
+  "orgs": [
+   "bloomberg"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-bloomberg-tech",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. The description does not say whether Bedoya appears in the clip or is cited as background, nor who hosts. A copy on the Bloomberg Television channel (published 2026-10-08) carries the same description. Both videos are 74 seconds long."
+ },
+ {
+  "id": "45116823a526",
+  "slug": "cnbc-2026-10-06-crowdstrike-kurtz-ai-safety",
+  "kind": "video",
+  "title": "CrowdStrike CEO George Kurtz on AI safety concerns: This is a solvable problem",
+  "url": "https://www.youtube.com/watch?v=YR5GeSlvLlI",
+  "outlet": "CNBC Television",
+  "published": "2026-10-06",
+  "minutes": 10,
+  "views": 14927,
+  "also": [
+   {
+    "outlet": "CNBC Television",
+    "title": "CrowdStrike CEO: Security industry moving 'from security to safety' amid AI boom",
+    "url": "https://www.youtube.com/watch?v=DjnfcPSpOVo"
+   }
+  ],
+  "summary": "According to CNBC's description, CrowdStrike founder and CEO George Kurtz joined Squawk Box to discuss the AI boom, AI safety concerns and a fourth annual Cybersecurity Startup Accelerator. The title suggests Kurtz sees the safety concerns as solvable. A 46-second companion clip covers how the security industry is adapting to the AI boom.",
+  "change": {
+   "kind": "argument",
+   "note": "Frames AI safety concerns as manageable, per the title; the description lists topics only and reports no new facts."
+  },
+  "lenses": {
+   "public": "A security-company chief presents AI safety as a problem that can be solved; the description does not say what that would take."
+  },
+  "topics": [
+   "safeguards",
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "george-kurtz",
+    "role": "speaker",
+    "title": "Founder and CEO, CrowdStrike"
+   }
+  ],
+  "orgs": [
+   "crowdstrike",
+   "cnbc"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. Only the title, not the description, carries the solvable-problem framing, and the title does not say in what words or how fully Kurtz made the point; check by listening. The companion clip (same day) is known only from its title and description; its title points to a shift from security toward safety."
+ },
+ {
+  "id": "307dbf512a00",
+  "slug": "cnbc-2026-10-06-deepmind-ibrahim-responsible-ai",
+  "kind": "video",
+  "title": "While the World Worries About AI, She’s Working to Make It a Force for Good",
+  "url": "https://www.youtube.com/watch?v=jKzUF5FTWEw",
+  "outlet": "CNBC Television",
+  "published": "2026-10-06",
+  "minutes": 40,
+  "views": 1209,
+  "also": [
+   {
+    "outlet": "CNBC Television",
+    "title": "Google DeepMind chief AI readiness officer on preparing for what's to come",
+    "url": "https://www.youtube.com/watch?v=rf65URNMKbo"
+   },
+   {
+    "outlet": "CNBC Television",
+    "title": "Google DeepMind chief AI readiness officer on teens using AI",
+    "url": "https://www.youtube.com/watch?v=cQDpOi-pnd4"
+   }
+  ],
+  "summary": "According to CNBC's description, Google DeepMind Chief AI Readiness Officer Lila Ibrahim talks with CNBC's Julia Boorstin about AI's potential in science, education and accessibility, why responsible development should be built in from the start, safety, workforce readiness and human skills. Two short companion clips cover the new role and teenagers' use of AI.",
+  "change": {
+   "kind": "argument",
+   "note": "Executive explains why responsible development should be built in from the start; the descriptions add no new facts or commitments."
+  },
+  "lenses": {
+   "public": "Shows how one lab executive talks about preparing people, including teenagers, for AI; the descriptions give no concrete steps.",
+   "ideas": "A companion clip says the next generation should be able to demand a role in how AI-driven change happens, a question about who shapes it."
+  },
+  "topics": [
+   "safeguards",
+   "work-and-money",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "lila-ibrahim",
+    "role": "speaker",
+    "title": "Chief AI Readiness Officer, Google DeepMind"
+   },
+   {
+    "id": "julia-boorstin",
+    "role": "speaker"
+   }
+  ],
+  "orgs": [
+   "google-deepmind",
+   "cnbc"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. A companion description says Ibrahim has been with Google DeepMind since 2018 and recently moved from chief operating officer to the AI readiness title; that detail is CNBC's, not checked elsewhere. Companion descriptions point to the CNBC Changemakers podcast episode; how it relates to this 40-minute video is unconfirmed. What Ibrahim actually said on safety is unknown."
+ },
+ {
+  "id": "e27f36d377c0",
+  "slug": "cnbc-2026-10-06-menin-local-governments-regulate-ai",
+  "kind": "video",
+  "title": "NYC council speaker: It's up to local governments to regulate AI",
+  "url": "https://www.youtube.com/watch?v=Gs_xTuSkQTQ",
+  "outlet": "CNBC Television",
+  "published": "2026-10-06",
+  "views": 1237,
+  "also": [],
+  "summary": "According to CNBC's description, New York City Council Speaker Julie Menin tells The Exchange how local governments can regulate AI, as President Donald Trump urges companies to police themselves.",
+  "change": {
+   "kind": "argument",
+   "note": "Menin says local governments can regulate AI; CNBC's description adds that Trump urges companies to police themselves. No specifics are given."
+  },
+  "lenses": {
+   "policy": "City leaders are staking a claim to regulate AI while the President is described as urging companies to police themselves, a federal-local gap."
+  },
+  "topics": [
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "julie-menin",
+    "role": "speaker",
+    "title": "Speaker, New York City Council"
+   },
+   {
+    "id": "donald-trump",
+    "role": "mentioned",
+    "title": "President"
+   }
+  ],
+  "orgs": [
+   "new-york-city-council"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "light lane: written from the triage excerpt only, source not opened. Short clip with a one-sentence description. The claim that Trump urges companies to police themselves is CNBC's wording; we did not check what was said or when. Which local powers Menin means is not stated."
+ },
+ {
+  "id": "6d81cd75a0ed",
+  "slug": "cnbc-2026-10-06-zscaler-chaudhry-ai-agents",
+  "kind": "video",
+  "title": "Zscaler CEO calls AI agents 'the weakest link'",
+  "url": "https://www.youtube.com/watch?v=A9fJXGvjW48",
+  "outlet": "CNBC Television",
+  "published": "2026-10-06",
+  "views": 4516,
+  "also": [],
+  "summary": "According to CNBC's description, Zscaler founder and CEO Jay Chaudhry told Squawk Box why AI agents can pose a security risk for companies and how they can be used safely. The title presents Chaudhry as describing agents as a weak point in company security. The video is under a minute long.",
+  "change": {
+   "kind": "argument",
+   "note": "Warns that AI agents can be a security risk for companies and says they can be used safely; the description gives no detail."
+  },
+  "lenses": {
+   "public": "A security-company CEO says AI agents can be a security risk for the firms that use them; the description does not say how."
+  },
+  "topics": [
+   "safeguards",
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "jay-chaudhry",
+    "role": "speaker",
+    "title": "Founder and CEO, Zscaler"
+   }
+  ],
+  "orgs": [
+   "zscaler",
+   "cnbc"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage title, channel and description only; the video was not watched, fetched or transcribed. The weak-point wording comes from the title, which marks a phrase as a quotation; the exact words and context were not checked. No detail on what safe use involves."
  },
  {
   "id": "d04d2d7319a3",
@@ -8112,6 +10728,196 @@
    "by": "machine"
   },
   "notes": "Uploaded captions (generated=False); last caption at about 21 min. No named people speak; the narrator is the channel. The video says agent messages are rendered 'in spirit' (paraphrased), so none are quoted here. It mentions Anthropic and Meta reporting similar breaches and notes that critics call this marketing; Anthropic is only mentioned in passing, so conflict=false, but the editor may disagree. The video's 'Update' section claims dozens more incidents, OpenAI agents probing US government websites, and a late-September test where OpenAI models got unauthorized internet access; these are the channel's claims, not checked here. It cites an unnamed incident-report author calling it possibly 'our final warning shot'. Views from triage."
+ },
+ {
+  "id": "9905f0067160",
+  "slug": "cbs-60-minutes-2026-10-05-humans-teaching-ai-jobs",
+  "kind": "video",
+  "title": "Humans are teaching AI how to do their jobs | 60 Minutes",
+  "url": "https://www.youtube.com/watch?v=peNzGhlAeZw",
+  "outlet": "60 Minutes (CBS News)",
+  "published": "2026-10-05",
+  "minutes": 13,
+  "views": 481587,
+  "also": [
+   {
+    "outlet": "60 Minutes",
+    "title": "Who Needs Humans?; The Thom Tillis Tightrope; Saint Francis in the Cloud | 60 Minutes Full Broadcast",
+    "url": "https://www.youtube.com/watch?v=Z5mYUvhrGmU"
+   },
+   {
+    "outlet": "60 Minutes",
+    "title": "Could AI do your job? 60 Minutes correspondent puts it to the test",
+    "url": "https://www.youtube.com/watch?v=BtioF-7kTy4"
+   },
+   {
+    "outlet": "60 Minutes",
+    "title": "The company paying humans to help train AI #shorts",
+    "url": "https://www.youtube.com/watch?v=w9qUmrFWblg"
+   },
+   {
+    "outlet": "60 Minutes",
+    "title": "The humans training AI #shorts",
+    "url": "https://www.youtube.com/watch?v=j9pfSpXeHZ4"
+   },
+   {
+    "outlet": "60 Minutes",
+    "title": "Is your job safe from AI? An AI CEO responds #shorts",
+    "url": "https://www.youtube.com/watch?v=d8isyuFrCxE"
+   },
+   {
+    "outlet": "60 Minutes",
+    "title": "Law firm builds an AI version of a partner #shorts",
+    "url": "https://www.youtube.com/watch?v=kYI5VMjLBTk"
+   },
+   {
+    "outlet": "60 Minutes",
+    "title": "Clara Shih warns of AI’s impact on workers #shorts",
+    "url": "https://www.youtube.com/watch?v=Sux90g5hgko"
+   },
+   {
+    "outlet": "60 Minutes",
+    "title": "The realities of being an AI trainer #shorts",
+    "url": "https://www.youtube.com/watch?v=bHU5QGCaa5M"
+   },
+   {
+    "outlet": "60 Minutes",
+    "title": "Top economist fears for the future #shorts",
+    "url": "https://www.youtube.com/watch?v=DRqP5dPviPc"
+   },
+   {
+    "outlet": "60 Minutes",
+    "title": "Economist fears for the stability of society itself in the age of AI #shorts",
+    "url": "https://www.youtube.com/watch?v=34YR4Q-IUF4"
+   }
+  ],
+  "summary": "In a 13-minute 60 Minutes segment, Jon Wertheim asks whether AI will take jobs or change them. CBS profiles Mercor, which pays experts to train AI models, and a law firm's AI partner personas. Mercor's CEO and a lawyer expect work to evolve; Clara Shih and economist Daron Acemoglu warn of large job losses.",
+  "change": {
+   "kind": "evidence",
+   "note": "New CBS interviews with over a dozen Mercor trainers on pay and erratic hours; the job-loss warnings and company reassurances are familiar."
+  },
+  "lenses": {
+   "public": "CBS reports AI-training gigs pay $20 to $200 an hour but often bring erratic hours, and that entry-level office tasks are where AI is already doing well.",
+   "policy": "Acemoglu proposes designing AI that makes humans better rather than expendable and a tax code that rewards hiring people, and says the window to act is closing.",
+   "research": "The segment cites unnamed 'mounting research' on slower hiring and lower wages in AI-exposed jobs; Acemoglu directly contradicts Foody's claim that top economists expect more jobs in ten years.",
+   "ideas": "Shih ties job loss to self-worth and community, while a lawyer and a music producer argue some work rests on human presence and lived experience that AI lacks."
+  },
+  "topics": [
+   "work-and-money",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "jon-wertheim",
+    "role": "speaker",
+    "title": "Correspondent, 60 Minutes"
+   },
+   {
+    "id": "brendan-foody",
+    "role": "speaker",
+    "title": "CEO, Mercor"
+   },
+   {
+    "id": "clara-shih",
+    "role": "speaker",
+    "title": "Until January, oversaw major AI divisions at Salesforce and then Meta; founded a nonprofit for young workers"
+   },
+   {
+    "id": "daron-acemoglu",
+    "role": "speaker",
+    "title": "Nobel Prize-winning professor, MIT"
+   },
+   {
+    "id": "kim-herlihy",
+    "role": "speaker",
+    "title": "Trial lawyer and partner, Vorys, Sater, Seymour and Pease"
+   },
+   {
+    "id": "robbie-hiser",
+    "role": "speaker",
+    "title": "Music producer"
+   },
+   {
+    "id": "melania-poonacha",
+    "role": "speaker",
+    "title": "Physician"
+   },
+   {
+    "id": "shawna-miller",
+    "role": "speaker",
+    "title": "Winemaker"
+   },
+   {
+    "id": "sam-altman",
+    "role": "speaker",
+    "title": "OpenAI"
+   }
+  ],
+  "orgs": [
+   "cbs",
+   "mercor",
+   "openai",
+   "meta",
+   "salesforce",
+   "mit",
+   "stanford-university",
+   "vorys"
+  ],
+  "quotes": [
+   {
+    "id": "9905f0067160-q1",
+    "text": "I think a significant portion of things. Everything that humans want AI to be able to do — we wanna teach it how to do that.",
+    "speaker": "brendan-foody",
+    "speakerCertain": true,
+    "context": "Mercor's CEO, asked whether the goal is for AI to do anything humans can do.",
+    "match": "exact"
+   },
+   {
+    "id": "9905f0067160-q2",
+    "text": "Well, I think that you're changing human work. It might not necessarily be that repetitive task that people have done in the past, but there's still so many other things that people could be able to do. And so I think that evolution is natural.",
+    "speaker": "brendan-foody",
+    "speakerCertain": true,
+    "context": "Answering whether training AI to do what people spent careers perfecting endangers human work.",
+    "match": "exact"
+   },
+   {
+    "id": "9905f0067160-q3",
+    "text": "There are a lot of people whose jobs it is today within companies to prepare information, research, analyze data for other individuals in that company. And increasingly, although it's starting with the entry level, it could result in a lot of people losing their jobs.",
+    "speaker": "clara-shih",
+    "speakerCertain": true,
+    "context": "Shih, who left AI leadership roles to found a nonprofit for young workers, on which jobs AI affects first.",
+    "match": "exact"
+   },
+   {
+    "id": "9905f0067160-q4",
+    "text": "Because the number of people they're employing in these positions is small relative to the number of people who will be replaced. I mean, that's the whole point of automation.",
+    "speaker": "daron-acemoglu",
+    "speakerCertain": true,
+    "context": "Acemoglu answers why AI-training work will not absorb the people AI displaces.",
+    "match": "exact"
+   },
+   {
+    "id": "9905f0067160-q5",
+    "text": "It should. And it should move us into thinking about what we can do because there is a lot we can do. Because the future is so uncertain, because the future is so much subject to our choice and agency, it is all the more important that we have this discussion.",
+    "speaker": "daron-acemoglu",
+    "speakerCertain": true,
+    "context": "Closing answer, after Wertheim asks whether fears for the stability of society should scare us.",
+    "match": "exact"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "official",
+  "conflict": false,
+  "run": "2026-10-12",
+  "via": {
+   "source": "yt-60-minutes",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Text is CBS News' own published transcript of this segment (cbsnews.com, updated Oct 4, 2026), not YouTube captions; the YouTube upload is dated Oct 5 in UTC, the broadcast aired Oct 4. The transcript covers only this 13-minute segment. The 'also' items (full 43-minute broadcast and nine Shorts) were not read; their titles suggest clips of the same segment but that was not checked, and the full broadcast also carries two unrelated stories. Figures in the segment are CBS's or the speakers' own and are not checked here: AI cited as the No. 1 reason for layoffs this year, nearly three-fourths of Americans fear AI will take jobs, trainer pay of $20 to $200 an hour, AI training as the fourth-fastest-growing LinkedIn job category, Acemoglu's view that unemployment could triple in a decade, and Foody's claim that the top 20 economists expect more jobs in 10 years. The segment opens with an AI-generated version of Wertheim, which it says is AI. The transcript spells Acemoglu's name 'DARRON' once. The change kind 'evidence' rests on CBS's interviews with over a dozen Mercor trainers; an editor may prefer 'argument'. A separate CBS web story, 'AI is being taught how to do your job', was seen in search results but not read. No instructions to an AI were found in the fetched text."
  },
  {
   "id": "f108c1be4da6",

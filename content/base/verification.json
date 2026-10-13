@@ -503,6 +503,150 @@
   "quoteSha": "0e6367150e90bde6a51e18b074d74ca573297ecf04a9e0881f5ad8858b03d407",
   "textSha": "9b44ff07ce6382efc8a25996472503c093aa95f80f0fc8b786d2d1fb8a627fbb"
  },
+ "96d9d3e9779c-q1": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "0d3b20cd1ca61cdb1d2a9401ac187add3797062d5f4cde9d5b2e2c9e6df57143",
+  "textSha": "7aec782a2b2c9ffbfdb67607feb587fdd3d0a73f3636a551cf365843eb48167a"
+ },
+ "96d9d3e9779c-q2": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "6b42656fe91c4a62464421af62ccdf5833ba2a24f25d950934e4fbfbe3b49206",
+  "textSha": "7aec782a2b2c9ffbfdb67607feb587fdd3d0a73f3636a551cf365843eb48167a"
+ },
+ "96d9d3e9779c-q3": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "b66f86ed7e2136e08c34a16ab564105377b017b2f7343e6f244f16e8f8cd79ed",
+  "textSha": "7aec782a2b2c9ffbfdb67607feb587fdd3d0a73f3636a551cf365843eb48167a"
+ },
+ "96d9d3e9779c-q4": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "97d4414d9e124dbe976c0a38812e89ea3b8ccd90e71b28da4d9ffc302b17512b",
+  "textSha": "7aec782a2b2c9ffbfdb67607feb587fdd3d0a73f3636a551cf365843eb48167a"
+ },
+ "96d9d3e9779c-q5": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "a011a8fede997a205b94c16dfe32e18f98878269cc85fc8c9571bb10f8641059",
+  "textSha": "7aec782a2b2c9ffbfdb67607feb587fdd3d0a73f3636a551cf365843eb48167a"
+ },
+ "9905f0067160-q1": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "618580518d709007c4c6d0f67ef96305658f3b75c467d54828e10274cfb4ddba",
+  "textSha": "a0398e0b682b2f5d307ae59b938ffd4329ad3323644303c31cc1e6e04acb1512"
+ },
+ "9905f0067160-q2": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "31fdf78b273c05416f61eaa53512e8080dbcae91a92f222ec2b675c725f33d60",
+  "textSha": "a0398e0b682b2f5d307ae59b938ffd4329ad3323644303c31cc1e6e04acb1512"
+ },
+ "9905f0067160-q3": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "1b4657413eae1d621e84ea3543b88cb0097ce71cc8496ca04f72ac20927dc182",
+  "textSha": "a0398e0b682b2f5d307ae59b938ffd4329ad3323644303c31cc1e6e04acb1512"
+ },
+ "9905f0067160-q4": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "ab3a0abaf5ee77eb7483bc0008df7658379a0d8806561c4dad364aa2e26f94dc",
+  "textSha": "a0398e0b682b2f5d307ae59b938ffd4329ad3323644303c31cc1e6e04acb1512"
+ },
+ "9905f0067160-q5": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "fbece957c232a975723618e1197f0817447d5231fecd1bab5cee6a19661df03a",
+  "textSha": "a0398e0b682b2f5d307ae59b938ffd4329ad3323644303c31cc1e6e04acb1512"
+ },
+ "a070f7c91f31-q1": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "b4fd938de07301f34f58895f95763ededd6e4588dc76ac59553a9a306832b9cc",
+  "textSha": "6c35d41167aacffd9e42b1fc45a69459ddcf37828d7f2b2754b23813797ef534",
+  "second": {
+   "agreement": 1,
+   "missing": []
+  }
+ },
+ "a070f7c91f31-q2": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "4d410cc6623bea834f9c0fc24a1173e415e4b9cf80e5be7eb1b844397ea0a941",
+  "textSha": "6c35d41167aacffd9e42b1fc45a69459ddcf37828d7f2b2754b23813797ef534",
+  "second": {
+   "agreement": 0.971,
+   "missing": [
+    "we've"
+   ]
+  }
+ },
+ "a070f7c91f31-q3": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "6ff3bca2dc8ade4bf7485f233a107a646b2cac6351197f0697c2c97c786b3e70",
+  "textSha": "6c35d41167aacffd9e42b1fc45a69459ddcf37828d7f2b2754b23813797ef534",
+  "second": {
+   "agreement": 1,
+   "missing": []
+  }
+ },
+ "a070f7c91f31-q4": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "ffe2ea8b1511ac73313ea48b9fb0c548d3f5b264c88f3d7c6235fff56624cfbe",
+  "textSha": "6c35d41167aacffd9e42b1fc45a69459ddcf37828d7f2b2754b23813797ef534",
+  "second": {
+   "agreement": 0.973,
+   "missing": [
+    "it"
+   ]
+  }
+ },
+ "a070f7c91f31-q5": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "c3aa8c64d9d235a43d718418d320e0fa3ee52e7abdfb6c3cfa6371669ba8e464",
+  "textSha": "6c35d41167aacffd9e42b1fc45a69459ddcf37828d7f2b2754b23813797ef534",
+  "second": {
+   "agreement": 1,
+   "missing": []
+  }
+ },
+ "a127ccbc82e6-q1": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "c63173183b818782558601063ed0a52476094c4d455fbf18d312c66333118cbe",
+  "textSha": "e828bad369b8beec8f356a1de8ad4d65f8fed5e1cd6b718b9bce1b17c5b3dd5c"
+ },
+ "a127ccbc82e6-q2": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "bc1e2650ebc7e50ec0c3a3b8f9c486d968b90a7f848b138bdca49b6d4b6cf00e",
+  "textSha": "e828bad369b8beec8f356a1de8ad4d65f8fed5e1cd6b718b9bce1b17c5b3dd5c"
+ },
+ "a127ccbc82e6-q3": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "e2f8775cf491bb0e0179e2476c1baf93a7e073fb328487fc5d5f5df452294aae",
+  "textSha": "e828bad369b8beec8f356a1de8ad4d65f8fed5e1cd6b718b9bce1b17c5b3dd5c"
+ },
+ "a127ccbc82e6-q4": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "182f1c2a4bfd40d2f55187f68344f25d47081c98230b953eb60c2ff405840022",
+  "textSha": "e828bad369b8beec8f356a1de8ad4d65f8fed5e1cd6b718b9bce1b17c5b3dd5c"
+ },
+ "a127ccbc82e6-q5": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "61439ecf02a67349e62f84663fe2fabfb9be043cbb1dcb7d5bbb620fe7fdc92e",
+  "textSha": "e828bad369b8beec8f356a1de8ad4d65f8fed5e1cd6b718b9bce1b17c5b3dd5c"
+ },
  "a184ad94a1bb-q1": {
   "ok": true,
   "mode": "exact",
@@ -1020,6 +1164,59 @@
   "mode": "exact",
   "quoteSha": "9e8b5923c83ae59e37d2fadbb061b7a9d69ba7cd0fd38f8cb0f06196e72e62fa",
   "textSha": "88ae91fcb36ec6d1183dca7b1d2fe0c3eee4b7e8ac1a25ba3b3fb77b4d7a975a"
+ },
+ "99d02959f89d-q1": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "7c6c42877d0487a2bb5994904551adb10a60841a08012b5eae284e2e6221d512",
+  "textSha": "1c8537c264eb18130e823ea0b678b774ebc2e27d23c45aea0dde27bb06ad576b",
+  "second": {
+   "agreement": 1,
+   "missing": []
+  }
+ },
+ "99d02959f89d-q2": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "bf6467455bedf8e94f3ee17da3ed505604f93299d616df7c26e9b5b96f46a424",
+  "textSha": "1c8537c264eb18130e823ea0b678b774ebc2e27d23c45aea0dde27bb06ad576b",
+  "second": {
+   "agreement": 1,
+   "missing": []
+  }
+ },
+ "99d02959f89d-q3": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "29e09a5189a07ec68e5650b0c60ca91bf14adc6f36a917f9c1ff4951dd50a5b9",
+  "textSha": "1c8537c264eb18130e823ea0b678b774ebc2e27d23c45aea0dde27bb06ad576b",
+  "second": {
+   "agreement": 1,
+   "missing": []
+  }
+ },
+ "99d02959f89d-q4": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "e8f0d934f6392870d28bcb67849d3d30e25bab3aac4f52a20b1764611348dff7",
+  "textSha": "1c8537c264eb18130e823ea0b678b774ebc2e27d23c45aea0dde27bb06ad576b",
+  "second": {
+   "agreement": 0.939,
+   "missing": [
+    "they",
+    "are"
+   ]
+  }
+ },
+ "99d02959f89d-q5": {
+  "ok": true,
+  "mode": "exact",
+  "quoteSha": "d78aaa834a745c599639a799e984bd5cddb18a426af341ea14ab983e12baf79f",
+  "textSha": "1c8537c264eb18130e823ea0b678b774ebc2e27d23c45aea0dde27bb06ad576b",
+  "second": {
+   "agreement": 1,
+   "missing": []
+  }
  },
  "9e58dc30161b-q1": {
   "ok": true,
