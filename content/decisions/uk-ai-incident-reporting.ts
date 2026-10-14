@@ -15,6 +15,7 @@ const EU_55 = { url: 'https://ai-act-service-desk.ec.europa.eu/en/ai-act/article
 const CA_SB53 = { url: 'https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/', label: 'California Governor: SB 53' };
 const NY_RAISE = { url: 'https://www.nysenate.gov/legislation/bills/2025/S8828', label: 'New York Senate: bill S8828 (the RAISE Act)' };
 const GOVAI = { url: 'https://www.governance.ai/research-paper/improving-frontier-ai-incident-reporting-regimes', label: 'GovAI policy brief, September 18' };
+const WIRED_HEARING = { base: 'wired-2026-10-13-uk-committee-ai-labs-regulation' };
 const MEMBERS = { url: 'https://members.parliament.uk/members/lords', label: 'Parliament: find a member of the Lords' };
 
 export const UK_AI_INCIDENT_REPORTING: DecisionBrief = {
@@ -42,7 +43,7 @@ export const UK_AI_INCIDENT_REPORTING: DecisionBrief = {
     {
       id: 'w-aisi',
       text: 'The AI Security Institute is a research organization, not a regulator. It works with AI developers on a voluntary basis, under memoranda of understanding, and does not have the power to compel disclosure or stop a release.',
-      cites: [AI_QUESTION, AISI],
+      cites: [AI_QUESTION, AISI, WIRED_HEARING],
     },
     {
       id: 'w-committee',
@@ -72,6 +73,11 @@ export const UK_AI_INCIDENT_REPORTING: DecisionBrief = {
       cites: [H_0901],
     },
     {
+      id: 's-labs',
+      text: 'On October 13 the Commons committee questioned OpenAI, Anthropic, Google DeepMind and Meta. As Wired reported: OpenAI’s vice president said there should be some elements that should be mandatory (Wired adds that these start with incident reporting; those two words are Wired’s, not a quotation); Anthropic said it has consistently believed there should be binding rules and that voluntary commitments are not enough; Google DeepMind, asked directly about a statutory framework, spoke of focusing on standards; Meta pointed to Britain’s existing regulators. Wired reports nothing from Anthropic, Google DeepMind or Meta on incident reporting specifically.',
+      cites: [WIRED_HEARING],
+    },
+    {
       id: 's-stage',
       text: 'The Bill has passed the Commons and is in the Lords. Lords Report stage is scheduled for Monday October 26. A third reading in the Lords, and the Commons’ consideration of any Lords amendments, have no dates yet.',
       cites: [BILL],
@@ -91,9 +97,11 @@ export const UK_AI_INCIDENT_REPORTING: DecisionBrief = {
         { text: 'The Institute says it is “not seeking to mandate requirements for frontier developers”, and will work with industry on voluntary practices, including how incidents involving AI agents are reported.', who: 'AI Security Institute', cites: [AISI] },
         { text: 'Giving the Institute a regulatory role would “undermine the voluntary collaboration on which AISI operates”, and could put barriers in the way of adopting AI in the UK.', who: 'Baroness Lloyd of Effra, Government minister', cites: [H_0901] },
         { text: 'Its relationships with the main developers, though voluntary, are bound by memoranda of understanding.', who: 'Baroness Twycross for the Government', cites: [AI_QUESTION] },
+        { text: 'Google DeepMind, asked about supporting a statutory framework, said the focus would be on standards; Meta pointed MPs to Britain’s existing regulators. Both as Wired reported.', who: 'Owen Larter, Google DeepMind; Rob Sherman, Meta', cites: [WIRED_HEARING] },
       ],
       against: [
         { text: 'Tech companies cannot be the sole arbiters of their own safety standards; the Institute should have statutory powers, including to collect reports of AI-driven cyber attacks.', who: 'Lord Tarassenko, crossbench peer', cites: [H_0901] },
+        { text: '“I don’t think the companies can be trusted to self-regulate.”', who: 'Daniel Kokotajlo, a former OpenAI researcher, to MPs on October 13, as Wired reported', cites: [WIRED_HEARING] },
         { text: 'The public learned of recent incidents through outside research and disclosures by AI firms, breached companies and government evaluators; existing arrangements do not reliably ensure incidents are reported, investigated or learned from.', who: 'Zaheed Kara, Centre for the Governance of AI', cites: [GOVAI] },
         { text: 'The White House industry pledge is a good and necessary step but no longer sufficient; there should be a legal obligation to write incident reports and to tell victims, as the BBC reported.', who: 'Brad Smith, Microsoft', cites: [{ base: 'bbc-2026-10-12-ai-less-regulated-than-milk' }] },
       ],
@@ -106,6 +114,7 @@ export const UK_AI_INCIDENT_REPORTING: DecisionBrief = {
         { text: 'There is “a complete absence of an AI Bill”; AI should not be shoehorned into a cyber security bill, “but we have no other choice”.', who: 'Baroness Harding of Winscombe, Conservative peer', cites: [H_0901, HARDING] },
         { text: 'After reading the report on the Hugging Face incident, “we need legislation now”; this Bill is “our only opportunity now”.', who: 'Baroness Freeman of Steventon, crossbench peer', cites: [H_0901] },
         { text: 'Under the Bill, the NHS must protect itself, “but the AI that is attacking it has no duties or obligations under the Bill”.', who: 'Baroness Kidron, crossbench peer', cites: [H_0901] },
+        { text: 'There should be some elements that should be mandatory, which Wired reports start with incident reporting (Wired’s wording).', who: 'Tom Duff Gordon, OpenAI vice president, to the Commons committee on October 13, as Wired reported', cites: [WIRED_HEARING] },
       ],
       against: [
         { text: 'The Bill works through risks to regulated organizations’ own systems, and making AI providers regulated “would not address the harms” that some AI products can pose. Government thinking is at an early stage, and any approach must weigh growth and innovation.', who: 'Baroness Lloyd of Effra, Government minister', cites: [H_0901] },
@@ -119,6 +128,7 @@ export const UK_AI_INCIDENT_REPORTING: DecisionBrief = {
       what: 'A standalone act regulating the most powerful AI models and their developers, which could include incident reporting, pre-deployment testing and a statutory role for the AI Security Institute. A bill was promised in 2024 and 2025; no consultation had been published by September 10, and none appeared in the King’s Speech of May 2026.',
       for: [
         { text: 'Recommends a new risk-based AI bill, one statutory AI oversight body and a statutory footing for the AI Security Institute, according to a law firm’s summary of the Joint Committee on Human Rights report of September 14, which we could not open.', who: 'Joint Committee on Human Rights', cites: [{ url: 'https://www.aoshearman.com/en/insights/ao-shearman-on-data/highlight-of-the-week-uk-joint-committee-on-human-rights-publishes-report-on-the-regulation-of-ai', label: 'A&O Shearman’s summary of the report' }] },
+        { text: 'Anthropic has consistently believed there should be binding rules on companies and that voluntary commitments are not enough, which the Commons committee heard on October 13; the statement is about binding rules in general, not about incident reporting or a particular bill.', who: 'Liam Booth-Smith, Anthropic, as Wired reported', cites: [WIRED_HEARING] },
         { text: 'A bill was potentially ready at the end of autumn 2024, “nothing came”, and previous opportunities were not taken.', who: 'Lord Holmes of Richmond, Conservative peer', cites: [H_0901] },
         { text: 'Calls for global AI safety rules now, including a legal obligation to write incident reports and to tell a victim if their system is breached by a rogue AI agent, as the BBC reported; does not specify a UK bill.', who: 'Brad Smith, Microsoft', cites: [{ base: 'bbc-2026-10-12-ai-less-regulated-than-milk' }] },
       ],
@@ -177,7 +187,7 @@ export const UK_AI_INCIDENT_REPORTING: DecisionBrief = {
     { id: 'q-threshold', text: 'What counts as a reportable AI incident or near miss? “Loss of control” has no definition in the Bill or the press release, which glosses it as “autonomous AI systems evade human oversight”.', cites: [RELEASE, FACTSHEET] },
     { id: 'q-internal', text: 'Would a duty cover incidents involving models that have not been released, or that happen during training, evaluation or internal use?', cites: [GOVAI] },
     { id: 'q-recipient', text: 'To whom would reports go, and would any be published? Who would investigate and make sure lessons are learned?', cites: [GOVAI] },
-    { id: 'q-labs', text: 'What did OpenAI, Anthropic, Google DeepMind and Meta tell the Commons committee on October 13 about mandatory reporting? No transcript was out when we checked.', cites: [BIST] },
+    { id: 'q-labs', text: 'What exactly did each company tell the Commons committee about mandatory incident reporting? Wired reports only OpenAI as backing some mandatory elements, in part in its own wording, and nothing on incident reporting from the others. The committee’s transcript or recording is the check; neither had been published when we looked.', cites: [WIRED_HEARING, BIST] },
   ],
   deadlines: [
     {
