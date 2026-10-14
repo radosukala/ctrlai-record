@@ -7,6 +7,7 @@ import { Section } from '@/components/Section';
 import { getEntry } from '@/content/base';
 import { TOPIC } from '@/content/base/taxonomy';
 import { BRIEFS, getBrief, visible } from '@/content/decisions';
+import { getQuestion } from '@/content/questions';
 import type { Argument, DecisionBrief, Fact } from '@/content/decisions/types';
 import type { Cite } from '@/content/questions/types';
 import { longDate, shortDate } from '@/lib/site';
@@ -88,7 +89,7 @@ export default async function DecisionPage({ params }: { params: Promise<{ id: s
         </div>
         <div className="b-source-link">
           <a className="key key-sm" href={challenge(b)}>Challenge this brief</a>
-          {b.questions.map(q => <Link key={q} href={`/questions/${q}`} className="small">{TOPIC[q].question}</Link>)}
+          {b.questions.map(q => getQuestion(q) ? <Link key={q} href={`/questions/${q}`} className="small">{TOPIC[q].question}</Link> : <span key={q} className="small muted">{TOPIC[q].question}</span>)}
         </div>
       </header>
 
