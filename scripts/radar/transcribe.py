@@ -188,7 +188,8 @@ if __name__ == '__main__':
             if other == 'whisper': segs2 = group(whisper(to_wav(path, tmp), tmp))
             elif other == 'openrouter': segs2 = group(openrouter(path, tmp, 'nvidia/nemotron-3.5-asr-streaming-multilingual-0.6b'))
             else: sys.exit(f'unknown --second {other}')
-            write(segs2, base + '.second', other, {'audio': src, 'role': 'second opinion', 'seconds': {'total': round(time.time() - t4)}})
+            second_model = os.path.basename(WHISPER_MODEL) if other == 'whisper' else 'nvidia/nemotron-3.5-asr-streaming-multilingual-0.6b'
+            write(segs2, base + '.second', other, {'model': second_model, 'audio': src, 'role': 'second opinion', 'seconds': {'total': round(time.time() - t4)}})
             print(f"ok second opinion ({other}) → {base}.second.txt")
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
