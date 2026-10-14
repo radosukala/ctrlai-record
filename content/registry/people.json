@@ -17,6 +17,36 @@
   "notes": "CSIS's own announcement (2025) confirms the post and lists earlier roles at OpenAI (U.S. policy lead) and Google (responsible AI policy lead); those are not in our sources or on Wikidata, so they are not recorded as memberships."
  },
  {
+  "id": "aaron-chatterji",
+  "name": "Aaron Chatterji",
+  "aliases": [
+   "Ronnie Chatterji"
+  ],
+  "wikidata": "Q93461575",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "duke-university",
+    "role": "Researcher, Fuqua School of Business",
+    "source": {
+     "by": "source",
+     "ref": "nber-2025-09-how-people-use-chatgpt",
+     "on": "2025-09"
+    }
+   },
+   {
+    "org": "openai",
+    "role": "Employee",
+    "source": {
+     "by": "source",
+     "ref": "nber-2025-09-how-people-use-chatgpt",
+     "on": "2025-09"
+    }
+   }
+  ],
+  "notes": "Wikidata item Q93461575 is labelled Ronnie Chatterji; its aliases include Aaron Chatterji and its employer is Duke's Fuqua School of Business (from 2006-07), which matches the title. The OpenAI membership is from the entry's notes (the NBER page discloses that he is an OpenAI employee). Wikidata also lists a Council of Economic Advisers post (2010-04 to 2011-08), Harvard Business School (2014-07 to 2015-07) and Goldman Sachs (2000 to 2001), with no roles; not recorded."
+ },
+ {
   "id": "adam-gleave",
   "name": "Adam Gleave",
   "wikidata": "Q139885465",
@@ -66,6 +96,32 @@
   ]
  },
  {
+  "id": "aditya-pande",
+  "name": "Aditya Pande",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "university-of-maryland",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "census-2026-04-microstructure-ai-diffusion-firms-tasks",
+     "on": "2026-04"
+    }
+   },
+   {
+    "org": "us-census-bureau",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "census-2026-04-microstructure-ai-diffusion-firms-tasks",
+     "on": "2026-04"
+    }
+   }
+  ],
+  "notes": "No Wikidata item identified: Q20685071 is an Indian painter and the other name matches are bare ORCID items for people called Pandey."
+ },
+ {
   "id": "adnan-amjad",
   "name": "Adnan Amjad",
   "country": "US",
@@ -82,10 +138,42 @@
   ]
  },
  {
+  "id": "agnieszka-ladna",
+  "name": "Agnieszka Ładna",
+  "country": "PL",
+  "memberships": [
+   {
+    "org": "nask-pib",
+    "role": "Manager, Analysis and Research Department",
+    "source": {
+     "by": "source",
+     "ref": "ilo-2025-05-20-genai-jobs-refined-exposure-index",
+     "on": "2025-05-20"
+    }
+   }
+  ]
+ },
+ {
   "id": "ajeya-cotra",
   "name": "Ajeya Cotra",
   "memberships": [],
   "notes": "No title or affiliation in our sources (an 80,000 Hours episode description calls her one of three independent investigators into the Hugging Face attacks; that is the description's claim, not a membership)."
+ },
+ {
+  "id": "aki-yokoyama",
+  "name": "Aki Yokoyama",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Senior financial sector expert, Monetary and Capital Markets Department",
+    "source": {
+     "by": "agent",
+     "ref": "https://imf.org/en/blogs/authors/aki%20yokoyama",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "Our entry (IMF Global Financial Stability Report, October 2026) lists this author without a title. The membership comes from the author's IMF page as a web search returned it (imf.org refuses scripted fetches; a World Economic Forum author page repeats the bio), not from the entry. Wikidata Q11542497 is a Japanese woman who died in 2023 and was not used."
  },
  {
   "id": "alex-bores",
@@ -174,6 +262,22 @@
   "notes": "Also described as an independent AI alignment researcher (Alignment Forum piece, 2026-10-12). Published as TurnTrout. No Wikidata item identified."
  },
  {
+  "id": "alexander-w-bartik",
+  "name": "Alexander W. Bartik",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "university-of-illinois-urbana-champaign",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "nber-2026-08-guaranteed-income-employment-effects",
+     "on": "2026-08"
+    }
+   }
+  ]
+ },
+ {
   "id": "alice-friend",
   "name": "Alice Friend",
   "memberships": [
@@ -184,6 +288,21 @@
      "by": "source",
      "ref": "forbes-2026-10-11-nyc-council-ai-hearing-catastrophic-harm",
      "on": "2026-10-11"
+    }
+   }
+  ]
+ },
+ {
+  "id": "alina-song",
+  "name": "Alina Song",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "imf-2026-01-14-bridging-skill-gaps-ai-age",
+     "on": "2026-01-14"
     }
    }
   ]
@@ -206,6 +325,24 @@
    }
   ],
   "notes": "Wikidata has no employer or position for this item; the match rests on the name, 'American attorney (born 1982)' and the Wikipedia lead (FTC commissioner from 2022 until his purported firing or resignation in 2025)."
+ },
+ {
+  "id": "amanda-pallais",
+  "name": "Amanda Pallais",
+  "wikidata": "Q108880394",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "harvard-university",
+    "role": "Professor of economics",
+    "source": {
+     "by": "source",
+     "ref": "new-york-fed-2026-06-01-remote-work-young-graduates",
+     "on": "2026-06-01"
+    }
+   }
+  ],
+  "notes": "Wikidata item Q108880394 has no data of its own (a name and a given name). The match rests on the 13 economics papers (post-secondary aid, alternative work arrangements, 'Acting Wife' and others) that cite the item as an author, all of which are papers by the Harvard economist."
  },
  {
   "id": "amber-scorah",
@@ -259,6 +396,46 @@
    }
   ],
   "notes": "Sits for the Minnesota Democratic-Farmer-Labor Party, Minnesota's affiliate of the Democratic Party (Wikidata lists both); recorded as Democratic."
+ },
+ {
+  "id": "ananaya-mittal",
+  "name": "Ananaya Mittal",
+  "memberships": [
+   {
+    "org": "forecasting-research-institute",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "chicago-fed-2026-03-forecasting-economic-effects-ai",
+     "on": "2026-03"
+    }
+   }
+  ]
+ },
+ {
+  "id": "anders-humlum",
+  "name": "Anders Humlum",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "university-of-chicago",
+    "role": "Researcher, Booth School of Business",
+    "source": {
+     "by": "source",
+     "ref": "nber-2026-03-ai-chatbots-denmark-earnings-hours",
+     "on": "2026-03"
+    }
+   },
+   {
+    "org": "nber",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "nber-2026-03-ai-chatbots-denmark-earnings-hours",
+     "on": "2026-03"
+    }
+   }
+  ]
  },
  {
   "id": "andis-draguns",
@@ -322,6 +499,22 @@
      "by": "source",
      "ref": "anthropic-2026-10-08-cyber-mission",
      "on": "2026-10-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "andy-challenger",
+  "name": "Andy Challenger",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "challenger-gray-christmas",
+    "role": "Workplace expert and chief revenue officer",
+    "source": {
+     "by": "source",
+     "ref": "challenger-2026-10-01-september-job-cuts-ai-cited",
+     "on": "2026-10-01"
     }
    }
   ]
@@ -432,6 +625,28 @@
   "notes": "The entry lists three affiliations (Independent, Institute for Law and AI, Johns Hopkins University) without saying which author holds which; none recorded."
  },
  {
+  "id": "balint-nafradi",
+  "name": "Balint Nafradi",
+  "memberships": [],
+  "notes": "Named among the authors on the ILO's publication page for Working Paper 140, with no title (the entry says he is included on the publication page's word). No affiliation could be found. Wikidata Q42591570 (Bálint Náfrádi, born 2000) is cited by physics and chemistry papers, not by anything on labour or AI, and was not used."
+ },
+ {
+  "id": "basil-halperin",
+  "name": "Basil Halperin",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "university-of-virginia",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "chicago-fed-2026-03-forecasting-economic-effects-ai",
+     "on": "2026-03"
+    }
+   }
+  ]
+ },
+ {
   "id": "beatrice-fihn",
   "name": "Beatrice Fihn",
   "wikidata": "Q41655043",
@@ -490,6 +705,44 @@
   "notes": "Independent; caucuses with the Democrats. Source title: 'Senator (I-VT)'."
  },
  {
+  "id": "beth-barnes",
+  "name": "Beth Barnes",
+  "aliases": [
+   "Elizabeth Barnes"
+  ],
+  "wikidata": "Q137382688",
+  "memberships": [
+   {
+    "org": "metr",
+    "role": "Founder and chief executive officer",
+    "leadership": true,
+    "from": "2023-12",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q135185153",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "The arXiv entry lists her under METR. The founder and chief executive statements, and the 2023-12 start, are on the METR item (Q135185153). Her Wikidata item (aliases Beth Barnes, Elizabeth Barnes) also lists undated affiliations with the Alignment Research Center, OpenAI and Google DeepMind; not recorded."
+ },
+ {
+  "id": "bharat-chandar",
+  "name": "Bharat Chandar",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "stanford-university",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "stanford-2026-08-canaries-coal-mine-ai-employment",
+     "on": "2026-08"
+    }
+   }
+  ]
+ },
+ {
   "id": "bill-gates",
   "name": "Bill Gates",
   "wikidata": "Q5284",
@@ -538,6 +791,22 @@
      "by": "source",
      "ref": "cnn-2026-10-12-gates-tapper-most-dangerous-technology",
      "on": "2026-10-12"
+    }
+   }
+  ]
+ },
+ {
+  "id": "bontu-ankit-patro",
+  "name": "Bontu Ankit Patro",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "federal-reserve-bank-of-st-louis",
+    "role": "Research associate",
+    "source": {
+     "by": "source",
+     "ref": "st-louis-fed-2026-01-12-tracking-ai-contribution-gdp-growth",
+     "on": "2026-01-12"
     }
    }
   ]
@@ -642,6 +911,21 @@
   "id": "byron-c-wallace",
   "name": "Byron C. Wallace",
   "memberships": []
+ },
+ {
+  "id": "carl-yan-shan",
+  "name": "Carl Yan Shan",
+  "memberships": [
+   {
+    "org": "openai",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "nber-2025-09-how-people-use-chatgpt",
+     "on": "2025-09"
+    }
+   }
+  ]
  },
  {
   "id": "casens",
@@ -804,6 +1088,23 @@
   ]
  },
  {
+  "id": "christopher-ong",
+  "name": "Christopher Ong",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "harvard-university",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "nber-2025-09-how-people-use-chatgpt",
+     "on": "2025-09"
+    }
+   }
+  ],
+  "notes": "The paper lists Harvard University and OpenAI as affiliations; no source says whether this is an OpenAI employee, so only Harvard is recorded."
+ },
+ {
   "id": "ciaran-m-gilligan-lee",
   "name": "Ciarán M. Gilligan-Lee",
   "memberships": []
@@ -860,6 +1161,38 @@
   "notes": "Listed from a feed byline on a New York Times video; the entry does not state the role."
  },
  {
+  "id": "colleen-mcclain",
+  "name": "Colleen McClain",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "pew-research-center",
+    "role": "Senior researcher",
+    "source": {
+     "by": "source",
+     "ref": "pew-2026-08-18-young-adults-wary-ai-jobs",
+     "on": "2026-08-18"
+    }
+   }
+  ]
+ },
+ {
+  "id": "connacher-murphy",
+  "name": "Connacher Murphy",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "stanford-university",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "chicago-fed-2026-03-forecasting-economic-effects-ai",
+     "on": "2026-03"
+    }
+   }
+  ]
+ },
+ {
   "id": "connor-leahy",
   "name": "Connor Leahy",
   "wikidata": "Q130469388",
@@ -897,6 +1230,22 @@
      "by": "source",
      "ref": "techcrunch-2026-10-09-anthropic-evals-off-internet",
      "on": "2026-10-09"
+    }
+   }
+  ]
+ },
+ {
+  "id": "cory-breaux",
+  "name": "Cory Breaux",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-census-bureau",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "census-2026-04-microstructure-ai-diffusion-firms-tasks",
+     "on": "2026-04"
     }
    }
   ]
@@ -991,6 +1340,21 @@
   "memberships": []
  },
  {
+  "id": "dan-mayland",
+  "name": "Dan Mayland",
+  "memberships": [
+   {
+    "org": "forecasting-research-institute",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "chicago-fed-2026-03-forecasting-economic-effects-ai",
+     "on": "2026-03"
+    }
+   }
+  ]
+ },
+ {
   "id": "dan-milmo",
   "name": "Dan Milmo",
   "memberships": [
@@ -1042,6 +1406,33 @@
     }
    }
   ]
+ },
+ {
+  "id": "danielle-li",
+  "name": "Danielle Li",
+  "wikidata": "Q102449292",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "mit",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2024-11-06-generative-ai-at-work-support-agents",
+     "on": "2024-11-06"
+    }
+   },
+   {
+    "org": "nber",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2024-11-06-generative-ai-at-work-support-agents",
+     "on": "2024-11-06"
+    }
+   }
+  ],
+  "notes": "Wikidata has two items for her: Q102449292 (Ph.D. MIT 2012, doctoral advisors David Autor and Pierre Azoulay) and Q96035847 (a bare 'researcher' item, author of the 2017 Science paper 'The applied value of public investments in biomedical research' with Azoulay and Sampat). Q102449292 is used; the two look like one person."
  },
  {
   "id": "danny-jones",
@@ -1117,6 +1508,24 @@
   "notes": "Wikidata Q87252044 (computer scientist, Northeastern University) is a very likely match, but our sources give no affiliation for this author and the paper could not be found, so it was not used."
  },
  {
+  "id": "david-e-broockman",
+  "name": "David E. Broockman",
+  "wikidata": "Q107131692",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "university-of-california-berkeley",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "nber-2026-08-guaranteed-income-employment-effects",
+     "on": "2026-08"
+    }
+   }
+  ],
+  "notes": "Wikidata Q107131692 is a political scientist whose employer is UC Berkeley; the item is cited as author by his field-experiment papers on legislators and voters."
+ },
+ {
   "id": "david-e-sanger",
   "name": "David E. Sanger",
   "wikidata": "Q1174291",
@@ -1176,6 +1585,49 @@
   ]
  },
  {
+  "id": "david-j-deming",
+  "name": "David J. Deming",
+  "wikidata": "Q41805728",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "harvard-university",
+    "role": "Researcher, Harvard Kennedy School",
+    "source": {
+     "by": "source",
+     "ref": "nber-2025-09-how-people-use-chatgpt",
+     "on": "2025-09"
+    }
+   },
+   {
+    "org": "nber",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "nber-2025-09-how-people-use-chatgpt",
+     "on": "2025-09"
+    }
+   }
+  ],
+  "notes": "Wikidata Q41805728 (educational economist, born 1979, alias David J. Deming) is cited as author by 19 papers on education and labour markets. Its only employer, Harvard Graduate School of Education, is undated and not recorded."
+ },
+ {
+  "id": "david-koll",
+  "name": "David Koll",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "imf-2026-01-14-bridging-skill-gaps-ai-age",
+     "on": "2026-01-14"
+    }
+   }
+  ],
+  "notes": "Wikidata Q102427634 (David Koll, computer scientist, Ph.D. Göttingen 2014) was not used: nothing ties it to the IMF."
+ },
+ {
   "id": "david-pocock",
   "name": "David Pocock",
   "wikidata": "Q2777809",
@@ -1208,8 +1660,18 @@
  {
   "id": "david-rein",
   "name": "David Rein",
-  "memberships": [],
-  "notes": "Only listed contributor of a METR blog post written in METR's voice (entry metr-2026-10-06); the entry gives no title and does not say he is employed there, so no membership is recorded."
+  "memberships": [
+   {
+    "org": "metr",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2025-07-25-ai-slowed-experienced-open-source-developers",
+     "on": "2025-07-25"
+    }
+   }
+  ],
+  "notes": "Listed under METR on the arXiv paper and as the contributor of a METR blog post."
  },
  {
   "id": "david-robinson",
@@ -1262,6 +1724,22 @@
     }
    }
   ]
+ },
+ {
+  "id": "deepali-gautam",
+  "name": "Deepali Gautam",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Research officer, Monetary and Capital Markets Department",
+    "source": {
+     "by": "agent",
+     "ref": "https://www.imf.org/fr/blogs/authors/deepali%20gautam",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "Our entry (IMF Global Financial Stability Report, October 2026) lists this author without a title. The membership comes from the author's IMF page as a web search returned it (imf.org refuses scripted fetches); a CEPR profile calls her a senior research officer in the same department."
  },
  {
   "id": "don-beyer",
@@ -1324,6 +1802,22 @@
   "memberships": []
  },
  {
+  "id": "dulani-seneviratne",
+  "name": "Dulani Seneviratne",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Financial sector expert, Monetary and Capital Markets Department",
+    "source": {
+     "by": "agent",
+     "ref": "https://www.imf.org/es/blogs/authors/dulani%20seneviratne%2C",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "Our entry (IMF Global Financial Stability Report, October 2026) lists this author without a title. The membership comes from the author's IMF page as a web search returned it (imf.org refuses scripted fetches), which also says she has co-authored chapters of earlier Global Financial Stability Reports."
+ },
+ {
   "id": "dylan-freedman",
   "name": "Dylan Freedman",
   "memberships": [
@@ -1358,6 +1852,24 @@
   "id": "edward-hu",
   "name": "Edward Hu",
   "memberships": []
+ },
+ {
+  "id": "edward-mcfowland-iii",
+  "name": "Edward McFowland III",
+  "wikidata": "Q124413989",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "harvard-university",
+    "role": "Researcher, Digital Data Design Institute, Harvard Business School",
+    "source": {
+     "by": "source",
+     "ref": "organization-science-2026-03-jagged-frontier-ai-experiment",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "Wikidata Q124413989 ('faculty at Harvard Business School', employer Harvard Business School) matches the title; it has no ORCID to check against the one in the paper's Crossref record."
  },
  {
   "id": "eitan-waks",
@@ -1403,6 +1915,38 @@
    }
   ],
   "notes": "Wikidata Q123744928 ('American journalist') was not used: it names no employer, so it cannot be compared with our title."
+ },
+ {
+  "id": "elizabeth-rhodes",
+  "name": "Elizabeth Rhodes",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "openresearch",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "nber-2026-08-guaranteed-income-employment-effects",
+     "on": "2026-08"
+    }
+   }
+  ],
+  "notes": "No Wikidata item identified: every item of that name is a historical or unrelated person."
+ },
+ {
+  "id": "elmer-li",
+  "name": "Elmer Li",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "imf-2026-01-14-bridging-skill-gaps-ai-age",
+     "on": "2026-01-14"
+    }
+   }
+  ]
  },
  {
   "id": "elon-musk",
@@ -1499,6 +2043,22 @@
   "notes": "Wikidata's description still says 'Vice President of Business at Uber'; the Wikipedia lead confirms the same person has been under secretary of defense for research and engineering since 2025. Named by press as one of four vice chairs of the new Super Intelligence Force, which our title does not state."
  },
  {
+  "id": "emilie-vestergaard",
+  "name": "Emilie Vestergaard",
+  "country": "DK",
+  "memberships": [
+   {
+    "org": "university-of-copenhagen",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "nber-2026-03-ai-chatbots-denmark-earnings-hours",
+     "on": "2026-03"
+    }
+   }
+  ]
+ },
+ {
   "id": "emily-bender",
   "name": "Emily Bender",
   "aliases": [
@@ -1533,6 +2093,67 @@
    }
   ],
   "notes": "Entry summary: \"CSET's Emily Tavenner interviews Jacob Feldgoise\"; her title is not stated."
+ },
+ {
+  "id": "emin-dinlersoz",
+  "name": "Emin Dinlersoz",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-census-bureau",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "census-2026-04-microstructure-ai-diffusion-firms-tasks",
+     "on": "2026-04"
+    }
+   }
+  ]
+ },
+ {
+  "id": "emma-harrington",
+  "name": "Emma Harrington",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "university-of-virginia",
+    "role": "Assistant professor of economics",
+    "source": {
+     "by": "source",
+     "ref": "new-york-fed-2026-06-01-remote-work-young-graduates",
+     "on": "2026-06-01"
+    }
+   }
+  ],
+  "notes": "No Wikidata item identified: Q75803720 (born 1978) and Q98053667 (founder of the Anti-Mask League) do not fit."
+ },
+ {
+  "id": "erik-brynjolfsson",
+  "name": "Erik Brynjolfsson",
+  "wikidata": "Q5388515",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "stanford-university",
+    "role": "Professor",
+    "from": "2020-07-01",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q5388515",
+     "on": "2026-10-14"
+    }
+   },
+   {
+    "org": "nber",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "stanford-2026-08-canaries-coal-mine-ai-employment",
+     "on": "2026-08"
+    }
+   }
+  ],
+  "notes": "Wikidata Q5388515 has the description 'Danish academic' but is the economist: born 1962-04-14, degrees from Harvard and MIT Sloan, Stanford professor from 2020-07-01 (MIT before, undated). Both entries (2024-11 and 2026-08) give Stanford and NBER; the Stanford role and date are Wikidata's."
  },
  {
   "id": "erin-crawley",
@@ -1577,6 +2198,64 @@
   "memberships": []
  },
  {
+  "id": "ethan-mollick",
+  "name": "Ethan Mollick",
+  "wikidata": "Q109621287",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "university-of-pennsylvania",
+    "role": "Researcher, The Wharton School",
+    "source": {
+     "by": "source",
+     "ref": "organization-science-2026-03-jagged-frontier-ai-experiment",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "Identity confirmed: the ORCID in the Crossref record of the Organization Science paper (0000-0001-6231-496X) is on Wikidata Q109621287. Wikidata gives the Wharton School as employer from 2009-06 and, in a separate statement, the role associate professor; the role is left as the entry gives it."
+ },
+ {
+  "id": "eugenie-park",
+  "name": "Eugenie Park",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "pew-research-center",
+    "role": "Research analyst",
+    "source": {
+     "by": "source",
+     "ref": "pew-2026-08-18-young-adults-wary-ai-jobs",
+     "on": "2026-08-18"
+    }
+   }
+  ]
+ },
+ {
+  "id": "eva-lyubich",
+  "name": "Eva Lyubich",
+  "memberships": [],
+  "notes": "The affiliation is taken from the Base's title, which ties her to Anthropic's own Economic Index report (a series run on Anthropic's private conversation data). The report page prints no affiliations and a web search found no page naming her as Anthropic staff, so this rests on the report being Anthropic's own. Author of an Anthropic report; the sources do not say whether this is an Anthropic employee, so no membership is recorded."
+ },
+ {
+  "id": "eva-vivalt",
+  "name": "Eva Vivalt",
+  "wikidata": "Q65030788",
+  "country": "CA",
+  "memberships": [
+   {
+    "org": "university-of-toronto",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "nber-2026-08-guaranteed-income-employment-effects",
+     "on": "2026-08"
+    }
+   }
+  ],
+  "notes": "Wikidata Q65030788 (economist, Ph.D. Berkeley 2011) lists only the Australian National University as employer, undated and out of date; the entry's title is the University of Toronto."
+ },
+ {
   "id": "evan-miyazono",
   "name": "Evan Miyazono",
   "memberships": [],
@@ -1608,6 +2287,24 @@
   ]
  },
  {
+  "id": "ezra-karger",
+  "name": "Ezra Karger",
+  "wikidata": "Q122208192",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "federal-reserve-bank-of-chicago",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "chicago-fed-2026-03-forecasting-economic-effects-ai",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "Wikidata Q122208192 is described as 'economist with the Chicago Fed and the Forecasting Research Institute' and is cited as author of the existential-risk forecasting tournament papers. The Forecasting Research Institute is not recorded as a membership: no title or dated statement gives a role there."
+ },
+ {
   "id": "ezra-klein",
   "name": "Ezra Klein",
   "wikidata": "Q605",
@@ -1623,6 +2320,73 @@
     }
    }
   ]
+ },
+ {
+  "id": "fabrizio-dellacqua",
+  "name": "Fabrizio Dell'Acqua",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "harvard-university",
+    "role": "Researcher, Digital Data Design Institute, Harvard Business School",
+    "source": {
+     "by": "source",
+     "ref": "organization-science-2026-03-jagged-frontier-ai-experiment",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "No Wikidata item identified: his ORCID (0000-0002-1998-0542, from the paper's Crossref record) is on no Wikidata item."
+ },
+ {
+  "id": "filip-konopczynski",
+  "name": "Filip Konopczyński",
+  "country": "PL",
+  "memberships": [
+   {
+    "org": "nask-pib",
+    "role": "Director, Analysis and Research Department",
+    "source": {
+     "by": "source",
+     "ref": "ilo-2025-05-20-genai-jobs-refined-exposure-index",
+     "on": "2025-05-20"
+    }
+   }
+  ],
+  "notes": "Wikidata Q115121467 (Filip Konopczyński, Polish opinion journalist, born 1987, University of Warsaw) may be the same person, but nothing in it mentions NASK or research; not used."
+ },
+ {
+  "id": "florence-jaumotte",
+  "name": "Florence Jaumotte",
+  "wikidata": "Q137105286",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "imf-2026-01-14-bridging-skill-gaps-ai-age",
+     "on": "2026-01-14"
+    }
+   }
+  ],
+  "notes": "Identity confirmed: the ORCID in the Crossref record of the IMF staff discussion note (0009-0008-4217-8719) is on Wikidata Q137105286, an item with no other data."
+ },
+ {
+  "id": "francois-candelon",
+  "name": "François Candelon",
+  "memberships": [
+   {
+    "org": "boston-consulting-group",
+    "role": "Researcher, Henderson Institute",
+    "source": {
+     "by": "source",
+     "ref": "organization-science-2026-03-jagged-frontier-ai-experiment",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "Wikidata Q33120628 (François Candelon, French businessperson born 1967, a Who's Who in France record) is probably the same person but has no employer; not used."
  },
  {
   "id": "garrison-lovely",
@@ -1662,6 +2426,22 @@
     }
    }
   ]
+ },
+ {
+  "id": "gaurav-nayyar",
+  "name": "Gaurav Nayyar",
+  "memberships": [
+   {
+    "org": "world-bank",
+    "role": "Director, World Development Report 2026",
+    "source": {
+     "by": "source",
+     "ref": "world-bank-2026-08-04-wdr-2026-promise-of-ai",
+     "on": "2026-08-04"
+    }
+   }
+  ],
+  "notes": "Listed in the entry as mentioned, with that title. Wikidata Q133606194 (born 1981, no label, no other data) was not used: nothing ties it to the World Bank."
  },
  {
   "id": "george-kurtz",
@@ -1704,6 +2484,21 @@
   "wikidata": "Q20675526",
   "memberships": [],
   "notes": "Entry arxiv-2026-10-07-comprehension-audits-automated-ai-research lists three affiliations (Independent, Institute for Law and AI, Johns Hopkins University) without saying which author holds which; none recorded. The Wikidata item (legal scholar, University of Toronto from 2018) looks out of date and is not used for memberships."
+ },
+ {
+  "id": "giovanni-melina",
+  "name": "Giovanni Melina",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "imf-2026-01-14-bridging-skill-gaps-ai-age",
+     "on": "2026-01-14"
+    }
+   }
+  ]
  },
  {
   "id": "giselle-au-nhien-nguyen",
@@ -1770,6 +2565,22 @@
   "notes": "Co-author of the CSET report discussed in entry cset-georgetown-2026-10-06; the entry does not say she is CSET staff, so no membership is recorded."
  },
  {
+  "id": "hannah-rubinton",
+  "name": "Hannah Rubinton",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "federal-reserve-bank-of-st-louis",
+    "role": "Economist",
+    "source": {
+     "by": "source",
+     "ref": "st-louis-fed-2026-01-12-tracking-ai-contribution-gdp-growth",
+     "on": "2026-01-12"
+    }
+   }
+  ]
+ },
+ {
   "id": "harpreet-sidhu",
   "name": "Harpreet Sidhu",
   "memberships": [
@@ -1783,6 +2594,12 @@
     }
    }
   ]
+ },
+ {
+  "id": "harrison-kraus",
+  "name": "Harrison Kraus",
+  "memberships": [],
+  "notes": "Named as an author of the IMF Global Financial Stability Report, October 2026 (background analyses) with no title in our entry. No page naming this person as IMF staff was found, so no membership is recorded."
  },
  {
   "id": "harshul-joshi",
@@ -1846,6 +2663,35 @@
   "notes": "The entry lists CBS-NTT Program in Physics of Intelligence (Harvard) and NTT Research without saying which author holds which; none recorded. Name has many Wikidata matches; none could be tied to this author."
  },
  {
+  "id": "hila-lifshitz",
+  "name": "Hila Lifshitz",
+  "aliases": [
+   "Hila Lifshitz-Assaf"
+  ],
+  "wikidata": "Q138578601",
+  "memberships": [
+   {
+    "org": "harvard-university",
+    "role": "Researcher, Digital Data Design Institute, Harvard Business School",
+    "source": {
+     "by": "source",
+     "ref": "organization-science-2026-03-jagged-frontier-ai-experiment",
+     "on": "2026-03"
+    }
+   },
+   {
+    "org": "university-of-warwick",
+    "role": "Researcher, Warwick Business School",
+    "source": {
+     "by": "source",
+     "ref": "organization-science-2026-03-jagged-frontier-ai-experiment",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "Identity confirmed: the ORCID in the Crossref record of the Organization Science paper (0000-0002-3461-003X) is on Wikidata Q138578601, labelled Hila Lifshitz-Assaf. A second item for the same name (Q67390754) exists and was not used. The paper prints the name as Hila Lifshitz."
+ },
+ {
   "id": "himaghna-bhattacharjee",
   "name": "Himaghna Bhattacharjee",
   "memberships": [
@@ -1905,6 +2751,26 @@
   "id": "igor-gilitschenski",
   "name": "Igor Gilitschenski",
   "memberships": []
+ },
+ {
+  "id": "indermit-gill",
+  "name": "Indermit Gill",
+  "aliases": [
+   "Indermit Singh Gill"
+  ],
+  "wikidata": "Q105452628",
+  "memberships": [
+   {
+    "org": "world-bank",
+    "role": "Senior Vice President and Chief Economist",
+    "source": {
+     "by": "source",
+     "ref": "world-bank-2026-08-04-wdr-2026-promise-of-ai",
+     "on": "2026-08-04"
+    }
+   }
+  ],
+  "notes": "Wikidata Q105452628 is described as 'Chief Economist of the World Bank Group and Senior Vice President for Development Economics', the same words as the title. A second item (Q116442353, 'Indian economist', 5 statements) carries the English Wikipedia article and looks like a duplicate of the same person; Q105452628 was kept because it holds the identifiers and the matching description."
  },
  {
   "id": "isak-czeresnia-etinger",
@@ -1980,6 +2846,21 @@
   "name": "Jacob Feldgoise",
   "memberships": [],
   "notes": "Interviewed about, and co-author of, a CSET report (entry cset-georgetown-2026-10-06); the entry does not say he is CSET staff, so no membership is recorded."
+ },
+ {
+  "id": "jaden-kim",
+  "name": "Jaden Kim",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "imf-2026-01-14-bridging-skill-gaps-ai-age",
+     "on": "2026-01-14"
+    }
+   }
+  ]
  },
  {
   "id": "jake-tapper",
@@ -2070,6 +2951,22 @@
   ]
  },
  {
+  "id": "janine-berg",
+  "name": "Janine Berg",
+  "memberships": [
+   {
+    "org": "ilo",
+    "role": "Senior Economist, Research Department",
+    "source": {
+     "by": "source",
+     "ref": "ilo-2025-05-20-genai-jobs-refined-exposure-index",
+     "on": "2025-05-20"
+    }
+   }
+  ],
+  "notes": "Wikidata Q112418888 (Janine Berg, economist, born 1971, no employer) is probably the same person, but nothing in it ties it to the ILO; not used."
+ },
+ {
   "id": "jasmine-sun",
   "name": "Jasmine Sun",
   "memberships": [],
@@ -2091,6 +2988,24 @@
    }
   ],
   "notes": "Fired by OpenAI according to our sources (she and two colleagues dispute the stated reason). Wikidata Q130793821 has no data and was not used."
+ },
+ {
+  "id": "jason-abaluck",
+  "name": "Jason Abaluck",
+  "wikidata": "Q102584126",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "yale-university",
+    "role": "Researcher, Yale School of Management",
+    "source": {
+     "by": "source",
+     "ref": "chicago-fed-2026-03-forecasting-economic-effects-ai",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "Wikidata Q102584126 (economist, employer Yale University, Ph.D. MIT 2011 under Jonathan Gruber and Michael Greenstone) is cited as author by his Medicare Part D and medical-testing papers."
  },
  {
   "id": "jason-calacanis",
@@ -2363,10 +3278,53 @@
   ]
  },
  {
+  "id": "joel-becker",
+  "name": "Joel Becker",
+  "memberships": [
+   {
+    "org": "metr",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2025-07-25-ai-slowed-experienced-open-source-developers",
+     "on": "2025-07-25"
+    }
+   }
+  ],
+  "notes": "No Wikidata item identified: the two items of that name are a clinical psychologist and a basketball player."
+ },
+ {
   "id": "johana-bhuiyan",
   "name": "Johana Bhuiyan",
   "memberships": [],
   "notes": "Guardian news author; the entry gives no title. Wikidata Q122313916 ('American journalist') names no employer, so it was not used."
+ },
+ {
+  "id": "johannes-kramer",
+  "name": "Johannes Kramer",
+  "memberships": [],
+  "notes": "Named as an author of the IMF Global Financial Stability Report, October 2026 (background analyses) with no title in our entry. No page naming this person as IMF staff was found (a search returned an ECB economist spelled Johannes Krämer, who is probably someone else), so no membership is recorded."
+ },
+ {
+  "id": "john-haltiwanger",
+  "name": "John Haltiwanger",
+  "aliases": [
+   "John C. Haltiwanger"
+  ],
+  "wikidata": "Q15056246",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "university-of-maryland",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "census-2026-04-microstructure-ai-diffusion-firms-tasks",
+     "on": "2026-04"
+    }
+   }
+  ],
+  "notes": "Wikidata Q15056246 (American economist born 1955; employers University of Maryland and UCLA, undated). The entry's notes say, citing the paper's footnote, that he was also a part-time Census Bureau employee when the paper was written. That is not recorded as a membership: no dates are given, and an undated Census membership would make him a government official on every date."
  },
  {
   "id": "john-thune",
@@ -2531,6 +3489,41 @@
   ]
  },
  {
+  "id": "josh-rosenberg",
+  "name": "Josh Rosenberg",
+  "wikidata": "Q122208221",
+  "memberships": [
+   {
+    "org": "forecasting-research-institute",
+    "role": "Chief executive officer",
+    "leadership": true,
+    "source": {
+     "by": "wikidata",
+     "ref": "Q122208221",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "The entry's title is the institute. The chief executive role is Wikidata's (occupation and employer on his item, description 'CEO, Forecasting Research Institute'); his own forum post also says he is its CEO and a co-founder. The item is cited as author by the existential-risk forecasting tournament papers."
+ },
+ {
+  "id": "joshua-kendall",
+  "name": "Joshua Kendall",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "yale-budget-lab",
+    "role": "Research fellow",
+    "source": {
+     "by": "agent",
+     "ref": "https://budgetlab.yale.edu/person/joshua-kendall",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "The entry's title is the institute; the role is from the Budget Lab's own staff page (read on 2026-10-14). No Wikidata item identified."
+ },
+ {
   "id": "julia-boorstin",
   "name": "Julia Boorstin",
   "wikidata": "Q117221806",
@@ -2627,6 +3620,24 @@
   "notes": "Source titles: 'AI Minister', 'UK AI minister'. Wikidata labels the 2025-26 post 'Parliamentary Under-Secretary of State for AI and Digital Government'; Wikipedia says 'AI and Online Safety'. The role text above leaves the portfolio name out."
  },
  {
+  "id": "karim-r-lakhani",
+  "name": "Karim R. Lakhani",
+  "wikidata": "Q6370643",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "harvard-university",
+    "role": "Researcher, Digital Data Design Institute, Harvard Business School",
+    "source": {
+     "by": "source",
+     "ref": "organization-science-2026-03-jagged-frontier-ai-experiment",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "Identity confirmed: the ORCID in the Crossref record of the Organization Science paper (0000-0002-5535-8304) is on Wikidata Q6370643 (professor at Harvard Business School, employer there from 2006-07-01)."
+ },
+ {
   "id": "karl-koch",
   "name": "Karl Koch",
   "memberships": [
@@ -2642,6 +3653,23 @@
    }
   ],
   "notes": "Wikidata search returns only unrelated Karl Kochs."
+ },
+ {
+  "id": "karol-kaminski",
+  "name": "Karol Kamiński",
+  "country": "PL",
+  "memberships": [
+   {
+    "org": "nask-pib",
+    "role": "Senior Researcher, Analysis and Research Department",
+    "source": {
+     "by": "source",
+     "ref": "ilo-2025-05-20-genai-jobs-refined-exposure-index",
+     "on": "2025-05-20"
+    }
+   }
+  ],
+  "notes": "No Wikidata item identified: the items of that name are a Slovak Righteous Among the Nations, a basketball player, a physician and a cyclist who died in 1906."
  },
  {
   "id": "kat-lay",
@@ -2684,10 +3712,60 @@
   ]
  },
  {
+  "id": "katherine-c-kellogg",
+  "name": "Katherine C. Kellogg",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "mit",
+    "role": "Researcher, Sloan School of Management",
+    "source": {
+     "by": "source",
+     "ref": "organization-science-2026-03-jagged-frontier-ai-experiment",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "No Wikidata item identified: her ORCID (0000-0003-4372-3498, from the paper's Crossref record) is on no item."
+ },
+ {
+  "id": "kathryn-bonney",
+  "name": "Kathryn Bonney",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-census-bureau",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "census-2026-04-microstructure-ai-diffusion-firms-tasks",
+     "on": "2026-04"
+    }
+   }
+  ]
+ },
+ {
   "id": "keltan",
   "name": "keltan",
   "memberships": [],
   "notes": "Pseudonymous forum author (LessWrong handle). The post says the views are the author's own, not MIRI's, which hints at a MIRI connection; no employment is stated, so none is recorded."
+ },
+ {
+  "id": "kevin-bryan",
+  "name": "Kevin Bryan",
+  "country": "CA",
+  "memberships": [
+   {
+    "org": "university-of-toronto",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "chicago-fed-2026-03-forecasting-economic-effects-ai",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "No Wikidata item identified: the items of that name are a British politician, a jazz trumpeter and a hospital researcher."
  },
  {
   "id": "kevin-roose",
@@ -2708,6 +3786,21 @@
   "notes": "Sources give 'Technology journalist and author' and 'Author, AGI Chronicles' with no employer. Wikidata lists none; Wikipedia says he worked for The New York Times as technology columnist and Hard Fork host, in the past tense, so the current employer is not recorded."
  },
  {
+  "id": "kevin-wadman",
+  "name": "Kevin Wadman",
+  "memberships": [
+   {
+    "org": "openai",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "nber-2025-09-how-people-use-chatgpt",
+     "on": "2025-09"
+    }
+   }
+  ]
+ },
+ {
   "id": "kim-herlihy",
   "name": "Kim Herlihy",
   "memberships": [
@@ -2726,6 +3819,22 @@
   "id": "kirsten-horton",
   "name": "Kirsten Horton",
   "memberships": []
+ },
+ {
+  "id": "konrad-roslaniec",
+  "name": "Konrad Rosłaniec",
+  "country": "PL",
+  "memberships": [
+   {
+    "org": "nask-pib",
+    "role": "Researcher, Analysis and Research Department",
+    "source": {
+     "by": "source",
+     "ref": "ilo-2025-05-20-genai-jobs-refined-exposure-index",
+     "on": "2025-05-20"
+    }
+   }
+  ]
  },
  {
   "id": "krishani-dhanji",
@@ -2785,6 +3894,22 @@
   "id": "laura-chung",
   "name": "Laura Chung",
   "memberships": []
+ },
+ {
+  "id": "lee-c-tucker",
+  "name": "Lee C. Tucker",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-census-bureau",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "census-2026-04-ai-early-career-hiring-qwi",
+     "on": "2026-04"
+    }
+   }
+  ]
  },
  {
   "id": "leo-zeitler",
@@ -2848,10 +3973,43 @@
   "notes": "Forum handle (LessWrong / EA Forum author); no real name, title or affiliation in our sources."
  },
  {
+  "id": "lindsey-raymond",
+  "name": "Lindsey Raymond",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "mit",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2024-11-06-generative-ai-at-work-support-agents",
+     "on": "2024-11-06"
+    }
+   }
+  ]
+ },
+ {
   "id": "liron-shapira",
   "name": "Liron Shapira",
   "memberships": [],
   "notes": "Speaker in a Doom Debates episode; the entry gives no title."
+ },
+ {
+  "id": "lisa-krayer",
+  "name": "Lisa Krayer",
+  "wikidata": "Q91332157",
+  "memberships": [
+   {
+    "org": "boston-consulting-group",
+    "role": "Researcher, Henderson Institute",
+    "source": {
+     "by": "source",
+     "ref": "organization-science-2026-03-jagged-frontier-ai-experiment",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "Wikidata Q91332157 (Lisa J Krayer, an ORCID item) is used: the public ORCID record behind it (0000-0001-9133-226X) lists Boston Consulting Group as employer and a 2026 paper on predicting success in LLM-assisted tasks, next to earlier physics papers (Ph.D. in electrical and computer engineering, University of Maryland). The Organization Science record gives no ORCID for her, so the match rests on the name and BCG."
  },
  {
   "id": "liz-lloyd",
@@ -2902,6 +4060,21 @@
   ]
  },
  {
+  "id": "longji-li",
+  "name": "Longji Li",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "imf-2026-01-14-bridging-skill-gaps-ai-age",
+     "on": "2026-01-14"
+    }
+   }
+  ]
+ },
+ {
   "id": "lori-trahan",
   "name": "Lori Trahan",
   "wikidata": "Q56486676",
@@ -2935,6 +4108,27 @@
     }
    }
   ]
+ },
+ {
+  "id": "lucia-foster",
+  "name": "Lucia Foster",
+  "aliases": [
+   "Lucia Smith Foster"
+  ],
+  "wikidata": "Q29570229",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-census-bureau",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "census-2026-04-microstructure-ai-diffusion-firms-tasks",
+     "on": "2026-04"
+    }
+   }
+  ],
+  "notes": "Wikidata Q29570229 (alias Lucia Foster) is described as 'Chief of the Census Center for Economic Studies; Chief Economist of the U.S Census Bureau'. The description is undated, so the role is left as the entry gives it."
  },
  {
   "id": "luis-wenus",
@@ -2974,6 +4168,33 @@
   ]
  },
  {
+  "id": "marek-troszynski",
+  "name": "Marek Troszyński",
+  "wikidata": "Q122829515",
+  "country": "PL",
+  "memberships": [
+   {
+    "org": "nask-pib",
+    "role": "Expert, Analysis and Research Department",
+    "source": {
+     "by": "source",
+     "ref": "ilo-2025-05-20-genai-jobs-refined-exposure-index",
+     "on": "2025-05-20"
+    }
+   },
+   {
+    "org": "civitas-university",
+    "role": "Assistant Professor",
+    "source": {
+     "by": "source",
+     "ref": "ilo-2025-05-20-genai-jobs-refined-exposure-index",
+     "on": "2025-05-20"
+    }
+   }
+  ],
+  "notes": "Identity confirmed: Wikidata Q122829515 carries ORCID 0000-0002-3653-4018, whose public record lists him as Assistant Professor at Collegium Civitas (Department of Sociology, since 2016-03) and includes the ILO paper 'Generative AI and jobs' and the NASK-PIB and ILO study of jobs exposure. Q139361012 is a polonist born in 1955."
+ },
+ {
   "id": "maria-cantwell",
   "name": "Maria Cantwell",
   "wikidata": "Q22250",
@@ -3011,6 +4232,26 @@
   "notes": "Axios author; the entry gives no title."
  },
  {
+  "id": "marina-mendes-tavares",
+  "name": "Marina Mendes Tavares",
+  "aliases": [
+   "Marina M. Tavares"
+  ],
+  "wikidata": "Q116676682",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "imf-2026-01-14-bridging-skill-gaps-ai-age",
+     "on": "2026-01-14"
+    }
+   }
+  ],
+  "notes": "Wikidata has two items for her, both with the IMF as employer: Q116676682 ('economist in the Research Department at the International Monetary Fund', cited by a paper on AI exposure and occupational mobility), which is used, and Q102533844 (Ph.D. Minnesota 2011). Her ORCID in the Crossref record of the IMF note (0000-0002-0426-3655) is on neither."
+ },
+ {
   "id": "mark-sweney",
   "name": "Mark Sweney",
   "memberships": [],
@@ -3036,10 +4277,45 @@
   ]
  },
  {
+  "id": "martha-gimbel",
+  "name": "Martha Gimbel",
+  "wikidata": "Q106576601",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "yale-budget-lab",
+    "role": "Executive director and co-founder",
+    "leadership": true,
+    "source": {
+     "by": "agent",
+     "ref": "https://budgetlab.yale.edu/person/martha-gimbel",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "The entry's title is the institute; the role is from the Budget Lab's own staff page (read on 2026-10-14: 'Executive Director and Co-Founder'). Wikidata Q106576601 (American economist) has that page as its website and no employer."
+ },
+ {
   "id": "matt-burgess",
   "name": "Matt Burgess",
   "memberships": [],
   "notes": "Wired author; the entry gives no title. The name has several Wikidata matches; none could be tied to this author."
+ },
+ {
+  "id": "matt-reynolds",
+  "name": "Matt Reynolds",
+  "memberships": [
+   {
+    "org": "forecasting-research-institute",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "chicago-fed-2026-03-forecasting-economic-effects-ai",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "No Wikidata item identified: the items of that name are a journalist, a film editor and sportspeople."
  },
  {
   "id": "matt-yglesias",
@@ -3097,6 +4373,12 @@
   "notes": "The Guardian bio (2026-10-12): has held research positions in the AI industry, including at Google DeepMind and currently Anthropic, but writes in his Yale role. DeepMind is marked ended on that wording; Wikidata gives the 2016 start and no end."
  },
  {
+  "id": "matyas-farkas",
+  "name": "Matyas Farkas",
+  "memberships": [],
+  "notes": "Named as an author of the IMF Global Financial Stability Report, October 2026 (background analyses) with no title in our entry. No page naming this person as IMF staff was found, so no membership is recorded. Wikidata Q110264646 (Mátyás Farkas, Hungarian economist born 1987) may be the same person but names no employer; not used."
+ },
+ {
   "id": "max-read",
   "name": "Max Read",
   "memberships": [
@@ -3110,6 +4392,22 @@
     }
    }
   ]
+ },
+ {
+  "id": "maxim-massenkoff",
+  "name": "Maxim Massenkoff",
+  "memberships": [
+   {
+    "org": "anthropic",
+    "role": "Economist",
+    "source": {
+     "by": "agent",
+     "ref": "https://www.inet.ox.ac.uk/events/labor-market-impacts-of-ai-a-new-measure-and-early-evidence",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "The entry's title is 'Lead author, Anthropic Economic Index report'; it names no employer. The membership comes from the INET Oxford event page for his talk on 14 May 2026 ('Maxim Massenkoff is an Economist at Anthropic'), read on 2026-10-14."
  },
  {
   "id": "melania-poonacha",
@@ -3190,6 +4488,12 @@
    }
   ],
   "notes": "Fired by OpenAI according to our sources (disputes the stated reason). No Wikidata item found."
+ },
+ {
+  "id": "mindaugas-leika",
+  "name": "Mindaugas Leika",
+  "memberships": [],
+  "notes": "Named as an author of the IMF Global Financial Stability Report, October 2026 (background analyses) with no title in our entry. A 2011 Bank of Lithuania announcement says he had been an expert in the IMF's Monetary and Capital Markets Department since 2009 and was appointed director of the Bank's economics department in July 2011; no current page was found, so no membership is recorded. Wikidata Q16464725 (economist born 1979, no other data) fits but is unconfirmed; not used."
  },
  {
   "id": "mitchell-labiak",
@@ -3322,6 +4626,37 @@
      "by": "wikidata",
      "ref": "Q170581",
      "on": "2026-10-13"
+    }
+   }
+  ]
+ },
+ {
+  "id": "natalia-emanuel",
+  "name": "Natalia Emanuel",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "federal-reserve-bank-of-new-york",
+    "role": "Research economist, Research and Statistics Group",
+    "source": {
+     "by": "source",
+     "ref": "new-york-fed-2026-06-01-remote-work-young-graduates",
+     "on": "2026-06-01"
+    }
+   }
+  ]
+ },
+ {
+  "id": "nate-rush",
+  "name": "Nate Rush",
+  "memberships": [
+   {
+    "org": "metr",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "arxiv-2025-07-25-ai-slowed-experienced-open-source-developers",
+     "on": "2025-07-25"
     }
    }
   ]
@@ -3475,6 +4810,21 @@
   ]
  },
  {
+  "id": "otto-kuusela",
+  "name": "Otto Kuusela",
+  "memberships": [
+   {
+    "org": "forecasting-research-institute",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "chicago-fed-2026-03-forecasting-economic-effects-ai",
+     "on": "2026-03"
+    }
+   }
+  ]
+ },
+ {
   "id": "owain-evans",
   "name": "Owain Evans",
   "wikidata": "Q126287505",
@@ -3489,6 +4839,23 @@
     }
    }
   ]
+ },
+ {
+  "id": "patrick-krause",
+  "name": "Patrick Krause",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "openresearch",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "nber-2026-08-guaranteed-income-employment-effects",
+     "on": "2026-08"
+    }
+   }
+  ],
+  "notes": "No Wikidata item identified: the items of that name are a herpetologist and a journalist born in 1965."
  },
  {
   "id": "paul-christiano",
@@ -3527,6 +4894,21 @@
   ]
  },
  {
+  "id": "pawel-gmyrek",
+  "name": "Paweł Gmyrek",
+  "memberships": [
+   {
+    "org": "ilo",
+    "role": "Senior Researcher, Research Department",
+    "source": {
+     "by": "source",
+     "ref": "ilo-2025-05-20-genai-jobs-refined-exposure-index",
+     "on": "2025-05-20"
+    }
+   }
+  ]
+ },
+ {
   "id": "pegah-ghahremani",
   "name": "Pegah Ghahremani",
   "memberships": [
@@ -3540,6 +4922,60 @@
     }
    }
   ]
+ },
+ {
+  "id": "peter-mccrory",
+  "name": "Peter McCrory",
+  "memberships": [
+   {
+    "org": "anthropic",
+    "role": "Head of Economics",
+    "source": {
+     "by": "agent",
+     "ref": "https://www.anthropic.com/news/economic-futures-uk-europe",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "The entry's title is 'Lead author, Anthropic Economic Index report'; it names no employer. The role is from Anthropic's own post of 2025-11-05 ('Peter McCrory, Head of Economics at Anthropic'), which a Moody's podcast page of 2026-05-01 repeats."
+ },
+ {
+  "id": "phil-trammell",
+  "name": "Phil Trammell",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "stanford-university",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "chicago-fed-2026-03-forecasting-economic-effects-ai",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "No Wikidata item identified: the only match is an architect who died in 1982."
+ },
+ {
+  "id": "philip-e-tetlock",
+  "name": "Philip E. Tetlock",
+  "aliases": [
+   "Philip Tetlock"
+  ],
+  "wikidata": "Q2086480",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "university-of-pennsylvania",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "chicago-fed-2026-03-forecasting-economic-effects-ai",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "Wikidata Q2086480 (psychologist, employers University of Pennsylvania and UC Berkeley, undated; affiliation Wharton). Pages about the Forecasting Research Institute describe him as its president, chief scientist and a co-founder, but no source in the Base or Wikidata gives that, so it is not recorded."
  },
  {
   "id": "rachel-bujalski",
@@ -3615,6 +5051,21 @@
   ]
  },
  {
+  "id": "rebecca-ceppas-de-castro",
+  "name": "Rebecca Ceppas de Castro",
+  "memberships": [
+   {
+    "org": "forecasting-research-institute",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "chicago-fed-2026-03-forecasting-economic-effects-ai",
+     "on": "2026-03"
+    }
+   }
+  ]
+ },
+ {
   "id": "reza-aghajani",
   "name": "Reza Aghajani",
   "memberships": [
@@ -3629,6 +5080,21 @@
    }
   ],
   "notes": "Wikidata has two Reza Aghajani items (a Brown PhD, a UC San Diego researcher); neither could be tied to this author."
+ },
+ {
+  "id": "ria-viswanathan",
+  "name": "Ria Viswanathan",
+  "memberships": [
+   {
+    "org": "forecasting-research-institute",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "chicago-fed-2026-03-forecasting-economic-effects-ai",
+     "on": "2026-03"
+    }
+   }
+  ]
  },
  {
   "id": "richard-hermer",
@@ -3833,6 +5299,55 @@
   ]
  },
  {
+  "id": "ruth-appel",
+  "name": "Ruth Appel",
+  "memberships": [],
+  "notes": "The affiliation is taken from the Base's title, which ties her to Anthropic's own Economic Index report (a series run on Anthropic's private conversation data; she is first author of the January 2026 report). The report pages print no affiliations and no page naming her as Anthropic staff was found. Wikidata Q90347507 (Ruth E Appel, a bare ORCID item) may be a Stanford communication researcher of the same name; not used. Author of an Anthropic report; the sources do not say whether this is an Anthropic employee, so no membership is recorded."
+ },
+ {
+  "id": "ruyu-chen",
+  "name": "Ruyu Chen",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "stanford-university",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "stanford-2026-08-canaries-coal-mine-ai-employment",
+     "on": "2026-08"
+    }
+   }
+  ]
+ },
+ {
+  "id": "ryan-heller",
+  "name": "Ryan Heller",
+  "memberships": [],
+  "notes": "The affiliation is taken from the Base's title, which ties him to Anthropic's own Economic Index report (he is an author of the January, March and June 2026 reports). The report pages print no affiliations and no page naming him as Anthropic staff was found. Wikidata Q141496177 (Ryan Heller, American film producer) is another person. Author of an Anthropic report; the sources do not say whether this is an Anthropic employee, so no membership is recorded."
+ },
+ {
+  "id": "ryan-nunn",
+  "name": "Ryan Nunn",
+  "aliases": [
+   "Ryan D. Nunn"
+  ],
+  "wikidata": "Q103077434",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "yale-budget-lab",
+    "role": "Director of research",
+    "source": {
+     "by": "agent",
+     "ref": "https://budgetlab.yale.edu/person/ryan-nunn",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "The entry's title is the institute; the role is from the Budget Lab's own staff page (read on 2026-10-14), which also says he holds a Ph.D. in public policy and economics from the University of Michigan. That matches Wikidata Q103077434 (Ph.D. University of Michigan 2012, doctoral advisors Miles Kimball and Dan Silverman), the basis of the match."
+ },
+ {
   "id": "sam-altman",
   "name": "Sam Altman",
   "wikidata": "Q7407093",
@@ -3915,6 +5430,47 @@
    }
   ],
   "notes": "Source titles: 'AI safety writer and researcher'; the entry summary calls her a former UK AI Security Institute communications officer."
+ },
+ {
+  "id": "sarah-miller",
+  "name": "Sarah Miller",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "university-of-michigan",
+    "role": "Researcher, Ross School of Business",
+    "source": {
+     "by": "source",
+     "ref": "nber-2026-08-guaranteed-income-employment-effects",
+     "on": "2026-08"
+    }
+   },
+   {
+    "org": "nber",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "nber-2026-08-guaranteed-income-employment-effects",
+     "on": "2026-08"
+    }
+   }
+  ],
+  "notes": "The entry itself says to check this id against other people of that name. Wikidata Q123485419 ('US health economist', no other data) is probably the same person but cannot be tied to Michigan; not used."
+ },
+ {
+  "id": "saran-rajendran",
+  "name": "Saran Rajendran",
+  "memberships": [
+   {
+    "org": "boston-consulting-group",
+    "role": "Researcher, Henderson Institute",
+    "source": {
+     "by": "source",
+     "ref": "organization-science-2026-03-jagged-frontier-ai-experiment",
+     "on": "2026-03"
+    }
+   }
+  ]
  },
  {
   "id": "satya-nadella",
@@ -4075,6 +5631,22 @@
   "notes": "Speaker in a Bloomberg Tech clip on India's IT workforce; the entry notes that her role is not stated."
  },
  {
+  "id": "silvia-l-ramirez",
+  "name": "Silvia L. Ramirez",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Senior financial sector expert, Monetary and Capital Markets Department",
+    "source": {
+     "by": "agent",
+     "ref": "https://www.structuredcreditinvestor.com/risk-transfer-and-synthetics-2025/?p=156",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "Our entry (IMF Global Financial Stability Report, October 2026) lists this author without a title. The membership comes from a 2025 conference speaker biography (read on 2026-10-14): 'Senior Financial Sector Expert in the Monetary Fund's Monetary and Capital Markets Department', rejoined in 2022. Wikidata Q59784982 (a biomedical researcher) is another person."
+ },
+ {
   "id": "simon-mendelsohn",
   "name": "Simon Mendelsohn",
   "memberships": []
@@ -4094,6 +5666,23 @@
    }
   ],
   "notes": "Entry summary: \"CNBC's Sri Jegarajah\"; her role is not stated."
+ },
+ {
+  "id": "srobona-mitra",
+  "name": "Srobona Mitra",
+  "wikidata": "Q103265775",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Deputy division chief, Monetary and Capital Markets Department",
+    "source": {
+     "by": "agent",
+     "ref": "https://imf.org/en/blogs/authors/srobona%20mitra",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "Our entry (IMF Global Financial Stability Report, October 2026) lists this author without a title. The membership comes from the author's IMF page as a web search returned it (imf.org refuses scripted fetches). Her IMF and CEPR profiles (as a web search returned them) say she has a Ph.D. in economics from the University of Washington, which matches Wikidata Q103265775 (economist, employer IMF, Ph.D. University of Washington 2002), the basis of the match."
  },
  {
   "id": "steven-bartlett",
@@ -4229,6 +5818,35 @@
   "notes": "The Wikidata item has an English Wikipedia article (research group leader at the University of Stuttgart, AI safety)."
  },
  {
+  "id": "thomas-cunningham",
+  "name": "Thomas Cunningham",
+  "aliases": [
+   "Tom Cunningham"
+  ],
+  "memberships": [
+   {
+    "org": "openai",
+    "role": "Researcher",
+    "source": {
+     "by": "agent",
+     "ref": "https://techbuzz.ai/articles/openai-researcher-quits-over-alleged-research-censorship-claims",
+     "on": "2026-10-14"
+    },
+    "ended": true
+   },
+   {
+    "org": "metr",
+    "role": "Data scientist",
+    "source": {
+     "by": "agent",
+     "ref": "https://hai.stanford.edu/events/bay-area-tech-economics-seminar-with-tom-cunningham-metr",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "The NBER entry (2025-09) lists him at OpenAI. WIRED reported in December 2025, from four sources, that economist Tom Cunningham left OpenAI in September (he declined to comment); the original was not accessible, so the date comes from secondary coverage (techbuzz.ai, CleanTechnica) and the year is inferred from the date of those reports. A Stanford seminar page for 2025-12-11 calls him 'Data Scientist, METR (previously at OpenAI)', which is the METR membership. Wired's Tom Cunningham and the paper's Thomas Cunningham are taken to be the same person (both economists at OpenAI in 2025); the paper's own page was not checked for the first name."
+ },
+ {
   "id": "thomas-friedman",
   "name": "Thomas Friedman",
   "aliases": [
@@ -4292,6 +5910,23 @@
     }
    }
   ]
+ },
+ {
+  "id": "todd-jones",
+  "name": "Todd Jones",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "mississippi-state-university",
+    "role": "Researcher",
+    "source": {
+     "by": "source",
+     "ref": "chicago-fed-2026-03-forecasting-economic-effects-ai",
+     "on": "2026-03"
+    }
+   }
+  ],
+  "notes": "No Wikidata item identified: the items of that name are a businessperson, athletes, a lawyer, an ornithologist and others."
  },
  {
   "id": "tom-dupre-la-tour",
@@ -4396,6 +6031,38 @@
   ]
  },
  {
+  "id": "valerie-foushee",
+  "name": "Valerie Foushee",
+  "wikidata": "Q16729064",
+  "country": "US",
+  "memberships": [
+   {
+    "org": "us-house",
+    "role": "Representative for North Carolina's 4th district",
+    "party": "us-democratic",
+    "from": "2023-01-03",
+    "source": {
+     "by": "agent",
+     "ref": "https://en.wikipedia.org/wiki/Valerie_Foushee",
+     "on": "2026-10-14"
+    }
+   },
+   {
+    "org": "north-carolina-senate",
+    "role": "Member of the North Carolina Senate",
+    "party": "us-democratic",
+    "from": "2013-09-13",
+    "to": "2023-01-01",
+    "source": {
+     "by": "wikidata",
+     "ref": "Q16729064",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "The entry's title is only 'Representative' (H.R. 10044, a House bill). The House seat, its start date and her party are from Wikipedia, because her Wikidata item lacks the House post; the Senate term and dates are Wikidata's. Wikipedia also lists a 2013 term in the North Carolina House of Representatives (50th district), not recorded."
+ },
+ {
   "id": "veronica-irwin",
   "name": "Veronica Irwin",
   "memberships": [],
@@ -4419,6 +6086,12 @@
   "country": "US",
   "memberships": [],
   "notes": "Source title: 'Author of The Innovators' (no organization). Wikipedia: professor at Tulane University and interviewer for Amanpour & Company; Wikidata lists no dated employer."
+ },
+ {
+  "id": "xiaodan-ding",
+  "name": "Xiaodan Ding",
+  "memberships": [],
+  "notes": "Named as an author of the IMF Global Financial Stability Report, October 2026 (background analyses) with no title in our entry. No page naming this person as IMF staff was found, so no membership is recorded. Wikidata Q99579676 (a chemistry researcher) is another person."
  },
  {
   "id": "xiaojun-xu",
@@ -4548,6 +6221,32 @@
   "notes": "Author of a New York Times technology-feed article; the entry gives no title. Wikidata Q141100403 ('New York-based, China-born journalist') names no employer, so it was not used."
  },
  {
+  "id": "zoe-hitzig",
+  "name": "Zoe Hitzig",
+  "memberships": [
+   {
+    "org": "openai",
+    "role": "Employee",
+    "to": "2026-02",
+    "source": {
+     "by": "agent",
+     "ref": "https://siliconangle.com/2026/02/11/openai-researcher-quits-slippery-slope-chatgpt-ads/",
+     "on": "2026-10-14"
+    }
+   },
+   {
+    "org": "harvard-university",
+    "role": "Researcher, Society of Fellows",
+    "source": {
+     "by": "source",
+     "ref": "nber-2025-09-how-people-use-chatgpt",
+     "on": "2025-09"
+    }
+   }
+  ],
+  "notes": "The NBER entry (2025-09) lists her at OpenAI and says the NBER page discloses she is an OpenAI employee. She resigned in February 2026 (SiliconANGLE, 2026-02-11, on her New York Times essay), which is the end date. The Society of Fellows membership is as the paper lists it (2025-09); its end was not checked. Anthropic's June 2026 Economic Index report lists her among its authors; no employer is recorded for her after OpenAI."
+ },
+ {
   "id": "zohran-mamdani",
   "name": "Zohran Mamdani",
   "wikidata": "Q28034971",
@@ -4579,6 +6278,22 @@
    }
   ],
   "notes": "Wikidata lists Democratic Party, Democratic Socialists of America and Working Families Party; recorded as Democratic."
+ },
+ {
+  "id": "zoltan-jakab",
+  "name": "Zoltan Jakab",
+  "memberships": [
+   {
+    "org": "imf",
+    "role": "Economist",
+    "source": {
+     "by": "agent",
+     "ref": "https://imf.org/en/blogs/authors/zoltan%20jakab%C2%A0",
+     "on": "2026-10-14"
+    }
+   }
+  ],
+  "notes": "Our entry (IMF Global Financial Stability Report, October 2026) lists this author without a title. The membership comes from the author's IMF page as a web search returned it ('an Economist in the IMF's Research Department'; imf.org refuses scripted fetches); a RePEc profile gives the IMF Research Department as his affiliation. The Wikidata items for the name (a painter, a singer, a soldier) are other people."
  },
  {
   "id": "zongming-qiao",

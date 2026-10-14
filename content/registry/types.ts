@@ -19,6 +19,7 @@ export type OrgKind =
   | 'advocacy'            // campaigns for a policy outcome: PauseAI, ControlAI, Future of Life Institute…
   | 'civil-society'       // unions, charities, religious bodies, professional associations
   | 'government'          // executive branch: heads of government, ministries, agencies, AI security institutes
+  | 'public-research'     // statistics agencies, central banks' research departments and other public bodies that research and measure but do not set policy
   | 'legislature'         // parliaments, congresses, councils, and their committees
   | 'regulator'           // independent regulators and enforcement bodies: FTC, EU AI Office, Ofcom…
   | 'court'
@@ -90,7 +91,7 @@ export type PersonRecord = {
  * Politicians are legislators (elected or appointed) and elected heads of government; officials are appointed.
  */
 export type Group =
-  | 'politician' | 'government-official' | 'regulator' | 'international-official'
+  | 'politician' | 'government-official' | 'regulator' | 'international-official' | 'public-researcher'
   | 'ai-developer-leader' | 'ai-developer-staff' | 'former-ai-developer-staff'
   | 'academic' | 'nonprofit-researcher' | 'think-tank' | 'advocate'
   | 'tech-industry' | 'business' | 'investor' | 'civil-society' | 'journalist' | 'other';

@@ -39,11 +39,12 @@ const BY_KIND: Partial<Record<OrgKind, Group>> = {
   'university': 'academic', 'research-nonprofit': 'nonprofit-researcher', 'think-tank': 'think-tank', 'advocacy': 'advocate',
   'tech-company': 'tech-industry', 'company': 'business', 'investor': 'investor', 'civil-society': 'civil-society',
   'media': 'journalist', 'regulator': 'regulator', 'international': 'international-official', 'court': 'government-official',
+  'public-research': 'public-researcher',
 };
 /** Precedence when someone belongs to several groups at once. */
 export const GROUP_ORDER: Group[] = [
   'politician', 'government-official', 'regulator', 'international-official',
-  'ai-developer-leader', 'ai-developer-staff', 'academic', 'nonprofit-researcher', 'think-tank', 'advocate',
+  'ai-developer-leader', 'ai-developer-staff', 'academic', 'public-researcher', 'nonprofit-researcher', 'think-tank', 'advocate',
   'tech-industry', 'business', 'investor', 'civil-society', 'journalist', 'former-ai-developer-staff', 'other',
 ];
 
@@ -79,6 +80,7 @@ export const GROUP_LABEL: Record<Group, string> = {
   'government-official': 'Government official',
   'regulator': 'Regulator',
   'international-official': 'International official',
+  'public-researcher': 'Public-sector researcher',
   'ai-developer-leader': 'AI company leader',
   'ai-developer-staff': 'AI company staff',
   'former-ai-developer-staff': 'Former AI company staff',

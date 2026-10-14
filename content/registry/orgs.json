@@ -1,1180 +1,1408 @@
 [
-  {
-    "id": "80000-hours",
-    "name": "80,000 Hours",
-    "kind": "civil-society",
-    "country": "GB",
-    "wikidata": "Q4644323"
-  },
-  {
-    "id": "accenture",
-    "name": "Accenture",
-    "kind": "tech-company",
-    "country": "IE",
-    "wikidata": "Q338825"
-  },
-  {
-    "id": "acs-research",
-    "name": "ACS Research (Alignment of Complex Systems research group)",
-    "kind": "research-nonprofit",
-    "country": "CZ"
-  },
-  {
-    "id": "ai-whistleblower-initiative",
-    "name": "The AI Whistleblower Initiative",
-    "kind": "advocacy",
-    "country": "DE"
-  },
-  {
-    "id": "alan-turing-institute",
-    "name": "The Alan Turing Institute",
-    "kind": "research-nonprofit",
-    "country": "GB",
-    "wikidata": "Q16826821"
-  },
-  {
-    "id": "alibaba",
-    "name": "Alibaba Group",
-    "kind": "ai-developer",
-    "country": "CN",
-    "wikidata": "Q1359568"
-  },
-  {
-    "id": "all-in-podcast",
-    "name": "All-In (podcast)",
-    "kind": "media",
-    "country": "US",
-    "wikidata": "Q110581098"
-  },
-  {
-    "id": "amazon",
-    "name": "Amazon",
-    "kind": "ai-developer",
-    "country": "US",
-    "wikidata": "Q3884"
-  },
-  {
-    "id": "andreessen-horowitz",
-    "name": "Andreessen Horowitz",
-    "kind": "investor",
-    "country": "US",
-    "wikidata": "Q4034010"
-  },
-  {
-    "id": "anduril",
-    "name": "Anduril Industries",
-    "kind": "tech-company",
-    "country": "US",
-    "wikidata": "Q61918830"
-  },
-  {
-    "id": "anthropic",
-    "name": "Anthropic",
-    "kind": "ai-developer",
-    "country": "US",
-    "wikidata": "Q116758847"
-  },
-  {
-    "id": "apollo-global-management",
-    "name": "Apollo Global Management",
-    "kind": "investor",
-    "country": "US",
-    "wikidata": "Q619121",
-    "aliases": [
-      "apollo"
-    ]
-  },
-  {
-    "id": "apple",
-    "name": "Apple",
-    "kind": "tech-company",
-    "country": "US",
-    "wikidata": "Q312"
-  },
-  {
-    "id": "ars-technica",
-    "name": "Ars Technica",
-    "kind": "media",
-    "country": "US",
-    "wikidata": "Q584152"
-  },
-  {
-    "id": "atlas-ignota",
-    "name": "Atlas Ignota",
-    "kind": "other"
-  },
-  {
-    "id": "australian-government",
-    "name": "Government of Australia",
-    "kind": "government",
-    "country": "AU",
-    "wikidata": "Q2991162"
-  },
-  {
-    "id": "australian-house-of-representatives",
-    "name": "Australian House of Representatives",
-    "kind": "legislature",
-    "country": "AU",
-    "wikidata": "Q783401",
-    "parent": "australian-parliament"
-  },
-  {
-    "id": "australian-parliament",
-    "name": "Parliament of Australia",
-    "kind": "legislature",
-    "country": "AU",
-    "wikidata": "Q382118"
-  },
-  {
-    "id": "australian-senate",
-    "name": "Australian Senate",
-    "kind": "legislature",
-    "country": "AU",
-    "wikidata": "Q783330",
-    "parent": "australian-parliament"
-  },
-  {
-    "id": "back-channel",
-    "name": "Back Channel",
-    "kind": "advocacy"
-  },
-  {
-    "id": "bbc",
-    "name": "BBC",
-    "kind": "media",
-    "country": "GB",
-    "wikidata": "Q9531"
-  },
-  {
-    "id": "bloomberg",
-    "name": "Bloomberg",
-    "kind": "media",
-    "country": "US",
-    "wikidata": "Q13977"
-  },
-  {
-    "id": "booz-allen",
-    "name": "Booz Allen Hamilton",
-    "kind": "tech-company",
-    "country": "US",
-    "wikidata": "Q893221"
-  },
-  {
-    "id": "cbs",
-    "name": "CBS News",
-    "kind": "media",
-    "country": "US",
-    "wikidata": "Q861764"
-  },
-  {
-    "id": "character-ai",
-    "name": "Character.AI",
-    "kind": "ai-developer",
-    "country": "US"
-  },
-  {
-    "id": "chinatalk",
-    "name": "ChinaTalk",
-    "kind": "media"
-  },
-  {
-    "id": "cnbc",
-    "name": "CNBC",
-    "kind": "media",
-    "country": "US",
-    "wikidata": "Q1023912"
-  },
-  {
-    "id": "cnn",
-    "name": "CNN",
-    "kind": "media",
-    "country": "US",
-    "wikidata": "Q48340"
-  },
-  {
-    "id": "contramont-research",
-    "name": "Contramont Research",
-    "kind": "research-nonprofit",
-    "country": "US"
-  },
-  {
-    "id": "controlai",
-    "name": "ControlAI",
-    "kind": "advocacy",
-    "country": "GB",
-    "wikidata": "Q140089016"
-  },
-  {
-    "id": "crowdstrike",
-    "name": "CrowdStrike",
-    "kind": "tech-company",
-    "country": "US",
-    "wikidata": "Q24890758"
-  },
-  {
-    "id": "cset",
-    "name": "Center for Security and Emerging Technology (Georgetown University)",
-    "kind": "think-tank",
-    "country": "US",
-    "wikidata": "Q65052724",
-    "parent": "georgetown-university"
-  },
-  {
-    "id": "csis",
-    "name": "Center for Strategic and International Studies",
-    "kind": "think-tank",
-    "country": "US",
-    "wikidata": "Q1053614"
-  },
-  {
-    "id": "deepseek",
-    "name": "DeepSeek",
-    "kind": "ai-developer",
-    "country": "CN",
-    "wikidata": "Q131577453"
-  },
-  {
-    "id": "deloitte",
-    "name": "Deloitte",
-    "kind": "company",
-    "country": "GB",
-    "wikidata": "Q491748"
-  },
-  {
-    "id": "diary-of-a-ceo",
-    "name": "The Diary of a CEO (podcast)",
-    "kind": "media",
-    "country": "GB",
-    "wikidata": "Q109614670"
-  },
-  {
-    "id": "dragos",
-    "name": "Dragos",
-    "kind": "tech-company",
-    "country": "US",
-    "wikidata": "Q108135273"
-  },
-  {
-    "id": "duke-university",
-    "name": "Duke University",
-    "kind": "university",
-    "country": "US",
-    "wikidata": "Q168751"
-  },
-  {
-    "id": "eu-ai-office",
-    "name": "European AI Office",
-    "kind": "regulator",
-    "country": "EU",
-    "wikidata": "Q135841125"
-  },
-  {
-    "id": "far-ai",
-    "name": "FAR.AI (Frontier Alignment Research)",
-    "kind": "research-nonprofit",
-    "country": "US",
-    "wikidata": "Q139885400"
-  },
-  {
-    "id": "forbes",
-    "name": "Forbes",
-    "kind": "media",
-    "country": "US",
-    "wikidata": "Q25161472"
-  },
-  {
-    "id": "fudan-university",
-    "name": "Fudan University",
-    "kind": "university",
-    "country": "CN",
-    "wikidata": "Q495015"
-  },
-  {
-    "id": "future-of-life-institute",
-    "name": "Future of Life Institute",
-    "kind": "advocacy",
-    "country": "US",
-    "wikidata": "Q18356657"
-  },
-  {
-    "id": "gates-foundation",
-    "name": "Gates Foundation",
-    "kind": "civil-society",
-    "country": "US",
-    "wikidata": "Q655286"
-  },
-  {
-    "id": "georgetown-university",
-    "name": "Georgetown University",
-    "kind": "university",
-    "country": "US",
-    "wikidata": "Q333886"
-  },
-  {
-    "id": "goodfire",
-    "name": "Goodfire",
-    "kind": "tech-company",
-    "country": "US"
-  },
-  {
-    "id": "google",
-    "name": "Google (Alphabet)",
-    "kind": "ai-developer",
-    "country": "US",
-    "wikidata": "Q95",
-    "aliases": [
-      "alphabet"
-    ]
-  },
-  {
-    "id": "google-deepmind",
-    "name": "Google DeepMind",
-    "kind": "ai-developer",
-    "country": "GB",
-    "wikidata": "Q15733006",
-    "parent": "google"
-  },
-  {
-    "id": "hard-fork",
-    "name": "Hard Fork (podcast)",
-    "kind": "media",
-    "country": "US",
-    "wikidata": "Q110575213",
-    "parent": "the-new-york-times"
-  },
-  {
-    "id": "harvard-university",
-    "name": "Harvard University",
-    "kind": "university",
-    "country": "US",
-    "wikidata": "Q13371"
-  },
-  {
-    "id": "hitachi",
-    "name": "Hitachi",
-    "kind": "tech-company",
-    "country": "JP",
-    "wikidata": "Q53238"
-  },
-  {
-    "id": "hugging-face",
-    "name": "Hugging Face",
-    "kind": "tech-company",
-    "country": "US",
-    "wikidata": "Q108943604"
-  },
-  {
-    "id": "humane-intelligence",
-    "name": "Humane Intelligence",
-    "kind": "research-nonprofit",
-    "country": "US"
-  },
-  {
-    "id": "ican",
-    "name": "International Campaign to Abolish Nuclear Weapons (ICAN)",
-    "kind": "advocacy",
-    "country": "CH",
-    "wikidata": "Q547940"
-  },
-  {
-    "id": "imf",
-    "name": "International Monetary Fund",
-    "kind": "international",
-    "country": "INT",
-    "wikidata": "Q7804"
-  },
-  {
-    "id": "inflection-ai",
-    "name": "Inflection AI",
-    "kind": "ai-developer",
-    "country": "US",
-    "wikidata": "Q113270365"
-  },
-  {
-    "id": "insane-cyber",
-    "name": "Insane Cyber",
-    "kind": "tech-company",
-    "country": "US"
-  },
-  {
-    "id": "institute-for-health-metrics-and-evaluation",
-    "name": "Institute for Health Metrics and Evaluation (University of Washington)",
-    "kind": "university",
-    "country": "US",
-    "wikidata": "Q6039400",
-    "parent": "university-of-washington"
-  },
-  {
-    "id": "institute-for-law-and-ai",
-    "name": "Institute for Law & AI",
-    "kind": "think-tank",
-    "country": "US"
-  },
-  {
-    "id": "irreplaceable",
-    "name": "Irreplaceable",
-    "kind": "advocacy"
-  },
-  {
-    "id": "johns-hopkins-university",
-    "name": "Johns Hopkins University",
-    "kind": "university",
-    "country": "US",
-    "wikidata": "Q193727"
-  },
-  {
-    "id": "kurzgesagt",
-    "name": "Kurzgesagt",
-    "kind": "media",
-    "country": "DE",
-    "wikidata": "Q23893763"
-  },
-  {
-    "id": "lancet-commission-global-threats-to-health",
-    "name": "Lancet Commission on 21st Century Global Threats to Health",
-    "kind": "other",
-    "parent": "the-lancet"
-  },
-  {
-    "id": "lawzero",
-    "name": "LawZero",
-    "kind": "research-nonprofit",
-    "country": "CA",
-    "wikidata": "Q139854303"
-  },
-  {
-    "id": "link-in-bio",
-    "name": "Link in Bio (newsletter)",
-    "kind": "media"
-  },
-  {
-    "id": "mats",
-    "name": "MATS (ML Alignment & Theory Scholars)",
-    "kind": "research-nonprofit",
-    "country": "US"
-  },
-  {
-    "id": "mercor",
-    "name": "Mercor",
-    "kind": "tech-company",
-    "country": "US",
-    "wikidata": "Q137864179"
-  },
-  {
-    "id": "meridian-labs",
-    "name": "Meridian Labs",
-    "kind": "tech-company"
-  },
-  {
-    "id": "meta",
-    "name": "Meta Platforms",
-    "kind": "ai-developer",
-    "country": "US",
-    "wikidata": "Q380"
-  },
-  {
-    "id": "meta-superintelligence-labs",
-    "name": "Meta Superintelligence Labs",
-    "kind": "ai-developer",
-    "country": "US",
-    "wikidata": "Q135397403",
-    "parent": "meta"
-  },
-  {
-    "id": "metr",
-    "name": "METR (Model Evaluation and Threat Research)",
-    "kind": "research-nonprofit",
-    "country": "US",
-    "wikidata": "Q135185153"
-  },
-  {
-    "id": "microsoft",
-    "name": "Microsoft",
-    "kind": "ai-developer",
-    "country": "US",
-    "wikidata": "Q2283"
-  },
-  {
-    "id": "miri",
-    "name": "Machine Intelligence Research Institute",
-    "kind": "research-nonprofit",
-    "country": "US",
-    "wikidata": "Q2040269"
-  },
-  {
-    "id": "mit",
-    "name": "Massachusetts Institute of Technology",
-    "kind": "university",
-    "country": "US",
-    "wikidata": "Q49108"
-  },
-  {
-    "id": "moonshot-ai",
-    "name": "Moonshot AI",
-    "kind": "ai-developer",
-    "country": "CN",
-    "wikidata": "Q130270266"
-  },
-  {
-    "id": "new-york-city",
-    "name": "City of New York (municipal government)",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q3112559"
-  },
-  {
-    "id": "new-york-city-council",
-    "name": "New York City Council",
-    "kind": "legislature",
-    "country": "US",
-    "wikidata": "Q645195"
-  },
-  {
-    "id": "new-york-state-assembly",
-    "name": "New York State Assembly",
-    "kind": "legislature",
-    "country": "US",
-    "wikidata": "Q1470702"
-  },
-  {
-    "id": "new-york-state-senate",
-    "name": "New York State Senate",
-    "kind": "legislature",
-    "country": "US",
-    "wikidata": "Q1722258"
-  },
-  {
-    "id": "new-york-university",
-    "name": "New York University",
-    "kind": "university",
-    "country": "US",
-    "wikidata": "Q49210"
-  },
-  {
-    "id": "newsnation",
-    "name": "NewsNation",
-    "kind": "media",
-    "country": "US",
-    "wikidata": "Q135931495"
-  },
-  {
-    "id": "nightingale",
-    "name": "Nightingale",
-    "kind": "other"
-  },
-  {
-    "id": "nolla-health",
-    "name": "Nolla Health",
-    "kind": "tech-company",
-    "country": "US"
-  },
-  {
-    "id": "nozomi-networks",
-    "name": "Nozomi Networks",
-    "kind": "tech-company",
-    "country": "US"
-  },
-  {
-    "id": "ntt-research",
-    "name": "NTT Research",
-    "kind": "tech-company",
-    "country": "US",
-    "wikidata": "Q82799216"
-  },
-  {
-    "id": "nvidia",
-    "name": "NVIDIA",
-    "kind": "tech-company",
-    "country": "US",
-    "wikidata": "Q182477"
-  },
-  {
-    "id": "openai",
-    "name": "OpenAI",
-    "kind": "ai-developer",
-    "country": "US",
-    "wikidata": "Q21708200"
-  },
-  {
-    "id": "oracle",
-    "name": "Oracle",
-    "kind": "tech-company",
-    "country": "US",
-    "wikidata": "Q19900"
-  },
-  {
-    "id": "palisade-research",
-    "name": "Palisade Research",
-    "kind": "research-nonprofit",
-    "country": "US"
-  },
-  {
-    "id": "palo-alto-networks",
-    "name": "Palo Alto Networks",
-    "kind": "tech-company",
-    "country": "US",
-    "wikidata": "Q7128508"
-  },
-  {
-    "id": "pentagon",
-    "name": "US Department of Defense (Pentagon)",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q11209"
-  },
-  {
-    "id": "philadelphia-police-department",
-    "name": "Philadelphia Police Department",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q7182789"
-  },
-  {
-    "id": "politico",
-    "name": "Politico",
-    "kind": "media",
-    "country": "US",
-    "wikidata": "Q3109740"
-  },
-  {
-    "id": "positron",
-    "name": "Positron",
-    "kind": "tech-company",
-    "country": "US"
-  },
-  {
-    "id": "princeton-university",
-    "name": "Princeton University",
-    "kind": "university",
-    "country": "US",
-    "wikidata": "Q21578"
-  },
-  {
-    "id": "pwc",
-    "name": "PwC",
-    "kind": "company",
-    "country": "GB",
-    "wikidata": "Q488048"
-  },
-  {
-    "id": "rational-animations",
-    "name": "Rational Animations",
-    "kind": "media"
-  },
-  {
-    "id": "redwood-research",
-    "name": "Redwood Research",
-    "kind": "research-nonprofit",
-    "country": "US"
-  },
-  {
-    "id": "robin-hood-foundation",
-    "name": "Robin Hood Foundation",
-    "kind": "civil-society",
-    "country": "US",
-    "wikidata": "Q174896"
-  },
-  {
-    "id": "robust-ai",
-    "name": "Robust.AI",
-    "kind": "tech-company",
-    "country": "US"
-  },
-  {
-    "id": "rockwell-automation",
-    "name": "Rockwell Automation",
-    "kind": "company",
-    "country": "US",
-    "wikidata": "Q1529234"
-  },
-  {
-    "id": "salesforce",
-    "name": "Salesforce",
-    "kind": "tech-company",
-    "country": "US",
-    "wikidata": "Q941127"
-  },
-  {
-    "id": "south-korea-government",
-    "name": "Government of South Korea",
-    "kind": "government",
-    "country": "KR",
-    "wikidata": "Q626814"
-  },
-  {
-    "id": "spacex",
-    "name": "SpaceX",
-    "kind": "company",
-    "country": "US",
-    "wikidata": "Q193701"
-  },
-  {
-    "id": "spacexai",
-    "name": "SpaceXAI (formerly xAI)",
-    "kind": "ai-developer",
-    "country": "US",
-    "wikidata": "Q120599684",
-    "parent": "spacex"
-  },
-  {
-    "id": "stanford-university",
-    "name": "Stanford University",
-    "kind": "university",
-    "country": "US",
-    "wikidata": "Q41506"
-  },
-  {
-    "id": "state-of-connecticut",
-    "name": "State of Connecticut (state government)",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q53709967"
-  },
-  {
-    "id": "state-of-utah",
-    "name": "State of Utah (state government)",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q5589326"
-  },
-  {
-    "id": "super-intelligence-force",
-    "name": "Super Intelligence Force (White House Super Intelligence Task Force)",
-    "kind": "government",
-    "country": "US",
-    "parent": "us-white-house"
-  },
-  {
-    "id": "techcrunch",
-    "name": "TechCrunch",
-    "kind": "media",
-    "country": "US",
-    "wikidata": "Q1022366"
-  },
-  {
-    "id": "techspot",
-    "name": "TechSpot",
-    "kind": "media",
-    "country": "US",
-    "wikidata": "Q63089461"
-  },
-  {
-    "id": "tesla",
-    "name": "Tesla",
-    "kind": "company",
-    "country": "US",
-    "wikidata": "Q478214"
-  },
-  {
-    "id": "the-argument",
-    "name": "The Argument",
-    "kind": "media",
-    "country": "US"
-  },
-  {
-    "id": "the-guardian",
-    "name": "The Guardian",
-    "kind": "media",
-    "country": "GB",
-    "wikidata": "Q11148"
-  },
-  {
-    "id": "the-lancet",
-    "name": "The Lancet",
-    "kind": "media",
-    "country": "GB",
-    "wikidata": "Q939416"
-  },
-  {
-    "id": "the-new-york-times",
-    "name": "The New York Times",
-    "kind": "media",
-    "country": "US",
-    "wikidata": "Q9684"
-  },
-  {
-    "id": "the-verge",
-    "name": "The Verge",
-    "kind": "media",
-    "country": "US",
-    "wikidata": "Q2155442"
-  },
-  {
-    "id": "transformer",
-    "name": "Transformer (newsletter)",
-    "kind": "media"
-  },
-  {
-    "id": "transluce",
-    "name": "Transluce",
-    "kind": "research-nonprofit",
-    "country": "US"
-  },
-  {
-    "id": "truthful-ai",
-    "name": "Truthful AI",
-    "kind": "research-nonprofit",
-    "country": "US",
-    "wikidata": "Q126286031"
-  },
-  {
-    "id": "tsinghua-university",
-    "name": "Tsinghua University",
-    "kind": "university",
-    "country": "CN",
-    "wikidata": "Q16955"
-  },
-  {
-    "id": "tudor-investment-corporation",
-    "name": "Tudor Investment Corporation",
-    "kind": "investor",
-    "country": "US",
-    "wikidata": "Q95950900"
-  },
-  {
-    "id": "tusk-ventures",
-    "name": "Tusk Ventures",
-    "kind": "investor",
-    "country": "US"
-  },
-  {
-    "id": "uber",
-    "name": "Uber",
-    "kind": "tech-company",
-    "country": "US",
-    "wikidata": "Q780442"
-  },
-  {
-    "id": "ucl",
-    "name": "University College London",
-    "kind": "university",
-    "country": "GB",
-    "wikidata": "Q193196"
-  },
-  {
-    "id": "uk-ai-security-institute",
-    "name": "AI Security Institute (UK)",
-    "kind": "government",
-    "country": "GB",
-    "wikidata": "Q126284597",
-    "aliases": [
-      "ai-security-institute"
-    ]
-  },
-  {
-    "id": "uk-cabinet-office",
-    "name": "Cabinet Office (UK)",
-    "kind": "government",
-    "country": "GB",
-    "wikidata": "Q5995",
-    "parent": "uk-government"
-  },
-  {
-    "id": "uk-dsit",
-    "name": "Department for Science, Innovation and Technology (UK)",
-    "kind": "government",
-    "country": "GB",
-    "wikidata": "Q116719150",
-    "parent": "uk-government"
-  },
-  {
-    "id": "uk-government",
-    "name": "UK government",
-    "kind": "government",
-    "country": "GB",
-    "wikidata": "Q6063"
-  },
-  {
-    "id": "uk-house-of-commons",
-    "name": "House of Commons (UK)",
-    "kind": "legislature",
-    "country": "GB",
-    "wikidata": "Q11005",
-    "parent": "uk-parliament"
-  },
-  {
-    "id": "uk-house-of-lords",
-    "name": "House of Lords (UK)",
-    "kind": "legislature",
-    "country": "GB",
-    "wikidata": "Q11007",
-    "parent": "uk-parliament"
-  },
-  {
-    "id": "uk-national-cyber-security-centre",
-    "name": "National Cyber Security Centre (UK)",
-    "kind": "government",
-    "country": "GB",
-    "wikidata": "Q23688635",
-    "parent": "uk-government"
-  },
-  {
-    "id": "uk-parliament",
-    "name": "Parliament of the United Kingdom",
-    "kind": "legislature",
-    "country": "GB",
-    "wikidata": "Q11010"
-  },
-  {
-    "id": "un-general-assembly",
-    "name": "United Nations General Assembly",
-    "kind": "international",
-    "country": "INT",
-    "wikidata": "Q47423",
-    "parent": "united-nations"
-  },
-  {
-    "id": "united-nations",
-    "name": "United Nations",
-    "kind": "international",
-    "country": "INT",
-    "wikidata": "Q1065"
-  },
-  {
-    "id": "universite-de-montreal",
-    "name": "Université de Montréal",
-    "kind": "university",
-    "country": "CA",
-    "wikidata": "Q392189"
-  },
-  {
-    "id": "university-of-california-berkeley",
-    "name": "University of California, Berkeley",
-    "kind": "university",
-    "country": "US",
-    "wikidata": "Q168756"
-  },
-  {
-    "id": "university-of-cambridge",
-    "name": "University of Cambridge",
-    "kind": "university",
-    "country": "GB",
-    "wikidata": "Q35794"
-  },
-  {
-    "id": "university-of-oxford",
-    "name": "University of Oxford",
-    "kind": "university",
-    "country": "GB",
-    "wikidata": "Q34433"
-  },
-  {
-    "id": "university-of-pennsylvania",
-    "name": "University of Pennsylvania",
-    "kind": "university",
-    "country": "US",
-    "wikidata": "Q49117"
-  },
-  {
-    "id": "university-of-stuttgart",
-    "name": "University of Stuttgart",
-    "kind": "university",
-    "country": "DE",
-    "wikidata": "Q122453"
-  },
-  {
-    "id": "university-of-washington",
-    "name": "University of Washington",
-    "kind": "university",
-    "country": "US",
-    "wikidata": "Q219563"
-  },
-  {
-    "id": "us-caisi",
-    "name": "Center for AI Standards and Innovation (CAISI)",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q139559517",
-    "parent": "us-nist"
-  },
-  {
-    "id": "us-congress",
-    "name": "United States Congress",
-    "kind": "legislature",
-    "country": "US",
-    "wikidata": "Q11268"
-  },
-  {
-    "id": "us-department-of-labor",
-    "name": "US Department of Labor",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q628807"
-  },
-  {
-    "id": "us-doge",
-    "name": "US Department of Government Efficiency (DOGE)",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q131158869",
-    "parent": "us-white-house"
-  },
-  {
-    "id": "us-ftc",
-    "name": "US Federal Trade Commission",
-    "kind": "regulator",
-    "country": "US",
-    "wikidata": "Q786713"
-  },
-  {
-    "id": "us-house",
-    "name": "US House of Representatives",
-    "kind": "legislature",
-    "country": "US",
-    "wikidata": "Q11701",
-    "parent": "us-congress"
-  },
-  {
-    "id": "us-house-energy-and-commerce-committee",
-    "name": "House Committee on Energy and Commerce",
-    "kind": "legislature",
-    "country": "US",
-    "wikidata": "Q1560114",
-    "parent": "us-house"
-  },
-  {
-    "id": "us-house-select-committee-on-china",
-    "name": "House Select Committee on the Chinese Communist Party (\"Select Committee on China\")",
-    "kind": "legislature",
-    "country": "US",
-    "parent": "us-house"
-  },
-  {
-    "id": "us-navy",
-    "name": "US Navy",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q11220",
-    "parent": "pentagon"
-  },
-  {
-    "id": "us-nist",
-    "name": "National Institute of Standards and Technology (NIST)",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q176691"
-  },
-  {
-    "id": "us-odni",
-    "name": "Office of the Director of National Intelligence",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q22222677"
-  },
-  {
-    "id": "us-opm",
-    "name": "US Office of Personnel Management",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q7890847"
-  },
-  {
-    "id": "us-ostp",
-    "name": "White House Office of Science and Technology Policy",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q3349673",
-    "parent": "us-white-house"
-  },
-  {
-    "id": "us-senate",
-    "name": "US Senate",
-    "kind": "legislature",
-    "country": "US",
-    "wikidata": "Q66096",
-    "parent": "us-congress"
-  },
-  {
-    "id": "us-state-department",
-    "name": "US Department of State",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q789915"
-  },
-  {
-    "id": "us-white-house",
-    "name": "The White House (Executive Office of the President)",
-    "kind": "government",
-    "country": "US",
-    "wikidata": "Q1355327",
-    "aliases": [
-      "white-house"
-    ]
-  },
-  {
-    "id": "user-mag",
-    "name": "User Mag",
-    "kind": "media",
-    "country": "US"
-  },
-  {
-    "id": "vatican",
-    "name": "The Holy See (Vatican)",
-    "kind": "civil-society",
-    "country": "VA",
-    "wikidata": "Q159583"
-  },
-  {
-    "id": "vorys",
-    "name": "Vorys, Sater, Seymour and Pease",
-    "kind": "company",
-    "country": "US",
-    "wikidata": "Q7941971"
-  },
-  {
-    "id": "warsaw-university-of-technology",
-    "name": "Warsaw University of Technology",
-    "kind": "university",
-    "country": "PL",
-    "wikidata": "Q1718656"
-  },
-  {
-    "id": "wikimedia-foundation",
-    "name": "Wikimedia Foundation",
-    "kind": "civil-society",
-    "country": "US",
-    "wikidata": "Q180"
-  },
-  {
-    "id": "xiaomi",
-    "name": "Xiaomi",
-    "kind": "ai-developer",
-    "country": "CN",
-    "wikidata": "Q1636958"
-  },
-  {
-    "id": "xmtp-labs",
-    "name": "XMTP Labs",
-    "kind": "tech-company",
-    "country": "US"
-  },
-  {
-    "id": "yale-law-school",
-    "name": "Yale Law School",
-    "kind": "university",
-    "country": "US",
-    "wikidata": "Q1143289",
-    "parent": "yale-university"
-  },
-  {
-    "id": "yale-university",
-    "name": "Yale University",
-    "kind": "university",
-    "country": "US",
-    "wikidata": "Q49112"
-  },
-  {
-    "id": "z-ai",
-    "name": "Z.ai (Zhipu AI)",
-    "kind": "ai-developer",
-    "country": "CN",
-    "wikidata": "Q129572031"
-  },
-  {
-    "id": "zscaler",
-    "name": "Zscaler",
-    "kind": "tech-company",
-    "country": "US",
-    "wikidata": "Q8074786"
-  }
+ {
+  "id": "80000-hours",
+  "name": "80,000 Hours",
+  "kind": "civil-society",
+  "country": "GB",
+  "wikidata": "Q4644323"
+ },
+ {
+  "id": "accenture",
+  "name": "Accenture",
+  "kind": "tech-company",
+  "country": "IE",
+  "wikidata": "Q338825"
+ },
+ {
+  "id": "acs-research",
+  "name": "ACS Research (Alignment of Complex Systems research group)",
+  "kind": "research-nonprofit",
+  "country": "CZ"
+ },
+ {
+  "id": "adp",
+  "name": "ADP (Automatic Data Processing)",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q489080"
+ },
+ {
+  "id": "ai-whistleblower-initiative",
+  "name": "The AI Whistleblower Initiative",
+  "kind": "advocacy",
+  "country": "DE"
+ },
+ {
+  "id": "alan-turing-institute",
+  "name": "The Alan Turing Institute",
+  "kind": "research-nonprofit",
+  "country": "GB",
+  "wikidata": "Q16826821"
+ },
+ {
+  "id": "alibaba",
+  "name": "Alibaba Group",
+  "kind": "ai-developer",
+  "country": "CN",
+  "wikidata": "Q1359568"
+ },
+ {
+  "id": "all-in-podcast",
+  "name": "All-In (podcast)",
+  "kind": "media",
+  "country": "US",
+  "wikidata": "Q110581098"
+ },
+ {
+  "id": "amazon",
+  "name": "Amazon",
+  "kind": "ai-developer",
+  "country": "US",
+  "wikidata": "Q3884"
+ },
+ {
+  "id": "andreessen-horowitz",
+  "name": "Andreessen Horowitz",
+  "kind": "investor",
+  "country": "US",
+  "wikidata": "Q4034010"
+ },
+ {
+  "id": "anduril",
+  "name": "Anduril Industries",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q61918830"
+ },
+ {
+  "id": "anthropic",
+  "name": "Anthropic",
+  "kind": "ai-developer",
+  "country": "US",
+  "wikidata": "Q116758847"
+ },
+ {
+  "id": "apollo-global-management",
+  "name": "Apollo Global Management",
+  "kind": "investor",
+  "country": "US",
+  "wikidata": "Q619121",
+  "aliases": [
+   "apollo"
+  ]
+ },
+ {
+  "id": "apple",
+  "name": "Apple",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q312"
+ },
+ {
+  "id": "ars-technica",
+  "name": "Ars Technica",
+  "kind": "media",
+  "country": "US",
+  "wikidata": "Q584152"
+ },
+ {
+  "id": "atlas-ignota",
+  "name": "Atlas Ignota",
+  "kind": "other"
+ },
+ {
+  "id": "australian-government",
+  "name": "Government of Australia",
+  "kind": "government",
+  "country": "AU",
+  "wikidata": "Q2991162"
+ },
+ {
+  "id": "australian-house-of-representatives",
+  "name": "Australian House of Representatives",
+  "kind": "legislature",
+  "country": "AU",
+  "wikidata": "Q783401",
+  "parent": "australian-parliament"
+ },
+ {
+  "id": "australian-parliament",
+  "name": "Parliament of Australia",
+  "kind": "legislature",
+  "country": "AU",
+  "wikidata": "Q382118"
+ },
+ {
+  "id": "australian-senate",
+  "name": "Australian Senate",
+  "kind": "legislature",
+  "country": "AU",
+  "wikidata": "Q783330",
+  "parent": "australian-parliament"
+ },
+ {
+  "id": "back-channel",
+  "name": "Back Channel",
+  "kind": "advocacy"
+ },
+ {
+  "id": "bbc",
+  "name": "BBC",
+  "kind": "media",
+  "country": "GB",
+  "wikidata": "Q9531"
+ },
+ {
+  "id": "bloomberg",
+  "name": "Bloomberg",
+  "kind": "media",
+  "country": "US",
+  "wikidata": "Q13977"
+ },
+ {
+  "id": "booz-allen",
+  "name": "Booz Allen Hamilton",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q893221"
+ },
+ {
+  "id": "boston-consulting-group",
+  "name": "Boston Consulting Group",
+  "kind": "company",
+  "country": "US",
+  "wikidata": "Q135635"
+ },
+ {
+  "id": "cbs",
+  "name": "CBS News",
+  "kind": "media",
+  "country": "US",
+  "wikidata": "Q861764"
+ },
+ {
+  "id": "challenger-gray-christmas",
+  "name": "Challenger, Gray & Christmas",
+  "kind": "company",
+  "country": "US",
+  "wikidata": "Q5068937"
+ },
+ {
+  "id": "character-ai",
+  "name": "Character.AI",
+  "kind": "ai-developer",
+  "country": "US"
+ },
+ {
+  "id": "chinatalk",
+  "name": "ChinaTalk",
+  "kind": "media"
+ },
+ {
+  "id": "civitas-university",
+  "name": "Civitas University (Warsaw)",
+  "kind": "university",
+  "country": "PL",
+  "wikidata": "Q5147001"
+ },
+ {
+  "id": "cnbc",
+  "name": "CNBC",
+  "kind": "media",
+  "country": "US",
+  "wikidata": "Q1023912"
+ },
+ {
+  "id": "cnn",
+  "name": "CNN",
+  "kind": "media",
+  "country": "US",
+  "wikidata": "Q48340"
+ },
+ {
+  "id": "contramont-research",
+  "name": "Contramont Research",
+  "kind": "research-nonprofit",
+  "country": "US"
+ },
+ {
+  "id": "controlai",
+  "name": "ControlAI",
+  "kind": "advocacy",
+  "country": "GB",
+  "wikidata": "Q140089016"
+ },
+ {
+  "id": "crowdstrike",
+  "name": "CrowdStrike",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q24890758"
+ },
+ {
+  "id": "cset",
+  "name": "Center for Security and Emerging Technology (Georgetown University)",
+  "kind": "think-tank",
+  "country": "US",
+  "wikidata": "Q65052724",
+  "parent": "georgetown-university"
+ },
+ {
+  "id": "csis",
+  "name": "Center for Strategic and International Studies",
+  "kind": "think-tank",
+  "country": "US",
+  "wikidata": "Q1053614"
+ },
+ {
+  "id": "deepseek",
+  "name": "DeepSeek",
+  "kind": "ai-developer",
+  "country": "CN",
+  "wikidata": "Q131577453"
+ },
+ {
+  "id": "deloitte",
+  "name": "Deloitte",
+  "kind": "company",
+  "country": "GB",
+  "wikidata": "Q491748"
+ },
+ {
+  "id": "diary-of-a-ceo",
+  "name": "The Diary of a CEO (podcast)",
+  "kind": "media",
+  "country": "GB",
+  "wikidata": "Q109614670"
+ },
+ {
+  "id": "dragos",
+  "name": "Dragos",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q108135273"
+ },
+ {
+  "id": "duke-university",
+  "name": "Duke University",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q168751"
+ },
+ {
+  "id": "eu-ai-office",
+  "name": "European AI Office",
+  "kind": "regulator",
+  "country": "EU",
+  "wikidata": "Q135841125"
+ },
+ {
+  "id": "far-ai",
+  "name": "FAR.AI (Frontier Alignment Research)",
+  "kind": "research-nonprofit",
+  "country": "US",
+  "wikidata": "Q139885400"
+ },
+ {
+  "id": "federal-reserve-bank-of-chicago",
+  "name": "Federal Reserve Bank of Chicago",
+  "kind": "public-research",
+  "country": "US",
+  "wikidata": "Q965251"
+ },
+ {
+  "id": "federal-reserve-bank-of-new-york",
+  "name": "Federal Reserve Bank of New York",
+  "kind": "public-research",
+  "country": "US",
+  "wikidata": "Q115860"
+ },
+ {
+  "id": "federal-reserve-bank-of-st-louis",
+  "name": "Federal Reserve Bank of St. Louis",
+  "kind": "public-research",
+  "country": "US",
+  "wikidata": "Q4383730"
+ },
+ {
+  "id": "forbes",
+  "name": "Forbes",
+  "kind": "media",
+  "country": "US",
+  "wikidata": "Q25161472"
+ },
+ {
+  "id": "forecasting-research-institute",
+  "name": "Forecasting Research Institute",
+  "kind": "research-nonprofit",
+  "country": "US",
+  "wikidata": "Q122208275"
+ },
+ {
+  "id": "fudan-university",
+  "name": "Fudan University",
+  "kind": "university",
+  "country": "CN",
+  "wikidata": "Q495015"
+ },
+ {
+  "id": "future-of-life-institute",
+  "name": "Future of Life Institute",
+  "kind": "advocacy",
+  "country": "US",
+  "wikidata": "Q18356657"
+ },
+ {
+  "id": "gates-foundation",
+  "name": "Gates Foundation",
+  "kind": "civil-society",
+  "country": "US",
+  "wikidata": "Q655286"
+ },
+ {
+  "id": "georgetown-university",
+  "name": "Georgetown University",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q333886"
+ },
+ {
+  "id": "goodfire",
+  "name": "Goodfire",
+  "kind": "tech-company",
+  "country": "US"
+ },
+ {
+  "id": "google",
+  "name": "Google (Alphabet)",
+  "kind": "ai-developer",
+  "country": "US",
+  "wikidata": "Q95",
+  "aliases": [
+   "alphabet"
+  ]
+ },
+ {
+  "id": "google-deepmind",
+  "name": "Google DeepMind",
+  "kind": "ai-developer",
+  "country": "GB",
+  "wikidata": "Q15733006",
+  "parent": "google"
+ },
+ {
+  "id": "hard-fork",
+  "name": "Hard Fork (podcast)",
+  "kind": "media",
+  "country": "US",
+  "wikidata": "Q110575213",
+  "parent": "the-new-york-times"
+ },
+ {
+  "id": "harvard-university",
+  "name": "Harvard University",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q13371"
+ },
+ {
+  "id": "hitachi",
+  "name": "Hitachi",
+  "kind": "tech-company",
+  "country": "JP",
+  "wikidata": "Q53238"
+ },
+ {
+  "id": "hugging-face",
+  "name": "Hugging Face",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q108943604"
+ },
+ {
+  "id": "humane-intelligence",
+  "name": "Humane Intelligence",
+  "kind": "research-nonprofit",
+  "country": "US"
+ },
+ {
+  "id": "ican",
+  "name": "International Campaign to Abolish Nuclear Weapons (ICAN)",
+  "kind": "advocacy",
+  "country": "CH",
+  "wikidata": "Q547940"
+ },
+ {
+  "id": "ilo",
+  "name": "International Labour Organization",
+  "kind": "international",
+  "country": "INT",
+  "wikidata": "Q54129"
+ },
+ {
+  "id": "imf",
+  "name": "International Monetary Fund",
+  "kind": "international",
+  "country": "INT",
+  "wikidata": "Q7804"
+ },
+ {
+  "id": "inflection-ai",
+  "name": "Inflection AI",
+  "kind": "ai-developer",
+  "country": "US",
+  "wikidata": "Q113270365"
+ },
+ {
+  "id": "insane-cyber",
+  "name": "Insane Cyber",
+  "kind": "tech-company",
+  "country": "US"
+ },
+ {
+  "id": "institute-for-health-metrics-and-evaluation",
+  "name": "Institute for Health Metrics and Evaluation (University of Washington)",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q6039400",
+  "parent": "university-of-washington"
+ },
+ {
+  "id": "institute-for-law-and-ai",
+  "name": "Institute for Law & AI",
+  "kind": "think-tank",
+  "country": "US"
+ },
+ {
+  "id": "irreplaceable",
+  "name": "Irreplaceable",
+  "kind": "advocacy"
+ },
+ {
+  "id": "johns-hopkins-university",
+  "name": "Johns Hopkins University",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q193727"
+ },
+ {
+  "id": "kurzgesagt",
+  "name": "Kurzgesagt",
+  "kind": "media",
+  "country": "DE",
+  "wikidata": "Q23893763"
+ },
+ {
+  "id": "lancet-commission-global-threats-to-health",
+  "name": "Lancet Commission on 21st Century Global Threats to Health",
+  "kind": "other",
+  "parent": "the-lancet"
+ },
+ {
+  "id": "lawzero",
+  "name": "LawZero",
+  "kind": "research-nonprofit",
+  "country": "CA",
+  "wikidata": "Q139854303"
+ },
+ {
+  "id": "link-in-bio",
+  "name": "Link in Bio (newsletter)",
+  "kind": "media"
+ },
+ {
+  "id": "mats",
+  "name": "MATS (ML Alignment & Theory Scholars)",
+  "kind": "research-nonprofit",
+  "country": "US"
+ },
+ {
+  "id": "mercor",
+  "name": "Mercor",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q137864179"
+ },
+ {
+  "id": "meridian-labs",
+  "name": "Meridian Labs",
+  "kind": "tech-company"
+ },
+ {
+  "id": "meta",
+  "name": "Meta Platforms",
+  "kind": "ai-developer",
+  "country": "US",
+  "wikidata": "Q380"
+ },
+ {
+  "id": "meta-superintelligence-labs",
+  "name": "Meta Superintelligence Labs",
+  "kind": "ai-developer",
+  "country": "US",
+  "wikidata": "Q135397403",
+  "parent": "meta"
+ },
+ {
+  "id": "metr",
+  "name": "METR (Model Evaluation and Threat Research)",
+  "kind": "research-nonprofit",
+  "country": "US",
+  "wikidata": "Q135185153"
+ },
+ {
+  "id": "microsoft",
+  "name": "Microsoft",
+  "kind": "ai-developer",
+  "country": "US",
+  "wikidata": "Q2283"
+ },
+ {
+  "id": "miri",
+  "name": "Machine Intelligence Research Institute",
+  "kind": "research-nonprofit",
+  "country": "US",
+  "wikidata": "Q2040269"
+ },
+ {
+  "id": "mississippi-state-university",
+  "name": "Mississippi State University",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q1939211"
+ },
+ {
+  "id": "mit",
+  "name": "Massachusetts Institute of Technology",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q49108"
+ },
+ {
+  "id": "moonshot-ai",
+  "name": "Moonshot AI",
+  "kind": "ai-developer",
+  "country": "CN",
+  "wikidata": "Q130270266"
+ },
+ {
+  "id": "nask-pib",
+  "name": "NASK National Research Institute (NASK-PIB)",
+  "kind": "public-research",
+  "country": "PL",
+  "wikidata": "Q152114"
+ },
+ {
+  "id": "nber",
+  "name": "National Bureau of Economic Research",
+  "kind": "research-nonprofit",
+  "country": "US",
+  "wikidata": "Q475424"
+ },
+ {
+  "id": "new-york-city",
+  "name": "City of New York (municipal government)",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q3112559"
+ },
+ {
+  "id": "new-york-city-council",
+  "name": "New York City Council",
+  "kind": "legislature",
+  "country": "US",
+  "wikidata": "Q645195"
+ },
+ {
+  "id": "new-york-state-assembly",
+  "name": "New York State Assembly",
+  "kind": "legislature",
+  "country": "US",
+  "wikidata": "Q1470702"
+ },
+ {
+  "id": "new-york-state-senate",
+  "name": "New York State Senate",
+  "kind": "legislature",
+  "country": "US",
+  "wikidata": "Q1722258"
+ },
+ {
+  "id": "new-york-university",
+  "name": "New York University",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q49210"
+ },
+ {
+  "id": "newsnation",
+  "name": "NewsNation",
+  "kind": "media",
+  "country": "US",
+  "wikidata": "Q135931495"
+ },
+ {
+  "id": "nightingale",
+  "name": "Nightingale",
+  "kind": "other"
+ },
+ {
+  "id": "nolla-health",
+  "name": "Nolla Health",
+  "kind": "tech-company",
+  "country": "US"
+ },
+ {
+  "id": "north-carolina-senate",
+  "name": "North Carolina Senate",
+  "kind": "legislature",
+  "country": "US",
+  "wikidata": "Q2269863"
+ },
+ {
+  "id": "nozomi-networks",
+  "name": "Nozomi Networks",
+  "kind": "tech-company",
+  "country": "US"
+ },
+ {
+  "id": "ntt-research",
+  "name": "NTT Research",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q82799216"
+ },
+ {
+  "id": "nvidia",
+  "name": "NVIDIA",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q182477"
+ },
+ {
+  "id": "oecd",
+  "name": "Organisation for Economic Co-operation and Development (OECD)",
+  "kind": "international",
+  "country": "INT",
+  "wikidata": "Q41550"
+ },
+ {
+  "id": "office-for-national-statistics",
+  "name": "Office for National Statistics (UK)",
+  "kind": "public-research",
+  "country": "GB",
+  "wikidata": "Q1334971"
+ },
+ {
+  "id": "open-philanthropy",
+  "name": "Open Philanthropy (now Coefficient Giving)",
+  "kind": "civil-society",
+  "country": "US",
+  "wikidata": "Q25345685"
+ },
+ {
+  "id": "openai",
+  "name": "OpenAI",
+  "kind": "ai-developer",
+  "country": "US",
+  "wikidata": "Q21708200"
+ },
+ {
+  "id": "openresearch",
+  "name": "OpenResearch",
+  "kind": "research-nonprofit",
+  "country": "US",
+  "wikidata": "Q119857231"
+ },
+ {
+  "id": "oracle",
+  "name": "Oracle",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q19900"
+ },
+ {
+  "id": "palisade-research",
+  "name": "Palisade Research",
+  "kind": "research-nonprofit",
+  "country": "US"
+ },
+ {
+  "id": "palo-alto-networks",
+  "name": "Palo Alto Networks",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q7128508"
+ },
+ {
+  "id": "pentagon",
+  "name": "US Department of Defense (Pentagon)",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q11209"
+ },
+ {
+  "id": "pew-research-center",
+  "name": "Pew Research Center",
+  "kind": "think-tank",
+  "country": "US",
+  "wikidata": "Q1635722"
+ },
+ {
+  "id": "philadelphia-police-department",
+  "name": "Philadelphia Police Department",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q7182789"
+ },
+ {
+  "id": "politico",
+  "name": "Politico",
+  "kind": "media",
+  "country": "US",
+  "wikidata": "Q3109740"
+ },
+ {
+  "id": "positron",
+  "name": "Positron",
+  "kind": "tech-company",
+  "country": "US"
+ },
+ {
+  "id": "princeton-university",
+  "name": "Princeton University",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q21578"
+ },
+ {
+  "id": "pwc",
+  "name": "PwC",
+  "kind": "company",
+  "country": "GB",
+  "wikidata": "Q488048"
+ },
+ {
+  "id": "rational-animations",
+  "name": "Rational Animations",
+  "kind": "media"
+ },
+ {
+  "id": "redwood-research",
+  "name": "Redwood Research",
+  "kind": "research-nonprofit",
+  "country": "US"
+ },
+ {
+  "id": "robin-hood-foundation",
+  "name": "Robin Hood Foundation",
+  "kind": "civil-society",
+  "country": "US",
+  "wikidata": "Q174896"
+ },
+ {
+  "id": "robust-ai",
+  "name": "Robust.AI",
+  "kind": "tech-company",
+  "country": "US"
+ },
+ {
+  "id": "rockwell-automation",
+  "name": "Rockwell Automation",
+  "kind": "company",
+  "country": "US",
+  "wikidata": "Q1529234"
+ },
+ {
+  "id": "salesforce",
+  "name": "Salesforce",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q941127"
+ },
+ {
+  "id": "south-korea-government",
+  "name": "Government of South Korea",
+  "kind": "government",
+  "country": "KR",
+  "wikidata": "Q626814"
+ },
+ {
+  "id": "spacex",
+  "name": "SpaceX",
+  "kind": "company",
+  "country": "US",
+  "wikidata": "Q193701"
+ },
+ {
+  "id": "spacexai",
+  "name": "SpaceXAI (formerly xAI)",
+  "kind": "ai-developer",
+  "country": "US",
+  "wikidata": "Q120599684",
+  "parent": "spacex",
+  "aliases": [
+   "xai"
+  ]
+ },
+ {
+  "id": "stanford-digital-economy-lab",
+  "name": "Stanford Digital Economy Lab",
+  "kind": "university",
+  "country": "US",
+  "parent": "stanford-university"
+ },
+ {
+  "id": "stanford-university",
+  "name": "Stanford University",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q41506"
+ },
+ {
+  "id": "state-of-connecticut",
+  "name": "State of Connecticut (state government)",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q53709967"
+ },
+ {
+  "id": "state-of-utah",
+  "name": "State of Utah (state government)",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q5589326"
+ },
+ {
+  "id": "statistics-denmark",
+  "name": "Statistics Denmark",
+  "kind": "public-research",
+  "country": "DK",
+  "wikidata": "Q1164337"
+ },
+ {
+  "id": "super-intelligence-force",
+  "name": "Super Intelligence Force (White House Super Intelligence Task Force)",
+  "kind": "government",
+  "country": "US",
+  "parent": "us-white-house"
+ },
+ {
+  "id": "techcrunch",
+  "name": "TechCrunch",
+  "kind": "media",
+  "country": "US",
+  "wikidata": "Q1022366"
+ },
+ {
+  "id": "techspot",
+  "name": "TechSpot",
+  "kind": "media",
+  "country": "US",
+  "wikidata": "Q63089461"
+ },
+ {
+  "id": "tesla",
+  "name": "Tesla",
+  "kind": "company",
+  "country": "US",
+  "wikidata": "Q478214"
+ },
+ {
+  "id": "the-argument",
+  "name": "The Argument",
+  "kind": "media",
+  "country": "US"
+ },
+ {
+  "id": "the-guardian",
+  "name": "The Guardian",
+  "kind": "media",
+  "country": "GB",
+  "wikidata": "Q11148"
+ },
+ {
+  "id": "the-lancet",
+  "name": "The Lancet",
+  "kind": "media",
+  "country": "GB",
+  "wikidata": "Q939416"
+ },
+ {
+  "id": "the-new-york-times",
+  "name": "The New York Times",
+  "kind": "media",
+  "country": "US",
+  "wikidata": "Q9684"
+ },
+ {
+  "id": "the-verge",
+  "name": "The Verge",
+  "kind": "media",
+  "country": "US",
+  "wikidata": "Q2155442"
+ },
+ {
+  "id": "transformer",
+  "name": "Transformer (newsletter)",
+  "kind": "media"
+ },
+ {
+  "id": "transluce",
+  "name": "Transluce",
+  "kind": "research-nonprofit",
+  "country": "US"
+ },
+ {
+  "id": "truthful-ai",
+  "name": "Truthful AI",
+  "kind": "research-nonprofit",
+  "country": "US",
+  "wikidata": "Q126286031"
+ },
+ {
+  "id": "tsinghua-university",
+  "name": "Tsinghua University",
+  "kind": "university",
+  "country": "CN",
+  "wikidata": "Q16955"
+ },
+ {
+  "id": "tudor-investment-corporation",
+  "name": "Tudor Investment Corporation",
+  "kind": "investor",
+  "country": "US",
+  "wikidata": "Q95950900"
+ },
+ {
+  "id": "tusk-ventures",
+  "name": "Tusk Ventures",
+  "kind": "investor",
+  "country": "US"
+ },
+ {
+  "id": "uber",
+  "name": "Uber",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q780442"
+ },
+ {
+  "id": "ucl",
+  "name": "University College London",
+  "kind": "university",
+  "country": "GB",
+  "wikidata": "Q193196"
+ },
+ {
+  "id": "uk-ai-security-institute",
+  "name": "AI Security Institute (UK)",
+  "kind": "government",
+  "country": "GB",
+  "wikidata": "Q126284597",
+  "aliases": [
+   "ai-security-institute"
+  ]
+ },
+ {
+  "id": "uk-cabinet-office",
+  "name": "Cabinet Office (UK)",
+  "kind": "government",
+  "country": "GB",
+  "wikidata": "Q5995",
+  "parent": "uk-government"
+ },
+ {
+  "id": "uk-dsit",
+  "name": "Department for Science, Innovation and Technology (UK)",
+  "kind": "government",
+  "country": "GB",
+  "wikidata": "Q116719150",
+  "parent": "uk-government"
+ },
+ {
+  "id": "uk-government",
+  "name": "UK government",
+  "kind": "government",
+  "country": "GB",
+  "wikidata": "Q6063"
+ },
+ {
+  "id": "uk-house-of-commons",
+  "name": "House of Commons (UK)",
+  "kind": "legislature",
+  "country": "GB",
+  "wikidata": "Q11005",
+  "parent": "uk-parliament"
+ },
+ {
+  "id": "uk-house-of-lords",
+  "name": "House of Lords (UK)",
+  "kind": "legislature",
+  "country": "GB",
+  "wikidata": "Q11007",
+  "parent": "uk-parliament"
+ },
+ {
+  "id": "uk-national-cyber-security-centre",
+  "name": "National Cyber Security Centre (UK)",
+  "kind": "government",
+  "country": "GB",
+  "wikidata": "Q23688635",
+  "parent": "uk-government"
+ },
+ {
+  "id": "uk-parliament",
+  "name": "Parliament of the United Kingdom",
+  "kind": "legislature",
+  "country": "GB",
+  "wikidata": "Q11010"
+ },
+ {
+  "id": "un-general-assembly",
+  "name": "United Nations General Assembly",
+  "kind": "international",
+  "country": "INT",
+  "wikidata": "Q47423",
+  "parent": "united-nations"
+ },
+ {
+  "id": "united-nations",
+  "name": "United Nations",
+  "kind": "international",
+  "country": "INT",
+  "wikidata": "Q1065"
+ },
+ {
+  "id": "universite-de-montreal",
+  "name": "Université de Montréal",
+  "kind": "university",
+  "country": "CA",
+  "wikidata": "Q392189"
+ },
+ {
+  "id": "university-of-california-berkeley",
+  "name": "University of California, Berkeley",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q168756"
+ },
+ {
+  "id": "university-of-cambridge",
+  "name": "University of Cambridge",
+  "kind": "university",
+  "country": "GB",
+  "wikidata": "Q35794"
+ },
+ {
+  "id": "university-of-chicago",
+  "name": "University of Chicago",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q131252"
+ },
+ {
+  "id": "university-of-copenhagen",
+  "name": "University of Copenhagen",
+  "kind": "university",
+  "country": "DK",
+  "wikidata": "Q186285"
+ },
+ {
+  "id": "university-of-illinois-urbana-champaign",
+  "name": "University of Illinois Urbana-Champaign",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q457281"
+ },
+ {
+  "id": "university-of-maryland",
+  "name": "University of Maryland, College Park",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q503415"
+ },
+ {
+  "id": "university-of-michigan",
+  "name": "University of Michigan",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q230492"
+ },
+ {
+  "id": "university-of-oxford",
+  "name": "University of Oxford",
+  "kind": "university",
+  "country": "GB",
+  "wikidata": "Q34433"
+ },
+ {
+  "id": "university-of-pennsylvania",
+  "name": "University of Pennsylvania",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q49117"
+ },
+ {
+  "id": "university-of-stuttgart",
+  "name": "University of Stuttgart",
+  "kind": "university",
+  "country": "DE",
+  "wikidata": "Q122453"
+ },
+ {
+  "id": "university-of-toronto",
+  "name": "University of Toronto",
+  "kind": "university",
+  "country": "CA",
+  "wikidata": "Q180865"
+ },
+ {
+  "id": "university-of-virginia",
+  "name": "University of Virginia",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q213439"
+ },
+ {
+  "id": "university-of-warwick",
+  "name": "University of Warwick",
+  "kind": "university",
+  "country": "GB",
+  "wikidata": "Q865528"
+ },
+ {
+  "id": "university-of-washington",
+  "name": "University of Washington",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q219563"
+ },
+ {
+  "id": "us-bureau-of-labor-statistics",
+  "name": "US Bureau of Labor Statistics",
+  "kind": "public-research",
+  "country": "US",
+  "wikidata": "Q2928428",
+  "parent": "us-department-of-labor"
+ },
+ {
+  "id": "us-caisi",
+  "name": "Center for AI Standards and Innovation (CAISI)",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q139559517",
+  "parent": "us-nist"
+ },
+ {
+  "id": "us-census-bureau",
+  "name": "US Census Bureau",
+  "kind": "public-research",
+  "country": "US",
+  "wikidata": "Q637413"
+ },
+ {
+  "id": "us-congress",
+  "name": "United States Congress",
+  "kind": "legislature",
+  "country": "US",
+  "wikidata": "Q11268"
+ },
+ {
+  "id": "us-department-of-labor",
+  "name": "US Department of Labor",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q628807"
+ },
+ {
+  "id": "us-doge",
+  "name": "US Department of Government Efficiency (DOGE)",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q131158869",
+  "parent": "us-white-house"
+ },
+ {
+  "id": "us-ftc",
+  "name": "US Federal Trade Commission",
+  "kind": "regulator",
+  "country": "US",
+  "wikidata": "Q786713"
+ },
+ {
+  "id": "us-house",
+  "name": "US House of Representatives",
+  "kind": "legislature",
+  "country": "US",
+  "wikidata": "Q11701",
+  "parent": "us-congress"
+ },
+ {
+  "id": "us-house-energy-and-commerce-committee",
+  "name": "House Committee on Energy and Commerce",
+  "kind": "legislature",
+  "country": "US",
+  "wikidata": "Q1560114",
+  "parent": "us-house"
+ },
+ {
+  "id": "us-house-select-committee-on-china",
+  "name": "House Select Committee on the Chinese Communist Party (\"Select Committee on China\")",
+  "kind": "legislature",
+  "country": "US",
+  "parent": "us-house"
+ },
+ {
+  "id": "us-navy",
+  "name": "US Navy",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q11220",
+  "parent": "pentagon"
+ },
+ {
+  "id": "us-nist",
+  "name": "National Institute of Standards and Technology (NIST)",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q176691"
+ },
+ {
+  "id": "us-odni",
+  "name": "Office of the Director of National Intelligence",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q22222677"
+ },
+ {
+  "id": "us-opm",
+  "name": "US Office of Personnel Management",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q7890847"
+ },
+ {
+  "id": "us-ostp",
+  "name": "White House Office of Science and Technology Policy",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q3349673",
+  "parent": "us-white-house"
+ },
+ {
+  "id": "us-senate",
+  "name": "US Senate",
+  "kind": "legislature",
+  "country": "US",
+  "wikidata": "Q66096",
+  "parent": "us-congress"
+ },
+ {
+  "id": "us-state-department",
+  "name": "US Department of State",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q789915"
+ },
+ {
+  "id": "us-white-house",
+  "name": "The White House (Executive Office of the President)",
+  "kind": "government",
+  "country": "US",
+  "wikidata": "Q1355327",
+  "aliases": [
+   "white-house"
+  ]
+ },
+ {
+  "id": "user-mag",
+  "name": "User Mag",
+  "kind": "media",
+  "country": "US"
+ },
+ {
+  "id": "vatican",
+  "name": "The Holy See (Vatican)",
+  "kind": "civil-society",
+  "country": "VA",
+  "wikidata": "Q159583"
+ },
+ {
+  "id": "vorys",
+  "name": "Vorys, Sater, Seymour and Pease",
+  "kind": "company",
+  "country": "US",
+  "wikidata": "Q7941971"
+ },
+ {
+  "id": "warsaw-university-of-technology",
+  "name": "Warsaw University of Technology",
+  "kind": "university",
+  "country": "PL",
+  "wikidata": "Q1718656"
+ },
+ {
+  "id": "wikimedia-foundation",
+  "name": "Wikimedia Foundation",
+  "kind": "civil-society",
+  "country": "US",
+  "wikidata": "Q180"
+ },
+ {
+  "id": "world-bank",
+  "name": "World Bank Group",
+  "kind": "international",
+  "country": "INT",
+  "wikidata": "Q320863"
+ },
+ {
+  "id": "xiaomi",
+  "name": "Xiaomi",
+  "kind": "ai-developer",
+  "country": "CN",
+  "wikidata": "Q1636958"
+ },
+ {
+  "id": "xmtp-labs",
+  "name": "XMTP Labs",
+  "kind": "tech-company",
+  "country": "US"
+ },
+ {
+  "id": "yale-budget-lab",
+  "name": "The Budget Lab at Yale",
+  "kind": "think-tank",
+  "country": "US",
+  "parent": "yale-university"
+ },
+ {
+  "id": "yale-law-school",
+  "name": "Yale Law School",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q1143289",
+  "parent": "yale-university"
+ },
+ {
+  "id": "yale-university",
+  "name": "Yale University",
+  "kind": "university",
+  "country": "US",
+  "wikidata": "Q49112"
+ },
+ {
+  "id": "z-ai",
+  "name": "Z.ai (Zhipu AI)",
+  "kind": "ai-developer",
+  "country": "CN",
+  "wikidata": "Q129572031"
+ },
+ {
+  "id": "zscaler",
+  "name": "Zscaler",
+  "kind": "tech-company",
+  "country": "US",
+  "wikidata": "Q8074786"
+ }
 ]
