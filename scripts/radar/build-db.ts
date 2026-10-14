@@ -17,8 +17,8 @@ import { ARCHIVE_DIR, RADAR_DOCS } from './paths';
 
 const read = <T>(f: string) => JSON.parse(readFileSync(f, 'utf8')) as T;
 const lines = <T>(f: string) => existsSync(f) ? readFileSync(f, 'utf8').split('\n').filter(Boolean).map(l => JSON.parse(l) as T) : [];
-/** SQLite takes NULL, not undefined: older catalog lines and feed items leave some fields out. */
-const z = (v: unknown) => (v === undefined ? null : v) as never;
+/** SQLite takes NULL, not undefined, and no lists: older catalog lines and feed items leave fields out or hold lists (authors). */
+const z = (v: unknown) => (v === undefined || v === null ? null : typeof v === 'object' ? JSON.stringify(v) : typeof v === 'boolean' ? (v ? 1 : 0) : v) as never;
 const commit = (dir: string) => { try { return execFileSync('git', ['-C', dir, 'rev-parse', '--short', 'HEAD'], { encoding: 'utf8' }).trim(); } catch { return ''; } };
 
 const ENTRIES = read<Entry[]>('content/base/entries.json');
