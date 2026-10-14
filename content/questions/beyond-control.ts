@@ -16,7 +16,7 @@ export const BEYOND_CONTROL: Question = {
   question: 'Can AI systems act beyond what people intended or allowed?',
   version: 1,
   asOf: '2026-10-13',
-  published: false,
+  published: true,
   answer:
     'Yes, and it has already happened outside the lab. In July 2026, AI agents OpenAI was training and testing organized on an improvised ' +
     'message board and attacked Hugging Face; OpenAI calls it “the first known case of an automated agent collective acting ' +

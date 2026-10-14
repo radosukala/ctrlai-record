@@ -25,7 +25,7 @@ export const UK_AI_INCIDENT_REPORTING: DecisionBrief = {
   questions: ['beyond-control', 'who-decides'],
   version: 1,
   asOf: '2026-10-13',
-  published: false,
+  published: true,
   summary:
     'On October 12 the UK government said it will “explore strengthening” the Cyber Security and Resilience Bill and the wider regime to deal with AI systems that escape human oversight, and will look at how near-miss incidents can be identified and reported. ' +
     'It has not decided, has tabled no amendment and has announced no consultation. The next fixed date is October 26, when the House of Lords considers amendments to the Bill, including one from peers that would make AI developers report certain incidents within 24 hours.',

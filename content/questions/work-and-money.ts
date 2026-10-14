@@ -35,7 +35,7 @@ export const WORK_AND_MONEY: Question = {
   question: 'What happens to work, income and the economy as AI spreads?',
   version: 1,
   asOf: '2026-10-14',
-  published: false,
+  published: true,
   answer:
     'So far, AI has not shown up as a broad loss of jobs in the data. The largest studies of US employment and pay and of Danish earnings and hours find no clear effect on the economy as a whole, ' +
     'and few firms that use AI report cutting staff. The clearest exception is young people starting careers in the jobs most exposed to AI: a payroll study finds their employment 19% below where it would be had it kept pace with less exposed jobs, ' +
