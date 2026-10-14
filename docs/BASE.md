@@ -39,8 +39,9 @@ Articles: `scripts/fetch-text.sh URL OUT`.
 
 For each video or podcast, the first of these that works:
 
-1. **The publisher's own transcript**: a page, a hearing record, or `<podcast:transcript>` in the feed (the ingest keeps
-   these as `transcripts` on the item; 80,000 Hours lists one for nearly every episode).
+1. **The publisher's own transcript**: a page, a hearing record (parliaments: see the next section), or
+   `<podcast:transcript>` in the feed (the ingest keeps these as `transcripts` on the item; 80,000 Hours lists one for
+   nearly every episode).
 2. **The podcast's audio, transcribed by us**: the ingest keeps each episode's audio link (`audio`). Then
    `python -I scripts/radar/transcribe.py AUDIO_URL OUT [--second whisper]`. The default engine is NVIDIA Nemotron ASR through
    OpenRouter (about a cent an hour; `OPENROUTER_API_KEY` in `.env.local`). `--engine whisper` runs whisper.cpp on the Mac,
@@ -57,6 +58,46 @@ For each video or podcast, the first of these that works:
    blocked for the rest of the day.
 4. **By hand**: a transcript saved with Tactiq goes into the run's `sources/` as `manual-tactiq`.
 5. Otherwise the entry stays description-only, and the item goes on the gap list.
+
+## Parliaments: what politicians say, from the official record
+
+Three sources in `radar/sources.json` (`kind: parliament`, tier 1, filter `ai`): the UK **House of Commons** and **House of
+Lords** (Hansard API, with the Members API for who a member is) and the **European Parliament's plenary** (open data API).
+No keys. Requests go one at a time with a pause between them, whatever the number of sources (the European Parliament allows
+500 in 5 minutes; a day's reading is a few dozen). Code: `scripts/radar/parliament.ts`; tests: `tests/parliament*.test.ts`.
+
+- **One item per debate**, not per speech: `title`, `url` (the debate's own page), `published` (the sitting date), `author` (the
+  chamber), `speakers` (name, member id, and the party, or the EP political group, **on the day of the sitting**), and an
+  excerpt that counts the speeches mentioning AI and quotes the three that mention it most. Commission and Council speakers
+  are not MEPs, so they carry no group. The excerpt shows a party as "Lab", not "Labour", because the keyword filter takes
+  "Labour" for labour and "Liberal Democrat" for democracy.
+- **How a debate is found:** a speech in it says "AI" or "artificial intelligence". Both APIs match every word searched, so
+  "frontier AI" is already inside "AI". At Westminster a debate whose *title* says either, or "superintelligence", is found too
+  and read whole: everyone who spoke in it counts (not the person in the chair). A speech about chatbots, algorithms or AGI
+  that never says those two words is missed unless the debate's title says so.
+- **The text for a deep read** is step 0 of `prepare.py`: `npx tsx scripts/radar/parliament-text.ts <item.json | debate URL> OUT_BASE`
+  writes `OUT_BASE.txt`, every speech under a `>>` line with the speaker's name, party or group that day, member id and what
+  the record printed for them. The words are the record's own, only markup removed. The quotation checker reads `>>` as a
+  change of speaker, so a quotation cannot run from one member into the next (`tests/parliament-text.test.ts` shows it).
+  `transcript: "official"`, `kind: "hearing"`. The public pages (hansard.parliament.uk, europarl.europa.eu/doceo) refuse
+  scripts, so the text is read from the APIs. In Hansard, paragraphs the API gives with no member continue the speech before
+  them, unless they are in italics (stage directions, "Question put and agreed to.", the resolution): those are `>> [record]`.
+- **Delays.** Hansard publishes a sitting as it is reported and corrects it later: on Oct 13 2026 a Lords debate that began at
+  3.33 pm was in the API, still going, by 6.38 pm (the text file says when Hansard last updated it), and the Commons record of
+  Oct 12 had its overnight update at 2.22 am. A run sees today's debates as they stand, and a debate skipped at that point is
+  not offered again. The European Parliament's speeches were all in the API, in all 24 languages, five days after the last
+  sitting of the Oct 5-8 session; how soon after a speech they appear we have not measured. The consolidated verbatim report
+  (PDF, Word) is issued about a week after the sitting, which is why the API is read.
+- **Coverage.** Hansard: spoken contributions in the Commons chamber, Westminster Hall, the Lords chamber and Grand
+  Committee; not written statements or answers, public bill committees or select committee evidence. European Parliament:
+  plenary speeches and statements made in writing; not committees. The plenary sits about four days a month, so most days
+  have nothing; the Commons and Lords sit Monday to Thursday (some Fridays) and not in recess.
+- **European Parliament languages.** A speech not given in English has an English text that is the Parliament's machine
+  translation (its `xml:lang` reads `hu-t-en-mtec`). The saved text says so on the speaker's line and the reading agent is told
+  to prefer English-language speeches. A speech with no English text yet is saved in the language it was said in, marked.
+- **Licences.** Hansard: Open Parliament Licence v3.0, "Contains Parliamentary information licensed under the Open Parliament
+  Licence v3.0." The European Parliament's open data: CC BY 4.0, "© European Union, <year> - Source: European Parliament."
+  Credit them wherever a quotation from these records is published.
 
 ## Keeping the record safe
 

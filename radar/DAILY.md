@@ -11,7 +11,7 @@ and people's rights becomes one entry in the Base, with quotations checked word 
 ```bash
 cd /Users/rado/code/ctrlai-com-radar && bash scripts/radar/daily-start.sh
 ```
-It updates the checkout, reads the 108 sources in `radar/sources.json` for yesterday and today, and prints the numbered
+It updates the checkout, reads the 114 sources in `radar/sources.json` for yesterday and today, and prints the numbered
 **candidates**: kept items that no earlier run has handled. It prints `RUN=… DIR=…`; below, `RUN` means that folder.
 If it prints `STOP`, do nothing else: report the reason and end. YouTube channels are read through YouTube's Data API
 (`YOUTUBE_API_KEY` in `/Users/rado/code/ctrlai-com/.env.local`), with each channel's RSS feed as the fallback; the line
@@ -26,6 +26,10 @@ Read the candidate list; `RUN/candidates.jsonl` has each item's excerpt. Decide 
 - **skip**: not about AI safety, control, governance, work or rights; product demos; reruns; duplicates of an entry the
   Base already has. A video's length shows in the list (`3m`): one-minute Shorts and clips cut from a longer programme
   are rarely worth an entry of their own; prefer the full programme when it's there.
+- **Parliament debates** (source kind `parliament`) are one item per debate; the excerpt counts the speeches that mention AI
+  and names the speakers (read it: a debate's title is often only a heading, like "Topical Questions"). A debate *about* AI
+  (its title, a minister answering, several speakers) is a likely **deep** item; one speech that says "AI" in passing (a
+  boiler, a budget line) is a **skip**.
 Group items that are the same story (one `main`, the others `also`), preferring the primary source as `main`.
 Write `RUN/triage.json`:
 ```json
@@ -37,13 +41,14 @@ key. **Append** every id you skipped to `RUN/skipped.txt`, one per line, followe
 the file), so later runs don't offer them again and anyone can later see what we chose not to read:
 `3d0666e3cfd0 markets segment, AI only in passing`.
 
-## 3. Prepare audio and video texts (one at a time)
+## 3. Prepare audio, video and parliament texts (one at a time)
 ```bash
 /Users/rado/code/ctrlai-tools/venv/bin/python -I scripts/radar/prepare.py RUN
 ```
-For each deep video or podcast it saves, in order of preference: the publisher's transcript, our own transcript of the
-podcast audio (Nemotron through OpenRouter, plus a second, independent Whisper transcript on this Mac), or YouTube
-captions with a minute between requests. It can take an hour when there are long episodes. Never run two at once and
+For each deep parliament debate it saves the official record (Hansard, or the European Parliament's verbatim report, read
+through their APIs). For each deep video or podcast it saves, in order of preference: the publisher's transcript, our own
+transcript of the podcast audio (Nemotron through OpenRouter, plus a second, independent Whisper transcript on this Mac), or
+YouTube captions with a minute between requests. It can take an hour when there are long episodes. Never run two at once and
 never fetch captions in parallel: on Oct 12 2026 that got this Mac's connection blocked by YouTube for the day.
 
 ## 4. Reading agents

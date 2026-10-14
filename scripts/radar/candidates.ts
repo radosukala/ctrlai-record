@@ -27,7 +27,9 @@ const fresh = items.filter(i => i.kept && !done.has(i.id)).sort((a, b) => a.publ
 writeFileSync(join(dir, 'candidates.jsonl'), fresh.map(i => JSON.stringify(i)).join('\n') + (fresh.length ? '\n' : ''));
 
 fresh.forEach((i, n) => {
-  const extra = [i.views ? `v=${i.views}` : '', i.points ? `p=${i.points}` : '', i.durationSec ? `${Math.round(i.durationSec / 60)}m` : '', i.audio ? 'audio' : '', i.transcripts?.length ? 'transcript' : '']
+  // A debate's title is often only a heading ("Topical Questions"): its first excerpt sentence says how much AI there is in it.
+  const extra = [i.views ? `v=${i.views}` : '', i.points ? `p=${i.points}` : '', i.durationSec ? `${Math.round(i.durationSec / 60)}m` : '', i.audio ? 'audio' : '', i.transcripts?.length ? 'transcript' : '',
+    i.kind === 'parliament' ? i.excerpt.match(/^[^.]*\./)?.[0] ?? '' : '']
     .filter(Boolean).join(' ');
   console.log(`${String(n).padStart(3)} ${i.id} ${i.published.slice(0, 10)} ${i.source.slice(0, 24).padEnd(24)} | ${i.title.slice(0, 110)} ${extra}`);
 });

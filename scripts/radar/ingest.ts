@@ -14,7 +14,8 @@
  * Run folders hold other people's text and live in docs-internal/radar/ (git-excluded), or wherever RADAR_DOCS points.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { parseFeed, parseGovUk, parseHn, parseYouTubeVideos, relevant, uploadsPlaylist, type Item, type Source } from './feeds';
+import { parseFeed, parseGovUk, parseHn, parseYouTubeVideos, relevant, UA, uploadsPlaylist, type Item, type Source } from './feeds';
+import { readParliament } from './parliament';
 import { radarDir } from './paths';
 
 const arg = (name: string, dflt?: string) => {
@@ -28,7 +29,6 @@ const RUN = arg('run', TO)!;
 const from = Date.parse(`${FROM}T00:00:00Z`);
 const to = Date.parse(`${TO}T23:59:59Z`);
 
-const UA = 'CtrlAIBot/0.1 (+https://ctrlai.com/about; reads public feeds once a day)';
 const { sources } = JSON.parse(readFileSync('radar/sources.json', 'utf8')) as { sources: Source[] };
 
 async function get(url: string, init: RequestInit = {}): Promise<string> {
@@ -104,6 +104,7 @@ async function read(src: Source): Promise<Item[]> {
     return items;
   }
   if (src.kind === 'gov-api') return parseGovUk(src, await get(src.url));
+  if (src.kind === 'parliament') return readParliament(src, { from: new Date(from).toISOString().slice(0, 10), to: new Date(to).toISOString().slice(0, 10) });
   if (src.kind === 'arxiv') return parseFeed(src, await get(arxivUrl()));
   if (src.kind === 'youtube' && YOUTUBE_KEY) {
     try { return await readYouTube(src); } catch (e) { apiFailed.set(src.id, String((e as Error).message ?? e)); }
@@ -135,8 +136,9 @@ async function worker() {
       const dates = items.map(i => i.published).filter(Boolean).sort();
       const via = src.kind === 'youtube' && YOUTUBE_KEY ? (apiFailed.has(src.id) ? 'rss' : 'api') : undefined;
       health[src.id] = { ok: true, seen: items.length, inWindow: inWindow.length, kept, oldest: dates[0], ...(via ? { via } : {}), ...(apiFailed.has(src.id) ? { apiError: apiFailed.get(src.id) } : {}) };
-      // A feed whose oldest item is newer than the window start may have dropped items: say so.
-      const warn = (items.length && dates[0] && Date.parse(dates[0]) > from ? '  (feed may not reach back to the window start)' : '')
+      // A feed whose oldest item is newer than the window start may have dropped items: say so. (A parliament is asked for the
+      // window itself, so a quiet few days there is not a short feed.)
+      const warn = (src.kind !== 'parliament' && items.length && dates[0] && Date.parse(dates[0]) > from ? '  (feed may not reach back to the window start)' : '')
         + (apiFailed.has(src.id) ? `  (read from RSS: ${apiFailed.get(src.id)})` : '');
       console.log(`${src.id.padEnd(42)} ${String(items.length).padStart(4)} seen ${String(inWindow.length).padStart(4)} in window ${String(kept).padStart(4)} kept${warn}`);
     } catch (e) {

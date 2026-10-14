@@ -1,8 +1,10 @@
-"""Prepares the text of every video and podcast item a run will read, ONE AT A TIME, before the reading agents start.
+"""Prepares the text of every video, podcast and parliamentary debate a run will read, ONE AT A TIME, before the reading agents start.
 
   /Users/rado/code/ctrlai-tools/venv/bin/python -I scripts/radar/prepare.py RUN_DIR
 
-For each deep item in RUN_DIR/triage.json that is audio or video and has no saved text yet, the first that works:
+For each deep item in RUN_DIR/triage.json that is audio, video or a parliamentary debate and has no saved text yet, the first that works:
+  0. a parliamentary debate (kind "parliament": UK Hansard, the European Parliament): its official record, saved by
+     scripts/radar/parliament-text.ts, every speech under a line naming the speaker, party and member id;
   1. the publisher's own transcript listed in the feed (<podcast:transcript>), saved as the source text;
   2. the podcast audio (the item's own, or the same episode found in the run's podcast feeds by title and date):
      scripts/radar/transcribe.py with Nemotron, plus a second, independent Whisper transcript on this Mac;
@@ -36,6 +38,16 @@ for g in groups:
     out = os.path.join(RUN, 'sources', main['id'])
     if os.path.exists(out + '.txt'): print(f"{main['id']} already has text"); continue
     cands = [main] + also
+    # 0. A parliamentary debate: the official record itself (never audio or captions).
+    parl = next((c for c in cands if c.get('kind') == 'parliament'), None)
+    if parl:
+        print(f"{main['id']} {main['title'][:80]}", flush=True)
+        r = run(['npx', 'tsx', 'scripts/radar/parliament-text.ts', parl['url'], out])
+        for line in r.stdout.strip().splitlines(): print('  ' + line)
+        if r.returncode == 0 and os.path.exists(out + '.txt'): continue
+        print('  parliament record failed: ' + (r.stderr.strip() or r.stdout.strip())[-300:])
+        print('  no text: the agent writes a description-only entry')
+        continue
     if not any(c.get('videoId') or c.get('audio') or c.get('transcripts') or c['kind'] in ('youtube', 'podcast') for c in cands): continue
     print(f"{main['id']} {main['title'][:80]}", flush=True)
     # 1. A transcript the publisher lists.

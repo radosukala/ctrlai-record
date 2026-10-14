@@ -12,4 +12,8 @@ changes. Suggested credit: *Ctrl AI (date). https://ctrlai.com*
 The works we link to belong to their makers. Titles are cited as published. The numbers in `content/stats.json` are
 snapshots of public counts on the platforms they come from.
 
+`tests/fixtures/parliament/` holds extracts of official parliamentary records, kept so the tests run offline: Hansard
+(Contains Parliamentary information licensed under the Open Parliament Licence v3.0) and the European Parliament's open data
+(© European Union, 2026 - Source: European Parliament, CC BY 4.0).
+
 The software is licensed separately, under the GNU Affero General Public License v3.0. See `LICENSE`.

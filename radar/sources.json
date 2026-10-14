@@ -873,6 +873,32 @@
    "filter": "general"
   },
   {
+   "id": "uk-house-of-commons-hansard",
+   "name": "UK House of Commons (Hansard)",
+   "kind": "parliament",
+   "url": "https://hansard-api.parliament.uk",
+   "house": "Commons",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "uk-house-of-lords-hansard",
+   "name": "UK House of Lords (Hansard)",
+   "kind": "parliament",
+   "url": "https://hansard-api.parliament.uk",
+   "house": "Lords",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
+   "id": "european-parliament-plenary",
+   "name": "European Parliament plenary",
+   "kind": "parliament",
+   "url": "https://data.europarl.europa.eu/api/v2",
+   "tier": 1,
+   "filter": "ai"
+  },
+  {
    "id": "white-house-articles",
    "name": "White House: articles",
    "kind": "gov",

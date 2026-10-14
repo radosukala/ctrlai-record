@@ -131,6 +131,8 @@ function fromRun(run: string): Add[] {
       method = t.engine === 'whisper' ? 'stt-whisper' : t.engine === 'elevenlabs' ? 'stt-elevenlabs' : t.engine === 'openrouter' ? 'stt-nemotron' : t.generated ? 'captions-auto' : 'captions-uploaded';
     }
     else if (e?.access === 'abstract') method = 'abstract';
+    // A parliament's own record of a debate (scripts/radar/parliament-text.ts), the publisher's transcript in all but name.
+    else if (it?.kind === 'parliament') method = 'official-transcript';
     else if (/arxiv\.org/.test(e?.textUrl ?? e?.url ?? '')) method = 'page-text';
     // A second clip's captions saved beside the main one is its own document; a second transcript of the same audio is not.
     const companion = f !== `${id}.txt` && !f.endsWith('.second.txt');

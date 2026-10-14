@@ -34,6 +34,17 @@ returns a summary, not the page. Don't download anything except page text and ca
   - with `.transcript.json` from YouTube (`generated` true/false): captions (`transcript: "auto"`).
   - a page or the publisher's own transcript: `transcript: "official"` if it is the publisher's transcript.
   If there is no file, look for a transcript on the episode page with fetch-text.sh; otherwise `access: "excerpt"`.
+- **Parliament debate** (the item's `kind` is `parliament`; its URL is on hansard.parliament.uk or europarl.europa.eu): never
+  fetch the page, both refuse scripts. The run saved the parliament's own record in `RUN/sources/<main.id>.txt`; if that file
+  is missing, `access: "excerpt"` and say so in `notes`. Each speech is preceded by a line starting `>>` with the speaker's
+  name, party (UK) or political group (European Parliament) on the day, member id, and what the record printed for the
+  speaker (the office, e.g. "The Prime Minister"): that line is your evidence of who spoke, so `speakerCertain: true`,
+  `transcript: "official"`, `kind: "hearing"`, outlet "UK House of Commons", "UK House of Lords" or "European Parliament".
+  Quote the speech only, never the `>>` line; text under `>> [record]` or `>> Noble Lords` is nobody's speech, so do not
+  attribute it to a member. A speech marked "spoke in X" was not given in English and its English is the Parliament's machine
+  translation: quote an English-language speech instead when one serves, and otherwise say in `context` that the English is a
+  translation. Give a member's party or group in `summary` or `context`, not in a quotation. A debate saved the same day may
+  still be going on (the header says when Hansard last updated it).
 - **arXiv paper:** `bash scripts/fetch-text.sh https://arxiv.org/abs/<arxiv id> RUN/sources/<main.id>.txt`; if the paper has an
   HTML version (`https://arxiv.org/html/<id>`), you may save that instead for more detail.
 - One `textFile` per entry.

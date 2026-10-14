@@ -1,20 +1,29 @@
 /**
  * Reading the feeds the Radar polls: RSS, Atom (YouTube, arXiv, GOV.UK, forums), and three JSON APIs (Hacker News, GOV.UK
  * search, YouTube's Data API). No dependencies: feeds are small and regular, so a few patterns read them. What comes back is untrusted text;
- * nothing here acts on it.
+ * nothing here acts on it. Parliaments (UK Hansard, the European Parliament) are read in parliament.ts.
  */
 import { createHash } from 'node:crypto';
+
+/** What the Radar calls itself when it asks a server for something. */
+export const UA = 'CtrlAIBot/0.1 (+https://ctrlai.com/about; reads public feeds once a day)';
 
 export type Source = {
   id: string;
   name: string;
-  kind: 'youtube' | 'podcast' | 'blog' | 'gov' | 'gov-api' | 'forum' | 'arxiv' | 'hn';
+  kind: 'youtube' | 'podcast' | 'blog' | 'gov' | 'gov-api' | 'forum' | 'arxiv' | 'hn' | 'parliament';
   url: string;
   tier: 1 | 2 | 3;
   filter: 'on-topic' | 'ai' | 'general';
   capped?: boolean;
   lab?: boolean;
+  /** parliament: which house of the UK Parliament (the European Parliament has one plenary, so none). */
+  house?: 'Commons' | 'Lords';
 };
+
+/** Someone who spoke in a parliamentary debate: the name as the record gives it, their id in that parliament's own database
+ * (UK Members API id, European Parliament person id), and their party (UK) or political group (EP) on the day of the sitting. */
+export type Speaker = { name: string; memberId?: number; party?: string };
 
 export type Item = {
   id: string;
@@ -39,6 +48,8 @@ export type Item = {
   audio?: string;
   /** A transcript the publisher lists in the feed (<podcast:transcript>), best first. */
   transcripts?: { url: string; type: string }[];
+  /** Parliament debates (one item per debate): the members who spoke on AI in it, in the order they spoke. */
+  speakers?: Speaker[];
 };
 
 const ENTITIES: Record<string, string> = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', hellip: '…', mdash: '—', ndash: '–', rsquo: '’', lsquo: '‘', rdquo: '”', ldquo: '“' };
@@ -91,7 +102,7 @@ function duration(s?: string): number | undefined {
   return parts.reduce((a, b) => a * 60 + b, 0);
 }
 
-function base(src: Source, title: string, url: string, published: string, excerpt: string): Item {
+export function base(src: Source, title: string, url: string, published: string, excerpt: string): Item {
   return { id: itemId(url), source: src.id, sourceName: src.name, kind: src.kind, tier: src.tier, title: plain(title), url: canonical(url), published, excerpt: plain(excerpt).slice(0, 1200) };
 }
 
