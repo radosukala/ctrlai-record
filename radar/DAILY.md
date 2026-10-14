@@ -86,4 +86,8 @@ top stories (titles and slugs), sources that failed and how YouTube was read (AP
 - Anything about Anthropic or Claude is marked `conflict: true`. Claude writes this; the same rules apply to every company.
 - Don't open the built-in browser. Don't download anything except page text, feed transcripts and podcast audio
   (deleted after transcription). Don't touch files outside the run folder, `content/base` and the archive.
+- Keep every helper script and scratch file inside the run folder (`RUN/scratch/`), never in `/tmp` or anywhere else: a
+  write outside the Radar's own folders stops an unattended run at an approval prompt that nobody sees. On Oct 14 2026 the
+  morning run sat for four hours at one, having written its triage script to `/tmp`. Prefer `python3 -c` / `node -e`, or
+  write the file under `RUN/scratch/` and run it from there.
 - When something unexpected happens (a script missing, a key refused, the disk nearly full), stop and report. Don't improvise.
