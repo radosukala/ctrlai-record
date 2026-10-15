@@ -1174,12 +1174,12 @@
   "also": [],
   "summary": "In a 51-second CNBC segment, an anchor reports that Anthropic is asking a federal court in Washington to rehear its appeal over the Pentagon's blacklisting of its AI models, and that it plans to share third-quarter financials with potential investors, per unnamed sources.",
   "change": {
-   "kind": "decision",
+   "kind": "argument",
    "note": "Anthropic has asked the court to rehear an appeal after a ruling last month upheld the Defense Department ban, per CNBC."
   },
   "lenses": {
-   "policy": "The case tests whether a government can restrict a company's AI models and whether that can be retaliation for the company's stated views on safety.",
-   "public": "A legal fight between an AI company and the Defense Department continues over how the company's models may be used."
+   "policy": "Anthropic says last month's ruling upholding the Defense Department's ban ignored evidence that the government retaliated against it for its views on tech safety.",
+   "public": "A legal fight between an AI company and the Defense Department over the Pentagon's blacklisting of the company continues."
   },
   "topics": [
    "who-decides",
