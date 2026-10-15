@@ -512,6 +512,8 @@ type EpRow = {
 /** A page of speech hits from /speeches?include-output=xml_fragment, each with its speech as XML. (The server's own
  * highlighting, include-output=highlighted_text, failed with a 500 on a busy week; this does not need it.) */
 export function parseEuroparlHits(json: string): { total?: number; rows: number; speeches: EpSpeech[] } {
+  // A window in which the plenary did not sit comes back as an empty body, not as an empty list: that is no speeches.
+  if (!json.trim()) return { total: 0, rows: 0, speeches: [] };
   const data = JSON.parse(json) as { data?: EpRow[]; meta?: { total?: number } };
   const speeches: EpSpeech[] = [];
   for (const row of data.data ?? []) {

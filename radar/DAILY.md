@@ -7,9 +7,13 @@ or `/Users/rado/code/ctrlai-com-say`: people and other sessions work there.
 The goal: every source from yesterday and today that bears on AI safety, AI control, governance, or what AI does to work
 and people's rights becomes one entry in the Base, with quotations checked word for word, and the site updates.
 
+**How the commands read.** Every shell command is `bash /Users/rado/code/ctrlai-com-radar/scripts/radar/rt.sh <tool> …`,
+written out in full (see `scripts/radar/rt.sh`). As an *argument* `RUN` means the run's date (`2026-10-15`); inside a file
+*path* `RUN` means the run folder, which `start` prints as `DIR=…` (`/Users/rado/code/ctrlai-archive/runs/2026-10-15`).
+
 ## 1. Start
 ```bash
-cd /Users/rado/code/ctrlai-com-radar && bash scripts/radar/daily-start.sh
+bash /Users/rado/code/ctrlai-com-radar/scripts/radar/rt.sh start
 ```
 It updates the checkout, reads the 114 sources in `radar/sources.json` for yesterday and today, and prints the numbered
 **candidates**: kept items that no earlier run has handled. It prints `RUN=… DIR=…`; below, `RUN` means that folder.
@@ -31,19 +35,25 @@ Read the candidate list; `RUN/candidates.jsonl` has each item's excerpt. Decide 
   (its title, a minister answering, several speakers) is a likely **deep** item; one speech that says "AI" in passing (a
   boiler, a budget line) is a **skip**.
 Group items that are the same story (one `main`, the others `also`), preferring the primary source as `main`.
-Write `RUN/triage.json`:
+
+Write a **plan** with the Write tool, to `RUN/scratch/plan.json`, then turn it into the triage with one command. The numbers
+are the candidate numbers printed at the start (a candidate's line in `candidates.jsonl`):
 ```json
-{ "run": "YYYY-MM-DD", "deep": { "D1": [ { "main": {…item…}, "also": [ {…item…} ] } ], "D2": […] },
-  "light": { "L1": [ {…item…}, … ] } }
+{ "deep":  { "D1": [ { "main": 81, "also": [48, 54] }, { "main": 20 } ], "D2": [ … ] },
+  "light": { "L1": [ 99, 56, { "main": 61, "also": [62] } ], "L2": [ … ] },
+  "skip":  { "default": "not about AI safety, control, governance, work or rights", "12": "markets segment, AI only in passing" } }
 ```
-Items are copied whole from `candidates.jsonl`. Put at most 4 groups in each `D…` key and at most 30 items in each `L…`
-key. **Append** every id you skipped to `RUN/skipped.txt`, one per line, followed by a few words on why (never overwrite
-the file), so later runs don't offer them again and anyone can later see what we chose not to read:
-`3d0666e3cfd0 markets segment, AI only in passing`.
+```bash
+bash /Users/rado/code/ctrlai-com-radar/scripts/radar/rt.sh triage RUN RUN/scratch/plan.json
+```
+It checks the plan (at most 4 groups to a `D…` key and 30 items to an `L…` key, every number real and used once), writes
+`RUN/triage.json`, and **appends every other candidate to `RUN/skipped.txt` with its reason** (and records `also` items as
+covered), so later runs don't offer them again and anyone can later see what we chose not to read. Give a reason for the
+skips that aren't plainly off-topic. Never write `triage.json` or `skipped.txt` yourself.
 
 ## 3. Prepare audio, video and parliament texts (one at a time)
 ```bash
-/Users/rado/code/ctrlai-tools/venv/bin/python -I scripts/radar/prepare.py RUN
+bash /Users/rado/code/ctrlai-com-radar/scripts/radar/rt.sh prepare RUN
 ```
 For each deep parliament debate it saves the official record (Hansard, or the European Parliament's verbatim report, read
 through their APIs). For each deep video or podcast it saves, in order of preference: the publisher's transcript, our own
@@ -57,17 +67,19 @@ with one exception: a `D…` key holding a long interview (about an hour or more
 said what is hardest, gets `opus`. Quotation accuracy doesn't depend on the model: code checks every quotation, against two
 transcripts for audio.
 
-> You are a reading agent for Ctrl AI's Radar. First read RUN/AGENT-BRIEF.md and follow it exactly. Your items are
-> `deep["D1"]` in RUN/triage.json. Work from /Users/rado/code/ctrlai-com-radar. Run the checker until every remaining
-> quotation passes. Finish with the short report the brief asks for.
+> You are a reading agent for Ctrl AI's Radar. First read RUN/AGENT-BRIEF.md and follow it exactly, including its section
+> "Your tools: nothing else". Your items are `deep["D1"]` in RUN/triage.json. Run the checker and the linter until every
+> remaining quotation passes and the lint is clean. Finish with the short report the brief asks for.
 
 For light keys, say: "LIGHT LANE: do not fetch anything; work only from each item's title, author and excerpt; no
 quotations; `access: "excerpt"`". Wait for every agent. Read their reports and fix anything doubtful in the entry files
 yourself, or delete the entry file if it can't be made right.
 
 ## 5. Finish and publish
+Before the last step, `bash /Users/rado/code/ctrlai-com-radar/scripts/radar/rt.sh compose-dry` builds the whole Base in memory and lists any problem without writing, so
+you can fix entry files first, and `bash /Users/rado/code/ctrlai-com-radar/scripts/radar/rt.sh lint RUN/entries/*.json` checks every entry's own words.
 ```bash
-bash scripts/radar/daily-finish.sh RUN
+bash /Users/rado/code/ctrlai-com-radar/scripts/radar/rt.sh finish RUN
 ```
 It checks every quotation (against both transcripts when there are two), rebuilds the Base, runs the type check and all
 tests, saves the full texts to the private archive (`/Users/rado/code/ctrlai-archive`), and pushes to `main`; Vercel
@@ -86,8 +98,10 @@ top stories (titles and slugs), sources that failed and how YouTube was read (AP
 - Anything about Anthropic or Claude is marked `conflict: true`. Claude writes this; the same rules apply to every company.
 - Don't open the built-in browser. Don't download anything except page text, feed transcripts and podcast audio
   (deleted after transcription). Don't touch files outside the run folder, `content/base` and the archive.
-- Keep every helper script and scratch file inside the run folder (`RUN/scratch/`), never in `/tmp` or anywhere else: a
-  write outside the Radar's own folders stops an unattended run at an approval prompt that nobody sees. On Oct 14 2026 the
-  morning run sat for four hours at one, having written its triage script to `/tmp`. Prefer `python3 -c` / `node -e`, or
-  write the file under `RUN/scratch/` and run it from there.
+- **Shell commands are only `bash /Users/rado/code/ctrlai-com-radar/scripts/radar/rt.sh …`**, written out in full. Read files with the Read tool and write them with the Write tool
+  (the plan, entry fixes, `REPORT.md`). No `cd`, no `&&`, `;`, pipes or heredocs, no `python`, `node`, `sed`, `awk`, `curl`,
+  `sqlite3`, `git` or `npx`, and nothing written to `/tmp`: every one of those is a command nobody allowed in advance, so
+  an unattended run stops at an approval prompt that nobody sees. On Oct 14 the run sat for four hours at one and on
+  Oct 15 for over eight; both were a triage script. If a step truly needs something else, stop and report it.
+- Use the Agent tool for reading agents. Never the Workflow tool: it needs the user's explicit request.
 - When something unexpected happens (a script missing, a key refused, the disk nearly full), stop and report. Don't improvise.

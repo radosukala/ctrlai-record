@@ -8,7 +8,7 @@
  *   content/base/runs.json          what each run read and kept, so the site can say "in the sources we monitor"
  *   content/base/verification.json  per quotation: how it matched, and hashes, so tests can tell if anything was edited after
  *
- *   npx tsx scripts/radar/compose.ts [--allow-removals "why"]
+ *   npx tsx scripts/radar/compose.ts [--dry] [--allow-removals "why"]   (--dry checks everything and writes nothing)
  *
  * Nothing is written unless the whole build passes, and then all files are replaced together. An entry or a quotation
  * that is on the site and missing from the new build stops it: a removal has to be deliberate, with a reason, and is
@@ -294,6 +294,7 @@ const q = entries.reduce((n, e) => n + e.quotes.length, 0);
 console.log(`\n${entries.length} entries, ${people.size} people, ${q} quotations verified, ${dropped} dropped. ${problems.length} problems.`);
 for (const p of problems) console.log('  PROBLEM ' + p);
 if (problems.length) { console.log('Nothing written: content/base is unchanged.'); process.exit(1); }
+if (process.argv.includes('--dry')) { console.log('Dry run: the Base builds cleanly; nothing written.'); process.exit(0); }
 
 const files: Record<string, unknown> = {
   'entries.json': entries,

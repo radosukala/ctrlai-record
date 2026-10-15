@@ -453,3 +453,11 @@ test('a window the plenary did not sit in has no items, and a long list is read 
   await readEuroparl(EUROPARL, { from: '2026-10-06', to: '2026-10-13' }, paged.get);
   assert.deepEqual(offsets, ['0', '7']);
 });
+
+test('a window in which the European Parliament did not sit is no speeches, not an error', () => {
+  for (const body of ['', '  \n']) {
+    const r = parseEuroparlHits(body);
+    assert.equal(r.rows, 0);
+    assert.deepEqual(r.speeches, []);
+  }
+});
