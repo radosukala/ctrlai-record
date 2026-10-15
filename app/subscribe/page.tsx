@@ -21,7 +21,7 @@ export default function SubscribePage() {
           <div className="hero-main">
             <p className="dateline"><b>The weekly email</b></p>
             <h1 className="headline">Get the week <em>in your inbox.</em></h1>
-            <p className="lede">The same as the front page, once a week, without having to remember to look.</p>
+            <p className="lede">The week’s issue in your inbox, once a week, without having to remember to look.</p>
             <SubscribeForm source="page" />
             <p className="subscribe-note">You’ll get one email to confirm. Every issue has a one-click unsubscribe. <Link href="/about#privacy">How we handle your address</Link>.</p>
           </div>

@@ -5,12 +5,18 @@ import { FILM_PATH, FILM_PUBLIC, INCIDENT_PATH } from '@/content/incidents/opena
 import { newsletterEnabled } from '@/lib/newsletter/config';
 import { CHECKED_ON } from '@/content/accord';
 import { ENTRIES, onRecord } from '@/content/base';
+import { DAYS, MONTHS } from '@/content/base/editions';
 import { DAY_BEFORE_PATH, DAY_BEFORE_PUBLIC } from '@/content/scenarios/day-before/publish';
 import { absoluteUrl } from '@/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: absoluteUrl('/'), lastModified: ENTRIES[0]?.published ?? ISSUES[0].to, changeFrequency: 'daily', priority: 1 },
+    // The editions: every day's and every month's, at a permanent address.
+    ...DAYS.map(d => ({ url: absoluteUrl(`/day/${d}`), lastModified: d, changeFrequency: 'yearly' as const, priority: 0.7 })),
+    ...MONTHS.map(m => ({ url: absoluteUrl(`/month/${m}`), changeFrequency: 'daily' as const, priority: 0.8 })),
+    { url: absoluteUrl('/base'), changeFrequency: 'daily', priority: 0.8 },
+    { url: absoluteUrl('/questions'), changeFrequency: 'weekly', priority: 0.8 },
     { url: absoluteUrl('/hall-of-fame'), lastModified: UPDATED, changeFrequency: 'weekly', priority: 0.9 },
     { url: absoluteUrl('/accord'), lastModified: CHECKED_ON, changeFrequency: 'weekly', priority: 0.9 },
     { url: absoluteUrl('/cs/accord'), lastModified: CHECKED_ON, changeFrequency: 'weekly', priority: 0.6 },

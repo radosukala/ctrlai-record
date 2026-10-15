@@ -8,9 +8,9 @@ const securityHeaders = [
 ];
 
 /** Addresses from earlier versions of ctrlai.com (the public record and Other Tomorrows), sent somewhere useful. */
-// /questions/<id> is in use again: the Base's questions, answered (app/questions/[id]).
+// /questions and /questions/<id> are in use again: the Base's questions, answered (app/questions).
 const RETIRED = [
-  '/tomorrows', '/tomorrows/:path*', '/record', '/tests', '/tests/:path*', '/verify', '/questions',
+  '/tomorrows', '/tomorrows/:path*', '/record', '/tests', '/tests/:path*', '/verify',
   '/data', '/log', '/me', '/signin', '/signin/:path*', '/r/:path*', '/ai/:path*',
 ];
 

@@ -104,13 +104,29 @@ function Footer({ left, url }: { left: string; url: string }) {
 
 const FRAME = { width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: PAPER, color: INK, padding: '44px 64px 42px', fontFamily: SANS } as const;
 
-/** The share image for an issue, and for the home page, whose headline is the latest issue's line. */
+/** The share image for a weekly issue. */
 export function IssueImage({ issue, label = 'This week in AI control', footer = 'What happened, and seven things worth your time.' }: { issue: Issue; label?: string; footer?: string }) {
   const headline = clip(issue.summary, 190);
   const size = headline.length > 150 ? 64 : headline.length > 110 ? 72 : 84;
   return (
     <div style={FRAME}>
       <BrandRow right={`Issue ${issue.number} · ${rangeLabel(issue.from, issue.to)}`} />
+      <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flexGrow: 1, gap: 20 }}>
+        <Label>{label}</Label>
+        <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: size, lineHeight: 0.98, letterSpacing: -size * 0.014, maxWidth: 1072 }}>{headline}</div>
+      </div>
+      <Footer left={footer} url="ctrlai.com" />
+    </div>
+  );
+}
+
+/** The share image for an edition: today's, a day's or a month's. Its date on the right, its headline in our display face. */
+export function EditionImage({ right, label, line, footer }: { right: string; label: string; line: string; footer: string }) {
+  const headline = clip(line, 190);
+  const size = headline.length > 150 ? 64 : headline.length > 110 ? 72 : 84;
+  return (
+    <div style={FRAME}>
+      <BrandRow right={right} />
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flexGrow: 1, gap: 20 }}>
         <Label>{label}</Label>
         <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: size, lineHeight: 0.98, letterSpacing: -size * 0.014, maxWidth: 1072 }}>{headline}</div>
