@@ -279,3 +279,102 @@ export function SayImage({ name, line, parts }: { name: string; line: string; pa
     </div>
   );
 }
+
+/* ——— The daily post kit (scripts/social-day.ts): a checked quotation, and what changed today. ——— */
+
+/** X fills its feed at 16:9; LinkedIn shows a 4:5 portrait largest. */
+export const POST_X_SIZE = { width: 1200, height: 675 };
+export const POST_LI_SIZE = { width: 1080, height: 1350 };
+
+/**
+ * Their words with the highlighter, as on the site: found word for word in the source. Satori can't paint a background
+ * line by line, so each word carries the stroke, with the space after it, and the words wrap as a flex row.
+ */
+function Marked({ text, size, lineHeight }: { text: string; size: number; lineHeight: number }) {
+  const words = text.replace(/\s+/g, ' ').trim().split(' ');
+  const stroke = `linear-gradient(180deg, transparent 34%, ${MARK} 34%, ${MARK} 92%, transparent 92%)`;
+  return (
+    <div style={{ display: 'flex', flexWrap: 'wrap', fontFamily: SERIF, fontWeight: 600, fontSize: size, lineHeight, letterSpacing: -size * 0.01, color: INK }}>
+      <div style={{ display: 'flex' }}>“</div>
+      {words.map((word, i) => (
+        <div key={i} style={{ display: 'flex', backgroundImage: stroke, paddingRight: i === words.length - 1 ? 0 : size * 0.26 }}>{word}</div>
+      ))}
+      <div style={{ display: 'flex' }}>”</div>
+    </div>
+  );
+}
+
+export type QuoteCardProps = {
+  size: 'x' | 'linkedin';
+  /** Top right, in mono: "Said · Oct 15, 2026", or "Quoted by Ars Technica · Oct 15, 2026" when the words are older. */
+  label: string;
+  quote: string;
+  who: string;
+  role?: string;
+  /** Where the words were said or printed, in mono. */
+  source: string;
+  /** Our one line of context: what the words are about. A quotation never travels without it. */
+  context?: string;
+  /** The question the entry is filed under (the LinkedIn card has room for it). */
+  question?: string;
+  /** For entries about Anthropic or Claude. */
+  disclosure?: string;
+};
+
+/** One checked quotation, its speaker, where and when, and our line of context. */
+export function QuoteCard({ size, label, quote, who, role, source, context, question, disclosure }: QuoteCardProps) {
+  const x = size === 'x';
+  const text = clip(quote, 260);
+  const qs = x ? (text.length <= 110 ? 46 : text.length <= 170 ? 40 : 34) : (text.length <= 110 ? 70 : text.length <= 170 ? 60 : 52);
+  const meta = x ? 18 : 22;
+  return (
+    <div style={{ ...FRAME, padding: x ? '40px 56px 34px' : '56px 64px 52px' }}>
+      <BrandRow right={label} size={x ? 34 : 44} />
+      <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: x ? 'center' : 'flex-start', paddingTop: x ? 0 : 130, gap: Math.round(qs * 0.6) }}>
+        <Marked text={text} size={qs} lineHeight={1.25} />
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', fontSize: x ? 25 : 32 }}>
+            <div style={{ display: 'flex', fontWeight: 700 }}>{who}</div>
+            {role ? <div style={{ display: 'flex', fontWeight: 500, color: INK_2, marginLeft: 10 }}>{`· ${clip(role, 70)}`}</div> : null}
+          </div>
+          <div style={{ display: 'flex', fontFamily: MONO, fontSize: meta, color: MUTED }}>{clip(source, x ? 90 : 70)}</div>
+          {context ? <div style={{ display: 'flex', fontSize: meta + 1, color: INK_2, marginTop: 4 }}>{clip(context, x ? 210 : 220)}</div> : null}
+        </div>
+      </div>
+      {question ? (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8, borderTop: `2px solid ${INK}`, padding: '18px 0 26px' }}>
+          <div style={{ display: 'flex', fontFamily: MONO, fontSize: meta, color: MUTED }}>Filed under the question</div>
+          <div style={{ display: 'flex', fontSize: 36, fontWeight: 700, lineHeight: 1.2 }}>{question}</div>
+        </div>
+      ) : null}
+      {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: meta - 3, color: MUTED, marginBottom: 12 }}>{disclosure}</div> : null}
+      <Footer left="Found word for word in the source." url="ctrlai.com" />
+    </div>
+  );
+}
+
+export type TodayItem = { kind: string; outlet: string; note: string };
+
+/** What changed today: up to three changes, in our words, each with what kind of change it is and where it came from. */
+export function TodayCard({ date, items, disclosure }: { date: string; items: TodayItem[]; disclosure?: string }) {
+  return (
+    <div style={{ ...FRAME, padding: '56px 64px 52px' }}>
+      <BrandRow right={date} size={44} />
+      <div style={{ display: 'flex', fontFamily: MONO, fontWeight: 600, fontSize: 21, marginTop: 40 }}>AI safety and control</div>
+      <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: 84, lineHeight: 0.98, letterSpacing: -1.2, marginTop: 8 }}>What changed today</div>
+      <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, marginTop: 30 }}>
+        {items.slice(0, 3).map((item, i) => (
+          <div key={i} style={{ display: 'flex', flexDirection: 'column', gap: 8, padding: '24px 0 26px', borderTop: `1px solid ${LINE}` }}>
+            <div style={{ display: 'flex', fontFamily: MONO, fontSize: 19 }}>
+              <div style={{ display: 'flex', fontWeight: 600, letterSpacing: 0.6 }}>{item.kind.toUpperCase()}</div>
+              <div style={{ display: 'flex', color: MUTED, marginLeft: 10 }}>{`· ${item.outlet}`}</div>
+            </div>
+            <div style={{ display: 'flex', fontSize: items.length > 2 ? 37 : 42, fontWeight: 700, lineHeight: 1.15 }}>{clip(item.note, 170)}</div>
+          </div>
+        ))}
+      </div>
+      {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: 17, color: MUTED, marginBottom: 14 }}>{disclosure}</div> : null}
+      <Footer left="Every quotation checked against its source." url="ctrlai.com" />
+    </div>
+  );
+}

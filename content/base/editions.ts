@@ -37,14 +37,16 @@ export const usable = (q: Quote) => q.speakerCertain && !q.warnings?.length && q
 /** The group a person spoke as, on the day they said it. Organizations and outlets have none. */
 export const speakerGroup = (q: Quote, e: Entry): Group | undefined => (isPerson(q.speaker) ? groupAt(q.speaker, q.said ?? e.published) : undefined);
 
-function weight(q: Quote, e: Entry) {
+/** How much a quotation weighs when an edition (or the day's post) picks one: the speaker's power or first-hand
+ *  knowledge, the entry's importance, what kind of claim it is, and whether it is the speaker's own text. */
+export function quoteWeight(q: Quote, e: Entry) {
   const g = speakerGroup(q, e);
   return (g ? WEIGHT[g] : 1) * 10 + e.importance * 6 + (q.type ? TYPE_WEIGHT[q.type] ?? 0 : 0) + (q.hand === 'first' ? 5 : 0) - (isPerson(q.speaker) ? 0 : 25);
 }
 
 /** The quotation that best carries an entry: a person with power or first-hand knowledge, in their own words, first. */
 export function bestQuote(e: Entry, skip: Set<string> = new Set()): Quote | undefined {
-  return e.quotes.filter(q => usable(q) && !skip.has(q.speaker)).sort((a, b) => weight(b, e) - weight(a, e))[0];
+  return e.quotes.filter(q => usable(q) && !skip.has(q.speaker)).sort((a, b) => quoteWeight(b, e) - quoteWeight(a, e))[0];
 }
 
 export type Pick = { e: Entry; q?: Quote };
@@ -111,7 +113,7 @@ export function saidOf(entries: Entry[], n: number, skip = new Set<string>()): S
   const pool: { s: number; e: Entry; q: Quote; group?: Group }[] = [];
   for (const e of entries) {
     if (e.importance < 2) continue;
-    for (const q of e.quotes) if (usable(q) && isPerson(q.speaker)) pool.push({ s: weight(q, e), e, q, group: speakerGroup(q, e) });
+    for (const q of e.quotes) if (usable(q) && isPerson(q.speaker)) pool.push({ s: quoteWeight(q, e), e, q, group: speakerGroup(q, e) });
   }
   pool.sort((a, b) => b.s - a.s || newestFirst(a.e, b.e));
   const out: Said[] = [];
@@ -133,7 +135,7 @@ export function saidOf(entries: Entry[], n: number, skip = new Set<string>()): S
 export function watchOf(entries: Entry[], n: number, shownQuotes = new Set<string>()) {
   const all = entries.filter(e => e.kind === 'video' || e.kind === 'podcast');
   const read = all.filter(e => !linkOnly(e)).sort((a, b) => b.importance - a.importance || (b.views ?? 0) - (a.views ?? 0));
-  const pick = (e: Entry) => e.quotes.filter(q => usable(q) && !shownQuotes.has(q.id)).sort((a, b) => weight(b, e) - weight(a, e))[0];
+  const pick = (e: Entry) => e.quotes.filter(q => usable(q) && !shownQuotes.has(q.id)).sort((a, b) => quoteWeight(b, e) - quoteWeight(a, e))[0];
   return { picks: read.slice(0, n).map(e => ({ e, q: pick(e) })), all: all.length, read: read.length };
 }
 

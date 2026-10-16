@@ -73,7 +73,7 @@ function Quotation({ q, e, group }: { q: Quote; e: Entry; group?: Group }) {
           {g ? <span className="ed-grp">{g}</span> : null}
         </span>
         <span className="ed-prov">
-          {q.hand === 'reported' ? 'as quoted in ' : ''}
+          {q.hand === 'reported' ? 'quoted second-hand · ' : ''}
           <Link href={`/base/${e.slug}#${q.id}`}>{e.outlet}, {shortDate(q.said ?? e.published)}</Link>
           {' · '}{q.match === 'exact' ? 'found word for word' : 'same words, other punctuation'}
           {q.second ? ' · two transcripts agree' : ''}

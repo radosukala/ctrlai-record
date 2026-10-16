@@ -6,6 +6,7 @@
  *   npm run social -- 2026-10-04         a specific issue
  *   npm run social -- --base http://localhost:4310    take the images from a local dev server instead
  *   npm run social -- --newsletter / --no-newsletter  force the signup line in or out (default: ask the live site)
+ *   npm run social -- day [run] [--out DIR]          the day's posts instead (scripts/social-day.tsx)
  */
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -14,6 +15,8 @@ import { SITE } from '../lib/site';
 import { linkedin, LINKEDIN_LIMIT, X_LIMIT, xLength, xPicks, xRecap, type Post } from '../lib/social';
 
 const args = process.argv.slice(2);
+/** `npm run social -- day [run]`: the day's posts (scripts/social-day.tsx) instead of the weekly issue's. */
+const DAY = args[0] === 'day';
 const flag = (name: string) => args.includes(name);
 const value = (name: string) => (args.includes(name) ? args[args.indexOf(name) + 1] : undefined);
 const slug = args.find((arg, i) => !arg.startsWith('--') && args[i - 1] !== '--base') ?? LATEST.slug;
@@ -24,7 +27,7 @@ function fail(message: string): never {
   process.exit(1);
 }
 
-const issue = getIssue(slug) ?? fail(`No issue "${slug}". The latest is ${LATEST.slug}.`);
+const issue = DAY ? LATEST : (getIssue(slug) ?? fail(`No issue "${slug}". The latest is ${LATEST.slug}.`));
 
 /** Posts link to the public site, whatever the images came from. The signup line appears only if /subscribe is live. */
 async function newsletterLive(): Promise<boolean> {
@@ -100,4 +103,5 @@ async function main() {
   if (recap.over || picks.over || liOver) process.exitCode = 1;
 }
 
-main();
+if (DAY) import('./social-day').then(m => m.runDay(args.slice(1)));
+else main();
