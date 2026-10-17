@@ -42,8 +42,8 @@ test('the same person is the card again within the rest days only when nobody fr
     const p = picks[i];
     if (!p) continue;
     const before = picks.slice(Math.max(0, i - REST_DAYS), i).filter(Boolean).map(x => x!.q.speaker);
-    // Tiers 0–3 all require someone not quoted in the rest days; a repeat must come from a later tier.
-    if (before.includes(p.q.speaker)) assert.ok(p.tier! >= 4, `${DAYS[i]} repeats ${p.q.speaker} from tier ${p.tier}`);
+    // Tiers 0, 1 and 3 require someone not quoted in the rest days; a repeat can only come from tier 2 or 4.
+    if (before.includes(p.q.speaker)) assert.ok(p.tier === 2 || p.tier === 4, `${DAYS[i]} repeats ${p.q.speaker} from tier ${p.tier}`);
   }
 });
 
@@ -59,6 +59,12 @@ test('a card never carries captions in capitals, automatic captions, or second-h
   assert.ok(!cardable(quote({ hand: 'reported' }), entry({ notes: 'Axios returned 403, so the saved text is Ars Technica’s follow-up.' })));
   assert.ok(!cardable(quote({ speakerCertain: false }), entry()));
   assert.ok(!cardable(quote(), entry({ importance: 1 })));
+});
+
+test('a quotation an outlet printed, which we read in full, competes on weight with a person’s own words', () => {
+  // Oct 17: the Anthropic co-founder's quoted prediction outweighs a paper's statement of its own limits.
+  const [card] = quotesOfTheDay('2026-10-17');
+  if (card) assert.equal(card.q.id.split('-')[0], '1c2f07707516');
 });
 
 test('a quotation splits into whole sentences, not at "Mr."', () => {

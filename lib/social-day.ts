@@ -65,11 +65,12 @@ export type DayQuote = { e: Entry; q: Quote; group?: Group; tier?: number };
 /**
  * The day's quotations in order, one per person, by tiers and the heaviest first within each (the editions' weight,
  * plus a little for text we read in full):
- *   1. a person's own words, nothing our notes flag as unverified, someone in a known public role, not quoted in the
- *      last REST_DAYS days, from a group with fewer than PER_GROUP of those days' quotations;
- *   2. the same words as quoted by the source we read in full (leaders are mostly quoted, not published);
- *   3. tiers 1 and 2 without the group limit, then even if the person was quoted in the last days;
- *   4. any quotation that can go on a card at all.
+ *   1. sound words: a person's own, or quoted by an outlet whose text we read in full (leaders are mostly quoted, not
+ *      published); nothing our notes flag as unverified; someone in a known public role; not quoted in the last
+ *      REST_DAYS days; from a group with fewer than PER_GROUP of those days' quotations;
+ *   2. the same without the group limit; 3. even if the person was quoted in the last days;
+ *   4. anyone not quoted in the last days; 5. any quotation that can go on a card at all.
+ * Within a tier the weight decides, and it already favors a person's own words (quoteWeight).
  * The first is the card; the next two are offered as alternatives. None means no card that day.
  */
 export function rankQuotes(ed: Edition, earlier: DayQuote[] = []): DayQuote[] {
@@ -90,12 +91,11 @@ export function rankQuotes(ed: Edition, earlier: DayQuote[] = []): DayQuote[] {
   const quoted = (c: C) => sound(c) && c.q.hand === 'reported' && c.e.access === 'full';
   const fresh = (c: C) => !people.has(c.q.speaker);
   const roomy = (c: C) => (groups.get(c.group ?? 'other') ?? 0) < PER_GROUP;
+  const good = (c: C) => own(c) || quoted(c);
   const tiers: ((c: C) => boolean)[] = [
-    c => own(c) && fresh(c) && roomy(c),
-    c => quoted(c) && fresh(c) && roomy(c),
-    c => own(c) && fresh(c),
-    c => quoted(c) && fresh(c),
-    c => own(c) || quoted(c),
+    c => good(c) && fresh(c) && roomy(c),
+    c => good(c) && fresh(c),
+    c => good(c),
     c => fresh(c),
     () => true,
   ];
@@ -175,15 +175,16 @@ export function sentences(text: string): string[] {
 export function xQuotePost(p: DayQuote, run: string): { text: string; reply: string } {
   const who = [nameOf(p.q.speaker), role(p.q.speaker)].filter(Boolean).join(', ');
   const where = reported(p) ? `as quoted by ${p.e.outlet} (${shortDate(p.e.published)})` : `${p.e.outlet}, ${shortDate(said(p))}`;
-  const tail = `Checked word for word against the source. Link below.${p.e.conflict ? '\n\nCtrl AI is written with Claude (Anthropic).' : ''}`;
-  // The quotation in the text if it fits; else its last whole sentence, then its first (still word for word, and the
-  // card carries all of it); else our line of context.
+  const disclosure = p.e.conflict ? '\n\nCtrl AI is written with Claude (Anthropic).' : '';
+  const tails = ['Checked word for word against the source. Link below.', 'Checked word for word. Link below.'].map(t => t + disclosure);
+  // The whole quotation in the text if it fits, with the shorter line if need be; else its last whole sentence, then its
+  // first (still word for word, and the card carries all of it); else our line of context. The disclosure always stays.
   const parts = sentences(p.q.text);
+  const quoted = [p.q.text, ...(parts.length > 1 ? [parts[parts.length - 1], parts[0]] : [])];
   const options = [
-    `${who}, ${where}:\n\n“${p.q.text}”\n\n${tail}`,
-    ...(parts.length > 1 ? [parts[parts.length - 1], parts[0]].map(s => `${who}, ${where}:\n\n“${s}”\n\n${tail}`) : []),
-    ...(p.q.context ? [`${who}, ${where}.\n\n${p.q.context}\n\n${tail}`] : []),
-    `${who}, ${where}.\n\n${tail}`,
+    ...quoted.flatMap(words => tails.map(tail => `${who}, ${where}:\n\n“${words}”\n\n${tail}`)),
+    ...(p.q.context ? tails.map(tail => `${who}, ${where}.\n\n${p.q.context}\n\n${tail}`) : []),
+    `${who}, ${where}.\n\n${tails[1]}`,
   ];
   const text = options.find(o => xLength(o) <= X_LIMIT) ?? options[options.length - 1];
   return { text, reply: link(`/base/${p.e.slug}`, 'x', run, p.q.id) };
