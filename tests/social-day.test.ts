@@ -3,8 +3,9 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { DAYS, dayEdition } from '../content/base/editions';
+import { nameOf } from '../content/base';
 import type { Entry, Quote } from '../content/base/types';
-import { LINKEDIN_LIMIT, X_LIMIT } from '../lib/social';
+import { LINKEDIN_LIMIT, X_LIMIT, xLength } from '../lib/social';
 import { REST_DAYS, cardable, dayKit, postsMarkdown, quotesOfTheDay, readElsewhere, sentences } from '../lib/social-day';
 
 const ROOT = path.join(import.meta.dirname, '..');
@@ -20,6 +21,9 @@ for (const run of DAYS) {
     assert.ok(kit.x!.length <= X_LIMIT, `X post is ${kit.x!.length} characters`);
     assert.match(kit.x!.reply, new RegExp(`^https://ctrlai\\.com/base/${e.slug}\\?utm_source=x&utm_medium=social&utm_campaign=day-${run}#${q.id}$`));
     if (e.conflict) assert.match(kit.x!.text, /written with Claude/, 'a post about Anthropic says who writes Ctrl AI');
+    // The words come before a title or a date: if the whole quotation fits with the shortest attribution, it is there.
+    const shortest = `${nameOf(q.speaker)}, ${q.hand === 'reported' ? `via ${e.outlet}` : e.outlet}:\n\n“${q.text}”\n\nChecked word for word. Link below.${e.conflict ? '\n\nCtrl AI is written with Claude (Anthropic).' : ''}`;
+    if (xLength(shortest) <= X_LIMIT) assert.ok(kit.x!.text.includes(`“${q.text}”`), `${run}: the quotation was dropped for a title`);
     for (const alt of kit.alternatives) assert.ok(cardable(alt.q, alt.e));
     const people = [kit.quote, ...kit.alternatives].map(p => p.q.speaker);
     assert.equal(new Set(people).size, people.length, 'one quotation per person');
@@ -29,7 +33,10 @@ for (const run of DAYS) {
     const ed = dayEdition(run)!;
     if (!ed.changes.length) return assert.equal(kit.linkedinToday, undefined);
     assert.ok(kit.linkedinToday!.length <= LINKEDIN_LIMIT);
-    for (const { e } of ed.changes.slice(0, 3)) assert.ok(kit.linkedinToday!.text.includes(e.change!.note));
+    for (const { e } of ed.changes.slice(0, 3)) {
+      assert.ok(kit.linkedinToday!.text.includes(e.change!.note.replace(/[.\s]+$/, '')), 'each change in our words');
+      assert.ok(kit.linkedinToday!.text.includes(`(${e.outlet}).`), 'each change names where it was reported');
+    }
     assert.equal(kit.linkedinToday!.comment, `https://ctrlai.com/day/${run}?utm_source=linkedin&utm_medium=social&utm_campaign=day-${run}`);
     if (ed.changes.slice(0, 3).some(p => p.e.conflict)) assert.match(kit.linkedinToday!.text, /written with Claude/);
     assert.match(postsMarkdown(kit), /^# Posts for .*\n\nDrafts only: nothing is posted\./);
@@ -77,4 +84,10 @@ test('the day kit only writes files: nothing in it can post', () => {
     const source = fs.readFileSync(path.join(ROOT, f), 'utf8');
     assert.doesNotMatch(source, /\bfetch\(|api\.(x|twitter)\.com|api\.linkedin\.com|oauth/i, `${f} must not talk to X or LinkedIn`);
   }
+});
+
+test('the reading agents are told to write lines that stand alone, since posts and cards show them without a title', () => {
+  const brief = fs.readFileSync(path.join(ROOT, 'radar/AGENT-BRIEF.md'), 'utf8');
+  assert.match(brief, /\*\*Lines that stand alone\*\*/);
+  assert.match(brief, /name who did what/);
 });

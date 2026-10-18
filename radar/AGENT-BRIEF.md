@@ -76,7 +76,7 @@ returns a summary, not the page. Don't download anything except page text and ca
   "views": 453122,                        // only if triage has it
   "also": [{ "outlet": "Hacker News", "title": "…", "url": "…" }],
   "summary": "≤60 words, our words.",
-  "change": { "kind": "evidence | commitment | decision | correction | argument | repeat", "note": "≤25 words: what this adds" },
+  "change": { "kind": "evidence | commitment | decision | correction | argument | repeat", "note": "≤25 words: who did what, and what this adds" },
   "lenses": { "public": "…", "policy": "…", "research": "…", "ideas": "…" },
   "topics": ["beyond-control"],
   "people": [{ "id": "satya-nadella", "name": "Satya Nadella", "role": "speaker", "title": "CEO, Microsoft" }],
@@ -112,6 +112,12 @@ returns a summary, not the page. Don't download anything except page text and ca
 
 **summary**: say what the source is and what it reports or argues, attributed ("The Verge reports…", "In a 71-minute
 interview, Ladish argues…"). Never state a contested claim as fact. Neutral words: no "shocking", "slams", "admits".
+
+**Lines that stand alone**: the change note and every lens line go on the front page, on cards and in posts, without
+their entry's title. Each must make sense to someone who sees only that line: name who did what. "OpenAI disclosed four
+more incidents with its AI agents, all from June", not "Four newly disclosed incidents"; "Senior Labour figures in the UK
+privately name AI as a top worry", not "Reports unnamed ministers' private worry"; "Nebraska's attorney general sets out…",
+not "A suing state's attorney general…". Name the company, government, court, person or outlet, as the source does.
 
 **change**: what this source adds to what was already known, so readers can see what moved.
 `evidence` a new finding, incident, measurement or test result · `commitment` a new promise or policy someone announces

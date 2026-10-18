@@ -173,18 +173,24 @@ export function sentences(text: string): string[] {
 /** The X post for the day's quotation. The words are on the card; the text says who, where and when. The link goes in
  *  the first reply. */
 export function xQuotePost(p: DayQuote, run: string): { text: string; reply: string } {
-  const who = [nameOf(p.q.speaker), role(p.q.speaker)].filter(Boolean).join(', ');
-  const where = reported(p) ? `as quoted by ${p.e.outlet} (${shortDate(p.e.published)})` : `${p.e.outlet}, ${shortDate(said(p))}`;
+  const name = nameOf(p.q.speaker);
+  const title = role(p.q.speaker);
+  // Who said it, from the fullest line down: the words matter more than a title or a date, so those go first.
+  const heads = [
+    ...(title ? [`${name}, ${title}, ${reported(p) ? `as quoted by ${p.e.outlet} (${shortDate(p.e.published)})` : `${p.e.outlet}, ${shortDate(said(p))}`}`] : []),
+    `${name}, ${reported(p) ? `as quoted by ${p.e.outlet} (${shortDate(p.e.published)})` : `${p.e.outlet}, ${shortDate(said(p))}`}`,
+    `${name}, ${reported(p) ? `via ${p.e.outlet}` : p.e.outlet}`,
+  ];
   const disclosure = p.e.conflict ? '\n\nCtrl AI is written with Claude (Anthropic).' : '';
   const tails = ['Checked word for word against the source. Link below.', 'Checked word for word. Link below.'].map(t => t + disclosure);
-  // The whole quotation in the text if it fits, with the shorter line if need be; else its last whole sentence, then its
-  // first (still word for word, and the card carries all of it); else our line of context. The disclosure always stays.
+  // The whole quotation if it fits, with a shorter attribution and closing line if need be; else its last whole sentence,
+  // then its first (still word for word, and the card carries all of it); else our line of context. The disclosure stays.
   const parts = sentences(p.q.text);
   const quoted = [p.q.text, ...(parts.length > 1 ? [parts[parts.length - 1], parts[0]] : [])];
   const options = [
-    ...quoted.flatMap(words => tails.map(tail => `${who}, ${where}:\n\n“${words}”\n\n${tail}`)),
-    ...(p.q.context ? tails.map(tail => `${who}, ${where}.\n\n${p.q.context}\n\n${tail}`) : []),
-    `${who}, ${where}.\n\n${tails[1]}`,
+    ...quoted.flatMap(words => heads.flatMap(head => tails.map(tail => `${head}:\n\n“${words}”\n\n${tail}`))),
+    ...(p.q.context ? tails.map(tail => `${heads[0]}.\n\n${p.q.context}\n\n${tail}`) : []),
+    `${heads[heads.length - 1]}.\n\n${tails[1]}`,
   ];
   const text = options.find(o => xLength(o) <= X_LIMIT) ?? options[options.length - 1];
   return { text, reply: link(`/base/${p.e.slug}`, 'x', run, p.q.id) };
@@ -216,7 +222,8 @@ export function linkedinTodayPost(ed: Edition, run: string): { text: string; com
   const items = todayItems(ed);
   if (!items.length) return undefined;
   const lines = [`What changed today in AI safety and control, ${weekday(run)}, ${longDate(run)}:`, ''];
-  items.forEach((item, i) => lines.push(`${i + 1}. ${item.note}`));
+  // Each line names where it was reported, so the reader knows whose account it is.
+  items.forEach((item, i) => lines.push(`${i + 1}. ${item.note.replace(/[.\s]+$/, '')} (${item.outlet}).`));
   lines.push('', 'Every quotation in the record is checked word for word against its source. Today’s edition is in the first comment.');
   const disclosure = todayDisclosure(ed);
   if (disclosure) lines.push('', disclosure.replace('; same rules', '. Same rules'));
