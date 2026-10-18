@@ -481,6 +481,11 @@
   ]
  },
  {
+  "id": "andy-burnham",
+  "name": "Andy Burnham",
+  "titles": []
+ },
+ {
   "id": "andy-challenger",
   "name": "Andy Challenger",
   "titles": [
@@ -551,6 +556,11 @@
  {
   "id": "aria-nourbakhsh",
   "name": "Aria Nourbakhsh",
+  "titles": []
+ },
+ {
+  "id": "ariana-villegas",
+  "name": "Ariana Villegas",
   "titles": []
  },
  {
@@ -696,6 +706,18 @@
   ]
  },
  {
+  "id": "bartosz-cywinski",
+  "name": "Bartosz Cywinski",
+  "titles": [
+   {
+    "title": "supervisor",
+    "entry": "lesswrong-2026-10-18-knowingly-wrong",
+    "on": "2026-10-18",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
   "id": "basil-halperin",
   "name": "Basil Halperin",
   "titles": [
@@ -711,6 +733,12 @@
   "id": "beatrice-fihn",
   "name": "Beatrice Fihn",
   "titles": [
+   {
+    "title": "led the campaign that won the 2017 Nobel Peace Prize for its work on nuclear weapons",
+    "entry": "controlai-2026-10-17-fihn-governments-move-first",
+    "on": "2026-10-17",
+    "role": "speaker"
+   },
    {
     "title": "Led the campaign that won the 2017 Nobel Peace Prize",
     "entry": "controlai-2026-10-12-beatrice-fihn-cannot-turn-off",
@@ -799,6 +827,11 @@
     "role": "mentioned"
    }
   ]
+ },
+ {
+  "id": "berns",
+  "name": "berns",
+  "titles": []
  },
  {
   "id": "beth-barnes",
@@ -924,6 +957,18 @@
   "titles": []
  },
  {
+  "id": "brian-clark",
+  "name": "Brian Clark",
+  "titles": [
+   {
+    "title": "Senior fellow, Hudson Institute",
+    "entry": "chinatalk-2026-10-17-drone-dominance-diu-metz",
+    "on": "2026-10-17",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "brian-x-chen",
   "name": "Brian X. Chen",
   "titles": []
@@ -937,6 +982,18 @@
   "id": "byron-c-wallace",
   "name": "Byron C. Wallace",
   "titles": []
+ },
+ {
+  "id": "cameron-berg",
+  "name": "Cameron Berg",
+  "titles": [
+   {
+    "title": "Director, Reciprocal Research",
+    "entry": "cognitive-revolution-2026-10-17-steering-wheel-valence-proofs",
+    "on": "2026-10-17",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "carine-fouteau",
@@ -1028,6 +1085,11 @@
  {
   "id": "changdae-oh",
   "name": "Changdae Oh",
+  "titles": []
+ },
+ {
+  "id": "charlie-bullock",
+  "name": "Charlie Bullock",
   "titles": []
  },
  {
@@ -1406,6 +1468,12 @@
   "id": "dan-milmo",
   "name": "Dan Milmo",
   "titles": [
+   {
+    "title": "Guardian reporter",
+    "entry": "guardian-2026-10-17-labour-figures-ai-worry",
+    "on": "2026-10-17",
+    "role": "author"
+   },
    {
     "title": "Global technology editor, The Guardian",
     "entry": "guardian-2026-10-12-uk-minister-ai-cyber-attack",
@@ -2040,6 +2108,11 @@
   ]
  },
  {
+  "id": "ed-miliband",
+  "name": "Ed Miliband",
+  "titles": []
+ },
+ {
   "id": "ed-zitron",
   "name": "Ed Zitron",
   "titles": []
@@ -2096,6 +2169,18 @@
     "title": "Host",
     "entry": "no-priors-2026-10-15-brockman-cybersecurity-drug-development",
     "on": "2026-10-15",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "elena-simperl",
+  "name": "Elena Simperl",
+  "titles": [
+   {
+    "title": "co-director of the Institute for Artificial Intelligence at King’s College London",
+    "entry": "guardian-2026-10-17-labour-figures-ai-worry",
+    "on": "2026-10-17",
     "role": "speaker"
    }
   ]
@@ -2168,7 +2253,14 @@
  {
   "id": "elon-musk",
   "name": "Elon Musk",
-  "titles": []
+  "titles": [
+   {
+    "title": "CEO, SpaceX and Tesla",
+    "entry": "axios-2026-10-17-musk-ai-robots-deficit",
+    "on": "2026-10-17",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "emil-michael",
@@ -2233,6 +2325,18 @@
     "entry": "bloomberg-tech-2026-10-14-huang-wouldnt-sell-chips-unsafe",
     "on": "2026-10-14",
     "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "emily-forlini",
+  "name": "Emily Forlini",
+  "titles": [
+   {
+    "title": "Senior AI Reporter, Fortune",
+    "entry": "fortune-2026-10-16-openai-four-more-incidents",
+    "on": "2026-10-16",
+    "role": "author"
    }
   ]
  },
@@ -2403,9 +2507,33 @@
   "titles": []
  },
  {
+  "id": "everett-hildenbrandt",
+  "name": "Everett Hildenbrandt",
+  "titles": [
+   {
+    "title": "CEO, Runtime Verification",
+    "entry": "cognitive-revolution-2026-10-17-steering-wheel-valence-proofs",
+    "on": "2026-10-17",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "evgenii-opryshko",
   "name": "Evgenii Opryshko",
   "titles": []
+ },
+ {
+  "id": "evie-breese",
+  "name": "Evie Breese",
+  "titles": [
+   {
+    "title": "openDemocracy reporter",
+    "entry": "opendemocracy-2026-10-16-amazon-ai-union-risk",
+    "on": "2026-10-16",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "ezekiel-emanuel",
@@ -2561,6 +2689,23 @@
   ]
  },
  {
+  "id": "gabrielle-canon",
+  "name": "Gabrielle Canon",
+  "titles": []
+ },
+ {
+  "id": "garfield-hylton",
+  "name": "Garfield Hylton",
+  "titles": [
+   {
+    "title": "Amazon warehouse worker, Coventry, GMB member",
+    "entry": "opendemocracy-2026-10-16-amazon-ai-union-risk",
+    "on": "2026-10-16",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "garrison-lovely",
   "name": "Garrison Lovely",
   "titles": [
@@ -2658,7 +2803,14 @@
  {
   "id": "geoffrey-irving",
   "name": "Geoffrey Irving",
-  "titles": []
+  "titles": [
+   {
+    "title": "former chief scientist at AISI",
+    "entry": "guardian-2026-10-17-labour-figures-ai-worry",
+    "on": "2026-10-17",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "george-kurtz",
@@ -2768,6 +2920,18 @@
   "titles": []
  },
  {
+  "id": "grigore-rosu",
+  "name": "Grigore Rosu",
+  "titles": [
+   {
+    "title": "Founder, Runtime Verification; professor, University of Illinois",
+    "entry": "cognitive-revolution-2026-10-17-steering-wheel-valence-proofs",
+    "on": "2026-10-17",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "guanghui-qin",
   "name": "Guanghui Qin",
   "titles": []
@@ -2790,6 +2954,18 @@
     "title": "Host, Future of Life Institute Podcast",
     "entry": "fli-2026-10-13-lovely-race-to-replace-us",
     "on": "2026-10-13",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "gus-o-donnell",
+  "name": "Gus O’Donnell",
+  "titles": [
+   {
+    "title": "former cabinet secretary",
+    "entry": "guardian-2026-10-17-labour-figures-ai-worry",
+    "on": "2026-10-17",
     "role": "speaker"
    }
   ]
@@ -3664,6 +3840,11 @@
   ]
  },
  {
+  "id": "jonny-spicer",
+  "name": "Jonny Spicer",
+  "titles": []
+ },
+ {
   "id": "jordan-schneider",
   "name": "Jordan Schneider",
   "titles": [
@@ -3788,6 +3969,11 @@
   ]
  },
  {
+  "id": "june-jimenez",
+  "name": "June Jimenez",
+  "titles": []
+ },
+ {
   "id": "junru-wu",
   "name": "Junru Wu",
   "titles": []
@@ -3796,6 +3982,18 @@
   "id": "junwei-quan",
   "name": "Junwei Quan",
   "titles": []
+ },
+ {
+  "id": "justin-mcintosh",
+  "name": "Justin McIntosh",
+  "titles": [
+   {
+    "title": "Retired Green Beret, defense tech",
+    "entry": "chinatalk-2026-10-17-drone-dominance-diu-metz",
+    "on": "2026-10-17",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "jwfiredragon",
@@ -3828,6 +4026,12 @@
   "id": "kanishka-narayan",
   "name": "Kanishka Narayan",
   "titles": [
+   {
+    "title": "AI minister",
+    "entry": "guardian-2026-10-17-labour-figures-ai-worry",
+    "on": "2026-10-17",
+    "role": "mentioned"
+   },
    {
     "title": "Minister for Artificial Intelligence",
     "entry": "uk-commons-2026-10-15-topical-questions-ai-safety-bill",
@@ -3986,6 +4190,11 @@
   "titles": []
  },
  {
+  "id": "kelsey-piper",
+  "name": "Kelsey Piper",
+  "titles": []
+ },
+ {
   "id": "keltan",
   "name": "keltan",
   "titles": []
@@ -3994,6 +4203,12 @@
   "id": "ken-mccallum",
   "name": "Ken McCallum",
   "titles": [
+   {
+    "title": "director general of MI5",
+    "entry": "guardian-2026-10-17-labour-figures-ai-worry",
+    "on": "2026-10-17",
+    "role": "mentioned"
+   },
    {
     "title": "head of the UK's intelligence service, MI5",
     "entry": "guardian-2026-10-14-ai-change-stakes-bioweapons",
@@ -4331,6 +4546,12 @@
   "id": "liam-byrne",
   "name": "Liam Byrne",
   "titles": [
+   {
+    "title": "chair of the business, innovation, science and trade committee",
+    "entry": "guardian-2026-10-17-labour-figures-ai-worry",
+    "on": "2026-10-17",
+    "role": "speaker"
+   },
    {
     "title": "MP; Chair, Commons Business, Innovation, Science and Trade Committee",
     "entry": "controlai-2026-10-16-byrne-whistleblowers-safety-culture",
@@ -4787,6 +5008,11 @@
   "titles": []
  },
  {
+  "id": "matthew-nguyen",
+  "name": "Matthew Nguyen",
+  "titles": []
+ },
+ {
   "id": "matthias-hein",
   "name": "Matthias Hein",
   "titles": [
@@ -4801,6 +5027,11 @@
  {
   "id": "matyas-farkas",
   "name": "Matyas Farkas",
+  "titles": []
+ },
+ {
+  "id": "max-harms",
+  "name": "Max Harms",
   "titles": []
  },
  {
@@ -4913,6 +5144,18 @@
   ]
  },
  {
+  "id": "michael-newman",
+  "name": "Michael Newman",
+  "titles": [
+   {
+    "title": "partner, Leigh Day",
+    "entry": "opendemocracy-2026-10-16-amazon-ai-union-risk",
+    "on": "2026-10-16",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "michael-oriordan",
   "name": "Michael O'Riordan",
   "titles": []
@@ -4926,6 +5169,30 @@
     "entry": "future-of-life-institute-2026-10-06-delisted-film-clarkson",
     "on": "2026-10-06",
     "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "michael-safi",
+  "name": "Michael Safi",
+  "titles": [
+   {
+    "title": "Guardian journalist",
+    "entry": "guardian-2026-10-17-black-box-double-six-ranch",
+    "on": "2026-10-17",
+    "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "michael-samadi",
+  "name": "Michael Samadi",
+  "titles": [
+   {
+    "title": "businessman",
+    "entry": "guardian-2026-10-17-black-box-double-six-ranch",
+    "on": "2026-10-17",
+    "role": "subject"
    }
   ]
  },
@@ -4947,6 +5214,11 @@
   "titles": []
  },
  {
+  "id": "mike-allen",
+  "name": "Mike Allen",
+  "titles": []
+ },
+ {
   "id": "mike-hilgers",
   "name": "Mike Hilgers",
   "titles": [
@@ -4962,6 +5234,18 @@
   "id": "mike-isaac",
   "name": "Mike Isaac",
   "titles": []
+ },
+ {
+  "id": "mike-valerio",
+  "name": "Mike Valerio",
+  "titles": [
+   {
+    "title": "CNN correspondent",
+    "entry": "cnn-2026-10-17-china-dark-factories",
+    "on": "2026-10-17",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "mikita-balesni",
@@ -5141,6 +5425,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "nathan-calvin",
+  "name": "Nathan Calvin",
+  "titles": []
  },
  {
   "id": "nathan-labenz",
@@ -5538,6 +5827,18 @@
   "titles": []
  },
  {
+  "id": "phil-maher",
+  "name": "Phil Maher",
+  "titles": [
+   {
+    "title": "Founder, Stock Film",
+    "entry": "cognitive-revolution-2026-10-17-steering-wheel-valence-proofs",
+    "on": "2026-10-17",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "phil-trammell",
   "name": "Phil Trammell",
   "titles": [
@@ -5562,6 +5863,11 @@
   ]
  },
  {
+  "id": "phillip-inman",
+  "name": "Phillip Inman",
+  "titles": []
+ },
+ {
   "id": "pippa-stevens",
   "name": "Pippa Stevens",
   "titles": [
@@ -5582,6 +5888,18 @@
   "id": "pradeep-k-murukannaiah",
   "name": "Pradeep K. Murukannaiah",
   "titles": []
+ },
+ {
+  "id": "prakash-narayanan",
+  "name": "Prakash Narayanan",
+  "titles": [
+   {
+    "title": "Co-host",
+    "entry": "cognitive-revolution-2026-10-17-steering-wheel-valence-proofs",
+    "on": "2026-10-17",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "prathyusha-jwalapuram",
@@ -5612,6 +5930,18 @@
   "id": "rachel-bujalski",
   "name": "Rachel Bujalski",
   "titles": []
+ },
+ {
+  "id": "rachel-fagan",
+  "name": "Rachel Fagan",
+  "titles": [
+   {
+    "title": "organiser, GMB",
+    "entry": "opendemocracy-2026-10-16-amazon-ai-union-risk",
+    "on": "2026-10-16",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "rachel-karten",
@@ -5887,6 +6217,30 @@
     "entry": "zvi-mowshowitz-2026-10-14-safety-culture-labs-broken",
     "on": "2026-10-14",
     "role": "mentioned"
+   }
+  ]
+ },
+ {
+  "id": "rosa-curling",
+  "name": "Rosa Curling",
+  "titles": [
+   {
+    "title": "co-executive director, Foxglove",
+    "entry": "opendemocracy-2026-10-16-amazon-ai-union-risk",
+    "on": "2026-10-16",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "rowena-mason",
+  "name": "Rowena Mason",
+  "titles": [
+   {
+    "title": "Guardian reporter",
+    "entry": "guardian-2026-10-17-labour-figures-ai-worry",
+    "on": "2026-10-17",
+    "role": "author"
    }
   ]
  },
@@ -6194,6 +6548,11 @@
  {
   "id": "sebastian-prasanna",
   "name": "Sebastian Prasanna",
+  "titles": []
+ },
+ {
+  "id": "sebastian-rucci",
+  "name": "Sebastian Rucci",
   "titles": []
  },
  {
@@ -6700,6 +7059,18 @@
   ]
  },
  {
+  "id": "travis-metz",
+  "name": "Travis Metz",
+  "titles": [
+   {
+    "title": "Acting Director, DIU",
+    "entry": "chinatalk-2026-10-17-drone-dominance-diu-metz",
+    "on": "2026-10-17",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "tristan-harris",
   "name": "Tristan Harris",
   "titles": [
@@ -6805,6 +7176,12 @@
   "id": "walter-isaacson",
   "name": "Walter Isaacson",
   "titles": [
+   {
+    "title": "author and podcast host",
+    "entry": "axios-2026-10-17-musk-ai-robots-deficit",
+    "on": "2026-10-17",
+    "role": "speaker"
+   },
    {
     "title": "Author of The Innovators",
     "entry": "cnbc-2026-10-12-isaacson-nadella-ai-safeguards",
@@ -6992,6 +7369,12 @@
   "id": "yoshua-bengio",
   "name": "Yoshua Bengio",
   "titles": [
+   {
+    "title": "Turing Award winner",
+    "entry": "fortune-2026-10-16-openai-four-more-incidents",
+    "on": "2026-10-16",
+    "role": "mentioned"
+   },
    {
     "title": "Co-president, LawZero; Professor, Université de Montreal",
     "entry": "transformer-2026-10-08-bengio-leave-frontier-labs",
