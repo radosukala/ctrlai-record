@@ -151,9 +151,26 @@
   ]
  },
  {
+  "id": "aisha-down",
+  "name": "Aisha Down",
+  "titles": []
+ },
+ {
   "id": "aisha-malik",
   "name": "Aisha Malik",
   "titles": []
+ },
+ {
+  "id": "ajay-banga",
+  "name": "Ajay Banga",
+  "titles": [
+   {
+    "title": "president, World Bank",
+    "entry": "guardian-2026-10-18-world-bank-small-ai",
+    "on": "2026-10-18",
+    "role": "mentioned"
+   }
+  ]
  },
  {
   "id": "ajeya-cotra",
@@ -181,6 +198,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "alessandro-drake",
+  "name": "Alessandro Drake",
+  "titles": []
  },
  {
   "id": "alessandro-tommasi",
@@ -401,6 +423,12 @@
   "name": "Andrea Miotti",
   "titles": [
    {
+    "title": "founder and CEO, ControlAI",
+    "entry": "controlai-2026-10-18-miotti-london-event-bill",
+    "on": "2026-10-18",
+    "role": "speaker"
+   },
+   {
     "title": "CEO, ControlAI",
     "entry": "controlai-2026-10-13-miotti-sky-news-governments-step-in",
     "on": "2026-10-13",
@@ -498,6 +526,11 @@
   ]
  },
  {
+  "id": "ankurpandey42",
+  "name": "ankurpandey42",
+  "titles": []
+ },
+ {
   "id": "anna-marbut",
   "name": "Anna Marbut",
   "titles": []
@@ -549,6 +582,11 @@
   "titles": []
  },
  {
+  "id": "anthropic-spokesperson",
+  "name": "Anthropic spokesperson",
+  "titles": []
+ },
+ {
   "id": "arav-dhoot",
   "name": "arav-dhoot",
   "titles": []
@@ -562,6 +600,18 @@
   "id": "ariana-villegas",
   "name": "Ariana Villegas",
   "titles": []
+ },
+ {
+  "id": "ariel-herbert-voss",
+  "name": "Ariel Herbert-Voss",
+  "titles": [
+   {
+    "title": "Early OpenAI security expert; runs AI security startup RunSybil",
+    "entry": "guardian-2026-10-18-ai-worms-anthropic-worried",
+    "on": "2026-10-18",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "arin-mukhopadhyay",
@@ -628,6 +678,18 @@
     "title": "Deputy Division Chief, Monetary and Capital Markets Department, IMF",
     "entry": "imf-2026-10-13-global-financial-stability-report",
     "on": "2026-10-13",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "austin-carr",
+  "name": "Austin Carr",
+  "titles": [
+   {
+    "title": "features writer, Bloomberg Businessweek",
+    "entry": "bloomberg-2026-10-18-andreessen-political-influence",
+    "on": "2026-10-18",
     "role": "speaker"
    }
   ]
@@ -782,6 +844,11 @@
   ]
  },
  {
+  "id": "benita-kolovos",
+  "name": "Benita Kolovos",
+  "titles": []
+ },
+ {
   "id": "benlei-cui",
   "name": "Benlei Cui",
   "titles": []
@@ -814,6 +881,12 @@
   "id": "bernie-sanders",
   "name": "Bernie Sanders",
   "titles": [
+   {
+    "title": "Senator (I-Vt.)",
+    "entry": "tomshardware-2026-10-18-anthropic-safety-bill-thresholds",
+    "on": "2026-10-18",
+    "role": "mentioned"
+   },
    {
     "title": "Senator (I-VT)",
     "entry": "forbes-2026-10-11-sanders-rally-ai-jobs",
@@ -1125,6 +1198,18 @@
   "titles": []
  },
  {
+  "id": "chris-inglis",
+  "name": "Chris Inglis",
+  "titles": [
+   {
+    "title": "Former deputy director of the NSA and National Cyber Director in the Biden White House",
+    "entry": "guardian-2026-10-18-ai-worms-anthropic-worried",
+    "on": "2026-10-18",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "chris-morrow",
   "name": "Chris Morrow",
   "titles": [
@@ -1170,6 +1255,12 @@
   "id": "christina-ruffini",
   "name": "Christina Ruffini",
   "titles": [
+   {
+    "title": "host, Bloomberg This Weekend",
+    "entry": "bloomberg-2026-10-18-ai-debt-boom-bond-market",
+    "on": "2026-10-18",
+    "role": "mentioned"
+   },
    {
     "title": "Host, Bloomberg This Weekend",
     "entry": "bloomberg-tv-2026-10-10-roose-agi-chronicles-race",
@@ -1719,6 +1810,12 @@
   "id": "david-gura",
   "name": "David Gura",
   "titles": [
+   {
+    "title": "host, Bloomberg This Weekend",
+    "entry": "bloomberg-2026-10-18-ai-debt-boom-bond-market",
+    "on": "2026-10-18",
+    "role": "mentioned"
+   },
    {
     "title": "Host, Bloomberg This Weekend",
     "entry": "bloomberg-tv-2026-10-10-roose-agi-chronicles-race",
@@ -2694,6 +2791,18 @@
   "titles": []
  },
  {
+  "id": "gadi-evron",
+  "name": "Gadi Evron",
+  "titles": [
+   {
+    "title": "Running the AI security conference Unprompted in San Francisco",
+    "entry": "guardian-2026-10-18-ai-worms-anthropic-worried",
+    "on": "2026-10-18",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "garfield-hylton",
   "name": "Garfield Hylton",
   "titles": [
@@ -2976,6 +3085,11 @@
   "titles": []
  },
  {
+  "id": "gwyn-topham",
+  "name": "Gwyn Topham",
+  "titles": []
+ },
+ {
   "id": "hafsa-khalil",
   "name": "Hafsa Khalil",
   "titles": []
@@ -3075,12 +3189,23 @@
   "name": "Heather Stewart",
   "titles": [
    {
+    "title": "reporter, The Guardian",
+    "entry": "guardian-2026-10-18-world-bank-small-ai",
+    "on": "2026-10-18",
+    "role": "author"
+   },
+   {
     "title": "reporter, The Guardian, in Bangkok",
     "entry": "guardian-2026-10-13-imf-ai-share-crash-risk",
     "on": "2026-10-13",
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "henry-belot",
+  "name": "Henry Belot",
+  "titles": []
  },
  {
   "id": "henry-de-zoete",
@@ -3152,6 +3277,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "hugo-lyons-keenan",
+  "name": "Hugo Lyons Keenan",
+  "titles": []
  },
  {
   "id": "huihao-jing",
@@ -3471,6 +3601,12 @@
   "name": "Jay Clayton",
   "titles": [
    {
+    "title": "Director of National Intelligence, per the video description",
+    "entry": "fox-news-2026-10-18-clayton-ai-companies-notice",
+    "on": "2026-10-18",
+    "role": "speaker"
+   },
+   {
     "title": "Chair, White House Super Intelligence task force",
     "entry": "cnbc-2026-10-16-clayton-super-intelligence-force-first-meeting",
     "on": "2026-10-16",
@@ -3648,6 +3784,11 @@
   "titles": []
  },
  {
+  "id": "jimmy-liu",
+  "name": "Jimmy Liu",
+  "titles": []
+ },
+ {
   "id": "jimmy-wales",
   "name": "Jimmy Wales",
   "titles": [
@@ -3799,6 +3940,18 @@
   "titles": []
  },
  {
+  "id": "jonas-guan",
+  "name": "Jonas Guan",
+  "titles": [
+   {
+    "title": "PhD student, University of Toronto; co-author of an AI worm paper",
+    "entry": "guardian-2026-10-18-ai-worms-anthropic-worried",
+    "on": "2026-10-18",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "jonathan-ferro",
   "name": "Jonathan Ferro",
   "titles": [
@@ -3867,6 +4020,18 @@
   "titles": []
  },
  {
+  "id": "joseph-menn",
+  "name": "Joseph Menn",
+  "titles": [
+   {
+    "title": "Reporter, The Guardian, San Francisco",
+    "entry": "guardian-2026-10-18-ai-worms-anthropic-worried",
+    "on": "2026-10-18",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "joseph-weizenbaum",
   "name": "Joseph Weizenbaum",
   "titles": []
@@ -3920,6 +4085,11 @@
   ]
  },
  {
+  "id": "josh-taylor",
+  "name": "Josh Taylor",
+  "titles": []
+ },
+ {
   "id": "joshua-kendall",
   "name": "Joshua Kendall",
   "titles": [
@@ -3928,6 +4098,42 @@
     "entry": "budget-lab-2026-05-07-ai-labor-market-effects",
     "on": "2026-05-07",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "joshua-saxe",
+  "name": "Joshua Saxe",
+  "titles": [
+   {
+    "title": "Led development of Meta's AI security effort",
+    "entry": "guardian-2026-10-18-ai-worms-anthropic-worried",
+    "on": "2026-10-18",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "jowi-morales",
+  "name": "Jowi Morales",
+  "titles": [
+   {
+    "title": "Contributing Writer, Tom's Hardware",
+    "entry": "tomshardware-2026-10-18-anthropic-safety-bill-thresholds",
+    "on": "2026-10-18",
+    "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "juan-andres-guerrero-saade",
+  "name": "Juan Andres Guerrero-Saade",
+  "titles": [
+   {
+    "title": "Vice-president of research, SentinelOne",
+    "entry": "guardian-2026-10-18-ai-worms-anthropic-worried",
+    "on": "2026-10-18",
+    "role": "speaker"
    }
   ]
  },
@@ -4359,6 +4565,12 @@
   "name": "Kristalina Georgieva",
   "titles": [
    {
+    "title": "managing director, International Monetary Fund",
+    "entry": "guardian-2026-10-18-world-leaders-cyber-attack-threat",
+    "on": "2026-10-18",
+    "role": "mentioned"
+   },
+   {
     "title": "Managing Director, IMF",
     "entry": "bloomberg-2026-10-16-warsh-imf-ai-economy",
     "on": "2026-10-16",
@@ -4420,6 +4632,18 @@
     "entry": "cnn-2026-10-13-data-center-backlash-small-towns",
     "on": "2026-10-13",
     "role": "mentioned"
+   }
+  ]
+ },
+ {
+  "id": "lara-trump",
+  "name": "Lara Trump",
+  "titles": [
+   {
+    "title": "Host, My View with Lara Trump",
+    "entry": "fox-news-2026-10-18-clayton-ai-companies-notice",
+    "on": "2026-10-18",
+    "role": "speaker"
    }
   ]
  },
@@ -4829,6 +5053,18 @@
     "entry": "arxiv-2026-10-09-reward-hacking-spreads-between-agents",
     "on": "2026-10-09",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "marc-andreessen",
+  "name": "Marc Andreessen",
+  "titles": [
+   {
+    "title": "co-founder, Andreessen Horowitz",
+    "entry": "bloomberg-2026-10-18-andreessen-political-influence",
+    "on": "2026-10-18",
+    "role": "subject"
    }
   ]
  },
@@ -5361,6 +5597,11 @@
   ]
  },
  {
+  "id": "nabil-baugher",
+  "name": "Nabil Baugher",
+  "titles": []
+ },
+ {
   "id": "nancy-f-chen",
   "name": "Nancy F. Chen",
   "titles": [
@@ -5442,6 +5683,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "nathan-wilmers",
+  "name": "Nathan Wilmers",
+  "titles": []
  },
  {
   "id": "ned-lamont",
@@ -5651,6 +5897,18 @@
   "id": "paresh-dave",
   "name": "Paresh Dave",
   "titles": []
+ },
+ {
+  "id": "paschal-donohoe",
+  "name": "Paschal Donohoe",
+  "titles": [
+   {
+    "title": "chief knowledge officer, World Bank",
+    "entry": "guardian-2026-10-18-world-bank-small-ai",
+    "on": "2026-10-18",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "patrick-krause",
@@ -6002,6 +6260,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "regina-catipon",
+  "name": "Regina Catipon",
+  "titles": []
  },
  {
   "id": "reza-aghajani",
@@ -6404,6 +6667,11 @@
  {
   "id": "samuel-schapiro",
   "name": "Samuel Schapiro",
+  "titles": []
+ },
+ {
+  "id": "samuel-verboomen",
+  "name": "Samuel Verboomen",
   "titles": []
  },
  {
@@ -7030,6 +7298,18 @@
     "title": "VP, Digital Trust & Chief Product Security Officer, Rockwell Automation",
     "entry": "anthropic-2026-10-08-cyber-mission",
     "on": "2026-10-08",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "tony-crescenzi",
+  "name": "Tony Crescenzi",
+  "titles": [
+   {
+    "title": "Market Strategist and Portfolio Manager, PIMCO",
+    "entry": "bloomberg-2026-10-18-ai-debt-boom-bond-market",
+    "on": "2026-10-18",
     "role": "speaker"
    }
   ]

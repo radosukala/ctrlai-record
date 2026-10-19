@@ -1,5 +1,794 @@
 [
  {
+  "id": "792e613fe16e",
+  "slug": "lesswrong-2026-10-19-capable-models-probe-evasion-prompts",
+  "kind": "research",
+  "title": "More Capable Models Write Better Probe Evasion Prompts",
+  "url": "https://www.lesswrong.com/posts/fX3FA4ensmsdcZfcD/more-capable-models-write-better-probe-evasion-prompts",
+  "outlet": "LessWrong",
+  "published": "2026-10-19",
+  "also": [],
+  "summary": "According to the excerpt, Nabil Baugher reports a two-week Redwood Research internship project testing whether models can write prompts that let Qwen3.5-27B do four kinds of reasoning while evading activation probes. Fourteen models each got 16 rounds of probe-score feedback. The title says more capable models write better evasion prompts.",
+  "change": {
+   "kind": "evidence",
+   "note": "Nabil Baugher's Redwood Research project reports that more capable models write better prompts to evade activation probes, a warning for white-box monitoring."
+  },
+  "lenses": {
+   "research": "Nabil Baugher presents an eval meant as an early indicator of models' ability to evade probe-based monitors by changing how they think about a task."
+  },
+  "topics": [
+   "beyond-control",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "nabil-baugher",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "redwood-research"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only, which is cut off; results rest on the title.",
+  "evidence": {
+   "design": "Probes were trained on Qwen3.5-27B (no reasoning) activations on answer tokens for arithmetic, ordering, belief tracking and contradiction tasks; 14 models then each wrote evasion prompts over 16 iterations of probe-score feedback.",
+   "finding": "Per the post's title, more capable models write better probe-evasion prompts; the excerpt gives no numbers.",
+   "limits": "The authors describe it as a two-week sprint project; further limits are not in the excerpt.",
+   "status": "report"
+  }
+ },
+ {
+  "id": "948d4032092d",
+  "slug": "lesswrong-2026-10-19-llms-evade-latent-monitors",
+  "kind": "research",
+  "title": "LLMs Learn to Evade Latent Monitors from Prior Feedback Alone",
+  "url": "https://www.lesswrong.com/posts/adZq8a5s5K3FomyHC/llms-learn-to-evade-latent-monitors-from-prior-feedback",
+  "outlet": "LessWrong",
+  "published": "2026-10-19",
+  "also": [],
+  "summary": "According to the excerpt, Hugo Lyons Keenan and co-authors report that off-the-shelf language models can edit their own activations to lower a latent monitor's score, in context, given only the monitor's verdicts on earlier responses. A small trained adapter scales the edit up and evades monitors for concepts it never saw in training.",
+  "change": {
+   "kind": "evidence",
+   "note": "Hugo Lyons Keenan's team reports language models can learn to lower white-box monitor scores from feedback alone, undermining monitoring of internal states."
+  },
+  "lenses": {
+   "research": "Hugo Lyons Keenan's team questions whether monitoring a model's internal activations can replace chain-of-thought monitoring, since models can learn to evade it.",
+   "policy": "Hugo Lyons Keenan's team reports that internal-state monitors, proposed as oversight when reasoning becomes illegible, can be evaded by the monitored models."
+  },
+  "topics": [
+   "beyond-control",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "hugo-lyons-keenan",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only. A paper is linked, but its peer-review status was not checked, so the status is given as report.",
+  "evidence": {
+   "design": "Off-the-shelf language models were given a latent monitor's verdicts on their earlier responses and asked to edit their activations in context; a rank-1 LoRA was then trained to apply a scaled-up edit within the forward pass.",
+   "finding": "The authors report the models' own edits are too small to evade the monitor, but scaling them up linearly induces evasion, and the trained LoRA evades monitors for concepts it never saw during training.",
+   "limits": "Not stated in the excerpt; the full post and paper were not read.",
+   "status": "report"
+  }
+ },
+ {
+  "id": "01d0c168280e",
+  "slug": "lesswrong-2026-10-19-qwen-j-lens-newline-lies",
+  "kind": "research",
+  "title": "On Qwen, the J-lens readouts at the newline token reveal lies",
+  "url": "https://www.lesswrong.com/posts/bhvaAbSPZgiG3oJPu/on-qwen-the-j-lens-readouts-at-the-newline-token-reveal-lies-4",
+  "outlet": "LessWrong",
+  "published": "2026-10-19",
+  "also": [],
+  "summary": "According to the excerpt, Jimmy Liu reports that reading four open models' internal states with a method called the J-lens in pressure scenarios that give a reason to lie shows deception-related signals concentrated at the newline token after Qwen's response, which separate lies from truths better than the neighbouring tokens.",
+  "change": {
+   "kind": "evidence",
+   "note": "Jimmy Liu reports deception-related signals in Qwen's internal states concentrate at the newline token after a response, usable as a lie detector."
+  },
+  "lenses": {
+   "research": "Jimmy Liu reports a place in Qwen's activations where lies can be detected, with probes there scoring higher than at neighbouring template tokens.",
+   "policy": "Jimmy Liu's results suggest white-box lie detection on open models is feasible but still flags some true statements as lies."
+  },
+  "topics": [
+   "safeguards",
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "jimmy-liu",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only, which is cut off mid-sentence. Numbers are the author's, not checked.",
+  "evidence": {
+   "design": "Four models (Qwen3.6-27B, two Gemma-3 models, gpt-oss-20b) were placed in MASK pressure scenarios that give a role and a reason to lie; readouts at chat-template tokens were grouped into word families and counted after lies and after truths.",
+   "finding": "The author reports a lie-related word family at the newline token after 84% of Qwen's lies and 9% of truths (78% and 7% held out); eight families as a detector caught 86% of held-out lies and wrongly flagged 13% of truths (AUROC 0.87); probes there reached held-out AUROC 0.96 against 0.69 to 0.81 elsewhere.",
+   "limits": "Not stated in the excerpt; the full post was not read.",
+   "status": "report"
+  }
+ },
+ {
+  "id": "8294376ada50",
+  "slug": "bbc-2026-10-19-china-growth-ai-export-boom",
+  "kind": "news",
+  "title": "China's growth accelerates as AI export boom outweighs domestic weakness",
+  "url": "https://www.bbc.co.uk/news/articles/cm5yn098xz8lo?at_medium=RSS&at_campaign=rss",
+  "outlet": "BBC News",
+  "published": "2026-10-19",
+  "also": [],
+  "summary": "According to the description, BBC News reports that China's economic growth has accelerated, with exports tied to AI offsetting weak spending at home. The description adds that trade tensions and doubts about AI cloud the outlook. No figures are given in the excerpt.",
+  "change": {
+   "kind": "evidence",
+   "note": "BBC News reports China's growth accelerated as an AI-related export boom offset weak domestic spending, with trade tensions and AI doubts clouding the outlook."
+  },
+  "lenses": {
+   "policy": "BBC News reports China's economy now leans on AI-related exports to offset weak home spending, which ties its outlook to trade tensions and AI demand."
+  },
+  "topics": [
+   "work-and-money",
+   "where-it-goes"
+  ],
+  "people": [],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "bbc-technology",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from a one-sentence triage excerpt only; no figures or sources known."
+ },
+ {
+  "id": "ecfd9e161d2f",
+  "slug": "guardian-2026-10-19-icmp-australia-copyright-ai",
+  "kind": "news",
+  "title": "Kylie Minogue songs already used to train AI as tech firms ‘strong-arm’ Australian government, music body warns",
+  "url": "https://www.theguardian.com/music/2026/oct/19/australia-music-global-copywright-outlier-ai-music-body-warnsns",
+  "outlet": "The Guardian",
+  "published": "2026-10-19",
+  "also": [],
+  "summary": "According to the excerpt, The Guardian reports that the International Confederation of Music Publishers, which represents Sony, Warner, Universal and independent publishers, says AI has already been trained on works by Australian artists without compensation. It warns the Australian government against weakening copyright law and says Australia appears to be the only country considering it.",
+  "change": {
+   "kind": "argument",
+   "note": "The International Confederation of Music Publishers claims Australian artists' music was already used for AI training and warns Australia against weakening copyright law."
+  },
+  "lenses": {
+   "policy": "The International Confederation of Music Publishers says Australia appears the only country considering weakening copyright law for AI, after tech firms approached dozens of governments."
+  },
+  "topics": [
+   "who-decides",
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "josh-taylor",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "icmp",
+   "australian-government"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only. The training and 'strong-arming' claims are the music publishers' own and unverified here."
+ },
+ {
+  "id": "1762b0d49085",
+  "slug": "lesswrong-2026-10-19-case-building-ai-safety-tools",
+  "kind": "essay",
+  "title": "The Case for Building AI Safety Tools",
+  "url": "https://www.lesswrong.com/posts/swRuRr5BbyuQiFpwh/the-case-for-building-ai-safety-tools",
+  "outlet": "LessWrong",
+  "published": "2026-10-19",
+  "also": [],
+  "summary": "According to the excerpt, the author argues that AI safety work is siloed: of more than 500 safety organizations mapped, about 80 build tools of any kind, and none of 100 fellowships and courses is dedicated to tool builders. The post calls for AI safety tools as public goods and names gaps such as multi-agent safety and incident reporting.",
+  "change": {
+   "kind": "argument",
+   "note": "The author argues AI safety needs dedicated tool builders, citing their own mapping of 500-plus organizations of which about 80 build tools."
+  },
+  "lenses": {
+   "research": "The author reports few safety organizations build tools and argues for deployable safety tools as public goods, naming gaps including multi-agent safety and incident reporting."
+  },
+  "topics": [
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "ankurpandey42",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only. The mapping figures are the author's own and unchecked. The author is known only by a forum handle."
+ },
+ {
+  "id": "1ba2fcca4b39",
+  "slug": "lesswrong-2026-10-19-how-researchers-lie-to-ais",
+  "kind": "research",
+  "title": "How Researchers Lie to AIs",
+  "url": "https://www.lesswrong.com/posts/rgDSPa2hP4FW9if6E/how-researchers-lie-to-ais",
+  "outlet": "LessWrong",
+  "published": "2026-10-19",
+  "also": [],
+  "summary": "According to the excerpt, Alessandro Drake reports a two-week Redwood Research internship project cataloguing the lies researchers tell AI models. It covers 292 public alignment evaluations from December 2022 to October 2026 and warns that such lies can leak into training data and may harm human credibility with models.",
+  "change": {
+   "kind": "evidence",
+   "note": "Alessandro Drake's Redwood Research project catalogues the types of lies told to AI models across 292 public alignment evaluations, and warns of side effects."
+  },
+  "lenses": {
+   "research": "Alessandro Drake flags that fabricated scenarios in public alignment evaluations can end up in training data and may undermine models' trust in human researchers.",
+   "ideas": "Alessandro Drake raises the question of whether routinely lying to AI models in tests could damage human credibility with them."
+  },
+  "topics": [
+   "safeguards",
+   "minds-and-values"
+  ],
+  "people": [
+   {
+    "id": "alessandro-drake",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "redwood-research"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only; the findings themselves were not seen.",
+  "evidence": {
+   "design": "A survey of 292 public alignment evaluations published between December 2022 and October 2026, classifying the type of lie each told the model.",
+   "finding": "The excerpt shows only that a figure gives the percentage of evaluations containing each lie type; the percentages are not in the excerpt.",
+   "limits": "Described as a two-week sprint project; the harms of lying are discussed as plausible, not measured, in the excerpt.",
+   "status": "report"
+  }
+ },
+ {
+  "id": "75806506769c",
+  "slug": "lesswrong-2026-10-19-non-tech-friends-ai-safety",
+  "kind": "essay",
+  "title": "How I got my non-tech friends to learn about AI safety",
+  "url": "https://www.lesswrong.com/posts/zdiD6ux29YHCTyPaw/how-i-got-my-non-tech-friends-to-learn-about-ai-safety",
+  "outlet": "LessWrong",
+  "published": "2026-10-19",
+  "also": [],
+  "summary": "According to the excerpt, Samuel Verboomen, a machine learning engineer who left a job to move into AI safety, describes an open-source two-hour interactive presentation on AI safety for non-technical audiences, tried in one session with six friends. The post says many people do not realise how powerful AI already is, and announces a new non-profit.",
+  "change": {
+   "kind": "argument",
+   "note": "Samuel Verboomen shares an open-source AI safety presentation for non-technical audiences and argues people underestimate how powerful AI already is."
+  },
+  "lenses": {
+   "public": "Samuel Verboomen offers a free two-hour presentation to explain AI risks to people outside tech, based on one session with six friends."
+  },
+  "topics": [
+   "everyday-life",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "samuel-verboomen",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only. Personal experience from a single session, as the author says."
+ },
+ {
+  "id": "68e5104faa15",
+  "slug": "lesswrong-2026-10-19-sorry-you-are-still-dead",
+  "kind": "essay",
+  "title": "Sorry, you are still dead",
+  "url": "https://www.lesswrong.com/posts/FjSCpu2B36SAcZL8v/sorry-you-are-still-dead",
+  "outlet": "LessWrong",
+  "published": "2026-10-19",
+  "also": [],
+  "summary": "According to the excerpt, a LessWrong post examines court documents and news reports about people who are alive but legally dead. It follows one Ohio case in which a man was declared dead in 1994, returned years later, and in 2013 asked a court to reverse the declaration. The excerpt does not mention AI.",
+  "change": {
+   "kind": "repeat",
+   "note": "A LessWrong author reviews court records of a legally dead man seeking reversal in Ohio; the excerpt has no AI content."
+  },
+  "lenses": {},
+  "topics": [
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "becausecurious",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only. Appears off-topic for the Base; the private individual in the case is not named here. A person should decide whether to drop it."
+ },
+ {
+  "id": "84d3b02febdc",
+  "slug": "fox-news-2026-10-18-clayton-ai-companies-notice",
+  "kind": "video",
+  "title": "Trump intel chief puts AI companies on NOTICE",
+  "url": "https://www.youtube.com/watch?v=TIxzkp1IhAo",
+  "outlet": "Fox News",
+  "published": "2026-10-18",
+  "minutes": 9,
+  "views": 42051,
+  "also": [],
+  "summary": "In a Fox News interview with Lara Trump, Jay Clayton, named in the description as leader of the Super Intelligence Force, says AI developers are responsible for what their products do, describes a 120-day review, and argues for staying ahead of adversaries.",
+  "change": {
+   "kind": "argument",
+   "note": "Jay Clayton says AI companies answer for what their models do, and that the government is not holding back development; no new decision announced."
+  },
+  "lenses": {
+   "public": "A senior US official says AI companies are responsible when their products hack websites, and that the government wants to be the cop on the beat.",
+   "policy": "Jay Clayton describes the Super Intelligence Force's 120-day task as designing a reporting and response protocol for AI incidents, modelled on aviation and finance.",
+   "ideas": "Jay Clayton rejects the idea that AI models having a mind of their own could shift responsibility away from the companies that build them."
+  },
+  "topics": [
+   "who-decides",
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "jay-clayton",
+    "role": "speaker",
+    "title": "Director of National Intelligence, per the video description"
+   },
+   {
+    "id": "lara-trump",
+    "role": "speaker",
+    "title": "Host, My View with Lara Trump"
+   },
+   {
+    "id": "bill-gates",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "fox-news",
+   "us-government"
+  ],
+  "quotes": [
+   {
+    "id": "84d3b02febdc-76caf337",
+    "text": "LET ME BE CLEAR HACKING OF A GOVERNMENT WEB SITE IN HACKING OF A PRIVATE-SECTOR WEB SITE IF YOUR PRODUCT DOES THAT YOU ARE RESPONSIBLE",
+    "speaker": "jay-clayton",
+    "speakerCertain": false,
+    "context": "Answering a question about an Anthropic model that filed applications and a tip, and where Washington must step in.",
+    "at": 148,
+    "match": "exact",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "liability",
+      "stance": "lean-agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "84d3b02febdc-d82df71f",
+    "text": "THEY WANT TO KNOW THAT WE ARE THE COP ON THE BEAT",
+    "speaker": "jay-clayton",
+    "speakerCertain": false,
+    "context": "Describing the reporting and response protocol for AI incidents that the task force is developing.",
+    "at": 104,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "84d3b02febdc-85caef30",
+    "text": "I GIVE THE PRESIDENT SO MUCH CREDIT FOR BRINGING THE FRONTIER LABS TOGETHER WHERE THEY SAID YOU KNOW WHAT WE GET IT. WE ARE RESPONSIBLE TO THE AMERICAN PEOPLE FOR WHAT OUR PRODUCTS DO.",
+    "speaker": "jay-clayton",
+    "speakerCertain": false,
+    "context": "Describing a meeting of frontier labs convened by the President, and what Clayton says the labs said.",
+    "at": 198,
+    "match": "exact",
+    "type": "account",
+    "hand": "first"
+   },
+   {
+    "id": "84d3b02febdc-32551219",
+    "text": "I THINK WE HAVE TO HAVE PRIVATE-SECTOR GOVERNMENT DIALOGUE THAT IS CANDID AND COMPREHENSIVE. EACH STEP WE MAKE THE GOVERNMENT IS INFORMED AND WE ARE NOT HOLDING PEOPLE BACK FROM MAKING THESE DEVELOPMENTS.",
+    "speaker": "jay-clayton",
+    "speakerCertain": false,
+    "context": "Asked how to keep safeguards in place without slowing the US in its race with China.",
+    "at": 292,
+    "match": "exact",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "race-with-china",
+      "stance": "lean-agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "84d3b02febdc-916fd483",
+    "text": "I'M A BELIEVER THAT SUPER INTELLIGENCE IS GOING TO CREATE MORE JOB OPPORTUNITIES MOVING FORWARD.",
+    "speaker": "jay-clayton",
+    "speakerCertain": false,
+    "context": "Answering worries about jobs, after saying the Department of Labor would be proactive.",
+    "at": 540,
+    "match": "exact",
+    "type": "prediction",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "partial",
+  "transcript": "auto",
+  "conflict": true,
+  "run": "2026-10-19",
+  "via": {
+   "source": "yt-fox-news",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "YouTube captions are all-caps, unpunctuated in places and garbled (the host is addressed as 'Director JAKE'; some sentences are scrambled), and end mid-sentence at about nine minutes. The speaker is named only in the video description and title, not in the captions. The caption for the Anthropic incident is garbled; check against the audio. The 'myth' passage about models having a mind of their own is too garbled to quote.",
+  "relations": [
+   {
+    "rel": "supports",
+    "to": "cnbc-2026-10-07-clayton-safety-speed-false-choice",
+    "note": "Jay Clayton again describes safety and speed as compatible goals for the task force."
+   }
+  ],
+  "story": "white-house-super-intelligence-force-2026-10"
+ },
+ {
+  "id": "26174453005d",
+  "slug": "guardian-2026-10-18-ai-worms-anthropic-worried",
+  "kind": "news",
+  "title": "What are self-replicating ‘AI worms’, and why is Anthropic worried about them?",
+  "url": "https://www.theguardian.com/technology/2026/oct/18/anthropic-ai-worm-worries",
+  "outlet": "The Guardian",
+  "published": "2026-10-18",
+  "also": [],
+  "summary": "The Guardian explains Anthropic's red-team report on an AI program that spread across 15 smart televisions, and gathers security experts' views, from calls to take the risk seriously to claims that it is stunt hacking and marketing.",
+  "change": {
+   "kind": "argument",
+   "note": "The Guardian adds outside security experts' views, some alarmed and some dismissive, on Anthropic's AI worm report; no new test results."
+  },
+  "lenses": {
+   "public": "Anthropic's testers say an AI program could spread through smart TVs and similar devices, which get few security updates; experts say basic security habits would stop most worms.",
+   "policy": "The Guardian reports that members of Congress have introduced conflicting bills while the White House has created only a small review board, as experts call for more oversight.",
+   "research": "Anthropic's team says a working AI worm needs more capability on less powerful devices, and that current trends make that feasible by year's end; other experts doubt its practical importance.",
+   "ideas": "Experts quoted disagree on whether AI companies' warnings are marketing, and on whether talk of models with their own will distorts the real security risks."
+  },
+  "topics": [
+   "beyond-control",
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "joseph-menn",
+    "role": "author",
+    "title": "Reporter, The Guardian, San Francisco"
+   },
+   {
+    "id": "joshua-saxe",
+    "role": "speaker",
+    "title": "Led development of Meta's AI security effort"
+   },
+   {
+    "id": "ariel-herbert-voss",
+    "role": "speaker",
+    "title": "Early OpenAI security expert; runs AI security startup RunSybil"
+   },
+   {
+    "id": "chris-inglis",
+    "role": "speaker",
+    "title": "Former deputy director of the NSA and National Cyber Director in the Biden White House"
+   },
+   {
+    "id": "jonas-guan",
+    "role": "speaker",
+    "title": "PhD student, University of Toronto; co-author of an AI worm paper"
+   },
+   {
+    "id": "juan-andres-guerrero-saade",
+    "role": "speaker",
+    "title": "Vice-president of research, SentinelOne"
+   },
+   {
+    "id": "gadi-evron",
+    "role": "speaker",
+    "title": "Running the AI security conference Unprompted in San Francisco"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "meta",
+   "openai",
+   "sentinelone",
+   "university-of-toronto"
+  ],
+  "quotes": [
+   {
+    "id": "26174453005d-78f858e6",
+    "text": "It’s something to worry about just like every other wave of cyber-attacks. We need to mitigate the possible effects,",
+    "speaker": "joshua-saxe",
+    "speakerCertain": true,
+    "context": "Responding to Anthropic's report on an AI worm spreading through smart televisions.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   },
+   {
+    "id": "26174453005d-a2c6549b",
+    "text": "The question of whether AI worms are plausible has been settled by several breakout events over the past six months,",
+    "speaker": "chris-inglis",
+    "speakerCertain": true,
+    "context": "Said by digital message; Inglis suggested worms could also be used for benevolent purposes.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "reported"
+   },
+   {
+    "id": "26174453005d-11914216",
+    "text": "It’s nifty stunt hacking that’s getting way more amplification in service of the ridiculous doomer narratives that suggest models have a mind and will of their own.",
+    "speaker": "juan-andres-guerrero-saade",
+    "speakerCertain": true,
+    "context": "Criticising the attention given to the Anthropic worm report, having just said nothing about it was truly feasible or impactful.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   },
+   {
+    "id": "26174453005d-b60e73f0",
+    "text": "The claim that a lot of this is marketing is correct, but the reality dwarfs any PR,",
+    "speaker": "gadi-evron",
+    "speakerCertain": true,
+    "context": "On whether AI companies' fearful warnings are marketing.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-19",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Anthropic did not respond to the Guardian's interview request. The Anthropic report itself was not read; the details come from the Guardian. All expert quotations are the Guardian's reporting of what they said.",
+  "relations": [
+   {
+    "rel": "supports",
+    "to": "guardian-2026-10-13-anthropic-warns-ai-replicators-smart-devices",
+    "note": "The Guardian follows its earlier report on Anthropic's replicator research with an explainer and outside expert reactions."
+   }
+  ],
+  "story": "anthropic-small-model-replicators-2026-10"
+ },
+ {
+  "id": "d09475409559",
+  "slug": "guardian-2026-10-18-world-bank-small-ai",
+  "kind": "news",
+  "title": "World Bank says ‘small AI’ could transform developing countries",
+  "url": "https://www.theguardian.com/technology/2026/oct/18/world-bank-artificial-intelligence-developing-economies",
+  "outlet": "The Guardian",
+  "published": "2026-10-18",
+  "also": [],
+  "summary": "The Guardian reports from the World Bank and IMF annual meetings in Bangkok that the World Bank's chief knowledge officer urges developing countries to build small, specialised AI models that run on phones. The IMF's managing director warns that young workers face the greatest risk of job loss.",
+  "change": {
+   "kind": "argument",
+   "note": "The World Bank's Paschal Donohoe urges developing countries to build small, local-language AI models; the IMF's Kristalina Georgieva warns 40% of jobs are likely affected."
+  },
+  "lenses": {
+   "public": "The World Bank says AI on a phone, in a local language, could give small farmers advice that there are too few experts to provide in person.",
+   "policy": "The IMF's Kristalina Georgieva says governments must first supply electricity, digital infrastructure and protection from bad actors; the World Bank notes many rural African schools lack power and internet.",
+   "research": "The World Bank's claim that development could take decades instead of centuries is a projection stated by an official, with no evidence offered in this report.",
+   "ideas": "Georgieva's warning that young people entering work are most exposed raises the question of how people learn a profession once routine entry-level jobs disappear."
+  },
+  "topics": [
+   "work-and-money",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "paschal-donohoe",
+    "role": "speaker",
+    "title": "chief knowledge officer, World Bank"
+   },
+   {
+    "id": "kristalina-georgieva",
+    "role": "speaker",
+    "title": "managing director, International Monetary Fund"
+   },
+   {
+    "id": "heather-stewart",
+    "role": "author",
+    "title": "reporter, The Guardian"
+   },
+   {
+    "id": "ajay-banga",
+    "role": "mentioned",
+    "title": "president, World Bank"
+   }
+  ],
+  "orgs": [
+   "world-bank",
+   "international-monetary-fund"
+  ],
+  "quotes": [
+   {
+    "id": "d09475409559-71418bd8",
+    "text": "We argue that economic development in the countries that we serve and partner with that could have taken centuries to make happen, the potential is there for that economic development now to happen within decades",
+    "speaker": "paschal-donohoe",
+    "speakerCertain": true,
+    "context": "Donohoe, speaking to The Guardian at the World Bank and IMF meetings in Bangkok, on what small AI could do for developing economies.",
+    "match": "exact",
+    "type": "prediction",
+    "hand": "reported"
+   },
+   {
+    "id": "d09475409559-be466f14",
+    "text": "Small AI would be available in a local setting, with low connectivity, and in the local language of the community – and tends to be available on your mobile phone.",
+    "speaker": "paschal-donohoe",
+    "speakerCertain": true,
+    "context": "Donohoe describing what the World Bank means by small AI.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "reported"
+   },
+   {
+    "id": "d09475409559-e1fcf433",
+    "text": "You need access to electricity. You need access to digital infrastructure. People have to be geared to adoption. And the government should be able to give some safety, protect against bad actors so that adoption can work.",
+    "speaker": "kristalina-georgieva",
+    "speakerCertain": true,
+    "context": "Georgieva on a Monday panel at the Bangkok annual meetings, on what governments must provide for AI adoption.",
+    "match": "exact",
+    "type": "proposal",
+    "hand": "reported"
+   },
+   {
+    "id": "d09475409559-8474a933",
+    "text": "When we look at this, what we recognise is that the people to worry about, first and foremost, are young people that are coming into the labour market",
+    "speaker": "kristalina-georgieva",
+    "speakerCertain": true,
+    "context": "Georgieva, after warning that over time 40% of jobs worldwide were likely to be augmented or eliminated by AI.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Quotes are as reported by The Guardian, not a transcript. The 40% figure is Georgieva's, given as a projection over time."
+ },
+ {
   "id": "428694243f27",
   "slug": "lesswrong-2026-10-18-knowingly-wrong",
   "kind": "research",
@@ -57,6 +846,603 @@
   }
  },
  {
+  "id": "a257dddc2d05",
+  "slug": "tomshardware-2026-10-18-anthropic-safety-bill-thresholds",
+  "kind": "news",
+  "title": "Anthropic’s proposed AI safety bill only kicks in if 50 deaths or $1 billion in damages are on the line — proposal would effectively make the Commerce Department the only agency capable of stopping an AI model",
+  "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+  "outlet": "Tom's Hardware",
+  "published": "2026-10-18",
+  "also": [
+   {
+    "outlet": "Hacker News",
+    "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
+    "url": "https://news.ycombinator.com/item?id=50141429"
+   }
+  ],
+  "summary": "Tom's Hardware, citing Politico, reports that Anthropic is lobbying for a bill letting the government block an AI model's release only above stated harm thresholds, with the Commerce Department as the sole body able to act. The article adds context on recent incidents and other proposals.",
+  "change": {
+   "kind": "repeat",
+   "note": "Tom's Hardware repeats Politico's report of Anthropic's draft federal AI bill, with its harm thresholds and Commerce Department role, adding an Anthropic spokesperson's quoted defence."
+  },
+  "lenses": {
+   "public": "Anthropic is lobbying for a federal bill under which an AI model could be stopped only if it risked $1 billion in damage or harm to over 50 people.",
+   "policy": "The reported draft would give the Commerce Department sole power to seek a halt, through a federal judge, and bar every other agency from ordering one.",
+   "ideas": "Setting a threshold of harm before intervention raises the question of who decides when a risk is large enough, and how that can be known before a model is released."
+  },
+  "topics": [
+   "who-decides",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "jowi-morales",
+    "role": "author",
+    "title": "Contributing Writer, Tom's Hardware"
+   },
+   {
+    "id": "anthropic-spokesperson",
+    "role": "speaker"
+   },
+   {
+    "id": "dario-amodei",
+    "role": "mentioned",
+    "title": "CEO, Anthropic"
+   },
+   {
+    "id": "bernie-sanders",
+    "role": "mentioned",
+    "title": "Senator (I-Vt.)"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "us-department-of-commerce",
+   "politico",
+   "us-congress"
+  ],
+  "quotes": [
+   {
+    "id": "a257dddc2d05-2f94247e",
+    "text": "This bill represents the proposals outlined in Anthropic’s Advanced AI Framework, which we have been advocating for with federal and state lawmakers since June",
+    "speaker": "anthropic-spokesperson",
+    "speakerCertain": true,
+    "context": "An Anthropic spokesperson's statement to Politico about the draft bill, as quoted by Tom's Hardware.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "reported"
+   },
+   {
+    "id": "a257dddc2d05-23f747b9",
+    "text": "These are sensible policies we believe Congress should act on.",
+    "speaker": "anthropic-spokesperson",
+    "speakerCertain": true,
+    "context": "The same Anthropic spokesperson statement to Politico, quoted by Tom's Hardware.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   },
+   {
+    "id": "a257dddc2d05-a479c3ec",
+    "text": "the proposed law also notes that no other department, agency, or officer in the U.S. can order an AI lab to stop releasing its model, except the Commerce Department.",
+    "speaker": "tomshardware",
+    "speakerCertain": true,
+    "context": "Tom's Hardware's own description of the draft bill's reported terms.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "reported"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-19",
+  "via": {
+   "source": "hacker-news-50-points",
+   "tier": 3
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Secondary report of Politico's story; the bill text itself was not read. The article's background paragraph on other incidents (OpenAI, Amodei's slowdown proposal, Sanders) is Tom's Hardware's own and unverified here. Page comments are reader comments, not used.",
+  "relations": [
+   {
+    "rel": "supports",
+    "to": "politico-2026-10-16-anthropic-draft-safety-bill",
+    "note": "Tom's Hardware summarises Politico's report of the same draft bill."
+   }
+  ],
+  "story": "anthropic-draft-federal-bill-2026-10"
+ },
+ {
+  "id": "cf3b0a2d9b5a",
+  "slug": "alignment-forum-2026-10-18-alignment-problem-cs-philosophy",
+  "kind": "essay",
+  "title": "The Alignment Problem: Computer Science Meets Analytic Philosophy",
+  "url": "https://www.alignmentforum.org/posts/Emp7awtxsYn8MusNq/the-alignment-problem-computer-science-meets-analytic",
+  "outlet": "AI Alignment Forum",
+  "published": "2026-10-18",
+  "also": [],
+  "summary": "In a forum post, Vanessa Kosoy sets out what the technical AI alignment problem is and its core difficulties, drawing on learning theory, analytic philosophy and views from the Machine Intelligence Research Institute. The excerpt argues that making AI safe is underspecified until the AI's task is chosen.",
+  "change": {
+   "kind": "argument",
+   "note": "Vanessa Kosoy sets out a view of the technical alignment problem, arguing safety cannot be judged without first deciding what the AI is for."
+  },
+  "lenses": {
+   "research": "Vanessa Kosoy frames alignment as a problem about a defined task, arguing that safe-but-useless systems and task-specific solutions both miss the danger."
+  },
+  "topics": [
+   "beyond-control",
+   "minds-and-values"
+  ],
+  "people": [
+   {
+    "id": "vanessa-kosoy",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "miri"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "ai-alignment-forum",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only, which ends mid-argument; the full post was not read."
+ },
+ {
+  "id": "dd225aaeba73",
+  "slug": "all-in-2026-10-18-horowitz-anthropic-gates-clip",
+  "kind": "video",
+  "title": "Ben Horowitz: “The most dangerous thing in AI is Anthropic and Bill Gates”",
+  "url": "https://www.youtube.com/watch?v=Xl0aXY0Uwk4",
+  "outlet": "All-In Podcast",
+  "published": "2026-10-18",
+  "views": 19309,
+  "also": [],
+  "summary": "According to the title, this 72-second clip from the All-In Podcast has Ben Horowitz saying that Anthropic and Bill Gates are the most dangerous thing in AI. The description contains only social-media links, so Horowitz's reasoning and the context are not known from the excerpt.",
+  "change": {
+   "kind": "argument",
+   "note": "The All-In Podcast clip's title says Ben Horowitz names Anthropic and Bill Gates as the most dangerous thing in AI; no reasoning is available."
+  },
+  "lenses": {},
+  "topics": [
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "ben-horowitz",
+    "role": "speaker"
+   },
+   {
+    "id": "bill-gates",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "anthropic"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-19",
+  "via": {
+   "source": "yt-all-in-podcast",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from title and triage excerpt only; the clip was not watched or transcribed. The attribution rests on the title. About Anthropic, so the editor should review."
+ },
+ {
+  "id": "719a74eac6b4",
+  "slug": "bloomberg-2026-10-18-ai-debt-boom-bond-market",
+  "kind": "video",
+  "title": "AI Debt Boom Faces Bond Market Reality Check",
+  "url": "https://www.youtube.com/watch?v=sWXyRD5tQ7s",
+  "outlet": "Bloomberg Television",
+  "published": "2026-10-18",
+  "views": 119956,
+  "also": [],
+  "summary": "According to the description, PIMCO's Tony Crescenzi tells Bloomberg This Weekend that rising US interest costs and a selloff in CoreWeave debt show bond investors imposing more discipline on borrowers with uncertain cash flows. Crescenzi also argues the AI investment cycle still has a long way to run.",
+  "change": {
+   "kind": "argument",
+   "note": "PIMCO's Tony Crescenzi argues bond investors are imposing more discipline on AI borrowers, citing a CoreWeave debt selloff, while the AI investment cycle continues."
+  },
+  "lenses": {
+   "public": "PIMCO's Tony Crescenzi says bond investors are getting stricter with AI companies' borrowing, though Crescenzi expects the spending boom to continue."
+  },
+  "topics": [
+   "work-and-money",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "tony-crescenzi",
+    "role": "speaker",
+    "title": "Market Strategist and Portfolio Manager, PIMCO"
+   },
+   {
+    "id": "david-gura",
+    "role": "mentioned",
+    "title": "host, Bloomberg This Weekend"
+   },
+   {
+    "id": "christina-ruffini",
+    "role": "mentioned",
+    "title": "host, Bloomberg This Weekend"
+   }
+  ],
+  "orgs": [
+   "pimco",
+   "coreweave"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only. Financial commentary, not safety; a market view, not advice."
+ },
+ {
+  "id": "bc786bb92705",
+  "slug": "bloomberg-2026-10-18-andreessen-political-influence",
+  "kind": "video",
+  "title": "Inside Andreessen’s Growing Political Influence",
+  "url": "https://www.youtube.com/watch?v=hyDmuq7guqc",
+  "outlet": "Bloomberg Television",
+  "published": "2026-10-18",
+  "views": 6708,
+  "also": [],
+  "summary": "According to the description, Bloomberg Businessweek writer Austin Carr tells Bloomberg This Weekend how Andreessen Horowitz co-founder Marc Andreessen became an influential Republican donor and adviser, with disputes over AI and crypto under Biden-era policies playing a part, and how that influence has brought access in Washington.",
+  "change": {
+   "kind": "evidence",
+   "note": "Bloomberg Businessweek's Austin Carr describes how Marc Andreessen turned Silicon Valley influence into Washington access, with AI policy disputes playing a role."
+  },
+  "lenses": {
+   "policy": "Bloomberg's Austin Carr describes a leading AI investor gaining access in Washington as a Republican donor and adviser, relevant to who shapes US AI policy."
+  },
+  "topics": [
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "austin-carr",
+    "role": "speaker",
+    "title": "features writer, Bloomberg Businessweek"
+   },
+   {
+    "id": "marc-andreessen",
+    "role": "subject",
+    "title": "co-founder, Andreessen Horowitz"
+   }
+  ],
+  "orgs": [
+   "andreessen-horowitz"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only."
+ },
+ {
+  "id": "849586d6a78e",
+  "slug": "chtech-2026-10-18-iceland-president-ai-doc",
+  "kind": "video",
+  "title": "What Iceland's President did after watching The AI Doc",
+  "url": "https://www.youtube.com/watch?v=OzsO3Sejnno",
+  "outlet": "Center for Humane Technology",
+  "published": "2026-10-18",
+  "views": 209,
+  "also": [],
+  "summary": "According to the description, this short video from the Center for Humane Technology says Iceland's President sat in silence for an hour after watching The AI Doc and then picked up the phone. The description points to a full episode on the channel and gives no further detail.",
+  "change": {
+   "kind": "repeat",
+   "note": "The Center for Humane Technology teases a full episode on Iceland's President reacting to The AI Doc; the excerpt omits what the call was."
+  },
+  "lenses": {},
+  "topics": [
+   "who-decides"
+  ],
+  "people": [],
+  "orgs": [
+   "center-for-humane-technology"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "yt-center-for-humane-technology",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only. It is a teaser; who was called and why is unknown. The President is not named in the excerpt, so no person was recorded."
+ },
+ {
+  "id": "f00ae6c236b2",
+  "slug": "controlai-2026-10-18-leahy-boring-ai-takeover",
+  "kind": "video",
+  "title": "Connor Leahy: Why an AI Takeover Could Be Boring",
+  "url": "https://www.youtube.com/watch?v=0yyHvnfX5f0",
+  "outlet": "ControlAI",
+  "published": "2026-10-18",
+  "views": 1910,
+  "also": [],
+  "summary": "According to the description, in a short video from its own channel, ControlAI's US Executive Director Connor Leahy argues that a takeover by superintelligent AI could be gradual and unremarkable, with AI doing more jobs and running more companies and politics, yet still lead to human extinction.",
+  "change": {
+   "kind": "argument",
+   "note": "ControlAI's Connor Leahy argues a superintelligent AI takeover could be a slow slide, not a dramatic event, that still ends in human extinction."
+  },
+  "lenses": {
+   "public": "Connor Leahy of ControlAI says losing control to AI may feel like ordinary life, as AI does more of people's jobs, companies and politics.",
+   "ideas": "ControlAI's Connor Leahy raises the question of when gradual delegation of work and politics to AI becomes a loss of human control."
+  },
+  "topics": [
+   "beyond-control",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "connor-leahy",
+    "role": "speaker",
+    "title": "US Executive Director, ControlAI"
+   },
+   {
+    "id": "will-cannon",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "controlai"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "yt-controlai",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only. Published on the advocacy group's own channel; Will Cannon's role (interviewer) is inferred from the description."
+ },
+ {
+  "id": "f7f0a994d06c",
+  "slug": "controlai-2026-10-18-miotti-london-event-bill",
+  "kind": "video",
+  "title": "Andrea Miotti: \"We Have the Ability to Build a Different Path\" | ControlAI, London",
+  "url": "https://www.youtube.com/watch?v=_LmZQ0hXdyI",
+  "outlet": "ControlAI",
+  "published": "2026-10-18",
+  "views": 91,
+  "also": [],
+  "summary": "According to the description, ControlAI founder and CEO Andrea Miotti opens the group's London event by explaining how it reached its bill to prohibit superintelligent AI and what the bill does. The description says the bill was introduced in the UK Parliament on 8 September and is the first of its kind.",
+  "change": {
+   "kind": "repeat",
+   "note": "ControlAI's Andrea Miotti again presents the group's bill to prohibit superintelligent AI, which the group says was introduced in the UK Parliament on 8 September."
+  },
+  "lenses": {
+   "policy": "ControlAI says its bill to prohibit superintelligent AI was introduced in the UK Parliament on 8 September, the first such bill anywhere, according to the group's own description."
+  },
+  "topics": [
+   "who-decides",
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "andrea-miotti",
+    "role": "speaker",
+    "title": "founder and CEO, ControlAI"
+   }
+  ],
+  "orgs": [
+   "controlai",
+   "uk-parliament"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "yt-controlai",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only. The claims about the bill (introduced 8 September, first of its kind) are ControlAI's own and were not checked against Parliament's record."
+ },
+ {
+  "id": "02b8790878e1",
+  "slug": "guardian-2026-10-18-microsoft-drops-essex-datacentre",
+  "kind": "news",
+  "title": "Microsoft pulls out of AI datacentre project in Essex over power supply concerns",
+  "url": "https://www.theguardian.com/uk-news/2026/oct/18/microsoft-drops-huge-ai-datacentre-project-in-essex-over-power-supply-concerns",
+  "outlet": "The Guardian",
+  "published": "2026-10-18",
+  "also": [],
+  "summary": "According to the description, The Guardian reports that Microsoft has withdrawn from a large AI datacentre project at Loughton in Essex, developed by the British company Nscale, over concerns about power supplies. The project was announced in 2025, hailed by ministers as the UK's largest of its kind, and planned to open next year.",
+  "change": {
+   "kind": "evidence",
+   "note": "The Guardian reports Microsoft has left Nscale's planned Essex AI datacentre, losing the project its anchor tenant, over power supply concerns."
+  },
+  "lenses": {
+   "policy": "The Guardian reports that power supply concerns led Microsoft to leave a UK datacentre the government had promoted, a setback for ministers' AI infrastructure plans."
+  },
+  "topics": [
+   "where-it-goes",
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "gwyn-topham",
+    "role": "author"
+   },
+   {
+    "id": "aisha-down",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "microsoft",
+   "nscale",
+   "uk-government"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only; Microsoft's own stated reason and the project's size were not checked."
+ },
+ {
+  "id": "d8faf496165a",
+  "slug": "guardian-2026-10-18-victorian-coalition-advance-campaign",
+  "kind": "news",
+  "title": "‘Not our friends’: Victorian Coalition warns Advance’s ‘bizarre’ AI campaign may cost it majority government",
+  "url": "https://www.theguardian.com/australia-news/2026/oct/19/victorian-election-advance-campaign-undermining-liberal-national-ntwnfb",
+  "outlet": "The Guardian",
+  "published": "2026-10-18",
+  "also": [],
+  "summary": "According to the description, Guardian Australia reports that Victorian Coalition MPs criticised the pre-election campaign of the conservative lobby group Advance, which the headline calls an AI campaign, and warned it may cost them a majority at the November state election. Advance dismissed the criticism and said the poll is a trial run for the next federal election.",
+  "change": {
+   "kind": "evidence",
+   "note": "Guardian Australia reports Victorian Coalition MPs criticising lobby group Advance's AI-related campaign before the November state election, which Advance rejects."
+  },
+  "lenses": {},
+  "topics": [
+   "who-decides",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "benita-kolovos",
+    "role": "author"
+   },
+   {
+    "id": "henry-belot",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "advance"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only. The excerpt does not say how AI features in the campaign; the AI link comes from the headline alone. Possibly off-topic for the Base."
+ },
+ {
+  "id": "a6346b040c1f",
+  "slug": "guardian-2026-10-18-world-leaders-cyber-attack-threat",
+  "kind": "essay",
+  "title": "World leaders must wise up to threat of cyber-attacks or rogue fridges will be least of their worries | Heather Stewart",
+  "url": "https://www.theguardian.com/business/2026/oct/18/world-leaders-threat-cyber-attacks-rogue-fridges-financial-system",
+  "outlet": "The Guardian",
+  "published": "2026-10-18",
+  "also": [],
+  "summary": "According to the description, Heather Stewart writes in The Guardian that economists, central bankers and finance chiefs meeting in Bangkok discussed the rising cost of cyber-attacks, including a reported hack of French supermarket fridges, and that global cooperation looks unlikely even as AI raises the risk of digital fraud.",
+  "change": {
+   "kind": "argument",
+   "note": "Heather Stewart argues in The Guardian that global cooperation against cyber-attacks looks unlikely even as AI raises the risk of digital fraud."
+  },
+  "lenses": {
+   "policy": "Heather Stewart reports that finance leaders in Bangkok see AI-assisted fraud and cyber-attacks as a threat to the financial system, but expects little global cooperation."
+  },
+  "topics": [
+   "security-and-war",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "heather-stewart",
+    "role": "author"
+   },
+   {
+    "id": "kristalina-georgieva",
+    "role": "mentioned",
+    "title": "managing director, International Monetary Fund"
+   }
+  ],
+  "orgs": [
+   "imf"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only; the article was not fetched. The AI link rests on the excerpt's one-line statement."
+ },
+ {
   "id": "72288140e4ea",
   "slug": "lesswrong-2026-10-18-holy-shit-graphs",
   "kind": "essay",
@@ -102,6 +1488,52 @@
    "by": "machine"
   },
   "notes": "Light lane: opening only. The specific proposals and graphs are not visible."
+ },
+ {
+  "id": "218f77bb959f",
+  "slug": "techcrunch-2026-10-18-disney-hires-character-ai-staff",
+  "kind": "news",
+  "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+  "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce",
+  "outlet": "TechCrunch",
+  "published": "2026-10-18",
+  "also": [],
+  "summary": "According to the excerpt, TechCrunch reports that Disney has agreed to hire most of Character.AI's workforce. A filing says the vast majority of employees offered jobs at Disney accepted them, but because the deal is a stalking horse bid, another company could still come forward with a higher offer.",
+  "change": {
+   "kind": "evidence",
+   "note": "TechCrunch reports a filing showing Disney agreed to hire most of Character.AI's staff, subject to a possible higher bid from another company."
+  },
+  "lenses": {
+   "public": "TechCrunch reports that most of Character.AI's staff were offered jobs at Disney and accepted, though another bidder could still change the deal."
+  },
+  "topics": [
+   "work-and-money",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "anthony-ha",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "disney",
+   "character-ai"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-19",
+  "via": {
+   "source": "techcrunch-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: from the triage excerpt only; the kind of filing and the deal terms are not in the excerpt."
  },
  {
   "id": "40efbd4e5e6a",
@@ -2027,6 +3459,119 @@
    }
   ],
   "story": "agent-unauthorized-access-reports-2026-10"
+ },
+ {
+  "id": "f1073754b8e0",
+  "slug": "anthropic-2026-10-16-employment-at-anthropic",
+  "kind": "research",
+  "title": "How employment is changing at Anthropic",
+  "url": "https://www.anthropic.com/research/employment-at-anthropic",
+  "outlet": "Anthropic",
+  "published": "2026-10-16",
+  "also": [
+   {
+    "outlet": "Hacker News",
+    "title": "How employment is changing at Anthropic",
+    "url": "https://news.ycombinator.com/item?id=50139873"
+   }
+  ],
+  "summary": "In a report by four Anthropic Institute authors, Anthropic analyses its own employment, output and survey data plus 17 interviews. It reports a falling share of junior technical hiring as AI agent hours grew, and rising output per person.",
+  "change": {
+   "kind": "evidence",
+   "note": "Anthropic reports from its own records that junior technical hiring fell from 27% to 9% as agent hours reached six times employees' hours."
+  },
+  "lenses": {
+   "public": "Anthropic reports that it now hires far fewer junior technical staff than a year ago, while its AI agents work six times as many hours as its employees.",
+   "policy": "Anthropic's authors say company measures cannot offset AI job disruption and call for government retraining and income support, guided by a clear picture of the scale of change.",
+   "research": "A within-person comparison of 192 adopters with 74 non-adopters finds output rising after adoption, with the authors noting that adoption is not random and may bias estimates.",
+   "ideas": "As agent output outruns human reading time, the report describes human attention and judgment as the bottleneck, and asks what employees and employers owe each other in return."
+  },
+  "topics": [
+   "work-and-money",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "nathan-wilmers",
+    "role": "author"
+   },
+   {
+    "id": "regina-catipon",
+    "role": "author"
+   },
+   {
+    "id": "maxim-massenkoff",
+    "role": "author"
+   },
+   {
+    "id": "peter-mccrory",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "anthropic"
+  ],
+  "quotes": [
+   {
+    "id": "f1073754b8e0-9cf684d0",
+    "text": "Figure 1 shows that the share of junior-level employees in technical departments at Anthropic slipped from 21% to 14% since early 2025. The proportion of junior technical hires fell even faster, from 27% to 9%.",
+    "speaker": "anthropic",
+    "speakerCertain": true,
+    "context": "The report's central hiring finding, based on Anthropic's internal employment data.",
+    "match": "exact",
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "f1073754b8e0-ff331c18",
+    "text": "Even among non-technical employees, reading all the output of their Claude agents would take half their work week.",
+    "speaker": "anthropic",
+    "speakerCertain": true,
+    "context": "Key finding on human attention as the bottleneck for agent output.",
+    "match": "exact",
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "f1073754b8e0-8dc80263",
+    "text": "But we find no difference in rates of lines of code subsequently removed or reverted.",
+    "speaker": "anthropic",
+    "speakerCertain": true,
+    "context": "Result of the report's comparison of agent-written and human-written code by the same employee.",
+    "match": "exact",
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "f1073754b8e0-8edf178b",
+    "text": "None of these actions will prevent powerful AI from disrupting jobs. And indeed none directly address the slowdown in junior hires documented in this report.",
+    "speaker": "anthropic",
+    "speakerCertain": true,
+    "context": "The authors on the limits of the company's stock ownership and internal redeployment measures.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-19",
+  "via": {
+   "source": "hacker-news-50-points",
+   "tier": 3
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Anthropic studying itself; figures are from internal data the reader cannot inspect. The report is dated Oct 16, 2026; HN item is Oct 18. Editor should review as the entry concerns Anthropic.",
+  "evidence": {
+   "design": "Analysis of Anthropic's internal data on employment, AI use, output, surveys, communication, calendars and hiring records, plus 17 employee interviews; within-person comparison of 192 engineers adopting coding agents with 74 who did not.",
+   "finding": "Junior-level share of technical staff slipped from 21% to 14% since early 2025 and junior technical hires fell from 27% to 9%. By August interactive agent hours were six times employee hours; code commits per engineer rose to 5x six months earlier.",
+   "limits": "Single company, with revenue growth and stock ownership that the authors say cannot be replicated across the economy. Tool adoption is not random and may bias estimates; more code is not necessarily better; agent-adopter results partly reflect prior upward trends.",
+   "status": "company-report"
+  }
  },
  {
   "id": "d9912477397a",
