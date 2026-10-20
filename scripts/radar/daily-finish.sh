@@ -19,9 +19,10 @@ echo "== Compose"
 npx tsx scripts/radar/compose.ts > "$DIR/compose.log" 2>&1 || { grep -E "PROBLEM|dropped|Nothing written" "$DIR/compose.log" | head -20; echo "STOP: the Base could not be built; nothing was written or pushed (see $DIR/compose.log)"; exit 1; }
 tail -2 "$DIR/compose.log"
 echo "== Moments"
-# When each quotation said in a recording is spoken, word by word, for the page's play buttons (content/base/moments.json).
-# Never stops the run: a quotation without a moment is shown as text, with a link to its second.
-if npx tsx scripts/radar/moments.ts > "$DIR/moments.log" 2>&1; then tail -1 "$DIR/moments.log"; else echo "WARNING: the moments could not be timed (see $DIR/moments.log); the run publishes anyway"; fi
+# When each quotation said in a recording is spoken, word by word, for the page's play buttons (content/base/moments.json),
+# and a copy of each new video's thumbnail to show on the button (public/media/yt). Never stops the run: a quotation without
+# a moment is shown as text, with a link to its second, and a button without a poster is plain.
+if npx tsx scripts/radar/moments.ts > "$DIR/moments.log" 2>&1 && npx tsx scripts/radar/posters.ts >> "$DIR/moments.log" 2>&1; then tail -2 "$DIR/moments.log"; else echo "WARNING: the moments could not be timed or their posters saved (see $DIR/moments.log); the run publishes anyway"; fi
 echo "== Types and tests"
 npx tsc --noEmit || { echo "STOP: type errors; nothing pushed"; git checkout -- content/base; exit 1; }
 if ! npm test > "$DIR/test.log" 2>&1; then grep -E "✖|AssertionError" "$DIR/test.log" | head -20; echo "STOP: tests fail (see $DIR/test.log); nothing pushed"; git checkout -- content/base; exit 1; fi
@@ -47,7 +48,7 @@ echo "== Database"
 npx tsx scripts/radar/build-db.ts 2>/dev/null | tail -1 || echo "WARNING: the database could not be rebuilt; the record itself is safe"
 
 echo "== Publish"
-git add content/base
+git add content/base public/media
 if git diff --cached --quiet; then echo "The Base did not change."; exit 0; fi
 N=$(ls "$DIR"/entries/*.json | wc -l | tr -d ' ')
 git commit -q -m "Radar: $RUN, $N entries

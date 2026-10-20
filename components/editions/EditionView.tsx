@@ -11,6 +11,7 @@ import type { Entry, LensId, Quote } from '@/content/base/types';
 import { QUESTIONS, visible } from '@/content/questions';
 import { GROUP_LABEL, groupAt } from '@/content/registry';
 import type { Group } from '@/content/registry/types';
+import { posterFor } from '@/lib/posters';
 import { dateRange, longDate, shortDate } from '@/lib/site';
 
 const fmt = (n: number) => n.toLocaleString('en-US');
@@ -68,7 +69,7 @@ function Quotation({ q, e, group }: { q: Quote; e: Entry; group?: Group }) {
   const youtube = moment ? `https://www.youtube.com/watch?v=${moment.v}&t=${Math.floor(q.at!)}s` : /youtube\.com\/watch|youtu\.be\//.test(e.url) && q.at != null ? `${e.url}${e.url.includes('?') ? '&' : '?'}t=${Math.floor(q.at)}s` : undefined;
   return (
     <figure className="ed-q">
-      {moment ? <PlayableQuote id={q.id} text={q.text} moment={moment} title={e.title} who={nameOf(q.speaker)} at={q.at!} /> : <blockquote>“<span className="hl">{q.text}</span>”</blockquote>}
+      {moment ? <PlayableQuote id={q.id} text={q.text} moment={moment} poster={posterFor(moment.v)} title={e.title} who={nameOf(q.speaker)} at={q.at!} /> : <blockquote>“<span className="hl">{q.text}</span>”</blockquote>}
       {q.context ? <p className="ed-q-ctx">{q.context}</p> : null}
       <figcaption>
         <span className="ed-q-who">

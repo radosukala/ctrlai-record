@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { track } from '@/lib/analytics';
 import { wordsSaid, type Moment } from '@/lib/moments';
@@ -34,7 +35,7 @@ const STARTED = 'ctrl:moment-started';
  * for word); while it plays, only the words said so far are. The times come from the video's captions
  * (content/base/moments.json), so a word can light a few tenths of a second early or late.
  */
-export function PlayableQuote({ id, text, moment, title, who, at }: { id: string; text: string; moment: Moment; title: string; who: string; at: number }) {
+export function PlayableQuote({ id, text, moment, poster, title, who, at }: { id: string; text: string; moment: Moment; poster?: string; title: string; who: string; at: number }) {
   const words = useMemo(() => text.replace(/\s+/g, ' ').trim().split(' '), [text]);
   const [mounted, setMounted] = useState(false);
   const [failed, setFailed] = useState(false);
@@ -120,7 +121,8 @@ export function PlayableQuote({ id, text, moment, title, who, at }: { id: string
     <div className="ed-m">
       <div className="ed-m-stage">
         {!mounted ? (
-          <button type="button" className="ed-m-play" onClick={start} aria-label={`Play the moment: ${who} saying this, ${seconds} seconds`}>
+          <button type="button" className="ed-m-play" data-poster={poster ? '' : undefined} onClick={start} aria-label={`Play the moment: ${who} saying this, ${seconds} seconds`}>
+            {poster ? <Image src={poster} alt="" fill sizes="(min-width: 760px) 400px, 100vw" /> : null}
             <span className="ed-m-key" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor" /></svg></span>
             <span className="ed-m-len">{seconds} s</span>
             <span className="ed-m-who">{who}</span>
