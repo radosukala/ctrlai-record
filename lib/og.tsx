@@ -285,19 +285,25 @@ export function SayImage({ name, line, parts }: { name: string; line: string; pa
 /** X fills its feed at 16:9; LinkedIn shows a 4:5 portrait largest. */
 export const POST_X_SIZE = { width: 1200, height: 675 };
 export const POST_LI_SIZE = { width: 1080, height: 1350 };
+/** The checked clip is a 4:5 portrait for both feeds: the recording on top at 4:3, their words on paper below. */
+export const CLIP_SIZE = POST_LI_SIZE;
+export const CLIP_VIDEO = { width: 1080, height: 810 };
+const WAITING = '#a3a3a3';
 
 /**
  * Their words with the highlighter, as on the site: found word for word in the source. Satori can't paint a background
- * line by line, so each word carries the stroke, with the space after it, and the words wrap as a flex row.
+ * line by line, so each word carries the stroke, with the space after it, and the words wrap as a flex row. In a clip,
+ * `lit` words have been said so far: they carry the stroke, and the rest wait in grey.
  */
-function Marked({ text, size, lineHeight }: { text: string; size: number; lineHeight: number }) {
+function Marked({ text, size, lineHeight, lit }: { text: string; size: number; lineHeight: number; lit?: number }) {
   const words = text.replace(/\s+/g, ' ').trim().split(' ');
   const stroke = `linear-gradient(180deg, transparent 34%, ${MARK} 34%, ${MARK} 92%, transparent 92%)`;
+  const said = (i: number) => lit === undefined || i < lit;
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', fontFamily: SERIF, fontWeight: 600, fontSize: size, lineHeight, letterSpacing: -size * 0.01, color: INK }}>
       <div style={{ display: 'flex' }}>“</div>
       {words.map((word, i) => (
-        <div key={i} style={{ display: 'flex', backgroundImage: stroke, paddingRight: i === words.length - 1 ? 0 : size * 0.26 }}>{word}</div>
+        <div key={i} style={{ display: 'flex', ...(said(i) ? { backgroundImage: stroke } : { color: WAITING }), paddingRight: i === words.length - 1 ? 0 : size * 0.26 }}>{word}</div>
       ))}
       <div style={{ display: 'flex' }}>”</div>
     </div>
@@ -349,6 +355,37 @@ export function QuoteCard({ size, label, quote, who, role, source, context, ques
       ) : null}
       {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: meta - 3, color: MUTED, marginBottom: 12 }}>{disclosure}</div> : null}
       <Footer left="Found word for word in the source." url="ctrlai.com" />
+    </div>
+  );
+}
+
+export type ClipFrameProps = { quote: string; lit: number; who: string; role?: string; source: string; context?: string; checked: string };
+
+/**
+ * One frame of the checked clip, laid over the recording: the top stays clear for the video (with the mark in its
+ * corner), and below it their words light up with the highlighter as they are said, then who, where, and our context.
+ */
+export function ClipFrame({ quote, lit, who, role, source, context, checked }: ClipFrameProps) {
+  const qs = quote.length <= 110 ? 56 : quote.length <= 170 ? 48 : 41;
+  return (
+    <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', color: INK, fontFamily: SANS }}>
+      <div style={{ display: 'flex', height: CLIP_VIDEO.height, padding: '30px 34px', alignItems: 'flex-start' }}>
+        <div style={{ display: 'flex', background: PAPER, padding: '10px 14px' }}><Mark size={34} /></div>
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, background: PAPER, padding: '34px 64px 36px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, gap: Math.round(qs * 0.5) }}>
+          <Marked text={quote} size={qs} lineHeight={1.22} lit={lit} />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', fontSize: 32 }}>
+              <div style={{ display: 'flex', fontWeight: 700 }}>{who}</div>
+              {role ? <div style={{ display: 'flex', fontWeight: 500, color: INK_2, marginLeft: 10 }}>{`· ${clip(role, 60)}`}</div> : null}
+            </div>
+            <div style={{ display: 'flex', fontFamily: MONO, fontSize: 22, color: MUTED }}>{clip(source, 72)}</div>
+            {context ? <div style={{ display: 'flex', fontSize: 24, lineHeight: 1.28, color: INK_2, marginTop: 4 }}>{clip(context, 220)}</div> : null}
+          </div>
+        </div>
+        <Footer left={checked} url="ctrlai.com" />
+      </div>
     </div>
   );
 }
