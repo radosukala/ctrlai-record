@@ -260,3 +260,17 @@
 .ed-qi-q a { text-decoration: none; }
 .ed-qi-q a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
 .ed-qi-a { font-size: 16px; line-height: 1.55; color: var(--ink-2); max-width: 42em; }
+
+/* The page of one moment (/moment/<quote id>) */
+.mo { display: grid; gap: 18px; padding-block: clamp(26px, 4vw, 48px) clamp(56px, 8vw, 96px); }
+.mo-who { font-size: clamp(36px, 5.4vw, 60px); line-height: 1; letter-spacing: -0.014em; }
+.mo-role { margin-top: -10px; font-size: 18px; line-height: 1.35; color: var(--ink-2); }
+.mo-card { max-width: 780px; padding-top: 14px; border-top: 3px solid var(--ink); }
+.mo .ed-m-q { font-size: clamp(22px, 2.8vw, 30px); line-height: 1.4; }
+.mo-links { display: flex; flex-wrap: wrap; gap: 6px 26px; font-family: var(--mono); font-size: 13px; }
+.mo-more { display: grid; gap: 10px; max-width: 780px; margin-top: 8px; padding-top: 12px; border-top: 1px solid var(--ink); }
+.mo-more h2 { font-size: 21px; line-height: 1.1; }
+.mo-more ul { display: grid; gap: 10px; list-style: none; padding: 0; }
+.mo-more li { display: grid; gap: 1px; }
+.mo-more li a { font-family: var(--serif); font-size: 17px; line-height: 1.35; }
+.mo-more small { font-family: var(--mono); font-size: 12px; color: var(--muted); }

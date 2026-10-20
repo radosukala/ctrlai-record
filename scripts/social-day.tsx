@@ -11,12 +11,21 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { ImageResponse } from 'next/og';
 import { LATEST_DAY_RUN, dayEdition } from '@/content/base/editions';
-import { POST_LI_SIZE, POST_X_SIZE, QuoteCard, TodayCard, ogFonts } from '@/lib/og';
-import { dayKit, postsMarkdown, quoteCard, todayDisclosure, todayItems } from '@/lib/social-day';
+import { MomentCard, POST_LI_SIZE, POST_X_SIZE, QuoteCard, TodayCard, ogFonts } from '@/lib/og';
+import { momentFor } from '@/content/base/moments';
+import { posterDataUri } from '@/lib/posters';
+import { dayKit, momentCard, postsMarkdown, quoteCard, todayDisclosure, todayItems, type DayQuote } from '@/lib/social-day';
 
 async function png(element: React.ReactElement, size: { width: number; height: number }) {
   const response = new ImageResponse(element, { ...size, fonts: await ogFonts() });
   return Buffer.from(await response.arrayBuffer());
+}
+
+/** The quotation's card: with the video's thumbnail and a play key when it has a moment, else the words alone. */
+async function cardFor(p: DayQuote, size: 'x' | 'linkedin') {
+  const card = momentCard(p, size);
+  if (!card) return png(<QuoteCard {...quoteCard(p, size)} />, size === 'x' ? POST_X_SIZE : POST_LI_SIZE);
+  return png(<MomentCard {...card} poster={await posterDataUri(momentFor(p.q.id)!.v)} />, size === 'x' ? POST_X_SIZE : POST_LI_SIZE);
 }
 
 export async function runDay(args: string[]) {
@@ -30,12 +39,12 @@ export async function runDay(args: string[]) {
   await mkdir(out, { recursive: true });
   const written: string[] = [];
   if (kit.quote) {
-    await writeFile(path.join(out, 'x-quote.png'), await png(<QuoteCard {...quoteCard(kit.quote, 'x')} />, POST_X_SIZE));
-    await writeFile(path.join(out, 'linkedin-quote.png'), await png(<QuoteCard {...quoteCard(kit.quote, 'linkedin')} />, POST_LI_SIZE));
+    await writeFile(path.join(out, 'x-quote.png'), await cardFor(kit.quote, 'x'));
+    await writeFile(path.join(out, 'linkedin-quote.png'), await cardFor(kit.quote, 'linkedin'));
     written.push('x-quote.png', 'linkedin-quote.png');
   }
   for (const [i, alt] of kit.alternatives.entries()) {
-    await writeFile(path.join(out, `x-quote-${i + 2}.png`), await png(<QuoteCard {...quoteCard(alt, 'x')} />, POST_X_SIZE));
+    await writeFile(path.join(out, `x-quote-${i + 2}.png`), await cardFor(alt, 'x'));
     written.push(`x-quote-${i + 2}.png`);
   }
   const ed = dayEdition(run)!;

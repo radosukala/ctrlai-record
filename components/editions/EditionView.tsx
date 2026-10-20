@@ -61,7 +61,7 @@ function LensLines({ e }: { e: Entry }) {
 }
 
 /** A checked quotation: their words in the serif, marked, then whose words, where and how the checker found them. */
-function Quotation({ q, e, group }: { q: Quote; e: Entry; group?: Group }) {
+export function Quotation({ q, e, group }: { q: Quote; e: Entry; group?: Group }) {
   const title = isPerson(q.speaker) ? currentTitle(q.speaker) : undefined;
   const g = groupLabel(group ?? (isPerson(q.speaker) ? groupAt(q.speaker, q.said ?? e.published) : undefined));
   // A quotation with a moment can be played where it stands, from the source's own player.

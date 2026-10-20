@@ -4,9 +4,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { DAYS, dayEdition } from '../content/base/editions';
 import { nameOf } from '../content/base';
+import { MOMENTS, momentFor } from '../content/base/moments';
 import type { Entry, Quote } from '../content/base/types';
 import { LINKEDIN_LIMIT, X_LIMIT, xLength } from '../lib/social';
-import { REST_DAYS, cardable, dayKit, postsMarkdown, quotesOfTheDay, readElsewhere, sentences } from '../lib/social-day';
+import { REST_DAYS, cardable, dayKit, momentCard, postsMarkdown, quoteCard, quoteLink, quotesOfTheDay, readElsewhere, sentences } from '../lib/social-day';
 
 const ROOT = path.join(import.meta.dirname, '..');
 
@@ -19,10 +20,13 @@ for (const run of DAYS) {
     assert.ok(cardable(q, e), `${q.id} should not be on a card`);
     assert.ok(e.quotes.includes(q), 'the quotation is one of its entry’s checked quotations');
     assert.ok(kit.x!.length <= X_LIMIT, `X post is ${kit.x!.length} characters`);
-    assert.match(kit.x!.reply, new RegExp(`^https://ctrlai\\.com/base/${e.slug}\\?utm_source=x&utm_medium=social&utm_campaign=day-${run}#${q.id}$`));
+    // A quotation with a moment sends readers to the page that plays it; any other to its entry.
+    assert.match(kit.x!.reply, momentFor(q.id)
+      ? new RegExp(`^https://ctrlai\\.com/moment/${q.id}\\?utm_source=x&utm_medium=social&utm_campaign=day-${run}$`)
+      : new RegExp(`^https://ctrlai\\.com/base/${e.slug}\\?utm_source=x&utm_medium=social&utm_campaign=day-${run}#${q.id}$`));
     if (e.conflict) assert.match(kit.x!.text, /written with Claude/, 'a post about Anthropic says who writes Ctrl AI');
     // The words come before a title or a date: if the whole quotation fits with the shortest attribution, it is there.
-    const shortest = `${nameOf(q.speaker)}, ${q.hand === 'reported' ? `via ${e.outlet}` : e.outlet}:\n\n“${q.text}”\n\nChecked word for word. Link below.${e.conflict ? '\n\nCtrl AI is written with Claude (Anthropic).' : ''}`;
+    const shortest = `${nameOf(q.speaker)}, ${q.hand === 'reported' ? `via ${e.outlet}` : e.outlet}:\n\n“${q.text}”\n\n${momentFor(q.id) ? 'Watch it below, checked word for word.' : 'Checked word for word. Link below.'}${e.conflict ? '\n\nCtrl AI is written with Claude (Anthropic).' : ''}`;
     if (xLength(shortest) <= X_LIMIT) assert.ok(kit.x!.text.includes(`“${q.text}”`), `${run}: the quotation was dropped for a title`);
     for (const alt of kit.alternatives) assert.ok(cardable(alt.q, alt.e));
     const people = [kit.quote, ...kit.alternatives].map(p => p.q.speaker);
@@ -49,8 +53,8 @@ test('the same person is the card again within the rest days only when nobody fr
     const p = picks[i];
     if (!p) continue;
     const before = picks.slice(Math.max(0, i - REST_DAYS), i).filter(Boolean).map(x => x!.q.speaker);
-    // Tiers 0, 1 and 3 require someone not quoted in the rest days; a repeat can only come from tier 2 or 4.
-    if (before.includes(p.q.speaker)) assert.ok(p.tier === 2 || p.tier === 4, `${DAYS[i]} repeats ${p.q.speaker} from tier ${p.tier}`);
+    // Tiers 0, 1, 2 and 4 require someone not quoted in the rest days; a repeat can only come from tier 3 or 5.
+    if (before.includes(p.q.speaker)) assert.ok(p.tier === 3 || p.tier === 5, `${DAYS[i]} repeats ${p.q.speaker} from tier ${p.tier}`);
   }
 });
 
@@ -90,4 +94,45 @@ test('the reading agents are told to write lines that stand alone, since posts a
   const brief = fs.readFileSync(path.join(ROOT, 'radar/AGENT-BRIEF.md'), 'utf8');
   assert.match(brief, /\*\*Lines that stand alone\*\*/);
   assert.match(brief, /name who did what/);
+});
+
+test('a quotation with a moment comes first when it meets the first rule, may be from automatic captions, and is linked to its own page', () => {
+  const withMoment = Object.keys(MOMENTS)[0];
+  // Automatic captions are out for a card, unless the reader can hear the words on the quotation's page.
+  assert.ok(!cardable(quote(), entry({ transcript: 'auto' })));
+  assert.ok(cardable(quote({ id: withMoment }), entry({ transcript: 'auto' })));
+  for (const run of DAYS) {
+    const ranked = quotesOfTheDay(run);
+    const first = ranked.filter(p => p.tier === 0);
+    assert.ok(first.every(p => momentFor(p.q.id)), `${run}: a quotation without a moment in the moment tier`);
+    assert.deepEqual(ranked.slice(0, first.length), first, `${run}: the moment tier is not first`);
+    for (const p of ranked) {
+      const url = new URL(quoteLink(p, 'x', run));
+      assert.equal(url.pathname, momentFor(p.q.id) ? `/moment/${p.q.id}` : `/base/${p.e.slug}`);
+      assert.equal(url.searchParams.get('utm_source'), 'x');
+    }
+  }
+  // At least one day's card is a moment, so the kit is using them.
+  assert.ok(DAYS.some(run => quotesOfTheDay(run)[0]?.tier === 0), 'no day picked a moment');
+});
+
+test('the moment card says the same as the quotation card, and the second in the recording; none without a moment', () => {
+  const run = DAYS.find(r => quotesOfTheDay(r)[0]?.tier === 0)!;
+  const p = quotesOfTheDay(run)[0];
+  const card = momentCard(p, 'x')!;
+  const plain = quoteCard(p, 'x');
+  assert.equal(card.quote, plain.quote);
+  assert.equal(card.who, plain.who);
+  assert.equal(card.label, plain.label);
+  assert.match(card.source, / · at \d+:\d\d$/);
+  assert.ok(card.seconds > 2 && card.seconds < 90);
+  const without = quotesOfTheDay(run).find(x => !momentFor(x.q.id));
+  if (without) assert.equal(momentCard(without, 'x'), undefined);
+});
+
+test('a first-hand recording published days after it was made is "Said", not "Quoted by"', () => {
+  const p = { e: entry({ outlet: 'The Show', published: '2026-10-16', slug: 's' } as Partial<Entry>), q: quote({ hand: 'first', said: '2026-10-12' }) };
+  assert.match(quoteCard(p, 'x').label, /^Said · Oct 12, 2026$/);
+  const printed = { e: p.e, q: quote({ hand: 'reported', said: '2026-10-12' }) };
+  assert.match(quoteCard(printed, 'x').label, /^Quoted by The Show/);
 });

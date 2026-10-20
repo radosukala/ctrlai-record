@@ -1,4 +1,5 @@
 import { currentTitle, isPerson, nameOf } from '@/content/base';
+import { momentFor } from '@/content/base/moments';
 import { DAYS, dayEdition, quoteWeight, speakerGroup, usable, type Edition } from '@/content/base/editions';
 import { CHANGE_LABEL, TOPIC } from '@/content/base/taxonomy';
 import type { Entry, Quote } from '@/content/base/types';
@@ -6,7 +7,7 @@ import { GROUP_LABEL } from '@/content/registry';
 import type { Group } from '@/content/registry/types';
 import { SITE, longDate, shortDate } from '@/lib/site';
 import { LINKEDIN_LIMIT, X_LIMIT, firstSentence, xLength } from '@/lib/social';
-import type { QuoteCardProps, TodayItem } from '@/lib/og';
+import type { MomentCardProps, QuoteCardProps, TodayItem } from '@/lib/og';
 
 /**
  * The day's posts for X and LinkedIn, drafted from the day's edition (content/base/editions.ts) after the morning run.
@@ -33,10 +34,11 @@ const shouting = (text: string) => {
 export const readElsewhere = (e: Entry) => /\b(saved text is|read (through|via)|returned 403|via the [A-Z])/i.test(e.notes ?? '');
 
 /** Can this quotation be the day's card? Checked, a named person, their own clear words, short enough to read. Words
- *  quoted second-hand only when we read that outlet's own text in full, so "as quoted in" names the right outlet. */
+ *  quoted second-hand only when we read that outlet's own text in full, so "as quoted in" names the right outlet.
+ *  Auto-captions are out (capitals, no speaker names) unless the quotation has a moment: then the reader can hear it. */
 export function cardable(q: Quote, e: Entry): boolean {
   if (q.hand === 'reported' && (e.access !== 'full' || readElsewhere(e))) return false;
-  return usable(q) && isPerson(q.speaker) && q.text.length <= CARD_MAX && e.importance >= 2 && e.transcript !== 'auto' && !shouting(q.text);
+  return usable(q) && isPerson(q.speaker) && q.text.length <= CARD_MAX && e.importance >= 2 && (e.transcript !== 'auto' || Boolean(momentFor(q.id))) && !shouting(q.text);
 }
 
 /** A source we read as text or an official transcript, not a summary of one. */
@@ -64,7 +66,8 @@ export type DayQuote = { e: Entry; q: Quote; group?: Group; tier?: number };
 
 /**
  * The day's quotations in order, one per person, by tiers and the heaviest first within each (the editions' weight,
- * plus a little for text we read in full):
+ * plus a little for text we read in full). A quotation with a moment (the person can be seen and heard saying it, on
+ * its own page) comes first when it meets the first rule; after that:
  *   1. sound words: a person's own, or quoted by an outlet whose text we read in full (leaders are mostly quoted, not
  *      published); nothing our notes flag as unverified; someone in a known public role; not quoted in the last
  *      REST_DAYS days; from a group with fewer than PER_GROUP of those days' quotations;
@@ -82,7 +85,7 @@ export function rankQuotes(ed: Edition, earlier: DayQuote[] = []): DayQuote[] {
     .flatMap(e => e.quotes.filter(q => cardable(q, e)).map(q => {
       const group = speakerGroup(q, e);
       const s = stand(q, e, group);
-      return { e, q, group, known: s.known, w: quoteWeight(q, e) + s.boost + sourceBonus(e) };
+      return { e, q, group, known: s.known, moment: Boolean(momentFor(q.id)), w: quoteWeight(q, e) + s.boost + sourceBonus(e) };
     }))
     .sort((a, b) => b.w - a.w || b.e.published.localeCompare(a.e.published) || a.q.id.localeCompare(b.q.id));
   type C = (typeof pool)[number];
@@ -93,6 +96,7 @@ export function rankQuotes(ed: Edition, earlier: DayQuote[] = []): DayQuote[] {
   const roomy = (c: C) => (groups.get(c.group ?? 'other') ?? 0) < PER_GROUP;
   const good = (c: C) => own(c) || quoted(c);
   const tiers: ((c: C) => boolean)[] = [
+    c => c.moment && good(c) && fresh(c) && roomy(c),
     c => good(c) && fresh(c) && roomy(c),
     c => good(c) && fresh(c),
     c => good(c),
@@ -137,12 +141,18 @@ export function link(path: string, source: 'x' | 'linkedin', run: string, hash =
   return url.toString();
 }
 
+/** Where a post's link goes: a quotation with a moment has its own page that plays it; any other goes to its entry. */
+export function quoteLink(p: DayQuote, source: 'x' | 'linkedin', run: string): string {
+  return momentFor(p.q.id) ? link(`/moment/${p.q.id}`, source, run) : link(`/base/${p.e.slug}`, source, run, p.q.id);
+}
+
 /** A role as the sources gave it, without our own provenance notes ("…, per ControlAI"). */
 const role = (id: string) => currentTitle(id)?.replace(/,\s*per\s+[^,]+$/i, '');
 const weekday = (d: string) => new Date(`${d}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'long', timeZone: 'UTC' });
 const said = (p: DayQuote) => p.q.said ?? p.e.published;
-/** First-hand words were said there; a reporter's quotation was printed there. */
-const reported = (p: DayQuote) => p.q.hand === 'reported' || (p.q.said !== undefined && p.q.said !== p.e.published);
+/** First-hand words were said there; a reporter's quotation was printed there. A quotation marked first-hand is the
+ *  speaker's own even when the recording was published days after it was made (a podcast recorded on Monday). */
+const reported = (p: DayQuote) => p.q.hand === 'reported' || (p.q.hand !== 'first' && p.q.said !== undefined && p.q.said !== p.e.published);
 
 export function quoteCard(p: DayQuote, size: QuoteCardProps['size']): QuoteCardProps {
   return {
@@ -155,6 +165,27 @@ export function quoteCard(p: DayQuote, size: QuoteCardProps['size']): QuoteCardP
     context: p.q.context,
     question: size === 'linkedin' ? TOPIC[p.e.topics[0]]?.question : undefined,
     disclosure: p.e.conflict ? DISCLOSURE : undefined,
+  };
+}
+
+const clock = (seconds: number) => `${Math.floor(seconds / 60)}:${String(Math.floor(seconds % 60)).padStart(2, '0')}`;
+
+/** The moment card's words (the thumbnail is added where the card is drawn): the same facts as the quotation card,
+ *  and the second in the recording. Undefined when the quotation has no moment. */
+export function momentCard(p: DayQuote, size: MomentCardProps['size']): Omit<MomentCardProps, 'poster'> | undefined {
+  const moment = momentFor(p.q.id);
+  if (!moment) return undefined;
+  const card = quoteCard(p, size);
+  return {
+    size,
+    label: card.label,
+    quote: card.quote,
+    who: card.who,
+    role: card.role,
+    source: p.q.at !== undefined ? `${card.source} · at ${clock(p.q.at)}` : card.source,
+    context: card.context,
+    seconds: Math.round(moment.to - moment.from),
+    disclosure: card.disclosure,
   };
 }
 
@@ -182,7 +213,10 @@ export function xQuotePost(p: DayQuote, run: string): { text: string; reply: str
     `${name}, ${reported(p) ? `via ${p.e.outlet}` : p.e.outlet}`,
   ];
   const disclosure = p.e.conflict ? '\n\nCtrl AI is written with Claude (Anthropic).' : '';
-  const tails = ['Checked word for word against the source. Link below.', 'Checked word for word. Link below.'].map(t => t + disclosure);
+  const tails = (momentFor(p.q.id)
+    ? ['Watch it at the link below, checked word for word.', 'Watch it below, checked word for word.']
+    : ['Checked word for word against the source. Link below.', 'Checked word for word. Link below.']
+  ).map(t => t + disclosure);
   // The whole quotation if it fits, with a shorter attribution and closing line if need be; else its last whole sentence,
   // then its first (still word for word, and the card carries all of it); else our line of context. The disclosure stays.
   const parts = sentences(p.q.text);
@@ -193,7 +227,7 @@ export function xQuotePost(p: DayQuote, run: string): { text: string; reply: str
     `${heads[heads.length - 1]}.\n\n${tails[1]}`,
   ];
   const text = options.find(o => xLength(o) <= X_LIMIT) ?? options[options.length - 1];
-  return { text, reply: link(`/base/${p.e.slug}`, 'x', run, p.q.id) };
+  return { text, reply: quoteLink(p, 'x', run) };
 }
 
 /** The LinkedIn version of the quotation post, with the link in the first comment. */
@@ -202,9 +236,9 @@ export function linkedinQuotePost(p: DayQuote, run: string): { text: string; com
   const where = reported(p) ? `as quoted by ${p.e.outlet} on ${longDate(p.e.published)}` : `${p.e.outlet}, ${longDate(said(p))}`;
   const lines = [`${who}, ${where}:`, '', `“${p.q.text}”`];
   if (p.q.context) lines.push('', p.q.context);
-  lines.push('', 'Every quotation in the record is checked word for word against its source. The entry is in the first comment.');
+  lines.push('', `Every quotation in the record is checked word for word against its source. ${momentFor(p.q.id) ? 'Press play at the link in the first comment.' : 'The entry is in the first comment.'}`);
   if (p.e.conflict) lines.push('', 'Ctrl AI is written with Claude, made by Anthropic. Same rules for every company.');
-  return { text: lines.join('\n'), comment: link(`/base/${p.e.slug}`, 'linkedin', run, p.q.id) };
+  return { text: lines.join('\n'), comment: quoteLink(p, 'linkedin', run) };
 }
 
 /** What changed today: the edition's changes, in our words, for the LinkedIn card and post. */
@@ -264,22 +298,23 @@ export function postsMarkdown(kit: DayKit): string {
   const out = [`# Posts for ${kit.date}`, '', 'Drafts only: nothing is posted. Read each one before posting.', ''];
   if (kit.x && kit.quote) {
     const over = kit.x.length > X_LIMIT ? ` · OVER BY ${kit.x.length - X_LIMIT}` : '';
-    out.push(`## X · quote of the day · attach x-quote.png · ${kit.x.length}/${X_LIMIT}${over}`, '', kit.x.text, '', 'First reply:', '', kit.x.reply, '',
-      `Why this one: ${nameOf(kit.quote.q.speaker)}, ${kit.quote.group && kit.quote.group !== 'other' ? GROUP_LABEL[kit.quote.group].toLowerCase() : 'no group recorded yet'}, ${kit.quote.q.hand === 'reported' ? 'quoted by the source' : 'own words'}; entry ${kit.quote.e.slug}.`, '');
+    const moment = Boolean(momentFor(kit.quote.q.id));
+    out.push(`## X · quote of the day · attach x-quote.png${moment ? ' (the moment card)' : ''} · ${kit.x.length}/${X_LIMIT}${over}`, '', kit.x.text, '', `First reply${moment ? ' (the page plays it)' : ''}:`, '', kit.x.reply, '',
+      `Why this one: ${nameOf(kit.quote.q.speaker)}, ${kit.quote.group && kit.quote.group !== 'other' ? GROUP_LABEL[kit.quote.group].toLowerCase() : 'no group recorded yet'}, ${kit.quote.q.hand === 'reported' ? 'quoted by the source' : 'own words'}${moment ? ', and it can be seen and heard on its own page' : ''}; entry ${kit.quote.e.slug}.`, '');
   } else {
     out.push('## X · quote of the day', '', 'No quotation met the rules today (checked, a named person, own clear words, 220 characters at most). Skip X today, or post the LinkedIn text.', '');
   }
   if (kit.alternatives.length) {
     out.push('## Or one of these instead', '', 'Each has its own card (x-quote-2.png, x-quote-3.png). Swap the card and the words in the X text, and use its link.', '');
     kit.alternatives.forEach((p, i) => {
-      out.push(`${i + 2}. ${nameOf(p.q.speaker)}${role(p.q.speaker) ? `, ${role(p.q.speaker)}` : ''} (${p.e.outlet}, ${shortDate(said(p))}): “${p.q.text}”`, `   ${link(`/base/${p.e.slug}`, 'x', kit.run, p.q.id)}`, '');
+      out.push(`${i + 2}. ${nameOf(p.q.speaker)}${role(p.q.speaker) ? `, ${role(p.q.speaker)}` : ''} (${p.e.outlet}, ${shortDate(said(p))}): “${p.q.text}”${momentFor(p.q.id) ? ' (moment card)' : ''}`, `   ${quoteLink(p, 'x', kit.run)}`, '');
     });
   }
   if (kit.linkedinToday) {
     out.push(`## LinkedIn · what changed today · attach linkedin-today.png · ${kit.linkedinToday.length}/${LINKEDIN_LIMIT}`, '', kit.linkedinToday.text, '', 'First comment:', '', kit.linkedinToday.comment, '');
   }
   if (kit.linkedinQuote) {
-    out.push(`## LinkedIn · alternative: the quotation · attach linkedin-quote.png · ${kit.linkedinQuote.length}/${LINKEDIN_LIMIT}`, '', kit.linkedinQuote.text, '', 'First comment:', '', kit.linkedinQuote.comment, '');
+    out.push(`## LinkedIn · alternative: the quotation · attach linkedin-quote.png${kit.quote && momentFor(kit.quote.q.id) ? ' (the moment card)' : ''} · ${kit.linkedinQuote.length}/${LINKEDIN_LIMIT}`, '', kit.linkedinQuote.text, '', 'First comment:', '', kit.linkedinQuote.comment, '');
   }
   return out.join('\n');
 }

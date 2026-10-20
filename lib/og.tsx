@@ -299,13 +299,17 @@ function Marked({ text, size, lineHeight, lit }: { text: string; size: number; l
   const words = text.replace(/\s+/g, ' ').trim().split(' ');
   const stroke = `linear-gradient(180deg, transparent 34%, ${MARK} 34%, ${MARK} 92%, transparent 92%)`;
   const said = (i: number) => lit === undefined || i < lit;
+  const last = words.length - 1;
+  // The quotation marks travel with the first and last word, so a closing mark never wraps onto a line of its own.
   return (
     <div style={{ display: 'flex', flexWrap: 'wrap', fontFamily: SERIF, fontWeight: 600, fontSize: size, lineHeight, letterSpacing: -size * 0.01, color: INK }}>
-      <div style={{ display: 'flex' }}>“</div>
       {words.map((word, i) => (
-        <div key={i} style={{ display: 'flex', ...(said(i) ? { backgroundImage: stroke } : { color: WAITING }), paddingRight: i === words.length - 1 ? 0 : size * 0.26 }}>{word}</div>
+        <div key={i} style={{ display: 'flex' }}>
+          {i === 0 ? <div style={{ display: 'flex' }}>“</div> : null}
+          <div style={{ display: 'flex', ...(said(i) ? { backgroundImage: stroke } : { color: WAITING }), paddingRight: i === last ? 0 : size * 0.26 }}>{word}</div>
+          {i === last ? <div style={{ display: 'flex' }}>”</div> : null}
+        </div>
       ))}
-      <div style={{ display: 'flex' }}>”</div>
     </div>
   );
 }
@@ -386,6 +390,96 @@ export function ClipFrame({ quote, lit, who, role, source, context, checked }: C
         </div>
         <Footer left={checked} url="ctrlai.com" />
       </div>
+    </div>
+  );
+}
+
+export type MomentCardProps = {
+  size: 'x' | 'linkedin';
+  /** Top right, in mono: "Said · Oct 12, 2026". */
+  label: string;
+  quote: string;
+  who: string;
+  role?: string;
+  /** Where and when, and the second in the recording, in mono. */
+  source: string;
+  context?: string;
+  /** The video's thumbnail as a data URI (lib/posters.ts); without one the picture is a plain dark frame. */
+  poster?: string;
+  /** How long the moment lasts. */
+  seconds: number;
+  disclosure?: string;
+  /** A shorter layout for the link preview (1200×630), where the card has less height than on X. */
+  compact?: boolean;
+};
+
+/** The play button over a poster: the picture says "someone is speaking here", the key says "press play". */
+function Poster({ src, width, height, seconds, playWidth }: { src?: string; width: number; height: number; seconds: number; playWidth: number }) {
+  const abs = { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex' } as const;
+  return (
+    <div style={{ display: 'flex', position: 'relative', width, height, background: INK, overflow: 'hidden' }}>
+      {src ? <img src={src} width={width} height={height} style={{ objectFit: 'cover', opacity: 0.9 }} /> : null}
+      <div style={{ ...abs, backgroundImage: 'linear-gradient(180deg, rgba(17,17,17,0) 52%, rgba(17,17,17,0.82))' }} />
+      <div style={{ ...abs, alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: playWidth, height: Math.round(playWidth * 0.76), background: SIGNAL }}>
+          <svg width={Math.round(playWidth * 0.36)} height={Math.round(playWidth * 0.36)} viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="#ffffff" /></svg>
+        </div>
+      </div>
+      <div style={{ position: 'absolute', left: 18, bottom: 14, display: 'flex', fontFamily: MONO, fontWeight: 600, fontSize: width > 700 ? 24 : 19, color: '#ffffff' }}>{`${seconds} s · plays on ctrlai.com`}</div>
+    </div>
+  );
+}
+
+/**
+ * A moment as a card: the video's thumbnail with a play key, then their words with the highlighter, who said them,
+ * where and when, and our line of context. For X (side by side, 16:9), LinkedIn (a 4:5 portrait) and the page's link
+ * preview. The picture is the channel's own thumbnail, as in any link preview, and the card names the show.
+ */
+export function MomentCard({ size, label, quote, who, role, source, context, poster, seconds, disclosure, compact }: MomentCardProps) {
+  const text = clip(quote, 260);
+  if (size === 'linkedin') {
+    const qs = text.length <= 110 ? 58 : text.length <= 170 ? 50 : 44;
+    return (
+      <div style={{ ...FRAME, padding: '50px 64px 46px' }}>
+        <BrandRow right={label} size={42} />
+        <div style={{ display: 'flex', marginTop: 30 }}><Poster src={poster} width={952} height={500} seconds={seconds} playWidth={92} /></div>
+        <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, gap: Math.round(qs * 0.5), paddingTop: 32 }}>
+          <Marked text={text} size={qs} lineHeight={1.22} />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', fontSize: 31 }}>
+              <div style={{ display: 'flex', fontWeight: 700 }}>{who}</div>
+              {role ? <div style={{ display: 'flex', fontWeight: 500, color: INK_2, marginLeft: 10 }}>{`· ${clip(role, 60)}`}</div> : null}
+            </div>
+            <div style={{ display: 'flex', fontFamily: MONO, fontSize: 21, color: MUTED }}>{clip(source, 72)}</div>
+            {context ? <div style={{ display: 'flex', fontSize: 24, lineHeight: 1.28, color: INK_2, marginTop: 4 }}>{clip(context, 150)}</div> : null}
+          </div>
+        </div>
+        {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: 16, color: MUTED, marginBottom: 12 }}>{disclosure}</div> : null}
+        <Footer left="Found word for word in the source." url="ctrlai.com" />
+      </div>
+    );
+  }
+  const pw = compact ? 420 : 470;
+  const qs = text.length <= 110 ? (compact ? 36 : 40) : text.length <= 170 ? (compact ? 31 : 34) : compact ? 27 : 30;
+  return (
+    <div style={{ ...FRAME, padding: compact ? '30px 52px 26px' : '36px 52px 32px' }}>
+      <BrandRow right={label} size={compact ? 30 : 34} />
+      <div style={{ display: 'flex', flexGrow: 1, gap: 44, paddingTop: compact ? 20 : 26, paddingBottom: compact ? 16 : 20 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', width: pw, gap: 12 }}>
+          <Poster src={poster} width={pw} height={Math.round((pw * 9) / 16)} seconds={seconds} playWidth={72} />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+            <div style={{ display: 'flex', fontSize: compact ? 25 : 27, fontWeight: 700, lineHeight: 1.1 }}>{who}</div>
+            {role ? <div style={{ display: 'flex', fontSize: compact ? 19 : 21, fontWeight: 500, color: INK_2, lineHeight: 1.2 }}>{clip(role, 56)}</div> : null}
+            <div style={{ display: 'flex', fontFamily: MONO, fontSize: 14, color: MUTED, marginTop: 2 }}>{clip(source, 62)}</div>
+          </div>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', width: 1200 - 104 - pw - 44, justifyContent: 'center', gap: 20 }}>
+          <Marked text={text} size={qs} lineHeight={1.24} />
+          {context && !compact ? <div style={{ display: 'flex', fontSize: 21, lineHeight: 1.3, color: INK_2 }}>{clip(context, 150)}</div> : null}
+        </div>
+      </div>
+      {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: 14, color: MUTED, marginBottom: 10 }}>{disclosure}</div> : null}
+      <Footer left="Found word for word in the source." url="ctrlai.com" />
     </div>
   );
 }
