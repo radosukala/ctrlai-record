@@ -18,6 +18,10 @@ npx tsx scripts/radar/check-entry.ts "${ENTRIES[@]}" | tail -3 || { echo "STOP: 
 echo "== Compose"
 npx tsx scripts/radar/compose.ts > "$DIR/compose.log" 2>&1 || { grep -E "PROBLEM|dropped|Nothing written" "$DIR/compose.log" | head -20; echo "STOP: the Base could not be built; nothing was written or pushed (see $DIR/compose.log)"; exit 1; }
 tail -2 "$DIR/compose.log"
+echo "== Moments"
+# When each quotation said in a recording is spoken, word by word, for the page's play buttons (content/base/moments.json).
+# Never stops the run: a quotation without a moment is shown as text, with a link to its second.
+if npx tsx scripts/radar/moments.ts > "$DIR/moments.log" 2>&1; then tail -1 "$DIR/moments.log"; else echo "WARNING: the moments could not be timed (see $DIR/moments.log); the run publishes anyway"; fi
 echo "== Types and tests"
 npx tsc --noEmit || { echo "STOP: type errors; nothing pushed"; git checkout -- content/base; exit 1; }
 if ! npm test > "$DIR/test.log" 2>&1; then grep -E "✖|AssertionError" "$DIR/test.log" | head -20; echo "STOP: tests fail (see $DIR/test.log); nothing pushed"; git checkout -- content/base; exit 1; fi

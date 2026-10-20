@@ -19,15 +19,14 @@ import { TOPIC } from '@/content/base/taxonomy';
 import { CLIP_SIZE, CLIP_VIDEO, ClipFrame, QuoteCard, ogFonts } from '@/lib/og';
 import { longDate, shortDate } from '@/lib/site';
 import { DISCLOSURE } from '@/lib/social-day';
+import { LEAD, TAIL, alignWords } from '@/lib/moments';
 import { secondOpinion } from './radar/second';
 
 const TOOLS = process.env.CTRLAI_TOOLS ?? '/Users/rado/code/ctrlai-tools';
 const WHISPER_CLI = process.env.WHISPER_CLI ?? '/opt/homebrew/bin/whisper-cli';
 const WHISPER_MODEL = process.env.WHISPER_MODEL ?? `${TOOLS}/models/ggml-large-v3-turbo-q5_0.bin`;
 const FPS = '24000/1001';
-/** Silence kept before the first word and after the last, and how long the card holds at the end. */
-const LEAD = 0.6;
-const TAIL = 0.8;
+/** How long the card holds at the end. */
 const CARD = 3.5;
 
 type Word = { start: number; end: number; text: string };
@@ -59,51 +58,6 @@ async function hear(video: string, dir: string): Promise<Word[]> {
   return words;
 }
 
-const norm = (w: string) => w.toLowerCase().replace(/[‘’]/g, "'").replace(/[^a-z0-9']/g, '');
-
-/**
- * When each word of the quotation is said: matched in order to the heard words, in the stretch that matches the most
- * (the latest one on a tie, so a repeated "I" before the quotation doesn't pull its start early). A word the
- * transcript didn't catch gets a time between its neighbours.
- */
-function timeWords(quote: string[], heard: Word[]): { starts: number[]; end: number; matched: number } {
-  const q = quote.map(norm);
-  const h = heard.map(w => norm(w.text));
-  const span = Math.ceil(q.length * 1.5) + 5;
-  let best = { n: -1, pairs: [] as [number, number][] };
-  for (let s = 0; s < h.length; s++) {
-    if (!q.slice(0, 3).includes(h[s])) continue;
-    const win = h.slice(s, s + span);
-    const dp = Array.from({ length: q.length + 1 }, () => new Array<number>(win.length + 1).fill(0));
-    for (let i = 1; i <= q.length; i++)
-      for (let j = 1; j <= win.length; j++) dp[i][j] = q[i - 1] === win[j - 1] ? dp[i - 1][j - 1] + 1 : Math.max(dp[i - 1][j], dp[i][j - 1]);
-    const n = dp[q.length][win.length];
-    if (n < best.n) continue;
-    const pairs: [number, number][] = [];
-    for (let i = q.length, j = win.length; i > 0 && j > 0; ) {
-      if (q[i - 1] === win[j - 1]) { pairs.unshift([i - 1, s + j - 1]); i--; j--; }
-      else if (dp[i - 1][j] >= dp[i][j - 1]) i--;
-      else j--;
-    }
-    best = { n, pairs };
-  }
-  if (best.pairs.length < 2) throw new Error('The quotation could not be found in what was heard.');
-  const at = new Map(best.pairs.map(([i, j]) => [i, heard[j]]));
-  const known = best.pairs.map(([i]) => i);
-  const starts = quote.map((_, i) => {
-    if (at.has(i)) return at.get(i)!.start;
-    const before = known.filter(k => k < i).pop();
-    const after = known.find(k => k > i);
-    if (before === undefined) return at.get(after!)!.start - 0.3 * (after! - i);
-    if (after === undefined) return at.get(before)!.end + 0.3 * (i - before - 1);
-    const a = at.get(before)!.start, b = at.get(after)!.start;
-    return a + ((b - a) * (i - before)) / (after - before);
-  });
-  const last = best.pairs[best.pairs.length - 1];
-  const end = last[0] === quote.length - 1 ? heard[last[1]].end : starts[starts.length - 1] + 0.4;
-  return { starts, end, matched: best.n };
-}
-
 const mmss = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
 
 async function main() {
@@ -125,7 +79,7 @@ async function main() {
   const second = secondOpinion(q.text, heard.map(w => w.text).join(' '));
   if (!second.ok) throw new Error(`The second transcript doesn't carry the quotation (${second.reason ?? `agreement ${second.agreement.toFixed(2)}`}). No clip.`);
   const words = q.text.replace(/\s+/g, ' ').trim().split(' ');
-  const timed = timeWords(words, heard);
+  const timed = alignWords(words, heard);
   const length = Number(run('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', video]).trim());
   const from = Math.max(0, timed.starts[0] - LEAD);
   const to = Math.min(length, timed.end + TAIL);

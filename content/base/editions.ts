@@ -6,6 +6,7 @@ import { groupAt } from '../registry';
 import { BRIEFS, visible as briefVisible } from '../decisions';
 import type { DecisionBrief } from '../decisions/types';
 import { LINES } from './edition-lines';
+import { momentFor } from './moments';
 
 /**
  * Editions: the Base read by time. Today (one Radar run), this week (the seven days up to the newest entry) and this
@@ -54,11 +55,11 @@ export type Said = { e: Entry; q: Quote; group?: Group };
 export type Thread = { id: string; title: string; first: string; last: string; entries: Entry[] };
 export type Deadline = { date: string; text: string; brief: DecisionBrief };
 
-export type Counts = { changes: number; said: number; watch: number; research: number; threads: number; decided: number };
+export type Counts = { changes: number; heard: number; said: number; watch: number; research: number; threads: number; decided: number };
 export const COUNTS: Record<Horizon, Counts> = {
-  day: { changes: 3, said: 3, watch: 3, research: 5, threads: 5, decided: 6 },
-  week: { changes: 5, said: 6, watch: 5, research: 5, threads: 8, decided: 8 },
-  month: { changes: 8, said: 8, watch: 6, research: 8, threads: 10, decided: 10 },
+  day: { changes: 3, heard: 3, said: 3, watch: 3, research: 5, threads: 5, decided: 6 },
+  week: { changes: 5, heard: 6, said: 6, watch: 5, research: 5, threads: 8, decided: 8 },
+  month: { changes: 8, heard: 6, said: 8, watch: 6, research: 8, threads: 10, decided: 10 },
 };
 
 export type Edition = {
@@ -74,6 +75,7 @@ export type Edition = {
   written: boolean;
   entries: Entry[];
   changes: Pick[];
+  heard: Said[];
   said: Said[];
   watch: Pick[];
   watchAll: number;
@@ -109,11 +111,17 @@ export function changesOf(entries: Entry[], n: number, used = new Set<string>())
 
 /** Said: one checked quotation per person, from entries that matter, weighted toward power and first-hand knowledge,
  *  and at most two from any one group, so the mix of voices shows. */
-export function saidOf(entries: Entry[], n: number, skip = new Set<string>()): Said[] {
+export function saidOf(
+  entries: Entry[],
+  n: number,
+  skip = new Set<string>(),
+  opts: { only?: (q: Quote) => boolean; perGroup?: number; minImportance?: number; capOther?: boolean } = {},
+): Said[] {
+  const { only = () => true, perGroup = 2, minImportance = 2, capOther = true } = opts;
   const pool: { s: number; e: Entry; q: Quote; group?: Group }[] = [];
   for (const e of entries) {
-    if (e.importance < 2) continue;
-    for (const q of e.quotes) if (usable(q) && isPerson(q.speaker)) pool.push({ s: quoteWeight(q, e), e, q, group: speakerGroup(q, e) });
+    if (e.importance < minImportance) continue;
+    for (const q of e.quotes) if (usable(q) && isPerson(q.speaker) && only(q)) pool.push({ s: quoteWeight(q, e), e, q, group: speakerGroup(q, e) });
   }
   pool.sort((a, b) => b.s - a.s || newestFirst(a.e, b.e));
   const out: Said[] = [];
@@ -121,7 +129,7 @@ export function saidOf(entries: Entry[], n: number, skip = new Set<string>()): S
   const groups = new Map<string, number>();
   for (const { e, q, group } of pool) {
     const g = group ?? 'other';
-    if (people.has(q.speaker) || (groups.get(g) ?? 0) >= 2) continue;
+    if (people.has(q.speaker) || ((capOther || g !== 'other') && (groups.get(g) ?? 0) >= perGroup)) continue;
     out.push({ e, q, group });
     people.add(q.speaker);
     groups.set(g, (groups.get(g) ?? 0) + 1);
@@ -129,6 +137,16 @@ export function saidOf(entries: Entry[], n: number, skip = new Set<string>()): S
   }
   return out;
 }
+
+/** Words in capitals are an auto-caption's, and look like shouting on a page. */
+const shouting = (text: string) => text === text.toUpperCase() && /[A-Z]/.test(text);
+
+/** Heard: the same rule as Said, from the quotations we can play (a moment in a recording's captions), so the page
+ *  can show the person saying it. Entries of any importance qualify, because a person on video is rare; the weights
+ *  still put the ones that matter first. Unknown speakers aren't capped as a group. Taken before Said, so a person is
+ *  quoted once. */
+export const heardOf = (entries: Entry[], n: number, skip = new Set<string>()): Said[] =>
+  saidOf(entries, n, skip, { only: q => Boolean(momentFor(q.id)) && !shouting(q.text), perGroup: 3, minImportance: 1, capOther: false });
 
 /** Watch and listen: interviews and talks we read in full (captions or a transcript), by importance, then by reach.
  *  A quotation already shown higher up the edition isn't shown again; the interview then goes without one. */
@@ -197,8 +215,10 @@ function build(horizon: Horizon, key: string, entries: Entry[], from: string, to
   const c = COUNTS[horizon];
   const used = new Set<string>();
   const changes = changesOf(entries, c.changes, used);
+  const heard = heardOf(entries, c.heard, used);
+  for (const h of heard) used.add(h.q.speaker);
   const said = saidOf(entries, c.said, used);
-  const watch = watchOf(entries, c.watch, new Set([...changes.flatMap(p => (p.q ? [p.q.id] : [])), ...said.map(s => s.q.id)]));
+  const watch = watchOf(entries, c.watch, new Set([...changes.flatMap(p => (p.q ? [p.q.id] : [])), ...heard.map(h => h.q.id), ...said.map(s => s.q.id)]));
   const research = researchOf(entries, c.research);
   const shown = new Set([...changes.map(p => p.e.slug), ...watch.picks.map(p => p.e.slug), ...research.picks.map(e => e.slug)]);
   const rest = TOPICS.map(t => ({
@@ -208,7 +228,7 @@ function build(horizon: Horizon, key: string, entries: Entry[], from: string, to
   })).filter(g => g.entries.length);
   const { line, written } = lineFor(horizon, key, changes, extra.month);
   return {
-    horizon, key, from, to, run: extra.run, line, written, entries, changes, said,
+    horizon, key, from, to, run: extra.run, line, written, entries, changes, heard, said,
     watch: watch.picks, watchAll: watch.all, watchRead: watch.read,
     research: research.picks, researchAll: research.all,
     decided: decidedOf(entries).slice(0, c.decided),

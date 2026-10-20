@@ -2,8 +2,10 @@ import type { ReactNode } from 'react';
 import Link from 'next/link';
 import '@/components/editions/editions.css';
 import { LensBar } from '@/components/editions/EditionControls';
+import { PlayableQuote } from '@/components/editions/PlayableQuote';
 import { currentTitle, isPerson, linkOnly, nameOf, onRecord } from '@/content/base';
 import { comingUp, type Edition, type Pick } from '@/content/base/editions';
+import { momentFor } from '@/content/base/moments';
 import { CHANGE_LABEL, KIND_LABEL, TOPIC } from '@/content/base/taxonomy';
 import type { Entry, LensId, Quote } from '@/content/base/types';
 import { QUESTIONS, visible } from '@/content/questions';
@@ -61,10 +63,12 @@ function LensLines({ e }: { e: Entry }) {
 function Quotation({ q, e, group }: { q: Quote; e: Entry; group?: Group }) {
   const title = isPerson(q.speaker) ? currentTitle(q.speaker) : undefined;
   const g = groupLabel(group ?? (isPerson(q.speaker) ? groupAt(q.speaker, q.said ?? e.published) : undefined));
-  const youtube = /youtube\.com\/watch|youtu\.be\//.test(e.url) && q.at != null;
+  // A quotation with a moment can be played where it stands, from the source's own player.
+  const moment = q.at != null && q.speakerCertain ? momentFor(q.id) : undefined;
+  const youtube = moment ? `https://www.youtube.com/watch?v=${moment.v}&t=${Math.floor(q.at!)}s` : /youtube\.com\/watch|youtu\.be\//.test(e.url) && q.at != null ? `${e.url}${e.url.includes('?') ? '&' : '?'}t=${Math.floor(q.at)}s` : undefined;
   return (
     <figure className="ed-q">
-      <blockquote>“<span className="hl">{q.text}</span>”</blockquote>
+      {moment ? <PlayableQuote id={q.id} text={q.text} moment={moment} title={e.title} who={nameOf(q.speaker)} at={q.at!} /> : <blockquote>“<span className="hl">{q.text}</span>”</blockquote>}
       {q.context ? <p className="ed-q-ctx">{q.context}</p> : null}
       <figcaption>
         <span className="ed-q-who">
@@ -77,7 +81,7 @@ function Quotation({ q, e, group }: { q: Quote; e: Entry; group?: Group }) {
           <Link href={`/base/${e.slug}#${q.id}`}>{e.outlet}, {shortDate(q.said ?? e.published)}</Link>
           {' · '}{q.match === 'exact' ? 'found word for word' : 'same words, other punctuation'}
           {q.second ? ' · two transcripts agree' : ''}
-          {youtube ? <>{' · '}<a className="ed-moment" href={`${e.url}${e.url.includes('?') ? '&' : '?'}t=${Math.floor(q.at!)}s`}>▶ at {mmss(q.at!)}</a></> : null}
+          {youtube ? <>{' · '}<a className="ed-moment" href={youtube}>▶ at {mmss(q.at!)}</a></> : null}
         </span>
       </figcaption>
     </figure>
@@ -104,6 +108,24 @@ function Changes({ ed, id }: { ed: Edition; id: string }) {
           ))}
         </div>
       ) : <p className="ed-empty">Nothing we read {w.when} was a decision, new evidence, a correction or a commitment. Everything is listed under “Everything else”.</p>}
+    </section>
+  );
+}
+
+function Heard({ ed, id }: { ed: Edition; id: string }) {
+  if (!ed.heard.length) return null;
+  return (
+    <section className="ed-sec ed-sec-heard" aria-labelledby={id}>
+      <SecHead id={id} title={`Heard ${words(ed).when}`} note="Press play to see and hear the person say it, from the source’s own player. Their words light up as they are spoken, and every one was found word for word in the source. Nothing loads from YouTube until you press play." />
+      <div className="ed-heard">
+        {ed.heard.map(({ e, q, group }) => (
+          <div key={q.id} className="ed-said-card ed-heard-card">
+            <p className="ed-said-grp">{groupLabel(group) ?? 'Group not yet recorded'}</p>
+            <Quotation q={q} e={e} group={group} />
+          </div>
+        ))}
+      </div>
+      <p className="ed-note">The video’s captions give a time for each line, not each word, so a word can light a few tenths of a second early or late. The recording is the evidence; the highlight is a guide.</p>
     </section>
   );
 }
@@ -346,6 +368,7 @@ function Made({ ed, id }: { ed: Edition; id: string }) {
         <summary>How this edition chooses</summary>
         <ul>
           <li><b>What changed:</b> entries whose change is a decision, new evidence, a correction or a commitment, that we read in full; most important first; one per story.</li>
+          <li><b>Heard:</b> the same rule as Said, from the quotations we can play: the recording’s captions carry them. Any entry qualifies, the weights put the ones that matter first, and a person is quoted once on the page.</li>
           <li><b>Said:</b> one checked quotation per person from the entries that matter, people with the power to act or first-hand knowledge first, at most two from any one group.</li>
           <li><b>Watch and listen:</b> interviews and talks we read in full, by importance, then by views.</li>
           <li><b>Decided and promised:</b> decisions, corrections and commitments, decisions first.</li>
@@ -389,6 +412,7 @@ export function EditionView({ ed, heading = 'h2', front = false, nav }: { ed: Ed
         <LensBar />
       </header>
       <div className="ed-body">
+        <Heard ed={ed} id={`${p}-heard`} />
         <Changes ed={ed} id={`${p}-changed`} />
         <Said ed={ed} id={`${p}-said`} />
         <Watch ed={ed} id={`${p}-watch`} />

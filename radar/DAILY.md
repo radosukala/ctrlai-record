@@ -83,7 +83,8 @@ bash /Users/rado/code/ctrlai-com-radar/scripts/radar/rt.sh finish RUN
 ```
 It checks every quotation (against both transcripts when there are two), rebuilds the Base, runs the type check and all
 tests, saves the full texts to the private archive (`/Users/rado/code/ctrlai-archive`), and pushes to `main`; Vercel
-deploys in about a minute. It also drafts the day's posts for X and LinkedIn into `RUN/posts/` (`POSTS.md` and the
+deploys in about a minute. It times the day's recorded quotations, word by word, for the site's play buttons
+(`content/base/moments.json`), and drafts the day's posts for X and LinkedIn into `RUN/posts/` (`POSTS.md` and the
 cards); nothing is posted. If it prints `STOP`, fix the cause in the run's entry files (a quotation: copy the exact words
 or remove it; a test: read the message) and run it again. Never change code or tests to make a run pass, and never push
 any other way.
