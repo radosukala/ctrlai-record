@@ -425,7 +425,7 @@ function Poster({ src, width, height, seconds, playWidth }: { src?: string; widt
           <svg width={Math.round(playWidth * 0.36)} height={Math.round(playWidth * 0.36)} viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="#ffffff" /></svg>
         </div>
       </div>
-      <div style={{ position: 'absolute', left: 18, bottom: 14, display: 'flex', fontFamily: MONO, fontWeight: 600, fontSize: width > 700 ? 24 : 19, color: '#ffffff' }}>{`${seconds} s · plays on ctrlai.com`}</div>
+      <div style={{ position: 'absolute', left: 14, bottom: 12, display: 'flex', padding: width > 700 ? '6px 14px' : '4px 10px', background: 'rgba(17,17,17,0.9)', fontFamily: MONO, fontWeight: 600, fontSize: width > 700 ? 22 : 17, color: '#ffffff' }}>{`${seconds} s · plays on ctrlai.com`}</div>
     </div>
   );
 }

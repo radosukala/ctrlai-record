@@ -7,7 +7,7 @@ import { nameOf } from '../content/base';
 import { MOMENTS, momentFor } from '../content/base/moments';
 import type { Entry, Quote } from '../content/base/types';
 import { LINKEDIN_LIMIT, X_LIMIT, xLength } from '../lib/social';
-import { REST_DAYS, cardable, dayKit, momentCard, postsMarkdown, quoteCard, quoteLink, quotesOfTheDay, readElsewhere, sentences } from '../lib/social-day';
+import { REST_DAYS, cardable, dateLabel, dayKit, linkedinQuotePost, xQuotePost, momentCard, postsMarkdown, quoteCard, quoteLink, quotesOfTheDay, readElsewhere, sentences } from '../lib/social-day';
 
 const ROOT = path.join(import.meta.dirname, '..');
 
@@ -135,4 +135,23 @@ test('a first-hand recording published days after it was made is "Said", not "Qu
   assert.match(quoteCard(p, 'x').label, /^Said · Oct 12, 2026$/);
   const printed = { e: p.e, q: quote({ hand: 'reported', said: '2026-10-12' }) };
   assert.match(quoteCard(printed, 'x').label, /^Quoted by The Show/);
+});
+
+test('a video or podcast with no recorded date is labelled with the day it was published, not "Said"', () => {
+  const e = (kind: Entry['kind']) => entry({ kind, outlet: 'The Show', published: '2026-10-16', slug: 's' } as Partial<Entry>);
+  assert.equal(dateLabel({ e: e('video'), q: quote({ hand: 'first' }) }), 'Video · Oct 16, 2026');
+  assert.equal(dateLabel({ e: e('podcast'), q: quote({ hand: 'first' }) }), 'Podcast · Oct 16, 2026');
+  // The entry says when it was said: that is the date.
+  assert.equal(dateLabel({ e: e('video'), q: quote({ hand: 'first', said: '2026-10-12' }) }), 'Said · Oct 12, 2026');
+  // Text and hearings keep "Said".
+  assert.equal(dateLabel({ e: e('hearing'), q: quote({ hand: 'first' }) }), 'Said · Oct 16, 2026');
+  assert.equal(dateLabel({ e: e('essay'), q: quote({ hand: 'first' }) }), 'Said · Oct 16, 2026');
+});
+
+test('a recording published days after it was made says "recorded" before the date it was made, in both posts', () => {
+  const p = { e: entry({ kind: 'podcast', outlet: 'The Show', published: '2026-10-16', slug: 's' } as Partial<Entry>), q: quote({ hand: 'first', said: '2026-10-12' }) };
+  assert.match(linkedinQuotePost(p, '2026-10-20').text, /The Show, recorded October 12, 2026:/);
+  assert.match(xQuotePost(p, '2026-10-20').text, /The Show, recorded Oct 12:/);
+  const sameDay = { e: p.e, q: quote({ hand: 'first' }) };
+  assert.doesNotMatch(linkedinQuotePost(sameDay, '2026-10-20').text, /recorded/);
 });

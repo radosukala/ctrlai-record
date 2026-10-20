@@ -150,14 +150,25 @@ export function quoteLink(p: DayQuote, source: 'x' | 'linkedin', run: string): s
 const role = (id: string) => currentTitle(id)?.replace(/,\s*per\s+[^,]+$/i, '');
 const weekday = (d: string) => new Date(`${d}T12:00:00Z`).toLocaleDateString('en-US', { weekday: 'long', timeZone: 'UTC' });
 const said = (p: DayQuote) => p.q.said ?? p.e.published;
+/** "recorded " before a date when a first-hand recording was published days after it was made. */
+const recorded = (p: DayQuote) => (p.q.hand !== 'reported' && p.q.said !== undefined && p.q.said !== p.e.published ? 'recorded ' : '');
 /** First-hand words were said there; a reporter's quotation was printed there. A quotation marked first-hand is the
  *  speaker's own even when the recording was published days after it was made (a podcast recorded on Monday). */
 const reported = (p: DayQuote) => p.q.hand === 'reported' || (p.q.hand !== 'first' && p.q.said !== undefined && p.q.said !== p.e.published);
 
+/** The card's date label. "Said" only where the entry pins down when the words were said (or the source is text, whose
+ *  date is when it was written); the date of a video or a podcast is when it was published, which may be days after. */
+const WORD: Partial<Record<Entry['kind'], string>> = { video: 'Video', podcast: 'Podcast' };
+export function dateLabel(p: DayQuote): string {
+  if (reported(p)) return `Quoted by ${p.e.outlet} · ${shortDate(p.e.published)}, ${p.e.published.slice(0, 4)}`;
+  const date = p.q.said ?? p.e.published;
+  return `${p.q.said ? 'Said' : WORD[p.e.kind] ?? 'Said'} · ${shortDate(date)}, ${date.slice(0, 4)}`;
+}
+
 export function quoteCard(p: DayQuote, size: QuoteCardProps['size']): QuoteCardProps {
   return {
     size,
-    label: reported(p) ? `Quoted by ${p.e.outlet} · ${shortDate(p.e.published)}, ${p.e.published.slice(0, 4)}` : `Said · ${shortDate(said(p))}, ${said(p).slice(0, 4)}`,
+    label: dateLabel(p),
     quote: p.q.text,
     who: nameOf(p.q.speaker),
     role: role(p.q.speaker),
@@ -208,8 +219,8 @@ export function xQuotePost(p: DayQuote, run: string): { text: string; reply: str
   const title = role(p.q.speaker);
   // Who said it, from the fullest line down: the words matter more than a title or a date, so those go first.
   const heads = [
-    ...(title ? [`${name}, ${title}, ${reported(p) ? `as quoted by ${p.e.outlet} (${shortDate(p.e.published)})` : `${p.e.outlet}, ${shortDate(said(p))}`}`] : []),
-    `${name}, ${reported(p) ? `as quoted by ${p.e.outlet} (${shortDate(p.e.published)})` : `${p.e.outlet}, ${shortDate(said(p))}`}`,
+    ...(title ? [`${name}, ${title}, ${reported(p) ? `as quoted by ${p.e.outlet} (${shortDate(p.e.published)})` : `${p.e.outlet}, ${recorded(p)}${shortDate(said(p))}`}`] : []),
+    `${name}, ${reported(p) ? `as quoted by ${p.e.outlet} (${shortDate(p.e.published)})` : `${p.e.outlet}, ${recorded(p)}${shortDate(said(p))}`}`,
     `${name}, ${reported(p) ? `via ${p.e.outlet}` : p.e.outlet}`,
   ];
   const disclosure = p.e.conflict ? '\n\nCtrl AI is written with Claude (Anthropic).' : '';
@@ -233,7 +244,7 @@ export function xQuotePost(p: DayQuote, run: string): { text: string; reply: str
 /** The LinkedIn version of the quotation post, with the link in the first comment. */
 export function linkedinQuotePost(p: DayQuote, run: string): { text: string; comment: string } {
   const who = [nameOf(p.q.speaker), role(p.q.speaker)].filter(Boolean).join(', ');
-  const where = reported(p) ? `as quoted by ${p.e.outlet} on ${longDate(p.e.published)}` : `${p.e.outlet}, ${longDate(said(p))}`;
+  const where = reported(p) ? `as quoted by ${p.e.outlet} on ${longDate(p.e.published)}` : `${p.e.outlet}, ${recorded(p)}${longDate(said(p))}`;
   const lines = [`${who}, ${where}:`, '', `“${p.q.text}”`];
   if (p.q.context) lines.push('', p.q.context);
   lines.push('', `Every quotation in the record is checked word for word against its source. ${momentFor(p.q.id) ? 'Press play at the link in the first comment.' : 'The entry is in the first comment.'}`);
