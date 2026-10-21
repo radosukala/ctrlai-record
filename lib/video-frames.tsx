@@ -109,13 +109,14 @@ export function NumbersFrame({ rows, shown }: { rows: { n: string; label: string
   );
 }
 
-export function EndFrame({ address, disclosure }: { address: string; disclosure?: string }) {
+export function EndFrame({ address, disclosure, voiceNote }: { address: string; disclosure?: string; voiceNote?: string }) {
   return (
     <div style={{ ...FRAME, justifyContent: 'center', gap: 50 }}>
       <Mark size={96} />
       <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: 112, lineHeight: 0.98, letterSpacing: -1.5 }}>Every source and every quotation, in the full edition</div>
       <div style={{ display: 'flex', alignSelf: 'flex-start', padding: '20px 30px 24px', background: INK, color: PAPER, fontFamily: MONO, fontWeight: 600, fontSize: 52 }}>{address}</div>
       {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: 29, lineHeight: 1.4, color: MUTED }}>{disclosure}</div> : null}
+      {voiceNote ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: 29, lineHeight: 1.4, color: MUTED }}>{voiceNote}</div> : null}
       <div style={{ display: 'flex', fontSize: 38, fontWeight: 500, color: INK_2 }}>Ctrl AI · the checked record of AI safety and control</div>
     </div>
   );

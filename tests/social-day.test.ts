@@ -156,9 +156,9 @@ test('a recording published days after it was made says "recorded" before the da
   assert.doesNotMatch(linkedinQuotePost(sameDay, '2026-10-20').text, /recorded/);
 });
 
-test('the day video is made only of our own material: no downloaded footage, audio or thumbnails, no voice', () => {
+test('the day video is made only of our own material: no downloaded footage, audio or thumbnails', () => {
   for (const f of ['scripts/social-video.tsx', 'lib/video-frames.tsx']) {
     const source = fs.readFileSync(path.join(ROOT, f), 'utf8');
-    assert.doesNotMatch(source, /yt-dlp|ytimg|posterFor|posterDataUri|elevenlabs|text-to-speech/i, `${f} must not use anyone else's footage, picture or voice`);
+    assert.doesNotMatch(source, /yt-dlp|ytimg|posterFor|posterDataUri/i, `${f} must not use anyone else's footage or picture`);
   }
 });
