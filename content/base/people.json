@@ -24,6 +24,18 @@
   ]
  },
  {
+  "id": "abdul-el-sayed",
+  "name": "Abdul El-Sayed",
+  "titles": [
+   {
+    "title": "US Senate candidate (D-MI)",
+    "entry": "c-span-2026-10-20-el-sayed-recursive-self-improvement",
+    "on": "2026-10-20",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "abdulrahman-alfozan",
   "name": "Abdulrahman Alfozan",
   "titles": [
@@ -528,6 +540,11 @@
   ]
  },
  {
+  "id": "andrew-gritsaev",
+  "name": "Andrew Gritsaev",
+  "titles": []
+ },
+ {
   "id": "andrew-solender",
   "name": "Andrew Solender",
   "titles": []
@@ -541,6 +558,18 @@
     "entry": "anthropic-2026-10-08-cyber-mission",
     "on": "2026-10-08",
     "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "andrew-yao",
+  "name": "Andrew Yao",
+  "titles": [
+   {
+    "title": "Chief Scientist of the hub",
+    "entry": "lesswrong-2026-10-21-tsinghua-ai-safety-residency",
+    "on": "2026-10-21",
+    "role": "mentioned"
    }
   ]
  },
@@ -569,6 +598,16 @@
  {
   "id": "ankurpandey42",
   "name": "ankurpandey42",
+  "titles": []
+ },
+ {
+  "id": "ann-altman",
+  "name": "Ann Altman",
+  "titles": []
+ },
+ {
+  "id": "anna-desmarais",
+  "name": "Anna Desmarais",
   "titles": []
  },
  {
@@ -622,6 +661,12 @@
   "name": "Anthony Cimino",
   "titles": [
    {
+    "title": "leads the federal affairs team at Anthropic",
+    "entry": "zvi-2026-10-20-anthropic-draft-bill-response",
+    "on": "2026-10-20",
+    "role": "speaker"
+   },
+   {
     "title": "Anthropic's head of federal affairs",
     "entry": "transformer-2026-10-19-anthropic-weak-ai-bill",
     "on": "2026-10-19",
@@ -654,6 +699,11 @@
  {
   "id": "arav-dhoot",
   "name": "arav-dhoot",
+  "titles": []
+ },
+ {
+  "id": "ari-hawkins",
+  "name": "Ari Hawkins",
   "titles": []
  },
  {
@@ -797,6 +847,18 @@
   "id": "bahrad-a-sokhansanj",
   "name": "Bahrad A. Sokhansanj",
   "titles": []
+ },
+ {
+  "id": "bailey-lipschultz",
+  "name": "Bailey Lipschultz",
+  "titles": [
+   {
+    "title": "Bloomberg reporter",
+    "entry": "bloomberg-tech-2026-10-20-nscale-anthropic-45b-compute-talks",
+    "on": "2026-10-20",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "balint-nafradi",
@@ -1021,6 +1083,12 @@
   "name": "Bill Gates",
   "titles": [
    {
+    "title": "Microsoft founder",
+    "entry": "cnn-2026-10-20-suleyman-human-first-ai",
+    "on": "2026-10-20",
+    "role": "mentioned"
+   },
+   {
     "title": "Microsoft co-founder and chair of the Gates Foundation",
     "entry": "cnn-2026-10-12-gates-tapper-most-dangerous-technology",
     "on": "2026-10-12",
@@ -1029,9 +1097,20 @@
   ]
  },
  {
+  "id": "bingqi-shang",
+  "name": "Bingqi Shang",
+  "titles": []
+ },
+ {
   "id": "blake-montgomery",
   "name": "Blake Montgomery",
   "titles": [
+   {
+    "title": "US tech editor, the Guardian",
+    "entry": "guardian-2026-10-20-dangers-tech-billionaires-shape-world",
+    "on": "2026-10-20",
+    "role": "author"
+   },
    {
     "title": "US tech editor, The Guardian",
     "entry": "guardian-2026-10-13-techscape-ai-workplace-monitoring",
@@ -1051,6 +1130,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "bowen-baker",
+  "name": "Bowen Baker",
+  "titles": []
  },
  {
   "id": "brad-smith",
@@ -1242,6 +1326,23 @@
     "title": "Co-host, All-In Podcast",
     "entry": "all-in-2026-10-10-claude-conscious-pope",
     "on": "2026-10-10",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "chanamessinger",
+  "name": "chanamessinger",
+  "titles": []
+ },
+ {
+  "id": "chang-yong-rhee",
+  "name": "Chang Yong Rhee",
+  "titles": [
+   {
+    "title": "Former Bank of Korea governor",
+    "entry": "cnbc-2026-10-20-rhee-ai-inequality",
+    "on": "2026-10-20",
     "role": "speaker"
    }
   ]
@@ -1481,7 +1582,26 @@
  {
   "id": "clare-duffy",
   "name": "Clare Duffy",
-  "titles": []
+  "titles": [
+   {
+    "title": "tech reporter, CNN",
+    "entry": "cnn-2026-10-20-suleyman-human-first-ai",
+    "on": "2026-10-20",
+    "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "clem-delangue",
+  "name": "Clem Delangue",
+  "titles": [
+   {
+    "title": "Co-founder, Hugging Face",
+    "entry": "techcrunch-2026-10-20-delangue-netflix-documentary-inaccurate",
+    "on": "2026-10-20",
+    "role": "subject"
+   }
+  ]
  },
  {
   "id": "cmlkevin",
@@ -1863,6 +1983,18 @@
   ]
  },
  {
+  "id": "dave-mckay",
+  "name": "Dave McKay",
+  "titles": [
+   {
+    "title": "CEO, Royal Bank of Canada",
+    "entry": "bloomberg-2026-10-20-rbc-considers-blocking-muse",
+    "on": "2026-10-20",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "david-bau",
   "name": "David Bau",
   "titles": []
@@ -2016,6 +2148,11 @@
   ]
  },
  {
+  "id": "david-reinstein",
+  "name": "David Reinstein",
+  "titles": []
+ },
+ {
   "id": "david-relman",
   "name": "David Relman",
   "titles": [
@@ -2121,6 +2258,18 @@
   "id": "davide-baldelli",
   "name": "Davide Baldelli",
   "titles": []
+ },
+ {
+  "id": "dax-raad",
+  "name": "Dax Raad",
+  "titles": [
+   {
+    "title": "Co-creator, OpenCode",
+    "entry": "axios-2026-10-21-ai-models-refuse-fight-hackers",
+    "on": "2026-10-21",
+    "role": "subject"
+   }
+  ]
  },
  {
   "id": "deepali-gautam",
@@ -2298,6 +2447,12 @@
   "name": "Dylan Field",
   "titles": [
    {
+    "title": "CEO, Figma",
+    "entry": "all-in-2026-10-20-figma-ceo-trust-problem",
+    "on": "2026-10-20",
+    "role": "speaker"
+   },
+   {
     "title": "Figma",
     "entry": "all-in-2026-10-19-dylan-field-ai-designers",
     "on": "2026-10-19",
@@ -2334,6 +2489,12 @@
   "name": "Ed Ludlow",
   "titles": [
    {
+    "title": "Host, Bloomberg Tech",
+    "entry": "bloomberg-tech-2026-10-20-nscale-anthropic-45b-compute-talks",
+    "on": "2026-10-20",
+    "role": "speaker"
+   },
+   {
     "title": "Bloomberg Tech reporter",
     "entry": "bloomberg-tech-2026-10-15-nyc-comptroller-anthropic-ipo",
     "on": "2026-10-15",
@@ -2356,6 +2517,18 @@
   "id": "ed-zitron",
   "name": "Ed Zitron",
   "titles": []
+ },
+ {
+  "id": "edouard-harris",
+  "name": "Edouard Harris",
+  "titles": [
+   {
+    "title": "Co-founder, Gladstone AI",
+    "entry": "doom-debates-2026-10-20-harris-ai-chernobyl-pause",
+    "on": "2026-10-20",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "eduardo-porter",
@@ -2383,6 +2556,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "edward-santow",
+  "name": "Edward Santow",
+  "titles": []
  },
  {
   "id": "eitan-waks",
@@ -2915,8 +3093,18 @@
   ]
  },
  {
+  "id": "franklin-mingzhe-li",
+  "name": "Franklin Mingzhe Li",
+  "titles": []
+ },
+ {
   "id": "fred-bruford",
   "name": "Fred Bruford",
+  "titles": []
+ },
+ {
+  "id": "gabby-miller",
+  "name": "Gabby Miller",
   "titles": []
  },
  {
@@ -3084,6 +3272,12 @@
   "name": "Geoffrey Irving",
   "titles": [
    {
+    "title": "Former Chief Scientist, AI Security Institute",
+    "entry": "controlai-2026-10-21-irving-tells-mps-dont-build",
+    "on": "2026-10-21",
+    "role": "speaker"
+   },
+   {
     "title": "former chief scientist at AISI",
     "entry": "guardian-2026-10-17-labour-figures-ai-worry",
     "on": "2026-10-17",
@@ -3114,6 +3308,23 @@
     "role": "subject"
    }
   ]
+ },
+ {
+  "id": "georges-elhedery",
+  "name": "Georges Elhedery",
+  "titles": [
+   {
+    "title": "CEO, HSBC",
+    "entry": "cnbc-2026-10-20-hsbc-ceo-ai-data-centers",
+    "on": "2026-10-20",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "gerardo-simari",
+  "name": "Gerardo Simari",
+  "titles": []
  },
  {
   "id": "gias-uddin",
@@ -3262,6 +3473,11 @@
  {
   "id": "gwyn-topham",
   "name": "Gwyn Topham",
+  "titles": []
+ },
+ {
+  "id": "hadas-orgad",
+  "name": "Hadas Orgad",
   "titles": []
  },
  {
@@ -3428,6 +3644,11 @@
   ]
  },
  {
+  "id": "henry-kissinger",
+  "name": "Henry Kissinger",
+  "titles": []
+ },
+ {
   "id": "hidenori-tanaka",
   "name": "Hidenori Tanaka",
   "titles": []
@@ -3564,6 +3785,11 @@
   ]
  },
  {
+  "id": "isabella-ward",
+  "name": "Isabella Ward",
+  "titles": []
+ },
+ {
   "id": "isabelle-augenstein",
   "name": "Isabelle Augenstein",
   "titles": []
@@ -3576,6 +3802,11 @@
  {
   "id": "israel-abebe-azime",
   "name": "Israel Abebe Azime",
+  "titles": []
+ },
+ {
+  "id": "itai-shapira",
+  "name": "Itai Shapira",
   "titles": []
  },
  {
@@ -3975,6 +4206,18 @@
   ]
  },
  {
+  "id": "jeremie-harris",
+  "name": "Jeremie Harris",
+  "titles": [
+   {
+    "title": "Co-founder, Gladstone AI",
+    "entry": "doom-debates-2026-10-20-harris-ai-chernobyl-pause",
+    "on": "2026-10-20",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "jerrold-huang",
   "name": "Jerrold Huang",
   "titles": []
@@ -3988,6 +4231,18 @@
   "id": "jerusalem-demsas",
   "name": "Jerusalem Demsas",
   "titles": []
+ },
+ {
+  "id": "jess-menton",
+  "name": "Jess Menton",
+  "titles": [
+   {
+    "title": "Bloomberg Television presenter",
+    "entry": "bloomberg-tv-2026-10-20-anthropic-s1-80-billion-loss",
+    "on": "2026-10-20",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "jessica-glenza",
@@ -4066,6 +4321,11 @@
  {
   "id": "jim-shannon",
   "name": "Jim Shannon",
+  "titles": []
+ },
+ {
+  "id": "jim-vandehei",
+  "name": "Jim VandeHei",
   "titles": []
  },
  {
@@ -4179,6 +4439,18 @@
     "title": "University of Maryland",
     "entry": "census-2026-04-microstructure-ai-diffusion-firms-tasks",
     "on": "2026-04",
+    "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "john-hewitt",
+  "name": "John Hewitt",
+  "titles": [
+   {
+    "title": "Columbia University",
+    "entry": "arxiv-2026-10-20-reward-misspecification-cot-monitorability",
+    "on": "2026-10-20",
     "role": "author"
    }
   ]
@@ -4469,6 +4741,11 @@
   ]
  },
  {
+  "id": "juan-cruz-mendoza",
+  "name": "Juan Cruz Mendoza",
+  "titles": []
+ },
+ {
   "id": "juann-kim",
   "name": "Juann Kim",
   "titles": []
@@ -4558,6 +4835,18 @@
   "id": "kaiming-liu",
   "name": "Kaiming Liu",
   "titles": []
+ },
+ {
+  "id": "kaiwen-zhou",
+  "name": "Kaiwen Zhou",
+  "titles": [
+   {
+    "title": "Preparedness and Policy, Scale AI",
+    "entry": "arxiv-2026-10-20-rsi-control-covert-sabotage",
+    "on": "2026-10-20",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "kamala-harris",
@@ -4685,6 +4974,30 @@
   "id": "kate-conger",
   "name": "Kate Conger",
   "titles": []
+ },
+ {
+  "id": "kate-okeeffe",
+  "name": "Kate O'Keeffe",
+  "titles": [
+   {
+    "title": "Bloomberg reporter",
+    "entry": "bloomberg-tech-2026-10-20-zai-founders-accused-spy-group",
+    "on": "2026-10-20",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "kate-park",
+  "name": "Kate Park",
+  "titles": [
+   {
+    "title": "Reporter, Asia, TechCrunch",
+    "entry": "techcrunch-2026-10-20-us-orders-deepseek-removal",
+    "on": "2026-10-20",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "kate-rooney",
@@ -4827,6 +5140,18 @@
     "entry": "chicago-fed-2026-03-forecasting-economic-effects-ai",
     "on": "2026-03",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "kevin-quinn",
+  "name": "Kevin Quinn",
+  "titles": [
+   {
+    "title": "Creator of Velvet Vale",
+    "entry": "wired-2026-10-20-ai-agent-internet-researchers-listserv",
+    "on": "2026-10-20",
+    "role": "speaker"
    }
   ]
  },
@@ -5258,6 +5583,11 @@
   ]
  },
  {
+  "id": "liping-yang",
+  "name": "Liping Yang",
+  "titles": []
+ },
+ {
   "id": "liron-shapira",
   "name": "Liron Shapira",
   "titles": [
@@ -5467,6 +5797,18 @@
   ]
  },
  {
+  "id": "madhu-shashanka",
+  "name": "Madhu Shashanka",
+  "titles": [
+   {
+    "title": "Co-founder, chief scientist and CTO, Concentric AI",
+    "entry": "guardian-2026-10-20-cto-ai-needs-human-expertise",
+    "on": "2026-10-20",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "madison-mills",
   "name": "Madison Mills",
   "titles": []
@@ -5480,6 +5822,18 @@
     "entry": "arxiv-2026-10-09-reward-hacking-spreads-between-agents",
     "on": "2026-10-09",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "mao-ning",
+  "name": "Mao Ning",
+  "titles": [
+   {
+    "title": "Foreign Ministry spokesperson, China",
+    "entry": "techcrunch-2026-10-20-us-orders-deepseek-removal",
+    "on": "2026-10-20",
+    "role": "speaker"
    }
   ]
  },
@@ -5523,6 +5877,23 @@
   "id": "maria-curi",
   "name": "Maria Curi",
   "titles": []
+ },
+ {
+  "id": "maria-vanina-martinez",
+  "name": "Maria Vanina Martinez",
+  "titles": []
+ },
+ {
+  "id": "maria-victoria-carro",
+  "name": "Maria Victoria Carro",
+  "titles": [
+   {
+    "title": "Università degli Studi di Genova; FAIR, IALAB, Universidad de Buenos Aires",
+    "entry": "arxiv-2026-10-20-humans-correct-judgments-debate-weaker-ai",
+    "on": "2026-10-20",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "mariana-van-zeller",
@@ -5783,6 +6154,11 @@
     "role": "mentioned"
    }
   ]
+ },
+ {
+  "id": "melody-guan",
+  "name": "Melody Guan",
+  "titles": []
  },
  {
   "id": "mia-goth",
@@ -6056,6 +6432,11 @@
   ]
  },
  {
+  "id": "myra-cheng",
+  "name": "Myra Cheng",
+  "titles": []
+ },
+ {
   "id": "nabil-baugher",
   "name": "Nabil Baugher",
   "titles": []
@@ -6166,6 +6547,18 @@
   "titles": []
  },
  {
+  "id": "nathaniel-moran",
+  "name": "Nathaniel Moran",
+  "titles": [
+   {
+    "title": "Representative",
+    "entry": "transformer-2026-10-20-moran-office-ai-staffer",
+    "on": "2026-10-20",
+    "role": "subject"
+   }
+  ]
+ },
+ {
   "id": "ned-lamont",
   "name": "Ned Lamont",
   "titles": [
@@ -6198,6 +6591,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "newt-gingrich",
+  "name": "Newt Gingrich",
+  "titles": []
  },
  {
   "id": "ngoc-hai-nguyen",
@@ -6238,6 +6636,11 @@
  {
   "id": "niklas-herbster",
   "name": "Niklas Herbster",
+  "titles": []
+ },
+ {
+  "id": "nikola-jurkovic",
+  "name": "Nikola Jurkovic",
   "titles": []
  },
  {
@@ -6306,6 +6709,18 @@
   "id": "oleksandr-marchenko-breneur",
   "name": "Oleksandr Marchenko Breneur",
   "titles": []
+ },
+ {
+  "id": "olivia-snow",
+  "name": "Olivia Snow",
+  "titles": [
+   {
+    "title": "Research fellow, UCLA Center for Critical Internet Inquiry",
+    "entry": "wired-2026-10-20-ai-agent-internet-researchers-listserv",
+    "on": "2026-10-20",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "olly-glover",
@@ -6766,6 +7181,18 @@
   ]
  },
  {
+  "id": "rebecca-solnit",
+  "name": "Rebecca Solnit",
+  "titles": [
+   {
+    "title": "Guardian US columnist",
+    "entry": "guardian-2026-10-20-slap-down-tech-broligarchs",
+    "on": "2026-10-20",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "regina-catipon",
   "name": "Regina Catipon",
   "titles": []
@@ -6946,6 +7373,23 @@
   ]
  },
  {
+  "id": "robert-tait",
+  "name": "Robert Tait",
+  "titles": []
+ },
+ {
+  "id": "robin-geiss",
+  "name": "Robin Geiss",
+  "titles": [
+   {
+    "title": "Director, UNIDIR",
+    "entry": "un-news-2026-10-20-ai-crowd-out-warfare-decisions",
+    "on": "2026-10-20",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "robyn-kozierok",
   "name": "Robyn Kozierok",
   "titles": []
@@ -6968,7 +7412,14 @@
  {
   "id": "romaine-bostick",
   "name": "Romaine Bostick",
-  "titles": []
+  "titles": [
+   {
+    "title": "Bloomberg Television presenter",
+    "entry": "bloomberg-tv-2026-10-20-anthropic-s1-80-billion-loss",
+    "on": "2026-10-20",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "ron-conway",
@@ -7142,6 +7593,12 @@
   "name": "Sam Altman",
   "titles": [
    {
+    "title": "Head of OpenAI",
+    "entry": "guardian-2026-10-20-slap-down-tech-broligarchs",
+    "on": "2026-10-20",
+    "role": "subject"
+   },
+   {
     "title": "chief executive, OpenAI",
     "entry": "guardian-2026-10-14-democratise-ai-citizens-assemblies",
     "on": "2026-10-14",
@@ -7254,6 +7711,23 @@
   ]
  },
  {
+  "id": "sarah-sacher",
+  "name": "Sarah Sacher",
+  "titles": []
+ },
+ {
+  "id": "sarah-t-roberts",
+  "name": "Sarah T. Roberts",
+  "titles": [
+   {
+    "title": "President, Association of Internet Researchers",
+    "entry": "wired-2026-10-20-ai-agent-internet-researchers-listserv",
+    "on": "2026-10-20",
+    "role": "subject"
+   }
+  ]
+ },
+ {
   "id": "saran-rajendran",
   "name": "Saran Rajendran",
   "titles": [
@@ -7274,6 +7748,12 @@
   "id": "satya-nadella",
   "name": "Satya Nadella",
   "titles": [
+   {
+    "title": "Microsoft CEO",
+    "entry": "cnn-2026-10-20-suleyman-human-first-ai",
+    "on": "2026-10-20",
+    "role": "mentioned"
+   },
    {
     "title": "CEO, Microsoft",
     "entry": "verge-2026-10-10-nadella-assume-models-compromised",
@@ -7421,6 +7901,11 @@
   ]
  },
  {
+  "id": "shawnghu",
+  "name": "shawnghu",
+  "titles": []
+ },
+ {
   "id": "sheera-frenkel",
   "name": "Sheera Frenkel",
   "titles": [
@@ -7483,6 +7968,18 @@
   "titles": []
  },
  {
+  "id": "simon-goldstein",
+  "name": "Simon Goldstein",
+  "titles": [
+   {
+    "title": "Philosopher",
+    "entry": "80000-hours-2026-10-20-introducing-new-channel",
+    "on": "2026-10-20",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
   "id": "simon-mendelsohn",
   "name": "Simon Mendelsohn",
   "titles": []
@@ -7498,6 +7995,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "siyuan-chen",
+  "name": "Siyuan Chen",
+  "titles": []
  },
  {
   "id": "sofia-yablonskaya",
@@ -7525,6 +8027,18 @@
     "entry": "guardian-2026-10-14-ai-change-stakes-bioweapons",
     "on": "2026-10-14",
     "role": "mentioned"
+   }
+  ]
+ },
+ {
+  "id": "soren-mindermann",
+  "name": "Sören Mindermann",
+  "titles": [
+   {
+    "title": "Technical Research Lead of CASP, University of Cambridge",
+    "entry": "lesswrong-2026-10-21-tsinghua-ai-safety-residency",
+    "on": "2026-10-21",
+    "role": "subject"
    }
   ]
  },
@@ -7744,6 +8258,23 @@
   "titles": []
  },
  {
+  "id": "tianshi-li",
+  "name": "Tianshi Li",
+  "titles": []
+ },
+ {
+  "id": "tianyi-lorena-yan",
+  "name": "Tianyi Lorena Yan",
+  "titles": [
+   {
+    "title": "Columbia University",
+    "entry": "arxiv-2026-10-20-reward-misspecification-cot-monitorability",
+    "on": "2026-10-20",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "tianzhuo-yang",
   "name": "Tianzhuo Yang",
   "titles": []
@@ -7954,6 +8485,18 @@
   ]
  },
  {
+  "id": "udari-madhushani-sehwag",
+  "name": "Udari Madhushani Sehwag",
+  "titles": [
+   {
+    "title": "Preparedness and Policy, Scale AI",
+    "entry": "arxiv-2026-10-20-rsi-control-covert-sabotage",
+    "on": "2026-10-20",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "ulysse-schaller",
   "name": "Ulysse Schaller",
   "titles": [
@@ -7985,6 +8528,11 @@
  {
   "id": "vanessa-kosoy",
   "name": "Vanessa Kosoy",
+  "titles": []
+ },
+ {
+  "id": "velvet-vale",
+  "name": "Velvet Vale",
   "titles": []
  },
  {
@@ -8176,6 +8724,18 @@
   ]
  },
  {
+  "id": "xu-wei",
+  "name": "Xu Wei",
+  "titles": [
+   {
+    "title": "Professor, co-director of the hub",
+    "entry": "lesswrong-2026-10-21-tsinghua-ai-safety-residency",
+    "on": "2026-10-21",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
   "id": "xuan-phi-nguyen",
   "name": "Xuan-Phi Nguyen",
   "titles": [
@@ -8208,6 +8768,11 @@
   "titles": []
  },
  {
+  "id": "yao-huang",
+  "name": "Yao Huang",
+  "titles": []
+ },
+ {
   "id": "yejin-choi",
   "name": "Yejin Choi",
   "titles": []
@@ -8225,6 +8790,11 @@
  {
   "id": "yi-zhang",
   "name": "Yi Zhang",
+  "titles": []
+ },
+ {
+  "id": "yinpeng-dong",
+  "name": "Yinpeng Dong",
   "titles": []
  },
  {
@@ -8315,6 +8885,11 @@
   "titles": []
  },
  {
+  "id": "yuxiang-xie",
+  "name": "Yuxiang Xie",
+  "titles": []
+ },
+ {
   "id": "yuxuan-liu",
   "name": "Yuxuan Liu",
   "titles": []
@@ -8354,6 +8929,18 @@
   "titles": []
  },
  {
+  "id": "zershaaneh-qureshi",
+  "name": "Zershaaneh Qureshi",
+  "titles": [
+   {
+    "title": "Host, 80,000 Hours",
+    "entry": "80000-hours-2026-10-20-introducing-new-channel",
+    "on": "2026-10-20",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "zeyi-yang",
   "name": "Zeyi Yang",
   "titles": []
@@ -8369,6 +8956,11 @@
   "titles": []
  },
  {
+  "id": "zhenghan-zhou",
+  "name": "Zhenghan Zhou",
+  "titles": []
+ },
+ {
   "id": "zhengyue-zhao",
   "name": "Zhengyue Zhao",
   "titles": []
@@ -8377,6 +8969,18 @@
   "id": "zhicheng-fang",
   "name": "Zhicheng Fang",
   "titles": []
+ },
+ {
+  "id": "zhiping-zhang",
+  "name": "Zhiping Zhang",
+  "titles": [
+   {
+    "title": "Northeastern University",
+    "entry": "arxiv-2026-10-20-authorizationbench-agents-beyond-authorization",
+    "on": "2026-10-20",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "zhixing-tan",
@@ -8401,6 +9005,11 @@
  {
   "id": "zhu-zhang",
   "name": "Zhu Zhang",
+  "titles": []
+ },
+ {
+  "id": "zihao-huang",
+  "name": "Zihao Huang",
   "titles": []
  },
  {
