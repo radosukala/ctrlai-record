@@ -132,7 +132,7 @@ export function quotesOfTheDay(run: string): DayQuote[] {
 export const quoteOfTheDay = (run: string): DayQuote | undefined => quotesOfTheDay(run)[0];
 
 /** A link back to the site that says where the visit came from, as the weekly kit does. */
-export function link(path: string, source: 'x' | 'linkedin', run: string, hash = ''): string {
+export function link(path: string, source: 'x' | 'linkedin' | 'youtube', run: string, hash = ''): string {
   const url = new URL(path, SITE.url);
   url.searchParams.set('utm_source', source);
   url.searchParams.set('utm_medium', 'social');

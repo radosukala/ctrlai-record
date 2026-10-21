@@ -18,10 +18,10 @@ export const LINE = '#d9d9d6';
 export const MARK = '#ffe45c';
 export const SIGNAL = '#e0301e';
 
-const DISPLAY = 'Ctrl AI Display';
-const SANS = 'Ctrl AI Sans';
-const SERIF = 'Ctrl AI Serif';
-const MONO = 'IBM Plex Mono';
+export const DISPLAY = 'Ctrl AI Display';
+export const SANS = 'Ctrl AI Sans';
+export const SERIF = 'Ctrl AI Serif';
+export const MONO = 'IBM Plex Mono';
 
 type Font = { name: string; data: Buffer; weight: 400 | 500 | 600 | 700 | 800; style: 'normal' | 'italic' };
 
@@ -69,7 +69,7 @@ export function rangeLabel(from: string, to: string): string {
 }
 
 /** The mark: Ctrl, then AI on a square of the highlighter yellow (components/Brand.tsx). */
-function Mark({ size = 40 }: { size?: number }) {
+export function Mark({ size = 40 }: { size?: number }) {
   const box = Math.round(size * 1.18);
   return (
     <div style={{ display: 'flex', alignItems: 'baseline', fontFamily: DISPLAY, fontWeight: 800, fontSize: size, lineHeight: 1, letterSpacing: -size * 0.01, color: INK }}>
@@ -295,7 +295,7 @@ const WAITING = '#a3a3a3';
  * line by line, so each word carries the stroke, with the space after it, and the words wrap as a flex row. In a clip,
  * `lit` words have been said so far: they carry the stroke, and the rest wait in grey.
  */
-function Marked({ text, size, lineHeight, lit }: { text: string; size: number; lineHeight: number; lit?: number }) {
+export function Marked({ text, size, lineHeight, lit }: { text: string; size: number; lineHeight: number; lit?: number }) {
   const words = text.replace(/\s+/g, ' ').trim().split(' ');
   const stroke = `linear-gradient(180deg, transparent 34%, ${MARK} 34%, ${MARK} 92%, transparent 92%)`;
   const said = (i: number) => lit === undefined || i < lit;

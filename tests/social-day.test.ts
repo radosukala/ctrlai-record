@@ -84,7 +84,7 @@ test('a quotation splits into whole sentences, not at "Mr."', () => {
 });
 
 test('the day kit only writes files: nothing in it can post', () => {
-  for (const f of ['lib/social-day.ts', 'scripts/social-day.tsx']) {
+  for (const f of ['lib/social-day.ts', 'scripts/social-day.tsx', 'scripts/social-video.tsx', 'lib/video-frames.tsx']) {
     const source = fs.readFileSync(path.join(ROOT, f), 'utf8');
     assert.doesNotMatch(source, /\bfetch\(|api\.(x|twitter)\.com|api\.linkedin\.com|oauth/i, `${f} must not talk to X or LinkedIn`);
   }
@@ -154,4 +154,11 @@ test('a recording published days after it was made says "recorded" before the da
   assert.match(xQuotePost(p, '2026-10-20').text, /The Show, recorded Oct 12:/);
   const sameDay = { e: p.e, q: quote({ hand: 'first' }) };
   assert.doesNotMatch(linkedinQuotePost(sameDay, '2026-10-20').text, /recorded/);
+});
+
+test('the day video is made only of our own material: no downloaded footage, audio or thumbnails, no voice', () => {
+  for (const f of ['scripts/social-video.tsx', 'lib/video-frames.tsx']) {
+    const source = fs.readFileSync(path.join(ROOT, f), 'utf8');
+    assert.doesNotMatch(source, /yt-dlp|ytimg|posterFor|posterDataUri|elevenlabs|text-to-speech/i, `${f} must not use anyone else's footage, picture or voice`);
+  }
 });

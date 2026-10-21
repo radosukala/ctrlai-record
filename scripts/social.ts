@@ -15,8 +15,9 @@ import { SITE } from '../lib/site';
 import { linkedin, LINKEDIN_LIMIT, X_LIMIT, xLength, xPicks, xRecap, type Post } from '../lib/social';
 
 const args = process.argv.slice(2);
-/** `npm run social -- day [run]`: the day's posts (scripts/social-day.tsx) instead of the weekly issue's. */
-const DAY = args[0] === 'day';
+/** `npm run social -- day [run]`: the day's posts (scripts/social-day.tsx) instead of the weekly issue's.
+ *  `npm run social -- video [run]`: the day's video (scripts/social-video.tsx). */
+const DAY = args[0] === 'day' || args[0] === 'video';
 const flag = (name: string) => args.includes(name);
 const value = (name: string) => (args.includes(name) ? args[args.indexOf(name) + 1] : undefined);
 const slug = args.find((arg, i) => !arg.startsWith('--') && args[i - 1] !== '--base') ?? LATEST.slug;
@@ -103,5 +104,6 @@ async function main() {
   if (recap.over || picks.over || liOver) process.exitCode = 1;
 }
 
-if (DAY) import('./social-day').then(m => m.runDay(args.slice(1)));
+if (args[0] === 'day') import('./social-day').then(m => m.runDay(args.slice(1)));
+else if (args[0] === 'video') import('./social-video').then(m => m.runVideo(args.slice(1)));
 else main();
