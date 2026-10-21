@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { DEFAULT_MODEL, OUTPUT_FORMAT, apiBase, fingerprint, seedFrom, settingsFor } from '@/lib/film-voices';
 
@@ -41,6 +41,11 @@ export type Speech = {
   seconds: number;
   /** When each word (the line split on spaces) starts and ends, in seconds from the start of the audio. */
   words: { start: number; end: number }[];
+  /** What making it cost: the characters, the credits the service said it charged (when it says), the model, and when. */
+  chars?: number;
+  credits?: number;
+  model?: string;
+  at?: string;
 };
 
 type Alignment = { characters: string[]; character_start_times_seconds: number[]; character_end_times_seconds: number[] };
@@ -75,15 +80,36 @@ export class Narrator {
   /** Characters sent to the service in this run, and how many were already made. */
   sent = 0;
   kept = 0;
-  private readonly model = DEFAULT_MODEL;
-  private readonly settings = settingsFor(DEFAULT_MODEL, 'narration');
+  private readonly model: string;
+  private readonly settings;
+  /** A run that waits on the service longer than this gives up (the daily run must not hang on a voice). */
+  private readonly until = Date.now() + 4 * 60_000;
 
-  constructor(private readonly dir: string, private readonly allow: number) {
+  constructor(private readonly dir: string, private readonly allow: number, opts: { model?: string } = {}) {
     mkdirSync(dir, { recursive: true });
+    this.model = opts.model ?? DEFAULT_MODEL;
+    this.settings = settingsFor(this.model, 'narration');
+  }
+
+  /** The key a line is kept under: the voice, the model, the settings and the words, so a change to any of them makes a new line. */
+  fingerprintOf(text: string) {
+    return fingerprint({ voice: NARRATOR.voiceId, model: this.model, settings: this.settings, text }).slice(0, 14);
   }
 
   private fingerprint(text: string) {
-    return fingerprint({ voice: NARRATOR.voiceId, model: this.model, settings: this.settings, text }).slice(0, 14);
+    return this.fingerprintOf(text);
+  }
+
+  /** Credits spent on narration in a month (YYYY-MM), from what each kept line recorded: the service's own figure when it gave one, else characters at the rate seen on this account. */
+  spent(month: string): number {
+    let total = 0;
+    for (const name of readdirSync(this.dir)) {
+      if (!name.endsWith('.json')) continue;
+      const file = join(this.dir, name);
+      const meta = JSON.parse(readFileSync(file, 'utf8')) as Speech;
+      if ((meta.at ?? statSync(file).mtime.toISOString()).startsWith(month)) total += meta.credits ?? (meta.chars ?? 0) * CREDITS_PER_CHAR;
+    }
+    return Math.round(total);
   }
 
   isMade(text: string) {
@@ -110,18 +136,24 @@ export class Narrator {
     const url = `${apiBase()}/v1/text-to-speech/${encodeURIComponent(NARRATOR.voiceId)}/with-timestamps?output_format=${OUTPUT_FORMAT}`;
     const body = JSON.stringify({ text, model_id: this.model, voice_settings: this.settings, seed: seedFrom(fp) });
     for (let attempt = 0; ; attempt++) {
-      const res = await fetch(url, { method: 'POST', headers: { 'xi-api-key': key, 'content-type': 'application/json' }, body });
+      const left = this.until - Date.now();
+      if (left < 5000) throw new Error('ran out of the four minutes allowed for the voice');
+      const res = await fetch(url, { method: 'POST', headers: { 'xi-api-key': key, 'content-type': 'application/json' }, body, signal: AbortSignal.timeout(Math.min(60_000, left)) });
       if (res.ok) {
         const json = (await res.json()) as { audio_base64: string; alignment: Alignment };
         writeFileSync(file, Buffer.from(json.audio_base64, 'base64'));
         const words = wordTimes(text, json.alignment);
-        const speech: Speech = { file, seconds: Math.max(...json.alignment.character_end_times_seconds), words };
+        const billed = Number(res.headers.get('character-cost'));
+        const speech: Speech = {
+          file, seconds: Math.max(...json.alignment.character_end_times_seconds), words,
+          chars: text.length, ...(Number.isFinite(billed) && billed > 0 ? { credits: billed } : {}), model: this.model, at: new Date().toISOString(),
+        };
         writeFileSync(meta, JSON.stringify(speech));
         this.sent += text.length;
         return speech;
       }
       const retryable = res.status === 429 || res.status >= 500;
-      if (!retryable || attempt >= 2) throw new Error(`ElevenLabs ${res.status}: ${(await res.text()).slice(0, 300)}`);
+      if (!retryable || attempt >= 1) throw new Error(`ElevenLabs ${res.status}: ${(await res.text()).slice(0, 300)}`);
       await wait(1500 * 2 ** attempt);
     }
   }

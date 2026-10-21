@@ -13,9 +13,14 @@
  *   npm run social -- video --voice                  with the narrator (ElevenLabs; made once, kept in kit/voice-cache)
  *   npm run social -- video --voice --max-chars 1200 the most characters this run may send (the default)
  *   npm run social -- video --voice --tempo 1.2      how much faster than the recording the narration plays (the default; free, nothing is sent)
+ *   npm run social -- video --voice --month-cap 22000 stop using the voice when this month's narration would pass this many credits (the default)
+ *   npm run social -- video --voice --model eleven_v4 another ElevenLabs model (its lines are kept apart; the first run of it is billed)
+ *
+ * With --voice, if the voice is unavailable (no key, the service down, over the month's cap) the video is made with captions only,
+ * so the daily run always has one. The pictures and sounds it works from go in <out>/work, removed when it is done (--keep-work keeps them).
  */
 import { execFileSync } from 'node:child_process';
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { ImageResponse } from 'next/og';
 import { LATEST_DAY_RUN, dayEdition } from '@/content/base/editions';
@@ -24,7 +29,7 @@ import { longDate, shortDate } from '@/lib/site';
 import { X_LIMIT, xLength } from '@/lib/social';
 import { link, linkedinTodayPost, quoteCard, quotesOfTheDay, todayDisclosure } from '@/lib/social-day';
 import { ChangeFrame, EndFrame, NumbersFrame, QuoteFrame, TitleFrame, VIDEO_SIZE } from '@/lib/video-frames';
-import { spokenLines, videoScript, words } from '@/lib/video-script';
+import { listenFor, spokenLines, videoScript, words } from '@/lib/video-script';
 import { CREDITS_PER_CHAR, NARRATOR, Narrator, type Speech } from '@/lib/video-voice';
 
 const FPS = 30;
@@ -49,7 +54,7 @@ async function png(element: React.ReactElement) {
   return Buffer.from(await response.arrayBuffer());
 }
 
-const run = (cmd: string, args: string[]) => execFileSync(cmd, args, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+const run = (cmd: string, args: string[]) => execFileSync(cmd, args, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], timeout: 5 * 60_000 });
 
 /** A scene's events in time order become pictures that last until the next one (or the scene's end). */
 function shotsOf(scene: Scene): { el: React.ReactElement; seconds: number }[] {
@@ -58,15 +63,20 @@ function shotsOf(scene: Scene): { el: React.ReactElement; seconds: number }[] {
 }
 
 export async function runVideo(args: string[]) {
-  const runDate = args.find((a, i) => !a.startsWith('--') && !['--out', '--quote', '--max-chars', '--tempo'].includes(args[i - 1])) ?? LATEST_DAY_RUN;
+  const runDate = args.find((a, i) => !a.startsWith('--') && !['--out', '--quote', '--max-chars', '--tempo', '--model', '--month-cap'].includes(args[i - 1])) ?? LATEST_DAY_RUN;
   const opt = (name: string) => (args.includes(name) ? args[args.indexOf(name) + 1] : undefined);
   const ed = dayEdition(runDate);
   if (!ed?.run) {
     console.error(`No daily run "${runDate}". The latest is ${LATEST_DAY_RUN}.`);
     process.exit(1);
   }
+  if (!ed.changes.length) {
+    console.log(`No decision, new evidence, correction or commitment in the run of ${runDate}: no video.`);
+    return;
+  }
   const out = path.resolve(opt('--out') ?? path.join(process.cwd(), 'kit', `video-${runDate}`));
-  await mkdir(path.join(out, 'frames'), { recursive: true });
+  const work = path.join(out, 'work');
+  await mkdir(path.join(work, 'frames'), { recursive: true });
 
   const changes = ed.changes.slice(0, 3);
   const ranked = quotesOfTheDay(runDate);
@@ -77,7 +87,9 @@ export async function runVideo(args: string[]) {
   // The narrator: what it would say and what that costs are shown before anything is sent.
   const lines = spokenLines(script);
   const chars = lines.reduce((n, l) => n + l.length, 0);
-  const narrator = args.includes('--voice') ? new Narrator(path.join(process.cwd(), 'kit', 'voice-cache'), Number(opt('--max-chars') ?? 1200)) : undefined;
+  let narrator = args.includes('--voice')
+    ? new Narrator(path.join(process.cwd(), 'kit', 'voice-cache'), Number(opt('--max-chars') ?? 1200), { model: opt('--model') })
+    : undefined;
   if (args.includes('--voice-plan') || narrator) {
     const toSend = narrator ? narrator.cost(lines) : chars;
     console.log(`The narrator (${NARRATOR.name}) would say ${lines.length} lines, ${chars} characters:`);
@@ -85,8 +97,23 @@ export async function runVideo(args: string[]) {
     console.log(`  ${narrator ? `This run sends ${toSend} of them (the rest are already made)` : `A run would send up to ${chars}`}: about ${Math.round(toSend * CREDITS_PER_CHAR)} credits at ${CREDITS_PER_CHAR} a character. The dashboard is the truth.`);
     if (!narrator) return;
   }
+  if (narrator) {
+    // Make every line before anything is drawn, so that a failure leaves a captions-only video, never half a voice.
+    const cap = Number(opt('--month-cap') ?? 22000);
+    const spent = narrator.spent(runDate.slice(0, 7));
+    const need = Math.round(narrator.cost(lines) * CREDITS_PER_CHAR);
+    try {
+      if (need > 0 && spent + need > cap) throw new Error(`this month's narration would pass ${cap} credits (${spent} spent, ${need} more needed)`);
+      for (const l of lines) await narrator.say(l);
+      console.log(`Narration: ${narrator.sent} characters sent, ${narrator.kept} already made; this month ${narrator.spent(runDate.slice(0, 7))} of ${cap} credits used (estimated).`);
+    } catch (err) {
+      console.log(`WARNING: no narration (${err instanceof Error ? err.message : err}); making the captions-only video.`);
+      narrator = undefined;
+    }
+  }
   // The narrator reads slowly, about two words a second. Played a fifth faster (pitch kept), it is about a news reader's pace.
   const tempo = narrator ? Number(opt('--tempo') ?? 1.2) : 1;
+  const narrated = narrator ? narrator.sent + narrator.kept : 0;
   const speak = async (text: string) => (narrator ? narrator.say(text) : undefined);
 
   // The storyboard: what is on screen, and when.
@@ -136,25 +163,25 @@ export async function runVideo(args: string[]) {
     let sum = 0;
     for (const [k, shot] of shotsOf(scene).entries()) {
       const name = `s${s}-${String(k).padStart(3, '0')}.png`;
-      await writeFile(path.join(out, 'frames', name), await png(shot.el));
+      await writeFile(path.join(work, 'frames', name), await png(shot.el));
       drawn++;
-      entries.push(`file '${path.join(out, 'frames', name)}'`, `duration ${shot.seconds.toFixed(4)}`);
+      entries.push(`file '${path.join(work, 'frames', name)}'`, `duration ${shot.seconds.toFixed(4)}`);
       sum += shot.seconds;
     }
     entries.push(entries[entries.length - 2]);
-    const file = path.join(out, `scene-${s}.txt`);
+    const file = path.join(work, `scene-${s}.txt`);
     await writeFile(file, `${entries.join('\n')}\n`);
     lists.push({ scene, file, seconds: sum });
   }
   const total = lists.reduce((t, l) => t + l.seconds, 0);
-  console.log(`${drawn} frames, ${scenes.length} scenes, ${total.toFixed(1)} s${narrator ? `; narration: ${narrator.sent} characters sent, ${narrator.kept} already made` : ''}`);
+  console.log(`${drawn} frames, ${scenes.length} scenes, ${total.toFixed(1)} s`);
   if (args.includes('--frames-only')) return;
 
   // One clip per scene, fading through white at both ends, then the scenes joined, a progress bar added, and the sound.
   const parts: string[] = [];
   const sounds: string[] = [];
   for (const [s, { scene, file, seconds }] of lists.entries()) {
-    const part = path.join(out, `scene-${s}.mp4`);
+    const part = path.join(work, `scene-${s}.mp4`);
     run('ffmpeg', [
       '-loglevel', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', file,
       '-vf', `fps=${FPS},format=yuv420p,fade=t=in:st=0:d=${FADE}:color=white,fade=t=out:st=${(seconds - FADE).toFixed(3)}:d=${FADE}:color=white`,
@@ -163,7 +190,7 @@ export async function runVideo(args: string[]) {
     ]);
     parts.push(part);
     // Each scene's sound is its speech, after the lead, padded with silence to the scene's length.
-    const wav = path.join(out, `scene-${s}.wav`);
+    const wav = path.join(work, `scene-${s}.wav`);
     if (scene.speech) {
       run('ffmpeg', ['-loglevel', 'error', '-y', '-i', scene.speech.file, '-af', `atempo=${tempo},adelay=${Math.round(LEAD * 1000)}:all=1,apad=whole_dur=${seconds.toFixed(3)}`, '-t', seconds.toFixed(3), '-ar', '44100', '-ac', '2', wav]);
     } else {
@@ -171,12 +198,12 @@ export async function runVideo(args: string[]) {
     }
     sounds.push(wav);
   }
-  await writeFile(path.join(out, 'scenes.txt'), `${parts.map(p => `file '${p}'`).join('\n')}\n`);
-  await writeFile(path.join(out, 'sounds.txt'), `${sounds.map(p => `file '${p}'`).join('\n')}\n`);
-  const body = path.join(out, 'body.mp4');
-  run('ffmpeg', ['-loglevel', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', path.join(out, 'scenes.txt'), '-c', 'copy', body]);
-  const voice = path.join(out, 'voice.wav');
-  run('ffmpeg', ['-loglevel', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', path.join(out, 'sounds.txt'), '-c', 'copy', voice]);
+  await writeFile(path.join(work, 'scenes.txt'), `${parts.map(p => `file '${p}'`).join('\n')}\n`);
+  await writeFile(path.join(work, 'sounds.txt'), `${sounds.map(p => `file '${p}'`).join('\n')}\n`);
+  const body = path.join(work, 'body.mp4');
+  run('ffmpeg', ['-loglevel', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', path.join(work, 'scenes.txt'), '-c', 'copy', body]);
+  const voice = path.join(work, 'voice.wav');
+  run('ffmpeg', ['-loglevel', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', path.join(work, 'sounds.txt'), '-c', 'copy', voice]);
   const mp4 = path.join(out, `ctrlai-day-${runDate}.mp4`);
   run('ffmpeg', [
     '-loglevel', 'error', '-y', '-i', body, '-i', voice,
@@ -215,8 +242,9 @@ export async function runVideo(args: string[]) {
     `# The day's video, ${weekday(runDate)}, ${longDate(runDate)}`, '',
     `ctrlai-day-${runDate}.mp4: ${clock(total)}, 1080×1920 (vertical), ${narrator ? 'narrated, with captions' : 'captions only, a silent audio track'}. poster.png is its first frame.`,
     'Drafts only: nothing is posted. Watch it through, read each text, then post.', '',
+    ...(narrator ? [`Listen for these words (the voice may misread a name): ${listenFor(script, pick ? quoteCard(pick, 'x').who : undefined).join('; ')}.`, ''] : []),
     '## What is in it, and what is not', '',
-    `Our own words and graphics, and one short text quotation with its source on screen. No footage, no thumbnails. ${narrator ? `The narration is ${NARRATOR.name}, a licensed synthetic voice (the film's narrator), reading only our own lines, never the quotation; ${narrator.sent + narrator.kept} characters of it were generated (about ${Math.round((narrator.sent + narrator.kept) * CREDITS_PER_CHAR)} credits). Say so when you post: the end card does.` : 'No audio and no voice.'} Nothing here needs a show’s or a broadcaster’s permission.`, '',
+    `Our own words and graphics, and one short text quotation with its source on screen. No footage, no thumbnails. ${narrator ? `The narration is ${NARRATOR.name}, a licensed synthetic voice (the film's narrator), reading only our own lines, never the quotation; ${narrated} characters of it were generated (about ${Math.round(narrated * CREDITS_PER_CHAR)} credits). Say so when you post: the end card does.` : 'No audio and no voice.'} Nothing here needs a show’s or a broadcaster’s permission.`, '',
     `## X · attach the video · ${xLength(xText)}/${X_LIMIT}${xLength(xText) > X_LIMIT ? ' · OVER' : ''}`, '', xText, '', 'First reply:', '', link(`/day/${runDate}`, 'x', runDate), '',
     ...(li ? ['## LinkedIn · attach the video instead of the card', '', li.text, '', 'First comment:', '', li.comment, ''] : []),
     '## YouTube (a Short, or a normal upload)', '',
@@ -226,6 +254,7 @@ export async function runVideo(args: string[]) {
     'Chapters:', ...chapters, '', 'Sources:', ...sources, '', `The full edition: ${link(`/day/${runDate}`, 'youtube', runDate)}`, ...(disclosure ? ['', disclosure] : []), '',
   ].join('\n');
   await writeFile(path.join(out, 'VIDEO.md'), md);
+  if (!args.includes('--keep-work')) await rm(work, { recursive: true, force: true });
 
   const probe = run('ffprobe', ['-v', 'error', '-show_entries', 'format=duration,size', '-of', 'csv=p=0', mp4]).trim().split(',');
   console.log(`Video for ${runDate} is in ${mp4}`);

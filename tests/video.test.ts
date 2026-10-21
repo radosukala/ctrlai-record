@@ -5,8 +5,8 @@ import os from 'node:os';
 import path from 'node:path';
 import { DAYS, LATEST_DAY_RUN, dayEdition } from '../content/base/editions';
 import { quotesOfTheDay } from '../lib/social-day';
-import { spokenLines, videoScript, words } from '../lib/video-script';
-import { Narrator, spell, spoken, wordTimes } from '../lib/video-voice';
+import { listenFor, spokenLines, videoScript, words } from '../lib/video-script';
+import { CREDITS_PER_CHAR, Narrator, spell, spoken, wordTimes } from '../lib/video-voice';
 
 test('numbers are spelled out, so the voice never has to guess how to read a figure', () => {
   assert.equal(spell(0), 'zero');
@@ -65,4 +65,35 @@ test('the narrator counts what a run would send before sending it, and refuses t
   assert.equal(narrator.cost(['hello there', 'hello there', 'again']), 'hello there'.length + 'again'.length, 'a line said twice is sent once');
   await assert.rejects(() => narrator.say('this line is much longer than the ten characters allowed'), /Stopped before sending/);
   assert.equal(narrator.sent, 0);
+});
+
+test('the narrator’s ledger counts a month’s credits from what each kept line recorded', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'ledger-'));
+  const put = (name: string, meta: object) => fs.writeFileSync(path.join(dir, `${name}.json`), JSON.stringify({ file: '', seconds: 1, words: [], ...meta }));
+  put('a', { chars: 100, credits: 40, at: '2026-10-03T10:00:00Z' }); // the service's own figure wins
+  put('b', { chars: 200, at: '2026-10-04T10:00:00Z' }); // else characters at the rate seen on this account
+  put('c', { chars: 999, credits: 999, at: '2026-09-30T10:00:00Z' }); // another month
+  const narrator = new Narrator(dir, 1000);
+  assert.equal(narrator.spent('2026-10'), Math.round(40 + 200 * CREDITS_PER_CHAR));
+  assert.equal(narrator.spent('2026-09'), 999);
+  assert.equal(narrator.spent('2026-08'), 0);
+});
+
+test('the report names the words to listen for: what was respelled for the voice, names with capitals inside, and the speaker', () => {
+  const script = { intro: '', changes: [{ kind: '', outlet: '', date: '', note: ['METR', 'warns', 'DeepSeek', 'and', 'the', 'US', 'agencies'], lens: ['plain', 'words', 'only'], spoken: '' }] };
+  const list = listenFor(script, 'Robin Geiss');
+  assert.ok(list.some(w => /^METR \(spoken “Meter”\)$/.test(w)));
+  assert.ok(list.includes('DeepSeek'));
+  assert.ok(list.includes('Robin Geiss'));
+  assert.ok(!list.some(w => /plain|agencies|warns/.test(w)), 'ordinary words are not listed');
+});
+
+test('the Video step of the daily finish can never stop the run, and the MP4 stays out of the archive', () => {
+  const finish = fs.readFileSync(path.join(import.meta.dirname, '..', 'scripts/radar/daily-finish.sh'), 'utf8');
+  const step = finish.slice(finish.indexOf('echo "== Video"'), finish.indexOf('echo "== Archive"'));
+  assert.ok(step.length > 0, 'no Video step');
+  assert.match(step, /else echo "WARNING: the video could not be made/, 'a failed video only warns');
+  assert.match(step, /\|\| true/, 'a missing line or file does not stop it under set -e');
+  assert.match(step, /--voice/);
+  assert.doesNotMatch(step.replace(/^#.*$/gm, ''), /\.mp4/, 'the MP4 is not copied into the run folder, which is archived');
 });
