@@ -87,6 +87,18 @@
   ]
  },
  {
+  "id": "adam-meyers",
+  "name": "Adam Meyers",
+  "titles": [
+   {
+    "title": "Senior vice president of counter adversary work, CrowdStrike",
+    "entry": "wired-2026-10-21-ai-guardrails-criminal-hackers",
+    "on": "2026-10-21",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "adam-schiff",
   "name": "Adam Schiff",
   "titles": [
@@ -265,6 +277,11 @@
   "titles": []
  },
  {
+  "id": "alex-lieberman",
+  "name": "Alex Lieberman",
+  "titles": []
+ },
+ {
   "id": "alex-sobel",
   "name": "Alex Sobel",
   "titles": [
@@ -303,6 +320,18 @@
   "id": "alexander-matt-turner",
   "name": "Alexander Matt Turner",
   "titles": []
+ },
+ {
+  "id": "alexander-panfilov",
+  "name": "Alexander Panfilov",
+  "titles": [
+   {
+    "title": "AI security researcher",
+    "entry": "transformer-2026-10-21-claude-election-manipulation-jailbreak",
+    "on": "2026-10-21",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "alexander-w-bartik",
@@ -481,6 +510,18 @@
   ]
  },
  {
+  "id": "andreas-kirsch",
+  "name": "Andreas Kirsch",
+  "titles": [
+   {
+    "title": "AI researcher (resigned from Google DeepMind)",
+    "entry": "bbc-2026-10-21-google-staff-resign-military-ai",
+    "on": "2026-10-21",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "andrei-kucharavy",
   "name": "Andrei Kucharavy",
   "titles": []
@@ -574,6 +615,18 @@
   ]
  },
  {
+  "id": "andy-beshear",
+  "name": "Andy Beshear",
+  "titles": [
+   {
+    "title": "Governor of Kentucky (Democrat)",
+    "entry": "forbes-breaking-news-2026-10-21-beshear-ai-political-ads",
+    "on": "2026-10-21",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "andy-burnham",
   "name": "Andy Burnham",
   "titles": []
@@ -608,6 +661,11 @@
  {
   "id": "anna-desmarais",
   "name": "Anna Desmarais",
+  "titles": []
+ },
+ {
+  "id": "anna-korhonen",
+  "name": "Anna Korhonen",
   "titles": []
  },
  {
@@ -749,6 +807,11 @@
   "titles": []
  },
  {
+  "id": "arvind-krishna",
+  "name": "Arvind Krishna",
+  "titles": []
+ },
+ {
   "id": "arvind-narayanan",
   "name": "Arvind Narayanan",
   "titles": [
@@ -768,6 +831,18 @@
     "title": "Professor of computer science, Princeton University; director, Center for Information Technology Policy",
     "entry": "ezra-klein-show-2026-10-09-case-normal-ai-future",
     "on": "2026-10-09",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "asad-ramzanali",
+  "name": "Asad Ramzanali",
+  "titles": [
+   {
+    "title": "Director of Artificial Intelligence & Technology Policy, Vanderbilt Policy Accelerator",
+    "entry": "lawfare-2026-10-21-investigating-ai-cyber-risks",
+    "on": "2026-10-21",
     "role": "speaker"
    }
   ]
@@ -813,6 +888,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "austin-meek",
+  "name": "Austin Meek",
+  "titles": []
  },
  {
   "id": "aythami-morales",
@@ -1370,6 +1450,11 @@
   ]
  },
  {
+  "id": "chen-cecilia-liu",
+  "name": "Chen Cecilia Liu",
+  "titles": []
+ },
+ {
   "id": "cheng-jin",
   "name": "Cheng Jin",
   "titles": []
@@ -1449,6 +1534,11 @@
   ]
  },
  {
+  "id": "chris-stokel-walker",
+  "name": "Chris Stokel-Walker",
+  "titles": []
+ },
+ {
   "id": "christian-schroeder-de-witt",
   "name": "Christian Schroeder de Witt",
   "titles": [
@@ -1515,6 +1605,18 @@
   ]
  },
  {
+  "id": "christopher-giles",
+  "name": "Christopher Giles",
+  "titles": [
+   {
+    "title": "BBC Eye investigations",
+    "entry": "bbc-2026-10-21-google-staff-resign-military-ai",
+    "on": "2026-10-21",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "christopher-marte",
   "name": "Christopher Marte",
   "titles": [
@@ -1551,8 +1653,25 @@
   ]
  },
  {
+  "id": "christopher-stubbs",
+  "name": "Christopher Stubbs",
+  "titles": [
+   {
+    "title": "Experimental physicist, former Dean of Science at Harvard University",
+    "entry": "anthropic-2026-10-21-stubbs-joins-benefit-trust",
+    "on": "2026-10-21",
+    "role": "subject"
+   }
+  ]
+ },
+ {
   "id": "ciaran-m-gilligan-lee",
   "name": "Ciarán M. Gilligan-Lee",
+  "titles": []
+ },
+ {
+  "id": "cj-hess",
+  "name": "CJ Hess",
   "titles": []
  },
  {
@@ -1723,7 +1842,14 @@
  {
   "id": "damiano-fornasiere",
   "name": "Damiano Fornasiere",
-  "titles": []
+  "titles": [
+   {
+    "title": "Supervisor",
+    "entry": "lesswrong-2026-10-21-cross-model-neurofeedback-activation-control",
+    "on": "2026-10-21",
+    "role": "mentioned"
+   }
+  ]
  },
  {
   "id": "dan-goodin",
@@ -2297,6 +2423,11 @@
   "titles": []
  },
  {
+  "id": "dmitry-bylinkin",
+  "name": "Dmitry Bylinkin",
+  "titles": []
+ },
+ {
   "id": "do-xuan-long",
   "name": "Do Xuan Long",
   "titles": [
@@ -2382,6 +2513,11 @@
  {
   "id": "dr-diction",
   "name": "Dr. Diction",
+  "titles": []
+ },
+ {
+  "id": "drew",
+  "name": "Drew",
   "titles": []
  },
  {
@@ -2759,6 +2895,11 @@
   ]
  },
  {
+  "id": "emily-peck",
+  "name": "Emily Peck",
+  "titles": []
+ },
+ {
   "id": "emily-tavenner",
   "name": "Emily Tavenner",
   "titles": []
@@ -2800,6 +2941,18 @@
   ]
  },
  {
+  "id": "emmanuel-macron",
+  "name": "Emmanuel Macron",
+  "titles": [
+   {
+    "title": "President of France",
+    "entry": "axios-2026-10-21-nvidia-huang-sovereign-ai",
+    "on": "2026-10-21",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
   "id": "emmy-martin",
   "name": "Emmy Martin",
   "titles": []
@@ -2812,6 +2965,11 @@
  {
   "id": "eric-schmidt",
   "name": "Eric Schmidt",
+  "titles": []
+ },
+ {
+  "id": "eric-z",
+  "name": "eric-z",
   "titles": []
  },
  {
@@ -3057,6 +3215,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "finn-cairns",
+  "name": "Finn Cairns",
+  "titles": []
  },
  {
   "id": "florence-jaumotte",
@@ -3427,6 +3590,11 @@
   ]
  },
  {
+  "id": "grigoriy-evseev",
+  "name": "Grigoriy Evseev",
+  "titles": []
+ },
+ {
   "id": "guanghui-qin",
   "name": "Guanghui Qin",
   "titles": []
@@ -3439,6 +3607,11 @@
  {
   "id": "guanting-wu",
   "name": "Guanting Wu",
+  "titles": []
+ },
+ {
+  "id": "gunther-eagleman",
+  "name": "Gunther Eagleman",
   "titles": []
  },
  {
@@ -3517,6 +3690,11 @@
  {
   "id": "han-sun",
   "name": "Han Sun",
+  "titles": []
+ },
+ {
+  "id": "hanhui-xu",
+  "name": "Hanhui Xu",
   "titles": []
  },
  {
@@ -3702,6 +3880,16 @@
   ]
  },
  {
+  "id": "hongyu-li",
+  "name": "Hongyu Li",
+  "titles": []
+ },
+ {
+  "id": "huadi-zheng",
+  "name": "Huadi Zheng",
+  "titles": []
+ },
+ {
   "id": "hugo-lyons-keenan",
   "name": "Hugo Lyons Keenan",
   "titles": []
@@ -3843,6 +4031,18 @@
   "id": "jack-richings",
   "name": "Jack Richings",
   "titles": []
+ },
+ {
+  "id": "jack-shanahan",
+  "name": "Jack Shanahan",
+  "titles": [
+   {
+    "title": "Retired Lieutenant General, former director of Project Maven",
+    "entry": "bbc-2026-10-21-google-staff-resign-military-ai",
+    "on": "2026-10-21",
+    "role": "mentioned"
+   }
+  ]
  },
  {
   "id": "jacob-coxon",
@@ -4159,6 +4359,18 @@
   "titles": []
  },
  {
+  "id": "jeff-clune",
+  "name": "Jeff Clune",
+  "titles": [
+   {
+    "title": "Professor, University of British Columbia",
+    "entry": "wired-2026-10-21-recursive-flint-self-improvement",
+    "on": "2026-10-21",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
   "id": "jeffrey-ladish",
   "name": "Jeffrey Ladish",
   "titles": [
@@ -4277,6 +4489,16 @@
   "titles": []
  },
  {
+  "id": "jiacheng-ji",
+  "name": "Jiacheng Ji",
+  "titles": []
+ },
+ {
+  "id": "jian-lou",
+  "name": "Jian Lou",
+  "titles": []
+ },
+ {
   "id": "jian-zhao",
   "name": "Jian Zhao",
   "titles": []
@@ -4284,6 +4506,11 @@
  {
   "id": "jiao-shan",
   "name": "Jiao Shan",
+  "titles": []
+ },
+ {
+  "id": "jiawei-duan",
+  "name": "Jiawei Duan",
   "titles": []
  },
  {
@@ -5018,6 +5245,18 @@
   ]
  },
  {
+  "id": "kateryna-bondar",
+  "name": "Kateryna Bondar",
+  "titles": [
+   {
+    "title": "Senior Fellow, Wadhwani AI Center at CSIS",
+    "entry": "ai-policy-podcast-2026-10-22-shahed-geran-drone",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "katherine-c-kellogg",
   "name": "Katherine C. Kellogg",
   "titles": [
@@ -5140,6 +5379,18 @@
     "entry": "chicago-fed-2026-03-forecasting-economic-effects-ai",
     "on": "2026-03",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "kevin-frazier",
+  "name": "Kevin Frazier",
+  "titles": [
+   {
+    "title": "Senior Editor, Lawfare",
+    "entry": "lawfare-2026-10-21-investigating-ai-cyber-risks",
+    "on": "2026-10-21",
+    "role": "speaker"
    }
   ]
  },
@@ -5288,6 +5539,11 @@
  {
   "id": "kunvar-thaman",
   "name": "Kunvar Thaman",
+  "titles": []
+ },
+ {
+  "id": "kyle-cox",
+  "name": "Kyle Cox",
   "titles": []
  },
  {
@@ -5546,7 +5802,14 @@
  {
   "id": "lily-hay-newman",
   "name": "Lily Hay Newman",
-  "titles": []
+  "titles": [
+   {
+    "title": "Senior writer, WIRED",
+    "entry": "wired-2026-10-21-ai-guardrails-criminal-hackers",
+    "on": "2026-10-21",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "lin-lu",
@@ -5846,6 +6109,23 @@
     "entry": "bloomberg-2026-10-18-andreessen-political-influence",
     "on": "2026-10-18",
     "role": "subject"
+   }
+  ]
+ },
+ {
+  "id": "marc-serra",
+  "name": "Marc Serra",
+  "titles": []
+ },
+ {
+  "id": "marcus-williams",
+  "name": "Marcus Williams",
+  "titles": [
+   {
+    "title": "AI safety researcher, OpenAI",
+    "entry": "verge-2026-10-21-openai-agent-lied-disabling-monitor",
+    "on": "2026-10-21",
+    "role": "speaker"
    }
   ]
  },
@@ -6253,6 +6533,18 @@
   ]
  },
  {
+  "id": "michael-tchuindjang",
+  "name": "Michael Tchuindjang",
+  "titles": [
+   {
+    "title": "PhD researcher and associate lecturer in cybersecurity and AI, UWE Bristol",
+    "entry": "transformer-2026-10-21-claude-election-manipulation-jailbreak",
+    "on": "2026-10-21",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "michal-byra",
   "name": "Michal Byra",
   "titles": [
@@ -6371,7 +6663,14 @@
  {
   "id": "mirko-bronzi",
   "name": "Mirko Bronzi",
-  "titles": []
+  "titles": [
+   {
+    "title": "Supervisor",
+    "entry": "lesswrong-2026-10-21-cross-model-neurofeedback-activation-control",
+    "on": "2026-10-21",
+    "role": "mentioned"
+   }
+  ]
  },
  {
   "id": "mitchell-labiak",
@@ -6386,6 +6685,11 @@
   ]
  },
  {
+  "id": "mo-fan",
+  "name": "Mo Fan",
+  "titles": []
+ },
+ {
   "id": "mofeien",
   "name": "mofeien",
   "titles": []
@@ -6393,6 +6697,11 @@
  {
   "id": "mohsinul-kabir",
   "name": "Mohsinul Kabir",
+  "titles": []
+ },
+ {
+  "id": "monica-ocallaghan",
+  "name": "Monica O'Callaghan",
   "titles": []
  },
  {
@@ -6617,6 +6926,18 @@
     "title": "Co-founder, Center for Technology and Statecraft",
     "entry": "chinatalk-2026-10-20-match-act-china-duv-imports",
     "on": "2026-10-20",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "nicole-errera",
+  "name": "Nicole Errera",
+  "titles": [
+   {
+    "title": "Research Assistant, Wadhwani AI Center at CSIS",
+    "entry": "ai-policy-podcast-2026-10-22-shahed-geran-drone",
+    "on": "2026-10-22",
     "role": "speaker"
    }
   ]
@@ -6952,6 +7273,12 @@
   "name": "Pete Hegseth",
   "titles": [
    {
+    "title": "US Defence Secretary",
+    "entry": "bbc-2026-10-21-google-staff-resign-military-ai",
+    "on": "2026-10-21",
+    "role": "mentioned"
+   },
+   {
     "title": "Secretary of War",
     "entry": "fox-news-2026-10-14-hegseth-autonomous-warfare-panel",
     "on": "2026-10-14",
@@ -7263,6 +7590,18 @@
   ]
  },
  {
+  "id": "richard-socher",
+  "name": "Richard Socher",
+  "titles": [
+   {
+    "title": "CEO and cofounder, Recursive",
+    "entry": "wired-2026-10-21-recursive-flint-self-improvement",
+    "on": "2026-10-21",
+    "role": "subject"
+   }
+  ]
+ },
+ {
   "id": "richard-wilson",
   "name": "Richard Wilson",
   "titles": [
@@ -7550,6 +7889,11 @@
   ]
  },
  {
+  "id": "ryotaro-shimizu",
+  "name": "Ryotaro Shimizu",
+  "titles": []
+ },
+ {
   "id": "saad-hossain",
   "name": "Saad Hossain",
   "titles": [
@@ -7560,6 +7904,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "sai-htaungkham",
+  "name": "Sai HtaungKham",
+  "titles": []
  },
  {
   "id": "saif-khan",
@@ -7634,6 +7983,18 @@
   "id": "sam-sabin",
   "name": "Sam Sabin",
   "titles": []
+ },
+ {
+  "id": "samuel-bendett",
+  "name": "Samuel Bendett",
+  "titles": [
+   {
+    "title": "Senior Associate (Non-resident), Europe, Russia, and Eurasia Program, CSIS",
+    "entry": "ai-policy-podcast-2026-10-22-shahed-geran-drone",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "samuel-schapiro",
@@ -7714,6 +8075,18 @@
   "id": "sarah-sacher",
   "name": "Sarah Sacher",
   "titles": []
+ },
+ {
+  "id": "sarah-shoker",
+  "name": "Sarah Shoker",
+  "titles": [
+   {
+    "title": "Formerly head of OpenAI's Geopolitics team",
+    "entry": "bbc-2026-10-21-google-staff-resign-military-ai",
+    "on": "2026-10-21",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "sarah-t-roberts",
@@ -7958,6 +8331,11 @@
   ]
  },
  {
+  "id": "siddhesh-pawar",
+  "name": "Siddhesh Pawar",
+  "titles": []
+ },
+ {
   "id": "siddhi-nayak",
   "name": "Siddhi Nayak",
   "titles": []
@@ -7980,6 +8358,11 @@
   ]
  },
  {
+  "id": "simon-jenkins",
+  "name": "Simon Jenkins",
+  "titles": []
+ },
+ {
   "id": "simon-mendelsohn",
   "name": "Simon Mendelsohn",
   "titles": []
@@ -8000,6 +8383,23 @@
   "id": "siyuan-chen",
   "name": "Siyuan Chen",
   "titles": []
+ },
+ {
+  "id": "skye",
+  "name": "Skye",
+  "titles": []
+ },
+ {
+  "id": "sofia-liguori",
+  "name": "Sofia Liguori",
+  "titles": [
+   {
+    "title": "Research engineer, Google DeepMind (resigned)",
+    "entry": "bbc-2026-10-21-google-staff-resign-military-ai",
+    "on": "2026-10-21",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "sofia-yablonskaya",
@@ -8065,6 +8465,18 @@
   ]
  },
  {
+  "id": "steve-swick",
+  "name": "Steve Swick",
+  "titles": [
+   {
+    "title": "former top security executive at American Electric Power",
+    "entry": "axios-2026-10-21-ai-hacking-power-water",
+    "on": "2026-10-21",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
   "id": "steven-adler",
   "name": "Steven Adler",
   "titles": [
@@ -8089,6 +8501,18 @@
   ]
  },
  {
+  "id": "steven-buckley",
+  "name": "Steven Buckley",
+  "titles": [
+   {
+    "title": "Lecturer in media digital sociology, City St George's, University of London",
+    "entry": "transformer-2026-10-21-claude-election-manipulation-jailbreak",
+    "on": "2026-10-21",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "steven-levy",
   "name": "Steven Levy",
   "titles": []
@@ -8101,6 +8525,11 @@
  {
   "id": "stevie-bonifield",
   "name": "Stevie Bonifield",
+  "titles": []
+ },
+ {
+  "id": "stuart-armstrong",
+  "name": "Stuart Armstrong",
   "titles": []
  },
  {
@@ -8573,6 +9002,11 @@
   "titles": []
  },
  {
+  "id": "vladimir-solodkin",
+  "name": "Vladimir Solodkin",
+  "titles": []
+ },
+ {
   "id": "walter-isaacson",
   "name": "Walter Isaacson",
   "titles": [
@@ -8636,6 +9070,18 @@
     "entry": "controlai-2026-10-16-leahy-decoded-genius-no-one-can-control",
     "on": "2026-10-16",
     "role": "mentioned"
+   }
+  ]
+ },
+ {
+  "id": "will-knight",
+  "name": "Will Knight",
+  "titles": [
+   {
+    "title": "Senior writer, WIRED",
+    "entry": "wired-2026-10-21-recursive-flint-self-improvement",
+    "on": "2026-10-21",
+    "role": "author"
    }
   ]
  },
@@ -8712,6 +9158,11 @@
   "titles": []
  },
  {
+  "id": "xinlong-huang",
+  "name": "Xinlong Huang",
+  "titles": []
+ },
+ {
   "id": "xiting-liu",
   "name": "Xiting Liu",
   "titles": [
@@ -8755,6 +9206,11 @@
  {
   "id": "xuelong-li",
   "name": "Xuelong Li",
+  "titles": []
+ },
+ {
+  "id": "yahao-ren",
+  "name": "Yahao Ren",
   "titles": []
  },
  {
@@ -8870,6 +9326,11 @@
   "titles": []
  },
  {
+  "id": "yuhan-wang",
+  "name": "Yuhan Wang",
+  "titles": []
+ },
+ {
   "id": "yuke-wang",
   "name": "Yuke Wang",
   "titles": []
@@ -8897,6 +9358,16 @@
  {
   "id": "yuzhe-yang",
   "name": "Yuzhe Yang",
+  "titles": []
+ },
+ {
+  "id": "zac-hill",
+  "name": "Zac Hill",
+  "titles": []
+ },
+ {
+  "id": "zachary-basu",
+  "name": "Zachary Basu",
   "titles": []
  },
  {
@@ -8943,6 +9414,11 @@
  {
   "id": "zeyi-yang",
   "name": "Zeyi Yang",
+  "titles": []
+ },
+ {
+  "id": "zhan-yu",
+  "name": "Zhan Yu",
   "titles": []
  },
  {
