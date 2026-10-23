@@ -65,6 +65,11 @@
   "titles": []
  },
  {
+  "id": "abhishek-mishra",
+  "name": "Abhishek Mishra",
+  "titles": []
+ },
+ {
   "id": "adam-conover",
   "name": "Adam Conover",
   "titles": []
@@ -85,6 +90,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "adam-kaufman",
+  "name": "Adam Kaufman",
+  "titles": []
  },
  {
   "id": "adam-meyers",
@@ -172,6 +182,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "ahmed-m-mahran",
+  "name": "Ahmed M. Mahran",
+  "titles": []
  },
  {
   "id": "aidan-gomez",
@@ -344,6 +359,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "alfred-ng",
+  "name": "Alfred Ng",
+  "titles": []
  },
  {
   "id": "ali-ebrahimpour-boroojeny",
@@ -629,7 +649,14 @@
  {
   "id": "andy-burnham",
   "name": "Andy Burnham",
-  "titles": []
+  "titles": [
+   {
+    "title": "prime minister",
+    "entry": "guardian-2026-10-22-view-ai-safety-global-regulation",
+    "on": "2026-10-22",
+    "role": "subject"
+   }
+  ]
  },
  {
   "id": "andy-challenger",
@@ -657,6 +684,18 @@
   "id": "ann-altman",
   "name": "Ann Altman",
   "titles": []
+ },
+ {
+  "id": "anna-cross",
+  "name": "Anna Cross",
+  "titles": [
+   {
+    "title": "Chief financial officer, Barclays",
+    "entry": "guardian-2026-10-22-barclays-cut-5000-jobs-ai",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "anna-desmarais",
@@ -760,8 +799,18 @@
   "titles": []
  },
  {
+  "id": "arepo",
+  "name": "Arepo",
+  "titles": []
+ },
+ {
   "id": "ari-hawkins",
   "name": "Ari Hawkins",
+  "titles": []
+ },
+ {
+  "id": "ari-spiesberger",
+  "name": "Ari Spiesberger",
   "titles": []
  },
  {
@@ -800,6 +849,18 @@
   "id": "aris-filos-ratsikas",
   "name": "Aris Filos-Ratsikas",
   "titles": []
+ },
+ {
+  "id": "arjun-kharpal",
+  "name": "Arjun Kharpal",
+  "titles": [
+   {
+    "title": "CNBC reporter",
+    "entry": "cnbc-2026-10-22-huang-contain-monitor-ai",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "armin-sommer",
@@ -924,6 +985,11 @@
   ]
  },
  {
+  "id": "b-sankar",
+  "name": "B. Sankar",
+  "titles": []
+ },
+ {
   "id": "bahrad-a-sokhansanj",
   "name": "Bahrad A. Sokhansanj",
   "titles": []
@@ -946,8 +1012,80 @@
   "titles": []
  },
  {
+  "id": "baris-alparslan",
+  "name": "Barış Alparslan",
+  "titles": []
+ },
+ {
+  "id": "baroness-armstrong-of-hill-top",
+  "name": "Baroness Armstrong of Hill Top",
+  "titles": []
+ },
+ {
+  "id": "baroness-barran",
+  "name": "Baroness Barran",
+  "titles": []
+ },
+ {
+  "id": "baroness-bennett-of-manor-castle",
+  "name": "Baroness Bennett of Manor Castle",
+  "titles": []
+ },
+ {
+  "id": "baroness-bull",
+  "name": "Baroness Bull",
+  "titles": []
+ },
+ {
   "id": "baroness-finn",
   "name": "Baroness Finn",
+  "titles": []
+ },
+ {
+  "id": "baroness-greenfield",
+  "name": "Baroness Greenfield",
+  "titles": []
+ },
+ {
+  "id": "baroness-harman",
+  "name": "Baroness Harman",
+  "titles": []
+ },
+ {
+  "id": "baroness-hayter-of-kentish-town",
+  "name": "Baroness Hayter of Kentish Town",
+  "titles": []
+ },
+ {
+  "id": "baroness-lloyd-of-effra",
+  "name": "Baroness Lloyd of Effra",
+  "titles": [
+   {
+    "title": "Parliamentary Under-Secretary of State, Department for Business, Innovation, Science and Trade and Department for Digital, Culture, Media and Sport",
+    "entry": "uk-lords-2026-10-22-ai-screens-children-debate",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "baroness-manningham-buller",
+  "name": "Baroness Manningham-Buller",
+  "titles": []
+ },
+ {
+  "id": "baroness-murphy",
+  "name": "Baroness Murphy",
+  "titles": []
+ },
+ {
+  "id": "baroness-owen-of-alderley-edge",
+  "name": "Baroness Owen of Alderley Edge",
+  "titles": []
+ },
+ {
+  "id": "baroness-prashar",
+  "name": "Baroness Prashar",
   "titles": []
  },
  {
@@ -966,6 +1104,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "baroness-wheatcroft",
+  "name": "Baroness Wheatcroft",
+  "titles": []
  },
  {
   "id": "bart-jaworski",
@@ -1163,6 +1306,12 @@
   "name": "Bill Gates",
   "titles": [
    {
+    "title": "co-founder and former CEO of Microsoft, chairman of the Gates Foundation",
+    "entry": "decoder-2026-10-22-gates-twenty-years-ai-disruption",
+    "on": "2026-10-22",
+    "role": "speaker"
+   },
+   {
     "title": "Microsoft founder",
     "entry": "cnn-2026-10-20-suleyman-human-first-ai",
     "on": "2026-10-20",
@@ -1179,6 +1328,11 @@
  {
   "id": "bingqi-shang",
   "name": "Bingqi Shang",
+  "titles": []
+ },
+ {
+  "id": "bishop-of-peterborough",
+  "name": "The Lord Bishop of Peterborough",
   "titles": []
  },
  {
@@ -1224,6 +1378,18 @@
     "title": "President, Microsoft",
     "entry": "bbc-2026-10-12-ai-less-regulated-than-milk",
     "on": "2026-10-12",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "brad-stone",
+  "name": "Brad Stone",
+  "titles": [
+   {
+    "title": "Bloomberg",
+    "entry": "bloomberg-2026-10-22-hollywood-executives-weigh-ai",
+    "on": "2026-10-22",
     "role": "speaker"
    }
   ]
@@ -1309,6 +1475,11 @@
  {
   "id": "byron-c-wallace",
   "name": "Byron C. Wallace",
+  "titles": []
+ },
+ {
+  "id": "caleb-petterson",
+  "name": "Caleb Petterson",
   "titles": []
  },
  {
@@ -1536,6 +1707,11 @@
  {
   "id": "chris-stokel-walker",
   "name": "Chris Stokel-Walker",
+  "titles": []
+ },
+ {
+  "id": "christian-arnold",
+  "name": "Christian Arnold",
   "titles": []
  },
  {
@@ -1816,6 +1992,18 @@
   ]
  },
  {
+  "id": "cs-venkatakrishnan",
+  "name": "CS Venkatakrishnan",
+  "titles": [
+   {
+    "title": "Chief executive, Barclays",
+    "entry": "guardian-2026-10-22-barclays-cut-5000-jobs-ai",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "cuong-dang",
   "name": "Cuong Dang",
   "titles": [
@@ -1824,6 +2012,18 @@
     "entry": "arxiv-2026-10-13-swe-misbehavior-coding-agent-boundary-violations",
     "on": "2026-10-13",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "cyndie-demeocq",
+  "name": "Cyndie Demeocq",
+  "titles": [
+   {
+    "title": "Doctoral researcher, University of Edinburgh School of Informatics",
+    "entry": "lawfare-2026-10-22-ai-child-safety-law",
+    "on": "2026-10-22",
+    "role": "speaker"
    }
   ]
  },
@@ -2167,6 +2367,11 @@
   ]
  },
  {
+  "id": "david-friedman",
+  "name": "David Friedman",
+  "titles": []
+ },
+ {
   "id": "david-gilbert",
   "name": "David Gilbert",
   "titles": [
@@ -2398,8 +2603,23 @@
   ]
  },
  {
+  "id": "dean-valentine",
+  "name": "Dean Valentine",
+  "titles": []
+ },
+ {
   "id": "deepali-gautam",
   "name": "Deepali Gautam",
+  "titles": []
+ },
+ {
+  "id": "deepthika-s",
+  "name": "Deepthika S",
+  "titles": []
+ },
+ {
+  "id": "delaram-golpayegani",
+  "name": "Delaram Golpayegani",
   "titles": []
  },
  {
@@ -2472,6 +2692,18 @@
     "entry": "transformer-2026-10-09-democrats-battle-ai-regulation",
     "on": "2026-10-09",
     "role": "subject"
+   }
+  ]
+ },
+ {
+  "id": "donald-campbell",
+  "name": "Donald Campbell",
+  "titles": [
+   {
+    "title": "Director of advocacy, Foxglove",
+    "entry": "guardian-2026-10-22-ai-firms-uk-datacentre-protests",
+    "on": "2026-10-22",
+    "role": "speaker"
    }
   ]
  },
@@ -2550,6 +2782,18 @@
   "titles": []
  },
  {
+  "id": "duncan-crabtree-ireland",
+  "name": "Duncan Crabtree-Ireland",
+  "titles": [
+   {
+    "title": "SAG-AFTRA",
+    "entry": "bloomberg-2026-10-22-hollywood-executives-weigh-ai",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "duy-dinh",
   "name": "Duy Dinh",
   "titles": [
@@ -2619,6 +2863,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "earl-of-effingham",
+  "name": "The Earl of Effingham",
+  "titles": []
  },
  {
   "id": "ed-ludlow",
@@ -2696,6 +2945,11 @@
  {
   "id": "edward-santow",
   "name": "Edward Santow",
+  "titles": []
+ },
+ {
+  "id": "ehsan-saleh",
+  "name": "Ehsan Saleh",
   "titles": []
  },
  {
@@ -2895,6 +3149,11 @@
   ]
  },
  {
+  "id": "emily-mullin",
+  "name": "Emily Mullin",
+  "titles": []
+ },
+ {
   "id": "emily-peck",
   "name": "Emily Peck",
   "titles": []
@@ -3008,6 +3267,11 @@
   ]
  },
  {
+  "id": "ernesto-calvo",
+  "name": "Ernesto Calvo",
+  "titles": []
+ },
+ {
   "id": "eryk-salvaggio",
   "name": "Eryk Salvaggio",
   "titles": [
@@ -3102,6 +3366,11 @@
  {
   "id": "evgenii-opryshko",
   "name": "Evgenii Opryshko",
+  "titles": []
+ },
+ {
+  "id": "evhub",
+  "name": "evhub",
   "titles": []
  },
  {
@@ -3340,6 +3609,12 @@
   "name": "Garrison Lovely",
   "titles": [
    {
+    "title": "author of Obsolete",
+    "entry": "lesswrong-2026-10-23-highlights-lovely-obsolete",
+    "on": "2026-10-23",
+    "role": "subject"
+   },
+   {
     "title": "Author and journalist",
     "entry": "fli-2026-10-13-lovely-race-to-replace-us",
     "on": "2026-10-13",
@@ -3461,6 +3736,18 @@
   ]
  },
  {
+  "id": "george-strompolos",
+  "name": "George Strompolos",
+  "titles": [
+   {
+    "title": "Promise",
+    "entry": "bloomberg-2026-10-22-hollywood-executives-weigh-ai",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "george-williamson",
   "name": "George Williamson",
   "titles": [
@@ -3553,6 +3840,12 @@
   "name": "Greg Brockman",
   "titles": [
    {
+    "title": "President, OpenAI",
+    "entry": "axios-2026-10-22-openai-php-flaw-black-october",
+    "on": "2026-10-22",
+    "role": "speaker"
+   },
+   {
     "title": "President and co-founder, OpenAI",
     "entry": "no-priors-2026-10-15-brockman-cybersecurity-drug-development",
     "on": "2026-10-15",
@@ -3595,6 +3888,11 @@
   "titles": []
  },
  {
+  "id": "guadalupe-gonzalez",
+  "name": "Guadalupe Gonzalez",
+  "titles": []
+ },
+ {
   "id": "guanghui-qin",
   "name": "Guanghui Qin",
   "titles": []
@@ -3618,6 +3916,12 @@
   "id": "gus-docker",
   "name": "Gus Docker",
   "titles": [
+   {
+    "title": "host, Future of Life Institute podcast",
+    "entry": "fli-podcast-2026-10-22-turkle-artificial-intimacy",
+    "on": "2026-10-22",
+    "role": "speaker"
+   },
    {
     "title": "Host, Future of Life Institute Podcast",
     "entry": "fli-2026-10-13-lovely-race-to-replace-us",
@@ -3827,6 +4131,11 @@
   "titles": []
  },
  {
+  "id": "herb-scribner",
+  "name": "Herb Scribner",
+  "titles": []
+ },
+ {
   "id": "hidenori-tanaka",
   "name": "Hidenori Tanaka",
   "titles": []
@@ -3900,6 +4209,11 @@
   "titles": []
  },
  {
+  "id": "huiting-liu",
+  "name": "Huiting Liu",
+  "titles": []
+ },
+ {
   "id": "hyunmin-jun",
   "name": "Hyunmin Jun",
   "titles": []
@@ -3961,6 +4275,18 @@
   "titles": []
  },
  {
+  "id": "imran-khan",
+  "name": "Imran Khan",
+  "titles": [
+   {
+    "title": "Researcher and strategist leading humane evals work, Center for Humane Technology",
+    "entry": "center-for-humane-technology-2026-10-22-kora-kids-benchmark",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "indermit-gill",
   "name": "Indermit Gill",
   "titles": [
@@ -4008,6 +4334,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "j-dmitri-gallow",
+  "name": "J Dmitri Gallow",
+  "titles": []
  },
  {
   "id": "jack-clark",
@@ -4598,6 +4929,16 @@
   "titles": []
  },
  {
+  "id": "jinsong-wu",
+  "name": "Jinsong Wu",
+  "titles": []
+ },
+ {
+  "id": "jinwei-gan",
+  "name": "Jinwei Gan",
+  "titles": []
+ },
+ {
   "id": "jisu-jeon",
   "name": "Jisu Jeon",
   "titles": []
@@ -4833,6 +5174,11 @@
   "titles": []
  },
  {
+  "id": "josefely",
+  "name": "josefely",
+  "titles": []
+ },
+ {
   "id": "joseph-egan",
   "name": "Joseph Egan",
   "titles": []
@@ -4846,6 +5192,18 @@
     "entry": "guardian-2026-10-18-ai-worms-anthropic-worried",
     "on": "2026-10-18",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "joseph-miller",
+  "name": "Joseph Miller",
+  "titles": [
+   {
+    "title": "Director, PauseAI UK",
+    "entry": "guardian-2026-10-22-ai-firms-uk-datacentre-protests",
+    "on": "2026-10-22",
+    "role": "speaker"
    }
   ]
  },
@@ -4973,6 +5331,16 @@
   "titles": []
  },
  {
+  "id": "juan-j-vazquez",
+  "name": "Juan J Vazquez",
+  "titles": []
+ },
+ {
+  "id": "juan-pablo-rivera",
+  "name": "Juan-Pablo Rivera",
+  "titles": []
+ },
+ {
   "id": "juann-kim",
   "name": "Juann Kim",
   "titles": []
@@ -5071,6 +5439,18 @@
     "title": "Preparedness and Policy, Scale AI",
     "entry": "arxiv-2026-10-20-rsi-control-covert-sabotage",
     "on": "2026-10-20",
+    "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "kalyeena-makortoff",
+  "name": "Kalyeena Makortoff",
+  "titles": [
+   {
+    "title": "Banking correspondent, The Guardian",
+    "entry": "guardian-2026-10-22-barclays-cut-5000-jobs-ai",
+    "on": "2026-10-22",
     "role": "author"
    }
   ]
@@ -5191,6 +5571,18 @@
   "id": "kashmir-hill",
   "name": "Kashmir Hill",
   "titles": []
+ },
+ {
+  "id": "kat-jones",
+  "name": "Kat Jones",
+  "titles": [
+   {
+    "title": "Director, Action to Protect Rural Scotland",
+    "entry": "guardian-2026-10-22-ai-firms-uk-datacentre-protests",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "kat-lay",
@@ -5472,6 +5864,18 @@
   "titles": []
  },
  {
+  "id": "kishori-rajan",
+  "name": "Kishori Rajan",
+  "titles": [
+   {
+    "title": "film producer and writer",
+    "entry": "bloomberg-2026-10-22-hollywood-executives-weigh-ai",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "konrad-roslaniec",
   "name": "Konrad Rosłaniec",
   "titles": [
@@ -5678,6 +6082,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "lea-deleris",
+  "name": "Léa Déléris",
+  "titles": []
  },
  {
   "id": "leanne-tan",
@@ -5921,8 +6330,23 @@
   "titles": []
  },
  {
+  "id": "lord-addington",
+  "name": "Lord Addington",
+  "titles": []
+ },
+ {
+  "id": "lord-alton-of-liverpool",
+  "name": "Lord Alton of Liverpool",
+  "titles": []
+ },
+ {
   "id": "lord-birt",
   "name": "Lord Birt",
+  "titles": []
+ },
+ {
+  "id": "lord-brooke-of-alverthorpe",
+  "name": "Lord Brooke of Alverthorpe",
   "titles": []
  },
  {
@@ -5938,6 +6362,11 @@
   ]
  },
  {
+  "id": "lord-clement-jones",
+  "name": "Lord Clement-Jones",
+  "titles": []
+ },
+ {
   "id": "lord-empey",
   "name": "Lord Empey",
   "titles": []
@@ -5948,8 +6377,38 @@
   "titles": []
  },
  {
+  "id": "lord-grocott",
+  "name": "Lord Grocott",
+  "titles": []
+ },
+ {
+  "id": "lord-hampton",
+  "name": "Lord Hampton",
+  "titles": []
+ },
+ {
+  "id": "lord-harper",
+  "name": "Lord Harper",
+  "titles": []
+ },
+ {
   "id": "lord-kirkhope-of-harrogate",
   "name": "Lord Kirkhope of Harrogate",
+  "titles": []
+ },
+ {
+  "id": "lord-loomba",
+  "name": "Lord Loomba",
+  "titles": []
+ },
+ {
+  "id": "lord-mcfall-of-alcluith",
+  "name": "Lord McFall of Alcluith",
+  "titles": []
+ },
+ {
+  "id": "lord-mcloughlin",
+  "name": "Lord McLoughlin",
   "titles": []
  },
  {
@@ -5958,13 +6417,40 @@
   "titles": []
  },
  {
+  "id": "lord-nagaraju",
+  "name": "Lord Nagaraju",
+  "titles": []
+ },
+ {
   "id": "lord-pack",
   "name": "Lord Pack",
   "titles": []
  },
  {
+  "id": "lord-patel",
+  "name": "Lord Patel",
+  "titles": []
+ },
+ {
+  "id": "lord-ponsonby-of-shulbrede",
+  "name": "Lord Ponsonby of Shulbrede",
+  "titles": [
+   {
+    "title": "Senior Deputy Speaker",
+    "entry": "uk-lords-2026-10-22-procedural-flexibility-ai-scrutiny",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "lord-ranger-of-northwood",
   "name": "Lord Ranger of Northwood",
+  "titles": []
+ },
+ {
+  "id": "lord-rees-of-ludlow",
+  "name": "Lord Rees of Ludlow",
   "titles": []
  },
  {
@@ -5978,6 +6464,16 @@
   "titles": []
  },
  {
+  "id": "lord-tarassenko",
+  "name": "Lord Tarassenko",
+  "titles": []
+ },
+ {
+  "id": "lord-watts",
+  "name": "Lord Watts",
+  "titles": []
+ },
+ {
   "id": "lori-trahan",
   "name": "Lori Trahan",
   "titles": [
@@ -5986,6 +6482,18 @@
     "entry": "transformer-2026-10-09-democrats-battle-ai-regulation",
     "on": "2026-10-09",
     "role": "subject"
+   }
+  ]
+ },
+ {
+  "id": "louis-mosley",
+  "name": "Louis Mosley",
+  "titles": [
+   {
+    "title": "Executive vice president for Europe and the U.K., Palantir",
+    "entry": "forbes-2026-10-22-palantir-maven-no-kill-switch",
+    "on": "2026-10-22",
+    "role": "speaker"
    }
   ]
  },
@@ -6142,6 +6650,18 @@
   ]
  },
  {
+  "id": "marge-dean",
+  "name": "Marge Dean",
+  "titles": [
+   {
+    "title": "Skybound Entertainment",
+    "entry": "bloomberg-2026-10-22-hollywood-executives-weigh-ai",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "maria-cantwell",
   "name": "Maria Cantwell",
   "titles": [
@@ -6247,6 +6767,11 @@
   ]
  },
  {
+  "id": "marta-lasek-markey",
+  "name": "Marta Lasek-Markey",
+  "titles": []
+ },
+ {
   "id": "martha-gimbel",
   "name": "Martha Gimbel",
   "titles": [
@@ -6266,6 +6791,18 @@
     "title": "professor, University of Zurich",
     "entry": "guardian-2026-10-14-ai-change-stakes-bioweapons",
     "on": "2026-10-14",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "mathilde-collin",
+  "name": "Mathilde Collin",
+  "titles": [
+   {
+    "title": "Founder of the Kora benchmark; founder of Front",
+    "entry": "center-for-humane-technology-2026-10-22-kora-kids-benchmark",
+    "on": "2026-10-22",
     "role": "speaker"
    }
   ]
@@ -6325,6 +6862,18 @@
   "id": "matthew-nguyen",
   "name": "Matthew Nguyen",
   "titles": []
+ },
+ {
+  "id": "matthew-prince",
+  "name": "Matthew Prince",
+  "titles": [
+   {
+    "title": "CEO, Cloudflare",
+    "entry": "axios-2026-10-22-openai-php-flaw-black-october",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "matthias-hein",
@@ -6705,6 +7254,11 @@
   "titles": []
  },
  {
+  "id": "monique-munarini",
+  "name": "Monique Munarini",
+  "titles": []
+ },
+ {
   "id": "moreno-carullo",
   "name": "Moreno Carullo",
   "titles": [
@@ -6904,7 +7458,14 @@
  {
   "id": "newt-gingrich",
   "name": "Newt Gingrich",
-  "titles": []
+  "titles": [
+   {
+    "title": "author and former Republican Speaker of the House",
+    "entry": "c-span-2026-10-22-gingrich-ai-out-of-control",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "ngoc-hai-nguyen",
@@ -6943,6 +7504,18 @@
   ]
  },
  {
+  "id": "niemandhier",
+  "name": "niemandhier",
+  "titles": [
+   {
+    "title": "Hacker News submitter",
+    "entry": "github-2026-10-22-nvidia-openshell-agent-runtime",
+    "on": "2026-10-22",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "nikesh-arora",
   "name": "Nikesh Arora",
   "titles": [
@@ -6973,6 +7546,12 @@
   "id": "nilay-patel",
   "name": "Nilay Patel",
   "titles": [
+   {
+    "title": "editor in chief of The Verge",
+    "entry": "decoder-2026-10-22-gates-twenty-years-ai-disruption",
+    "on": "2026-10-22",
+    "role": "speaker"
+   },
    {
     "title": "Editor in chief, The Verge",
     "entry": "decoder-2026-10-19-pritzker-ai-regulation-nukes",
@@ -7247,6 +7826,11 @@
   ]
  },
  {
+  "id": "pawni-yadav",
+  "name": "Pawni Yadav",
+  "titles": []
+ },
+ {
   "id": "pegah-ghahremani",
   "name": "Pegah Ghahremani",
   "titles": [
@@ -7406,6 +7990,11 @@
   "titles": []
  },
  {
+  "id": "qi-li",
+  "name": "Qi Li",
+  "titles": []
+ },
+ {
   "id": "qianchu-liu",
   "name": "Qianchu Liu",
   "titles": []
@@ -7472,6 +8061,18 @@
   ]
  },
  {
+  "id": "raul-torrez",
+  "name": "Raúl Torrez",
+  "titles": [
+   {
+    "title": "New Mexico Attorney General",
+    "entry": "politico-2026-10-22-new-mexico-ag-meta-ruling",
+    "on": "2026-10-22",
+    "role": "subject"
+   }
+  ]
+ },
+ {
   "id": "raymond-douglas",
   "name": "Raymond Douglas",
   "titles": [
@@ -7525,6 +8126,18 @@
   "titles": []
  },
  {
+  "id": "renee-diresta",
+  "name": "Renée DiResta",
+  "titles": [
+   {
+    "title": "Lawfare contributing editor",
+    "entry": "lawfare-2026-10-22-ai-child-safety-law",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "reza-aghajani",
   "name": "Reza Aghajani",
   "titles": [
@@ -7545,6 +8158,18 @@
     "entry": "chicago-fed-2026-03-forecasting-economic-effects-ai",
     "on": "2026-03",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "riana-pfefferkorn",
+  "name": "Riana Pfefferkorn",
+  "titles": [
+   {
+    "title": "Policy fellow, Stanford Institute for Human-Centered Artificial Intelligence",
+    "entry": "lawfare-2026-10-22-ai-child-safety-law",
+    "on": "2026-10-22",
+    "role": "speaker"
    }
   ]
  },
@@ -7729,6 +8354,11 @@
   ]
  },
  {
+  "id": "robin-queriaux",
+  "name": "Robin Quériaux",
+  "titles": []
+ },
+ {
   "id": "robyn-kozierok",
   "name": "Robyn Kozierok",
   "titles": []
@@ -7786,6 +8416,11 @@
     "role": "mentioned"
    }
   ]
+ },
+ {
+  "id": "roozbeh-nahavandi",
+  "name": "Roozbeh Nahavandi",
+  "titles": []
  },
  {
   "id": "rosa-curling",
@@ -7906,6 +8541,11 @@
   ]
  },
  {
+  "id": "sagnik-chatterjee",
+  "name": "Sagnik Chatterjee",
+  "titles": []
+ },
+ {
   "id": "sai-htaungkham",
   "name": "Sai HtaungKham",
   "titles": []
@@ -7985,6 +8625,11 @@
   "titles": []
  },
  {
+  "id": "sama-salarian",
+  "name": "Sama Salarian",
+  "titles": []
+ },
+ {
   "id": "samuel-bendett",
   "name": "Samuel Bendett",
   "titles": [
@@ -8004,6 +8649,11 @@
  {
   "id": "samuel-verboomen",
   "name": "Samuel Verboomen",
+  "titles": []
+ },
+ {
+  "id": "sandy-tanwisuth",
+  "name": "Sandy Tanwisuth",
   "titles": []
  },
  {
@@ -8247,6 +8897,18 @@
   "titles": []
  },
  {
+  "id": "sharon-graham",
+  "name": "Sharon Graham",
+  "titles": [
+   {
+    "title": "General secretary, Unite",
+    "entry": "guardian-2026-10-22-barclays-cut-5000-jobs-ai",
+    "on": "2026-10-22",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "sharon-levy",
   "name": "Sharon Levy",
   "titles": []
@@ -8304,6 +8966,12 @@
   "id": "sherry-turkle",
   "name": "Sherry Turkle",
   "titles": [
+   {
+    "title": "professor, MIT",
+    "entry": "fli-podcast-2026-10-22-turkle-artificial-intimacy",
+    "on": "2026-10-22",
+    "role": "speaker"
+   },
    {
     "title": "MIT professor",
     "entry": "wired-2026-10-16-chatbots-first-person-turkle",
@@ -8414,6 +9082,11 @@
   ]
  },
  {
+  "id": "solveig-bachellery",
+  "name": "Solveig Bachellery",
+  "titles": []
+ },
+ {
   "id": "song-wang",
   "name": "Song Wang",
   "titles": []
@@ -8457,9 +9130,27 @@
   "name": "Steve Liesman",
   "titles": [
    {
+    "title": "CNBC reporter",
+    "entry": "cnbc-2026-10-22-voters-data-centers-backyard",
+    "on": "2026-10-22",
+    "role": "speaker"
+   },
+   {
     "title": "CNBC correspondent",
     "entry": "cnbc-2026-10-19-ai-economy-women-history",
     "on": "2026-10-19",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "steve-rigby",
+  "name": "Steve Rigby",
+  "titles": [
+   {
+    "title": "Chair, Sovereign AI Leadership (SAIL) taskforce",
+    "entry": "guardian-2026-10-22-ai-firms-uk-datacentre-protests",
+    "on": "2026-10-22",
     "role": "speaker"
    }
   ]
@@ -8511,6 +9202,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "steven-lee-myers",
+  "name": "Steven Lee Myers",
+  "titles": []
  },
  {
   "id": "steven-levy",
@@ -8570,6 +9266,11 @@
  {
   "id": "sunshowers",
   "name": "sunshowers",
+  "titles": []
+ },
+ {
+  "id": "suyash-maniyar",
+  "name": "Suyash Maniyar",
   "titles": []
  },
  {
@@ -8706,6 +9407,11 @@
  {
   "id": "tianzhuo-yang",
   "name": "Tianzhuo Yang",
+  "titles": []
+ },
+ {
+  "id": "tiffany-hsu",
+  "name": "Tiffany Hsu",
   "titles": []
  },
  {
@@ -8887,6 +9593,11 @@
  {
   "id": "troy-meink",
   "name": "Troy Meink",
+  "titles": []
+ },
+ {
+  "id": "tsvibt",
+  "name": "TsviBT",
   "titles": []
  },
  {
@@ -9148,6 +9859,11 @@
   "titles": []
  },
  {
+  "id": "xinchao-wang",
+  "name": "Xinchao Wang",
+  "titles": []
+ },
+ {
   "id": "xing-zhang",
   "name": "Xing Zhang",
   "titles": []
@@ -9371,6 +10087,18 @@
   "titles": []
  },
  {
+  "id": "zachary-folk",
+  "name": "Zachary Folk",
+  "titles": [
+   {
+    "title": "Forbes Staff",
+    "entry": "forbes-2026-10-22-palantir-maven-no-kill-switch",
+    "on": "2026-10-22",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "zak-stein",
   "name": "Zak Stein",
   "titles": [
@@ -9459,6 +10187,11 @@
   ]
  },
  {
+  "id": "zhiwei-jiang",
+  "name": "Zhiwei Jiang",
+  "titles": []
+ },
+ {
   "id": "zhixing-tan",
   "name": "Zhixing Tan",
   "titles": []
@@ -9481,6 +10214,11 @@
  {
   "id": "zhu-zhang",
   "name": "Zhu Zhang",
+  "titles": []
+ },
+ {
+  "id": "zifeng-cheng",
+  "name": "Zifeng Cheng",
   "titles": []
  },
  {

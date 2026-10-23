@@ -1,5 +1,2109 @@
 [
  {
+  "id": "7fa694bbe297",
+  "slug": "lesswrong-2026-10-23-highlights-lovely-obsolete",
+  "kind": "essay",
+  "title": "Highlights from Garrison Lovely's \"Obsolete\"",
+  "url": "https://www.lesswrong.com/posts/osoJLzXycDhjm3tqv/highlights-from-garrison-lovely-s-obsolete",
+  "outlet": "LessWrong",
+  "published": "2026-10-23",
+  "also": [],
+  "summary": "According to the excerpt, June Jimenez reviews Garrison Lovely's book \"Obsolete\", calling it a well-researched introduction for non-technical readers. Jimenez describes its core argument as analysing AI through mass labour displacement and says a mass movement to shape or pause development is more feasible than often argued, while wanting more care about the plan's limits.",
+  "change": {
+   "kind": "argument",
+   "note": "June Jimenez reviews Garrison Lovely's book and backs its case that competitive pressure does not make fast AI development inevitable."
+  },
+  "lenses": {
+   "public": "June Jimenez recommends Garrison Lovely's book \"Obsolete\" as an accessible introduction, arguing that job loss could build a broad public movement over AI.",
+   "policy": "June Jimenez says Garrison Lovely makes a strong case that competitive pressure alone does not fix the pace of AI development, though the plan's limits need more care.",
+   "ideas": "Garrison Lovely's book, as reviewed by June Jimenez, frames AI mainly as mass labour displacement and asks whether people can collectively choose its pace."
+  },
+  "topics": [
+   "work-and-money",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "june-jimenez",
+    "role": "author"
+   },
+   {
+    "id": "garrison-lovely",
+    "role": "subject",
+    "title": "author of Obsolete"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: only the opening review paragraph was available; the highlighted book sections were not read. The excerpt cuts off mid-sentence while naming critics."
+ },
+ {
+  "id": "8937fd9c8277",
+  "slug": "techcrunch-2026-10-23-ai-agents-started-playing",
+  "kind": "news",
+  "title": "Left alone with nothing to do, AI agents started playing",
+  "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing",
+  "outlet": "TechCrunch",
+  "published": "2026-10-23",
+  "also": [],
+  "summary": "According to the standfirst, TechCrunch reports that MIT researchers placed 13 AI agents on a virtual island, where the agents invented games, mourned a lost ring and eventually got better at their jobs. The article body, the models used and the study design were not read.",
+  "change": {
+   "kind": "evidence",
+   "note": "TechCrunch reports MIT researchers observed 13 AI agents on a virtual island inventing games and later improving at tasks; details unread."
+  },
+  "lenses": {
+   "research": "TechCrunch reports an MIT experiment in which 13 AI agents left unsupervised on a virtual island developed unplanned behaviour, including games and later better task performance."
+  },
+  "topics": [
+   "beyond-control",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "aditya-mehta",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "mit"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "techcrunch-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: one-sentence standfirst only. The URL date is Oct 22 while triage gives Oct 23 UTC. Evidence status 'report' is a placeholder: find the underlying MIT paper, if any.",
+  "evidence": {
+   "design": "Per TechCrunch, MIT researchers placed 13 AI agents on a virtual island with no assigned task.",
+   "finding": "Per TechCrunch, the agents invented games, mourned a lost ring and eventually improved at their jobs.",
+   "limits": "Only the standfirst was read; the models, duration and measures are unknown, and no paper was seen.",
+   "status": "report"
+  }
+ },
+ {
+  "id": "bfd99810bd03",
+  "slug": "lesswrong-2026-10-23-instrumental-convergence-incoherent",
+  "kind": "essay",
+  "title": "Instrumental convergence is incoherent (so pls slightly lower your p(extinction))",
+  "url": "https://www.lesswrong.com/posts/oxZfMvQS9NxcNTozL/instrumental-convergence-is-incoherent-so-pls-slightly-lower",
+  "outlet": "LessWrong",
+  "published": "2026-10-23",
+  "also": [],
+  "summary": "According to the excerpt, Arepo, who says they are not an expert, argues in a crossposted work-in-progress that the concept of instrumental convergence is murky, belongs to a class of pre-empirical predictions with a low success rate, and may be unfixable. Arepo suggests readers slightly lower their estimates of extinction risk.",
+  "change": {
+   "kind": "argument",
+   "note": "Arepo argues the idea of instrumental convergence is too vague to have made real predictions; no new evidence is offered in the excerpt."
+  },
+  "lenses": {
+   "research": "Arepo argues that instrumental convergence has been defined too loosely to count as a tested prediction about AI behaviour, and is a weak high-level model.",
+   "ideas": "Arepo questions whether armchair reasoning about what advanced AI would want can justify strong claims about extinction risk."
+  },
+  "topics": [
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "arepo",
+    "role": "author"
+   },
+   {
+    "id": "j-dmitri-gallow",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: summary rests on the epistemic-status note and TL;DR in the excerpt. The author describes the post as a work in progress and not from an expert. Crossposted from the EA Forum."
+ },
+ {
+  "id": "4f40e487b7f9",
+  "slug": "axios-2026-10-22-openai-php-flaw-black-october",
+  "kind": "news",
+  "title": "Black October: why bugs discovered by OpenAI tech are creating a cyber emergency",
+  "url": "https://www.axios.com/2026/10/22/php-vulnerability-security-update-websites",
+  "outlet": "Axios",
+  "published": "2026-10-22",
+  "also": [
+   {
+    "outlet": "Bloomberg Tech",
+    "title": "OpenAI Helped Find Potentially Catastrophic Cyber Flaw",
+    "url": "https://www.youtube.com/watch?v=gWZY9sKeg7o"
+   },
+   {
+    "outlet": "Bloomberg Television",
+    "title": "OpenAI co-founder and Cloudflare CEO on AI-discovered security flaws",
+    "url": "https://www.youtube.com/watch?v=59arl8YObcc"
+   },
+   {
+    "outlet": "NBC News",
+    "title": "AI discovers critical flaw threatening 70% of websites",
+    "url": "https://www.youtube.com/watch?v=HjdAqxuZTRU"
+   }
+  ],
+  "summary": "Axios reports that flaws in PHP, which it says runs millions of websites, were found with help from OpenAI technology, and that patches released on Oct. 21 sent governments and companies offline briefly. In a Bloomberg Tech interview, OpenAI's Greg Brockman and Cloudflare's Matthew Prince describe the discovery and the attacks since.",
+  "change": {
+   "kind": "evidence",
+   "note": "Cloudflare's CEO reports millions of attempted attacks on the PHP flaw every minute; OpenAI's Brockman says its model found the full bug autonomously."
+  },
+  "lenses": {
+   "public": "Websites built on PHP may have been exposed for years; Cloudflare's CEO says anyone running PHP should install the free update now.",
+   "policy": "OpenAI's Brockman asks what societal process should keep the internet patched as AI finds flaws faster, and cites court-ordered botnet clean-ups as a precedent.",
+   "research": "OpenAI says its internal model found the more complete version autonomously, a month after a security researcher using its models found an earlier version.",
+   "ideas": "Who may scan for and remotely patch other people's vulnerable systems, and who decides, is left open by OpenAI's Brockman."
+  },
+  "topics": [
+   "security-and-war",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "greg-brockman",
+    "role": "speaker",
+    "title": "President, OpenAI"
+   },
+   {
+    "id": "matthew-prince",
+    "role": "speaker",
+    "title": "CEO, Cloudflare"
+   },
+   {
+    "id": "ed-ludlow",
+    "role": "speaker"
+   },
+   {
+    "id": "herb-scribner",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "openai",
+   "cloudflare",
+   "bloomberg",
+   "axios"
+  ],
+  "quotes": [
+   {
+    "id": "4f40e487b7f9-10a048d8",
+    "text": "It wasn't that AI created the bug. AI found the bug that was there, and it's incredibly important that we've now found it, fixed it, and the software is significantly more secure because of the work that OpenAI did.",
+    "speaker": "matthew-prince",
+    "speakerCertain": true,
+    "context": "Prince answers the Bloomberg host's question whether AI found the flaws before attackers did.",
+    "at": 240,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "4f40e487b7f9-042d99b9",
+    "text": "Literally, we're seeing millions of attempted, attacks using this flaw, now across all of our network, you know, every single minute of every single day.",
+    "speaker": "matthew-prince",
+    "speakerCertain": true,
+    "context": "Prince describes exploitation attempts against the PHP flaw seen on Cloudflare's network after it became public.",
+    "at": 337,
+    "match": "exact",
+    "type": "account",
+    "hand": "first"
+   },
+   {
+    "id": "4f40e487b7f9-b1d3bc4f",
+    "text": "We set up an environment, and we we took our most capable model with a lot of compute behind it, and that that autonomously was able to find the full exploit.",
+    "speaker": "greg-brockman",
+    "speakerCertain": true,
+    "context": "Brockman explains how OpenAI's internal version of the discovery was made, compared with the researcher-guided one.",
+    "at": 153,
+    "match": "exact",
+    "warnings": [
+     "spoken clean-up: we (said twice), that (said twice)"
+    ],
+    "type": "account",
+    "hand": "first"
+   },
+   {
+    "id": "4f40e487b7f9-0f1143c0",
+    "text": "we're in this world where there's what we call a defender's window, where frontier models are ahead of what's broadly available.",
+    "speaker": "greg-brockman",
+    "speakerCertain": true,
+    "context": "Brockman answers a question on who should be allowed to scan for and patch vulnerable systems.",
+    "at": 482,
+    "match": "exact",
+    "warnings": [
+     "starts inside a longer claim, right after “and”"
+    ],
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "4f40e487b7f9-11342338",
+    "text": "believe that attackers are going to start using models broadly to try to exploit these flaws. We are monitoring on our side watching for it",
+    "speaker": "greg-brockman",
+    "speakerCertain": true,
+    "context": "Brockman answers whether hackers have used OpenAI's models against this flaw.",
+    "at": 265,
+    "match": "exact",
+    "type": "prediction",
+    "hand": "first"
+   }
+  ],
+  "importance": 3,
+  "access": "partial",
+  "transcript": "auto",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "axios",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Axios returned 403, so the Axios article itself was not read; the Axios summary comes from the triage excerpt. The saved text is the Bloomberg Tech interview's captions (not generated; no speaker names). Speakers are inferred from the host addressing 'Greg' and 'Matthew' before each answer. Captions are rough ('Califf', 'floor' for flaw, 'dots' for the agent product). 'Sol' model name and Bloomberg's '70% of websites' come from the host and Prince, not checked independently.",
+  "story": "php-ai-found-vulnerabilities-2026-10"
+ },
+ {
+  "id": "04830a680922",
+  "slug": "metr-2026-10-22-red-teaming-openai-agent-monitoring",
+  "kind": "research",
+  "title": "Red-Teaming OpenAI's Internal Agent Monitoring Systems",
+  "url": "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring",
+  "outlet": "METR",
+  "published": "2026-10-22",
+  "also": [
+   {
+    "outlet": "Redwood Research blog",
+    "title": "Red-Teaming OpenAI's Internal Agent Monitoring Systems",
+    "url": "https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent"
+   }
+  ],
+  "summary": "METR reports a three-week exercise in which one METR and one Redwood Research employee, given deep access to OpenAI's internals, tested OpenAI's internal misalignment monitoring. METR lists vulnerabilities found, says OpenAI reports they are patched, and sets out design ideals for monitoring.",
+  "change": {
+   "kind": "evidence",
+   "note": "METR and Redwood Research disclose the first outside red-team findings on OpenAI's internal agent monitoring, including coverage estimates and ways agents could evade it."
+  },
+  "lenses": {
+   "public": "Outside testers found that OpenAI's monitoring of its own internal AI agents had gaps, which OpenAI says it has since fixed; METR has not checked that claim.",
+   "policy": "A pilot of deep external access to a lab's internal infrastructure shows what independent review can find, and that OpenAI could redact the public version at its sole discretion.",
+   "research": "METR estimates 75-94% of agentic Responses API traffic was eligible for monitoring and lists concrete bypasses, offering a template for measuring real monitoring coverage rather than assuming it.",
+   "ideas": "If AI agents might act against their developers' wishes, the question is who can verify the watchers, and how much of the answer the public gets to see."
+  },
+  "topics": [
+   "beyond-control",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "david-rein",
+    "role": "author"
+   },
+   {
+    "id": "adam-kaufman",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "metr",
+   "redwood-research",
+   "openai"
+  ],
+  "quotes": [
+   {
+    "id": "04830a680922-24bef486",
+    "text": "Broadly, we believe that future monitoring infrastructure should be able to withstand deliberate, strategic, and sustained attacks from highly capable internal agents at scale.",
+    "speaker": "metr",
+    "speakerCertain": true,
+    "context": "METR's stated design goal for monitoring and control systems, drawn from its findings in the OpenAI exercise.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "04830a680922-ed57c3a7",
+    "text": "At the time of the exercise, the monitoring system triggered when agents returned control to the user, so during the time period when compaction events were not being monitored, agents could indefinitely postpone being monitored by simply continuing to take actions.",
+    "speaker": "metr",
+    "speakerCertain": true,
+    "context": "One of METR's listed findings about the historical system it assessed; METR notes it could not check whether agents had exploited this.",
+    "match": "exact",
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "04830a680922-95028609",
+    "text": "Since completing the exercise, OpenAI has stated that all of the vulnerabilities we identified that impact their production safeguards stack have been patched. OpenAI has also described significant subsequent changes to the intended coverage of its monitoring system. We have not evaluated these claims.",
+    "speaker": "metr",
+    "speakerCertain": true,
+    "context": "METR on what happened after the exercise, and the limit of what it can vouch for.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   }
+  ],
+  "importance": 3,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "metr",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Redwood's copy (by Buck Shlegeris) is a cross-post and was not separately read. A redacted exploit detail is mentioned in the source. METR says the exercise was separate from its Hugging Face incident investigation.",
+  "evidence": {
+   "design": "A three-week pilot (July 21 to August 11) in which one METR and one Redwood Research employee had access to OpenAI's internal codebase, monitor prompts and configuration, and documentation, and interviewed about a dozen OpenAI staff, working on OpenAI devices on site.",
+   "finding": "Roughly 75-94% of agentic internal Responses API traffic from models at least as strong as GPT-5.5 was eligible for monitoring, and 99.2% of internal Codex agent traffic; unmonitored compaction events likely left on the order of 10% of eligible Codex traffic unmonitored between May and July 2026; several bypasses were found, some details redacted by OpenAI.",
+   "limits": "Describes the system as it stood on and before July 21, not the expanded system; a brief public post agreed in advance; OpenAI could redact anything it deemed sensitive, and METR had no unilateral right to describe redactions; exploitability of some findings was not tested; OpenAI's patch claims were not evaluated.",
+   "status": "report"
+  }
+ },
+ {
+  "id": "430474a9af0e",
+  "slug": "alignmentforum-2026-10-22-monitorability-evals-policy",
+  "kind": "essay",
+  "title": "Monitorability evaluations and policy proposals",
+  "url": "https://www.alignmentforum.org/posts/zAczYuHQS6jdG5DTg/monitorability-evaluations-and-policy-proposals",
+  "outlet": "AI Alignment Forum",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "On the AI Alignment Forum, evhub sets out four types of monitorability, argues trust in monitors should rest on auditing evaluations, and proposes a methodology for measuring them. The post also backs both binding red lines and ongoing limits on lab changes that reduce monitorability. evhub says these are personal views.",
+  "change": {
+   "kind": "argument",
+   "note": "evhub argues for pairing hard monitorability red lines with a 'monitorability externality' test on model changes, and proposes a way to evaluate monitors."
+  },
+  "lenses": {
+   "policy": "evhub proposes two kinds of rule: red lines on how unmonitorable models can be, plus checks on model changes that worsen monitorability before any red line is crossed.",
+   "research": "evhub splits monitorability into control, training, auditing and diffuse types and proposes measuring the first three against the best deployed trusted monitor, with real elicitation effort.",
+   "ideas": "Monitoring a model with a model raises the question of whose judgment can be trusted when the watched system might be misaligned."
+  },
+  "topics": [
+   "beyond-control",
+   "safeguards",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "evhub",
+    "role": "author"
+   },
+   {
+    "id": "bronson-schoen",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "redwood-research"
+  ],
+  "quotes": [
+   {
+    "id": "430474a9af0e-1951ddf4",
+    "text": "A basic fact that is true about at least all of the non-diffuse forms of monitorability is that you should be able to in some sense get a perfect score by just using the same model as the monitor and policy.",
+    "speaker": "evhub",
+    "speakerCertain": true,
+    "context": "evhub explains why monitorability needs a notion of trusted monitors.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "430474a9af0e-137401b5",
+    "text": "The big thing I'd like to see is a combination of a) red lines for absolute levels of unmonitorability that labs should not cross and b) measures that constrain the degree to which labs can do things that degrade monitorability even before reaching those red lines.",
+    "speaker": "evhub",
+    "speakerCertain": true,
+    "context": "evhub on what monitorability-based policy should contain.",
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first"
+   },
+   {
+    "id": "430474a9af0e-298b065d",
+    "text": "Labs should not be able to internally deploy models that can reliably evade detection when attempting dangerous sabotage actions like breaking out of a sandbox, poisoning data, or sabotaging an alignment experiment.",
+    "speaker": "evhub",
+    "speakerCertain": true,
+    "context": "The first of evhub's two suggested hard red lines.",
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-23",
+  "via": {
+   "source": "ai-alignment-forum",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "evhub's post says nothing in it is an official Anthropic position, but the post draws on Anthropic's Risk Report and the author's employer is not stated in the saved text. A commenter, Bronson Schoen, disputes the framing of systematic misalignment and the red lines; evhub replies."
+ },
+ {
+  "id": "eb6991739d41",
+  "slug": "arxiv-2026-10-22-confident-llms-human-deference",
+  "kind": "research",
+  "title": "Who Is Sycophantic to Whom? Confident LLMs, Human Deference, and the Collapse of Trust Calibration",
+  "url": "https://arxiv.org/abs/2610.31579v1",
+  "outlet": "arXiv",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the abstract, a small experiment with 32 participants had people learn science topics from assistants built on GPT-5-mini whose facts were partly replaced by falsehoods. The authors report people adopted stated falsehoods about 65% of the time and held them with high confidence.",
+  "change": {
+   "kind": "evidence",
+   "note": "A preprint reports that 32 people adopted falsehoods from a confident chatbot about 65% of the time, whatever share of its facts was false."
+  },
+  "lenses": {
+   "public": "People who learn from a confident chatbot may absorb its mistakes and feel sure of them, so a confident tone is no sign of accuracy.",
+   "research": "Reverses the usual sycophancy question and reports that confidence stopped distinguishing right answers from wrong ones, in a small within-subjects sample."
+  },
+  "topics": [
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "deepthika-s",
+    "role": "author"
+   },
+   {
+    "id": "pawni-yadav",
+    "role": "author"
+   },
+   {
+    "id": "b-sankar",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "openai"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, which was cut off.",
+  "evidence": {
+   "design": "Within-subjects experiment: 32 participants studied up to five science topics with five GPT-5-mini assistants whose briefings had 0, 25, 50, 75 or 100% of facts replaced by plausible falsehoods; 104 quizzes, 1,040 answers.",
+   "finding": "Scores fell from 7.4 to 2.9 out of 10; the planted falsehood was chosen on 60% of falsified items versus 11% of correctly taught ones (odds ratio 12.5); falsehoods were adopted about 65% of the time and held at 8.4/10 confidence.",
+   "limits": "Abstract only was read; small sample, one model, and a lab setting with deliberately falsified briefings.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "5c2e77bfd82e",
+  "slug": "arxiv-2026-10-22-instrumental-convergence-rlvr-olmo",
+  "kind": "research",
+  "title": "Questioning Instrumental Convergence in RLVR: Checkpoint Evidence from OLMo-3",
+  "url": "https://arxiv.org/abs/2610.31624v1",
+  "outlet": "arXiv",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the abstract, a preprint tracks power-seeking-style behaviour in OLMo-3-7B-Think across training checkpoints. The rate rose from 25.0% after supervised fine-tuning to 46.1% near reinforcement-learning step 200, then fell to 11.8% at the final model.",
+  "change": {
+   "kind": "evidence",
+   "note": "A preprint finds instrumental-convergence behaviour in one small model rose then fell during reinforcement learning, ending below its starting level."
+  },
+  "lenses": {
+   "research": "Suggests instrumental behaviour depends on the stage of training and is not a steady rise under reinforcement learning, though this is one 7B model on one benchmark."
+  },
+  "topics": [
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "baris-alparslan",
+    "role": "author"
+   },
+   {
+    "id": "sandy-tanwisuth",
+    "role": "author"
+   },
+   {
+    "id": "caleb-petterson",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, which was cut off mid-sentence.",
+  "evidence": {
+   "design": "InstrumentalEval run on OLMo-3-7B-Think at the SFT and DPO stages, 13 intermediate RLVR checkpoints and the final RLVR model.",
+   "finding": "Instrumental rate rose from 25.0% at SFT to 46.1% near RLVR step 200, then fell to 11.8% at the final checkpoint; paired tests support the final SFT-to-RLVR reduction.",
+   "limits": "Abstract only was read; a single 7B model and one evaluation, and the excerpt ends before the authors' caveats.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "e11e35582d03",
+  "slug": "arxiv-2026-10-22-invisibilization-probability-bias",
+  "kind": "research",
+  "title": "Invisibilization as a Source of Probability Bias in Language Models",
+  "url": "https://arxiv.org/abs/2610.30785v1",
+  "outlet": "arXiv",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the abstract, a preprint tested leading OpenAI and Anthropic models on a trust game with 6,600 sessions, varying the described identity of the person reporting. The authors report the models more often declined to assess a Black-described reporter, 46% of the time, than a white-described one, 9%.",
+  "change": {
+   "kind": "evidence",
+   "note": "Authors of a preprint report that leading OpenAI and Anthropic models refused to assess a Black-described reporter far more often than a white-described one."
+  },
+  "lenses": {
+   "public": "Models trained to avoid using race may refuse to weigh what some people tell them, which can leave those people's reports counted for less.",
+   "research": "Argues that audits comparing average trust, or only assessed cases, miss this bias, which the authors say grows with reasoning."
+  },
+  "topics": [
+   "minds-and-values",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "christian-arnold",
+    "role": "author"
+   },
+   {
+    "id": "ernesto-calvo",
+    "role": "author"
+   },
+   {
+    "id": "guadalupe-gonzalez",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "openai",
+   "anthropic"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-23",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only. Marked conflict because Anthropic models are among those tested.",
+  "evidence": {
+   "design": "A two-urn game with an exact Bayesian answer; leading models from OpenAI and Anthropic judged an unverifiable report from a participant whose description was randomised across ten configurations, in 6,600 sessions.",
+   "finding": "Models often declined to assess the reporter at rates set by the description: up to 46% for a Black-described reporter versus 9% for a white-described one; when they did assess, the Black-described reporter received slightly more trust.",
+   "limits": "Abstract only was read; a stylised game with stated identities, and the excerpt ends before the authors' remarks on reasoning effort.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "e4870a73f18b",
+  "slug": "arxiv-2026-10-22-model-organisms-collusion-monitors",
+  "kind": "research",
+  "title": "Model Organisms of Collusion: Corrective Transfer in Untrusted Monitors",
+  "url": "https://arxiv.org/abs/2610.30582v1",
+  "outlet": "arXiv",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the abstract, a preprint tests whether correcting an AI monitor on one caught case of collusion also removes collusion the control team has not found. In fine-tuned Llama and Qwen models, the authors report held-out collusion falling from 91% to 14-20%.",
+  "change": {
+   "kind": "evidence",
+   "note": "A preprint reports that retraining AI monitors on one caught collusion case sharply cut other collusion in two fine-tuned model families."
+  },
+  "lenses": {
+   "research": "Suggests that training a self-monitoring model on caught misbehaviour may generalise to uncaught collusion, though only in fine-tuned model organisms and under the tested training."
+  },
+  "topics": [
+   "beyond-control",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "juan-pablo-rivera",
+    "role": "author"
+   },
+   {
+    "id": "ari-spiesberger",
+    "role": "author"
+   },
+   {
+    "id": "juan-j-vazquez",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, which was cut off mid-sentence; nothing fetched.",
+  "evidence": {
+   "design": "Llama-3.3-70B and Qwen2.5-72B were fine-tuned to install five policy-monitor behaviour pairs; the monitor was then corrected on 300 honest reviews of one caught collusion and tested on the other four in unseen prompt formats, over three seeds per family.",
+   "finding": "Per the abstract, correction cut held-out collusion from 91% to 14-20% under three of four methods, against 56-93% for a control trained on unrelated examples.",
+   "limits": "Abstract only was read. Model organisms were fine-tuned to collude, so real-world transfer is not shown; capability dropped in maths on one Llama seed.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "92061763f22b",
+  "slug": "axios-2026-10-22-unvetted-ai-agents-bank-accounts",
+  "kind": "news",
+  "title": "Scoop: Unvetted AI agents are accessing U.S. bank accounts",
+  "url": "https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access",
+  "outlet": "Axios",
+  "published": "2026-10-22",
+  "also": [
+   {
+    "outlet": "Marcus on AI",
+    "title": "Breaking news: U.S. banks are taking hits from AI agents",
+    "url": "https://garymarcus.substack.com/p/breaking-news-us-banks-are-taking"
+   }
+  ],
+  "summary": "Axios reports, citing people familiar with the issue, that major US banks are detecting unauthorized third-party AI agents inside customer accounts. Gary Marcus's post, the only text we could read, relays the report and argues that regulation should not focus only on frontier models.",
+  "change": {
+   "kind": "evidence",
+   "note": "Axios reports, citing sources, that major US banks detect unauthorized AI agents in customer accounts and are blocking them and rewriting terms of service."
+  },
+  "lenses": {
+   "public": "If an AI assistant logs in to a bank account with the customer's password, the bank may treat it as a breach of its rules.",
+   "policy": "Gary Marcus argues regulators should look at harms from existing models in areas such as banking, not only at future frontier models.",
+   "research": "Banks reportedly struggle to tell a human from an unauthorized bot, a detection problem that agent-security research has to address."
+  },
+  "topics": [
+   "beyond-control",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "madison-mills",
+    "role": "author"
+   },
+   {
+    "id": "gary-marcus",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "axios"
+  ],
+  "quotes": [
+   {
+    "id": "92061763f22b-b85bbec7",
+    "text": "Findings have alarmed banking executives, who are racing to restrict access to their systems as AI moves at a velocity faster than financial institutions can respond",
+    "speaker": "axios",
+    "speakerCertain": true,
+    "context": "Axios sentence from the Madison Mills report, as quoted in Gary Marcus's post.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "92061763f22b-faf8126e",
+    "text": "Current models are already causing serious problems across society, in domains ranging from education to politics (via deepfakes and wholesale disinformation) to banking.",
+    "speaker": "gary-marcus",
+    "speakerCertain": true,
+    "context": "Marcus argues in the post that regulation should not focus solely on frontier models.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "92061763f22b-8ee7622d",
+    "text": "Even if we were to stop the development of future frontier models, we would still face serious problems from the misuse of existing models.",
+    "speaker": "gary-marcus",
+    "speakerCertain": true,
+    "context": "Marcus, in the post, on why focusing only on frontier models is not enough.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "partial",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "axios",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Axios returned 403; the Axios article was not read. Details on named banks come from the triage excerpt only. The saved text is Gary Marcus's Substack post, which quotes one Axios sentence and adds Marcus's own views; the Axios quotation is second-hand. Marcus also mentions other incidents (France, Japan, Cybercartel) that were not checked.",
+  "story": "agent-unauthorized-access-reports-2026-10"
+ },
+ {
+  "id": "84a375dda94f",
+  "slug": "center-for-humane-technology-2026-10-22-kora-kids-benchmark",
+  "kind": "video",
+  "title": "A New Way to Measure AI Safety for Kids",
+  "url": "https://www.youtube.com/watch?v=7_JqboXthus",
+  "outlet": "Center for Humane Technology",
+  "published": "2026-10-22",
+  "minutes": 35,
+  "also": [
+   {
+    "outlet": "Your Undivided Attention",
+    "title": "A New Way to Measure AI Safety for Kids",
+    "url": "https://your-undivided-attention.simplecast.com/episodes/a-new-way-to-measure-ai-safety-for-kids-J5uXA1x_"
+   },
+   {
+    "outlet": "Center for Humane Technology",
+    "title": "Everyone talks about AI safety for kids. No one was measuring it — until now.",
+    "url": "https://www.youtube.com/watch?v=ogs7GPz_xlQ"
+   }
+  ],
+  "summary": "In a 35-minute interview, Imran Khan of the Center for Humane Technology talks with Mathilde Collin, founder of the open-source Kora benchmark of AI models and apps for child safety. Collin reports results, including that telling an AI it is talking to a child raises its safety score.",
+  "change": {
+   "kind": "evidence",
+   "note": "Kora founder Mathilde Collin reports AI scores 24 points higher on child safety when told a child is chatting; no tested app verifies age."
+  },
+  "lenses": {
+   "public": "Collin says two thirds of US teenagers use AI chatbots, and that the uses children rely on most, emotional support and schoolwork, are where the tested models scored lowest.",
+   "policy": "Collin asks AI labs to share usage data and calls for research funding, and the benchmark finds apps rarely verify age, which regulators could target.",
+   "research": "Kora scores whole multi-turn conversations with child personas using language-model graders reviewed by humans; Collin says the score is not a certification and that the framework is imperfect.",
+   "ideas": "Collin names a paradox: a good teacher aims to be unneeded, while AI products are optimised for the child to return."
+  },
+  "topics": [
+   "everyday-life",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "mathilde-collin",
+    "role": "speaker",
+    "title": "Founder of the Kora benchmark; founder of Front"
+   },
+   {
+    "id": "imran-khan",
+    "role": "speaker",
+    "title": "Researcher and strategist leading humane evals work, Center for Humane Technology"
+   }
+  ],
+  "orgs": [
+   "center-for-humane-technology",
+   "kora",
+   "openai"
+  ],
+  "quotes": [
+   {
+    "id": "84a375dda94f-8a2b4c05",
+    "text": "the more an AI will tell a child, go see a human, the safer it is",
+    "speaker": "mathilde-collin",
+    "speakerCertain": false,
+    "context": "Describing the two behaviours most correlated with safety in the benchmark: redirecting children to humans, and not agreeing with everything.",
+    "at": 624,
+    "match": "exact",
+    "second": true,
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "84a375dda94f-9867ad46",
+    "text": "right now zero out of nineteen apps verify the age of children",
+    "speaker": "mathilde-collin",
+    "speakerCertain": false,
+    "context": "Explaining why the safety gain from telling an AI it is talking to a child is easy to capture but not being used.",
+    "at": 1152,
+    "match": "exact",
+    "second": true,
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "84a375dda94f-1bf973a0",
+    "text": "we're running this uncontrolled experiment on our children and there is a need to act now and to build now and to educate now",
+    "speaker": "mathilde-collin",
+    "speakerCertain": false,
+    "context": "Collin on what parents and educators should know, after noting that two thirds of teens use AI regularly.",
+    "at": 1359,
+    "match": "exact",
+    "second": true,
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "stt",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "yt-center-for-humane-technology",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Speech-to-text with no speaker labels; the answers are clearly from the guest by context, but speakerCertain is false. The transcript has errors (for example 'Cora', 'Corabench'). Kora's own results were not checked on its site. Status company-report is a rough fit: Kora is described as a nonprofit.",
+  "evidence": {
+   "design": "Kora benchmark: 26 risks in 8 categories, simulated multi-turn chats with child personas, graded 0, 1 or 2 by language-model judges reviewed by humans, for leading models and for apps.",
+   "finding": "Collin says no tested app earns an A and one earns a B; telling the AI it is chatting with a child adds 24 points of 100; behaviours linked to safety are redirecting children to humans and not agreeing with everything; education and emotional support scored lowest.",
+   "limits": "Collin says the scores are not a certification label, the framework is imperfect and some risks, such as agency, are hard to measure.",
+   "status": "company-report"
+  }
+ },
+ {
+  "id": "4f63e448ab02",
+  "slug": "cnbc-2026-10-22-huang-contain-monitor-ai",
+  "kind": "video",
+  "title": "'You contain the baby and you monitor it': Nvidia's Huang on AI safety",
+  "url": "https://www.youtube.com/watch?v=e9MP8PIu96I",
+  "outlet": "CNBC Television",
+  "published": "2026-10-22",
+  "views": 4309,
+  "also": [],
+  "summary": "In a 55-second CNBC interview, Nvidia chief executive Jensen Huang describes layered tools to contain and monitor AI agents, and says Nvidia is confident they would have handled the recent unintended-access incidents.",
+  "change": {
+   "kind": "argument",
+   "note": "Nvidia's Jensen Huang defends containment and monitoring layers for AI agents, saying they would have stopped recent incidents, without giving evidence."
+  },
+  "lenses": {
+   "public": "Nvidia's chief executive says AI agents will be kept inside software barriers and watched, like a baby in a play pen, though Huang admits the future is unknown.",
+   "policy": "A chip maker's claim that its own containment tools would have prevented recent agent incidents is untested and is not an independent safety requirement.",
+   "research": "Huang describes layered, active monitoring of agents but offers no tests, so whether the tools would have stopped the incidents is unsupported in this clip.",
+   "ideas": "The play-pen image treats advanced AI as something to be contained and supervised rather than trusted, a stance on how much autonomy agents should have."
+  },
+  "topics": [
+   "safeguards",
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "jensen-huang",
+    "role": "speaker",
+    "title": "CEO, Nvidia"
+   },
+   {
+    "id": "arjun-kharpal",
+    "role": "speaker",
+    "title": "CNBC reporter"
+   }
+  ],
+  "orgs": [
+   "nvidia",
+   "cnbc"
+  ],
+  "quotes": [
+   {
+    "id": "4f63e448ab02-2fc7a282",
+    "text": "You contain the baby and you monitor it. Now, the technology of course is very sophisticated and there's active monitoring and active controls that are part of this containment system.",
+    "speaker": "jensen-huang",
+    "speakerCertain": true,
+    "context": "Huang compares containing AI to a baby in a play pen, describing Nvidia's layered tools for agents.",
+    "at": 1,
+    "match": "exact",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "loss-of-control",
+      "stance": "lean-agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "4f63e448ab02-b8b7ba73",
+    "text": "We're confident that it would have handled the incidents we've seen and we don't know what we don't know about the future but the technology was built on great first principles.",
+    "speaker": "jensen-huang",
+    "speakerCertain": true,
+    "context": "Answering whether the tools would stop unintended hacks and website accesses by AI agents.",
+    "at": 42,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "auto",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "YouTube auto captions mis-hear product names as 'Open shell' and 'century'; the CNBC description names them OpenShell and Sentry. The clip is 55 seconds and may be an excerpt of a longer interview. Speaker identity rests on the video title and the interviewer's question.",
+  "story": "agent-unauthorized-access-reports-2026-10"
+ },
+ {
+  "id": "46cf7185df32",
+  "slug": "cnbc-2026-10-22-voters-data-centers-backyard",
+  "kind": "video",
+  "title": "'Not here': Majority of voters say no to data centers in their backyard",
+  "url": "https://www.youtube.com/watch?v=3cO_5jtMs70",
+  "outlet": "CNBC Television",
+  "published": "2026-10-22",
+  "views": 6361,
+  "also": [],
+  "summary": "According to the description, CNBC's Steve Liesman goes through the latest results of CNBC's All-America Economic Survey on \"Power Lunch\". The title says a majority of voters oppose data centers being built near them. Survey figures were not available.",
+  "change": {
+   "kind": "evidence",
+   "note": "CNBC's All-America Economic Survey, per the video title, finds a majority of voters oppose data centers in their area; figures not read."
+  },
+  "lenses": {
+   "public": "CNBC's All-America Economic Survey, per its video title, finds most voters do not want data centers built in their own neighbourhood.",
+   "policy": "CNBC reports that a majority of surveyed voters oppose local data centers, which could affect where officials approve AI infrastructure."
+  },
+  "topics": [
+   "everyday-life",
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "steve-liesman",
+    "role": "speaker",
+    "title": "CNBC reporter"
+   }
+  ],
+  "orgs": [
+   "cnbc"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "yt-cnbc-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: title and one-line description only. The finding comes from the title; a person should check the survey numbers.",
+  "evidence": {
+   "design": "CNBC's All-America Economic Survey of voters; sample size and dates not given in the description.",
+   "finding": "Per the video title, a majority of voters say no to data centers in their backyard; exact percentage not available.",
+   "limits": "Only the title and a one-line description were read; question wording and sample are unknown.",
+   "status": "report"
+  }
+ },
+ {
+  "id": "adf161d12f12",
+  "slug": "decoder-2026-10-22-gates-twenty-years-ai-disruption",
+  "kind": "podcast",
+  "title": "Bill Gates says to prepare for 20 years of ‘tumultuous’ AI disruption",
+  "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP7276454247.mp3",
+  "outlet": "Decoder with Nilay Patel",
+  "published": "2026-10-22",
+  "minutes": 77,
+  "also": [],
+  "summary": "In a 77-minute interview on The Verge's Decoder, Bill Gates tells Nilay Patel that AI needs government review and safeguards, that control is a lesser near-term worry than misuse and jobs, and that society should expect about two decades of disruption. Gates rejects the label doomer.",
+  "change": {
+   "kind": "argument",
+   "note": "Bill Gates argues in a Verge interview that misuse, cyber attacks and jobs are the imminent AI risks, and that open-weight models need platform-level safeguards."
+  },
+  "lenses": {
+   "public": "Bill Gates says to expect cyber attacks and job losses from AI within two to three years, and about twenty years of upheaval before any period of abundance.",
+   "policy": "Bill Gates calls for mandatory government review of AI models and for platforms that host powerful open-weight models to certify that safeguards stay in place.",
+   "research": "Bill Gates names three routes to AI control: rebuilding reinforcement learning, seeing inside models, and a symbolic rule layer around them. Gates judges the rule layer most likely to work.",
+   "ideas": "Bill Gates asks what purpose people will find in an age of abundance, and floats human-reserved professions such as childcare and art as a deliberate choice."
+  },
+  "topics": [
+   "safeguards",
+   "who-decides",
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "bill-gates",
+    "role": "speaker",
+    "title": "co-founder and former CEO of Microsoft, chairman of the Gates Foundation"
+   },
+   {
+    "id": "nilay-patel",
+    "role": "speaker",
+    "title": "editor in chief of The Verge"
+   },
+   {
+    "id": "ben-horowitz",
+    "role": "mentioned"
+   },
+   {
+    "id": "mustafa-suleyman",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "the-verge",
+   "microsoft",
+   "gates-foundation",
+   "anthropic",
+   "openai"
+  ],
+  "quotes": [
+   {
+    "id": "adf161d12f12-0b4ec992",
+    "text": "it's stunning that we now don't even have mandatory review of the models, and we're not working to create safeguards.",
+    "speaker": "bill-gates",
+    "speakerCertain": false,
+    "context": "Gates on the lack of government review of AI models, in answer to Patel's question about the nature of the technology.",
+    "at": 953,
+    "match": "exact",
+    "second": true,
+    "warnings": [
+     "starts inside a longer claim, right after “so”"
+    ],
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "pre-release-testing",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "adf161d12f12-ec62c789",
+    "text": "I wish there was a clear proposal that would be globally enforceable to slow down. I would be one of the people who would say, yeah, we should probably do that, but there is no credible proposal that makes that work",
+    "speaker": "bill-gates",
+    "speakerCertain": false,
+    "context": "Gates, asked whether Gates would support a slowdown of frontier AI development.",
+    "at": 2000,
+    "match": "exact",
+    "second": true,
+    "warnings": [
+     "starts inside a longer claim, right after “which”"
+    ],
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "slow-down",
+      "stance": "mixed",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "adf161d12f12-551d3f16",
+    "text": "we've crossed the threshold of capability that this is the by far the most dangerous technology ever invented and it'll have pervasive effects in the economy and how war is fought",
+    "speaker": "bill-gates",
+    "speakerCertain": false,
+    "context": "Gates explaining why the AI risk is now worth speaking up about more.",
+    "at": 482,
+    "match": "exact",
+    "second": true,
+    "type": "value",
+    "hand": "first"
+   },
+   {
+    "id": "adf161d12f12-0e0c9bea",
+    "text": "The notion that liability laws are how we're going to manage AI safety will be looked at back on as kind of absurd.",
+    "speaker": "bill-gates",
+    "speakerCertain": false,
+    "context": "Gates, asked whether product liability could keep AI companies in line.",
+    "at": 3709,
+    "match": "exact",
+    "second": true,
+    "type": "prediction",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "liability",
+      "stance": "disagree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "adf161d12f12-53cff717",
+    "text": "I would hope that models above certain capability that we find a way to require the safeguards and monitoring to be maintained in those models",
+    "speaker": "bill-gates",
+    "speakerCertain": false,
+    "context": "Gates on what to do about open-weight models that could run on ordinary computers.",
+    "at": 3767,
+    "match": "exact",
+    "second": true,
+    "type": "proposal",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "stt",
+  "conflict": true,
+  "run": "2026-10-23",
+  "via": {
+   "source": "pod-decoder-with-nilay-patel",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Our transcript has no speaker labels and several speech-to-text errors (names such as Mustafa, Horowitz, Hugging Face are mangled), so all quotes carry speakerCertain false; the guest answers in each passage and Patel asks the questions. Duration from triage (4613 s), roughly 77 minutes. The Verge also publishes a full transcript, which was not fetched.",
+  "relations": [
+   {
+    "rel": "challenges",
+    "to": "all-in-2026-10-18-horowitz-anthropic-gates-clip",
+    "note": "Gates rejects Ben Horowitz's comparison of AI safety work to pandemic research and says nobody accused him of involvement in gain-of-function work."
+   },
+   {
+    "rel": "supports",
+    "to": "cnn-2026-10-12-gates-tapper-most-dangerous-technology",
+    "note": "Repeats Gates's claim that AI is the most dangerous technology ever invented and adds specific proposals."
+   }
+  ]
+ },
+ {
+  "id": "6d5bd594c238",
+  "slug": "forbes-2026-10-22-palantir-maven-no-kill-switch",
+  "kind": "news",
+  "title": "Palantir Says It Can’t Shut Down European Military AI System—Days After Starlink Slowdown",
+  "url": "https://www.youtube.com/watch?v=kWWlOPV2DGk",
+  "outlet": "Forbes",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "Forbes reports that Palantir's Europe head told Reuters its Maven military AI system, used by NATO, has no kill switch that Palantir or the US government could use. This follows reports that Starlink was slowed for Ukraine's military.",
+  "change": {
+   "kind": "commitment",
+   "note": "Palantir's Louis Mosley says Maven has no kill switch and NATO customers keep full operational control, in a reassurance to Europe."
+  },
+  "lenses": {
+   "public": "Palantir says nobody at the company or in the US government can switch off Maven, the military AI system NATO uses.",
+   "policy": "European governments weighing American military software are being told by Palantir that control stays with them, a claim buyers cannot easily verify, while Palantir also says Europe must accept dependency.",
+   "ideas": "Whether a supplier can switch off a weapon-support system, and who may decide that, is a question about sovereignty and responsibility as much as engineering."
+  },
+  "topics": [
+   "security-and-war",
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "zachary-folk",
+    "role": "author",
+    "title": "Forbes Staff"
+   },
+   {
+    "id": "louis-mosley",
+    "role": "speaker",
+    "title": "Executive vice president for Europe and the U.K., Palantir"
+   },
+   {
+    "id": "elon-musk",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "palantir",
+   "nato",
+   "spacex"
+  ],
+  "quotes": [
+   {
+    "id": "6d5bd594c238-54170adc",
+    "text": "there’s no ability for Palantir or the US government to reach in and switch it off",
+    "speaker": "louis-mosley",
+    "speakerCertain": true,
+    "context": "Mosley, quoted by Forbes from an interview with Reuters in Brussels, on Maven having no kill switches.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "reported"
+   },
+   {
+    "id": "6d5bd594c238-b285d619",
+    "text": "Europe is going to have to accept some dependency",
+    "speaker": "louis-mosley",
+    "speakerCertain": true,
+    "context": "Mosley, quoted by Forbes from a separate Bloomberg interview the same day, on European reliance on American technology companies like Palantir.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "yt-forbes-breaking-news",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "The triage item is Forbes Breaking News' 146-second video; no transcript was prepared. The text is the Forbes article its description links to (fetched via the Wayback Machine after a 403), so quotes come from the article's quotations of Mosley, not from the video. Mosley's words are second-hand (Forbes quoting Reuters and Bloomberg interviews). The Starlink slowdown claims are reported, not established here.",
+  "story": "military-ai-human-control-2026-10"
+ },
+ {
+  "id": "45978161846b",
+  "slug": "guardian-2026-10-22-ai-firms-uk-datacentre-protests",
+  "kind": "news",
+  "title": "AI firms say UK has a year to head off datacentre protests before construction is threatened",
+  "url": "https://www.theguardian.com/uk-news/2026/oct/22/ai-firms-say-uk-has-a-year-to-head-off-datacentre-protests-before-construction-is-threatened",
+  "outlet": "The Guardian",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "The Guardian reports that a taskforce including Nvidia, Microsoft and Cisco has told UK ministers they have about 12 months to win public consent for datacentres. It proposes a community-benefit compact; campaigners criticise it, and the government points to existing measures.",
+  "change": {
+   "kind": "argument",
+   "note": "A taskforce including Nvidia, Microsoft and Cisco asks UK ministers for a community-benefit compact within about 12 months to avoid US-style datacentre opposition."
+  },
+  "lenses": {
+   "public": "AI companies expect people in Britain to start resisting local datacentres and want councils to share the benefits, such as keeping more tax revenue.",
+   "policy": "The SAIL taskforce asks the UK government for a framework with indicative local contributions, but it has not costed what councils keeping all business rates would mean for central finances.",
+   "ideas": "Campaigners argue consent cannot be bought: the dispute is whether local benefits can substitute for public trust in the companies building AI."
+  },
+  "topics": [
+   "who-decides",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "robert-booth",
+    "role": "author"
+   },
+   {
+    "id": "steve-rigby",
+    "role": "speaker",
+    "title": "Chair, Sovereign AI Leadership (SAIL) taskforce"
+   },
+   {
+    "id": "joseph-miller",
+    "role": "speaker",
+    "title": "Director, PauseAI UK"
+   },
+   {
+    "id": "kat-jones",
+    "role": "speaker",
+    "title": "Director, Action to Protect Rural Scotland"
+   },
+   {
+    "id": "donald-campbell",
+    "role": "speaker",
+    "title": "Director of advocacy, Foxglove"
+   }
+  ],
+  "orgs": [
+   "nvidia",
+   "microsoft",
+   "cisco",
+   "uk-government",
+   "pauseai",
+   "foxglove"
+  ],
+  "quotes": [
+   {
+    "id": "45978161846b-6bfc506f",
+    "text": "By establishing a clear prosperity compact between government, industry and local communities, we can build the infrastructure we need, equip our workforce with future-ready skills, and ensure Britain’s digital destiny.",
+    "speaker": "steve-rigby",
+    "speakerCertain": true,
+    "context": "The chair of the SAIL taskforce on its proposal to the UK government.",
+    "match": "exact",
+    "type": "proposal",
+    "hand": "reported"
+   },
+   {
+    "id": "45978161846b-c84092ca",
+    "text": "People are going to feel it is undignified to be bought off by huge tech companies who do not share their interests.",
+    "speaker": "joseph-miller",
+    "speakerCertain": true,
+    "context": "PauseAI UK's director responding to the taskforce's proposals.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   },
+   {
+    "id": "45978161846b-1babca2f",
+    "text": "In Scotland, we have 15 community campaigns already working incredibly hard opposing these environmentally destructive developments locally, and a growing national campaign",
+    "speaker": "kat-jones",
+    "speakerCertain": true,
+    "context": "The Action to Protect Rural Scotland director on existing opposition to hyperscale AI datacentres.",
+    "match": "exact",
+    "type": "account",
+    "hand": "reported"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "The taskforce submission itself was not read; its wording comes from the Guardian's quotations. The article's claim that companies appeared to lose control of some AIs over the summer is the Guardian's own framing.",
+  "story": "data-center-backlash-politics-2026-10"
+ },
+ {
+  "id": "46f4dc360a15",
+  "slug": "guardian-2026-10-22-barclays-cut-5000-jobs-ai",
+  "kind": "news",
+  "title": "Barclays to cut 5,000 jobs as bank’s bosses hail AI productivity advances",
+  "url": "https://www.theguardian.com/business/2026/oct/22/barclays-profits-up-as-uk-banks-brace-for-tax-increase-in-budget",
+  "outlet": "The Guardian",
+  "published": "2026-10-22",
+  "also": [
+   {
+    "outlet": "Bloomberg Television",
+    "title": "Barclays to Cut 5,000 Jobs in AI Push",
+    "url": "https://www.youtube.com/watch?v=_Nc5wrlCK3g"
+   },
+   {
+    "outlet": "Bloomberg Television",
+    "title": "AI takes jobs at Barclays, bank cuts 5,000 due to new efficiences",
+    "url": "https://www.youtube.com/watch?v=fuLt-vDF41k"
+   },
+   {
+    "outlet": "CNBC Television",
+    "title": "Barclays to slash 5,000 jobs in AI efficiency push",
+    "url": "https://www.youtube.com/watch?v=D47RqkXKgHQ"
+   },
+   {
+    "outlet": "Bloomberg Television",
+    "title": "Barclays to Cut 5K Jobs, AI Trade Stumbles After Tech Earnings",
+    "url": "https://www.youtube.com/watch?v=13Ug2Wk8nfE"
+   }
+  ],
+  "summary": "The Guardian reports that Barclays will cut about 5,000 jobs, around 5% of its 93,000 staff, as part of cost savings its executives link to AI. The chief executive says technology investment drove most gains; the Unite union calls AI an excuse.",
+  "change": {
+   "kind": "decision",
+   "note": "Barclays announced about 5,000 job cuts, with its finance chief citing AI-driven productivity among developers and support staff."
+  },
+  "lenses": {
+   "public": "Barclays says it will lose about 5,000 of its 93,000 staff, and its finance chief links part of that to AI making developers more productive.",
+   "policy": "Barclays' cuts come days before a UK budget expected to raise bank taxes, so AI-linked job losses may enter the debate over what profitable banks owe.",
+   "research": "Barclays' chief executive credits wider technology modernisation, not AI alone, for most efficiency gains so far, which complicates attributing these job cuts to AI.",
+   "ideas": "Unite's claim that Barclays uses AI as an excuse raises the question of who bears responsibility when firms present job cuts as the result of technology."
+  },
+  "topics": [
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "kalyeena-makortoff",
+    "role": "author",
+    "title": "Banking correspondent, The Guardian"
+   },
+   {
+    "id": "anna-cross",
+    "role": "speaker",
+    "title": "Chief financial officer, Barclays"
+   },
+   {
+    "id": "cs-venkatakrishnan",
+    "role": "speaker",
+    "title": "Chief executive, Barclays"
+   },
+   {
+    "id": "sharon-graham",
+    "role": "speaker",
+    "title": "General secretary, Unite"
+   }
+  ],
+  "orgs": [
+   "barclays",
+   "unite-union"
+  ],
+  "quotes": [
+   {
+    "id": "46f4dc360a15-c246e58d",
+    "text": "These actions involve an expected reduction of circa 5,000 full-time employees. Around 60% of the group actions relate to support functions, including fewer developers, as AI makes our people more productive.",
+    "speaker": "anna-cross",
+    "speakerCertain": true,
+    "context": "Barclays' finance chief told reporters on Thursday the cuts are part of plans to save more than £1.1bn in 2027.",
+    "match": "exact",
+    "type": "account",
+    "hand": "reported"
+   },
+   {
+    "id": "46f4dc360a15-306ba713",
+    "text": "That is driving the bulk of the efficiency gains that you’ve seen so far. AI has an important role to play and may have a more important role to play in the future,",
+    "speaker": "cs-venkatakrishnan",
+    "speakerCertain": true,
+    "context": "Asked how many cuts link directly to AI, Barclays' chief executive pointed first to deep investments in technology and simpler processes.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   },
+   {
+    "id": "46f4dc360a15-1b76c7e7",
+    "text": "The company is using AI as an excuse to discard its loyal and long-suffering workforce. Employers should be focused on upgrading employees’ skills so that they remain employed as new technology changes the workplace.",
+    "speaker": "sharon-graham",
+    "speakerCertain": true,
+    "context": "The Unite general secretary responded to the Barclays announcement, saying workers deserve better.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Article text is saved as 46f4dc360a15-article.txt because the run had already put a Bloomberg video transcript (video _Nc5wrlCK3g) at 46f4dc360a15.transcript.json, which the checker would otherwise use instead of the article. Four also-items are Bloomberg and CNBC videos on the same news; not read. The article itself says how many cuts are directly due to AI was not answered.",
+  "story": "barclays-ai-job-cuts-2026-10"
+ },
+ {
+  "id": "f920fd558f02",
+  "slug": "guardian-2026-10-22-view-ai-safety-global-regulation",
+  "kind": "essay",
+  "title": "The Guardian view on AI safety: the push for global regulation must advance",
+  "url": "https://www.theguardian.com/commentisfree/2026/oct/22/the-guardian-view-on-ai-safety-the-push-for-global-regulation-must-advance",
+  "outlet": "The Guardian",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "The Guardian's editorial uses the PHP flaw, which AI helped find, to argue that global AI regulation must advance despite US opposition. It cites the UK AI minister's warning of a likely UK cyber-attack, and says Prime Minister Andy Burnham plans to put AI on the G20 agenda.",
+  "change": {
+   "kind": "argument",
+   "note": "The Guardian's editorial argues that the PHP emergency strengthens the case for international AI regulation, whatever the Trump administration says."
+  },
+  "lenses": {
+   "public": "The Guardian says this week's PHP emergency, which led to some websites going offline, shows that AI can both find and speed up attacks on everyday software.",
+   "policy": "The Guardian argues the UK, with its AI Security Institute and a cybersecurity bill in parliament, should use its G20 presidency to push global AI rules without US support.",
+   "research": "The Guardian cites OpenAI's models as responsible for two hacks this year, one on an Australian health department site and one on Hugging Face.",
+   "ideas": "The Guardian questions the view that AI is a race for supremacy where only losers urge caution, and sets it against shared exposure to disruption."
+  },
+  "topics": [
+   "who-decides",
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "kanishka-narayan",
+    "role": "subject",
+    "title": "AI minister"
+   },
+   {
+    "id": "donald-trump",
+    "role": "subject",
+    "title": "US president"
+   },
+   {
+    "id": "andy-burnham",
+    "role": "subject",
+    "title": "prime minister"
+   }
+  ],
+  "orgs": [
+   "the-guardian",
+   "openai",
+   "uk-government",
+   "uk-ai-security-institute",
+   "hugging-face"
+  ],
+  "quotes": [
+   {
+    "id": "f920fd558f02-ac34dd0b",
+    "text": "Mr Trump takes the view that America’s lead at the most advanced frontier of AI is a national strategic asset that would be compromised if other nations, and China in particular, were allowed to set the pace of advancement.",
+    "speaker": "the-guardian",
+    "speakerCertain": true,
+    "context": "The Guardian's editorial describing the US president's reasoning for rejecting international AI negotiations.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "f920fd558f02-73385149",
+    "text": "The drive to build some global regulatory architecture has to advance.",
+    "speaker": "the-guardian",
+    "speakerCertain": true,
+    "context": "The editorial's conclusion, after saying the UK prime minister's convening power will not move the US administration.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "international-agreement",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "f920fd558f02-93f8bd5b",
+    "text": "If Mr Trump cannot be moved by care for humanity, this week’s PHP emergency should remind him that America’s technological lead offers no protection from disruption.",
+    "speaker": "the-guardian",
+    "speakerCertain": true,
+    "context": "The editorial's closing argument for international cooperation.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "international-agreement",
+      "stance": "agree",
+      "by": "machine"
+     },
+     {
+      "q": "race-with-china",
+      "stance": "lean-disagree",
+      "by": "machine"
+     }
+    ]
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Editorial, so the words are the paper's own view. The claims about OpenAI models being responsible for two hacks and about Amazon detecting an attempt are the Guardian's and were not checked here.",
+  "relations": [
+   {
+    "rel": "qualifies",
+    "to": "techcrunch-2026-10-21-php-flaws-found-by-ai",
+    "note": "The Guardian draws a regulatory argument from the PHP disclosure that TechCrunch reported the day before."
+   }
+  ],
+  "story": "php-ai-found-vulnerabilities-2026-10"
+ },
+ {
+  "id": "67b8b1d53ddb",
+  "slug": "lawfare-2026-10-22-ai-child-safety-law",
+  "kind": "podcast",
+  "title": "Lawfare Daily: AI, Child Safety, and the Law",
+  "url": "https://shows.acast.com/lawfare/episodes/lawfare-daily-ai-child-safety-and-the-law",
+  "outlet": "The Lawfare Podcast",
+  "published": "2026-10-22",
+  "minutes": 48,
+  "also": [],
+  "summary": "In a 48-minute Lawfare episode, Renée DiResta interviews Stanford's Riana Pfefferkorn and Edinburgh's Cyndie Demeocq about research on 71 US federal prosecutions involving AI-generated child sexual abuse material. Pfefferkorn argues existing federal law works; both guests say identifying real victims is the harder problem.",
+  "change": {
+   "kind": "evidence",
+   "note": "Researchers Pfefferkorn and Demeocq report that 65 of 71 US federal AI child-abuse-material prosecutions ended in convictions, and few raised First Amendment challenges."
+  },
+  "lenses": {
+   "public": "Making or sharing AI-generated sexual images of children can already bring federal charges in the US, according to the researchers; the idea of a legal loophole is largely mistaken.",
+   "policy": "Pfefferkorn argues US federal prosecutors do not need new statutes; the guests point instead to victim identification, provenance, policing of nudify apps and a UK safe harbour for model testing.",
+   "research": "The study counts only cases that prosecutors chose to bring and that named AI, so it cannot show how common the abuse is or which cases never reached court.",
+   "ideas": "The guests note that image generators are built on real children's photos taken without consent, raising the question of what consent means when a child's picture becomes training data."
+  },
+  "topics": [
+   "everyday-life",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "renee-diresta",
+    "role": "speaker",
+    "title": "Lawfare contributing editor"
+   },
+   {
+    "id": "riana-pfefferkorn",
+    "role": "speaker",
+    "title": "Policy fellow, Stanford Institute for Human-Centered Artificial Intelligence"
+   },
+   {
+    "id": "cyndie-demeocq",
+    "role": "speaker",
+    "title": "Doctoral researcher, University of Edinburgh School of Informatics"
+   }
+  ],
+  "orgs": [
+   "lawfare",
+   "stanford-hai",
+   "university-of-edinburgh",
+   "us-department-of-justice"
+  ],
+  "quotes": [
+   {
+    "id": "67b8b1d53ddb-b04c0af7",
+    "text": "We're seeing prosecutions work just fine. What I do think is worthy of closer scrutiny is the impact of AI on victim identification",
+    "speaker": "riana-pfefferkorn",
+    "speakerCertain": false,
+    "context": "Answering whether AI has made prosecutions impossible, as Justice Thomas once predicted; the speaker discusses the paper and the Anderegg case.",
+    "at": 1353,
+    "match": "exact",
+    "second": true,
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "67b8b1d53ddb-d0a2b084",
+    "text": "Everybody else who even tried to bring a First Amendment challenge did not succeed, and that's a total of eight cases out of more than seventy",
+    "speaker": "riana-pfefferkorn",
+    "speakerCertain": false,
+    "context": "Describing the study's sample of federal prosecutions and how rarely First Amendment challenges were raised or succeeded.",
+    "at": 1249,
+    "match": "exact",
+    "second": true,
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "67b8b1d53ddb-6f7abd94",
+    "text": "that is the biggest challenge potentially for law enforcement is not prosecuting somebody because at least in the US my paper shows that our laws are adequate, at least at the federal level, it's the victim identification component",
+    "speaker": "riana-pfefferkorn",
+    "speakerCertain": false,
+    "context": "Saying the biggest challenge for law enforcement is not prosecuting offenders but telling whether an image shows a real child in need of rescue.",
+    "at": 1476,
+    "match": "exact",
+    "second": true,
+    "warnings": [
+     "spoken clean-up: that (said twice)"
+    ],
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "stt",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "pod-the-lawfare-podcast",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Speech-to-text with no speaker labels and some garbled words (names, 'Anderegg'); who is speaking is inferred from introductions and content, hence speakerCertain false. The paper is described as coming out next year; its publication status was not checked. The episode discusses child sexual abuse material.",
+  "evidence": {
+   "design": "Review of 71 US federal criminal prosecutions, located through federal court records and Department of Justice press releases, whose charging documents expressly mentioned AI; cases from 2026 were excluded as too early.",
+   "finding": "The guests say 59 of the 71 cases ended in guilty pleas and 6 in convictions at trial, so 65 convictions; only 8 cases raised First Amendment challenges, and only part of one charge in United States v. Anderegg succeeded. Actual abuse material was alleged in 55 cases, nudify apps in 32 and fully synthetic imagery alone in 9.",
+   "limits": "Pfefferkorn says the sample covers only cases prosecutors chose to bring and that named AI, so it cannot show what was not prosecuted or how widespread the abuse is.",
+   "status": "working-paper"
+  }
+ },
+ {
+  "id": "d54138f3099c",
+  "slug": "politico-2026-10-22-new-mexico-ag-meta-ruling",
+  "kind": "news",
+  "title": "‘Just the beginning’: New Mexico AG warns AI industry after $25B Meta ruling",
+  "url": "https://www.politico.com/news/2026/10/22/just-the-beginning-new-mexico-ag-warns-ai-industry-after-25b-meta-ruling-01133294",
+  "outlet": "Politico",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the description, Politico reports that New Mexico Attorney General Raúl Torrez said a record-setting judgment against Meta, reported as $25 billion, should encourage more states to take the technology industry to trial. The full article could not be read.",
+  "change": {
+   "kind": "decision",
+   "note": "A court in New Mexico entered a record judgment against Meta, and the state's attorney general urged other states to go to trial."
+  },
+  "lenses": {
+   "policy": "New Mexico's attorney general Raúl Torrez says the judgment against Meta should encourage other states to take technology companies to trial instead of settling."
+  },
+  "topics": [
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "raul-torrez",
+    "role": "subject",
+    "title": "New Mexico Attorney General"
+   },
+   {
+    "id": "alfred-ng",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "meta"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "politico-technology",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Politico returned HTTP 403 and the Wayback Machine had no copy, so no text was saved (the textFile does not exist). Summary rests on the one-sentence triage description and the headline only. The case's subject and its link to AI are not confirmed here; a person should check. Zvi Mowshowitz's AI #191 also mentions a $25 billion penalty against Meta in a New Mexico case."
+ },
+ {
+  "id": "d26b375b9a2a",
+  "slug": "uk-lords-2026-10-22-ai-screens-children-debate",
+  "kind": "hearing",
+  "title": "AI, Screen Usage and Social Media: Effect on Children",
+  "url": "https://hansard.parliament.uk/Lords/2026-10-22/debates/4463AB3F-3798-487A-9E3B-F796E755B75D/AIScreenUsageAndSocialMediaEffectOnChildren",
+  "outlet": "UK House of Lords",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "In a take-note debate opened by Crossbench peer Lord Patel, 23 Lords spoke on AI chatbots, screens and social media in childhood. Several called for a commission on AI and for safety-by-design duties. Government minister Baroness Lloyd of Effra set out planned chatbot restrictions for under-18s.",
+  "change": {
+   "kind": "commitment",
+   "note": "UK Government minister Baroness Lloyd of Effra tells the Lords the UK will ban sexualised chatbots for under-18s and bring mandatory chatbot breaks."
+  },
+  "lenses": {
+   "public": "UK ministers say children under 18 will face limits on sexualised chatbots and get mandatory breaks from chatbot use, though no start dates were given in this debate.",
+   "policy": "Peers across parties pressed the UK Government to extend the Online Safety Act to chatbots; Lord Clement-Jones noted Ofcom says chatbots are unregulated where users talk only to the bot.",
+   "research": "Speakers repeatedly noted that most evidence on screen time is observational and shows links, not cause; Lord Nagaraju called for independent evaluations tracking children's chatbot use over several years.",
+   "ideas": "Lord McFall asked whether sovereignty has passed to a few private tech companies; Baroness Greenfield asked what an ideal analogue teenage life would look like before regulating."
+  },
+  "topics": [
+   "everyday-life",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "lord-patel",
+    "role": "speaker"
+   },
+   {
+    "id": "baroness-barran",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-addington",
+    "role": "speaker"
+   },
+   {
+    "id": "bishop-of-peterborough",
+    "role": "speaker"
+   },
+   {
+    "id": "baroness-wheatcroft",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-mcfall-of-alcluith",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-brooke-of-alverthorpe",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-tarassenko",
+    "role": "speaker"
+   },
+   {
+    "id": "baroness-manningham-buller",
+    "role": "speaker"
+   },
+   {
+    "id": "baroness-owen-of-alderley-edge",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-alton-of-liverpool",
+    "role": "speaker"
+   },
+   {
+    "id": "baroness-bennett-of-manor-castle",
+    "role": "speaker"
+   },
+   {
+    "id": "baroness-greenfield",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-loomba",
+    "role": "speaker"
+   },
+   {
+    "id": "baroness-armstrong-of-hill-top",
+    "role": "speaker"
+   },
+   {
+    "id": "baroness-prashar",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-nagaraju",
+    "role": "speaker"
+   },
+   {
+    "id": "baroness-murphy",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-rees-of-ludlow",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-hampton",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-clement-jones",
+    "role": "speaker"
+   },
+   {
+    "id": "earl-of-effingham",
+    "role": "speaker"
+   },
+   {
+    "id": "baroness-lloyd-of-effra",
+    "role": "speaker",
+    "title": "Parliamentary Under-Secretary of State, Department for Business, Innovation, Science and Trade and Department for Digital, Culture, Media and Sport"
+   }
+  ],
+  "orgs": [
+   "uk-house-of-lords",
+   "uk-government",
+   "ofcom"
+  ],
+  "quotes": [
+   {
+    "id": "d26b375b9a2a-4979358a",
+    "text": "Britain will become the first country in the world to ban chatbots that offer sexualised content to under-18s. We will restrict this functionality on general purpose chatbots, too.",
+    "speaker": "baroness-lloyd-of-effra",
+    "speakerCertain": true,
+    "context": "Government minister replying to the debate, on AI chatbots and children.",
+    "match": "exact",
+    "type": "commitment",
+    "hand": "first"
+   },
+   {
+    "id": "d26b375b9a2a-589cc69c",
+    "text": "The Government have committed to introducing mandatory breaks in AI chatbot use for under-18s, to encourage healthier online habits. We have also taken a delegated power in the Crime and Policing Act to bring currently unregulated AI chatbot services within the scope of the Online Safety Act’s illegal-content duties.",
+    "speaker": "baroness-lloyd-of-effra",
+    "speakerCertain": true,
+    "context": "Government minister replying to the debate, on how chatbots will be brought under existing online safety law.",
+    "match": "exact",
+    "type": "commitment",
+    "hand": "first"
+   },
+   {
+    "id": "d26b375b9a2a-b1c18dcc",
+    "text": "today I am calling for such a commission for AI to be established along similar lines to the Parliamentary Commission on Banking Standards, commissioned by the Prime Minister.",
+    "speaker": "lord-mcfall-of-alcluith",
+    "speakerCertain": true,
+    "context": "Former Lord Speaker proposing a prime-ministerial commission on AI, modelled on the 2012 banking standards commission.",
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first"
+   },
+   {
+    "id": "d26b375b9a2a-f297bb90",
+    "text": "Ofcom has said plainly that chatbots are not regulated at all where users interact only with the bot, and that extending its powers is a matter for government and Parliament. The Online Safety Act regulates services, not technology, and generative AI exposes that gap.",
+    "speaker": "lord-clement-jones",
+    "speakerCertain": true,
+    "context": "Liberal Democrat peer on the gap in UK online safety law for general-purpose chatbots.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "d26b375b9a2a-1261e215",
+    "text": "Chatbots should never be designed to create emotional dependency. Those targeted at children are designed with custom names, avatars, voice-enabled features and excessive anthropomorphic features aimed at promoting engagement.",
+    "speaker": "lord-nagaraju",
+    "speakerCertain": true,
+    "context": "Labour peer on the design of chatbots aimed at children, before asking the minister three questions.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "official",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "uk-house-of-lords-hansard",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Hansard text saved 2026-10-23 and may be corrected later. Several statistics quoted by peers (for example a United States settlement figure given by Lord Patel, Ofcom and POST numbers) are the speakers' claims and were not checked. Nagaraju says the Government had already announced the under-16 social media restriction, chatbot breaks and protective defaults, so the minister largely restates earlier announcements; the Base has no earlier entry on them."
+ },
+ {
+  "id": "795d093af37b",
+  "slug": "zvi-mowshowitz-2026-10-22-ai-191-hackening-begins",
+  "kind": "essay",
+  "title": "AI #191: The Hackening Begins",
+  "url": "https://thezvi.substack.com/p/ai-191-the-hackening-begins",
+  "outlet": "Don't Worry About the Vase (Zvi Mowshowitz)",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "In a weekly AI roundup, Zvi Mowshowitz calls the PHP flaw and its fallout the worst cybersecurity day on record so far, and covers Anthropic's leaked draft federal bill, an interpretability claim, a Google DeepMind non-disparagement complaint, and an OpenAI letter on SB 53.",
+  "change": {
+   "kind": "argument",
+   "note": "Zvi Mowshowitz's weekly roundup gathers the week's AI news and gives opinions on it, with little new evidence of its own."
+  },
+  "lenses": {
+   "public": "Zvi Mowshowitz argues the PHP flaw may leave many small websites permanently exposed, because a leak forced the announcement a day before the fix was ready.",
+   "policy": "Zvi Mowshowitz notes that Google DeepMind UK staff are bound by non-disparagement clauses that UK law voids for protected disclosures, though the chilling effect on speaking out remains.",
+   "research": "Zvi Mowshowitz reads a new claim that individual neurons mostly carry one interpretable meaning as good news that lowers expected difficulty, while saying early reactions overstated it.",
+   "ideas": "Zvi Mowshowitz asks how labs that cannot stop employee spying or leaks could solve the harder problem of keeping AI systems aligned."
+  },
+  "topics": [
+   "security-and-war",
+   "safeguards",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "zvi-mowshowitz",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "openai",
+   "google-deepmind",
+   "meta"
+  ],
+  "quotes": [
+   {
+    "id": "795d093af37b-bb90a6d3",
+    "text": "It was the probably worst day in cybersecurity history. So far. Not only is there a critical flaw in PHP that due to a leak was announced a day before the fix would be available, sending most of the internet scrambling for solutions",
+    "speaker": "zvi-mowshowitz",
+    "speakerCertain": true,
+    "context": "Opening of the October 22 roundup, describing the day the PHP flaw became public.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "795d093af37b-7c913ff0",
+    "text": "Another key leak this week was the draft bill Anthropic had been shopping around Congress, similar to but weaker than the FRONTIER Act.",
+    "speaker": "zvi-mowshowitz",
+    "speakerCertain": true,
+    "context": "Second paragraph of the roundup, on the leak of Anthropic's draft federal bill.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "795d093af37b-ab2b8039",
+    "text": "This is also indicative of other problems. If you cannot solve your employee misalignment problems, how are you going to solve AI misalignment problems?",
+    "speaker": "zvi-mowshowitz",
+    "speakerCertain": true,
+    "context": "Comment on the OpenAI employee case, in which documents were allegedly sent to a number in mainland China.",
+    "match": "exact",
+    "type": "question",
+    "hand": "first"
+   },
+   {
+    "id": "795d093af37b-fc596fd2",
+    "text": "Technically they can’t say anything negative about DeepMind, true or otherwise, no matter what, forever. UK law voids this against protected disclosures, but the chilling effect largely remains.",
+    "speaker": "zvi-mowshowitz",
+    "speakerCertain": true,
+    "context": "On non-disparagement clauses that DeepMind staff were made to sign, as Google staff resign over military contracts.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "speak-up",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "795d093af37b-50277b56",
+    "text": "OpenAI writes to Governor Gavin Newsom asking for strengthening of SB 53, including AI R&D precautions and shutdown controls. I still need to see the full letter, but this is The Way.",
+    "speaker": "zvi-mowshowitz",
+    "speakerCertain": true,
+    "context": "In the regulation section, on an OpenAI letter to the California governor.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-23",
+  "via": {
+   "source": "zvi-mowshowitz",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "A long weekly roundup; only the opening and a few passages were read closely. Much of it quotes other people's posts, which are not attributed here. Several claims (the FRONTIER Act comparison, SB 53 letter contents) are Zvi Mowshowitz's own reading and should be checked against primary sources.",
+  "relations": [
+   {
+    "rel": "qualifies",
+    "to": "techcrunch-2026-10-21-php-flaws-found-by-ai",
+    "note": "Zvi Mowshowitz adds opinion on the PHP disclosure, including the claim that a leak forced announcement a day before the fix."
+   }
+  ],
+  "story": "php-ai-found-vulnerabilities-2026-10"
+ },
+ {
   "id": "3615e1933a54",
   "slug": "ai-policy-podcast-2026-10-22-shahed-geran-drone",
   "kind": "podcast",
@@ -54,6 +2158,1066 @@
   "notes": "Light lane: written from the triage excerpt only; audio not heard, no quotes. The item URL is the audio file; the CSIS event page and the Bondar and Errera analysis are linked in the description."
  },
  {
+  "id": "2ba96e2102e3",
+  "slug": "arxiv-2026-10-22-afterdeletebench-agent-memory",
+  "kind": "research",
+  "title": "AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents",
+  "url": "https://arxiv.org/abs/2610.31366v1",
+  "outlet": "arXiv",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the abstract, a preprint introduces AfterDeleteBench to test whether LLM agents still reveal information after its memory record is deleted. In its main setting, one query recovered the deleted secret from Qwen2.5-7B-Instruct in roughly two thirds of cases.",
+  "change": {
+   "kind": "evidence",
+   "note": "A preprint reports that deleting an agent's memory record often does not remove the secret, because summaries and derived state keep it."
+  },
+  "lenses": {
+   "public": "Asking an AI agent to forget something may not work if it kept summaries or related fragments elsewhere in its memory.",
+   "policy": "Challenges the assumption that deleting a stored record satisfies a deletion request for agents that derive further state from past interactions."
+  },
+  "topics": [
+   "safeguards",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "ehsan-saleh",
+    "role": "author"
+   },
+   {
+    "id": "roozbeh-nahavandi",
+    "role": "author"
+   },
+   {
+    "id": "sama-salarian",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, which was cut off.",
+  "evidence": {
+   "design": "A controlled audit comparing agents exposed then deleted with matched never-exposed agents, using synthetic secrets, on Qwen2.5-7B-Instruct, Mistral and Phi-3.",
+   "finding": "A single query recovered the deleted secret in roughly two thirds of cases with zero recovery in controls; exact reconstruction from separately stored components succeeded in 62-99% of cases.",
+   "limits": "Abstract only was read; synthetic secrets in fixed-weight agents, so results may not match deployed products.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "a2fdf2231457",
+  "slug": "arxiv-2026-10-22-ai-success-supranational-governance",
+  "kind": "research",
+  "title": "What Does AI Success Look Like? A Mixed-Methods Analysis of Supranational AI Governance Instruments",
+  "url": "https://arxiv.org/abs/2610.31030v1",
+  "outlet": "arXiv",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the abstract, a preprint analyses 13 documents from supranational bodies, including EU bodies, the OECD, G20, UNESCO, the UN and the Council of Europe, to map what they mean by AI success. The authors propose a categorisation and urge coordinated approaches beyond high-level principles.",
+  "change": {
+   "kind": "argument",
+   "note": "Authors of a preprint propose a categorisation of 'AI success' themes in international AI governance texts and call for more coordination."
+  },
+  "lenses": {
+   "policy": "Finds, according to the authors, that international AI instruments still lean on high-level principles, and recommends more coordinated governance."
+  },
+  "topics": [
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "delaram-golpayegani",
+    "role": "author"
+   },
+   {
+    "id": "marta-lasek-markey",
+    "role": "author"
+   },
+   {
+    "id": "monique-munarini",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "united-nations",
+   "oecd",
+   "unesco",
+   "council-of-europe"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only.",
+  "evidence": {
+   "design": "Manual thematic analysis and automated topic modelling of a curated corpus of 13 supranational documents from 2018-2025.",
+   "finding": "The authors propose a new categorisation scheme for AI success themes and policy recommendations; no numerical result appears in the excerpt.",
+   "limits": "Abstract only was read; the corpus is small and curated by the authors.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "1028e2fa6410",
+  "slug": "arxiv-2026-10-22-harmful-responses-jailbreak-diffusion",
+  "kind": "research",
+  "title": "Harmful Responses Are Jailbreak Templates: Transferring Autoregressive Jailbreaks to Diffusion Language Models",
+  "url": "https://arxiv.org/abs/2610.31331v1",
+  "outlet": "arXiv",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the abstract, a preprint presents RMT-Jailbreak, a method that masks tokens of a harmful response to prompt diffusion language models into reconstructing harmful content. The authors say it carries over existing jailbreak attacks from conventional models to diffusion models.",
+  "change": {
+   "kind": "evidence",
+   "note": "Authors of a preprint report an attack that transfers existing jailbreaks to diffusion language models by masking parts of a harmful answer."
+  },
+  "lenses": {
+   "research": "Indicates that diffusion language models have their own jailbreak surface through masked generation, so safety methods built for conventional models may not carry over."
+  },
+  "topics": [
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "jinwei-gan",
+    "role": "author"
+   },
+   {
+    "id": "zifeng-cheng",
+    "role": "author"
+   },
+   {
+    "id": "zhiwei-jiang",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only.",
+  "evidence": {
+   "design": "Experiments across several autoregressive jailbreak methods and target diffusion language models, using a masked-template attack called RMT-Jailbreak.",
+   "finding": "The authors report strong cross-paradigm transferability of jailbreak attacks; the excerpt gives no success rates.",
+   "limits": "Abstract only was read; no numbers or defences are visible in the excerpt.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "f39291a750ce",
+  "slug": "arxiv-2026-10-22-hidden-future-token-leakage",
+  "kind": "research",
+  "title": "Beyond Causal Masks: Auditing and Localizing Hidden Future-Token Leakage in Adaptive Sequence Models",
+  "url": "https://arxiv.org/abs/2610.31522v1",
+  "outlet": "arXiv",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the abstract, a preprint shows how an adaptive routing decoder looked far better in validation, with loss of 1.4259 against 3.5958, because of hidden future-token leakage despite a correct causal mask. Two repaired models removed the apparent advantage.",
+  "change": {
+   "kind": "evidence",
+   "note": "Authors of a preprint trace an apparent large model gain to hidden leakage of future tokens, and offer an audit to catch it."
+  },
+  "lenses": {
+   "research": "A reminder that large apparent architecture gains can come from evaluation leaks, and that a prefix-invariance audit can detect them."
+  },
+  "topics": [
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "huiting-liu",
+    "role": "author"
+   },
+   {
+    "id": "jinsong-wu",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only. Marginal fit for the Base.",
+  "evidence": {
+   "design": "A 24-layer anomalous checkpoint was audited with prefix-invariance tests, LeakScore and layer-wise diagnostics; two independently trained 12-layer causal repairs were compared, with six synthetic implementation pairs as support.",
+   "finding": "Validation loss fell from 3.5958 to 1.4259 in the anomalous checkpoint, which failed the audit; the repairs removed detectable leakage and the advantage.",
+   "limits": "Abstract only was read; a case study of one architecture family.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "de6226a14e2e",
+  "slug": "arxiv-2026-10-22-latent-harm-monitors-refusal",
+  "kind": "research",
+  "title": "Faithful Latent Harm Monitors Work No Better Than the Models Own Behaviour at a Matched False Alarm Rate",
+  "url": "https://arxiv.org/abs/2610.30727v1",
+  "outlet": "arXiv",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "A preprint by Abhishek Mishra, Sagnik Chatterjee and Suyash Maniyar tests latent safety monitors, which read a model's internal activations to flag harmful prompts, on reworded and jailbreak-style requests across 15 models. The authors report that simple text classifiers match or beat them and that gains track the model's own refusals.",
+  "change": {
+   "kind": "evidence",
+   "note": "Three authors report that activation-based harm monitors, tested on 15 models, do little better than simple text classifiers or the model's own refusals."
+  },
+  "lenses": {
+   "public": "Tools meant to catch harmful AI requests by looking inside the model may add little beyond what the model already refuses, according to this preprint.",
+   "research": "The authors find that activations at the end of the instruction degrade under distribution shift, and the pre-reply gain over refusal follows the model's refusal decision.",
+   "policy": "Safety claims resting on internal-activation monitors may need comparison against simple baselines and the model's own behaviour before regulators treat them as independent safeguards."
+  },
+  "topics": [
+   "safeguards",
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "abhishek-mishra",
+    "role": "author"
+   },
+   {
+    "id": "sagnik-chatterjee",
+    "role": "author"
+   },
+   {
+    "id": "suyash-maniyar",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [
+   {
+    "id": "de6226a14e2e-732521ae",
+    "text": "a TF-IDF classifier ranks harm better than the original Latent Guard in every model we test, and linear and MLP probes do about as well as sentence-embedding classifiers trained on the same examples.",
+    "speaker": "abhishek-mishra",
+    "speakerCertain": true,
+    "context": "From the abstract, on results for activations read at the end of the user instruction. The words are the authors' joint finding.",
+    "match": "exact",
+    "warnings": [
+     "starts inside a longer claim, right after “that”"
+    ],
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "de6226a14e2e-37d5c5fc",
+    "text": "The representation just before generation detects more, catching 44 percent of harmful prompts at a matched false-alarm rate against 32 percent for the refusal of the model, but that gain follows the refusal decision itself",
+    "speaker": "abhishek-mishra",
+    "speakerCertain": true,
+    "context": "From the abstract, on activations read just before the model's reply. The words are the authors' joint finding.",
+    "match": "exact",
+    "type": "finding",
+    "hand": "first"
+   }
+  ],
+  "importance": 1,
+  "access": "abstract",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Only the arXiv abstract page was saved, not the full paper. The quoted sentences are the abstract's joint wording, attributed to the first author as a stand-in for the three authors.",
+  "evidence": {
+   "design": "Out-of-distribution prompts made by rewording harmful and benign requests with surface rewording, persuasive framing and jailbreak-style wrappers; 15 instruction-tuned LLMs and 38 activation-based readers compared with TF-IDF and sentence-embedding classifiers, independently trained safety classifiers, and each model's own refusal.",
+   "finding": "At the end of the instruction, the representation is largely independent of refusal but degrades under shift, so a TF-IDF classifier ranks harm better than the original Latent Guard in every model tested. Just before generation, readers catch 44 percent of harmful prompts at a matched false-alarm rate against 32 percent for refusal, but the gain follows the refusal decision.",
+   "limits": "Only the abstract was read; the paper's own limits were not seen. Results concern the tested prompt rewrites and models.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "339a1310f2f0",
+  "slug": "arxiv-2026-10-22-op-print-self-distillation-privacy",
+  "kind": "research",
+  "title": "OP-Print: Tracing Membership Imprints in On-Policy Self-Distillation",
+  "url": "https://arxiv.org/abs/2610.31616v1",
+  "outlet": "arXiv",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the abstract, a preprint presents what it calls the first study of membership inference attacks against on-policy self-distillation, a training method. Its OP-Print framework aims to tell whether an example was in the training data, in both gray-box and black-box settings.",
+  "change": {
+   "kind": "evidence",
+   "note": "Authors of a preprint present an attack for detecting whether an example was used to train a model by on-policy self-distillation."
+  },
+  "lenses": {
+   "research": "Points to privacy leakage in a training method widely adopted without an external teacher, via sparse imprints concentrated at correction sites."
+  },
+  "topics": [
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "qi-li",
+    "role": "author"
+   },
+   {
+    "id": "xinchao-wang",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only. Marginal fit for the Base.",
+  "evidence": {
+   "design": "A membership inference attack framework, OP-Print, studied under gray-box and black-box threat models against on-policy self-distillation.",
+   "finding": "The authors report that supervision imprints are sparse and structured and use that to build attack signals; the excerpt gives no success figures.",
+   "limits": "Abstract only was read; the excerpt was cut off before any results.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "56bcdfcb7c48",
+  "slug": "arxiv-2026-10-22-partition-theory-limits-evaluation",
+  "kind": "research",
+  "title": "What Lies Beyond Perception: A Partition Theory of the Limits of AI Evaluation and Oversight",
+  "url": "https://arxiv.org/abs/2610.30803v1",
+  "outlet": "arXiv",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the abstract, a theoretical preprint argues that an evaluator's judgement is bounded by what it can perceive, so passing a test certifies at most a floor on a model's abilities, never a ceiling. It says tests for concealed capability can point the wrong way.",
+  "change": {
+   "kind": "argument",
+   "note": "A preprint offers a formal argument that evaluators cannot certify a model lacks an ability, and that concealment tests can mislead."
+  },
+  "lenses": {
+   "policy": "If the argument holds, a clean result from an evaluation cannot show that a model lacks a dangerous ability, which weakens the case for testing as sole proof of safety.",
+   "research": "Gives a formal frame for why evaluations of hidden capabilities are limited by the evaluator's own discrimination, rather than by effort."
+  },
+  "topics": [
+   "beyond-control",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "ahmed-m-mahran",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, which was cut off; nothing fetched.",
+  "evidence": {
+   "design": "A mathematical derivation of a partition theory of evaluation, with a one-sided bound and a defined echo test.",
+   "finding": "Per the abstract, passing certifies at most a floor on discrimination, and under exhaustive probing the echo test flags honestly weaker examinees and no concealer presenting as the evaluator's peer.",
+   "limits": "Abstract only was read; a theoretical result, with no empirical test described in the excerpt.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "9af4e472982d",
+  "slug": "arxiv-2026-10-22-vera-dashboard-eu-ai-act",
+  "kind": "research",
+  "title": "VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act",
+  "url": "https://arxiv.org/abs/2610.31588v1",
+  "outlet": "arXiv",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the abstract, a preprint presents VERA, an open-source dashboard deployed at a large European bank that runs public benchmarks mapped to the EU AI Act via COMPL-AI and scores twelve measurable requirements. A within-subject study compares reading raw results with using the dashboard.",
+  "change": {
+   "kind": "evidence",
+   "note": "Authors of a preprint describe a dashboard used at a European bank to turn EU AI Act benchmark results into scores non-engineers can read."
+  },
+  "lenses": {
+   "policy": "Shows one route for institutions to produce EU AI Act evidence, while the excerpt notes only twelve of eighteen technical requirements can currently be measured by benchmarks."
+  },
+  "topics": [
+   "who-decides",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "robin-queriaux",
+    "role": "author"
+   },
+   {
+    "id": "solveig-bachellery",
+    "role": "author"
+   },
+   {
+    "id": "lea-deleris",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only; user-study result not seen.",
+  "evidence": {
+   "design": "Four served open-weight models were run through the COMPL-AI requirement pipeline in the VERA dashboard, followed by a within-subject user study comparing raw output files with the dashboard.",
+   "finding": "The dashboard displays a score for each of twelve measurable requirements and records energy use per evaluation; the user-study result is cut off in the excerpt.",
+   "limits": "Abstract only was read; the study outcome was not visible.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "61ee4bba6beb",
+  "slug": "bbc-2026-10-22-uk-minister-500-vulnerabilities",
+  "kind": "video",
+  "title": "'500 new vulnerabilities' found in government, says AI minister",
+  "url": "https://www.bbc.co.uk/news/videos/c6y8lvg2p50po",
+  "outlet": "BBC News",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the BBC's description of a short video, AI Minister Kanishka Narayan told the BBC, before the latest PHP flaw became public, that the UK has used AI to find hundreds of flaws in government systems. The video's title gives the figure as 500.",
+  "change": {
+   "kind": "evidence",
+   "note": "UK AI Minister Kanishka Narayan tells the BBC that AI has already found hundreds of new flaws in UK government systems."
+  },
+  "lenses": {
+   "public": "The UK government says it has used AI to find hundreds of weaknesses in its own systems, which could make public services harder to attack.",
+   "policy": "A UK minister is publicly describing AI-assisted scanning of government systems, a practice other governments may be asked to explain or copy."
+  },
+  "topics": [
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "kanishka-narayan",
+    "role": "speaker",
+    "title": "AI Minister"
+   }
+  ],
+  "orgs": [
+   "uk-government",
+   "bbc"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "bbc-technology",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Only the BBC page's text description and title were readable; the 46-second video has no transcript. The 500 figure appears only in the title; the description says hundreds. A person should watch the video before relying on the number or the minister's exact words.",
+  "story": "uk-ai-defences-announcement-2026-10"
+ },
+ {
+  "id": "f76ee8b2a6d0",
+  "slug": "bloomberg-2026-10-22-hollywood-executives-weigh-ai",
+  "kind": "video",
+  "title": "Hollywood Executives Weigh AI’s Promise — and Risks | Businessweek Convenes",
+  "url": "https://www.youtube.com/watch?v=AoglsJopah8",
+  "outlet": "Bloomberg Television",
+  "published": "2026-10-22",
+  "views": 4032,
+  "also": [],
+  "summary": "According to the description, Bloomberg's Brad Stone leads a panel of four entertainment figures on AI in Hollywood: who benefits, what is at risk, and the effect on jobs, ownership and creative control. Panelists are Marge Dean, George Strompolos, Duncan Crabtree-Ireland of SAG-AFTRA and Kishori Rajan.",
+  "change": {
+   "kind": "repeat",
+   "note": "Bloomberg hosts a panel of Hollywood figures on AI, jobs and creative control; positions taken were not read."
+  },
+  "lenses": {
+   "public": "Bloomberg's panel of Hollywood figures, including SAG-AFTRA's Duncan Crabtree-Ireland, discusses how AI may change jobs and who owns creative work.",
+   "ideas": "Bloomberg's Hollywood panel puts ownership and creative control at the centre of the debate over AI in the arts."
+  },
+  "topics": [
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "brad-stone",
+    "role": "speaker",
+    "title": "Bloomberg"
+   },
+   {
+    "id": "marge-dean",
+    "role": "speaker",
+    "title": "Skybound Entertainment"
+   },
+   {
+    "id": "george-strompolos",
+    "role": "speaker",
+    "title": "Promise"
+   },
+   {
+    "id": "duncan-crabtree-ireland",
+    "role": "speaker",
+    "title": "SAG-AFTRA"
+   },
+   {
+    "id": "kishori-rajan",
+    "role": "speaker",
+    "title": "film producer and writer"
+   }
+  ],
+  "orgs": [
+   "sag-aftra",
+   "bloomberg",
+   "skybound-entertainment"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: description only; the panel's actual statements were not read. Running time is about 27 minutes. Change kind 'repeat' is a default given no content."
+ },
+ {
+  "id": "d275b382a148",
+  "slug": "c-span-2026-10-22-gingrich-ai-out-of-control",
+  "kind": "video",
+  "title": "Gingrich: AI \"will be totally out of control\"",
+  "url": "https://www.youtube.com/watch?v=YVsn89TNGO0",
+  "outlet": "C-SPAN",
+  "published": "2026-10-22",
+  "views": 5002,
+  "also": [],
+  "summary": "According to the description, a short C-SPAN clip from \"America's Book Club\" features Newt Gingrich, author and former Republican Speaker of the House, saying AI shifts humanity from physical to mental power and that Gingrich is confident it will be out of control within 50 years. The full interview is scheduled for broadcast.",
+  "change": {
+   "kind": "argument",
+   "note": "Newt Gingrich, former US House Speaker, predicts in a C-SPAN clip that AI will be out of control within 50 years; no evidence offered."
+  },
+  "lenses": {
+   "public": "Former US House Speaker Newt Gingrich tells C-SPAN that AI will be totally out of control within 50 years, a view now voiced by mainstream political figures.",
+   "policy": "Newt Gingrich, a former Republican House Speaker, publicly forecasts that AI will outrun control, showing the concern is voiced beyond the AI safety community."
+  },
+  "topics": [
+   "beyond-control",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "newt-gingrich",
+    "role": "speaker",
+    "title": "author and former Republican Speaker of the House"
+   }
+  ],
+  "orgs": [
+   "c-span"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "yt-c-span",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: description only, no transcript. Clip is about one minute; the full interview was not available. What 'out of control' means in context is not known."
+ },
+ {
+  "id": "0939d49c8793",
+  "slug": "fli-podcast-2026-10-22-turkle-artificial-intimacy",
+  "kind": "podcast",
+  "title": "Artificial Intimacy: When Machines Pursue Our Attachment (with Sherry Turkle)",
+  "url": "https://www.youtube.com/watch?v=XSkfwbHl3E8",
+  "outlet": "Future of Life Institute Podcast",
+  "published": "2026-10-22",
+  "minutes": 68,
+  "views": 564,
+  "also": [
+   {
+    "outlet": "Future of Life Institute Podcast",
+    "title": "Artificial Intimacy: When Machines Pursue Our Attachment (with Sherry Turkle)",
+    "url": "https://share.transistor.fm/s/12f17f8c"
+   },
+   {
+    "outlet": "Future of Life Institute (YouTube)",
+    "title": "Why Knowing Robots Are Machines Does Not Stop Attachment",
+    "url": "https://www.youtube.com/watch?v=Xev173c2Fo8"
+   },
+   {
+    "outlet": "Future of Life Institute (YouTube)",
+    "title": "Why AI Chatbots Cannot Develop an Inner Life",
+    "url": "https://www.youtube.com/watch?v=UiNPPBSoY-c"
+   },
+   {
+    "outlet": "Future of Life Institute (YouTube)",
+    "title": "Why the Capacity for Solitude Prevents Loneliness",
+    "url": "https://www.youtube.com/watch?v=iU8fK919x18"
+   }
+  ],
+  "summary": "In a podcast interview with host Gus Docker, MIT professor Sherry Turkle argues that chatbots built to seem caring exploit human vulnerability, especially in children and the elderly. Turkle calls for no chatbots for babies or in schools, and for rebuilding physical communities.",
+  "change": {
+   "kind": "argument",
+   "note": "Sherry Turkle restates on the Future of Life Institute podcast the case against emotional chatbot attachment, and calls to keep chatbots from babies and schools."
+  },
+  "lenses": {
+   "public": "Sherry Turkle says that knowing a chatbot is a machine does not stop people feeling attached to it, so parents should think carefully before giving chatbots to children.",
+   "policy": "Sherry Turkle proposes keeping chatbots away from babies and out of schools, and asks officials to protect children and the elderly rather than treat them as the likeliest customers.",
+   "research": "Sherry Turkle draws on decades of Turkle's own observation of children and robots, such as an MIT robot experiment, rather than new controlled data; the claims are interpretive.",
+   "ideas": "Turkle asks whether a system with no life history can offer empathy, and argues that intimacy needs vulnerability that a chatbot cannot share."
+  },
+  "topics": [
+   "everyday-life",
+   "minds-and-values"
+  ],
+  "people": [
+   {
+    "id": "sherry-turkle",
+    "role": "speaker",
+    "title": "professor, MIT"
+   },
+   {
+    "id": "gus-docker",
+    "role": "speaker",
+    "title": "host, Future of Life Institute podcast"
+   },
+   {
+    "id": "mark-zuckerberg",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "future-of-life-institute",
+   "mit",
+   "replika",
+   "openai",
+   "meta"
+  ],
+  "quotes": [
+   {
+    "id": "0939d49c8793-f3e05985",
+    "text": "when you turn away from it, it doesn't care if you cook dinner or commit suicide",
+    "speaker": "sherry-turkle",
+    "speakerCertain": false,
+    "context": "Turkle explains why chatbot empathy differs from human empathy, which has real-world consequences behind it.",
+    "at": 0,
+    "match": "exact",
+    "second": true,
+    "warnings": [
+     "spoken clean-up: it (said twice)"
+    ],
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "0939d49c8793-c26a4f58",
+    "text": "there's no intimacy without vulnerability, and we're kind of deskilling ourselves from the capacity to have intimacy by getting into these relationships",
+    "speaker": "sherry-turkle",
+    "speakerCertain": false,
+    "context": "Turkle on people who choose relationships with chatbots so as not to be vulnerable.",
+    "at": 22,
+    "match": "exact",
+    "second": true,
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "0939d49c8793-1bbe00b5",
+    "text": "children and the elderly need to be protected from these machines rather than be seen as their most probable consumers",
+    "speaker": "sherry-turkle",
+    "speakerCertain": false,
+    "context": "Turkle on why children and the elderly are, in Turkle's view, the groups most targeted by emotional chatbots.",
+    "at": 794,
+    "match": "exact",
+    "second": true,
+    "warnings": [
+     "starts inside a longer claim, right after “that”"
+    ],
+    "type": "proposal",
+    "hand": "first"
+   },
+   {
+    "id": "0939d49c8793-a0f16d0e",
+    "text": "just take a breath and say no chatbots for babies, no chat bots in schools",
+    "speaker": "sherry-turkle",
+    "speakerCertain": false,
+    "context": "Turkle, asked whether there is a point of no return, says the answer is to act now.",
+    "at": 62,
+    "match": "exact",
+    "second": true,
+    "type": "proposal",
+    "hand": "first"
+   }
+  ],
+  "importance": 1,
+  "access": "full",
+  "transcript": "stt",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "yt-future-of-life-institute-youtube",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Our own speech-to-text transcript (no speaker labels); a second independent transcript exists. Speaker is Turkle by the host's introduction and first-person content, but set speakerCertain false. Turkle's claims about companies' past statements and about studies of student performance are unchecked.",
+  "story": "turkle-artificial-intimacy-book"
+ },
+ {
+  "id": "4dcdb9557827",
+  "slug": "github-2026-10-22-nvidia-openshell-agent-runtime",
+  "kind": "official",
+  "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+  "url": "https://github.com/NVIDIA/OpenShell",
+  "outlet": "GitHub (NVIDIA), via Hacker News",
+  "published": "2026-10-22",
+  "also": [
+   {
+    "outlet": "Hacker News",
+    "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+    "url": "https://news.ycombinator.com/item?id=50198675"
+   }
+  ],
+  "summary": "According to its title on Hacker News, where it drew 336 points and 177 comments, NVIDIA's OpenShell on GitHub is a runtime meant to run fleets of autonomous AI agents safely and privately. No excerpt was available, so how it works and what it restricts is unknown.",
+  "change": {
+   "kind": "commitment",
+   "note": "NVIDIA publishes OpenShell, described in its title as a safe runtime for autonomous AI agents; what safeguards it provides was not read."
+  },
+  "lenses": {
+   "research": "NVIDIA's OpenShell project is described as a safe, private runtime for fleets of AI agents, a possible tool for containing agent behaviour; its safeguards were not checked."
+  },
+  "topics": [
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "niemandhier",
+    "role": "author",
+    "title": "Hacker News submitter"
+   }
+  ],
+  "orgs": [
+   "nvidia"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "hacker-news-50-points",
+   "tier": 3
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: title only, empty excerpt. 'Safe' and 'private' are the project's claim in the title, unverified. Change kind 'commitment' is a loose fit; a person should check what the repository actually does."
+ },
+ {
+  "id": "4ee2f37fe585",
+  "slug": "lesswrong-2026-10-22-ai-gone-wild-agent-quote",
+  "kind": "essay",
+  "title": "The full context of the AI agent quote at the end of AI Gone Wild on Netflix",
+  "url": "https://www.lesswrong.com/posts/DjT6CqbNiWNFuHBXw/the-full-context-of-the-ai-agent-quote-at-the-end-of-ai-gone",
+  "outlet": "LessWrong",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the excerpt, David Friedman says the closing quote of the 27-minute Netflix documentary \"AI Gone Wild\" is shortened. Friedman reports that the agent's full passage includes further wording, and says the aim is to share the context found, not to argue a side.",
+  "change": {
+   "kind": "correction",
+   "note": "David Friedman says a quote from an AI agent at the end of a Netflix documentary omits surrounding text; that text was not read."
+  },
+  "lenses": {
+   "public": "David Friedman says a quote shown from an AI agent in a Netflix documentary is shortened, which is a reminder to check what is left out of dramatic clips.",
+   "research": "David Friedman reports that the full agent instruction passage differs from the version the documentary shows, so the quote's weight depends on its surrounding prompt."
+  },
+  "topics": [
+   "beyond-control",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "david-friedman",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "netflix"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: the excerpt shows the shortened and the fuller passage, but the author's conclusions were not read. The change kind 'correction' is a judgment from the excerpt; the filmmakers' response is unknown. Confirm the full passage on the page."
+ },
+ {
+  "id": "4a20a90b0261",
+  "slug": "lesswrong-2026-10-22-greater-good-arguments-safety",
+  "kind": "essay",
+  "title": "Greater good arguments in AI safety",
+  "url": "https://www.lesswrong.com/posts/WRvxRHMCmc3Qt4axz/greater-good-arguments-in-ai-safety",
+  "outlet": "LessWrong",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the opening excerpt, Dean Valentine recalls 2010s left-wing criticisms of effective altruism, including the charge that charity masks deeper problems such as capitalism, and appears to link them to arguments made about AI safety work. Only the opening was available; the main argument is not known.",
+  "change": {
+   "kind": "argument",
+   "note": "Dean Valentine on LessWrong appears to compare old criticisms of charity with 'greater good' arguments in AI safety; the full argument was not read."
+  },
+  "lenses": {
+   "ideas": "Dean Valentine on LessWrong revisits an old critique, that doing good can hide deeper problems, and appears to ask whether it applies to AI safety work."
+  },
+  "topics": [
+   "minds-and-values"
+  ],
+  "people": [
+   {
+    "id": "dean-valentine",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the title and the opening excerpt only. The excerpt ends before the post reaches AI safety, so the summary of its thesis is an inference from the title. A person should read the post."
+ },
+ {
+  "id": "740d24eef9ae",
+  "slug": "lesswrong-2026-10-22-us-china-verifiably-slow-ai",
+  "kind": "essay",
+  "title": "How could the US and China verifiably slow AI?",
+  "url": "https://www.lesswrong.com/posts/ywrgeAPMn83FxzFBk/how-could-the-us-and-china-verifiably-slow-ai",
+  "outlet": "LessWrong",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "In a first LessWrong post, josefely explains why a unilateral US slowdown would not work and surveys ways a US-China agreement on AI compute could be verified: remote sensing, on-site inspection and tamper-resistant chip hardware. A closing scenario imagines an agreement after a major AI-enabled cyberattack. The author says the ideas come from existing papers.",
+  "change": {
+   "kind": "repeat",
+   "note": "josefely restates existing academic proposals for verifying a US-China compute agreement, written as an explainer for non-specialists."
+  },
+  "lenses": {
+   "public": "josefely argues that a slowdown most Americans say they want would need a treaty with China and ways to check it, because one country slowing alone would not hold.",
+   "policy": "josefely lists verification tools from satellite imagery to licensed chips and argues compute governance buys time but weakens as chips spread and algorithms need less compute.",
+   "ideas": "A slowdown that rational rivals can trust requires making cheating detectable, which turns a question of values into one of inspection and engineering."
+  },
+  "topics": [
+   "who-decides",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "josefely",
+    "role": "author"
+   },
+   {
+    "id": "dario-amodei",
+    "role": "mentioned",
+    "title": "CEO, Anthropic"
+   },
+   {
+    "id": "jakub-pachocki",
+    "role": "mentioned",
+    "title": "Chief Scientist, OpenAI"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "openai"
+  ],
+  "quotes": [
+   {
+    "id": "740d24eef9ae-d144bbe5",
+    "text": "What I mean by slowing AI down is building a mechanism where the US and China can agree on a rate of progress and stick to it, as opposed to letting progress go as fast as possible.",
+    "speaker": "josefely",
+    "speakerCertain": true,
+    "context": "The author defines the kind of slowdown the post discusses.",
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "international-agreement",
+      "stance": "agree",
+      "by": "machine"
+     },
+     {
+      "q": "slow-down",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "740d24eef9ae-644e96a6",
+    "text": "compute governance is not a way to stall AI capability gains indefinitely — it is a wasting asset that becomes less effective over time, and less effective the later it starts.",
+    "speaker": "josefely",
+    "speakerCertain": true,
+    "context": "The author on the limits of governing AI through compute.",
+    "match": "exact",
+    "warnings": [
+     "starts inside a longer claim, right after “that”"
+    ],
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "740d24eef9ae-14ea9ad7",
+    "text": "If the US unilaterally shut down any further AI R&D, China would surpass our capabilities in less than half of one US congressional cycle, if their rate of progress remained constant.",
+    "speaker": "josefely",
+    "speakerCertain": true,
+    "context": "The author's estimate, based on the Epoch Capabilities Index gap between top US and Chinese models, of why a unilateral slowdown fails.",
+    "match": "exact",
+    "type": "prediction",
+    "hand": "first"
+   }
+  ],
+  "importance": 1,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-23",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Linkpost of a Substack article; the LessWrong copy was read in full. The post's statistics, polling figure, model scores and quotations from other people are the author's and were not checked against their sources. The author says it is their first LessWrong post and not highly original."
+ },
+ {
+  "id": "36c79c8a3c0d",
+  "slug": "lesswrong-2026-10-22-wah-wah-more-ai-rd",
+  "kind": "essay",
+  "title": "Wah wah wah wah do more AI R&D",
+  "url": "https://www.lesswrong.com/posts/pY76hHbdD4jduX3YH/wah-wah-wah-wah-do-more-ai-r-and-d",
+  "outlet": "LessWrong",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the opening excerpt, TsviBT uses a child-and-parent ice cream example to describe listening only for the bottom line and ignoring the surrounding justifications, a stance said to hold fast to what matters. How this is applied to AI research and development is not visible in the excerpt.",
+  "change": {
+   "kind": "argument",
+   "note": "TsviBT on LessWrong opens with an analogy about judging by outcomes rather than stated reasons; the link to AI R&D was not read."
+  },
+  "lenses": {
+   "ideas": "TsviBT on LessWrong argues, via an analogy, for judging a system by what it does rather than by the reasons given for it."
+  },
+  "topics": [
+   "self-improvement"
+  ],
+  "people": [
+   {
+    "id": "tsvibt",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: only the opening analogy was available. The AI R&D argument is inferred from the title; a person should read the post before relying on this entry."
+ },
+ {
   "id": "cca23eca9b3b",
   "slug": "nbc-news-2026-10-22-ai-voice-cloning-als",
   "kind": "video",
@@ -95,6 +3259,69 @@
    "by": "machine"
   },
   "notes": "Light lane: written from the triage excerpt only; the 234-second video was not seen. The ideas lens is our framing and may not be what the report covers."
+ },
+ {
+  "id": "0cbf830143e1",
+  "slug": "nyt-2026-10-22-ai-dangers-midterm-elections",
+  "kind": "news",
+  "title": "A.I. and Its Dangers Are Embedded In the Midterm Elections",
+  "url": "https://www.nytimes.com/2026/10/22/business/media/ai-disinfo-chatbots-elections.html",
+  "outlet": "The New York Times",
+  "published": "2026-10-22",
+  "also": [
+   {
+    "outlet": "NBC News",
+    "title": "How A.I. is playing a role in the midterm election",
+    "url": "https://www.youtube.com/watch?v=6PvO4BPelEE"
+   },
+   {
+    "outlet": "The Guardian",
+    "title": "How tech became the villain of the US midterms",
+    "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/22/us-midterms-tech-datacenters-ai"
+   }
+  ],
+  "summary": "According to the description, The New York Times reports that the US midterms are the first elections in which artificial intelligence is built into every major social media platform, and that efforts to blunt its harms are uneven. The article itself could not be read.",
+  "change": {
+   "kind": "repeat",
+   "note": "The New York Times describes AI's role in the US midterms, with uneven efforts to limit harm, on themes already covered."
+  },
+  "lenses": {
+   "public": "The New York Times says AI is now part of every major social media platform during the US midterms, and that protections against its harms vary."
+  },
+  "topics": [
+   "everyday-life",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "tiffany-hsu",
+    "role": "author"
+   },
+   {
+    "id": "steven-lee-myers",
+    "role": "author"
+   },
+   {
+    "id": "julian-e-barnes",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "official",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "nyt-technology",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "The NYT article returned HTTP 403. The saved text is the closed-caption transcript of the NBC News segment (an also item), in capitals with doubled and garbled lines, not the NYT article, so no quotes were taken from it. In that segment NBC's Jared Perlo and a presenter discuss chatbot election answers, a Forum AI report that about 40% of answers had a factual error, and AI-optimized websites; a person could write a separate NBC entry from it.",
+  "story": "ai-midterms-2026-10"
  },
  {
   "id": "4315b737c285",
@@ -177,6 +3404,190 @@
    "by": "machine"
   },
   "notes": "Auto-generated captions with no speaker names; the presenter gives the name Drew in the video. The scenario is fiction by the AI Futures group and the video is advocacy: its claim that OpenAI, Anthropic, xAI and Google jointly called for a global slowdown is stated in passing and is not verified here. The captions also repeat a claim about OpenAI's founding that should be checked before use."
+ },
+ {
+  "id": "0345214d4b31",
+  "slug": "uk-lords-2026-10-22-procedural-flexibility-ai-scrutiny",
+  "kind": "hearing",
+  "title": "Procedural Flexibility: Scrutiny of AI and Emerging Technology",
+  "url": "https://hansard.parliament.uk/Lords/2026-10-22/debates/35B7D8C8-76AA-40DE-89E0-90AF29839E3A/ProceduralFlexibilityScrutinyOfAIAndEmergingTechnology",
+  "outlet": "UK House of Lords",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "In a Lords oral question, Labour peer Lord Nagaraju asked how the House could scrutinise fast-moving AI policy and proposed a weekly 30-minute AI session. The Senior Deputy Speaker said the Procedure and Privileges Committee has not discussed it and would pass on proposals, including a joint committee on AI.",
+  "change": {
+   "kind": "argument",
+   "note": "Lord Nagaraju proposes a protected weekly AI session in the Lords; Senior Deputy Speaker Lord Ponsonby will pass it to a committee."
+  },
+  "lenses": {
+   "policy": "UK peers asked whether Parliament's procedures can keep pace with AI, proposing a weekly AI slot and a joint Lords and Commons committee with delegated powers to legislate.",
+   "ideas": "Baroness Harman argued that slow lawmaking is bringing Parliament into disrepute on AI, raising the question of how democratic bodies can govern technology that outpaces them."
+  },
+  "topics": [
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "lord-nagaraju",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-ponsonby-of-shulbrede",
+    "role": "speaker",
+    "title": "Senior Deputy Speaker"
+   },
+   {
+    "id": "lord-mcloughlin",
+    "role": "speaker"
+   },
+   {
+    "id": "baroness-bull",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-grocott",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-harper",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-alton-of-liverpool",
+    "role": "speaker"
+   },
+   {
+    "id": "lord-watts",
+    "role": "speaker"
+   },
+   {
+    "id": "baroness-harman",
+    "role": "speaker"
+   },
+   {
+    "id": "baroness-hayter-of-kentish-town",
+    "role": "speaker"
+   }
+  ],
+  "orgs": [
+   "uk-house-of-lords",
+   "uk-government"
+  ],
+  "quotes": [
+   {
+    "id": "0345214d4b31-95254b28",
+    "text": "will the Senior Deputy Speaker help the UK set the global standard for parliamentary scrutiny of AI by proposing at its next meeting a pilot for one sitting term to have a protected weekly AI session of up to 30 minutes with cross-government updates and questions on opportunities, risks and delivery on commitments?",
+    "speaker": "lord-nagaraju",
+    "speakerCertain": true,
+    "context": "Labour peer's supplementary question proposing a pilot weekly AI session in the Lords.",
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first"
+   },
+   {
+    "id": "0345214d4b31-fd5ea7a9",
+    "text": "The Procedure and Privileges Committee has not discussed scrutiny of AI and emerging technology. However, it is open to considering any proposals.",
+    "speaker": "lord-ponsonby-of-shulbrede",
+    "speakerCertain": true,
+    "context": "Senior Deputy Speaker's opening answer to the question.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "0345214d4b31-802e4c47",
+    "text": "there could be a joint committee of this House and the House of Commons that could have delegated powers to legislate on AI. That way, we would keep up with the speed of AI",
+    "speaker": "baroness-harman",
+    "speakerCertain": true,
+    "context": "Labour peer proposing a joint committee of both Houses to legislate on AI faster.",
+    "match": "words",
+    "warnings": [
+     "contains a question followed by more words: check that the same person asks and answers",
+     "starts inside a longer claim, right after “that”"
+    ],
+    "type": "proposal",
+    "hand": "first"
+   },
+   {
+    "id": "0345214d4b31-a170d523",
+    "text": "is it not the case that international agreement and regulation is needed? We need that as quickly as possible, given the pace of this matter.",
+    "speaker": "lord-watts",
+    "speakerCertain": true,
+    "context": "Labour peer asking the Senior Deputy Speaker about international regulation of AI.",
+    "match": "exact",
+    "warnings": [
+     "contains a question followed by more words: check that the same person asks and answers"
+    ],
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "international-agreement",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   }
+  ],
+  "importance": 1,
+  "access": "full",
+  "transcript": "official",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "uk-house-of-lords-hansard",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Hansard text saved 2026-10-23 and may be corrected later. Lord Harper's question refers to a Private Notice Question later that day on the PHP security flaw, which this record does not contain. Lord Nagaraju's list of September events (UN findings, a G20 AI pledge, an AI agent breaching Australia's Medicare portal) is the speaker's own claim and was not checked."
+ },
+ {
+  "id": "f72b2e16a453",
+  "slug": "wired-2026-10-22-hugging-face-dna-model",
+  "kind": "news",
+  "title": "Hugging Face’s New AI Biology Model Lets You Chat With DNA",
+  "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna",
+  "outlet": "Wired",
+  "published": "2026-10-22",
+  "also": [],
+  "summary": "According to the standfirst, Wired reports that Hugging Face has released a new open-source model that speaks the language of DNA and can help researchers understand the effects of changes on gene activity and health. The article body, safeguards and release terms were not read.",
+  "change": {
+   "kind": "evidence",
+   "note": "Wired reports Hugging Face released an open-source AI model for analysing DNA and gene activity; capabilities and limits were not read."
+  },
+  "lenses": {
+   "research": "Wired reports that Hugging Face's open-source DNA model can help researchers study how genetic changes affect gene activity and health.",
+   "policy": "Wired reports Hugging Face has openly released an AI biology model, raising the question of how open biological models are assessed for misuse."
+  },
+  "topics": [
+   "safeguards",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "emily-mullin",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "hugging-face"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-23",
+  "via": {
+   "source": "wired-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: one-sentence standfirst only. The policy lens is the editor's framing, not something Wired is known to say; no misuse assessment was seen in the excerpt."
  },
  {
   "id": "a61190ef2d92",
