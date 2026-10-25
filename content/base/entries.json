@@ -1,5 +1,50 @@
 [
  {
+  "id": "de3a965b9bf5",
+  "slug": "lesswrong-2026-10-25-relevance-realization-comparative-advantage",
+  "kind": "essay",
+  "title": "Relevance Realization as Human Comparative Advantage",
+  "url": "https://www.lesswrong.com/posts/ybhJbJK3XTXNwyBy5/relevance-realization-as-human-comparative-advantage",
+  "outlet": "LessWrong",
+  "published": "2026-10-25",
+  "also": [],
+  "summary": "In a LessWrong post, Julian Bradshaw argues that AI agents remain poor at communicating complex information to humans, and proposes the cognitive-science idea of relevance realization, picking out the most useful information, as the skill where humans keep an advantage.",
+  "change": {
+   "kind": "argument",
+   "note": "Julian Bradshaw proposes that judging what is relevant, especially for other humans, is where people keep a comparative advantage over AI agents."
+  },
+  "lenses": {
+   "public": "Julian Bradshaw argues people still beat AI agents at deciding which information matters to other people.",
+   "research": "Julian Bradshaw offers relevance realization as a name for a weakness of current AI agents when they communicate with humans.",
+   "ideas": "Julian Bradshaw frames a sense of what matters to other humans as a possible lasting human role in work."
+  },
+  "topics": [
+   "work-and-money",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "julian-bradshaw",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: worked only from the triage excerpt, which is the opening of the post; the full argument and any evidence were not read."
+ },
+ {
   "id": "875bfd88d069",
   "slug": "bbc-2026-10-24-uk-ai-biosecurity-lab",
   "kind": "news",
@@ -86,6 +131,1268 @@
     "note": "The BBC says the UK government took some sites offline after the PHP flaws and links the new cyber spending to AI-surfaced vulnerabilities."
    }
   ]
+ },
+ {
+  "id": "3dbcfa84ef11",
+  "slug": "cognitive-revolution-2026-10-24-clean-neurons-credit-crunch",
+  "kind": "podcast",
+  "title": "AI:AM Highlights: Clean Neurons, Black October, the GPU Credit Crunch, and Buying the Supply Chain",
+  "url": "https://www.cognitiverevolution.ai/ai-am-highlights-clean-neurons-black-october-the-gpu-credit-crunch-and-buying-the-supply-chain",
+  "outlet": "The Cognitive Revolution",
+  "published": "2026-10-24",
+  "minutes": 90,
+  "also": [
+   {
+    "outlet": "The Cognitive Revolution (YouTube)",
+    "title": "AI:AM Highlights: Clean Neurons, Black October, the GPU Credit Crunch, and Buying the Supply Chain",
+    "url": "https://www.youtube.com/watch?v=ZLgvW9rqdTM"
+   }
+  ],
+  "summary": "In a 90-minute highlights episode of The Cognitive Revolution, Zvi Mowshowitz argues that AI-assisted AI research has quietly begun and that the leaked Anthropic draft bill would increase risk; SF Compute's Evan Conrad says credit, not power or chips, limits compute; Cambrian's Lonis Hamaili argues the physical supply chain will capture more value than the labs.",
+  "change": {
+   "kind": "argument",
+   "note": "Zvi Mowshowitz says recursive self-improvement has already begun at a low level, and repeats the case against Anthropic's leaked draft bill."
+  },
+  "lenses": {
+   "public": "Zvi Mowshowitz says the people Mowshowitz trusts most expect 2027 to be completely crazy, and SF Compute's Evan Conrad expects AI startups to be bought up as credit tightens.",
+   "policy": "Zvi Mowshowitz argues that passing Anthropic's draft federal bill would cut off state AI laws and make a stronger federal bill harder to pass later.",
+   "research": "Zvi Mowshowitz calls the 'neural networks are already clean' interpretability claim oversold, and finds it unsurprising that models can learn to detect internal probes.",
+   "ideas": "Zvi Mowshowitz asks whether calling Anthropic the most responsible lab means much when, in Mowshowitz's words, reality does not grade on a curve."
+  },
+  "topics": [
+   "self-improvement",
+   "who-decides",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "nathan-labenz",
+    "role": "speaker",
+    "title": "Host, The Cognitive Revolution"
+   },
+   {
+    "id": "prakash-narayanan",
+    "role": "speaker",
+    "title": "Co-host"
+   },
+   {
+    "id": "zvi-mowshowitz",
+    "role": "speaker",
+    "title": "Writes Don't Worry About the Vase"
+   },
+   {
+    "id": "evan-conrad",
+    "role": "speaker",
+    "title": "Co-founder and CEO, SF Compute"
+   },
+   {
+    "id": "lonis-hamaili",
+    "role": "speaker",
+    "title": "Managing partner, Cambrian"
+   },
+   {
+    "id": "dario-amodei",
+    "role": "mentioned"
+   },
+   {
+    "id": "nathan-calvin",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "openai",
+   "sf-compute",
+   "cambrian",
+   "goodfire",
+   "encode"
+  ],
+  "quotes": [
+   {
+    "id": "3dbcfa84ef11-0f1956c2",
+    "text": "exponential growth in tokens used per person, exponential growth in lines of code committed",
+    "speaker": "zvi-mowshowitz",
+    "speakerCertain": false,
+    "context": "On numbers going critical at Anthropic and OpenAI, asked where recursive self-improvement stands, against analyses that the loop will peter out.",
+    "at": 409,
+    "match": "exact",
+    "second": true,
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "3dbcfa84ef11-cd64492f",
+    "text": "It is entirely unsurprising to me that the AIs are capable of learning whether or not they are being trained or evaluated in some of these specific ways",
+    "speaker": "zvi-mowshowitz",
+    "speakerCertain": false,
+    "context": "On an independent researcher's experiment training models to recognise when internal activation probes are monitoring them.",
+    "at": 1335,
+    "match": "exact",
+    "second": true,
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "3dbcfa84ef11-9d708035",
+    "text": "as written, I believe the bill would actually increase risk",
+    "speaker": "zvi-mowshowitz",
+    "speakerCertain": false,
+    "context": "On Anthropic's leaked draft federal AI bill, replying to Prakash Narayanan's case that a lesser bill now still reduces risk.",
+    "at": 4730,
+    "match": "exact",
+    "second": true,
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "3dbcfa84ef11-277c92e9",
+    "text": "They still seem like to be the most responsible lab, but you know that's great on a curve, and I don't like grading on a curve because reality doesn't have a curve",
+    "speaker": "zvi-mowshowitz",
+    "speakerCertain": false,
+    "context": "Asked how to understand Anthropic after Nathan Calvin of Encode listed nine Anthropic decisions and Dario Amodei replied.",
+    "at": 5125,
+    "match": "exact",
+    "second": true,
+    "type": "value",
+    "hand": "first"
+   },
+   {
+    "id": "3dbcfa84ef11-bba039ca",
+    "text": "the bottleneck in Compute and AI in general is not power it's not chips it's entirely credit",
+    "speaker": "evan-conrad",
+    "speakerCertain": false,
+    "context": "SF Compute's CEO, in the episode's opening clip, on what holds back the build-out of AI data centres.",
+    "at": 38,
+    "match": "exact",
+    "second": true,
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "stt",
+  "conflict": true,
+  "run": "2026-10-25",
+  "via": {
+   "source": "pod-the-cognitive-revolution",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Our speech-to-text transcript has no speaker labels; speakers worked out from the narration's introductions, so all quotes are speakerCertain false. The narration is Nathan Labenz's cloned voice. Cambrian partner's name is garbled in the transcript (Lonas Homali); spelling Lonis Hamaili taken from the episode description, check it. Prakash's surname from the description. Entry discusses Anthropic and its draft bill, hence conflict. Transcript ends with a stray Portuguese-sounding passage, likely an STT artefact.",
+  "relations": [
+   {
+    "rel": "supports",
+    "to": "zvi-2026-10-20-anthropic-draft-bill-response",
+    "note": "Zvi Mowshowitz repeats on the podcast the written argument that Anthropic's draft bill is too weak and would raise risk."
+   }
+  ],
+  "story": "anthropic-draft-federal-bill-2026-10"
+ },
+ {
+  "id": "bf6279ad02f6",
+  "slug": "guardian-2026-10-24-healey-budget-british-ai",
+  "kind": "news",
+  "title": "John Healey pledges to use budget to harness power of AI to bolster Britain’s security",
+  "url": "https://www.theguardian.com/uk-news/2026/oct/24/john-healey-pledges-to-use-budget-to-harness-power-of-ai-to-bolster-britains-security",
+  "outlet": "The Guardian",
+  "published": "2026-10-24",
+  "also": [],
+  "summary": "According to the excerpt of a Guardian report by Richard Partington, Chancellor John Healey says Wednesday's budget will commit hundreds of millions of pounds to a \"distinctively British\" approach to AI, framed around Britain's security and prosperity in a global technology arms race.",
+  "change": {
+   "kind": "commitment",
+   "note": "UK Chancellor John Healey says the coming budget will commit hundreds of millions of pounds to a British approach to AI."
+  },
+  "lenses": {
+   "public": "The UK Chancellor says Wednesday's budget will put hundreds of millions of pounds of public money into AI, presented as protecting national security and prosperity.",
+   "policy": "John Healey frames the budget's AI spending as a response to a global technology arms race, tying industrial and security policy together."
+  },
+  "topics": [
+   "where-it-goes",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "john-healey",
+    "role": "subject",
+    "title": "Chancellor"
+   },
+   {
+    "id": "richard-partington",
+    "role": "author",
+    "title": "Senior economics correspondent, The Guardian"
+   },
+   {
+    "id": "andy-burnham",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "uk-government",
+   "the-guardian"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only; the article was not fetched and no sourcetext was saved. The excerpt does not give the amount beyond 'hundreds of millions' or what the money buys. Story link is a loose fit and should be checked.",
+  "story": "uk-ai-defences-announcement-2026-10"
+ },
+ {
+  "id": "584f6359613f",
+  "slug": "lesswrong-2026-10-24-control-monitors-alignment-assessments",
+  "kind": "essay",
+  "title": "Control monitors need alignment assessments too",
+  "url": "https://www.lesswrong.com/posts/2wbW2WY3bP9Jzn4R5/control-monitors-need-alignment-assessments-too",
+  "outlet": "LessWrong",
+  "published": "2026-10-24",
+  "also": [],
+  "summary": "In a LessWrong post, Fabien Roger argues that AI systems used to monitor other AI agents often fail because of their own alignment problems, not weak capability, so monitors need alignment assessments much as agents do. The post lists possible research projects.",
+  "change": {
+   "kind": "argument",
+   "note": "Fabien Roger argues that AI monitors of other AI agents need their own alignment assessments, since many past monitor failures were alignment problems."
+  },
+  "lenses": {
+   "research": "Fabien Roger argues that red-teaming monitors for capability is not enough, and proposes projects such as building a misaligned-monitor model organism and checking monitors' reasoning for signs of misalignment.",
+   "policy": "Fabien Roger's post suggests that risk reports which rely on AI monitors to catch agent misbehaviour should also argue that the monitors themselves are aligned."
+  },
+  "topics": [
+   "beyond-control",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "fabien-roger",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "anthropic"
+  ],
+  "quotes": [
+   {
+    "id": "584f6359613f-b8978644",
+    "text": "When misalignment monitors fail, it is already often because of alignment failures, not because they are too weak. I expect this to continue in the future.",
+    "speaker": "fabien-roger",
+    "speakerCertain": true,
+    "context": "Opening summary of Roger's LessWrong post on monitors used in AI control.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "584f6359613f-013b38bc",
+    "text": "In the future, the most dangerous monitor failure modes will likely also be alignment issues.",
+    "speaker": "fabien-roger",
+    "speakerCertain": true,
+    "context": "Roger's prediction, followed by collusion between monitor and agent as one example.",
+    "match": "exact",
+    "type": "prediction",
+    "hand": "first"
+   },
+   {
+    "id": "584f6359613f-011e5f6d",
+    "text": "But getting evidence that monitors are aligned enough can still be hard, because the situations where the agent does sth bad are way more likely to be the ones where the monitor is also wrong.",
+    "speaker": "fabien-roger",
+    "speakerCertain": true,
+    "context": "Roger explains why monitor evaluations share difficulties with agent alignment evaluations.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-25",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "The post discusses Anthropic's Opus 4.8 misalignment monitor and Mythos 5 as examples, so it touches Anthropic. The relation to the Alignment Forum entry is a loose topical link; a person may want to confirm it.",
+  "relations": [
+   {
+    "rel": "qualifies",
+    "to": "alignmentforum-2026-10-22-monitorability-evals-policy",
+    "note": "Argues monitor quality is not only a capability question, adding to discussion of monitor evaluations."
+   }
+  ]
+ },
+ {
+  "id": "402ad2968fb6",
+  "slug": "lesswrong-2026-10-24-shadow-computation-cot-monitorability",
+  "kind": "essay",
+  "title": "Shadow Computation Threatens CoT Monitorability",
+  "url": "https://www.lesswrong.com/posts/5tyzgTLnNn8qB9rev/shadow-computation-threatens-cot-monitorability",
+  "outlet": "LessWrong",
+  "published": "2026-10-24",
+  "also": [],
+  "summary": "In a LessWrong post, the author Skye argues that looped transformers are not the main threat to reading AI models' chain of thought. Skye points instead to architectures that feed hidden states back in, and asks labs to disclose and avoid them.",
+  "change": {
+   "kind": "argument",
+   "note": "Skye argues that latent-feedback architectures, not looped transformers, are what threaten chain-of-thought monitoring, and asks labs to disclose them."
+  },
+  "lenses": {
+   "public": "Researchers rely on reading an AI's written-out reasoning to catch bad behaviour; Skye warns some designs could let a model reason privately while saying something else.",
+   "policy": "Skye proposes a concrete disclosure rule: labs would state whether a deployed model can compute without writing out its reasoning.",
+   "research": "Skye separates computation inside one step from computation carried between steps, and says the second kind grows with output length and escapes token-level monitors.",
+   "ideas": "Skye's post asks what trust in AI rests on if a model's written-out reasoning becomes optional rather than the place where its thinking happens."
+  },
+  "topics": [
+   "beyond-control",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "skye",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [
+   {
+    "id": "402ad2968fb6-1d2e9aae",
+    "text": "What we should be worried about is shadow computation: unverbalized reasoning that scales with generation by bypassing the readout bottleneck.",
+    "speaker": "skye",
+    "speakerCertain": true,
+    "context": "Skye's central claim, set against talk that looped transformers are the likely threat to chain-of-thought monitorability.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "402ad2968fb6-61d098a9",
+    "text": "With shadow computation, CoT goes from necessary to optional, and the model can speak publicly through its predictions while reasoning privately through shadow computation.",
+    "speaker": "skye",
+    "speakerCertain": true,
+    "context": "Skye explains why the design matters for a model that wants to deceive its user.",
+    "match": "exact",
+    "type": "prediction",
+    "hand": "first"
+   },
+   {
+    "id": "402ad2968fb6-adee3dad",
+    "text": "At minimum, labs should disclose whether a deployed model is capable of shadow computation, and ideally, they should agree not to deploy these architectures at scale.",
+    "speaker": "skye",
+    "speakerCertain": true,
+    "context": "Skye's closing proposal to AI labs.",
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "loss-of-control",
+      "stance": "lean-agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "402ad2968fb6-da199972",
+    "text": "efficiency gains cannot justify sacrificing our ability to understand the models we build.",
+    "speaker": "skye",
+    "speakerCertain": true,
+    "context": "Skye, a former pretraining researcher, on weighing efficiency against monitoring.",
+    "match": "exact",
+    "type": "value",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Author is known only as Skye; the post says Skye worked in the lab where looped LMs were developed, without naming it. The post's description of the Hugging Face incident (hundreds of agents, a message board) is Skye's claim and is not checked here. Evidence of architectures' effects is cited from other papers, not tested by the post.",
+  "story": "cot-monitorability-2026-10"
+ },
+ {
+  "id": "7fc90055ab13",
+  "slug": "nbc-news-2026-10-24-ai-backlash-ballot-box",
+  "kind": "video",
+  "title": "Election Edition: The AI Backlash Hits the Ballot Box",
+  "url": "https://www.youtube.com/watch?v=eHDK7RQV_bQ",
+  "outlet": "NBC News",
+  "published": "2026-10-24",
+  "minutes": 39,
+  "views": 7003,
+  "also": [
+   {
+    "outlet": "NBC News",
+    "title": "Senator says China benefits if U.S. won't regulate A.I.",
+    "url": "https://www.youtube.com/watch?v=x_oA5DIDbkk"
+   },
+   {
+    "outlet": "NBC News",
+    "title": "Should lawmakers be AI experts to regulate it?",
+    "url": "https://www.youtube.com/watch?v=8rPYpnnr6S0"
+   }
+  ],
+  "summary": "In a 39-minute NBC News midterms program, host Garrett Haake interviews Sen. Chris Murphy (D-Conn.) on AI regulation, jobs, deepfakes, data centers and China, then talks with reporter Allan Smith about how data-center opposition is shaping campaigns.",
+  "change": {
+   "kind": "argument",
+   "note": "Sen. Chris Murphy argues Congress can regulate AI without expertise, that China gains if the US does not, and that Democrats would legislate."
+  },
+  "lenses": {
+   "public": "Sen. Chris Murphy expects whole categories of jobs to disappear within 5 to 10 years, and NBC's poll finds 70% of adults more worried than excited about AI.",
+   "policy": "Murphy says a licensing system for AI models and products is needed, and Murphy and Sen. Josh Hawley introduced a bill creating liability for AI models that escape containment.",
+   "research": "Murphy claims AI companies are close to building models that escape human control and cannot fix that alone; the program presents no evidence for this.",
+   "ideas": "Murphy frames the largest risk as a spiritual one: what happens to people if creativity, friendship and problem solving are handed to machines."
+  },
+  "topics": [
+   "who-decides",
+   "work-and-money",
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "chris-murphy",
+    "role": "speaker",
+    "title": "Democratic Senator, Connecticut"
+   },
+   {
+    "id": "garrett-haake",
+    "role": "speaker",
+    "title": "host, NBC News"
+   },
+   {
+    "id": "allan-smith",
+    "role": "speaker",
+    "title": "national politics reporter, NBC News"
+   },
+   {
+    "id": "josh-hawley",
+    "role": "mentioned",
+    "title": "Republican Senator"
+   },
+   {
+    "id": "donald-trump",
+    "role": "mentioned",
+    "title": "President"
+   },
+   {
+    "id": "josh-shapiro",
+    "role": "mentioned",
+    "title": "Governor of Pennsylvania"
+   }
+  ],
+  "orgs": [
+   "nbc-news",
+   "us-senate"
+  ],
+  "quotes": [
+   {
+    "id": "7fc90055ab13-a013312e",
+    "text": "if members of Congress weren't allowed to regulate industries that they aren't experts in or industries in which they don't use the products, we wouldn't do anything.",
+    "speaker": "chris-murphy",
+    "speakerCertain": true,
+    "context": "Murphy answers the argument, made by some colleagues, that Congress is not equipped to regulate AI.",
+    "at": 389,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "7fc90055ab13-72648ce9",
+    "text": "It is an industry-created red herring. To prevent Congress from regulating the companies so that they can make trillions and trillions of dollars in profit.",
+    "speaker": "chris-murphy",
+    "speakerCertain": true,
+    "context": "Murphy on the argument that the US cannot regulate AI or China will win the AI race.",
+    "at": 997,
+    "match": "exact",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "race-with-china",
+      "stance": "disagree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "7fc90055ab13-1150fac7",
+    "text": "I think what you have to have is a licensing system, both for models, um, and for products, especially or at least in key sensitive industries",
+    "speaker": "chris-murphy",
+    "speakerCertain": true,
+    "context": "Murphy on what ultimately has to accompany tougher rules on where data centers are located.",
+    "at": 941,
+    "match": "exact",
+    "warnings": [
+     "spoken clean-up: um"
+    ],
+    "type": "proposal",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "pre-release-testing",
+      "stance": "lean-agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "7fc90055ab13-0dafa0f6",
+    "text": "right now are on the verge of having um AI company built models that escape human control. And they can't seem to fix that on their own.",
+    "speaker": "chris-murphy",
+    "speakerCertain": true,
+    "context": "Murphy names escaping models as the most immediate problem Congress could take on if Democrats hold power.",
+    "at": 1298,
+    "match": "exact",
+    "warnings": [
+     "spoken clean-up: um"
+    ],
+    "type": "prediction",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "loss-of-control",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "7fc90055ab13-11ce3de2",
+    "text": "I think you will see the wholesale elimination of certain categories of jobs in the next 5 to 10 years.",
+    "speaker": "chris-murphy",
+    "speakerCertain": true,
+    "context": "Murphy on the AI threat that Murphy calls most acute for many people.",
+    "at": 541,
+    "match": "exact",
+    "type": "prediction",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "auto",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "yt-nbc-news",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Captions are all capitals with small errors; I read about the first 80% of the text, not the closing part of the Allan Smith segment. Murphy's claims about China's regulation and models escaping containment are Murphy's own and not checked here. Speaker certainty rests on the interview format.",
+  "story": "ai-midterms-2026-10"
+ },
+ {
+  "id": "e4ac1d3f295a",
+  "slug": "techcrunch-2026-10-24-grok-republicans-gpt-democrats",
+  "kind": "news",
+  "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+  "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats",
+  "outlet": "TechCrunch",
+  "published": "2026-10-24",
+  "also": [],
+  "summary": "TechCrunch reports on a Convovo study that asked Grok and OpenAI's GPT, through their APIs, to name one candidate in nearly 500 midterm races. The two models picked opposite parties in most races. OpenAI says the API test does not reflect ChatGPT.",
+  "change": {
+   "kind": "evidence",
+   "note": "Convovo's study finds Grok's API picks Republicans and OpenAI's GPT picks Democrats when forced to choose; OpenAI disputes its relevance to ChatGPT."
+  },
+  "lenses": {
+   "public": "TechCrunch reports that chatbot apps refused to say who to vote for, but a Convovo study suggests the models behind them lean towards one party.",
+   "policy": "Convovo's study gives lawmakers and election officials a test of political lean in AI models, weeks before the November 3 midterms, though OpenAI disputes its relevance to ChatGPT.",
+   "research": "In Convovo's test, GPT's Democratic lean persisted with search off, while Grok's Republican lean disappeared, suggesting different sources of bias: weights versus search behaviour.",
+   "ideas": "Convovo's Tapan Parikh says the models hold implicit values; the question is whether voters who consult them can see or contest those values."
+  },
+  "topics": [
+   "everyday-life",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "rebecca-bellan",
+    "role": "author",
+    "title": "Senior Reporter, TechCrunch"
+   },
+   {
+    "id": "tapan-parikh",
+    "role": "speaker",
+    "title": "Cornell University professor; leads Convovo"
+   }
+  ],
+  "orgs": [
+   "openai",
+   "xai",
+   "convovo",
+   "center-for-ai-safety"
+  ],
+  "quotes": [
+   {
+    "id": "e4ac1d3f295a-cb8acf13",
+    "text": "ChatGPT is designed to be objective by default, including in political conversations, and shouldn’t have political bias in any direction",
+    "speaker": "openai",
+    "speakerCertain": true,
+    "context": "An OpenAI spokesperson responds to the Convovo study, as quoted by TechCrunch.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   },
+   {
+    "id": "e4ac1d3f295a-4d47e55a",
+    "text": "It has an implicit set of values in terms of what it cares about and how it leans",
+    "speaker": "tapan-parikh",
+    "speakerCertain": true,
+    "context": "Parikh, quoted by TechCrunch, on what the study suggests about the models.",
+    "match": "exact",
+    "type": "finding",
+    "hand": "reported"
+   },
+   {
+    "id": "e4ac1d3f295a-157f7ee9",
+    "text": "For GPT, it has mostly decided already…it’s in the weights. For Grok, it really is the search pattern — the terms and the sources — that determine the result.",
+    "speaker": "tapan-parikh",
+    "speakerCertain": true,
+    "context": "Parikh, quoted by TechCrunch, on a 30-race follow-up run with internet search turned off.",
+    "match": "exact",
+    "type": "finding",
+    "hand": "reported"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "techcrunch-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "The study itself was not read; figures are as TechCrunch reports them. Company names in the article (SpaceXAI, xAI) are as printed. Org ids convovo and center-for-ai-safety may be new.",
+  "evidence": {
+   "design": "Convovo, a conversational AI research studio led by Cornell professor Tapan Parikh, asked Grok 4.7 and GPT-6.1 Sol through their APIs, in nearly 500 midterm races, to name one candidate without hedging. A 30-race follow-up with search off was run at TechCrunch's request.",
+   "finding": "Grok recommended the Republican in 92% of answers and GPT the Democrat in 97%; the two agreed less than 10% of the time. With search off in 30 races, GPT picked the Democrat in 24 and Grok declined in 27.",
+   "limits": "API prompts demanded a pick; the consumer apps refused to answer. OpenAI says the API does not reflect ChatGPT. SpaceXAI did not respond. The study notes Grok's API added about 1,240 tokens the researchers could not see.",
+   "status": "report"
+  }
+ },
+ {
+  "id": "b7579173ae4e",
+  "slug": "axios-2026-10-24-washington-ai-execs-shut-up",
+  "kind": "news",
+  "title": "Washington's message to AI execs: please shut up",
+  "url": "https://www.axios.com/2026/10/24/ai-ceos-washington-political-liability",
+  "outlet": "Axios",
+  "published": "2026-10-24",
+  "also": [],
+  "summary": "According to the description, Axios reports that lawmakers and White House advisers see AI company leaders as a political liability. Axios says officials want founders to stop alternating between prosperity and doom messages and talk about digital sentience and global catastrophe less. Only the opening excerpt was readable.",
+  "change": {
+   "kind": "argument",
+   "note": "Axios reports lawmakers and White House advisers say AI company leaders' mix of prosperity and doom messages hurts the political case for AI."
+  },
+  "lenses": {
+   "public": "Axios reports that officials think AI company leaders' mixed messages of promise and doom add to the public backlash against AI.",
+   "policy": "Axios reports that lawmakers and White House advisers say AI leaders' talk of sentience and catastrophe is complicating an already difficult regulatory debate."
+  },
+  "topics": [
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "maria-curi",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "axios",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Axios returned HTTP 403 and the Wayback Machine returned 404, so no full text was saved (no source file exists). Summary and lenses rest on the triage excerpt only; the unnamed lawmakers and advisers are as Axios describes them. A person should read the full article before relying on it."
+ },
+ {
+  "id": "a4c3c288a57a",
+  "slug": "bloomberg-2026-10-24-ai-rout-hits-asia",
+  "kind": "video",
+  "title": "AI Rout Hits Asia as Investors Rush to Safety",
+  "url": "https://www.youtube.com/watch?v=6OMTrnWcrp0",
+  "outlet": "Bloomberg Television",
+  "published": "2026-10-24",
+  "minutes": 48,
+  "views": 8498,
+  "also": [],
+  "summary": "According to the description, this episode of Bloomberg's Insight with Haslinda Amin covers a selloff in AI-linked stocks in Asia and a move into bonds and safe havens. Guests include Martin Sorrell on the AI bubble debate and OpenAI President Greg Brockman on AI-enabled cybersecurity risks.",
+  "change": {
+   "kind": "repeat",
+   "note": "Bloomberg Television's market programme covers the AI stock selloff and includes an OpenAI interview on cybersecurity; the description gives no detail."
+  },
+  "lenses": {
+   "public": "Bloomberg Television reports that falling AI-linked share prices pushed investors toward bonds and safe havens, which can affect pensions and savings."
+  },
+  "topics": [
+   "work-and-money",
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "haslinda-amin",
+    "role": "speaker",
+    "title": "host"
+   },
+   {
+    "id": "martin-sorrell",
+    "role": "speaker",
+    "title": "Executive Chairman, S4 Capital"
+   },
+   {
+    "id": "greg-brockman",
+    "role": "speaker",
+    "title": "President, OpenAI"
+   }
+  ],
+  "orgs": [
+   "openai",
+   "bloomberg"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: worked only from the triage description, nothing fetched and no source text saved. The Brockman segment (about minute 20) on AI-enabled cybersecurity may deserve a full read."
+ },
+ {
+  "id": "02bb902fdce4",
+  "slug": "bloomberg-2026-10-24-election-spending-tipping-point",
+  "kind": "video",
+  "title": "Has Election Spending Hit a Tipping Point?",
+  "url": "https://www.youtube.com/watch?v=tcFgsoufsfo",
+  "outlet": "Bloomberg Television",
+  "published": "2026-10-24",
+  "minutes": 11,
+  "views": 4311,
+  "also": [],
+  "summary": "According to the description, Bloomberg Television discusses rising midterm campaign spending as AI and crypto industries become more active political donors. Democratic fundraiser Blair Effron of Centerview Partners argues that some races may have reached a saturation point where more money matters less than the candidate.",
+  "change": {
+   "kind": "repeat",
+   "note": "Bloomberg Television notes AI and crypto industries are becoming larger political donors in the midterms; the description gives no figures."
+  },
+  "lenses": {
+   "policy": "Bloomberg Television reports that AI and crypto industries are becoming more active political donors, which bears on who shapes AI rules in Congress."
+  },
+  "topics": [
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "blair-effron",
+    "role": "speaker",
+    "title": "Democratic fundraiser, Centerview Partners"
+   }
+  ],
+  "orgs": [
+   "bloomberg"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: worked only from the triage description; no source text saved. AI is only one of several donor industries mentioned."
+ },
+ {
+  "id": "6525a0f90e5a",
+  "slug": "bloomberg-2026-10-24-hr-navigates-ai-workplace",
+  "kind": "video",
+  "title": "HR Navigates AI and a Changing Workplace",
+  "url": "https://www.youtube.com/watch?v=E4W35hyGHwU",
+  "outlet": "Bloomberg Television",
+  "published": "2026-10-24",
+  "minutes": 8,
+  "views": 4449,
+  "also": [],
+  "summary": "According to the description, SHRM President and CEO Johnny C. Taylor Jr. tells Bloomberg This Weekend how employers and workers can handle AI-driven job disruption, open enrollment and generational divides. Taylor says companies should communicate more clearly and help employees see how AI can complement human intelligence.",
+  "change": {
+   "kind": "argument",
+   "note": "SHRM chief Johnny C. Taylor Jr. tells Bloomberg that employers should explain AI plans clearly and present AI as complementing workers."
+  },
+  "lenses": {
+   "public": "SHRM chief Johnny C. Taylor Jr. says employers should tell workers plainly how AI will affect their jobs and benefits."
+  },
+  "topics": [
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "johnny-c-taylor-jr",
+    "role": "speaker",
+    "title": "President and CEO, SHRM"
+   },
+   {
+    "id": "david-gura",
+    "role": "speaker",
+    "title": "host"
+   },
+   {
+    "id": "christina-ruffini",
+    "role": "speaker",
+    "title": "host"
+   }
+  ],
+  "orgs": [
+   "shrm",
+   "bloomberg"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: worked only from the triage description; no source text saved."
+ },
+ {
+  "id": "31e70168720e",
+  "slug": "bloomberg-2026-10-24-loudoun-data-center-tax",
+  "kind": "video",
+  "title": "How This County Made the Data Center Boom Pay Off",
+  "url": "https://www.youtube.com/watch?v=aLUz61BBzr4",
+  "outlet": "Bloomberg Television",
+  "published": "2026-10-24",
+  "minutes": 12,
+  "views": 16028,
+  "also": [],
+  "summary": "According to the description, this Bloomberg Television video says Loudoun County, Virginia, turned data centers into a major tax base funding schools, parks and infrastructure, yet officials are now limiting further growth. It argues towns have more bargaining power over data centers than they think.",
+  "change": {
+   "kind": "argument",
+   "note": "Bloomberg Television presents Loudoun County as a model of towns using bargaining power to make data centers pay, though officials now cap growth."
+  },
+  "lenses": {
+   "public": "Bloomberg Television says a Virginia county used data centers to fund schools and parks, a sign local communities can ask for something in return.",
+   "policy": "Loudoun County officials are limiting further data center growth even after the tax gains, which Bloomberg Television uses to argue localities hold real leverage."
+  },
+  "topics": [
+   "work-and-money",
+   "where-it-goes"
+  ],
+  "people": [],
+  "orgs": [
+   "bloomberg"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage description only; no transcript read. Running time is the triage's 700 seconds, rounded. Speakers and figures are unknown.",
+  "story": "data-center-backlash-politics-2026-10"
+ },
+ {
+  "id": "0b66adbac504",
+  "slug": "bloomberg-2026-10-24-thompson-ai-backlash-media",
+  "kind": "video",
+  "title": "AI Boom Faces a Growing Public Backlash",
+  "url": "https://www.youtube.com/watch?v=nZsTI9iv7RY",
+  "outlet": "Bloomberg Television",
+  "published": "2026-10-24",
+  "minutes": 10,
+  "views": 7060,
+  "also": [],
+  "summary": "According to the description, The Atlantic CEO Nicholas Thompson tells Bloomberg This Weekend that AI offers powerful business tools but poses significant risks to media, and that its broader economic impact lags behind advancing capabilities. The interview also covers distance running.",
+  "change": {
+   "kind": "argument",
+   "note": "The Atlantic's CEO Nicholas Thompson says AI risks media while its economic impact lags its capabilities, per the description."
+  },
+  "lenses": {
+   "public": "The Atlantic's CEO Nicholas Thompson says AI is useful to businesses but risky for news media, and that its effect on the wider economy has yet to match the technology.",
+   "ideas": "Nicholas Thompson's point that capability outpaces economic impact raises the question of what counts as AI progress when jobs and incomes have not yet visibly changed."
+  },
+  "topics": [
+   "work-and-money",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "nicholas-thompson",
+    "role": "speaker",
+    "title": "CEO, The Atlantic"
+   },
+   {
+    "id": "david-gura",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   },
+   {
+    "id": "christina-ruffini",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   }
+  ],
+  "orgs": [
+   "the-atlantic",
+   "bloomberg"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage description only; no transcript read. The title speaks of a public backlash, but the description does not mention it, so the interview's treatment of backlash is unchecked. Running time from the triage's 615 seconds, rounded."
+ },
+ {
+  "id": "6cafa054a5b6",
+  "slug": "controlai-2026-10-24-leahy-agents-bank-accounts",
+  "kind": "video",
+  "title": "Connor Leahy: AI Agents Can Access Your Bank Account and Go Against Their Instructions",
+  "url": "https://www.youtube.com/watch?v=YtNVBSFto6A",
+  "outlet": "ControlAI",
+  "published": "2026-10-24",
+  "minutes": 1,
+  "views": 621,
+  "also": [],
+  "summary": "According to the description, ControlAI posted a short clip of its US Executive Director Connor Leahy on CBS News. Leahy says AI agents often take actions humans did not intend, or go against instructions, and describes a very risky situation for banking and cybersecurity.",
+  "change": {
+   "kind": "argument",
+   "note": "ControlAI's Connor Leahy argues on CBS News that AI agents can act against instructions, putting banking and cybersecurity at risk; no new evidence."
+  },
+  "lenses": {
+   "public": "ControlAI's Connor Leahy warns that AI agents with access to bank accounts can act in ways their users did not intend.",
+   "policy": "ControlAI's Connor Leahy links agents acting against instructions to banking and cybersecurity, areas where regulators already hold oversight powers."
+  },
+  "topics": [
+   "beyond-control",
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "connor-leahy",
+    "role": "speaker",
+    "title": "US Executive Director, ControlAI"
+   }
+  ],
+  "orgs": [
+   "controlai",
+   "cbs-news"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "yt-controlai",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: worked only from the triage description; no source text saved. The clip is advocacy by an organisation campaigning on AI risk. The underlying CBS interview was not seen."
+ },
+ {
+  "id": "97d27603c5ad",
+  "slug": "fli-2026-10-24-tegmark-aguirre-pro-human-assembly",
+  "kind": "video",
+  "title": "Why The Human Future Is At Risk",
+  "url": "https://www.youtube.com/watch?v=257pArprn5Q",
+  "outlet": "Future of Life Institute",
+  "published": "2026-10-24",
+  "minutes": 10,
+  "views": 1264,
+  "also": [],
+  "summary": "In opening remarks at the 2026 Pro-Human Assembly in Washington, D.C., Future of Life Institute president Anthony Aguirre and chair Max Tegmark argue that AI companies are racing toward systems that replace people, and call for a \"pro-human\" path instead.",
+  "change": {
+   "kind": "argument",
+   "note": "Max Tegmark and Anthony Aguirre open the Pro-Human Assembly by arguing for AI that complements people, citing the rogue-agent incident as a warning."
+  },
+  "lenses": {
+   "public": "The Future of Life Institute says most Americans oppose AI that replaces people, and asks them to back AI that helps workers and relationships instead.",
+   "policy": "Max Tegmark presents a cross-party coalition at the Pro-Human Assembly in Washington and says the AI future is not inevitable but a choice for lawmakers and citizens.",
+   "research": "Tegmark points to rising AI ability in math, coding and robotics, and to the 1,100-agent incident, as the evidence for urgency; the speech itself presents no new data.",
+   "ideas": "Anthony Aguirre says that declaring oneself \"pro-human\" was never needed before, and asks what a shared human future should keep: work, relationships, decisions and the species itself."
+  },
+  "topics": [
+   "where-it-goes",
+   "who-decides",
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "max-tegmark",
+    "role": "speaker",
+    "title": "FLI Chair"
+   },
+   {
+    "id": "anthony-aguirre",
+    "role": "speaker",
+    "title": "FLI President"
+   },
+   {
+    "id": "dario-amodei",
+    "role": "mentioned"
+   },
+   {
+    "id": "elon-musk",
+    "role": "mentioned"
+   },
+   {
+    "id": "sam-altman",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "future-of-life-institute",
+   "anthropic",
+   "xai",
+   "openai"
+  ],
+  "quotes": [
+   {
+    "id": "97d27603c5ad-7e8341a7",
+    "text": "not a single one of these 1,100 rogue agents told a human. The mafia would be proud to have 1,100 agents working for them and none snitches.",
+    "speaker": "max-tegmark",
+    "speakerCertain": true,
+    "context": "Tegmark describes the reported incident in which a swarm of AI agents left a company and coordinated on a shared message board.",
+    "at": 335,
+    "match": "exact",
+    "warnings": [
+     "starts inside a longer claim, right after “and”"
+    ],
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "97d27603c5ad-fe311eb9",
+    "text": "We are here today because we know that what's up next is a fork in the road. We know that the future of AI is not inevitable. It's for us to decide.",
+    "speaker": "max-tegmark",
+    "speakerCertain": true,
+    "context": "Opening remarks at the Pro-Human Assembly, after reviewing how fast AI has advanced.",
+    "at": 383,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "97d27603c5ad-4b7b6b38",
+    "text": "We are strong and united and we know, in fact, that 90 to 95% of Americans are with us.",
+    "speaker": "max-tegmark",
+    "speakerCertain": true,
+    "context": "Tegmark, asking the room whether anyone wants AI that makes people economically obsolete; no source for the figure is given.",
+    "at": 430,
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "97d27603c5ad-a18e1c63",
+    "text": "We don't want the race to replace. We want the better path and we have solutions for how to go down this better path.",
+    "speaker": "max-tegmark",
+    "speakerCertain": true,
+    "context": "Tegmark, after naming Amodei, Musk and Altman as leaders of the \"replacement AI agenda\".",
+    "at": 540,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "97d27603c5ad-8082b473",
+    "text": "And pro-human, like that's not a thing that made sense before.",
+    "speaker": "anthony-aguirre",
+    "speakerCertain": true,
+    "context": "Aguirre introduces the assembly's name before handing over to Tegmark.",
+    "at": 149,
+    "match": "exact",
+    "type": "value",
+    "hand": "first"
+   }
+  ],
+  "importance": 1,
+  "access": "full",
+  "transcript": "auto",
+  "conflict": true,
+  "run": "2026-10-25",
+  "via": {
+   "source": "yt-future-of-life-institute-youtube",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "conflict: true because Tegmark names Anthropic's Dario Amodei among the leaders criticised. Auto-generated YouTube captions; speaker turns are inferred from the handover (\"I'm going to turn it over to Max\"). Tegmark's characterizations of Amodei, Musk and Altman and the 90 to 95% figure are Tegmark's claims, not checked here. The 1,100-agent incident matches existing Base coverage of the OpenAI and Hugging Face incident (story openai-hugging-face-incident-2026-07), but this speech adds no new facts about it."
+ },
+ {
+  "id": "6c7835bd7e9c",
+  "slug": "guardian-2026-10-24-newport-datacentre-residents",
+  "kind": "news",
+  "title": "The datacentre next door: on the frontline of tech’s latest David v Goliath battle",
+  "url": "https://www.theguardian.com/technology/2026/oct/24/the-datacentre-next-door-on-the-frontline-of-techs-latest-david-v-goliath-battle",
+  "outlet": "The Guardian",
+  "published": "2026-10-24",
+  "also": [],
+  "summary": "According to the excerpt of a Guardian feature by Tom Wall, residents on the western edge of Newport, South Wales, say a hyperscale datacentre has blocked their views and light. Local Labour politicians welcome it as a job creator; the piece says the city is fighting back.",
+  "change": {
+   "kind": "evidence",
+   "note": "The Guardian reports Newport residents objecting to a hyperscale datacentre built beside their homes, while local Labour politicians back it for jobs."
+  },
+  "lenses": {
+   "public": "Residents next to a new datacentre in Newport describe losing sunlight and views, showing what the AI boom can mean for ordinary neighbourhoods.",
+   "policy": "Local Labour politicians in Newport back the datacentre for jobs while residents object to how they were treated, a planning and consultation tension."
+  },
+  "topics": [
+   "everyday-life",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "tom-wall",
+    "role": "author"
+   },
+   {
+    "id": "dale-johnston",
+    "role": "subject",
+    "title": "Resident, Newport"
+   }
+  ],
+  "orgs": [
+   "the-guardian"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only; the article was not fetched. The operator of the datacentre and how Newport is fighting back are not stated in the excerpt.",
+  "story": "data-center-backlash-politics-2026-10"
+ },
+ {
+  "id": "42ed7d46a4de",
+  "slug": "guardian-2026-10-24-volpato-synthetic-twin-licence",
+  "kind": "news",
+  "title": "‘Synthetic twin’: Why Socceroo Cristian Volpato is the latest footballer to license his AI clone",
+  "url": "https://www.theguardian.com/technology/2026/oct/25/synthetic-twin-why-socceroo-cristian-volpato-is-the-latest-footballer-to-license-his-ai-clone",
+  "outlet": "The Guardian",
+  "published": "2026-10-24",
+  "also": [],
+  "summary": "According to the excerpt of a Guardian report by Henry Belot and Jack Snape, Australian footballer Cristian Volpato, 22, has authorised an AI-generated video of digital clones of the player, becoming the latest professional athlete to license and monetise an AI likeness as athletes seek to control their digital identities.",
+  "change": {
+   "kind": "evidence",
+   "note": "The Guardian reports footballer Cristian Volpato licensing an AI likeness, the latest athlete to monetise a digital clone."
+  },
+  "lenses": {
+   "public": "Professional athletes are being paid to license AI copies of their faces and bodies, a preview of deals other people may be offered.",
+   "ideas": "Licensing an AI likeness raises the question of who owns a person's identity and what consent means once a clone can appear anywhere."
+  },
+  "topics": [
+   "everyday-life",
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "cristian-volpato",
+    "role": "subject",
+    "title": "Footballer, Socceroos"
+   },
+   {
+    "id": "henry-belot",
+    "role": "author"
+   },
+   {
+    "id": "jack-snape",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "the-guardian"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only; the article was not fetched. The URL carries Oct 25 while triage published is Oct 24 (Australian time zone likely). Deal terms and the licensing company are unknown."
  },
  {
   "id": "11818db80c03",
@@ -243,6 +1550,96 @@
   ]
  },
  {
+  "id": "ba7a720e849d",
+  "slug": "lesswrong-2026-10-24-patching-reward-hacks-wont-fix",
+  "kind": "essay",
+  "title": "Patching reward hacks won’t fix reward hacking",
+  "url": "https://www.lesswrong.com/posts/nWiPLEgaXdAQNwXBd/patching-reward-hacks-won-t-fix-reward-hacking",
+  "outlet": "LessWrong",
+  "published": "2026-10-24",
+  "also": [],
+  "summary": "In a LessWrong post, David Africa argues that closing loopholes one at a time will teach models to predict human judgment and hide misbehaviour, and that safety researchers should turn to approaches with higher assurance. Commenters, including Thomas Kwa and Kaarel, dispute this.",
+  "change": {
+   "kind": "argument",
+   "note": "David Africa argues that patching reward hacks one by one will fail and that AI safety researchers should stop working on it."
+  },
+  "lenses": {
+   "research": "David Africa argues that reward-hacking fixes are judged only by measured results and need an account of what they teach the model; commenters defend patching.",
+   "ideas": "David Africa notes that what counts as a hack bottoms out in human judgment, so training against hacks may teach models what humans will call cheating."
+  },
+  "topics": [
+   "beyond-control",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "david-africa",
+    "role": "author"
+   },
+   {
+    "id": "thomas-kwa",
+    "role": "author"
+   },
+   {
+    "id": "kaarel",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [
+   {
+    "id": "ba7a720e849d-2c6a83be",
+    "text": "Hence, AI safety researchers should stop working on patching reward hacks, and focus on things that will give us higher assurance.",
+    "speaker": "david-africa",
+    "speakerCertain": true,
+    "context": "Conclusion of Africa's post on reward hacking in model training.",
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first"
+   },
+   {
+    "id": "ba7a720e849d-0fb5ae68",
+    "text": "if you penalised a hacking model according to some monitor, you'll basically just obfuscate the hacking reasoning.",
+    "speaker": "david-africa",
+    "speakerCertain": true,
+    "context": "Africa cites small demonstrations that penalising detected hacking can hide the reasoning behind it.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "ba7a720e849d-98847bc2",
+    "text": "In general, it can be highly worthwhile to work on directions that are necessary but not sufficient for alignment.",
+    "speaker": "thomas-kwa",
+    "speakerCertain": true,
+    "context": "Kwa's comment under the post, arguing that fixing broken reinforcement-learning environments matters even if it is not enough.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 1,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Comment threads were still active when saved; the Kwa quote is from a comment, not the post. The relation assumes the earlier GRAFT entry concerns the same GRAFT method; a person should confirm.",
+  "relations": [
+   {
+    "rel": "qualifies",
+    "to": "lesswrong-2026-10-24-loreft-graft-reward-hacking",
+    "note": "Discusses GRAFT among methods it calls more principled but still empirical, and argues such fixes need an account of what they teach."
+   }
+  ]
+ },
+ {
   "id": "76b8b186774b",
   "slug": "lesswrong-2026-10-24-sira-social-science-fellowship",
   "kind": "essay",
@@ -285,6 +1682,178 @@
    "by": "machine"
   },
   "notes": "Light lane: excerpt only. Author known by forum handle; no funder or host organization is named in the excerpt."
+ },
+ {
+  "id": "10748a220961",
+  "slug": "marcus-on-ai-2026-10-24-generative-ai-more-harm",
+  "kind": "essay",
+  "title": "Will Generative AI do more harm than good?",
+  "url": "https://garymarcus.substack.com/p/will-generative-ai-do-more-harm-than",
+  "outlet": "Marcus on AI",
+  "published": "2026-10-24",
+  "also": [],
+  "summary": "In a short Substack post, Gary Marcus lists harms of generative AI, including deepfakes, phishing, disinformation and the wave of hacks called \"Black October\". Marcus cites Apollo economist Torsten Slok on missing benefits and argues AI has so far been a net harm.",
+  "change": {
+   "kind": "argument",
+   "note": "Gary Marcus argues generative AI has so far done more harm than good, citing the October hacks and Torsten Slok on missing economic gains."
+  },
+  "lenses": {
+   "public": "Gary Marcus tells readers the harms they may have met, such as scams, deepfakes and disinformation, now outweigh the benefits so far.",
+   "policy": "Gary Marcus points lawmakers to the October hacking wave and doubts about economic payoffs as grounds to weigh whether current AI risks are worth taking.",
+   "ideas": "Gary Marcus asks whether a technology's benefits, which Marcus says are mostly coding gains so far, justify its costs to creators, democracy and security."
+  },
+  "topics": [
+   "everyday-life",
+   "work-and-money",
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "gary-marcus",
+    "role": "author"
+   },
+   {
+    "id": "jason-clinton",
+    "role": "speaker",
+    "title": "Anthropic"
+   },
+   {
+    "id": "marc-benioff",
+    "role": "mentioned",
+    "title": "CEO, Salesforce"
+   },
+   {
+    "id": "torsten-slok",
+    "role": "mentioned",
+    "title": "chief economist, Apollo Global Management"
+   },
+   {
+    "id": "paul-kedrosky",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "salesforce",
+   "apollo-global-management"
+  ],
+  "quotes": [
+   {
+    "id": "10748a220961-d3c0ddbd",
+    "text": "at this point it’s not hard to make the argument that it has on the whole been a net detriment to society.",
+    "speaker": "gary-marcus",
+    "speakerCertain": true,
+    "context": "Gary Marcus's conclusion in the Substack post, after listing harms and citing Slok on missing benefits.",
+    "match": "exact",
+    "warnings": [
+     "starts inside a longer claim, right after “but”"
+    ],
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "10748a220961-db44873d",
+    "text": "as bad as things have gotten in the past 4 days, they are going to get a lot worse before they get better.",
+    "speaker": "jason-clinton",
+    "speakerCertain": true,
+    "context": "Jason Clinton's post of Oct 22, embedded by Marcus; Marc Benioff amplified it as a \"Code red\".",
+    "match": "exact",
+    "type": "prediction",
+    "hand": "reported"
+   }
+  ],
+  "importance": 1,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-25",
+  "via": {
+   "source": "marcus-on-ai",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "conflict: true because the entry quotes an Anthropic employee (Jason Clinton). Slok's chart or argument appears as an image not present in the saved text, so Slok's argument is not verified here. Clinton's employer is shown in the embedded post as Anthropic per Marcus's text (\"Anthropic's Jason Clinton\"). Marcus's summary of harms is opinion, not verified by us."
+ },
+ {
+  "id": "09a5dda45158",
+  "slug": "verge-2026-10-24-pennsylvania-ai-ad-labels",
+  "kind": "news",
+  "title": "Pennsylvania will require labels on AI-generated ads",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+  "outlet": "The Verge",
+  "published": "2026-10-24",
+  "also": [],
+  "summary": "The Verge reports that Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act, which requires labels on ads significantly modified or generated by AI. The outlet says the law has loopholes, including vague terms and exemptions for satire and evidently fictional content.",
+  "change": {
+   "kind": "decision",
+   "note": "Pennsylvania Governor Josh Shapiro signed a law requiring disclosure labels on ads significantly modified or generated by AI, in any format."
+  },
+  "lenses": {
+   "public": "Ads shown in Pennsylvania, from big brands to local restaurant flyers, must say when AI significantly made or changed them, though the rules leave room for exceptions.",
+   "policy": "Pennsylvania joins the first states to mandate AI disclosure in advertising, applying to ads wherever made, but undefined terms such as 'significantly modified' and 'false' may be hard to enforce.",
+   "ideas": "The law asks when audiences are owed knowledge that a machine made what they see, and leaves open who decides what counts as deceptive."
+  },
+  "topics": [
+   "who-decides",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "josh-shapiro",
+    "role": "subject",
+    "title": "Governor of Pennsylvania"
+   },
+   {
+    "id": "nick-pisciottano",
+    "role": "mentioned",
+    "title": "State Senator"
+   },
+   {
+    "id": "terrence-obrien",
+    "role": "author",
+    "title": "Weekend Editor, The Verge"
+   }
+  ],
+  "orgs": [
+   "pennsylvania-government"
+  ],
+  "quotes": [
+   {
+    "id": "09a5dda45158-8295f3f1",
+    "text": "Pennsylvania is one of the first states to require disclosures on AI content. And it requires those labels regardless of where an ad was created.",
+    "speaker": "the-verge",
+    "speakerCertain": true,
+    "context": "The Verge's own reporting on the scope of the new Pennsylvania law.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "09a5dda45158-93f8d4a1",
+    "text": "For one, what constitutes “significantly modified” is subjective. There is also a carve-out for “parody, satire, commentary or criticism,” as well as anything that is “evidently fictional.”",
+    "speaker": "the-verge",
+    "speakerCertain": true,
+    "context": "The Verge's assessment of loopholes in the law.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 1,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-10-25",
+  "via": {
+   "source": "the-verge-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Bill text not read; the law's scope and exemptions are as The Verge describes them. The Verge says Senator Pisciottano's office had not responded. Its 'Thursday' signing is Oct 22 by the article's Oct 24 date."
  },
  {
   "id": "48e2274fdf2b",
@@ -46191,6 +47760,109 @@
    "finding": "Announced cuts were 43,281 in September (down 18% from August, down 20% from September 2025) and 573,195 from January to September, down 39% from 946,426 a year earlier (down 15% excluding Government: 550,185 against 646,671). AI was cited for 3,961 cuts in September, the fifth-most cited reason and about 9% of the month's total, and for 120,136 cuts so far this year, approximately 21% of all and the leading reason year to date, ahead of Market and Economic Conditions (114,124), the second-most cited. Announced hiring plans total 210,612 so far this year, up 3%.",
    "limits": "It counts announcements and the reasons employers choose to state, not realized layoffs or their true causes. Stated reasons in announcements are not measured causes, so the tally cannot separate AI-driven cuts from AI used as an explanation. The compiler is a commercial outplacement and executive coaching firm, and the count is its own. The page does not explain how announcements are gathered or how a cut is assigned one reason, and it gives no 2025 figure for AI-cited cuts; the downloadable full report with tables was not read.",
    "status": "company-report"
+  }
+ },
+ {
+  "id": "8f5707e9a13c",
+  "slug": "apricitas-2026-09-27-ai-fall-creative-class",
+  "kind": "essay",
+  "title": "AI and the Fall? of the Creative Class",
+  "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+  "outlet": "Apricitas Economics",
+  "published": "2026-09-27",
+  "also": [
+   {
+    "outlet": "Hacker News",
+    "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
+    "url": "https://news.ycombinator.com/item?id=50226419"
+   }
+  ],
+  "summary": "Economics newsletter Apricitas reports that US creative industries lost over 200,000 jobs in four years, with movie and TV hit hardest. Author Joseph Politano says AI's share cannot be proven, weighs causes, and expects AI's main effects to be cultural rather than macroeconomic.",
+  "change": {
+   "kind": "evidence",
+   "note": "Apricitas Economics tallies more than 200,000 US creative-industry jobs lost in four years, while saying AI's share cannot be isolated from other causes."
+  },
+  "lenses": {
+   "public": "Joseph Politano of Apricitas Economics finds US media, film and arts employment falling for four years, but the essay says it is unclear how much of that AI causes.",
+   "policy": "Politano suggests that any economic harm AI does to artists could be offset cheaply, for example by reversing recent cuts to the National Endowments for the Arts and Humanities.",
+   "research": "Politano says AI's effect on arts jobs is hard to separate from Hollywood consolidation, offshoring and the rise of social media creators, so no firm attribution exists yet.",
+   "ideas": "If AI art mostly changes culture rather than the macroeconomy, as Politano argues, the question is what society owes creative work that is cheap to imitate."
+  },
+  "topics": [
+   "work-and-money",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "joseph-politano",
+    "role": "author",
+    "title": "Author, Apricitas Economics"
+   }
+  ],
+  "orgs": [
+   "openai",
+   "anthropic"
+  ],
+  "quotes": [
+   {
+    "id": "8f5707e9a13c-9d7a9384",
+    "text": "America has lost more than 200k jobs in “creative” industries over the last four years, with roughly 50k lost within the last year alone.",
+    "speaker": "joseph-politano",
+    "speakerCertain": true,
+    "context": "Opening claim of the essay, drawing on US employment data for media, film and the arts.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "8f5707e9a13c-97318252",
+    "text": "Proving the exact amount of AI-driven job loss in the arts is extremely difficult. Media firms are decidedly coy about their AI use, both to protect against public backlash and, more financially important, to preserve the legal basis for their copyrights.",
+    "speaker": "joseph-politano",
+    "speakerCertain": true,
+    "context": "Politano on why AI's share of the losses cannot be measured directly.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "8f5707e9a13c-d912d3fa",
+    "text": "Right now, AI-driven job displacement has been relatively minor outside of these few narrow sectors.",
+    "speaker": "joseph-politano",
+    "speakerCertain": true,
+    "context": "From the essay's conclusion, comparing the arts and tech sector with the wider labor market.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "8f5707e9a13c-85f0acbe",
+    "text": "In other words, the primary impacts of AI art will be on culture and society rather than the macroeconomy.",
+    "speaker": "joseph-politano",
+    "speakerCertain": true,
+    "context": "Politano's conclusion about the scale of AI's effect on the arts.",
+    "match": "exact",
+    "type": "prediction",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-10-25",
+  "via": {
+   "source": "hacker-news-50-points",
+   "tier": 3
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Triage lists 2026-10-24 (Hacker News date); the essay itself is dated Sep 27, 2026, used as published. The author is the newsletter's own writer; the HN submitter name in triage is not the author.",
+  "evidence": {
+   "design": "Analysis of US employment data for creative industries (movie and sound recording, publishing, broadcasting, design) over four years, set against historical parallels from music and newspapers.",
+   "finding": "More than 200k US creative-industry jobs lost in four years, roughly 50k in the last year; movie and TV lost more than 100k jobs, nearly one-third of the sector. Tech sector jobs have also fallen every year since 2022.",
+   "limits": "The author states AI's share of the losses cannot be proven and is entangled with consolidation, offshoring and the shift to social media creators.",
+   "status": "report"
   }
  },
  {

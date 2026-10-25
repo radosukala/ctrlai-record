@@ -400,6 +400,18 @@
   "titles": []
  },
  {
+  "id": "allan-smith",
+  "name": "Allan Smith",
+  "titles": [
+   {
+    "title": "national politics reporter, NBC News",
+    "entry": "nbc-news-2026-10-24-ai-backlash-ballot-box",
+    "on": "2026-10-24",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "alvaro-bedoya",
   "name": "Alvaro Bedoya",
   "titles": [
@@ -737,6 +749,18 @@
     "title": "Co-host, Bloomberg Surveillance",
     "entry": "bloomberg-2026-10-16-levine-anthropic-ipo-delay",
     "on": "2026-10-16",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "anthony-aguirre",
+  "name": "Anthony Aguirre",
+  "titles": [
+   {
+    "title": "FLI President",
+    "entry": "fli-2026-10-24-tegmark-aguirre-pro-human-assembly",
+    "on": "2026-10-24",
     "role": "speaker"
    }
   ]
@@ -1387,6 +1411,18 @@
   "titles": []
  },
  {
+  "id": "blair-effron",
+  "name": "Blair Effron",
+  "titles": [
+   {
+    "title": "Democratic fundraiser, Centerview Partners",
+    "entry": "bloomberg-2026-10-24-election-spending-tipping-point",
+    "on": "2026-10-24",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "blake-montgomery",
   "name": "Blake Montgomery",
   "titles": [
@@ -1755,6 +1791,18 @@
   ]
  },
  {
+  "id": "chris-murphy",
+  "name": "Chris Murphy",
+  "titles": [
+   {
+    "title": "Democratic Senator, Connecticut",
+    "entry": "nbc-news-2026-10-24-ai-backlash-ballot-box",
+    "on": "2026-10-24",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "chris-olah",
   "name": "Chris Olah",
   "titles": [
@@ -1798,6 +1846,12 @@
   "id": "christina-ruffini",
   "name": "Christina Ruffini",
   "titles": [
+   {
+    "title": "host",
+    "entry": "bloomberg-2026-10-24-hr-navigates-ai-workplace",
+    "on": "2026-10-24",
+    "role": "speaker"
+   },
    {
     "title": "host, Bloomberg This Weekend",
     "entry": "bloomberg-2026-10-18-ai-debt-boom-bond-market",
@@ -2060,6 +2114,18 @@
   ]
  },
  {
+  "id": "cristian-volpato",
+  "name": "Cristian Volpato",
+  "titles": [
+   {
+    "title": "Footballer, Socceroos",
+    "entry": "guardian-2026-10-24-volpato-synthetic-twin-licence",
+    "on": "2026-10-24",
+    "role": "subject"
+   }
+  ]
+ },
+ {
   "id": "cs-venkatakrishnan",
   "name": "CS Venkatakrishnan",
   "titles": [
@@ -2104,6 +2170,18 @@
     "entry": "cso-2026-10-14-agents-not-rogue-labs-skip-security",
     "on": "2026-10-14",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "dale-johnston",
+  "name": "Dale Johnston",
+  "titles": [
+   {
+    "title": "Resident, Newport",
+    "entry": "guardian-2026-10-24-newport-datacentre-residents",
+    "on": "2026-10-24",
+    "role": "subject"
    }
   ]
  },
@@ -2401,6 +2479,11 @@
   ]
  },
  {
+  "id": "david-africa",
+  "name": "David Africa",
+  "titles": []
+ },
+ {
   "id": "david-bau",
   "name": "David Bau",
   "titles": []
@@ -2479,6 +2562,12 @@
   "id": "david-gura",
   "name": "David Gura",
   "titles": [
+   {
+    "title": "host",
+    "entry": "bloomberg-2026-10-24-hr-navigates-ai-workplace",
+    "on": "2026-10-24",
+    "role": "speaker"
+   },
    {
     "title": "host, Bloomberg This Weekend",
     "entry": "bloomberg-2026-10-18-ai-debt-boom-bond-market",
@@ -3478,6 +3567,18 @@
   ]
  },
  {
+  "id": "evan-conrad",
+  "name": "Evan Conrad",
+  "titles": [
+   {
+    "title": "Co-founder and CEO, SF Compute",
+    "entry": "cognitive-revolution-2026-10-24-clean-neurons-credit-crunch",
+    "on": "2026-10-24",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "evan-miyazono",
   "name": "Evan Miyazono",
   "titles": []
@@ -3557,6 +3658,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "fabien-roger",
+  "name": "Fabien Roger",
+  "titles": []
  },
  {
   "id": "fabrizio-dellacqua",
@@ -3743,6 +3849,18 @@
     "title": "Amazon warehouse worker, Coventry, GMB member",
     "entry": "opendemocracy-2026-10-16-amazon-ai-union-risk",
     "on": "2026-10-16",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "garrett-haake",
+  "name": "Garrett Haake",
+  "titles": [
+   {
+    "title": "host, NBC News",
+    "entry": "nbc-news-2026-10-24-ai-backlash-ballot-box",
+    "on": "2026-10-24",
     "role": "speaker"
    }
   ]
@@ -4217,6 +4335,18 @@
   ]
  },
  {
+  "id": "haslinda-amin",
+  "name": "Haslinda Amin",
+  "titles": [
+   {
+    "title": "host",
+    "entry": "bloomberg-2026-10-24-ai-rout-hits-asia",
+    "on": "2026-10-24",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "hayden-field",
   "name": "Hayden Field",
   "titles": []
@@ -4525,6 +4655,11 @@
   ]
  },
  {
+  "id": "jack-snape",
+  "name": "Jack Snape",
+  "titles": []
+ },
+ {
   "id": "jacob-coxon",
   "name": "Jacob Coxon",
   "titles": [
@@ -4759,6 +4894,12 @@
   "id": "jason-clinton",
   "name": "Jason Clinton",
   "titles": [
+   {
+    "title": "Anthropic",
+    "entry": "marcus-on-ai-2026-10-24-generative-ai-more-harm",
+    "on": "2026-10-24",
+    "role": "speaker"
+   },
    {
     "title": "Deputy chief information security officer, Anthropic",
     "entry": "guardian-2026-10-23-black-october-ai-hacking",
@@ -5214,7 +5355,14 @@
  {
   "id": "john-healey",
   "name": "John Healey",
-  "titles": []
+  "titles": [
+   {
+    "title": "Chancellor",
+    "entry": "guardian-2026-10-24-healey-budget-british-ai",
+    "on": "2026-10-24",
+    "role": "subject"
+   }
+  ]
  },
  {
   "id": "john-hewitt",
@@ -5254,6 +5402,18 @@
     "entry": "transformer-2026-10-09-democrats-battle-ai-regulation",
     "on": "2026-10-09",
     "role": "mentioned"
+   }
+  ]
+ },
+ {
+  "id": "johnny-c-taylor-jr",
+  "name": "Johnny C. Taylor Jr.",
+  "titles": [
+   {
+    "title": "President and CEO, SHRM",
+    "entry": "bloomberg-2026-10-24-hr-navigates-ai-workplace",
+    "on": "2026-10-24",
+    "role": "speaker"
    }
   ]
  },
@@ -5425,6 +5585,18 @@
   ]
  },
  {
+  "id": "joseph-politano",
+  "name": "Joseph Politano",
+  "titles": [
+   {
+    "title": "Author, Apricitas Economics",
+    "entry": "apricitas-2026-09-27-ai-fall-creative-class",
+    "on": "2026-09-27",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "joseph-weizenbaum",
   "name": "Joseph Weizenbaum",
   "titles": []
@@ -5458,6 +5630,12 @@
   "name": "Josh Hawley",
   "titles": [
    {
+    "title": "Republican Senator",
+    "entry": "nbc-news-2026-10-24-ai-backlash-ballot-box",
+    "on": "2026-10-24",
+    "role": "mentioned"
+   },
+   {
     "title": "Senator",
     "entry": "hawley-2026-10-05-ai-companies-must-pay",
     "on": "2026-10-05",
@@ -5474,6 +5652,18 @@
     "entry": "chicago-fed-2026-03-forecasting-economic-effects-ai",
     "on": "2026-03",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "josh-shapiro",
+  "name": "Josh Shapiro",
+  "titles": [
+   {
+    "title": "Governor of Pennsylvania",
+    "entry": "verge-2026-10-24-pennsylvania-ai-ad-labels",
+    "on": "2026-10-24",
+    "role": "subject"
    }
   ]
  },
@@ -5573,6 +5763,11 @@
   "titles": []
  },
  {
+  "id": "julian-bradshaw",
+  "name": "Julian Bradshaw",
+  "titles": []
+ },
+ {
   "id": "julian-e-barnes",
   "name": "Julian E. Barnes",
   "titles": []
@@ -5648,6 +5843,11 @@
  {
   "id": "jwfiredragon",
   "name": "jwfiredragon",
+  "titles": []
+ },
+ {
+  "id": "kaarel",
+  "name": "Kaarel",
   "titles": []
  },
  {
@@ -6571,6 +6771,18 @@
   ]
  },
  {
+  "id": "lonis-hamaili",
+  "name": "Lonis Hamaili",
+  "titles": [
+   {
+    "title": "Managing partner, Cambrian",
+    "entry": "cognitive-revolution-2026-10-24-clean-neurons-credit-crunch",
+    "on": "2026-10-24",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "loops",
   "name": "loops",
   "titles": []
@@ -7066,6 +7278,18 @@
   ]
  },
  {
+  "id": "martin-sorrell",
+  "name": "Martin Sorrell",
+  "titles": [
+   {
+    "title": "Executive Chairman, S4 Capital",
+    "entry": "bloomberg-2026-10-24-ai-rout-hits-asia",
+    "on": "2026-10-24",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "mathilde-collin",
   "name": "Mathilde Collin",
   "titles": [
@@ -7187,6 +7411,18 @@
     "title": "Guest host, Hard Fork",
     "entry": "hard-fork-2026-10-09-anthropic-ai-morals",
     "on": "2026-10-09",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "max-tegmark",
+  "name": "Max Tegmark",
+  "titles": [
+   {
+    "title": "FLI Chair",
+    "entry": "fli-2026-10-24-tegmark-aguirre-pro-human-assembly",
+    "on": "2026-10-24",
     "role": "speaker"
    }
   ]
@@ -7821,6 +8057,18 @@
   ]
  },
  {
+  "id": "nicholas-thompson",
+  "name": "Nicholas Thompson",
+  "titles": [
+   {
+    "title": "CEO, The Atlantic",
+    "entry": "bloomberg-2026-10-24-thompson-ai-backlash-media",
+    "on": "2026-10-24",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "nick-brown",
   "name": "Nick Brown",
   "titles": [
@@ -7829,6 +8077,18 @@
     "entry": "chinatalk-2026-10-20-match-act-china-duv-imports",
     "on": "2026-10-20",
     "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "nick-pisciottano",
+  "name": "Nick Pisciottano",
+  "titles": [
+   {
+    "title": "State Senator",
+    "entry": "verge-2026-10-24-pennsylvania-ai-ad-labels",
+    "on": "2026-10-24",
+    "role": "mentioned"
    }
   ]
  },
@@ -8613,6 +8873,18 @@
     "title": "Labour life peer, former attorney general for England and Wales",
     "entry": "guardian-2026-10-12-hermer-ai-regulation-fridge",
     "on": "2026-10-12",
+    "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "richard-partington",
+  "name": "Richard Partington",
+  "titles": [
+   {
+    "title": "Senior economics correspondent, The Guardian",
+    "entry": "guardian-2026-10-24-healey-budget-british-ai",
+    "on": "2026-10-24",
     "role": "author"
    }
   ]
@@ -9711,6 +9983,18 @@
   ]
  },
  {
+  "id": "tapan-parikh",
+  "name": "Tapan Parikh",
+  "titles": [
+   {
+    "title": "Cornell University professor; leads Convovo",
+    "entry": "techcrunch-2026-10-24-grok-republicans-gpt-democrats",
+    "on": "2026-10-24",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "taylor-lorenz",
   "name": "Taylor Lorenz",
   "titles": [
@@ -9789,6 +10073,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "thomas-kwa",
+  "name": "Thomas Kwa",
+  "titles": []
  },
  {
   "id": "thomas-sohmers",
@@ -9921,6 +10210,11 @@
   "titles": []
  },
  {
+  "id": "tom-wall",
+  "name": "Tom Wall",
+  "titles": []
+ },
+ {
   "id": "tomek-korbak",
   "name": "Tomek Korbak",
   "titles": [
@@ -9983,6 +10277,12 @@
   "id": "torsten-slok",
   "name": "Torsten Slok",
   "titles": [
+   {
+    "title": "chief economist, Apollo Global Management",
+    "entry": "marcus-on-ai-2026-10-24-generative-ai-more-harm",
+    "on": "2026-10-24",
+    "role": "mentioned"
+   },
    {
     "title": "Chief Economist, Apollo",
     "entry": "bloomberg-television-2026-10-12-slok-housing-ai-bank-run",
@@ -10727,6 +11027,12 @@
   "id": "zvi-mowshowitz",
   "name": "Zvi Mowshowitz",
   "titles": [
+   {
+    "title": "Writes Don't Worry About the Vase",
+    "entry": "cognitive-revolution-2026-10-24-clean-neurons-credit-crunch",
+    "on": "2026-10-24",
+    "role": "speaker"
+   },
    {
     "title": "writer",
     "entry": "transformer-2026-10-19-anthropic-weak-ai-bill",
