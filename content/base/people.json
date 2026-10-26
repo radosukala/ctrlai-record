@@ -1441,6 +1441,11 @@
   ]
  },
  {
+  "id": "bonegpt",
+  "name": "boneGPT",
+  "titles": []
+ },
+ {
   "id": "bontu-ankit-patro",
   "name": "Bontu Ankit Patro",
   "titles": [
@@ -1657,6 +1662,11 @@
   ]
  },
  {
+  "id": "celesteli",
+  "name": "celesteli",
+  "titles": []
+ },
+ {
   "id": "cesare-zavattari",
   "name": "Cesare Zavattari",
   "titles": []
@@ -1777,6 +1787,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "chris-leong",
+  "name": "Chris Leong",
+  "titles": []
  },
  {
   "id": "chris-morrow",
@@ -2070,6 +2085,12 @@
   "id": "connor-leahy",
   "name": "Connor Leahy",
   "titles": [
+   {
+    "title": "advocate for slowing AI down, former CEO of Conjecture",
+    "entry": "cnn-2026-10-25-why-ai-developers-freaked-out",
+    "on": "2026-10-25",
+    "role": "speaker"
+   },
    {
     "title": "US Executive Director, ControlAI",
     "entry": "controlai-2026-10-07-leahy-cbs-no-self-regulation",
@@ -3214,6 +3235,11 @@
   "titles": []
  },
  {
+  "id": "elias-taylor",
+  "name": "Elias Taylor",
+  "titles": []
+ },
+ {
   "id": "eliezer-yudkowsky",
   "name": "Eliezer Yudkowsky",
   "titles": [
@@ -3284,6 +3310,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "elvis-presley",
+  "name": "Elvis Presley",
+  "titles": []
  },
  {
   "id": "emil-michael",
@@ -4220,6 +4251,18 @@
   "titles": []
  },
  {
+  "id": "hadas-gold",
+  "name": "Hadas Gold",
+  "titles": [
+   {
+    "title": "CNN colleague",
+    "entry": "cnn-2026-10-25-why-ai-developers-freaked-out",
+    "on": "2026-10-25",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "hadas-orgad",
   "name": "Hadas Orgad",
   "titles": []
@@ -4349,6 +4392,11 @@
  {
   "id": "hayden-field",
   "name": "Hayden Field",
+  "titles": []
+ },
+ {
+  "id": "hayekstan",
+  "name": "Hayekstan",
   "titles": []
  },
  {
@@ -4610,6 +4658,18 @@
     "title": "covers global consumer tech, TechCrunch",
     "entry": "techcrunch-2026-10-13-character-ai-chapter-11-disney",
     "on": "2026-10-13",
+    "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "ivan-vendrov",
+  "name": "Ivan Vendrov",
+  "titles": [
+   {
+    "title": "former Anthropic employee in a junior role",
+    "entry": "lesswrong-2026-10-26-memories-early-anthropic",
+    "on": "2026-10-26",
     "role": "author"
    }
   ]
@@ -6346,6 +6406,18 @@
   ]
  },
  {
+  "id": "krishna-andavolu",
+  "name": "Krishna Andavolu",
+  "titles": [
+   {
+    "title": "CNN",
+    "entry": "cnn-2026-10-25-why-ai-developers-freaked-out",
+    "on": "2026-10-25",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "kristalina-georgieva",
   "name": "Kristalina Georgieva",
   "titles": [
@@ -7188,6 +7260,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "marina-dunbar",
+  "name": "Marina Dunbar",
+  "titles": []
  },
  {
   "id": "marina-mendes-tavares",
@@ -9340,6 +9417,18 @@
   "id": "sangyeon-yoon",
   "name": "Sangyeon Yoon",
   "titles": []
+ },
+ {
+  "id": "santiago-aranguri",
+  "name": "Santiago Aranguri",
+  "titles": [
+   {
+    "title": "now at Anthropic; work done while at Goodfire",
+    "entry": "lesswrong-2026-10-25-eval-awareness-different-graders",
+    "on": "2026-10-25",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "sara-jacobs",
