@@ -64,3 +64,11 @@
 .mo-soon-label { font-family: var(--mono); font-size: 12px; color: var(--muted); }
 .mo-soon ul { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; }
 .mo-soon li { padding: 8px 14px; border: 1.5px dashed var(--line); font-family: var(--sans); font-weight: 700; font-size: 15px; color: var(--ink-2); }
+
+/* Their words at left, what they mean at right: the explanation is ours, so it is sans and sits on a quiet panel. */
+.mo-ex-list { display: grid; gap: 34px; margin-top: 8px; }
+.mo-ex { display: grid; gap: 12px; padding-top: 14px; border-top: 1px solid var(--line); }
+.mo-ex .fi-pair { align-items: start; }
+.mo-says { padding: 16px 18px 18px; background: var(--paper-2); gap: 12px; }
+.mo-says p:not(.fi-side-label) { font-family: var(--sans); font-size: 16px; line-height: 1.55; color: var(--ink); }
+.mo-says .fi-side-label { color: var(--ink-2); }

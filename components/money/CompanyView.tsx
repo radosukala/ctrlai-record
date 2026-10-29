@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import '@/components/filings/filings.css';
 import '@/components/money/money.css';
-import { VERIFICATION, passageOf } from '@/content/filings';
+import { FilingWords as Words } from '@/components/filings/Words';
+import { VERIFICATION } from '@/content/filings';
 import type { Filing } from '@/content/filings/types';
 import { filingPath, type Company } from '@/content/money';
 import { COMMITTED, cells, money } from '@/lib/filings';
 import { brief, periodName, rowOf, type Stat } from '@/lib/money';
 import { longDate, shortDate } from '@/lib/site';
+import { Explain } from './Explain';
 import { CostChart, Timeline, Waterfall, type Commitment } from './MoneyCharts';
 
 /** A headline figure: the amount large, its unit and its comparison small. */
@@ -18,17 +20,6 @@ export function Tile({ s }: { s: Stat }) {
       <p className="mo-tile-value">{n}{unit.length ? <small> {unit.join(' ')}</small> : null}</p>
       <p className="mo-tile-sub">{s.sub}</p>
     </div>
-  );
-}
-
-function Words({ f, id }: { f: Filing; id: string }) {
-  const p = passageOf(f, id);
-  const check = VERIFICATION.filings[f.slug]?.passages[id];
-  return (
-    <figure className="fi-q">
-      <blockquote>“<span className="hl">{p.text}</span>”</blockquote>
-      <figcaption><a href={f.url}>{f.form}, page {check?.page ?? '?'}</a>{check?.ok ? ' · found word for word in the filing' : ' · not checked'}</figcaption>
-    </figure>
   );
 }
 
@@ -86,15 +77,14 @@ export function CompanyView({ company, f }: { company: Company; f: Filing }) {
           ]}
           note="The two largest lines come after the operating loss: both are changes in the fair value of financial instruments, which the filing explains below. The first, it says, was driven mainly by the rise in its own valuation."
         />
-        <div className="fi-words">
-          <Words f={f} id="losses" />
-          <Words f={f} id="other-expense" />
-        </div>
+        <Explain f={f} blocks={f.money.explain.loss} />
       </section>
 
       <section className="fi-sec" aria-label="Computing commitments">
         <h2>What it has promised to spend on computing</h2>
         <Timeline items={commitments} now={f.filed} note={`The sum of the three agreements’ minimums, about $${sum} billion, is ours. The filing’s own figure for fixed or minimum purchase commitments, about $265.6 billion, is as of June 30, 2026, so the two are not the same count. The filing says it is also party to arrangements it does not describe.`} />
+        <Explain f={f} blocks={f.money.explain.commitments} />
+        <h3 className="fi-h3">The agreements, in the filing’s words</h3>
         <div className="fi-words">
           {f.money.commitments.map(id => <Words key={id} f={f} id={id} />)}
         </div>
@@ -134,7 +124,7 @@ export function CompanyView({ company, f }: { company: Company; f: Filing }) {
             </li>
           ))}
         </ul>
-        <p className="fi-note">Every figure and passage on this page is checked against the saved filing by a program; page numbers are the ones printed in the filing. Where a sum or a difference is ours, the page says so.</p>
+        <p className="fi-note">Every figure and passage on this page is checked by a program against the saved filing, or, for the interview, against its saved transcript; page numbers are the ones printed in the filing. The explanations are ours: every dollar figure in them is one of theirs, and where a sum or a difference is ours, the page says so.</p>
       </section>
     </article>
   );

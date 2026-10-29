@@ -23,6 +23,7 @@ export const ANTHROPIC_S1: Filing = {
     'agentic-misalignment': { title: 'Agentic misalignment: How LLMs could be insider threats', date: '2025-06-20', url: 'https://www.anthropic.com/research/agentic-misalignment', archived: 'filings/anthropic-pbc/public/agentic-misalignment.txt' },
     'model-welfare': { title: 'Exploring model welfare', date: '2025-04-24', url: 'https://www.anthropic.com/research/exploring-model-welfare', archived: 'filings/anthropic-pbc/public/exploring-model-welfare.txt' },
     'ltbt': { title: 'The Long-Term Benefit Trust', date: '2023-09-19', url: 'https://www.anthropic.com/news/the-long-term-benefit-trust', archived: 'filings/anthropic-pbc/public/the-long-term-benefit-trust.txt' },
+    'dwarkesh': { title: 'Dario Amodei — “We are near the end of the exponential”', who: 'Dario Amodei, interviewed by Dwarkesh Patel', date: '2026-02-13', url: 'https://www.dwarkesh.com/p/dario-amodei-2', archived: 'filings/anthropic-pbc/public/dario-amodei-2.txt' },
     'rsp': { title: 'Announcing our updated Responsible Scaling Policy', date: '2024-10-15', url: 'https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy', archived: 'filings/anthropic-pbc/public/announcing-our-updated-responsible-scaling-policy.txt' },
   },
   passages: [
@@ -56,6 +57,31 @@ export const ANTHROPIC_S1: Filing = {
     { id: 'broadcom', source: 'filing', text: 'We have entered into five-year master equipment leases with Broadcom, pursuant to which we receive such hardware for deployment in dedicated data center facilities operated by others on our behalf (the “Lease Arrangements”). These Lease Arrangements are accounted for as finance leases. Our rent payments over the life of these leases are equal to an aggregate of approximately $161.2 billion excluding interest, with rent payable in quarterly installments and payment obligations typically commencing upon AI infrastructure equipment becoming “ready for service” at the applicable data center facility.' },
     { id: 'broadcom-when', source: 'filing', text: 'The Lease Arrangements provide us with access to TPU-based compute capacity, a portion of which began to come online in 2026, with additional capacity expected to come online starting in 2027.' },
     { id: 'commit-june', source: 'filing', text: 'As of June 30, 2026 (unaudited), expected future fixed or minimum guaranteed commitments under these agreements were approximately $265.6 billion with terms ranging from one to 20 years.' },
+    { id: 'marked-to-market', source: 'filing', text: 'Because these instruments are marked to market, increases in our enterprise valuation drive increases in this expense.' },
+    { id: 'until-converted', source: 'filing', text: 'We will continue to recognize changes in the fair value of our convertible notes until they are converted into equity, repaid, or otherwise settled.' },
+    { id: 'notes-price', source: 'filing', text: 'In connection with this offering, the notes will convert, subject to Amazon’s ownership cap, which may be waived at Amazon’s election, into shares of Class N common stock at the lower of the fixed conversion price per share reflected in the table and the initial price per share of Class A common stock set forth on the cover of this prospectus (“IPO Price”).' },
+    { id: 'settled-in-shares', source: 'filing', text: 'which are expected to be settled in shares rather than cash' },
+    { id: 'notes-principal', source: 'filing', text: 'Our NPAs with Amazon consist of the Amazon 2023 NPA and the Amazon 2024 NPA, pursuant to which we previously issued convertible promissory notes, approximately $6.2 billion aggregate principal amount of which remains outstanding as described below under “—Outstanding Notes,” and under which no additional notes may be issued' },
+    { id: 'notes-convert', source: 'filing', text: 'In connection with the completion of this offering, the Amazon Notes will convert into Class N common stock, subject, in each case, to an ownership cap as set forth in the Amazon Notes, which may be waived at Amazon’s election.' },
+    { id: 'notes-repay', source: 'filing', text: 'To the extent any of our convertible promissory notes remain outstanding, or if we issue any additional convertible promissory notes following the completion of this offering, we will be required to repay such note in cash at its maturity, unless earlier converted or repaid pursuant to the terms of such note.' },
+    { id: 'npas', source: 'filing', text: 'We have entered into NPAs with each of Google (through Google LLC), Amazon (through Amazon Web Services, Inc.), and Broadcom that provide for the issuance of convertible promissory notes and, in certain cases, shares of our non-voting capital stock.' },
+    { id: 'take-or-pay', source: 'filing', text: 'We have entered into, and expect to continue to enter into, long-term agreements for compute and other compute resources that involve minimum purchase commitments, take-or-pay provisions, and other terms that obligate us to pay for resources regardless of actual utilization. These commitments represent substantial fixed obligations.' },
+    { id: 'google-trueup', source: 'filing', text: 'If our actual spend falls short, we must pay Google the difference as a true-up subject to certain adjustments and exceptions if available.' },
+    { id: 'amazon-trueup', source: 'filing', text: 'If our actual spend falls short, we must pay Amazon the difference as a true-up subject to certain adjustments and exceptions if available.' },
+    { id: 'microsoft-cancel', source: 'filing', text: 'Our commitment under such agreement is non-cancelable except in the event of Microsoft’s uncured material breach or, on a per-tranche basis, for undelivered tranches.' },
+    { id: 'advance-lead', source: 'filing', text: 'Given the long lead times between contracting for compute and that compute becoming available to serve workloads, we secure compute well in advance of anticipated demand.' },
+    { id: 'advance-commit', source: 'filing', text: 'The competitive and structural dynamics of the compute market require us to make binding financial commitments for compute months or years in advance of our day-to-day delivery and use.' },
+    { id: 'forecast-revenue', source: 'filing', text: 'In addition, because the AI industry is very nascent, we have struggled to accurately forecast our revenue in the past and may struggle to do so in the future.' },
+    { id: 'forecast-risk', source: 'filing', text: 'If our actual compute requirements differ materially from our projections, we may fail to secure sufficient compute to meet our needs or we may be committed to excess compute that remains underutilized.' },
+    { id: 'timing-mismatch', source: 'filing', text: 'Further, the timing of compute coming online may not align with the timing of demand growth, which could result in periods of excess or underutilized compute and committed cash outflows that do not produce immediate revenue.' },
+    { id: 'underestimated', source: 'filing', text: 'In the past, we have significantly underestimated our compute requirements, which left us capacity constrained and impacted both product development and deployment.' },
+    { id: 'cash', source: 'filing', text: 'As of June 30, 2026, we had $112.4 billion of cash and cash equivalents and $19.3 billion of short-term investments in a variety of securities, including money market funds, U.S. Treasury and agency securities, corporate debt securities, and commercial paper.' },
+    { id: 'covenant', source: 'filing', text: 'The A&R Credit Agreement includes a financial covenant requiring that we maintain liquidity of at least $5.0 billion as of the last day of each fiscal quarter, beginning with the fiscal quarter ending December 31, 2026.' },
+    // What Dario Amodei said about buying compute, in a public interview
+    { id: 'd-ruinous', source: 'dwarkesh', text: 'We know it’s coming, but with the way you buy these data centers, if you’re off by a couple years, that can be ruinous.' },
+    { id: 'd-lead', source: 'dwarkesh', text: 'We have to decide how much compute to buy. It takes a year or two to actually build out the data centers, to reserve the data center.' },
+    { id: 'd-bankrupt', source: 'dwarkesh', text: 'Even though a part of my brain wonders if it’s going to keep growing 10x, I can’t buy $1 trillion a year of compute in 2027. If I’m just off by a year in that rate of growth, or if the growth rate is 5x a year instead of 10x a year, then you go bankrupt. So you end up in a world where you’re supporting hundreds of billions, not trillions. You accept some risk that there’s so much demand that you can’t support the revenue, and you accept some risk that you got it wrong and it’s still slow.' },
+    { id: 'd-buying', source: 'dwarkesh', text: 'We’re buying a lot. We’re buying a hell of a lot. We’re buying an amount that’s comparable to what the biggest players in the game are buying.' },
     // Short spans of the same words, set next to headlines
     { id: 'loss-half', source: 'filing', text: '$80.7 billion for the six months ended June 30, 2026' },
     { id: 'loss-fair-value', source: 'filing', text: '$72.4 billion for the six months ended June 30, 2026, primarily driven by an increase in the fair value of our outstanding convertible promissory notes' },
@@ -101,6 +127,89 @@ export const ANTHROPIC_S1: Filing = {
       ],
     },
     commitments: ['commit-june', 'other-arrangements', 'microsoft', 'google', 'tpu-what', 'tpu', 'amazon', 'amd'],
+    also: [
+      { key: 'cf-fair-value', label: 'Cash-flow statement: change in fair value, added back', row: 'Change in fair value of convertible notes, derivative liabilities, and SAFEs | 1,045 | | 5,434 | | 34,308 | | 10,942 | | 72,388' },
+    ],
+    explain: {
+      loss: [
+        {
+          id: 'where',
+          title: 'Where the $80.7 billion comes from',
+          filing: ['losses'],
+          says: [
+            'Revenue less the cost of running the company left an operating loss of $693 million in these six months. That part of the loss comes from the business itself.',
+            'Two changes in the value of financial instruments, $72.4 billion and $8.8 billion, are what turn it into an $80.7 billion net loss. The next blocks explain them.',
+          ],
+        },
+        {
+          id: 'not-cash',
+          title: 'A loss that is not cash going out',
+          filing: ['marked-to-market', 'notes-price', 'settled-in-shares'],
+          says: [
+            'Anthropic raised money in part with convertible notes: loans meant to be paid back in shares, not cash, at a price per share set in advance. The same line also covers two other kinds of financial promises, derivative liabilities and SAFEs.',
+            'When the company is worth more, the shares those notes turn into are worth more than the money that was lent, so what the company owes the holders is larger. Accounting rules make it record that rise as a loss at the end of every period: $72.4 billion in these six months. The filing calls this being “marked to market”.',
+            'It is not money paid out. The cash-flow statement adds the $72.4 billion back when it works out cash, and cash from operating activities was a positive $3.9 billion in the same six months.',
+          ],
+        },
+        {
+          id: 'next',
+          title: 'What happens to this line next',
+          filing: ['until-converted', 'notes-principal', 'notes-convert', 'notes-repay'],
+          says: [
+            'The filing says it keeps recording these changes until the notes are converted into shares, repaid or otherwise settled. The notes the filing counts as still outstanding are about $6.2 billion of principal, all of it Amazon’s. They convert into shares when the offering completes, up to an ownership cap. What cannot convert stays as a note and converts later; a note still unconverted at maturity is repaid in cash.',
+            'Once a note has become shares there is nothing left to restate. The accounting works in both directions: if the company were worth less, what it owes would fall and the line would show a gain. How large the line will be after the offering depends on the company’s valuation, and we do not forecast it.',
+          ],
+        },
+        {
+          id: 'other',
+          title: 'The $8.8 billion',
+          filing: ['other-expense', 'npas'],
+          says: [
+            'A second item of the same kind, and smaller. The filing ties it to the note purchase agreements with Google, Amazon and Broadcom, which are the agreements that provide for convertible notes.',
+          ],
+        },
+      ],
+      commitments: [
+        {
+          id: 'take-or-pay',
+          title: 'What “regardless of actual usage” means',
+          filing: ['take-or-pay', 'google-trueup', 'amazon-trueup', 'microsoft-cancel'],
+          says: [
+            'Anthropic has signed contracts to buy computing power for years ahead. A take-or-pay contract means it pays for the capacity whether or not it uses it, the way rent is due whether a shop is busy or empty.',
+            'In the Google and Amazon agreements, if its spending falls short of the minimum it must pay the difference, which the filing calls a true-up, subject to adjustments and exceptions. The Microsoft agreement can be cancelled only if Microsoft breaches it or, tranche by tranche, for capacity that is not delivered.',
+            'So these payments do not fall if revenue grows more slowly than the company planned. They are fixed amounts, running to 2033 and 2036.',
+          ],
+        },
+        {
+          id: 'ahead',
+          title: 'Why it has to decide years ahead',
+          filing: ['advance-lead', 'advance-commit', 'forecast-revenue'],
+          public: ['d-lead'],
+          says: [
+            'Chips and data centers take a year or two to build, and suppliers want a binding contract first. So Anthropic has to choose how much computing it will need before it can know how fast customers will pay for it. The filing says it has struggled to forecast its revenue before and may again.',
+          ],
+        },
+        {
+          id: 'miss',
+          title: 'What a miss would mean',
+          filing: ['forecast-risk', 'timing-mismatch', 'underestimated'],
+          public: ['d-ruinous', 'd-bankrupt', 'd-buying'],
+          says: [
+            'A miss can go either way. If it buys too little, it is short of capacity: the filing says it has underestimated its needs before. If it buys too much, or too early, it still has to pay, while the revenue comes later.',
+            'Dario Amodei described this trade-off in a February 2026 interview. His example was buying $1 trillion of compute a year from 2027 on the assumption that revenue kept growing ten times a year: if growth then fell short, even by a year, he said, the company would go bankrupt. He said the careful course is to buy in the hundreds of billions, not trillions, and to accept some risk on both sides: that demand outruns what you can supply, and that you got it wrong and growth is still slow.',
+            'His example was far larger than anything in the filing, whose own figure for fixed or minimum commitments was about $265.6 billion on June 30. In the same interview he said Anthropic is buying a lot, an amount comparable to what the biggest players are buying.',
+          ],
+        },
+        {
+          id: 'behind',
+          title: 'What stands behind the payments',
+          filing: ['cash', 'covenant'],
+          says: [
+            'On June 30, 2026 the company held $112.4 billion in cash and cash equivalents and $19.3 billion in short-term investments. Its credit agreement requires it to keep liquidity of at least $5.0 billion at the end of each quarter from December 31, 2026. We do not say whether that is enough: it depends on how revenue and costs develop, which we do not forecast.',
+          ],
+        },
+      ],
+    },
     arrangements: ['spacexai-what', 'spacexai', 'spacexai-cancel', 'nscale', 'lambda', 'broadcom', 'broadcom-when'],
   },
   themes: [

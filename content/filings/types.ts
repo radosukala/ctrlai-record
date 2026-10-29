@@ -4,7 +4,11 @@
  */
 
 /** A company's own public page that a filing is compared with. */
-export type PublicSource = { title: string; date: string; url: string; archived: string };
+export type PublicSource = {
+  title: string; date: string; url: string; archived: string;
+  /** Who is speaking or writing, when it is not the company itself (an interview). */
+  who?: string;
+};
 
 /** Words from the filing (source 'filing') or from one of the company's public pages, as they read there. */
 export type Passage = { id: string; text: string; source: 'filing' | string };
@@ -15,6 +19,10 @@ export type Theme = { id: string; title: string; filing: string[]; public: ({ pa
 
 /** A row of a table in the filing, as its text reads in the saved filing, so it can be checked like a passage. */
 export type TableRow = { key: string; label: string; row: string };
+
+/** Plain words beside the filing's: the passages (the filing's own, and from public pages) at left, what they mean in
+ *  our words at right. Our words use only figures the passages and the filing's tables give (a test holds this). */
+export type Explain = { id: string; title: string; filing: string[]; public?: string[]; says: string[] };
 
 /** A headline about the filing, set next to the filing's own words on the same point. */
 export type Headline = { entry: string; filing: string[] };
@@ -42,6 +50,10 @@ export type Filing = {
     /** The filing's summary table: its columns, which are audited, and the rows shown. */
     table: { page: string; unit: string; columns: { label: string; audited: boolean }[]; rows: TableRow[] };
     commitments: string[];
+    /** Rows from other statements that our sentences rely on: checked against the filing like the table's, not shown. */
+    also: TableRow[];
+    /** Our plain words, block by block, beside the passages they explain. */
+    explain: { loss: Explain[]; commitments: Explain[] };
     /** Other compute arrangements the filing describes, on other terms (ceilings, leases): quoted, not drawn or added up. */
     arrangements: string[];
   };

@@ -144,6 +144,122 @@
           "sha": "34eefe7f58e069c60ee9ae44b8f5d646272da95bcc2fe4b3f050c6a6f7183fdd",
           "page": "F-58"
         },
+        "marked-to-market": {
+          "ok": true,
+          "sha": "66bb7a8784baee5f4d0a00f084e0cec582396da0f5e1a97acda96604e5cd3801",
+          "page": "146"
+        },
+        "until-converted": {
+          "ok": true,
+          "sha": "90b9940ad8307fc5ebaeb7f48fac13f6d8433608efda491fc6080960a331aff1",
+          "page": "146"
+        },
+        "notes-price": {
+          "ok": true,
+          "sha": "3732e0d5267ae44bbd7e271a312643acc185a4450ce71238b9a61ea65b9fbcee",
+          "page": "164"
+        },
+        "settled-in-shares": {
+          "ok": true,
+          "sha": "35749d5a79d3f081e789e663e1b35e8d466fa86b274134cc81cdb70f69ccee11",
+          "page": "170"
+        },
+        "notes-principal": {
+          "ok": true,
+          "sha": "3fef574f7f858fde344d3b93671d003ab38d16b032e5a088c98649fe0946c4e0",
+          "page": "163"
+        },
+        "notes-convert": {
+          "ok": true,
+          "sha": "14066b4e4ba1f73f594a74e347e585749eb0c898a9596094a991eba266e0abcf",
+          "page": "59"
+        },
+        "notes-repay": {
+          "ok": true,
+          "sha": "18bc9c52eead1f0a9893b04a15b953dd275fdf3ad7637768b72deb94356fa77b",
+          "page": "59"
+        },
+        "npas": {
+          "ok": true,
+          "sha": "359826d9728f717050246089ea9e7b24347e2e184cfbd8f6586843ab1e32cd9e",
+          "page": "163"
+        },
+        "take-or-pay": {
+          "ok": true,
+          "sha": "7c375ecb69d8ea403ba3b4fee047d8e1f1d306ed61a3ed28eaca4b07bd872c86",
+          "page": "31"
+        },
+        "google-trueup": {
+          "ok": true,
+          "sha": "089a9eae5250971f23b3cd248ecc5df80fe638bfe0cf48c58468c88f81b0a518",
+          "page": "170"
+        },
+        "amazon-trueup": {
+          "ok": true,
+          "sha": "a5278b6d9d5f487280d00fc87cd46822985fb2504bb445084d78562e2a3406da",
+          "page": "171"
+        },
+        "microsoft-cancel": {
+          "ok": true,
+          "sha": "7e12c62234df4ff34c1e4ec5fc13de5a28a9fc400076b53026c9c7b056da3887",
+          "page": "170"
+        },
+        "advance-lead": {
+          "ok": true,
+          "sha": "ce05750c41da7c2f712abf88c96752ed0c6800dec46b8efc6aaed487074c778d",
+          "page": "188"
+        },
+        "advance-commit": {
+          "ok": true,
+          "sha": "b68cbf505c1141963915a8cabbc20154b557fdbc73ea047fb29975c4ab6c379e",
+          "page": "31"
+        },
+        "forecast-revenue": {
+          "ok": true,
+          "sha": "d1465667e30fd50cd5963e095d6805e1e1837df5c7186fc177f8bd53f84c9043",
+          "page": "62"
+        },
+        "forecast-risk": {
+          "ok": true,
+          "sha": "f46b59c88d93e4fce1dbf37e78c380a2db21e39a8349122255d22c91e1cf8175",
+          "page": "31"
+        },
+        "timing-mismatch": {
+          "ok": true,
+          "sha": "b81b74e94c6c708e1fd435947276c0da66838bc069bee5d72d86156f9f6ded29",
+          "page": "31"
+        },
+        "underestimated": {
+          "ok": true,
+          "sha": "f5a68d22241d5b9f55aef781a4390508f9431d018ba5d99e382ba6e3366f1d10",
+          "page": "31"
+        },
+        "cash": {
+          "ok": true,
+          "sha": "2af815fdeac08a80e0610bb5dfe88b7ce07597bef81bd5c97781ebdd750fa256",
+          "page": "172"
+        },
+        "covenant": {
+          "ok": true,
+          "sha": "09c8a8074c0265b57c117319d51fcfaf827a34d56ffec552f8f3a685513899d7",
+          "page": "163"
+        },
+        "d-ruinous": {
+          "ok": true,
+          "sha": "7c6c138e945dedaf4678f743a8480b5f994548591ce1dab430a07a5612b8910b"
+        },
+        "d-lead": {
+          "ok": true,
+          "sha": "b5bc4a3c92ddb4bcd9d3e6ced74a376c0b9415a7e18159fffc50b84f6c4d8849"
+        },
+        "d-bankrupt": {
+          "ok": true,
+          "sha": "38561da98f13947ad28555d7d903c48d64996b5b0f337f0b70dfaab15c91a74c"
+        },
+        "d-buying": {
+          "ok": true,
+          "sha": "d815fdd7347f45cc1a675aef456460bed070b2808a21b877aa369e204ae7aa7c"
+        },
         "loss-half": {
           "ok": true,
           "sha": "a9e968412b82ef17d30770f90a73f484283619c0bca38f7f8e999c26d2679f83",
@@ -210,7 +326,8 @@
         "Loss before provision for income taxes": true,
         "Provision for income taxes": true,
         "Net loss": true,
-        "Cash from operating activities": true
+        "Cash from operating activities": true,
+        "Cash-flow statement: change in fair value, added back": true
       },
       "press": {
         "9daa2cd43fa5-17771439": {

@@ -72,7 +72,7 @@ for (const f of FILINGS) {
   }
 
   const rows: Record<string, boolean> = {};
-  for (const r of f.money.table.rows) {
+  for (const r of [...f.money.table.rows, ...f.money.also]) {
     rows[r.label] = filing.full.includes(flat(r.row));
     if (!rows[r.label]) { failed++; console.log(`ROW NOT FOUND: ${r.label}`); }
   }
@@ -101,7 +101,7 @@ for (const f of FILINGS) {
 
   verification.filings[f.slug] = { sha: sha(filing.full), passages, rows, press };
   const modes = Object.values(press).reduce<Record<string, number>>((m, p) => ({ ...m, [p.mode]: (m[p.mode] ?? 0) + 1 }), {});
-  console.log(`${f.slug}: ${Object.values(passages).filter(p => p.ok).length} of ${f.passages.length} passages and ${Object.values(rows).filter(Boolean).length} of ${f.money.table.rows.length} table rows found; press quotations: ${JSON.stringify(modes)}`);
+  console.log(`${f.slug}: ${Object.values(passages).filter(p => p.ok).length} of ${f.passages.length} passages and ${Object.values(rows).filter(Boolean).length} of ${f.money.table.rows.length + f.money.also.length} table rows found; press quotations: ${JSON.stringify(modes)}`);
 }
 
 writeFileSync(join(process.cwd(), 'content/filings/verification.json'), `${JSON.stringify(verification, null, 2)}\n`);

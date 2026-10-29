@@ -5,6 +5,7 @@ import path from 'node:path';
 import { COMPANIES, GROUPS, filingPath, getCompany, latestFiling } from '../content/money';
 import { VERIFICATION, passageOf } from '../content/filings';
 import { brief, rowOf } from '../lib/money';
+import { cells, money } from '../lib/filings';
 
 const ROOT = path.join(import.meta.dirname, '..');
 
@@ -81,4 +82,60 @@ test('the commitments section’s own figures are in the filing’s words, and e
   for (const id of [...f.money.commitments, ...f.money.arrangements]) assert.ok(VERIFICATION.filings[f.slug].passages[id]?.ok, `${id} is not a checked passage`);
   const listed = new Set([...f.money.commitments, ...f.money.arrangements]);
   assert.equal(listed.size, f.money.commitments.length + f.money.arrangements.length, 'a passage is listed twice');
+});
+
+/** Every dollar figure in our own explanations is one the filing, the interview or the filing's tables give. */
+test('the figures in our plain words are theirs: in a passage, or in the filing’s table', () => {
+  const f = latestFiling(getCompany('anthropic')!);
+  const theirs = f.passages.map(p => p.text).join(' ');
+  const rows = [...f.money.table.rows, ...f.money.also].flatMap(r => cells(r.row)).filter((n): n is number => n !== null).map(n => money(Math.abs(n)));
+  const known = (fig: string) => theirs.includes(fig) || rows.includes(fig);
+  const blocks = [...f.money.explain.loss, ...f.money.explain.commitments];
+  assert.ok(blocks.length >= 8);
+  for (const b of blocks) {
+    for (const text of [b.title, ...b.says]) {
+      for (const fig of text.match(/\$[\d,.]+(?: (?:billion|million|trillion))?/g) ?? []) {
+        assert.ok(known(fig), `${b.id}: “${fig}” is not in a passage or the filing’s table`);
+      }
+    }
+  }
+});
+
+test('each plain-words block sits beside passages that exist, are checked, and come from the right place', () => {
+  const f = latestFiling(getCompany('anthropic')!);
+  const v = VERIFICATION.filings[f.slug];
+  const ids = new Set<string>();
+  for (const b of [...f.money.explain.loss, ...f.money.explain.commitments]) {
+    assert.ok(!ids.has(b.id), `block ${b.id} appears twice`);
+    ids.add(b.id);
+    assert.ok(b.says.length > 0 && b.filing.length > 0, `${b.id} has no explanation or no filing words`);
+    for (const id of b.filing) assert.equal(passageOf(f, id).source, 'filing', `${b.id}: ${id} is not from the filing`);
+    for (const id of b.public ?? []) {
+      assert.notEqual(passageOf(f, id).source, 'filing', `${b.id}: ${id} is the filing, not a public statement`);
+      assert.ok(v.passages[id]?.ok, `${b.id}: ${id} was not found in its source`);
+    }
+    for (const id of b.filing) assert.ok(v.passages[id]?.ok && v.passages[id].page, `${b.id}: ${id} was not found in the filing`);
+  }
+});
+
+test('the loss is explained from the filing’s own statements: the cash-flow statement adds the fair-value change back', () => {
+  const f = latestFiling(getCompany('anthropic')!);
+  assert.ok(VERIFICATION.filings[f.slug].rows['Cash-flow statement: change in fair value, added back'], 'the add-back row was not found in the filing');
+  const income = rowOf(f, 'fair-value');
+  const addBack = cells(f.money.also.find(r => r.key === 'cf-fair-value')!.row).map(n => n ?? 0);
+  assert.deepEqual(addBack, income.map(n => -n), 'the cash-flow add-back is not the income statement’s fair-value change, reversed');
+  // The words say what the filing says: the same line, every period.
+  const text = f.money.explain.loss.flatMap(b => b.says).join(' ');
+  assert.match(text, /cash-flow statement adds the \$72\.4 billion back/);
+  assert.equal(money(Math.abs(income[income.length - 1])), '$72.4 billion');
+});
+
+test('an interview our words lean on is said to be an interview, with who spoke and when', () => {
+  const f = latestFiling(getCompany('anthropic')!);
+  const s = f.sources.dwarkesh;
+  assert.match(s.who ?? '', /Dario Amodei/);
+  assert.match(s.date, /^2026-02-\d{2}$/);
+  const text = f.money.explain.commitments.flatMap(b => b.says).join(' ');
+  assert.match(text, /February 2026 interview/);
+  assert.match(text, /far larger than anything in the filing/);
 });
