@@ -35,3 +35,25 @@ export function brief(f: Filing): { period: string; stats: Stat[] } {
 
 /** "Jan–Jun 2026" → "January to June 2026"; a year stays a year. */
 export const periodName = (label: string) => label.replace('Jan–Jun', 'January to June');
+
+/** An amount in millions as a chart or card labels it: "$693M", "$72.4B". */
+export const short = (millions: number) => (Math.abs(millions) < 1000 ? `$${Math.abs(millions).toLocaleString('en-US')}M` : `$${(Math.abs(millions) / 1000).toFixed(1)}B`);
+
+export type LossStep = { label: string; full: string; value: number; tone: 'other' | 'compute' | 'revenue' | 'total' };
+
+/**
+ * The latest period's net loss taken apart, line by line, from the filing's table: each line moves the running total, and
+ * the last is where it ends. The company page's chart and the post card draw the same steps.
+ */
+export function lossSteps(f: Filing): LossStep[] {
+  const last = f.money.table.columns.length - 1;
+  const [opLoss, interest, fairValue, otherIncome, taxes, netLoss] = ['operating-loss', 'interest', 'fair-value', 'other-income', 'taxes', 'net-loss'].map(k => rowOf(f, k)[last]);
+  return [
+    { label: 'Operating loss', full: 'Operating loss', value: opLoss, tone: 'other' },
+    { label: 'Interest income', full: 'Interest income', value: interest, tone: 'revenue' },
+    { label: 'Change in fair value of notes', full: 'Change in fair value of convertible notes, derivative liabilities, and SAFEs', value: fairValue, tone: 'compute' },
+    { label: 'Other income (expense)', full: 'Other income (expense), net', value: otherIncome, tone: 'other' },
+    { label: 'Income taxes', full: 'Provision for income taxes', value: -taxes, tone: 'other' },
+    { label: 'Net loss', full: 'Net loss', value: netLoss, tone: 'total' },
+  ];
+}

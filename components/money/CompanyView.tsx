@@ -6,7 +6,7 @@ import { VERIFICATION } from '@/content/filings';
 import type { Filing } from '@/content/filings/types';
 import { filingPath, type Company } from '@/content/money';
 import { COMMITTED, cells, money } from '@/lib/filings';
-import { brief, periodName, rowOf, type Stat } from '@/lib/money';
+import { brief, lossSteps, periodName, rowOf, type Stat } from '@/lib/money';
 import { longDate, shortDate } from '@/lib/site';
 import { Explain } from './Explain';
 import { CostChart, Timeline, Waterfall, type Commitment } from './MoneyCharts';
@@ -27,8 +27,8 @@ export function Tile({ s }: { s: Stat }) {
  *  the documents they come from. */
 export function CompanyView({ company, f }: { company: Company; f: Filing }) {
   const t = f.money.table;
-  const [revenue, compute, personnel, bartz, sales, admin, opLoss, interest, fairValue, otherIncome, taxes, netLoss] =
-    ['revenue', 'compute', 'personnel', 'bartz', 'sales', 'admin', 'operating-loss', 'interest', 'fair-value', 'other-income', 'taxes', 'net-loss'].map(k => rowOf(f, k));
+  const [revenue, compute, personnel, bartz, sales, admin, netLoss] =
+    ['revenue', 'compute', 'personnel', 'bartz', 'sales', 'admin', 'net-loss'].map(k => rowOf(f, k));
   const last = t.columns.length - 1;
   const { period, stats } = brief(f);
   const periods = t.columns.map((c, i) => ({ label: c.label, audited: c.audited, revenue: revenue[i], compute: compute[i], other: personnel[i] + bartz[i] + sales[i] + admin[i] }));
@@ -67,14 +67,7 @@ export function CompanyView({ company, f }: { company: Company; f: Filing }) {
         <h2>The {money(netLoss[last])} net loss, taken apart</h2>
         <Waterfall
           title={`${periodName(period)}: from operating loss to net loss`}
-          steps={[
-            { label: 'Operating loss', full: 'Operating loss', value: opLoss[last], tone: 'other' },
-            { label: 'Interest income', full: 'Interest income', value: interest[last], tone: 'revenue' },
-            { label: 'Change in fair value of notes', full: 'Change in fair value of convertible notes, derivative liabilities, and SAFEs', value: fairValue[last], tone: 'compute' },
-            { label: 'Other income (expense)', full: 'Other income (expense), net', value: otherIncome[last], tone: 'other' },
-            { label: 'Income taxes', full: 'Provision for income taxes', value: -taxes[last], tone: 'other' },
-            { label: 'Net loss', full: 'Net loss', value: netLoss[last], tone: 'total' },
-          ]}
+          steps={lossSteps(f)}
           note="The two largest lines come after the operating loss: both are changes in the fair value of financial instruments, which the filing explains below. The first, it says, was driven mainly by the rise in its own valuation."
         />
         <Explain f={f} blocks={f.money.explain.loss} />

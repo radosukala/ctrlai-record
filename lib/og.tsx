@@ -531,6 +531,50 @@ export function MoneyImage({ label, title, line, stats, disclosure }: { label: s
   );
 }
 
+export type LossCardStep = { label: string; amount: string; value: number; tone: 'other' | 'compute' | 'revenue' | 'total' };
+
+/**
+ * The net loss taken apart, for a post: one bar per line of the income statement on a running total, the amount of each
+ * at the right, and one sentence of ours under it. Same colors as the page's chart: ink for the line that matters,
+ * yellow for what comes in, gray for the rest.
+ */
+export function LossCard({ label, title, steps, takeaway, disclosure }: { label: string; title: string; steps: LossCardStep[]; takeaway: string; disclosure?: string }) {
+  const TONE = { other: '#b8b8b2', compute: INK, revenue: '#f0cb00', total: '#6e6e69' };
+  const W = 560, ROW = 48;
+  let run = 0;
+  const spans = steps.map(s => {
+    if (s.tone === 'total') return { ...s, from: 0, to: s.value };
+    const from = run; run += s.value; return { ...s, from, to: run };
+  });
+  const lo = Math.min(0, ...spans.map(s => Math.min(s.from, s.to))), hi = Math.max(0, ...spans.map(s => Math.max(s.from, s.to)));
+  const x = (v: number) => ((v - lo) / (hi - lo)) * W;
+  return (
+    <div style={{ ...FRAME, padding: '36px 60px 32px' }}>
+      <BrandRow right={label} size={36} />
+      <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: 60, lineHeight: 1, letterSpacing: -1, marginTop: 24 }}>{title}</div>
+      <div style={{ display: 'flex', flexDirection: 'column', marginTop: 30 }}>
+        {spans.map(s => {
+          const a = Math.min(x(s.from), x(s.to)), w = Math.max(2, Math.abs(x(s.to) - x(s.from)));
+          const strong = s.tone === 'total';
+          return (
+            <div key={s.label} style={{ display: 'flex', alignItems: 'center', height: ROW, borderTop: strong ? `2px solid ${INK}` : 'none' }}>
+              <div style={{ display: 'flex', justifyContent: 'flex-end', width: 330, paddingRight: 20, fontSize: 24, fontWeight: strong ? 700 : 500, color: strong ? INK : INK_2 }}>{s.label}</div>
+              <div style={{ display: 'flex', position: 'relative', width: W, height: 28 }}>
+                <div style={{ position: 'absolute', display: 'flex', left: x(0), top: -9, width: 1, height: 46, background: '#bdbdb8' }} />
+                <div style={{ position: 'absolute', display: 'flex', left: a, top: 0, width: w, height: 28, background: TONE[s.tone], borderRadius: 4 }} />
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'flex-end', flexGrow: 1, fontFamily: MONO, fontSize: 24, fontWeight: strong ? 700 : 600 }}>{s.amount}</div>
+            </div>
+          );
+        })}
+      </div>
+      <div style={{ display: 'flex', flexGrow: 1, alignItems: 'center', fontSize: 27, lineHeight: 1.28, color: INK, fontWeight: 600, paddingTop: 14, paddingBottom: 10 }}>{takeaway}</div>
+      {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: 15, color: MUTED, marginBottom: 12 }}>{disclosure}</div> : null}
+      <Footer left="Every figure checked against the filing." url="ctrlai.com/money/anthropic" />
+    </div>
+  );
+}
+
 export type TodayItem = { kind: string; outlet: string; note: string };
 
 /** What changed today: up to three changes, in our words, each with what kind of change it is and where it came from. */

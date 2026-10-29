@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { COMPANIES, GROUPS, filingPath, getCompany, latestFiling } from '../content/money';
 import { VERIFICATION, passageOf } from '../content/filings';
-import { brief, rowOf } from '../lib/money';
+import { brief, lossSteps, rowOf } from '../lib/money';
 import { cells, money } from '../lib/filings';
 
 const ROOT = path.join(import.meta.dirname, '..');
@@ -138,4 +138,17 @@ test('an interview our words lean on is said to be an interview, with who spoke 
   const text = f.money.explain.commitments.flatMap(b => b.says).join(' ');
   assert.match(text, /February 2026 interview/);
   assert.match(text, /far larger than anything in the filing/);
+});
+
+test('the net loss taken apart adds up: its steps, in order, end at the net loss, on the page and on the post card', () => {
+  const f = latestFiling(getCompany('anthropic')!);
+  const steps = lossSteps(f);
+  const parts = steps.filter(s => s.tone !== 'total').reduce((a, s) => a + s.value, 0);
+  const total = steps.find(s => s.tone === 'total')!;
+  assert.equal(parts, total.value, 'the lines do not add up to the net loss');
+  assert.equal(total.value, rowOf(f, 'net-loss')[f.money.table.columns.length - 1]);
+  assert.equal(steps.filter(s => s.tone === 'total').length, 1);
+  const card = fs.readFileSync(path.join(ROOT, 'app/money/[company]/card/[id]/route.tsx'), 'utf8');
+  assert.match(card, /lossSteps\(f\)/, 'the card does not draw the same steps as the page');
+  assert.match(fs.readFileSync(path.join(ROOT, 'components/money/CompanyView.tsx'), 'utf8'), /lossSteps\(f\)/);
 });

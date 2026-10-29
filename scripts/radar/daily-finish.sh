@@ -44,6 +44,13 @@ if PATH="/opt/homebrew/bin:$PATH" npx tsx scripts/social.ts video "$RUN" --voice
   cp "kit/video-$RUN/VIDEO.md" "kit/video-$RUN/poster.png" "$DIR/video/" 2>/dev/null || true
 else echo "WARNING: the video could not be made (see $DIR/video.log); the run publishes anyway"; fi
 
+echo "== Filings"
+# New SEC filings by the companies in the money section (scripts/filings/watch.ts). Today that is Anthropic's S-1/A, which
+# should fill in the table of what it must pay each year for computing, the figures the money page's slider waits for.
+# Prints a "NEW FILING:" line for each, copied into REPORT.md. Reads the SEC's small list for each company; posts and
+# publishes nothing. Never stops the run: the record is published either way.
+if npx tsx scripts/filings/watch.ts --out "$DIR/filings.md" > "$DIR/filings.log" 2>&1; then { grep -E "^(NEW FILING|WARNING)" "$DIR/filings.log" | head -6; } || true; else echo "WARNING: the filing watch failed (see $DIR/filings.log); the run publishes anyway"; fi
+
 echo "== Archive"
 ARCHIVE_DIR="$ARCHIVE_DIR" npx tsx scripts/radar/archive.ts --run "$RUN" | tail -1
 ( cd "$ARCHIVE_DIR" && git add -A && { git diff --cached --quiet || git -c user.name=radosukala -c user.email=sukala@me.com commit -q -m "Radar run $RUN"; } && git pull -q --rebase && git push -q ) || echo "WARNING: the archive could not be pushed; it is safe locally in $ARCHIVE_DIR"

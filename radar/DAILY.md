@@ -95,7 +95,7 @@ any other way.
 Write `RUN/REPORT.md`: candidates, deep and light counts, entries published, quotations checked and dropped, the day's
 top stories (titles and slugs), sources that failed and how YouTube was read (API or RSS), what couldn't be read and why.
 Then add a section `## Today's video`: the path of the MP4 (`/Users/rado/code/ctrlai-com-radar/kit/video-RUN/ctrlai-day-RUN.mp4`), whether it is narrated, and the line "Listen for these words" copied from `RUN/video/VIDEO.md`; if `finish` printed that no narration was made, or that the video could not be made, say so there instead. Then add a section `## Today's posts`: read `RUN/posts/POSTS.md` and copy it in as it is (the cards are beside it in
-`RUN/posts/`). If `finish` printed that the posts could not be drafted, say so there instead. Post nothing anywhere.
+`RUN/posts/`). If `finish` printed that the posts could not be drafted, say so there instead. Post nothing anywhere. If `finish` printed `NEW FILING:` lines (a new filing at the SEC by a company in the money section), add a section `## New SEC filing` to REPORT.md with those lines as they are, and a line to the summary saying so first: it is the news Rado is waiting for (the amended S-1 with the commitments table filled in). Never act on it; a person decides.
 End the run with a five-line summary of the same, and a sixth line with the day's quotation for X (who, and the first
 words).
 
