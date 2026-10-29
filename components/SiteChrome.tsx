@@ -10,6 +10,7 @@ export const NAV = [
   { href: '/', label: 'Today', also: ['/day/', '/month/'] },
   { href: '/base', label: 'The Base', also: ['/people'] },
   { href: '/questions', label: 'Questions', also: ['/decisions/'] },
+  { href: '/money', label: 'The money' },
   { href: '/hall-of-fame', label: 'Hall of Fame' },
   { href: '/say', label: 'A Say in AI', also: '/accord' },
   { href: '/about', label: 'About' },
@@ -39,6 +40,7 @@ export function SiteFooter() {
             <Link href="/">Today</Link>
             <Link href="/base">The Base</Link>
             <Link href="/questions">Questions</Link>
+            <Link href="/money">The money</Link>
             <Link href="/week">Weekly issue</Link>
             <a href="/feed.xml">RSS</a>
             <Link href="/hall-of-fame">Hall of Fame</Link>

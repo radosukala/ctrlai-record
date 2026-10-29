@@ -89,6 +89,16 @@
           "sha": "bb99343b70996f25419302a55ebd2b07273efdcea6c818e26261cb89a888da41",
           "page": "46"
         },
+        "other-expense": {
+          "ok": true,
+          "sha": "161109da5010a2dc511a8680c4c9236134bc2e21970d8d67d9e8e37f0067a9f1",
+          "page": "150"
+        },
+        "other-arrangements": {
+          "ok": true,
+          "sha": "e91e14f653bb5a708820efd12f6266faec86710503f39e1aefebbfefc1fd3f4a",
+          "page": "170"
+        },
         "loss-half": {
           "ok": true,
           "sha": "a9e968412b82ef17d30770f90a73f484283619c0bca38f7f8e999c26d2679f83",
@@ -143,9 +153,17 @@
       "rows": {
         "Revenue": true,
         "Compute and infrastructure": true,
+        "Personnel": true,
+        "Bartz settlement": true,
+        "Sales, marketing, and partnerships": true,
+        "Other operating and administrative": true,
         "Total operating expenses": true,
         "Operating loss": true,
+        "Interest income": true,
         "Change in fair value of convertible notes, derivative liabilities, and SAFEs": true,
+        "Other income (expense), net": true,
+        "Loss before provision for income taxes": true,
+        "Provision for income taxes": true,
         "Net loss": true,
         "Cash from operating activities": true
       },

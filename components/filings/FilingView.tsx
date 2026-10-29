@@ -1,10 +1,11 @@
-import type { ReactNode } from 'react';
 import Link from 'next/link';
 import '@/components/filings/filings.css';
 import { currentTitle, isPerson, nameOf } from '@/content/base';
 import { VERIFICATION, entryOf, passageOf, quoteOf, type PressCheck } from '@/content/filings';
 import type { Filing } from '@/content/filings/types';
-import { COMMITTED, cells, money } from '@/lib/filings';
+import type { Company } from '@/content/money';
+import { COMMITTED, money } from '@/lib/filings';
+import { rowOf } from '@/lib/money';
 import { longDate, shortDate } from '@/lib/site';
 
 function FilingWords({ f, id }: { f: Filing; id: string }) {
@@ -55,35 +56,6 @@ function BaseWords({ id }: { id: string }) {
   );
 }
 
-/** Two series of bars on one scale, one row per period: what the table says, drawn. Values in the table's unit. */
-function Bars({ title, unit, rows, series, note }: { title: string; unit: number; rows: { label: string; audited: boolean; values: number[] }[]; series: { name: string; tone: 'ink' | 'mark' | 'line' }[]; note?: ReactNode }) {
-  const max = Math.max(...rows.flatMap(r => r.values.map(Math.abs)));
-  const W = 640, label = 118, barH = 13, gap = 4, rowH = series.length * (barH + gap) + 16;
-  const H = rows.length * rowH + 8;
-  const x = (v: number) => ((W - label - 80) * Math.abs(v)) / max;
-  return (
-    <figure className="fi-chart">
-      <figcaption className="fi-chart-title">{title}</figcaption>
-      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={title}>
-        {rows.map((r, i) => (
-          <g key={r.label} transform={`translate(0 ${i * rowH + 4})`}>
-            <text x={0} y={barH} className="fi-chart-period">{r.label}</text>
-            <text x={0} y={barH + 14} className="fi-chart-audit">{r.audited ? 'audited' : 'not audited'}</text>
-            {r.values.map((v, k) => (
-              <g key={k} transform={`translate(${label} ${k * (barH + gap)})`}>
-                <rect width={Math.max(1, x(v))} height={barH} className={`fi-bar fi-bar-${series[k].tone}`} />
-                <text x={Math.max(1, x(v)) + 6} y={barH - 2} className="fi-chart-value">{(Math.abs(v) / unit).toFixed(Math.abs(v) / unit >= 10 ? 1 : 2)}</text>
-              </g>
-            ))}
-          </g>
-        ))}
-      </svg>
-      <p className="fi-legend">{series.map(s => <span key={s.name}><i className={`fi-swatch fi-bar-${s.tone}`} />{s.name}</span>)}</p>
-      {note ? <p className="fi-note">{note}</p> : null}
-    </figure>
-  );
-}
-
 const PRESS: Record<PressCheck['mode'], string> = {
   exact: 'Found word for word in the filing',
   words: 'The same words are in the filing, with other punctuation or capitals',
@@ -91,18 +63,16 @@ const PRESS: Record<PressCheck['mode'], string> = {
   none: 'Not found in the filing’s text, or in the two exhibits we read. It may be in an image in the filing, or in another document.',
 };
 
-export function FilingView({ f }: { f: Filing }) {
+export function FilingView({ company, f }: { company: Company; f: Filing }) {
   const v = VERIFICATION.filings[f.slug];
-  const t = f.money.table;
-  const row = (label: string) => cells(t.rows.find(r => r.label === label)!.row);
-  const [revenue, opex, opLoss, fairValue, netLoss, cash] = ['Revenue', 'Total operating expenses', 'Operating loss', 'Change in fair value of convertible notes, derivative liabilities, and SAFEs', 'Net loss', 'Cash from operating activities'].map(row);
-  const last = t.columns.length - 1;
+  const [revenue, opLoss, fairValue, netLoss, cash] = ['revenue', 'operating-loss', 'fair-value', 'net-loss', 'operating-cash'].map(k => rowOf(f, k));
+  const last = f.money.table.columns.length - 1;
   // The three agreements' minimums, as the passages below state them: Microsoft, Google, Amazon (a test checks they are there).
   const commitments = COMMITTED.reduce((a, b) => a + b, 0);
   return (
     <article className="shell fi">
       <header className="fi-head">
-        <p className="dateline"><b>Filing · Form {f.form} · {f.company}, PBC</b><span>filed with the SEC on {longDate(f.filed)}</span><span>{f.pages} pages</span></p>
+        <p className="dateline"><b><Link href="/money">The money</Link> · <Link href={`/money/${company.slug}`}>{company.name}</Link> · {f.form}</b><span>filed with the SEC on {longDate(f.filed)}</span><span>{f.pages} pages</span></p>
         <h1 className="headline">What {f.company} told investors</h1>
         <p className="lede">
           To sell shares to the public, a company must file a prospectus with the US Securities and Exchange Commission: what it does, what it earns
@@ -117,7 +87,7 @@ export function FilingView({ f }: { f: Filing }) {
           <span><b className="fi-k-sans">Sans</b> our words</span>
         </p>
         <nav className="fi-toc" aria-label="On this page">
-          <a href="#money">The money</a><a href="#warnings">The warnings</a><a href="#press">How the press quoted it</a><a href="#method">How this page was made</a>
+          <a href="#money">The numbers</a><a href="#warnings">The warnings</a><a href="#press">How the press quoted it</a><a href="#method">How this page was made</a>
         </nav>
       </header>
 
@@ -132,37 +102,7 @@ export function FilingView({ f }: { f: Filing }) {
           {f.money.passages.map(id => <FilingWords key={id} f={f} id={id} />)}
         </div>
 
-        <div className="fi-charts">
-          <Bars
-            title="Revenue and operating expenses, billions of dollars"
-            unit={1000}
-            rows={t.columns.map((c, i) => ({ label: c.label, audited: c.audited, values: [revenue[i], opex[i]] }))}
-            series={[{ name: 'Revenue', tone: 'mark' }, { name: 'Total operating expenses', tone: 'ink' }]}
-            note="The last two rows are half years, January to June; the others are full years."
-          />
-          <Bars
-            title="Net loss, and the change in fair value of notes within it, billions of dollars"
-            unit={1000}
-            rows={t.columns.map((c, i) => ({ label: c.label, audited: c.audited, values: [netLoss[i], fairValue[i]] }))}
-            series={[{ name: 'Net loss', tone: 'ink' }, { name: 'Change in fair value of convertible notes, derivative liabilities, and SAFEs', tone: 'line' }]}
-            note="The second bar is part of the first."
-          />
-        </div>
-
-        <div className="fi-tablewrap">
-          <table className="fi-table">
-            <caption>From the filing’s summary table, page {t.page}, in {t.unit}. Losses in brackets.</caption>
-            <thead><tr><th>Line</th>{t.columns.map(c => <th key={c.label} className="n">{c.label}<small>{c.audited ? 'audited' : 'not audited'}</small></th>)}</tr></thead>
-            <tbody>
-              {t.rows.map(r => (
-                <tr key={r.label}>
-                  <th scope="row">{r.label}{v?.rows[r.label] ? null : <small> not checked</small>}</th>
-                  {cells(r.row).map((n, i) => <td key={i} className="n">{n < 0 ? `(${Math.abs(n).toLocaleString('en-US')})` : n.toLocaleString('en-US')}</td>)}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <p className="fi-more"><Link href={`/money/${company.slug}`}>{company.name}’s numbers, drawn: revenue against costs, the net loss taken apart, and the computing commitments by year →</Link></p>
 
         <h3 className="fi-h3">What it has promised to spend on computing</h3>
         <div className="fi-words">

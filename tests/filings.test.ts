@@ -29,7 +29,7 @@ test('every row of the filing’s table shown was found in the filing, with a nu
       assert.ok(VERIFICATION.filings[f.slug].rows[r.label], `${f.slug}: row ${r.label} not found`);
       const n = cells(r.row);
       assert.equal(n.length, f.money.table.columns.length, `${f.slug}: ${r.label} has ${n.length} numbers`);
-      assert.ok(n.every(Number.isFinite), `${f.slug}: ${r.label} has a cell that is not a number`);
+      assert.ok(n.every(x => x === null || Number.isFinite(x)), `${f.slug}: ${r.label} has a cell that is neither a number nor a dash`);
     }
   }
 });
@@ -72,9 +72,11 @@ test('every press quotation of the filing was checked against it; one the Base n
 });
 
 test('a filing page says who writes Ctrl AI, that every company is treated the same, and that it is not investment advice', () => {
-  const view = fs.readFileSync(path.join(ROOT, 'components/filings/FilingView.tsx'), 'utf8');
-  assert.match(view, /Ctrl AI is written with Claude/);
-  assert.match(view, /every company/);
-  assert.match(view, /Nothing here is investment advice/);
+  for (const file of ['components/filings/FilingView.tsx', 'components/money/CompanyView.tsx', 'components/money/MoneyHub.tsx']) {
+    const view = fs.readFileSync(path.join(ROOT, file), 'utf8');
+    assert.match(view, /Ctrl AI is written with Claude/, file);
+    assert.match(view, /[Ee]very company/, file);
+    assert.match(view, /Nothing here is investment advice/, file);
+  }
   for (const f of FILINGS) for (const s of Object.values(f.sources)) assert.match(s.date, /^\d{4}-\d{2}-\d{2}$/);
 });

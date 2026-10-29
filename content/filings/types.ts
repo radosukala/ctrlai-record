@@ -14,13 +14,18 @@ export type Passage = { id: string; text: string; source: 'filing' | string };
 export type Theme = { id: string; title: string; filing: string[]; public: ({ passage: string } | { quote: string })[]; note?: string };
 
 /** A row of a table in the filing, as its text reads in the saved filing, so it can be checked like a passage. */
-export type TableRow = { label: string; row: string };
+export type TableRow = { key: string; label: string; row: string };
 
 /** A headline about the filing, set next to the filing's own words on the same point. */
 export type Headline = { entry: string; filing: string[] };
 
 export type Filing = {
   slug: string;
+  /** Where it lives in the money section: /money/<companySlug>/<path>. */
+  companySlug: string;
+  path: string;
+  /** The kind of document, as a reader would name it. */
+  kind: string;
   company: string;
   form: string;
   filed: string;

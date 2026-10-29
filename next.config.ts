@@ -32,6 +32,8 @@ const config: NextConfig = {
       { source: '/film', destination: '/incident/openai-hugging-face/film', permanent: false },
       { source: '/library', destination: '/hall-of-fame', permanent: false },
       { source: '/library/:path*', destination: '/hall-of-fame', permanent: false },
+      // The S-1 page moved into the money section on Oct 29, 2026, three days after it went up.
+      { source: '/filings/anthropic-s-1', destination: '/money/anthropic/s-1', permanent: true },
     ];
   },
   async headers() {

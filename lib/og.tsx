@@ -500,6 +500,37 @@ export function FilingImage({ label, title, quote, source, disclosure }: { label
   );
 }
 
+export type MoneyStat = { label: string; value: string; sub: string };
+/** Satori draws a word joiner as a gap; the image has room enough not to need one. */
+const plain = (t: string) => t.replace(/\u2060/g, '');
+
+/** The money section: a company's figures from its filing, as tiles, each checked against the filing's table. */
+export function MoneyImage({ label, title, line, stats, disclosure }: { label: string; title: string; line: string; stats: MoneyStat[]; disclosure?: string }) {
+  return (
+    <div style={{ ...FRAME, padding: '40px 60px 34px' }}>
+      <BrandRow right={label} size={36} />
+      <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'center', gap: 22 }}>
+        <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: 64, lineHeight: 0.98, letterSpacing: -1 }}>{title}</div>
+        <div style={{ display: 'flex', fontSize: 25, lineHeight: 1.3, color: INK_2 }}>{line}</div>
+        <div style={{ display: 'flex', borderTop: `1px solid ${LINE}`, borderLeft: `1px solid ${LINE}` }}>
+          {stats.slice(0, 4).map(s => (
+            <div key={s.label} style={{ display: 'flex', flexDirection: 'column', flex: 1, gap: 6, padding: '14px 16px 16px', borderRight: `1px solid ${LINE}`, borderBottom: `1px solid ${LINE}` }}>
+              <div style={{ display: 'flex', fontFamily: MONO, fontSize: 17, color: MUTED }}>{s.label}</div>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: 6 }}>
+                <div style={{ display: 'flex', fontWeight: 700, fontSize: 52, lineHeight: 1, letterSpacing: -0.5 }}>{plain(s.value).split(' ')[0]}</div>
+                <div style={{ display: 'flex', fontWeight: 600, fontSize: 22, color: INK_2 }}>{plain(s.value).split(' ').slice(1).join(' ')}</div>
+              </div>
+              <div style={{ display: 'flex', fontSize: 17, lineHeight: 1.3, color: INK_2 }}>{plain(s.sub)}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: 15, color: MUTED, marginBottom: 10 }}>{disclosure}</div> : null}
+      <Footer left="Every figure checked against the filing." url="ctrlai.com/money" />
+    </div>
+  );
+}
+
 export type TodayItem = { kind: string; outlet: string; note: string };
 
 /** What changed today: up to three changes, in our words, each with what kind of change it is and where it came from. */

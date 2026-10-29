@@ -1,5 +1,6 @@
-/** "(2,135)" → -2135, "$4,585" → 4585: a cell of a filing's table, in the table's unit. */
-export const cell = (s: string) => {
+/** "(2,135)" → -2135, "$4,585" → 4585, "—" → null: a cell of a filing's table, in the table's unit. */
+export const cell = (s: string): number | null => {
+  if (/^[—–-]$/.test(s.trim())) return null;
   const n = Number(s.replace(/[$,()\s]/g, ''));
   return /\(/.test(s) ? -n : n;
 };
