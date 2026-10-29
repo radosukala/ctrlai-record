@@ -1,0 +1,69 @@
+/* Filings: what a company told investors, next to what it says in public. The site's three voices hold here too:
+   serif = their words, the highlighter = found word for word in the source, sans = ours, mono = provenance. */
+
+.fi { padding-block: clamp(26px, 4vw, 48px) clamp(56px, 8vw, 96px); display: grid; gap: 0; }
+.fi-head { display: grid; gap: 18px; padding-bottom: 8px; }
+.fi-head .headline { max-width: 16em; }
+.fi-disclosure { font-family: var(--mono); font-size: 13px; line-height: 1.55; color: var(--ink-2); max-width: 62em; padding: 10px 14px; border: 1.5px solid var(--ink); background: var(--paper); }
+.fi-key { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 13px; color: var(--muted); }
+.fi-k-serif { font-family: var(--serif); font-weight: 600; color: var(--ink); }
+.fi-k-sans { font-family: var(--sans); font-weight: 700; color: var(--ink); }
+.fi-toc { display: flex; flex-wrap: wrap; gap: 4px 20px; font-family: var(--mono); font-size: 13px; }
+
+.fi-sec { display: grid; gap: 18px; margin-top: clamp(36px, 5vw, 60px); padding-top: 12px; border-top: 3px solid var(--ink); min-width: 0; }
+.fi-sec h2 { font-size: clamp(26px, 3vw, 36px); }
+.fi-short { font-size: clamp(16px, 1.4vw, 18px); line-height: 1.5; color: var(--ink-2); max-width: 46em; }
+.fi-note { font-size: 14px; line-height: 1.5; color: var(--muted); max-width: 52em; }
+.fi-h3 { font-family: var(--sans); font-weight: 800; font-stretch: var(--display-stretch); font-size: 22px; margin-top: 10px; }
+
+.fi-words { display: grid; gap: 18px; max-width: 52em; }
+.fi-q { display: grid; gap: 6px; min-width: 0; }
+.fi-q blockquote { font-family: var(--serif); font-size: 18px; line-height: 1.5; color: var(--ink); }
+.fi-q figcaption { font-family: var(--mono); font-size: 12px; line-height: 1.5; color: var(--muted); }
+.fi-q figcaption a { color: var(--muted); }
+
+.fi-charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 28px 40px; margin-top: 6px; }
+.fi-chart { display: grid; gap: 8px; min-width: 0; }
+.fi-chart-title { font-family: var(--sans); font-weight: 700; font-size: 15px; }
+.fi-chart svg { width: 100%; height: auto; overflow: visible; }
+.fi-chart-period { font-family: var(--mono); font-size: 12px; fill: var(--ink); }
+.fi-chart-audit { font-family: var(--mono); font-size: 10px; fill: var(--muted); }
+.fi-chart-value { font-family: var(--mono); font-size: 11px; fill: var(--ink-2); }
+.fi-bar-ink { fill: var(--ink); background: var(--ink); }
+.fi-bar-mark { fill: var(--mark); background: var(--mark); }
+.fi-bar-line { fill: #b9b9b4; background: #b9b9b4; }
+.fi-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12.5px; color: var(--ink-2); }
+.fi-swatch { display: inline-block; width: 12px; height: 10px; margin-right: 6px; vertical-align: -1px; }
+
+.fi-tablewrap { overflow-x: auto; max-width: 100%; }
+.fi-table { border-collapse: collapse; font-size: 14px; min-width: 640px; }
+.fi-table caption { caption-side: top; text-align: left; font-family: var(--mono); font-size: 12px; color: var(--muted); padding-bottom: 8px; }
+.fi-table th, .fi-table td { padding: 7px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.fi-table thead th { font-family: var(--mono); font-size: 12px; font-weight: 600; border-bottom: 1.5px solid var(--ink); }
+.fi-table th small { display: block; font-weight: 400; color: var(--muted); }
+.fi-table tbody th { font-weight: 600; max-width: 22em; }
+.fi-table .n { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.fi-theme { display: grid; gap: 12px; padding-top: 14px; border-top: 1px solid var(--line); }
+.fi-theme-title { font-family: var(--sans); font-weight: 800; font-stretch: var(--display-stretch); font-size: clamp(20px, 2vw, 24px); }
+.fi-pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 18px 40px; }
+.fi-side { display: grid; gap: 14px; align-content: start; min-width: 0; }
+.fi-side-label { font-family: var(--mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.fi-none { font-size: 14px; color: var(--muted); }
+
+.fi-press { display: grid; gap: 18px; list-style: none; padding: 0; max-width: 56em; }
+.fi-press li { display: grid; gap: 6px; padding-left: 14px; border-left: 3px solid var(--line); }
+.fi-press li.fi-press-exact { border-left-color: var(--mark); }
+.fi-press li.fi-press-none { border-left-color: var(--signal); }
+.fi-press-who { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.fi-press-who a { color: var(--muted); }
+.fi-press blockquote { font-family: var(--serif); font-size: 17px; line-height: 1.5; }
+.fi-press-check { font-size: 14px; line-height: 1.5; color: var(--ink-2); }
+.fi-press-filing { font-family: var(--serif); }
+.fi-headlines { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 22px 40px; }
+.fi-headline { display: grid; gap: 8px; align-content: start; }
+.fi-headline-text { font-family: var(--serif); font-weight: 600; font-size: 20px; line-height: 1.25; }
+.fi-headline ul { display: grid; gap: 6px; padding-left: 18px; font-family: var(--serif); font-size: 16px; line-height: 1.45; }
+.fi-headline small { font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
+
+.fi-method ul { display: grid; gap: 8px; padding-left: 18px; font-size: 15.5px; line-height: 1.55; color: var(--ink-2); max-width: 52em; }

@@ -1,0 +1,78 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
+import fs from 'node:fs';
+import path from 'node:path';
+import { COMMITTED, cells } from '../lib/filings';
+import { FILINGS, VERIFICATION, entryOf, passageOf, quoteOf } from '../content/filings';
+
+const ROOT = path.join(import.meta.dirname, '..');
+const sha = (s: string) => createHash('sha256').update(s.replace(/\s+/g, ' ').trim()).digest('hex');
+
+test('every passage on a filing page was found word for word in its source, and has not changed since it was checked', () => {
+  for (const f of FILINGS) {
+    const v = VERIFICATION.filings[f.slug];
+    assert.ok(v, `${f.slug} was never checked: npx tsx scripts/filings/check.ts`);
+    for (const p of f.passages) {
+      const check = v.passages[p.id];
+      assert.ok(check?.ok, `${f.slug}: ${p.id} was not found in ${p.source}`);
+      assert.equal(check.sha, sha(p.text), `${f.slug}: ${p.id} was edited after it was checked; run the check again`);
+      if (p.source === 'filing') assert.ok(check.page, `${f.slug}: ${p.id} has no printed page`);
+      else assert.ok(f.sources[p.source], `${f.slug}: ${p.id} names an unknown source`);
+    }
+  }
+});
+
+test('every row of the filing’s table shown was found in the filing, with a number for each column', () => {
+  for (const f of FILINGS) {
+    for (const r of f.money.table.rows) {
+      assert.ok(VERIFICATION.filings[f.slug].rows[r.label], `${f.slug}: row ${r.label} not found`);
+      const n = cells(r.row);
+      assert.equal(n.length, f.money.table.columns.length, `${f.slug}: ${r.label} has ${n.length} numbers`);
+      assert.ok(n.every(Number.isFinite), `${f.slug}: ${r.label} has a cell that is not a number`);
+    }
+  }
+});
+
+test('the figures our own sentences give are the ones the filing’s prose gives', () => {
+  const f = FILINGS.find(x => x.slug === 'anthropic-s-1')!;
+  const prose = ['revenue', 'losses'].map(id => passageOf(f, id).text).join(' ');
+  for (const figure of ['$41 million', '$16.3 billion', '$80.7 billion', '$72.4 billion']) assert.ok(prose.includes(figure), `${figure} is not in the filing’s words`);
+  const commitments = f.money.commitments.map(id => passageOf(f, id).text).join(' ');
+  for (const n of COMMITTED) assert.ok(commitments.includes(`$${n.toFixed(1)} billion`), `the sum uses $${n} billion, which the passages do not state`);
+});
+
+test('each warning has the filing’s words, and its public side is a checked page or a quotation in the Base', () => {
+  for (const f of FILINGS) {
+    for (const t of f.themes) {
+      assert.ok(t.filing.length > 0, `${t.id} has nothing from the filing`);
+      for (const id of t.filing) assert.equal(passageOf(f, id).source, 'filing', `${t.id}: ${id} is not from the filing`);
+      for (const p of t.public) {
+        if ('passage' in p) assert.notEqual(passageOf(f, p.passage).source, 'filing', `${t.id}: ${p.passage} is the filing, not a public statement`);
+        else assert.ok(quoteOf(p.quote), `${t.id}: quotation ${p.quote} is not in the Base`);
+      }
+      if (!t.public.length) assert.ok(t.note, `${t.id} shows no public statement and does not say why`);
+    }
+  }
+});
+
+test('every press quotation of the filing was checked against it, and every headline is an entry in the Base', () => {
+  for (const f of FILINGS) {
+    for (const id of f.press.quotes) {
+      assert.ok(quoteOf(id), `${id} is not in the Base`);
+      assert.ok(VERIFICATION.filings[f.slug].press[id], `${id} was not checked against the filing`);
+    }
+    for (const h of f.press.headlines) {
+      assert.ok(entryOf(h.entry), `headline entry ${h.entry} is not in the Base`);
+      for (const id of h.filing) assert.equal(passageOf(f, id).source, 'filing');
+    }
+  }
+});
+
+test('a filing page says who writes Ctrl AI, that every company is treated the same, and that it is not investment advice', () => {
+  const view = fs.readFileSync(path.join(ROOT, 'components/filings/FilingView.tsx'), 'utf8');
+  assert.match(view, /Ctrl AI is written with Claude/);
+  assert.match(view, /every company/);
+  assert.match(view, /Nothing here is investment advice/);
+  for (const f of FILINGS) for (const s of Object.values(f.sources)) assert.match(s.date, /^\d{4}-\d{2}-\d{2}$/);
+});

@@ -484,6 +484,22 @@ export function MomentCard({ size, label, quote, who, role, source, context, pos
   );
 }
 
+/** A filing page's share image: what the company told investors, one of its warnings word for word, and where it is. */
+export function FilingImage({ label, title, quote, source, disclosure }: { label: string; title: string; quote: string; source: string; disclosure?: string }) {
+  return (
+    <div style={{ ...FRAME, padding: '40px 60px 34px' }}>
+      <BrandRow right={label} size={36} />
+      <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'center', gap: 22 }}>
+        <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: 66, lineHeight: 0.98, letterSpacing: -1 }}>{title}</div>
+        <Marked text={clip(quote, 220)} size={33} lineHeight={1.26} />
+        <div style={{ display: 'flex', fontFamily: MONO, fontSize: 19, color: MUTED }}>{source}</div>
+      </div>
+      {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: 15, color: MUTED, marginBottom: 10 }}>{disclosure}</div> : null}
+      <Footer left="Every passage checked word for word against the filing." url="ctrlai.com" />
+    </div>
+  );
+}
+
 export type TodayItem = { kind: string; outlet: string; note: string };
 
 /** What changed today: up to three changes, in our words, each with what kind of change it is and where it came from. */

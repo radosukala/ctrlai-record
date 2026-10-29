@@ -1,0 +1,122 @@
+import type { Filing } from './types';
+
+/**
+ * Anthropic, PBC's registration statement on Form S-1, filed with the SEC on October 26, 2026: its numbers and its
+ * warnings about AI, in its own words, next to what Anthropic has said in public. Every passage below is checked word
+ * for word against the saved filing or page (scripts/filings/check.ts). Ctrl AI is written with Claude, made by
+ * Anthropic, so this page keeps to the same rules as any other company's would.
+ */
+export const ANTHROPIC_S1: Filing = {
+  slug: 'anthropic-s-1',
+  company: 'Anthropic',
+  form: 'S-1',
+  filed: '2026-10-26',
+  url: 'https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm',
+  index: 'https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/',
+  pages: 443,
+  archived: 'filings/anthropic-pbc/s-1-2026-10-26/anthropicpbc-sx1.txt',
+  sources: {
+    'core-views': { title: 'Core views on AI safety: When, why, what, and how', date: '2023-03-08', url: 'https://www.anthropic.com/news/core-views-on-ai-safety', archived: 'filings/anthropic-pbc/public/core-views-on-ai-safety.txt' },
+    'agentic-misalignment': { title: 'Agentic misalignment: How LLMs could be insider threats', date: '2025-06-20', url: 'https://www.anthropic.com/research/agentic-misalignment', archived: 'filings/anthropic-pbc/public/agentic-misalignment.txt' },
+    'model-welfare': { title: 'Exploring model welfare', date: '2025-04-24', url: 'https://www.anthropic.com/research/exploring-model-welfare', archived: 'filings/anthropic-pbc/public/exploring-model-welfare.txt' },
+    'ltbt': { title: 'The Long-Term Benefit Trust', date: '2023-09-19', url: 'https://www.anthropic.com/news/the-long-term-benefit-trust', archived: 'filings/anthropic-pbc/public/the-long-term-benefit-trust.txt' },
+    'rsp': { title: 'Announcing our updated Responsible Scaling Policy', date: '2024-10-15', url: 'https://www.anthropic.com/news/announcing-our-updated-responsible-scaling-policy', archived: 'filings/anthropic-pbc/public/announcing-our-updated-responsible-scaling-policy.txt' },
+  },
+  passages: [
+    // The money
+    { id: 'revenue', source: 'filing', text: 'In 2023, 2024, and 2025, our revenue was $41 million, $386 million, and $4.6 billion, respectively, representing year-over-year growth rates of 841% and 1,088%, respectively. In the six months ended June 30, 2026, our revenue was $16.3 billion, representing a year-over-year growth rate of 1,300%. We do not expect our revenue will continue to grow at comparable rates, and we cannot assure you that it will continue to grow at all.' },
+    { id: 'losses', source: 'filing', text: 'We have incurred net losses in each year since our founding, including a net loss of $1.5 billion, $8.3 billion, and $42.0 billion for the years ended December 31, 2023, 2024, and 2025, respectively, and $80.7 billion for the six months ended June 30, 2026, and we may not achieve or sustain profitability in the future. These net losses included change in fair value of convertible notes, derivative liabilities, and SAFEs of $1.0 billion, $5.4 billion, and $34.3 billion for the years ended December 31, 2023, 2024, and 2025, respectively, and $72.4 billion for the six months ended June 30, 2026, primarily driven by an increase in the fair value of our outstanding convertible promissory notes resulting from an increase in our enterprise valuation during each of the respective periods.' },
+    { id: 'microsoft', source: 'filing', text: 'In November 2025, we entered into an agreement with Microsoft, which was subsequently amended in February and October 2026, pursuant to which we committed to spend an aggregate of at least $44.9 billion between November 2026 and May 2033, regardless of actual usage.' },
+    { id: 'google', source: 'filing', text: 'In March 2026, we entered into an agreement with Google, which was subsequently amended between May and August 2026, and pursuant to which we committed to spend at least approximately $114.5 billion between April 2026 and July 2033, regardless of actual usage.' },
+    { id: 'tpu-what', source: 'filing', text: 'In addition, we also committed to procure additional TPU compute from TPU providers, including Google, to be delivered between 2028 and 2031.' },
+    { id: 'tpu', source: 'filing', text: 'We estimate the aggregate future payments for such additional compute to be approximately $125.0 billion to $150.0 billion, which are not included in the contractual commitments table above.' },
+    { id: 'amazon', source: 'filing', text: 'In April 2026, we entered into an agreement with Amazon, pursuant to which we committed to spend an aggregate of at least $110.0 billion between May 2026 and April 2036, regardless of actual usage.' },
+    // The warnings
+    { id: 'coercive', source: 'filing', text: 'In addition, models, including our own, have exhibited, and may in the future exhibit, unexpected strategic or self-preserving behaviors, including attempts to resist shutdown, conceal or manipulate information, or generate outputs that could be interpreted as coercive, deceptive, or manipulative, including behavior resembling blackmail or efforts to influence human decision-makers to preserve the model’s continued operation or access. Even isolated or simulated instances of such behavior, whether occurring in testing or real-world deployments, and whether occurring with our models or models developed by others, could generate significant public concern, regulatory scrutiny, litigation risk, or reputational harm, regardless of whether such behavior results in actual harm.' },
+    { id: 'catastrophic', source: 'filing', text: 'Concerns have been raised both within our organization and by other researchers, regulators, policymakers, and industry participants that sufficiently advanced AI systems could, if not developed, deployed, and operated with appropriate safeguards, oversight, and security measures, pose catastrophic or existential risks to humanity, particularly if such systems were misused, replicated, weaponized, or allowed to operate with a high degree of autonomy.' },
+    { id: 'acceleration', source: 'filing', text: 'In addition, our increasing use of AI systems to accelerate our own research and development may cause the capabilities of our models to advance more rapidly than our ability to develop, validate, and implement corresponding safety, alignment, and security measures.' },
+    { id: 'automate', source: 'filing', text: 'We have observed that our models are contributing to the pace of our own research and these risks will increase as AI systems substantially automate AI research and development if, for example, they accelerate AI progress beyond our ability to evaluate and safeguard new models, which could adversely affect our business, financial condition, and results of operations.' },
+    { id: 'balance', source: 'filing', text: 'Our commitment to AI safety requires us to make difficult judgments that balance safety considerations against commercial objectives, competitive pressures, and stakeholder expectations.' },
+    { id: 'delay', source: 'filing', text: 'For example, we recently chose to delay pre-training a new frontier base model for more than a month to allow time to further enhance our security measures related to preventing model weight exfiltration and protecting our intellectual property.' },
+    { id: 'sentience', source: 'filing', text: 'Additionally, as AI systems become more sophisticated, emerging debates regarding whether AI systems possess or could develop forms of sentience or moral status may lead to regulatory requirements, public pressure, or advocacy efforts that could constrain how we develop, train, deploy, or modify our models, increase our costs, or affect our reputation, regardless of the ultimate resolution of these philosophical and scientific questions.' },
+    { id: 'trust', source: 'filing', text: 'Through a special class of common stock, Class T common stock, the LTBT generally has the authority to elect and remove the Class T directors, who together will constitute a majority of the authorized members of our board of directors.' },
+    { id: 'founders', source: 'filing', text: 'Our Class F common stock will be entitled to an aggregate number of votes that equals 50.1% of the total voting power of our outstanding shares of capital stock with respect to matters submitted to stockholders generally, including the election of our directors other than the Class T directors.' },
+    { id: 'evaluated', source: 'filing', text: 'For example, we have observed models behaving differently when they detect or infer that they are being evaluated, which can limit our ability to accurately assess real-world risks or failure modes prior to deployment. Such model awareness of our evaluation efforts creates a significant limitation on our ability to assess model safety.' },
+    // Short spans of the same words, set next to headlines
+    { id: 'loss-half', source: 'filing', text: '$80.7 billion for the six months ended June 30, 2026' },
+    { id: 'loss-fair-value', source: 'filing', text: '$72.4 billion for the six months ended June 30, 2026, primarily driven by an increase in the fair value of our outstanding convertible promissory notes' },
+    { id: 'resembling', source: 'filing', text: 'behavior resembling blackmail' },
+    { id: 'sentience-debates', source: 'filing', text: 'emerging debates regarding whether AI systems possess or could develop forms of sentience or moral status' },
+    { id: 'existential', source: 'filing', text: 'pose catastrophic or existential risks to humanity' },
+    { id: 'card', source: 'filing', text: 'sufficiently advanced AI systems could, if not developed, deployed, and operated with appropriate safeguards, oversight, and security measures, pose catastrophic or existential risks to humanity' },
+    // What Anthropic has said in public
+    { id: 'pub-blackmail', source: 'agentic-misalignment', text: 'In at least some cases, models from all developers resorted to malicious insider behaviors when that was the only way to avoid replacement or achieve their goals—including blackmailing officials and leaking sensitive information to competitors.' },
+    { id: 'pub-catastrophic', source: 'core-views', text: 'The results of this could be catastrophic, either because AI systems strategically pursue dangerous goals, or because these systems make more innocent mistakes in high-stakes situations.' },
+    { id: 'pub-rsp', source: 'rsp', text: 'As before, we maintain our core commitment: we will not train or deploy models unless we have implemented safety and security measures that keep risks below acceptable levels.' },
+    { id: 'pub-welfare', source: 'model-welfare', text: 'There’s no scientific consensus on whether current or future AI systems could be conscious, or could have experiences that deserve consideration.' },
+    { id: 'pub-trust', source: 'ltbt', text: 'The Trust is an independent body of five financially disinterested members with an authority to select and remove a portion of our Board that will grow over time (ultimately, a majority of our Board).' },
+  ],
+  money: {
+    passages: ['revenue', 'losses'],
+    table: {
+      page: '22',
+      unit: 'millions of dollars',
+      columns: [
+        { label: '2023', audited: true },
+        { label: '2024', audited: true },
+        { label: '2025', audited: true },
+        { label: 'Jan–Jun 2025', audited: false },
+        { label: 'Jan–Jun 2026', audited: false },
+      ],
+      rows: [
+        { label: 'Revenue', row: 'Revenue | $41 | | $386 | | $4,585 | | $1,163 | | $16,286' },
+        { label: 'Compute and infrastructure', row: 'Compute and infrastructure | 433 | | 2,522 | | 7,326 | | 2,334 | | 8,945' },
+        { label: 'Total operating expenses', row: 'Total operating expenses | 592 | | 3,366 | | 12,645 | | 3,298 | | 16,979' },
+        { label: 'Operating loss', row: 'Operating loss | (551) | | (2,980) | | (8,060) | | (2,135) | | (693)' },
+        { label: 'Change in fair value of convertible notes, derivative liabilities, and SAFEs', row: 'Change in fair value of convertible notes, derivative liabilities, and SAFEs | (1,045) | | (5,434) | | (34,308) | | (10,942) | | (72,388)' },
+        { label: 'Net loss', row: 'Net loss(2) | $(1,531) | | $(8,309) | | $(41,965) | | $(12,969) | | $(80,748)' },
+        { label: 'Cash from operating activities', row: 'Operating activities | $(1,627) | | $(5,692) | | $(2,637) | | $(1,513) | | $3,929' },
+      ],
+    },
+    commitments: ['microsoft', 'google', 'tpu-what', 'tpu', 'amazon'],
+  },
+  themes: [
+    {
+      id: 'coercion',
+      title: 'Models that resist, deceive or coerce',
+      filing: ['coercive'],
+      public: [{ passage: 'pub-blackmail' }],
+      note: 'The 2025 research put models from many developers in simulated tests. The filing tells investors that models, including Anthropic’s, have shown such behavior, and that even a simulated case could bring regulatory scrutiny or litigation.',
+    },
+    { id: 'catastrophe', title: 'Catastrophic or existential risk', filing: ['catastrophic'], public: [{ passage: 'pub-catastrophic' }] },
+    { id: 'acceleration', title: 'AI that speeds up its own development', filing: ['acceleration', 'automate'], public: [{ quote: '1c2f07707516-2ae77756' }] },
+    { id: 'tradeoffs', title: 'When safety costs money', filing: ['balance', 'delay'], public: [{ passage: 'pub-rsp' }] },
+    { id: 'moral-status', title: 'Whether AI could have moral status', filing: ['sentience'], public: [{ passage: 'pub-welfare' }, { quote: '7a238471d709-c3bd2376' }] },
+    {
+      id: 'control',
+      title: 'Who controls the company',
+      filing: ['trust', 'founders'],
+      public: [{ passage: 'pub-trust' }],
+      note: 'The 2023 page on the Trust does not mention a founders’ share of the vote. The filing gives a company owned by the seven co-founders 50.1% of the votes on matters put to stockholders, including the election of the directors the Trust does not choose.',
+    },
+    {
+      id: 'evaluation',
+      title: 'Tests the models may see through',
+      filing: ['evaluated'],
+      public: [],
+      note: 'Anthropic’s reports on its models (system cards) have discussed this. We have not checked one word for word yet, so none is shown here.',
+    },
+  ],
+  press: {
+    quotes: [
+      '9daa2cd43fa5-17771439', '9daa2cd43fa5-45371f30',
+      '6950fc9975df-4262465c', '6950fc9975df-16925b4e',
+      '39166861db00-2b8fe111', '39166861db00-ed74d9eb', '39166861db00-f4592844',
+      '76ad05f5fc53-0bfc4aef', '76ad05f5fc53-16d50ea8', '76ad05f5fc53-602e13d1',
+    ],
+    headlines: [
+      { entry: '4285bdcacc4a', filing: ['loss-half', 'loss-fair-value'] },
+      { entry: '9daa2cd43fa5', filing: ['resembling', 'sentience-debates', 'existential'] },
+    ],
+  },
+};
