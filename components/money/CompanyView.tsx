@@ -47,6 +47,7 @@ export function CompanyView({ company, f }: { company: Company; f: Filing }) {
     { name: 'Google', from: '2026-04', to: '2033-07', amount: 'about $114.5B', detail: 'at least approximately; April 2026 to July 2033', page: page('google') },
     { name: 'Amazon', from: '2026-05', to: '2036-04', amount: 'at least $110.0B', detail: 'May 2026 to April 2036', page: page('amazon') },
     { name: 'More TPU compute', from: '2028-01', to: '2031-12', amount: '$125–150B', detail: 'estimated; to be delivered between 2028 and 2031', page: page('tpu'), estimate: true },
+    { name: 'AMD chips', from: '2027-01', to: '2027-12', amount: 'over $20B', detail: 'no fixed dollar commitment; expected to exceed $20.0B over the agreement’s term if the initial capacity, due in 2027, is bought', page: page('amd'), estimate: true },
   ];
   const sum = Math.round(COMMITTED.reduce((a, b) => a + b, 0));
   return (
@@ -93,9 +94,14 @@ export function CompanyView({ company, f }: { company: Company; f: Filing }) {
 
       <section className="fi-sec" aria-label="Computing commitments">
         <h2>What it has promised to spend on computing</h2>
-        <Timeline items={commitments} now={f.filed} note={`The sum of the three agreements’ minimums, about $${sum} billion, is ours. The filing says the company has other compute arrangements it does not describe.`} />
+        <Timeline items={commitments} now={f.filed} note={`The sum of the three agreements’ minimums, about $${sum} billion, is ours. The filing’s own figure for fixed or minimum purchase commitments, about $265.6 billion, is as of June 30, 2026, so the two are not the same count. The filing says it is also party to arrangements it does not describe.`} />
         <div className="fi-words">
           {f.money.commitments.map(id => <Words key={id} f={f} id={id} />)}
+        </div>
+        <h3 className="fi-h3">More arrangements the filing describes</h3>
+        <p className="fi-short">These have other terms, so they are not on the chart, and we do not add them to the figures above: ceilings that fill only as capacity is delivered, and equipment leases. Some can be cancelled; the filing’s words say which.</p>
+        <div className="fi-words">
+          {f.money.arrangements.map(id => <Words key={id} f={f} id={id} />)}
         </div>
       </section>
 

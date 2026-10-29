@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { COMPANIES, GROUPS, filingPath, getCompany, latestFiling } from '../content/money';
-import { passageOf } from '../content/filings';
+import { VERIFICATION, passageOf } from '../content/filings';
 import { brief, rowOf } from '../lib/money';
 
 const ROOT = path.join(import.meta.dirname, '..');
@@ -66,4 +66,19 @@ test('the old address of the S-1 page sends readers to its new one', () => {
   for (const c of COMPANIES) for (const f of c.filings) {
     assert.ok(config.includes(`source: '/filings/${f.slug}', destination: '${filingPath(f)}'`), `no redirect from /filings/${f.slug}`);
   }
+});
+
+test('the commitments section’s own figures are in the filing’s words, and every arrangement it lists is a checked passage', () => {
+  const f = latestFiling(getCompany('anthropic')!);
+  const view = fs.readFileSync(path.join(ROOT, 'components/money/CompanyView.tsx'), 'utf8');
+  // The note under the chart quotes the filing's total; the passage must state it.
+  assert.match(passageOf(f, 'commit-june').text, /\$265\.6 billion/);
+  assert.ok(view.includes('$265.6 billion'), 'the note no longer gives the filing’s figure');
+  const amd = passageOf(f, 'amd').text;
+  assert.match(amd, /does not specify a fixed dollar commitment/);
+  assert.match(amd, /exceed \$20\.0 billion/);
+  assert.ok(view.includes("name: 'AMD chips'") && view.includes('over $20B'), 'the AMD row on the chart does not match the passage');
+  for (const id of [...f.money.commitments, ...f.money.arrangements]) assert.ok(VERIFICATION.filings[f.slug].passages[id]?.ok, `${id} is not a checked passage`);
+  const listed = new Set([...f.money.commitments, ...f.money.arrangements]);
+  assert.equal(listed.size, f.money.commitments.length + f.money.arrangements.length, 'a passage is listed twice');
 });

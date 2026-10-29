@@ -200,10 +200,12 @@ export function Timeline({ items, now, note }: { items: Commitment[]; now: strin
   const narrow = W < NARROW;
   const row = narrow ? 50 : 40, T = narrow ? 38 : 30, L = narrow ? 2 : 150, R = narrow ? 2 : 124, barY = narrow ? 14 : 0, H = T + items.length * row + 8;
   const year = (d: string) => Number(d.slice(0, 4)) + (Number(d.slice(5, 7) || '1') - 1) / 12;
-  const lo = Math.floor(Math.min(...items.map(i => year(i.from)))), hi = Math.ceil(Math.max(...items.map(i => year(i.to))));
+  // A term runs to the end of its last month: "between November 2026 and May 2033" includes May.
+  const end = (d: string) => year(d) + 1 / 12;
+  const lo = Math.floor(Math.min(...items.map(i => year(i.from)))), hi = Math.ceil(Math.max(...items.map(i => end(i.to))));
   const x = (v: number) => L + ((W - L - R) * (v - lo)) / (hi - lo);
   const ticks = Array.from({ length: hi - lo + 1 }, (_, i) => lo + i).filter(t => (t - lo) % 2 === 0);
-  const legend = [{ name: 'Committed, “regardless of actual usage”', color: C.compute }, { name: 'Estimated, not in its commitments table', color: C.other }];
+  const legend = [{ name: 'Committed, “regardless of actual usage”', color: C.compute }, { name: 'No fixed amount: the filing’s estimate, outside its commitments table', color: C.other }];
   return (
     <Frame box={box} title="Computing commitments, by agreement and the years they run" legend={legend} note={note} width={W} height={H} label="Computing commitments by agreement and years">
       {show => (
@@ -217,7 +219,7 @@ export function Timeline({ items, now, note }: { items: Commitment[]; now: strin
           <line x1={x(year(now))} x2={x(year(now))} y1={T - 10} y2={H - 6} stroke={C.axis} strokeWidth={1} />
           <text x={x(year(now)) + 4} y={narrow ? 27 : T - 2} className="mo-tick">filed</text>
           {items.map((it, i) => {
-            const yy = T + i * row + 6, by = yy + barY, a = x(year(it.from)), b = x(year(it.to));
+            const yy = T + i * row + 6, by = yy + barY, a = x(year(it.from)), b = x(end(it.to));
             const tip = { title: it.name, lines: [{ name: `${it.detail} · page ${it.page}`, value: it.amount, color: it.estimate ? C.other : C.compute }] };
             return (
               <g key={it.name}>

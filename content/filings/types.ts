@@ -42,6 +42,8 @@ export type Filing = {
     /** The filing's summary table: its columns, which are audited, and the rows shown. */
     table: { page: string; unit: string; columns: { label: string; audited: boolean }[]; rows: TableRow[] };
     commitments: string[];
+    /** Other compute arrangements the filing describes, on other terms (ceilings, leases): quoted, not drawn or added up. */
+    arrangements: string[];
   };
   themes: Theme[];
   press: { quotes: string[]; headlines: Headline[] };
