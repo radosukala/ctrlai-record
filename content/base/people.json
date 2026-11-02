@@ -163,6 +163,11 @@
   ]
  },
  {
+  "id": "adam-scholl",
+  "name": "Adam Scholl",
+  "titles": []
+ },
+ {
   "id": "adel-khorramrouz",
   "name": "Adel Khorramrouz",
   "titles": []
@@ -2388,6 +2393,18 @@
   ]
  },
  {
+  "id": "chris-lehane",
+  "name": "Chris Lehane",
+  "titles": [
+   {
+    "title": "chief global affairs officer, OpenAI",
+    "entry": "axios-2026-11-01-openai-post-election-policy-push",
+    "on": "2026-11-01",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "chris-leong",
   "name": "Chris Leong",
   "titles": []
@@ -2772,6 +2789,18 @@
     "entry": "guardian-2026-10-24-volpato-synthetic-twin-licence",
     "on": "2026-10-24",
     "role": "subject"
+   }
+  ]
+ },
+ {
+  "id": "cristiano-lima-strong",
+  "name": "Cristiano Lima-Strong",
+  "titles": [
+   {
+    "title": "Senior AI and government reporter, Bloomberg Government",
+    "entry": "bloomberg-2026-11-01-ai-midterm-campaigns",
+    "on": "2026-11-01",
+    "role": "speaker"
    }
   ]
  },
@@ -4688,6 +4717,18 @@
   "id": "fahmida-alam",
   "name": "Fahmida Alam",
   "titles": []
+ },
+ {
+  "id": "fareed-zakaria",
+  "name": "Fareed Zakaria",
+  "titles": [
+   {
+    "title": "CNN host",
+    "entry": "cnn-2026-11-02-fareeds-take-ai-regulation",
+    "on": "2026-11-02",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "fasheng-miao",
@@ -7029,6 +7070,18 @@
   "titles": []
  },
  {
+  "id": "joscha-bach",
+  "name": "Joscha Bach",
+  "titles": [
+   {
+    "title": "Founder, California Institute for Machine Consciousness",
+    "entry": "mlst-2026-11-02-joscha-bach-leibniz-mill",
+    "on": "2026-11-02",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "jose-pombal",
   "name": "José Pombal",
   "titles": []
@@ -8182,6 +8235,11 @@
   ]
  },
  {
+  "id": "lauren-almeida",
+  "name": "Lauren Almeida",
+  "titles": []
+ },
+ {
   "id": "lauren-feiner",
   "name": "Lauren Feiner",
   "titles": [
@@ -8418,6 +8476,12 @@
   "name": "Liron Shapira",
   "titles": [
    {
+    "title": "Host of Doom Debates",
+    "entry": "lesswrong-2026-11-01-towards-the-autograntor",
+    "on": "2026-11-01",
+    "role": "subject"
+   },
+   {
     "title": "Host, Doom Debates",
     "entry": "doom-debates-2026-10-13-elmore-case-against-yudkowsky",
     "on": "2026-10-13",
@@ -8453,6 +8517,12 @@
   "id": "lisa-mateo",
   "name": "Lisa Mateo",
   "titles": [
+   {
+    "title": "Host, Bloomberg This Weekend",
+    "entry": "bloomberg-2026-11-01-ai-midterm-campaigns",
+    "on": "2026-11-01",
+    "role": "speaker"
+   },
    {
     "title": "host",
     "entry": "bloomberg-2026-10-31-ai-spending-fears-big-tech",
@@ -9083,6 +9153,11 @@
   ]
  },
  {
+  "id": "mark-warner",
+  "name": "Mark Warner",
+  "titles": []
+ },
+ {
   "id": "mark-zuckerberg",
   "name": "Mark Zuckerberg",
   "titles": [
@@ -9358,6 +9433,11 @@
  {
   "id": "maya-yang",
   "name": "Maya Yang",
+  "titles": []
+ },
+ {
+  "id": "mcnairs",
+  "name": "mcnairs",
   "titles": []
  },
  {
@@ -9695,6 +9775,11 @@
   ]
  },
  {
+  "id": "mikhail-samin",
+  "name": "Mikhail Samin",
+  "titles": []
+ },
+ {
   "id": "mikita-balesni",
   "name": "Mikita Balesni",
   "titles": [
@@ -9799,6 +9884,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "mithindon",
+  "name": "Mithindon",
+  "titles": []
  },
  {
   "id": "mo-fan",
@@ -9962,6 +10052,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "natalie-cargill",
+  "name": "Natalie Cargill",
+  "titles": []
  },
  {
   "id": "nate-anderson",
@@ -11980,7 +12075,14 @@
  {
   "id": "scott-alexander",
   "name": "Scott Alexander",
-  "titles": []
+  "titles": [
+   {
+    "title": "Grantmaker for the Survival and Flourishing Fund and Lightcone Commons",
+    "entry": "lesswrong-2026-11-01-towards-the-autograntor",
+    "on": "2026-11-01",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "scott-kupor",
@@ -11999,6 +12101,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "scott-wiener",
+  "name": "Scott Wiener",
+  "titles": []
  },
  {
   "id": "sean-casten",
@@ -12301,6 +12408,11 @@
  {
   "id": "siyuan-chen",
   "name": "Siyuan Chen",
+  "titles": []
+ },
+ {
+  "id": "sj-beard",
+  "name": "SJ_Beard",
   "titles": []
  },
  {
@@ -12655,6 +12767,11 @@
  {
   "id": "taylor-telford",
   "name": "Taylor Telford",
+  "titles": []
+ },
+ {
+  "id": "teatieandhat",
+  "name": "TeaTieAndHat",
   "titles": []
  },
  {

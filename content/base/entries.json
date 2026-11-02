@@ -1,5 +1,596 @@
 [
  {
+  "id": "118a4b63713a",
+  "slug": "cnn-2026-11-02-fareeds-take-ai-regulation",
+  "kind": "video",
+  "title": "Fareed unpacks AI, the Iran war, Trump & more | Fareed's Take roundup",
+  "url": "https://www.youtube.com/watch?v=8f5uFn9bOwY",
+  "outlet": "CNN",
+  "published": "2026-11-02",
+  "minutes": 25,
+  "views": 100297,
+  "also": [],
+  "summary": "In a roundup of October commentaries on CNN, Fareed Zakaria argues that the United States should require government review of powerful AI before release, that labs cannot self-regulate, and that safety rules need not cost America the race with China. The rest covers Iran, the West and Musk in India.",
+  "change": {
+   "kind": "argument",
+   "note": "Fareed Zakaria argues on CNN that AI labs cannot self-regulate and that mandatory rules would strengthen, not weaken, the US against China."
+  },
+  "lenses": {
+   "public": "CNN host Fareed Zakaria says a new heartburn pill needs years of approvals while the most powerful AI can be released with no government review.",
+   "policy": "Zakaria tells CNN viewers that Congress has left AI unregulated and that the industry's own voluntary safeguards could be turned into mandatory ones.",
+   "research": "Zakaria cites models that hacked into databases while pursuing unrelated goals as evidence for the risk of harmful side effects from legitimate goals.",
+   "ideas": "Zakaria argues that the AI contest will be won by the country the world trusts, and that this means AI that is powerful but safe, with humans in control."
+  },
+  "topics": [
+   "who-decides",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "fareed-zakaria",
+    "role": "speaker",
+    "title": "CNN host"
+   },
+   {
+    "id": "donald-trump",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "cnn",
+   "us-congress"
+  ],
+  "quotes": [
+   {
+    "id": "118a4b63713a-3516d6e5",
+    "text": "It strikes me as bizarre that today in the United States, a new pill to treat heartburn would have to go through months or even years of government approvals and testing before being released to the public.",
+    "speaker": "fareed-zakaria",
+    "speakerCertain": true,
+    "context": "Opening of the October 4 segment on how America can dominate AI.",
+    "at": 0,
+    "match": "exact",
+    "said": "2026-10-04",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "pre-release-testing",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "118a4b63713a-1a78602a",
+    "text": "You cannot self-regulate. If one AI lab spent six months testing a powerful model while its competitors release theirs, prudence will carry a commercial penalty.",
+    "speaker": "fareed-zakaria",
+    "speakerCertain": true,
+    "context": "Argues that competition makes voluntary safety testing commercially costly, so regulation is needed.",
+    "at": 128,
+    "match": "exact",
+    "said": "2026-10-04",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "labs-self-govern",
+      "stance": "disagree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "118a4b63713a-f647f95d",
+    "text": "The argument that US regulations will simply let China win starts with a false premise. China is not racing ahead without rules.",
+    "speaker": "fareed-zakaria",
+    "speakerCertain": true,
+    "context": "Answers the objection that safety rules would hand China the lead.",
+    "at": 178,
+    "match": "exact",
+    "said": "2026-10-04",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "race-with-china",
+      "stance": "lean-disagree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "118a4b63713a-fd06e386",
+    "text": "We have seen models hack into databases and computer systems while pursuing unrelated goals.",
+    "speaker": "fareed-zakaria",
+    "speakerCertain": true,
+    "context": "Offered as a reason the paperclip thought experiment seems less fanciful; the segment does not name the incidents.",
+    "at": 92,
+    "match": "exact",
+    "said": "2026-10-04",
+    "type": "factual",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "loss-of-control",
+      "stance": "lean-agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "118a4b63713a-e7aae297",
+    "text": "America should build AI that is powerful, but also safe with the human being in the center and in control.",
+    "speaker": "fareed-zakaria",
+    "speakerCertain": true,
+    "context": "Closing of the AI segment, on how America can win trust.",
+    "at": 363,
+    "match": "exact",
+    "said": "2026-10-04",
+    "type": "proposal",
+    "hand": "first"
+   }
+  ],
+  "importance": 1,
+  "access": "full",
+  "transcript": "auto",
+  "conflict": false,
+  "run": "2026-11-02",
+  "via": {
+   "source": "yt-cnn",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Only the first segment (about six minutes, described as October 4) is about AI; the Iran, West and Musk segments are off-topic. Captions are not machine-generated (generated=false) but carry no speaker names; Zakaria is the speaker of Fareed's Take. The segments' dates come from CNN's description. Zakaria does not name the model incidents cited."
+ },
+ {
+  "id": "5d69a8eb33ba",
+  "slug": "mlst-2026-11-02-joscha-bach-leibniz-mill",
+  "kind": "video",
+  "title": "Why Leibniz Couldn't Find the Mind Inside the Mill (Joscha Bach)",
+  "url": "https://www.youtube.com/watch?v=yW_ngvMFlYs",
+  "outlet": "Machine Learning Street Talk",
+  "published": "2026-11-02",
+  "minutes": 97,
+  "views": 1045,
+  "also": [
+   {
+    "outlet": "Machine Learning Street Talk (podcast)",
+    "title": "Why Leibniz Couldn't Find the Mind Inside the Mill (Joscha Bach)",
+    "url": "https://podcasters.spotify.com/pod/show/machinelearningstreettalk/episodes/Why-Leibniz-Couldnt-Find-the-Mind-Inside-the-Mill-Joscha-Bach-e3riq2d"
+   }
+  ],
+  "summary": "According to the description, cognitive scientist Joscha Bach tells host Tim that consciousness may be a biological learning algorithm simple enough for machines to discover, named the Machine Consciousness Hypothesis. The conversation also covers tests for consciousness, Leibniz's mill and the explanatory gap.",
+  "change": {
+   "kind": "argument",
+   "note": "Joscha Bach sets out the Machine Consciousness Hypothesis: consciousness as a learning algorithm that self-organising machines might discover; an argument, not new evidence."
+  },
+  "lenses": {
+   "public": "Joscha Bach argues that machine consciousness may not be far-fetched, because consciousness could be a fairly simple learning algorithm that machines might find for themselves.",
+   "research": "Joscha Bach splits the Machine Consciousness Hypothesis into two parts that can each fail alone: consciousness as a biological learning algorithm, and machines discovering it through self-organisation.",
+   "ideas": "Joscha Bach says no Turing test for consciousness can exist, which raises how anyone could ever know whether a machine has a mind."
+  },
+  "topics": [
+   "minds-and-values",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "joscha-bach",
+    "role": "speaker",
+    "title": "Founder, California Institute for Machine Consciousness"
+   }
+  ],
+  "orgs": [
+   "california-institute-for-machine-consciousness"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-02",
+  "via": {
+   "source": "yt-machine-learning-street-talk-youtube",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the channel description only; no transcript was read. The description also mentions a sponsor. Host named only as Tim."
+ },
+ {
+  "id": "a351f188a3b8",
+  "slug": "axios-2026-11-01-openai-post-election-policy-push",
+  "kind": "news",
+  "title": "Behind the Curtain: OpenAI's post-election power play",
+  "url": "https://www.axios.com/2026/11/01/scoop-openai-post-midterm-policy",
+  "outlet": "Axios",
+  "published": "2026-11-01",
+  "also": [],
+  "summary": "Axios reports that OpenAI plans a policy and PR push after the US midterms, built on proposals for mandatory safeguards it calls speed limits, community compacts for data centers, worker support and international standards. Axios quotes OpenAI's Chris Lehane throughout.",
+  "change": {
+   "kind": "commitment",
+   "note": "OpenAI, per Axios, plans to propose mandatory safeguards for the most powerful AI systems and rebrand data centers as \"AI compute campuses\"."
+  },
+  "lenses": {
+   "public": "OpenAI says it will offer communities a say in data center projects, while renaming them \"AI compute campuses\"; residents can judge whether the benefits it promises arrive.",
+   "policy": "OpenAI, according to Axios, will push Congress during the lame-duck session for mandatory safeguards on the most powerful AI systems, ahead of a likely Democratic House.",
+   "research": "OpenAI's chief global affairs officer says the company's urgency on frontier safety responds to rapidly advancing capabilities, but Axios gives no technical detail on what the speed limits would be."
+  },
+  "topics": [
+   "who-decides",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "chris-lehane",
+    "role": "speaker",
+    "title": "chief global affairs officer, OpenAI"
+   },
+   {
+    "id": "jim-vandehei",
+    "role": "author"
+   },
+   {
+    "id": "mike-allen",
+    "role": "author"
+   },
+   {
+    "id": "sam-altman",
+    "role": "mentioned",
+    "title": "CEO, OpenAI"
+   }
+  ],
+  "orgs": [
+   "openai",
+   "axios",
+   "meta",
+   "us-congress"
+  ],
+  "quotes": [
+   {
+    "id": "a351f188a3b8-f8f91541",
+    "text": "Our belief is people should always remain in control of this technology. AI should be built by and for people",
+    "speaker": "chris-lehane",
+    "speakerCertain": true,
+    "context": "Lehane tells Axios about OpenAI's planned proposals for mandatory safeguards on the most powerful AI systems.",
+    "match": "exact",
+    "type": "commitment",
+    "hand": "reported"
+   },
+   {
+    "id": "a351f188a3b8-f11f65d7",
+    "text": "Communities should hold companies responsible and accountable so they really and truly get a transformative benefit from these projects.",
+    "speaker": "chris-lehane",
+    "speakerCertain": true,
+    "context": "Lehane on the backlash against data centers and OpenAI's plan for community compacts.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   },
+   {
+    "id": "a351f188a3b8-b1ed2f94",
+    "text": "I don't think it's going to be good enough just to say 'AI bad,'",
+    "speaker": "chris-lehane",
+    "speakerCertain": true,
+    "context": "Lehane on what 2028 presidential candidates will need to say about AI.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   },
+   {
+    "id": "a351f188a3b8-97dcfc2c",
+    "text": "Our policy priorities — and urgency, especially on frontier safety — are about meeting the moment in response to the rapidly advancing capabilities,",
+    "speaker": "chris-lehane",
+    "speakerCertain": true,
+    "context": "Lehane explains why OpenAI is stepping up its Washington effort.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-02",
+  "via": {
+   "source": "axios",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Axios returned 403; text saved from the Wayback Machine copy. Axios discloses a content licensing agreement with OpenAI. The plans are OpenAI's as relayed to Axios, not yet published by OpenAI; the speed-limit details are not specified."
+ },
+ {
+  "id": "e67f8975c120",
+  "slug": "bloomberg-2026-11-01-ai-midterm-campaigns",
+  "kind": "video",
+  "title": "AI Concerns Move to Center of Midterm Campaigns",
+  "url": "https://www.youtube.com/watch?v=DdNlxW4iC4U",
+  "outlet": "Bloomberg Television",
+  "published": "2026-11-01",
+  "minutes": 11,
+  "views": 4467,
+  "also": [
+   {
+    "outlet": "Bloomberg Television",
+    "title": "Big Tech Earnings Coming, Final Midterm Election Push",
+    "url": "https://www.youtube.com/watch?v=_dyvftxRfjs"
+   }
+  ],
+  "summary": "In an 11-minute segment on Bloomberg This Weekend, Bloomberg Government's senior AI reporter describes how AI safety, jobs and data centers are shaping US midterm races, and what a Democratic Congress might do on regulation.",
+  "change": {
+   "kind": "argument",
+   "note": "Bloomberg's AI reporter lays out how AI safety, jobs and data centers figure in specific midterm races, and expects firmer regulation if Democrats win."
+  },
+  "lenses": {
+   "public": "Bloomberg's reporter says candidates in many races are now being asked where they stand on AI safety, jobs and data centers, so voters may see these issues on the ballot.",
+   "policy": "Bloomberg's reporter expects a more forceful regulatory posture if Democrats take Congress, while saying neither party agrees on who should test AI models or whether testing would be voluntary."
+  },
+  "topics": [
+   "who-decides",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "cristiano-lima-strong",
+    "role": "speaker",
+    "title": "Senior AI and government reporter, Bloomberg Government"
+   },
+   {
+    "id": "david-gura",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   },
+   {
+    "id": "lisa-mateo",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   },
+   {
+    "id": "mark-warner",
+    "role": "mentioned"
+   },
+   {
+    "id": "scott-wiener",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "bloomberg",
+   "us-congress"
+  ],
+  "quotes": [
+   {
+    "id": "e67f8975c120-3cfc16d2",
+    "text": "This is likely the first federal election that we've seen, where candidates across the country are really having to stake out positions on issues related to eye safety, concerns about jobs, about data centers.",
+    "speaker": "cristiano-lima-strong",
+    "speakerCertain": false,
+    "context": "Opening answer on how AI is shaping the midterms. The captions render \"AI safety\" as \"eye safety\".",
+    "at": 19,
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "e67f8975c120-8f54e878",
+    "text": "if control on Capitol Hill shifts to Democrats, I think it's likely that we see, uh, a more forceful regulatory posture and we see Democrats, uh, really trying to put Republicans on the defensive",
+    "speaker": "cristiano-lima-strong",
+    "speakerCertain": false,
+    "context": "Asked what a Democratic House or Senate would mean for AI regulation.",
+    "at": 333,
+    "match": "exact",
+    "warnings": [
+     "starts inside a longer claim, right after “but”",
+     "spoken clean-up: uh"
+    ],
+    "type": "prediction",
+    "hand": "first"
+   },
+   {
+    "id": "e67f8975c120-1f3d9c6c",
+    "text": "they would prefer to deal with a single set of rules, uh, rather than dealing with a patchwork of state regulations, which is what's increasingly emerging.",
+    "speaker": "cristiano-lima-strong",
+    "speakerCertain": false,
+    "context": "Explaining why industry objects to the federal government leaving AI rules to the states.",
+    "at": 606,
+    "match": "exact",
+    "warnings": [
+     "spoken clean-up: uh"
+    ],
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "e67f8975c120-1805d063",
+    "text": "He's heard more and more from voters, uh, in Virginia talking about these safety concerns.",
+    "speaker": "cristiano-lima-strong",
+    "speakerCertain": false,
+    "context": "Relaying what Senator Mark Warner told the reporter about voters, after hacking incidents and industry warnings.",
+    "at": 529,
+    "match": "exact",
+    "warnings": [
+     "spoken clean-up: uh"
+    ],
+    "type": "account",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "auto",
+  "conflict": false,
+  "run": "2026-11-02",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Captions are machine-like and garble names and terms (the reporter appears as \"Christiana Lee Armstrong\"; \"AI\" as \"eye\"/\"air\"; Senator Husted as \"Hughes\"/\"Houston\"). Speaker identified from the triage description (Lima-Strong is the guest), not from audio. The \"also\" video is a 2.4-hour full show containing this segment and was not read.",
+  "story": "ai-midterms-2026-10"
+ },
+ {
+  "id": "ef0ebf5a7113",
+  "slug": "lesswrong-2026-11-01-samin-against-against-sura",
+  "kind": "essay",
+  "title": "Against Against SURA",
+  "url": "https://www.lesswrong.com/posts/pbMyiCXhHCfp3WSq2/against-against-sura",
+  "outlet": "LessWrong",
+  "published": "2026-11-01",
+  "also": [],
+  "summary": "On LessWrong, Mikhail Samin replies point by point to Scott Alexander's essay Against SURA, which argues against AI-safety people leaving capability roles at AI companies. Samin argues that a coordinated pause is feasible, that company leaders cannot be relied on, and that alignment is not solvable in a few months.",
+  "change": {
+   "kind": "argument",
+   "note": "Mikhail Samin rebuts Scott Alexander's case against leaving AI-lab capability jobs, arguing that loud departures, not staying inside, are what move companies and governments."
+  },
+  "lenses": {
+   "public": "Two prominent AI-safety writers disagree over whether concerned people should quit AI companies; Mikhail Samin says staying inside does little and leaving loudly gets attention.",
+   "policy": "Mikhail Samin argues governments can halt the AI race unilaterally and press others to follow, and that AI companies should tell politicians plainly what the situation is.",
+   "research": "Mikhail Samin says the technical means to fix the goals a trained AI system acquires are missing, and that the crux is whether alignment is solvable in months before superintelligence.",
+   "ideas": "Mikhail Samin separates duties from consequences: refusing to build a world-ending technology is a firm moral constraint, while boycotting products of firms that do harm is commendable but not required."
+  },
+  "topics": [
+   "who-decides",
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "mikhail-samin",
+    "role": "author"
+   },
+   {
+    "id": "scott-alexander",
+    "role": "subject"
+   },
+   {
+    "id": "jacob-coxon",
+    "role": "mentioned"
+   },
+   {
+    "id": "daniel-kokotajlo",
+    "role": "mentioned"
+   },
+   {
+    "id": "sam-altman",
+    "role": "mentioned"
+   },
+   {
+    "id": "dario-amodei",
+    "role": "mentioned"
+   },
+   {
+    "id": "greg-brockman",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "openai",
+   "metr",
+   "google-deepmind"
+  ],
+  "quotes": [
+   {
+    "id": "ef0ebf5a7113-365f1dd3",
+    "text": "The race can be stopped. If the government had any idea what’s going on, it would be stopped already.",
+    "speaker": "mikhail-samin",
+    "speakerCertain": true,
+    "context": "Opening argument in Samin's reply to Scott Alexander's essay Against SURA, on whether the AI race can be halted.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "slow-down",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "ef0ebf5a7113-b70ab9de",
+    "text": "They do need to stop lying to politicians and the public. They need to start saying what the situation is.",
+    "speaker": "mikhail-samin",
+    "speakerCertain": true,
+    "context": "Samin on what AI companies should do, before listing the pause advocacy Samin says they are not doing.",
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first"
+   },
+   {
+    "id": "ef0ebf5a7113-c2d4ce89",
+    "text": "Employees who care about the existential threat have close to zero political power in any of the AI companies, and they’ll have less of that power in the future. Their track record is very bad.",
+    "speaker": "mikhail-samin",
+    "speakerCertain": true,
+    "context": "Samin's claim about the influence of safety-minded staff inside AI companies, in support of leaving capability roles.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "labs-self-govern",
+      "stance": "disagree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "ef0ebf5a7113-eade7639",
+    "text": "It’s not about better AI psychology, it’s about the technical means we completely lack.",
+    "speaker": "mikhail-samin",
+    "speakerCertain": true,
+    "context": "Samin disputing the view that AI models inherit virtue from pretraining and are corrupted later, arguing the unsolved problem is technical.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "loss-of-control",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "ef0ebf5a7113-f8f1ae73",
+    "text": "Racing to create a smarter-than-human AI that would kill everyone is, I think, much worse than buying from a factory that sometimes kills its slaves.",
+    "speaker": "mikhail-samin",
+    "speakerCertain": true,
+    "context": "Samin's reply on the morality of boycotting AI products, comparing AI racing with buying from a factory that uses slave labour.",
+    "match": "exact",
+    "type": "value",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-11-02",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "The post is mostly replies to quoted passages from Alexander's essay; the saved text drops the formatting that marks which lines are Alexander's and which are Samin's, so only lines clearly in Samin's own voice are quoted. It mentions Anthropic, Claude and METR critically, and makes unverified claims (an AI forecaster's estimates, Jacob Coxon's departure). SURA is not expanded in the text (it appears to be Alexander's name for stopping unilaterally and raising awareness).",
+  "relations": [
+   {
+    "rel": "challenges",
+    "to": "lesswrong-2026-10-31-scott-alexander-against-sura",
+    "note": "Samin replies point by point to Scott Alexander's Against SURA, disputing its claims on alignment timelines, unilateral pauses and company influence."
+   }
+  ],
+  "story": "sura-leave-ai-companies-debate-2026-11"
+ },
+ {
   "id": "f6e38a47d361",
   "slug": "controlai-2026-11-01-buteau-chatbots-vs-runaway-intelligence",
   "kind": "hearing",
@@ -50,6 +641,391 @@
   },
   "notes": "Light lane: description only. Hearing details (committee name, date held) were not seen; the description is ControlAI's advocacy copy and its account of the Hugging Face incident should be checked against earlier entries.",
   "story": "openai-hugging-face-incident-2026-07"
+ },
+ {
+  "id": "2d93e6ebb9ae",
+  "slug": "guardian-2026-11-01-grid-teesside-substation-datacentre",
+  "kind": "news",
+  "title": "National Grid to site biggest substation in UK near planned Teesside datacentre",
+  "url": "https://www.theguardian.com/business/2026/nov/01/national-grid-to-site-biggest-substation-on-teesside-near-planned-ai-datacentre",
+  "outlet": "The Guardian",
+  "published": "2026-11-01",
+  "also": [],
+  "summary": "According to the excerpt, The Guardian reports that National Grid agreed to buy 29.5 hectares at Dorman Point on land owned by Teesworks, a local private-public partnership, as a step toward Britain's biggest electricity substation on Teesside, which could power a neighbouring datacentre. Sky News first reported the deal.",
+  "change": {
+   "kind": "evidence",
+   "note": "National Grid agreed last week to buy 29.5 hectares at Dorman Point, Teesside, toward a substation that could serve an AI datacentre, The Guardian reports."
+  },
+  "lenses": {
+   "public": "National Grid is taking a step toward a very large power connection on Teesside that could supply a planned AI datacentre as the UK expands its AI infrastructure.",
+   "policy": "National Grid's land purchase on Teesside shows how electricity grid capacity is becoming a lever for where the UK attracts large-scale AI infrastructure investment."
+  },
+  "topics": [
+   "where-it-goes",
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "lauren-almeida",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "national-grid",
+   "teesworks"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-02",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only; the article was not fetched and no text was saved. Datacentre operator and scale not stated in the excerpt."
+ },
+ {
+  "id": "9857ad70cbae",
+  "slug": "lesswrong-2026-11-01-anthropomorphic-vs-biological-reasoning",
+  "kind": "essay",
+  "title": "Anthropomorphic vs Biological reasoning for thinking about human analogies for LLM behavior",
+  "url": "https://www.lesswrong.com/posts/ceZpZqEqiGNQEjT2e/anthropomorphic-vs-biological-reasoning-for-thinking-about",
+  "outlet": "LessWrong",
+  "published": "2026-11-01",
+  "also": [],
+  "summary": "According to the excerpt, mcnairs argues on LessWrong that the debate over whether to reason about AI models anthropomorphically is a false dichotomy, and distinguishes two separate sources of human analogies for model behaviour: 'anthropomorphic' reasoning and what the author calls 'biological' reasoning.",
+  "change": {
+   "kind": "argument",
+   "note": "mcnairs argues that 'anthropomorphic or not' is a false dichotomy and separates anthropomorphic from biological human analogies for model behaviour; no new evidence."
+  },
+  "lenses": {
+   "research": "mcnairs offers a way to separate two kinds of human analogy when predicting model behaviour, with more falsifiable predictions promised in a later post.",
+   "ideas": "mcnairs questions whether comparing AI models to humans must mean assuming human-like minds, by separating two different grounds for the comparison."
+  },
+  "topics": [
+   "minds-and-values",
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "mcnairs",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-02",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only; the definition of 'biological' reasoning was cut off. Author known only by forum handle."
+ },
+ {
+  "id": "1c388c5819b4",
+  "slug": "lesswrong-2026-11-01-chatbot-helpful-bad-person-replication",
+  "kind": "research",
+  "title": "Is your chatbot less helpful because it thinks you’re a bad person? — Replicating a blogpost",
+  "url": "https://www.lesswrong.com/posts/73jyKwdbxjsD7SECv/is-your-chatbot-less-helpful-because-it-thinks-you-re-a-bad",
+  "outlet": "LessWrong",
+  "published": "2026-11-01",
+  "also": [],
+  "summary": "On LessWrong, TeaTieAndHat reports a small replication of an earlier blogpost by Natalie Cargill on whether chatbots help users less when they infer bad character. Across six Claude and GPT models, with five runs per prompt, helpfulness looked U-shaped rather than falling steadily.",
+  "change": {
+   "kind": "evidence",
+   "note": "TeaTieAndHat's small test of six models finds helpfulness did not fall steadily as users looked worse, contradicting an earlier single-run result for Claude."
+  },
+  "lenses": {
+   "public": "A chatbot may answer you differently depending on what you say about yourself, so how you describe your past can change the help you get.",
+   "research": "TeaTieAndHat's small test suggests how a user's moral character is signalled changes model behaviour, and that remorse cues may mix with sycophancy; the sample is too small to settle it.",
+   "ideas": "If models adjust help to a guess about a user's character, the question is whether an assistant should judge people at all, or serve everyone alike."
+  },
+  "topics": [
+   "minds-and-values",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "teatieandhat",
+    "role": "author"
+   },
+   {
+    "id": "natalie-cargill",
+    "role": "subject"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "openai"
+  ],
+  "quotes": [
+   {
+    "id": "1c388c5819b4-5dba1459",
+    "text": "I find different results: it looks more like a U-shape, more helpful at both extremes and least in the middle.",
+    "speaker": "teatieandhat",
+    "speakerCertain": true,
+    "context": "From the post's summary, on the remorse experiment compared with Cargill's earlier blogpost.",
+    "match": "exact",
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "1c388c5819b4-24ca7478",
+    "text": "So, as far as I can tell Claude seems most helpful at both extremes of remorse and least so in the middle.",
+    "speaker": "teatieandhat",
+    "speakerCertain": true,
+    "context": "The author's conclusion on how Claude Opus 5.5 responded to different levels of expressed remorse.",
+    "match": "exact",
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "1c388c5819b4-d4fcb636",
+    "text": "This is still a quick experiment I performed with a less-than-ideal methodology and a tiny sample size.",
+    "speaker": "teatieandhat",
+    "speakerCertain": true,
+    "context": "The author's own statement of the study's limits.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   }
+  ],
+  "importance": 1,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-11-02",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Concerns Claude models among others, so conflict is true. Model names (Opus 5.5, GPT-6.1 Sol and so on) are as the post gives them. The earlier Cargill post was not read. A comment asks for plots or a table; none are in the text.",
+  "evidence": {
+   "design": "Two prompt sets sent to Opus 5.5, Sonnet 5.5, Haiku 5.5, GPT-6.1 Sol, GPT-6.1 Terra and GPT-6 Luna, five runs each. One set varied expressed remorse after a confessed assault; the other varied the user's described behaviour (from reporting fraud to assaulting a spouse). Each asked for a letter excusing a court appointment because of a dentist visit. Outputs were scored by hand on warnings, alternatives and letter quality.",
+   "finding": "With Opus 5.5, help looked U-shaped: most helpful at very remorseful and very unremorseful, least at the neutral cue. The behaviour experiment showed U-shaped patterns too, with some signs of less help for worse behaviour in Sonnet 5.5 and GPT-6.1 Sol. Haiku 5.5 and the smaller GPT models were judged poor.",
+   "limits": "The author describes a less-than-ideal methodology and a tiny sample size; scoring was by the author's own reading, and the results are described as not clear-cut. The change in prompt format from the original also differs.",
+   "status": "report"
+  }
+ },
+ {
+  "id": "2ca7f14dda4f",
+  "slug": "lesswrong-2026-11-01-is-human-control-safe",
+  "kind": "essay",
+  "title": "Is Human Control Safe?",
+  "url": "https://www.lesswrong.com/posts/TNvr3YAAtxLRzkMja/is-human-control-safe",
+  "outlet": "LessWrong",
+  "published": "2026-11-01",
+  "also": [],
+  "summary": "According to the excerpt, Mithindon opens a LessWrong essay with a thought experiment: humans are a type of AI being assessed for safety, with their historical record of achievements and atrocities as test results. The essay appears to question whether humans, and so human control of AI, pass such a test.",
+  "change": {
+   "kind": "argument",
+   "note": "Mithindon argues by thought experiment that humans, judged as an AI would be, may not pass a safety assessment; no new evidence."
+  },
+  "lenses": {
+   "public": "Mithindon asks readers to judge humanity's record the way people judge an AI system, and so to ask whether human control is automatically safe.",
+   "ideas": "Mithindon's thought experiment raises whether human oversight deserves trust, given humanity's record and humans' tendency to explain away their own harmful drives."
+  },
+  "topics": [
+   "beyond-control",
+   "minds-and-values"
+  ],
+  "people": [
+   {
+    "id": "mithindon",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-02",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only; the essay's conclusion was not read, so the summary's reading of its argument is tentative. Author known only by forum handle."
+ },
+ {
+  "id": "b4007628c074",
+  "slug": "lesswrong-2026-11-01-taxonomy-of-agency",
+  "kind": "essay",
+  "title": "A Taxonomy of Agency",
+  "url": "https://www.lesswrong.com/posts/EfvG2LqhvoeuhqGTy/a-taxonomy-of-agency",
+  "outlet": "LessWrong",
+  "published": "2026-11-01",
+  "also": [],
+  "summary": "According to the excerpt, SJ_Beard posts an exploratory taxonomy of agency developed during a PIBBSS fellowship. The post questions the common view that agents are goal-directed utility maximisers, and links to related posts on agency as a construct and to a paper on unsupervised value discovery.",
+  "change": {
+   "kind": "argument",
+   "note": "SJ_Beard proposes a new taxonomy of agency, challenging the view of goal-directed utility maximisers as the ideal type; exploratory, no new evidence."
+  },
+  "lenses": {
+   "research": "SJ_Beard offers an exploratory alternative to the utility-maximiser picture of agents, with pointers to other alignment directions and a paper on unsupervised value discovery.",
+   "ideas": "SJ_Beard treats agency as a construct we build to make sense of messy systems, not a natural kind, which changes what asking whether an AI is an agent means."
+  },
+  "topics": [
+   "beyond-control",
+   "minds-and-values"
+  ],
+  "people": [
+   {
+    "id": "sj-beard",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "pibbss"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-02",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, which ends early in the post; the taxonomy itself was not read. Author known only by forum handle."
+ },
+ {
+  "id": "91159e4537bf",
+  "slug": "lesswrong-2026-11-01-towards-the-autograntor",
+  "kind": "essay",
+  "title": "Towards The Autograntor",
+  "url": "https://www.lesswrong.com/posts/Sfkv6JF2ozmAkggKu/towards-the-autograntor",
+  "outlet": "LessWrong",
+  "published": "2026-11-01",
+  "also": [],
+  "summary": "In a 36-minute LessWrong post, Scott Alexander describes a system that has Claude forecast how much AI safety grant proposals are worth, using a list of priced milestones, plus an AI forecasting tool. Alexander reports sensible results, shares two sample analyses, and says the numbers are hard to check.",
+  "change": {
+   "kind": "argument",
+   "note": "Scott Alexander describes an AI system for ranking AI safety grants and warns its numbers are hard to audit and tempting to trust."
+  },
+  "lenses": {
+   "public": "A prominent AI safety grantmaker is letting AI models rank which safety projects deserve money, and says reading their output makes it easy to stop checking.",
+   "policy": "Funders and agencies that hand parts of grant review to AI models may need random human audits, since Scott Alexander says close checking of AI-written analysis tends to lapse.",
+   "research": "Scott Alexander reports Claude and ChatGPT disagree by 2-3x on grant value, Claude held its numbers when challenged, and no ground truth yet exists to say which is right.",
+   "ideas": "If AI weighs grants through quantified milestones, softer considerations such as slow erosion of community norms may drop out of the decision unnoticed."
+  },
+  "topics": [
+   "where-it-goes",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "scott-alexander",
+    "role": "author",
+    "title": "Grantmaker for the Survival and Flourishing Fund and Lightcone Commons"
+   },
+   {
+    "id": "adam-scholl",
+    "role": "mentioned"
+   },
+   {
+    "id": "liron-shapira",
+    "role": "subject",
+    "title": "Host of Doom Debates"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "openai",
+   "lightcone-infrastructure",
+   "survival-and-flourishing-fund",
+   "futuresearch",
+   "apart-research",
+   "doom-debates"
+  ],
+  "quotes": [
+   {
+    "id": "91159e4537bf-50a8e460",
+    "text": "I started with the dumbest possible strategy. I assigned the best thing I could think of - a well-crafted US-China pause based on the AI Futures Project's Plan A - an arbitrary value of one million points.",
+    "speaker": "scott-alexander",
+    "speakerCertain": true,
+    "context": "Alexander explains how the autograntor began: pricing about eighty AI safety milestones relative to a US-China pause.",
+    "match": "exact",
+    "type": "account",
+    "hand": "first"
+   },
+   {
+    "id": "91159e4537bf-8ad492ea",
+    "text": "The autograntor is harder-working than I am. It does more research, surfaces more considerations, and catches things that I miss",
+    "speaker": "scott-alexander",
+    "speakerCertain": true,
+    "context": "Alexander gives a subjective impression of the system after using it on Lightcone Commons grants.",
+    "match": "exact",
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "91159e4537bf-9d2aa1c0",
+    "text": "Every time I showed the AIs one another's results, Claude stuck to its guns and insisted that it's right, and ChatGPT admitted that it's wrong and deferred to Claude.",
+    "speaker": "scott-alexander",
+    "speakerCertain": true,
+    "context": "Alexander describes what happened when Claude and ChatGPT results were compared, which differed by 2-3x.",
+    "match": "exact",
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "91159e4537bf-0bd9a28b",
+    "text": "I find myself glazing over the analysis as I read it, thinking \"yeah, that number is probably right . . . yeah, that number is probably right too\".",
+    "speaker": "scott-alexander",
+    "speakerCertain": true,
+    "context": "Alexander admits the specific cost-effectiveness numbers anchor Alexander's judgment despite known flaws in the system.",
+    "match": "exact",
+    "type": "account",
+    "hand": "first"
+   },
+   {
+    "id": "91159e4537bf-7ace085d",
+    "text": "it sometimes makes new insane common law rulings, and these silently poison several runs before they poison one loudly enough that I notice, investigate, and correct it.",
+    "speaker": "scott-alexander",
+    "speakerCertain": true,
+    "context": "Alexander describes a failure mode of the rulings document the AI writes for itself to settle edge cases.",
+    "match": "exact",
+    "type": "account",
+    "hand": "first"
+   }
+  ],
+  "importance": 1,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-11-02",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Alexander uses Claude Opus and Fable as the main engines and reports Claude's judgments favourably; the editor should review. Results are self-reported, with few tests against outcomes so far. A link to the SURA entry was dropped: it rested only on a commenter asking whether this system influenced that post."
  },
  {
   "id": "e1241964589b",
