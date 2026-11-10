@@ -340,6 +340,11 @@
   "titles": []
  },
  {
+  "id": "akshara-prabhakar",
+  "name": "Akshara Prabhakar",
+  "titles": []
+ },
+ {
   "id": "alaina-demopoulos",
   "name": "Alaina Demopoulos",
   "titles": []
@@ -442,6 +447,12 @@
   "id": "alex-stamos",
   "name": "Alex Stamos",
   "titles": [
+   {
+    "title": "Chief Security Officer, Cognition",
+    "entry": "decoder-2026-11-07-stamos-ai-broke-cybersecurity",
+    "on": "2026-11-07",
+    "role": "speaker"
+   },
    {
     "title": "chief information security officer at AI coding startup Cognition",
     "entry": "india-today-2026-10-26-cathedral-anthropic-systems",
@@ -753,6 +764,11 @@
   ]
  },
  {
+  "id": "andrea-mock",
+  "name": "Andrea Mock",
+  "titles": []
+ },
+ {
   "id": "andreas-kirsch",
   "name": "Andreas Kirsch",
   "titles": [
@@ -1018,6 +1034,11 @@
  {
   "id": "anna-marbut",
   "name": "Anna Marbut",
+  "titles": []
+ },
+ {
+  "id": "anna-maria-gueorguieva",
+  "name": "Anna-Maria Gueorguieva",
   "titles": []
  },
  {
@@ -1388,6 +1409,11 @@
  {
   "id": "austin-meek",
   "name": "Austin Meek",
+  "titles": []
+ },
+ {
+  "id": "avni-kothari",
+  "name": "Avni Kothari",
   "titles": []
  },
  {
@@ -2002,6 +2028,18 @@
   ]
  },
  {
+  "id": "binchi-zhang",
+  "name": "Binchi Zhang",
+  "titles": [
+   {
+    "title": "University of Virginia (internship at Visa Research)",
+    "entry": "arxiv-2026-11-07-safety-becomes-outlier-retention",
+    "on": "2026-11-07",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "bingqi-shang",
   "name": "Bingqi Shang",
   "titles": []
@@ -2295,9 +2333,27 @@
   "titles": []
  },
  {
+  "id": "brian-zhou",
+  "name": "Brian Zhou",
+  "titles": [
+   {
+    "title": "researcher, Thoughtful",
+    "entry": "cognitive-revolution-2026-11-07-ai-am-acceleration-election-bets",
+    "on": "2026-11-07",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "brody-ford",
   "name": "Brody Ford",
   "titles": [
+   {
+    "title": "tech reporter, Bloomberg News",
+    "entry": "bloomberg-2026-11-08-voters-data-center-boom-notice",
+    "on": "2026-11-08",
+    "role": "speaker"
+   },
    {
     "title": "Bloomberg reporter",
     "entry": "bloomberg-tech-2026-10-26-microsoft-buyouts-60000",
@@ -2310,6 +2366,18 @@
   "id": "bronson-schoen",
   "name": "Bronson Schoen",
   "titles": []
+ },
+ {
+  "id": "bryan-bischof",
+  "name": "Bryan Bischof",
+  "titles": [
+   {
+    "title": "head of AI, Theory Ventures",
+    "entry": "cognitive-revolution-2026-11-07-ai-am-acceleration-election-bets",
+    "on": "2026-11-07",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "bryce-woodworth",
@@ -2566,6 +2634,11 @@
   ]
  },
  {
+  "id": "chaymaa-abbas",
+  "name": "Chaymaa Abbas",
+  "titles": []
+ },
+ {
   "id": "che-qu",
   "name": "Che Qu",
   "titles": []
@@ -2654,6 +2727,30 @@
     "title": "MP",
     "entry": "wired-2026-10-13-uk-committee-ai-labs-regulation",
     "on": "2026-10-13",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "chris-coons",
+  "name": "Chris Coons",
+  "titles": [
+   {
+    "title": "Sen. (D-Del.)",
+    "entry": "axios-2026-11-07-huang-congress-probe-china-spy",
+    "on": "2026-11-07",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "chris-crosby",
+  "name": "Chris Crosby",
+  "titles": [
+   {
+    "title": "CEO, Compass Datacenters",
+    "entry": "fox-2026-11-07-hinojosa-data-centers-compass-ceo",
+    "on": "2026-11-07",
     "role": "speaker"
    }
   ]
@@ -4042,7 +4139,14 @@
  {
   "id": "demis-hassabis",
   "name": "Demis Hassabis",
-  "titles": []
+  "titles": [
+   {
+    "title": "Chair, Google DeepMind",
+    "entry": "controlai-2026-11-08-hassabis-closed-loop-rsi",
+    "on": "2026-11-08",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "denis-campbell",
@@ -4055,6 +4159,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "desmond-c-ong",
+  "name": "Desmond C. Ong",
+  "titles": []
  },
  {
   "id": "devi-sridhar",
@@ -4265,6 +4374,11 @@
   ]
  },
  {
+  "id": "drishti-goel",
+  "name": "Drishti Goel",
+  "titles": []
+ },
+ {
   "id": "duc-anh-nguyen",
   "name": "Duc Anh Nguyen",
   "titles": [
@@ -4272,6 +4386,18 @@
     "title": "National University of Singapore; University of Virginia, USA",
     "entry": "arxiv-2026-10-13-swe-misbehavior-coding-agent-boundary-violations",
     "on": "2026-10-13",
+    "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "duc-ly-vu",
+  "name": "Duc-Ly Vu",
+  "titles": [
+   {
+    "title": "Thu Dau Mot University",
+    "entry": "arxiv-2026-11-07-agents-of-chaos-attacks-sok",
+    "on": "2026-11-07",
     "role": "author"
    }
   ]
@@ -4871,6 +4997,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "eric-lin",
+  "name": "Eric Lin",
+  "titles": []
  },
  {
   "id": "eric-schmidt",
@@ -5690,6 +5821,12 @@
   "name": "Gina Hinojosa",
   "titles": [
    {
+    "title": "governor-elect of Texas",
+    "entry": "fox-2026-11-07-hinojosa-data-centers-compass-ceo",
+    "on": "2026-11-07",
+    "role": "speaker"
+   },
+   {
     "title": "Texas governor-elect",
     "entry": "bbc-2026-11-06-us-midterms-ai-stock-selloff",
     "on": "2026-11-06",
@@ -5763,6 +5900,11 @@
  {
   "id": "graeme-wearden",
   "name": "Graeme Wearden",
+  "titles": []
+ },
+ {
+  "id": "greg-abbott",
+  "name": "Greg Abbott",
   "titles": []
  },
  {
@@ -5863,6 +6005,11 @@
   "titles": []
  },
  {
+  "id": "guanming-liu",
+  "name": "Guanming Liu",
+  "titles": []
+ },
+ {
   "id": "guanting-wu",
   "name": "Guanting Wu",
   "titles": []
@@ -5933,6 +6080,18 @@
   "id": "hadas-orgad",
   "name": "Hadas Orgad",
   "titles": []
+ },
+ {
+  "id": "hadi-abdullah",
+  "name": "Hadi Abdullah",
+  "titles": [
+   {
+    "title": "Visa Research",
+    "entry": "arxiv-2026-11-07-safety-becomes-outlier-retention",
+    "on": "2026-11-07",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "hady-elsahar",
@@ -6297,6 +6456,11 @@
   "titles": []
  },
  {
+  "id": "huan-wang",
+  "name": "Huan Wang",
+  "titles": []
+ },
+ {
   "id": "hugo-lyons-keenan",
   "name": "Hugo Lyons Keenan",
   "titles": []
@@ -6558,6 +6722,23 @@
   "titles": []
  },
  {
+  "id": "jacob-ward",
+  "name": "Jacob Ward",
+  "titles": [
+   {
+    "title": "CNN contributor",
+    "entry": "cnn-2026-11-07-ai-stocks-plunged-midterm-wins",
+    "on": "2026-11-07",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "jacy-reese-anthis",
+  "name": "Jacy Reese Anthis",
+  "titles": []
+ },
+ {
   "id": "jade-leung",
   "name": "Jade Leung",
   "titles": [
@@ -6796,6 +6977,11 @@
     "role": "mentioned"
    }
   ]
+ },
+ {
+  "id": "jared-moore",
+  "name": "Jared Moore",
+  "titles": []
  },
  {
   "id": "jared-perlo",
@@ -8075,6 +8261,18 @@
   ]
  },
  {
+  "id": "jundong-li",
+  "name": "Jundong Li",
+  "titles": [
+   {
+    "title": "University of Virginia",
+    "entry": "arxiv-2026-11-07-safety-becomes-outlier-retention",
+    "on": "2026-11-07",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "june-jimenez",
   "name": "June Jimenez",
   "titles": []
@@ -8567,6 +8765,18 @@
   "titles": []
  },
  {
+  "id": "ken-chenault",
+  "name": "Ken Chenault",
+  "titles": [
+   {
+    "title": "Chairman and Managing Director, General Catalyst",
+    "entry": "bloomberg-2026-11-07-chenault-leadership-age-of-ai",
+    "on": "2026-11-07",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "ken-griffin",
   "name": "Ken Griffin",
   "titles": []
@@ -8699,6 +8909,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "kevin-klyman",
+  "name": "Kevin Klyman",
+  "titles": []
  },
  {
   "id": "kevin-maimann",
@@ -8983,6 +9198,11 @@
     "role": "mentioned"
    }
   ]
+ },
+ {
+  "id": "lambang-akbar-wijayadi",
+  "name": "Lambang Akbar Wijayadi",
+  "titles": []
  },
  {
   "id": "lara-trump",
@@ -9933,6 +10153,18 @@
   "titles": []
  },
  {
+  "id": "marco-argenti",
+  "name": "Marco Argenti",
+  "titles": [
+   {
+    "title": "chief information officer, Goldman Sachs",
+    "entry": "state-of-ai-2026-11-02-goldman-claude-code-restricted",
+    "on": "2026-11-02",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
   "id": "marcus-williams",
   "name": "Marcus Williams",
   "titles": [
@@ -10734,6 +10966,18 @@
   ]
  },
  {
+  "id": "michelle-rowland",
+  "name": "Michelle Rowland",
+  "titles": [
+   {
+    "title": "attorney general",
+    "entry": "guardian-2026-11-08-ifpi-warns-australia-ai-copyright",
+    "on": "2026-11-08",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
   "id": "mihai-surdeanu",
   "name": "Mihai Surdeanu",
   "titles": []
@@ -10793,6 +11037,18 @@
     "entry": "the-guardian-2026-10-29-el-sayed-ai-under-democracy",
     "on": "2026-10-29",
     "role": "mentioned"
+   }
+  ]
+ },
+ {
+  "id": "mike-san-miguel",
+  "name": "Mike San Miguel",
+  "titles": [
+   {
+    "title": "Luxor Technology",
+    "entry": "cognitive-revolution-2026-11-07-ai-am-acceleration-election-bets",
+    "on": "2026-11-07",
+    "role": "speaker"
    }
   ]
  },
@@ -10959,6 +11215,11 @@
  {
   "id": "mohammad-reza-rezaei",
   "name": "Mohammad Reza Rezaei",
+  "titles": []
+ },
+ {
+  "id": "mohammad-tehabsim",
+  "name": "Mohammad Tehabsim",
   "titles": []
  },
  {
@@ -11335,6 +11596,11 @@
   ]
  },
  {
+  "id": "nic-weber",
+  "name": "Nic Weber",
+  "titles": []
+ },
+ {
   "id": "nicholas-thompson",
   "name": "Nicholas Thompson",
   "titles": [
@@ -11364,8 +11630,25 @@
   ]
  },
  {
+  "id": "nick-carcaterra",
+  "name": "Nick Carcaterra",
+  "titles": [
+   {
+    "title": "Goldman spokesperson",
+    "entry": "state-of-ai-2026-11-02-goldman-claude-code-restricted",
+    "on": "2026-11-02",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
   "id": "nick-evershed",
   "name": "Nick Evershed",
+  "titles": []
+ },
+ {
+  "id": "nick-haber",
+  "name": "Nick Haber",
   "titles": []
  },
  {
@@ -11583,6 +11866,11 @@
   "titles": []
  },
  {
+  "id": "olga-lavinda",
+  "name": "Olga Lavinda",
+  "titles": []
+ },
+ {
   "id": "oliver-milman",
   "name": "Oliver Milman",
   "titles": []
@@ -11748,6 +12036,18 @@
     "title": "Cofounder, Ghana NLP",
     "entry": "mit-technology-review-2026-10-13-open-models-benefits-risks",
     "on": "2026-10-13",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "paul-barringer",
+  "name": "Paul Barringer",
+  "titles": [
+   {
+    "title": "Democratic Representative-elect, North Carolina",
+    "entry": "bloomberg-2026-11-08-new-house-democrats-priorities",
+    "on": "2026-11-08",
     "role": "speaker"
    }
   ]
@@ -12206,6 +12506,11 @@
   "titles": []
  },
  {
+  "id": "qisai-liu",
+  "name": "Qisai Liu",
+  "titles": []
+ },
+ {
   "id": "qiyao-ma",
   "name": "Qiyao Ma",
   "titles": []
@@ -12272,6 +12577,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "ramez-naam",
+  "name": "Ramez Naam",
+  "titles": []
  },
  {
   "id": "ramin-skibba",
@@ -12566,6 +12876,11 @@
   "titles": []
  },
  {
+  "id": "riya-bharathwaj",
+  "name": "Riya Bharathwaj",
+  "titles": []
+ },
+ {
   "id": "riya-tyagi",
   "name": "Riya Tyagi",
   "titles": []
@@ -12834,6 +13149,11 @@
   "titles": []
  },
  {
+  "id": "roshan-ram",
+  "name": "Roshan Ram",
+  "titles": []
+ },
+ {
   "id": "ross-perot-jr",
   "name": "Ross Perot Jr.",
   "titles": [
@@ -12936,6 +13256,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "ryan-louie",
+  "name": "Ryan Louie",
+  "titles": []
  },
  {
   "id": "ryan-mac",
@@ -13200,6 +13525,11 @@
   "titles": []
  },
  {
+  "id": "sanmi-koyejo",
+  "name": "Sanmi Koyejo",
+  "titles": []
+ },
+ {
   "id": "santiago-aranguri",
   "name": "Santiago Aranguri",
   "titles": [
@@ -13364,6 +13694,11 @@
     "role": "subject"
    }
   ]
+ },
+ {
+  "id": "sarah-tan",
+  "name": "Sarah Tan",
+  "titles": []
  },
  {
   "id": "sarah-wheeler",
@@ -13594,6 +13929,18 @@
   ]
  },
  {
+  "id": "shannon-taylor",
+  "name": "Shannon Taylor",
+  "titles": [
+   {
+    "title": "Democratic Representative-elect, Virginia",
+    "entry": "bloomberg-2026-11-08-new-house-democrats-priorities",
+    "on": "2026-11-08",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "shaoheng-yan",
   "name": "Shaoheng Yan",
   "titles": []
@@ -13706,6 +14053,18 @@
   "titles": []
  },
  {
+  "id": "shilong-pan",
+  "name": "Shilong Pan",
+  "titles": [
+   {
+    "title": "PDL Lab, National University of Defense Technology",
+    "entry": "arxiv-2026-11-07-tail-risk-aware-agent-safety",
+    "on": "2026-11-07",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "shion-guha",
   "name": "Shion Guha",
   "titles": []
@@ -13718,6 +14077,11 @@
  {
   "id": "shrestha-mishra",
   "name": "Shrestha Mishra",
+  "titles": []
+ },
+ {
+  "id": "shrey-singhal",
+  "name": "Shrey Singhal",
   "titles": []
  },
  {
@@ -13760,6 +14124,11 @@
  {
   "id": "silvia-l-ramirez",
   "name": "Silvia L. Ramirez",
+  "titles": []
+ },
+ {
+  "id": "silvio-savarese",
+  "name": "Silvio Savarese",
   "titles": []
  },
  {
@@ -13825,6 +14194,18 @@
   "id": "sj-beard",
   "name": "SJ_Beard",
   "titles": []
+ },
+ {
+  "id": "skanda-amarnath",
+  "name": "Skanda Amarnath",
+  "titles": [
+   {
+    "title": "executive director, Employ America",
+    "entry": "bloomberg-2026-11-07-democrat-congress-data-center-buildout",
+    "on": "2026-11-07",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "skye",
@@ -13919,6 +14300,11 @@
  {
   "id": "star2vec",
   "name": "star2vec",
+  "titles": []
+ },
+ {
+  "id": "state-of-ai-editorial",
+  "name": "State of AI Editorial",
   "titles": []
  },
  {
@@ -14093,6 +14479,11 @@
   "titles": []
  },
  {
+  "id": "stevie-chancellor",
+  "name": "Stevie Chancellor",
+  "titles": []
+ },
+ {
   "id": "stuart-armstrong",
   "name": "Stuart Armstrong",
   "titles": []
@@ -14181,6 +14572,11 @@
  {
   "id": "susan-fussell",
   "name": "Susan Fussell",
+  "titles": []
+ },
+ {
+  "id": "suxin-ji",
+  "name": "Suxin Ji",
   "titles": []
  },
  {
@@ -14277,6 +14673,18 @@
   "id": "thai-duong-huynh",
   "name": "Thai Duong Huynh",
   "titles": []
+ },
+ {
+  "id": "thanh-m-truong-le",
+  "name": "Thanh M. Truong-Le",
+  "titles": [
+   {
+    "title": "University of Information Technology, Vietnam",
+    "entry": "arxiv-2026-11-07-agents-of-chaos-attacks-sok",
+    "on": "2026-11-07",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "thao-pham",
@@ -14854,6 +15262,18 @@
   "titles": []
  },
  {
+  "id": "victoria-oakley",
+  "name": "Victoria Oakley",
+  "titles": [
+   {
+    "title": "chief executive, IFPI",
+    "entry": "guardian-2026-11-08-ifpi-warns-australia-ai-copyright",
+    "on": "2026-11-08",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "victoria-sharp",
   "name": "Victoria Sharp",
   "titles": [
@@ -15071,6 +15491,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "william-agnew",
+  "name": "William Agnew",
+  "titles": []
  },
  {
   "id": "william-brangham",
@@ -15347,6 +15772,18 @@
   "titles": []
  },
  {
+  "id": "yifan-cui",
+  "name": "Yifan Cui",
+  "titles": [
+   {
+    "title": "Zhejiang University",
+    "entry": "arxiv-2026-11-07-trustworthy-recursive-self-improvement",
+    "on": "2026-11-07",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "yinpeng-dong",
   "name": "Yinpeng Dong",
   "titles": []
@@ -15364,6 +15801,18 @@
     "title": "College of AI, Tsinghua University",
     "entry": "arxiv-2026-10-09-swe-deception-bench",
     "on": "2026-10-09",
+    "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "yiwei-cai",
+  "name": "Yiwei Cai",
+  "titles": [
+   {
+    "title": "Visa Research",
+    "entry": "arxiv-2026-11-07-safety-becomes-outlier-retention",
+    "on": "2026-11-07",
     "role": "author"
    }
   ]
@@ -15474,6 +15923,11 @@
   "titles": []
  },
  {
+  "id": "yuntao-gui",
+  "name": "Yuntao Gui",
+  "titles": []
+ },
+ {
   "id": "yuqi-ren",
   "name": "Yuqi Ren",
   "titles": []
@@ -15509,6 +15963,11 @@
   "titles": []
  },
  {
+  "id": "yuzhang-luo",
+  "name": "Yuzhang Luo",
+  "titles": []
+ },
+ {
   "id": "yuzhe-yang",
   "name": "Yuzhe Yang",
   "titles": []
@@ -15516,6 +15975,11 @@
  {
   "id": "zac-hill",
   "name": "Zac Hill",
+  "titles": []
+ },
+ {
+  "id": "zach-stein-perlman",
+  "name": "Zach Stein-Perlman",
   "titles": []
  },
  {
@@ -15639,6 +16103,18 @@
   "titles": []
  },
  {
+  "id": "zhengling-qi",
+  "name": "Zhengling Qi",
+  "titles": [
+   {
+    "title": "George Washington University",
+    "entry": "arxiv-2026-11-07-trustworthy-recursive-self-improvement",
+    "on": "2026-11-07",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "zhengyue-zhao",
   "name": "Zhengyue Zhao",
   "titles": []
@@ -15651,6 +16127,11 @@
  {
   "id": "zhicheng-fang",
   "name": "Zhicheng Fang",
+  "titles": []
+ },
+ {
+  "id": "zhiliang-tian",
+  "name": "Zhiliang Tian",
   "titles": []
  },
  {
@@ -15724,6 +16205,18 @@
   "id": "zihao-zeng",
   "name": "Zihao Zeng",
   "titles": []
+ },
+ {
+  "id": "zihe-gao",
+  "name": "Zihe Gao",
+  "titles": [
+   {
+    "title": "Zhejiang University",
+    "entry": "arxiv-2026-11-07-trustworthy-recursive-self-improvement",
+    "on": "2026-11-07",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "zirui-ding",
