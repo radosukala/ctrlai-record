@@ -34,6 +34,12 @@
   "name": "Abdul El-Sayed",
   "titles": [
    {
+    "title": "Michigan Senate candidate",
+    "entry": "axios-2026-11-03-three-questions-ai-political-power",
+    "on": "2026-11-03",
+    "role": "mentioned"
+   },
+   {
     "title": "Democratic candidate for US Senate, Michigan",
     "entry": "the-guardian-2026-10-29-el-sayed-ai-under-democracy",
     "on": "2026-10-29",
@@ -218,6 +224,11 @@
   "titles": []
  },
  {
+  "id": "aditya-vashistha",
+  "name": "Aditya Vashistha",
+  "titles": []
+ },
+ {
   "id": "adnan-amjad",
   "name": "Adnan Amjad",
   "titles": [
@@ -326,6 +337,18 @@
     "title": "Research Fellow, GovAI",
     "entry": "cognitive-revolution-2026-10-14-alan-chan-governing-ai-agents",
     "on": "2026-10-14",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "alan-woodward",
+  "name": "Alan Woodward",
+  "titles": [
+   {
+    "title": "Professor of cybersecurity, Surrey University",
+    "entry": "guardian-2026-11-03-ncsc-ai-malware-infrastructure",
+    "on": "2026-11-03",
     "role": "speaker"
    }
   ]
@@ -446,6 +469,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "alexander-k-saeri",
+  "name": "Alexander K. Saeri",
+  "titles": []
  },
  {
   "id": "alexander-matt-turner",
@@ -584,6 +612,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "amit-katwala",
+  "name": "Amit Katwala",
+  "titles": []
  },
  {
   "id": "amman-yusuf",
@@ -781,6 +814,18 @@
   "titles": []
  },
  {
+  "id": "andrew-ranger",
+  "name": "Andrew Ranger",
+  "titles": [
+   {
+    "title": "Labour MP",
+    "entry": "commons-2026-11-03-young-people-work-milburn-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "andrew-solender",
   "name": "Andrew Solender",
   "titles": []
@@ -825,6 +870,12 @@
   "id": "andy-burnham",
   "name": "Andy Burnham",
   "titles": [
+   {
+    "title": "UK prime minister",
+    "entry": "guardian-2026-11-03-hinton-better-off-without-ai",
+    "on": "2026-11-03",
+    "role": "mentioned"
+   },
    {
     "title": "prime minister",
     "entry": "guardian-2026-10-22-view-ai-safety-global-regulation",
@@ -924,6 +975,11 @@
   "titles": []
  },
  {
+  "id": "anna-gogleva",
+  "name": "Anna Gogleva",
+  "titles": []
+ },
+ {
   "id": "anna-korhonen",
   "name": "Anna Korhonen",
   "titles": []
@@ -942,6 +998,18 @@
     "entry": "arxiv-2026-10-07-subliminal-learning-transfers-backdoors",
     "on": "2026-10-07",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "anna-turley",
+  "name": "Anna Turley",
+  "titles": [
+   {
+    "title": "Minister for Border Security and Asylum",
+    "entry": "commons-2026-11-03-immigration-bill-ai-asylum",
+    "on": "2026-11-03",
+    "role": "speaker"
    }
   ]
  },
@@ -1104,6 +1172,11 @@
  {
   "id": "aria-wong",
   "name": "Aria Wong",
+  "titles": []
+ },
+ {
+  "id": "ariana-m-villegas-suarez",
+  "name": "Ariana M. Villegas-Suarez",
   "titles": []
  },
  {
@@ -1319,6 +1392,12 @@
   "name": "Bailey Lipschultz",
   "titles": [
    {
+    "title": "Bloomberg",
+    "entry": "bloomberg-tv-2026-11-03-anthropic-895b-spending-ipo",
+    "on": "2026-11-03",
+    "role": "speaker"
+   },
+   {
     "title": "Bloomberg reporter",
     "entry": "bloomberg-tech-2026-10-20-nscale-anthropic-45b-compute-talks",
     "on": "2026-10-20",
@@ -1415,6 +1494,18 @@
   "titles": []
  },
  {
+  "id": "baroness-gill",
+  "name": "Baroness Gill",
+  "titles": [
+   {
+    "title": "Labour peer",
+    "entry": "lords-2026-11-03-time-is-money-regulators-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "baroness-greenfield",
   "name": "Baroness Greenfield",
   "titles": []
@@ -1422,7 +1513,14 @@
  {
   "id": "baroness-harding-of-winscombe",
   "name": "Baroness Harding of Winscombe",
-  "titles": []
+  "titles": [
+   {
+    "title": "Conservative peer",
+    "entry": "lords-2026-11-03-time-is-money-regulators-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "baroness-harman",
@@ -1432,12 +1530,25 @@
  {
   "id": "baroness-hayter-of-kentish-town",
   "name": "Baroness Hayter of Kentish Town",
-  "titles": []
+  "titles": [
+   {
+    "title": "Labour peer",
+    "entry": "lords-2026-11-03-time-is-money-regulators-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "baroness-lloyd-of-effra",
   "name": "Baroness Lloyd of Effra",
   "titles": [
+   {
+    "title": "Labour peer",
+    "entry": "lords-2026-11-03-time-is-money-regulators-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   },
    {
     "title": "Parliamentary Under-Secretary of State, Department for Business, Innovation, Science and Trade and Department for Digital, Culture, Media and Sport",
     "entry": "uk-lords-2026-10-22-ai-screens-children-debate",
@@ -2015,6 +2126,18 @@
   ]
  },
  {
+  "id": "brendan-steinhauser",
+  "name": "Brendan Steinhauser",
+  "titles": [
+   {
+    "title": "CEO, Alliance for Secure AI",
+    "entry": "doom-debates-2026-11-03-steinhauser-republicans-ai-doom",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "brett-guthrie",
   "name": "Brett Guthrie",
   "titles": [
@@ -2051,6 +2174,18 @@
     "title": "Senior fellow, Hudson Institute",
     "entry": "chinatalk-2026-10-17-drone-dominance-diu-metz",
     "on": "2026-10-17",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "brian-flanagan",
+  "name": "Brian Flanagan",
+  "titles": [
+   {
+    "title": "associate professor of law, Maynooth University",
+    "entry": "guardian-2026-11-03-cps-prosecutor-imaginary-case",
+    "on": "2026-11-03",
     "role": "speaker"
    }
   ]
@@ -2113,6 +2248,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "cameron-holmes",
+  "name": "Cameron Holmes",
+  "titles": []
  },
  {
   "id": "carine-fouteau",
@@ -2224,6 +2364,11 @@
   ]
  },
  {
+  "id": "cecilia-elena-tilli",
+  "name": "Cecilia Elena Tilli",
+  "titles": []
+ },
+ {
   "id": "celene-nightingale",
   "name": "Celene Nightingale",
   "titles": []
@@ -2258,6 +2403,11 @@
  {
   "id": "chanamessinger",
   "name": "chanamessinger",
+  "titles": []
+ },
+ {
+  "id": "chandler-smith",
+  "name": "Chandler Smith",
   "titles": []
  },
  {
@@ -2317,6 +2467,11 @@
  {
   "id": "chengxiang-zhai",
   "name": "ChengXiang Zhai",
+  "titles": []
+ },
+ {
+  "id": "chenhao-ma",
+  "name": "Chenhao Ma",
   "titles": []
  },
  {
@@ -2454,6 +2609,11 @@
  {
   "id": "chris-stokel-walker",
   "name": "Chris Stokel-Walker",
+  "titles": []
+ },
+ {
+  "id": "chriskanan",
+  "name": "chriskanan",
   "titles": []
  },
  {
@@ -2606,6 +2766,11 @@
  {
   "id": "christopher-summerfield",
   "name": "Christopher Summerfield",
+  "titles": []
+ },
+ {
+  "id": "chuhao-zhou",
+  "name": "Chuhao Zhou",
   "titles": []
  },
  {
@@ -3059,6 +3224,18 @@
   ]
  },
  {
+  "id": "dani-burger",
+  "name": "Dani Burger",
+  "titles": [
+   {
+    "title": "host, Bloomberg Deals",
+    "entry": "bloomberg-tv-2026-11-03-anthropic-895b-spending-ipo",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "dani-vilardell",
   "name": "Dani Vilardell",
   "titles": []
@@ -3294,6 +3471,11 @@
  {
   "id": "david-bau",
   "name": "David Bau",
+  "titles": []
+ },
+ {
+  "id": "david-demitri-africa",
+  "name": "David Demitri Africa",
   "titles": []
  },
  {
@@ -3736,6 +3918,11 @@
  {
   "id": "dimitri-percia-david",
   "name": "Dimitri Percia David",
+  "titles": []
+ },
+ {
+  "id": "dipto-das",
+  "name": "Dipto Das",
   "titles": []
  },
  {
@@ -4513,6 +4700,11 @@
   ]
  },
  {
+  "id": "erin-howard",
+  "name": "Erin Howard",
+  "titles": []
+ },
+ {
   "id": "ernesto-calvo",
   "name": "Ernesto Calvo",
   "titles": []
@@ -4569,6 +4761,11 @@
   "titles": []
  },
  {
+  "id": "eunice-zhang",
+  "name": "Eunice Zhang",
+  "titles": []
+ },
+ {
   "id": "euodia-dodd",
   "name": "Euodia Dodd",
   "titles": []
@@ -4608,6 +4805,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "evan-hubinger",
+  "name": "Evan Hubinger",
+  "titles": []
  },
  {
   "id": "evan-miyazono",
@@ -5001,6 +5203,23 @@
   ]
  },
  {
+  "id": "garry-tan",
+  "name": "Garry Tan",
+  "titles": []
+ },
+ {
+  "id": "gary-gensler",
+  "name": "Gary Gensler",
+  "titles": [
+   {
+    "title": "Former SEC Chair",
+    "entry": "bloomberg-tv-2026-11-03-gensler-ai-washington-slow",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "gary-marcus",
   "name": "Gary Marcus",
   "titles": [
@@ -5081,6 +5300,12 @@
   "id": "geoffrey-hinton",
   "name": "Geoffrey Hinton",
   "titles": [
+   {
+    "title": "Nobel prize-winning computer scientist",
+    "entry": "guardian-2026-11-03-hinton-better-off-without-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   },
    {
     "title": "Nobel laureate, known as the godfather of AI",
     "entry": "cnn-2026-10-14-hinton-trump-superintelligence-term",
@@ -5184,6 +5409,11 @@
   "titles": []
  },
  {
+  "id": "gia-phong-tran",
+  "name": "Gia Phong Tran",
+  "titles": []
+ },
+ {
   "id": "gias-uddin",
   "name": "Gias Uddin",
   "titles": []
@@ -5218,6 +5448,11 @@
  {
   "id": "giuseppe-prencipe",
   "name": "Giuseppe Prencipe",
+  "titles": []
+ },
+ {
+  "id": "goktug-serdar-yildirim",
+  "name": "Göktuğ Serdar Yıldırım",
   "titles": []
  },
  {
@@ -5342,6 +5577,11 @@
   "titles": []
  },
  {
+  "id": "guido-freire",
+  "name": "Guido Freire",
+  "titles": []
+ },
+ {
   "id": "gunther-eagleman",
   "name": "Gunther Eagleman",
   "titles": []
@@ -5440,6 +5680,11 @@
  {
   "id": "hamish-ivison",
   "name": "Hamish Ivison",
+  "titles": []
+ },
+ {
+  "id": "han-fang",
+  "name": "Han Fang",
   "titles": []
  },
  {
@@ -6087,6 +6332,11 @@
   "titles": []
  },
  {
+  "id": "james-odonnell",
+  "name": "James O'Donnell",
+  "titles": []
+ },
+ {
   "id": "james-paton",
   "name": "James Paton",
   "titles": []
@@ -6557,6 +6807,11 @@
   "titles": []
  },
  {
+  "id": "jess-graham",
+  "name": "Jess Graham",
+  "titles": []
+ },
+ {
   "id": "jess-menton",
   "name": "Jess Menton",
   "titles": [
@@ -6675,9 +6930,26 @@
   "titles": []
  },
  {
+  "id": "jifan-zhang",
+  "name": "Jifan Zhang",
+  "titles": []
+ },
+ {
   "id": "jiin-woo",
   "name": "Jiin Woo",
   "titles": []
+ },
+ {
+  "id": "jillian-ambrose",
+  "name": "Jillian Ambrose",
+  "titles": [
+   {
+    "title": "Energy correspondent",
+    "entry": "guardian-2026-11-03-drax-power-station-ai-datacentre",
+    "on": "2026-11-03",
+    "role": "author"
+   }
+  ]
  },
  {
   "id": "jim-shannon",
@@ -6854,6 +7126,18 @@
   ]
  },
  {
+  "id": "john-hayes",
+  "name": "Sir John Hayes",
+  "titles": [
+   {
+    "title": "Conservative MP",
+    "entry": "commons-2026-11-03-budget-resolutions-ai-nhs-business",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "john-healey",
   "name": "John Healey",
   "titles": [
@@ -7002,6 +7286,18 @@
   ]
  },
  {
+  "id": "jonathan-barrett",
+  "name": "Jonathan Barrett",
+  "titles": [
+   {
+    "title": "Business editor",
+    "entry": "guardian-2026-11-04-canva-job-cuts-restructure",
+    "on": "2026-11-04",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "jonathan-ferro",
   "name": "Jonathan Ferro",
   "titles": [
@@ -7021,6 +7317,18 @@
     "title": "chief correspondent, Fox News",
     "entry": "nyt-2026-10-14-openai-engineer-saudi-advice",
     "on": "2026-10-14",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "jonathan-reynolds",
+  "name": "Jonathan Reynolds",
+  "titles": [
+   {
+    "title": "Labour MP",
+    "entry": "commons-2026-11-03-budget-resolutions-ai-nhs-business",
+    "on": "2026-11-03",
     "role": "speaker"
    }
   ]
@@ -7262,6 +7570,11 @@
   ]
  },
  {
+  "id": "joy-hsu",
+  "name": "Joy Hsu",
+  "titles": []
+ },
+ {
   "id": "juan-andres-guerrero-saade",
   "name": "Juan Andres Guerrero-Saade",
   "titles": [
@@ -7424,6 +7737,11 @@
   "titles": []
  },
  {
+  "id": "kadharmoideen-fadurudeen",
+  "name": "Kadharmoideen Fadurudeen",
+  "titles": []
+ },
+ {
   "id": "kaiming-liu",
   "name": "Kaiming Liu",
   "titles": []
@@ -7439,6 +7757,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "kaiyu-zhou",
+  "name": "Kaiyu Zhou",
+  "titles": []
  },
  {
   "id": "kalyeena-makortoff",
@@ -7561,6 +7884,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "karl-gemayel",
+  "name": "Karl Gemayel",
+  "titles": []
  },
  {
   "id": "karl-koch",
@@ -7740,6 +8068,18 @@
     "entry": "forbes-2026-10-28-hochul-signs-chatbot-law",
     "on": "2026-10-28",
     "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "katie-drummond",
+  "name": "Katie Drummond",
+  "titles": [
+   {
+    "title": "Global editorial director, WIRED",
+    "entry": "wired-2026-11-03-mamdani-ai-data-centers",
+    "on": "2026-11-03",
+    "role": "author"
    }
   ]
  },
@@ -8114,6 +8454,11 @@
   "titles": []
  },
  {
+  "id": "kun-zhao",
+  "name": "Kun Zhao",
+  "titles": []
+ },
+ {
   "id": "kunvar-thaman",
   "name": "Kunvar Thaman",
   "titles": []
@@ -8416,6 +8761,18 @@
   ]
  },
  {
+  "id": "lilian-greenwood",
+  "name": "Lilian Greenwood",
+  "titles": [
+   {
+    "title": "Labour MP",
+    "entry": "commons-2026-11-03-young-people-work-milburn-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "lily-hay-newman",
   "name": "Lily Hay Newman",
   "titles": [
@@ -8617,9 +8974,33 @@
   "titles": []
  },
  {
+  "id": "lord-bilimoria",
+  "name": "Lord Bilimoria",
+  "titles": [
+   {
+    "title": "Crossbench peer",
+    "entry": "lords-2026-11-03-time-is-money-regulators-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "lord-birt",
   "name": "Lord Birt",
   "titles": []
+ },
+ {
+  "id": "lord-black-of-brentwood",
+  "name": "Lord Black of Brentwood",
+  "titles": [
+   {
+    "title": "Conservative peer",
+    "entry": "lords-2026-11-03-time-is-money-regulators-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "lord-brennan-of-canton",
@@ -8673,7 +9054,14 @@
  {
   "id": "lord-fuller",
   "name": "Lord Fuller",
-  "titles": []
+  "titles": [
+   {
+    "title": "Conservative peer",
+    "entry": "lords-2026-11-03-time-is-money-regulators-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "lord-grocott",
@@ -8701,6 +9089,18 @@
   "titles": []
  },
  {
+  "id": "lord-hunt-of-wirral",
+  "name": "Lord Hunt of Wirral",
+  "titles": [
+   {
+    "title": "Conservative peer",
+    "entry": "lords-2026-11-03-time-is-money-regulators-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "lord-kirkhope-of-harrogate",
   "name": "Lord Kirkhope of Harrogate",
   "titles": []
@@ -8709,6 +9109,12 @@
   "id": "lord-leong",
   "name": "Lord Leong",
   "titles": [
+   {
+    "title": "Labour peer",
+    "entry": "lords-2026-11-03-business-hiring-intentions-ai-jobs",
+    "on": "2026-11-03",
+    "role": "speaker"
+   },
    {
     "title": "Parliamentary Under-Secretary of State, Department for Business and Trade",
     "entry": "uk-house-of-lords-2026-10-29-sme-ai-sector",
@@ -8740,7 +9146,14 @@
  {
   "id": "lord-nagaraju",
   "name": "Lord Nagaraju",
-  "titles": []
+  "titles": [
+   {
+    "title": "Labour peer",
+    "entry": "lords-2026-11-03-time-is-money-regulators-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "lord-pack",
@@ -8793,6 +9206,18 @@
   "id": "lord-tarassenko",
   "name": "Lord Tarassenko",
   "titles": []
+ },
+ {
+  "id": "lord-udny-lister",
+  "name": "Lord Udny-Lister",
+  "titles": [
+   {
+    "title": "Conservative peer",
+    "entry": "lords-2026-11-03-time-is-money-regulators-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "lord-wallace-of-saltaire",
@@ -8904,6 +9329,11 @@
   ]
  },
  {
+  "id": "luxi-he",
+  "name": "Luxi He",
+  "titles": []
+ },
+ {
   "id": "maciej-zelaszczyk",
   "name": "Maciej Żelaszczyk",
   "titles": [
@@ -8947,6 +9377,11 @@
  {
   "id": "madison-mills",
   "name": "Madison Mills",
+  "titles": []
+ },
+ {
+  "id": "magdalini-eirinaki",
+  "name": "Magdalini Eirinaki",
   "titles": []
  },
  {
@@ -9199,6 +9634,11 @@
   ]
  },
  {
+  "id": "martin-balla",
+  "name": "Martin Balla",
+  "titles": []
+ },
+ {
   "id": "martin-pacesa",
   "name": "Martin Pačesa",
   "titles": [
@@ -9233,6 +9673,16 @@
     "role": "mentioned"
    }
   ]
+ },
+ {
+  "id": "masoud-poorghaffar-aghdam",
+  "name": "Masoud Poorghaffar Aghdam",
+  "titles": []
+ },
+ {
+  "id": "matheusmoreira",
+  "name": "matheusmoreira",
+  "titles": []
  },
  {
   "id": "mathilde-collin",
@@ -9332,6 +9782,18 @@
   "id": "matthew-khoriaty",
   "name": "Matthew Khoriaty",
   "titles": []
+ },
+ {
+  "id": "matthew-lee",
+  "name": "Matthew Lee",
+  "titles": [
+   {
+    "title": "barrister, Doughty Street Chambers",
+    "entry": "guardian-2026-11-03-cps-prosecutor-imaginary-case",
+    "on": "2026-11-03",
+    "role": "mentioned"
+   }
+  ]
  },
  {
   "id": "matthew-nguyen",
@@ -9521,6 +9983,18 @@
   ]
  },
  {
+  "id": "melanie-perkins",
+  "name": "Melanie Perkins",
+  "titles": [
+   {
+    "title": "Chief executive, Canva",
+    "entry": "guardian-2026-11-04-canva-job-cuts-restructure",
+    "on": "2026-11-04",
+    "role": "subject"
+   }
+  ]
+ },
+ {
   "id": "melinda-koski",
   "name": "Melinda Koski",
   "titles": [
@@ -9621,6 +10095,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "michael-noetel",
+  "name": "Michael Noetel",
+  "titles": []
  },
  {
   "id": "michael-oriordan",
@@ -9827,6 +10306,11 @@
   "titles": []
  },
  {
+  "id": "ming-wen",
+  "name": "Ming Wen",
+  "titles": []
+ },
+ {
   "id": "minghao-lin",
   "name": "Minghao Lin",
   "titles": []
@@ -9942,6 +10426,16 @@
  {
   "id": "monique-munarini",
   "name": "Monique Munarini",
+  "titles": []
+ },
+ {
+  "id": "monte-macdiarmid",
+  "name": "Monte MacDiarmid",
+  "titles": []
+ },
+ {
+  "id": "moonsoo-kim",
+  "name": "Moonsoo Kim",
   "titles": []
  },
  {
@@ -10168,6 +10662,18 @@
   "titles": []
  },
  {
+  "id": "neil-hudson",
+  "name": "Dr Neil Hudson",
+  "titles": [
+   {
+    "title": "Conservative MP",
+    "entry": "commons-2026-11-03-budget-resolutions-ai-nhs-business",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "neil-irwin",
   "name": "Neil Irwin",
   "titles": []
@@ -10183,6 +10689,11 @@
     "role": "mentioned"
    }
   ]
+ },
+ {
+  "id": "neil-thompson",
+  "name": "Neil Thompson",
+  "titles": []
  },
  {
   "id": "neo-christopher-chung",
@@ -10296,6 +10807,18 @@
   ]
  },
  {
+  "id": "nicole-sy",
+  "name": "Nicole Sy",
+  "titles": [
+   {
+    "title": "Bloomberg",
+    "entry": "bloomberg-tv-2026-11-04-goldman-limits-ai-tools",
+    "on": "2026-11-04",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "nielsrolf",
   "name": "nielsrolf",
   "titles": []
@@ -10378,6 +10901,11 @@
  {
   "id": "nils-lukas",
   "name": "Nils Lukas",
+  "titles": []
+ },
+ {
+  "id": "ninazrdl",
+  "name": "NinaZRdl",
   "titles": []
  },
  {
@@ -10468,6 +10996,11 @@
  {
   "id": "orthonormal",
   "name": "orthonormal",
+  "titles": []
+ },
+ {
+  "id": "oscar-balcells-obeso",
+  "name": "Oscar Balcells Obeso",
   "titles": []
  },
  {
@@ -10730,6 +11263,11 @@
   "titles": []
  },
  {
+  "id": "pengcheng-jiang",
+  "name": "Pengcheng Jiang",
+  "titles": []
+ },
+ {
   "id": "pengyang-shao",
   "name": "Pengyang Shao",
   "titles": []
@@ -10804,6 +11342,18 @@
   ]
  },
  {
+  "id": "peter-prinsley",
+  "name": "Dr Peter Prinsley",
+  "titles": [
+   {
+    "title": "Labour MP",
+    "entry": "commons-2026-11-03-budget-resolutions-ai-nhs-business",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "peter-singlehurst",
   "name": "Peter Singlehurst",
   "titles": [
@@ -10816,9 +11366,21 @@
   ]
  },
  {
+  "id": "peter-slattery",
+  "name": "Peter Slattery",
+  "titles": []
+ },
+ {
   "id": "peter-swallow",
   "name": "Peter Swallow",
-  "titles": []
+  "titles": [
+   {
+    "title": "Labour MP",
+    "entry": "commons-2026-11-03-young-people-work-milburn-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "peter-thiel",
@@ -10944,6 +11506,18 @@
   "titles": []
  },
  {
+  "id": "preet-kaur-gill",
+  "name": "Preet Kaur Gill",
+  "titles": [
+   {
+    "title": "Labour MP",
+    "entry": "commons-2026-11-03-budget-resolutions-ai-nhs-business",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "priti-gupta",
   "name": "Priti Gupta",
   "titles": [
@@ -10954,6 +11528,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "qi-guo",
+  "name": "Qi Guo",
+  "titles": []
  },
  {
   "id": "qi-li",
@@ -11059,6 +11638,23 @@
   "titles": []
  },
  {
+  "id": "randan-steinhauser",
+  "name": "Randan Steinhauser",
+  "titles": [
+   {
+    "title": "Leads the Alliance for Secure AI's Faith Coalition",
+    "entry": "doom-debates-2026-11-03-steinhauser-republicans-ai-doom",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "randolph-loh",
+  "name": "Randolph Loh",
+  "titles": []
+ },
+ {
   "id": "raul-torrez",
   "name": "Raúl Torrez",
   "titles": [
@@ -11066,6 +11662,18 @@
     "title": "New Mexico Attorney General",
     "entry": "politico-2026-10-22-new-mexico-ag-meta-ruling",
     "on": "2026-10-22",
+    "role": "subject"
+   }
+  ]
+ },
+ {
+  "id": "ravinder-dhillon",
+  "name": "Ravinder Dhillon",
+  "titles": [
+   {
+    "title": "senior crown prosecutor, CPS rape and serious sexual offences unit",
+    "entry": "guardian-2026-11-03-cps-prosecutor-imaginary-case",
+    "on": "2026-11-03",
     "role": "subject"
    }
   ]
@@ -11230,6 +11838,18 @@
   ]
  },
  {
+  "id": "richard-horne",
+  "name": "Richard Horne",
+  "titles": [
+   {
+    "title": "Chief executive, National Cyber Security Centre",
+    "entry": "guardian-2026-11-03-ncsc-ai-malware-infrastructure",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "richard-partington",
   "name": "Richard Partington",
   "titles": [
@@ -11240,6 +11860,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "richard-qi",
+  "name": "Richard Qi",
+  "titles": []
  },
  {
   "id": "richard-socher",
@@ -11352,6 +11977,12 @@
   "id": "rob-wiblin",
   "name": "Rob Wiblin",
   "titles": [
+   {
+    "title": "host, 80,000 Hours Podcast",
+    "entry": "80000-hours-2026-11-03-hold-ai-companies-accountable",
+    "on": "2026-11-03",
+    "role": "speaker"
+   },
    {
     "title": "Host, 80,000 Hours Podcast",
     "entry": "80000-hours-2026-10-09-ai-explained-openai-security",
@@ -11632,6 +12263,11 @@
   "titles": []
  },
  {
+  "id": "ryan-greenblatt",
+  "name": "Ryan Greenblatt",
+  "titles": []
+ },
+ {
   "id": "ryan-heller",
   "name": "Ryan Heller",
   "titles": [
@@ -11769,6 +12405,11 @@
   ]
  },
  {
+  "id": "sam-arnesen",
+  "name": "Sam Arnesen",
+  "titles": []
+ },
+ {
   "id": "sam-hiner",
   "name": "Sam Hiner",
   "titles": [
@@ -11883,6 +12524,11 @@
  {
   "id": "sandy-tanwisuth",
   "name": "Sandy Tanwisuth",
+  "titles": []
+ },
+ {
+  "id": "sangdo-han",
+  "name": "Sangdo Han",
   "titles": []
  },
  {
@@ -12073,6 +12719,18 @@
   "titles": []
  },
  {
+  "id": "scarlet-fu",
+  "name": "Scarlet Fu",
+  "titles": [
+   {
+    "title": "Bloomberg",
+    "entry": "bloomberg-tv-2026-11-03-data-centers-midterm-ballots",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "scott-alexander",
   "name": "Scott Alexander",
   "titles": [
@@ -12149,6 +12807,11 @@
  {
   "id": "sergei-smirnov",
   "name": "Sergei Smirnov",
+  "titles": []
+ },
+ {
+  "id": "sergio-talavera",
+  "name": "Sergio Talavera",
   "titles": []
  },
  {
@@ -12327,6 +12990,16 @@
   "titles": []
  },
  {
+  "id": "shion-guha",
+  "name": "Shion Guha",
+  "titles": []
+ },
+ {
+  "id": "shipei-lin",
+  "name": "Shipei Lin",
+  "titles": []
+ },
+ {
   "id": "shrestha-mishra",
   "name": "Shrestha Mishra",
   "titles": []
@@ -12335,6 +13008,23 @@
   "id": "shriti-raj",
   "name": "Shriti Raj",
   "titles": []
+ },
+ {
+  "id": "shuhang-lin",
+  "name": "Shuhang Lin",
+  "titles": []
+ },
+ {
+  "id": "sian-berry",
+  "name": "Siân Berry",
+  "titles": [
+   {
+    "title": "MP for Brighton Pavilion (Green)",
+    "entry": "commons-2026-11-03-immigration-bill-ai-asylum",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "siddhesh-pawar",
@@ -12386,6 +13076,11 @@
  {
   "id": "simon-munk-christensen",
   "name": "Simon Munk Christensen",
+  "titles": []
+ },
+ {
+  "id": "sinem-sav",
+  "name": "Sinem Sav",
   "titles": []
  },
  {
@@ -12445,6 +13140,11 @@
   ]
  },
  {
+  "id": "sohan-venkatesh",
+  "name": "Sohan Venkatesh",
+  "titles": []
+ },
+ {
   "id": "solveig-bachellery",
   "name": "Solveig Bachellery",
   "titles": []
@@ -12498,6 +13198,11 @@
  {
   "id": "srobona-mitra",
   "name": "Srobona Mitra",
+  "titles": []
+ },
+ {
+  "id": "star2vec",
+  "name": "star2vec",
   "titles": []
  },
  {
@@ -12585,6 +13290,18 @@
     "entry": "axios-2026-10-21-ai-hacking-power-water",
     "on": "2026-10-21",
     "role": "mentioned"
+   }
+  ]
+ },
+ {
+  "id": "steve-witherden",
+  "name": "Steve Witherden",
+  "titles": [
+   {
+    "title": "Labour MP",
+    "entry": "commons-2026-11-03-budget-resolutions-ai-nhs-business",
+    "on": "2026-11-03",
+    "role": "speaker"
    }
   ]
  },
@@ -12741,6 +13458,11 @@
   ]
  },
  {
+  "id": "syed-ishtiaque-ahmed",
+  "name": "Syed Ishtiaque Ahmed",
+  "titles": []
+ },
+ {
   "id": "tapan-parikh",
   "name": "Tapan Parikh",
   "titles": [
@@ -12787,6 +13509,11 @@
   ]
  },
  {
+  "id": "thai-duong-huynh",
+  "name": "Thai Duong Huynh",
+  "titles": []
+ },
+ {
   "id": "thao-pham",
   "name": "Thao Pham",
   "titles": []
@@ -12817,6 +13544,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "thomas-charman",
+  "name": "Thomas Charman",
+  "titles": []
  },
  {
   "id": "thomas-cunningham",
@@ -13230,6 +13962,11 @@
   ]
  },
  {
+  "id": "user052919",
+  "name": "user052919",
+  "titles": []
+ },
+ {
   "id": "usman-anwar",
   "name": "Usman Anwar",
   "titles": []
@@ -13267,6 +14004,18 @@
   "titles": []
  },
  {
+  "id": "victoria-collins",
+  "name": "Victoria Collins",
+  "titles": [
+   {
+    "title": "Liberal Democrat MP",
+    "entry": "commons-2026-11-03-budget-resolutions-ai-nhs-business",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "victoria-krakovna",
   "name": "Victoria Krakovna",
   "titles": []
@@ -13275,6 +14024,18 @@
   "id": "victoria-nockles",
   "name": "Victoria Nockles",
   "titles": []
+ },
+ {
+  "id": "victoria-sharp",
+  "name": "Victoria Sharp",
+  "titles": [
+   {
+    "title": "then president of the King's bench division",
+    "entry": "guardian-2026-11-03-cps-prosecutor-imaginary-case",
+    "on": "2026-11-03",
+    "role": "mentioned"
+   }
+  ]
  },
  {
   "id": "vikki-slade",
@@ -13302,6 +14063,18 @@
   "id": "viscount-camrose",
   "name": "Viscount Camrose",
   "titles": []
+ },
+ {
+  "id": "viscount-chandos",
+  "name": "Viscount Chandos",
+  "titles": [
+   {
+    "title": "Labour peer",
+    "entry": "lords-2026-11-03-time-is-money-regulators-ai",
+    "on": "2026-11-03",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "vladimir-nesov",
@@ -13364,6 +14137,11 @@
  {
   "id": "weihang-niu",
   "name": "Weihang Niu",
+  "titles": []
+ },
+ {
+  "id": "weiming-zhang",
+  "name": "Weiming Zhang",
   "titles": []
  },
  {
@@ -13481,6 +14259,11 @@
  {
   "id": "xiang-li",
   "name": "Xiang Li",
+  "titles": []
+ },
+ {
+  "id": "xiao-liu",
+  "name": "Xiao Liu",
   "titles": []
  },
  {
@@ -13602,6 +14385,11 @@
   ]
  },
  {
+  "id": "xuanye-zhang",
+  "name": "Xuanye Zhang",
+  "titles": []
+ },
+ {
   "id": "xuanyu-lei",
   "name": "Xuanyu Lei",
   "titles": []
@@ -13642,6 +14430,11 @@
   "titles": []
  },
  {
+  "id": "yao-wang",
+  "name": "Yao Wang",
+  "titles": []
+ },
+ {
   "id": "ye-yuan",
   "name": "Ye Yuan",
   "titles": []
@@ -13669,6 +14462,11 @@
  {
   "id": "yi-zhang",
   "name": "Yi Zhang",
+  "titles": []
+ },
+ {
+  "id": "yichen-xu",
+  "name": "Yichen Xu",
   "titles": []
  },
  {
@@ -13701,6 +14499,11 @@
  {
   "id": "yongchao-chen",
   "name": "Yongchao Chen",
+  "titles": []
+ },
+ {
+  "id": "yongsen-zheng",
+  "name": "Yongsen Zheng",
   "titles": []
  },
  {
@@ -13804,6 +14607,11 @@
   "titles": []
  },
  {
+  "id": "yutao-wu",
+  "name": "Yutao Wu",
+  "titles": []
+ },
+ {
   "id": "yuxiang-xie",
   "name": "Yuxiang Xie",
   "titles": []
@@ -13887,6 +14695,11 @@
   ]
  },
  {
+  "id": "zehua-ma",
+  "name": "Zehua Ma",
+  "titles": []
+ },
+ {
   "id": "zephaniah-roe",
   "name": "Zephaniah Roe",
   "titles": []
@@ -13941,6 +14754,11 @@
  {
   "id": "zhengyue-zhao",
   "name": "Zhengyue Zhao",
+  "titles": []
+ },
+ {
+  "id": "zhenyu-wang",
+  "name": "Zhenyu Wang",
   "titles": []
  },
  {
@@ -14061,6 +14879,12 @@
   "id": "zohran-mamdani",
   "name": "Zohran Mamdani",
   "titles": [
+   {
+    "title": "Mayor of New York City",
+    "entry": "wired-2026-11-03-mamdani-ai-data-centers",
+    "on": "2026-11-03",
+    "role": "speaker"
+   },
    {
     "title": "Mayor, New York City",
     "entry": "techcrunch-2026-10-20-mamdani-feds-abdicated-ai",
