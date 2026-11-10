@@ -8,8 +8,10 @@ export const OG_SIZE = { width: 1200, height: 630 };
 /** The recap image goes out on X and LinkedIn, where 16:9 fills the feed. */
 export const RECAP_SIZE = { width: 1200, height: 675 };
 
-/* The site's own system (app/globals.css): white paper, black ink, the highlighter yellow for the mark, red only for a
-   contradiction. Our headlines in the condensed sans, the source's titles in the serif, provenance in mono. */
+/* The site's own system (app/globals.css): an ink bar with the mark at the top and an ink bar with the address at the
+   bottom, white paper between them, the highlighter yellow for the mark and for checked words, red only for a
+   contradiction or a play key. An edition's image is ink all the way down, like the masthead it stands for.
+   Our headlines in the condensed sans, the source's titles in the serif, provenance in mono. */
 export const INK = '#111111';
 export const INK_2 = '#2f2f2f';
 export const PAPER = '#ffffff';
@@ -17,6 +19,9 @@ export const MUTED = '#666666';
 export const LINE = '#d9d9d6';
 export const MARK = '#ffe45c';
 export const SIGNAL = '#e0301e';
+export const INK_0 = '#0d0d0c';
+export const INK_LINE = '#33332f';
+export const ON_INK_2 = '#b4b4ad';
 
 export const DISPLAY = 'Ctrl AI Display';
 export const SANS = 'Ctrl AI Sans';
@@ -69,21 +74,23 @@ export function rangeLabel(from: string, to: string): string {
 }
 
 /** The mark: Ctrl, then AI on a square of the highlighter yellow (components/Brand.tsx). */
-export function Mark({ size = 40 }: { size?: number }) {
+export function Mark({ size = 40, color = INK }: { size?: number; color?: string }) {
   const box = Math.round(size * 1.18);
   return (
-    <div style={{ display: 'flex', alignItems: 'baseline', fontFamily: DISPLAY, fontWeight: 800, fontSize: size, lineHeight: 1, letterSpacing: -size * 0.01, color: INK }}>
+    <div style={{ display: 'flex', alignItems: 'baseline', fontFamily: DISPLAY, fontWeight: 800, fontSize: size, lineHeight: 1, letterSpacing: -size * 0.01, color }}>
       <div style={{ display: 'flex', marginRight: Math.round(size * 0.14) }}>Ctrl</div>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: box, height: box, paddingTop: Math.round(size * 0.04), background: MARK }}>AI</div>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: box, height: box, paddingTop: Math.round(size * 0.04), background: MARK, color: INK }}>AI</div>
     </div>
   );
 }
 
-export function BrandRow({ right, size = 40 }: { right?: string; size?: number }) {
+/** The ink bar across the top: the mark, and what this image is. `side` is the card's side padding, so the bar runs edge to edge. */
+export function BrandRow({ right, size = 40, side = 64, line = false }: { right?: string; size?: number; side?: number; line?: boolean }) {
+  const pad = Math.round(size * 0.52);
   return (
-    <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center', paddingBottom: 18, borderBottom: `2px solid ${INK}` }}>
-      <Mark size={size} />
-      {right ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: 19, color: MUTED }}>{right}</div> : null}
+    <div style={{ display: 'flex', flexShrink: 0, justifyContent: 'space-between', alignItems: 'center', margin: `0 -${side}px`, padding: `${pad}px ${side}px`, background: INK_0, borderBottom: line ? `1px solid ${INK_LINE}` : 'none' }}>
+      <Mark size={size} color={PAPER} />
+      {right ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: Math.max(17, Math.round(size * 0.48)), color: ON_INK_2 }}>{right}</div> : null}
     </div>
   );
 }
@@ -93,29 +100,32 @@ function Label({ children }: { children: string }) {
   return <div style={{ display: 'flex', fontFamily: MONO, fontWeight: 600, fontSize: 19, color: INK }}>{children}</div>;
 }
 
-function Footer({ left, url }: { left: string; url: string }) {
+/** The ink bar across the bottom: one line of ours, and where to find it. */
+function Footer({ left, url, side = 64, line = false }: { left: string; url: string; side?: number; line?: boolean }) {
   return (
-    <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center', gap: 24, paddingTop: 18, borderTop: `1px solid ${LINE}` }}>
-      <div style={{ display: 'flex', fontFamily: SANS, fontWeight: 500, fontSize: 22, color: MUTED }}>{left}</div>
-      <div style={{ display: 'flex', flexShrink: 0, padding: '9px 16px 10px', background: INK, color: PAPER, fontFamily: MONO, fontWeight: 600, fontSize: 20 }}>{url}</div>
+    <div style={{ display: 'flex', flexShrink: 0, justifyContent: 'space-between', alignItems: 'center', gap: 24, margin: `0 -${side}px`, padding: `18px ${side}px 20px`, background: INK_0, borderTop: line ? `1px solid ${INK_LINE}` : 'none' }}>
+      <div style={{ display: 'flex', fontFamily: SANS, fontWeight: 500, fontSize: 22, color: ON_INK_2 }}>{left}</div>
+      <div style={{ display: 'flex', flexShrink: 0, padding: '8px 16px 9px', background: PAPER, color: INK, fontFamily: MONO, fontWeight: 600, fontSize: 20 }}>{url}</div>
     </div>
   );
 }
 
-const FRAME = { width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: PAPER, color: INK, padding: '44px 64px 42px', fontFamily: SANS } as const;
+const FRAME = { width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: PAPER, color: INK, padding: '0 64px', fontFamily: SANS } as const;
+/** Ink all the way down: the image of an edition or an issue, like the masthead of its page. */
+const FRAME_INK = { ...FRAME, background: INK_0, color: PAPER } as const;
 
 /** The share image for a weekly issue. */
 export function IssueImage({ issue, label = 'This week in AI control', footer = 'What happened, and seven things worth your time.' }: { issue: Issue; label?: string; footer?: string }) {
   const headline = clip(issue.summary, 190);
   const size = headline.length > 150 ? 64 : headline.length > 110 ? 72 : 84;
   return (
-    <div style={FRAME}>
-      <BrandRow right={`Issue ${issue.number} · ${rangeLabel(issue.from, issue.to)}`} />
+    <div style={FRAME_INK}>
+      <BrandRow line right={`Issue ${issue.number} · ${rangeLabel(issue.from, issue.to)}`} />
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flexGrow: 1, gap: 20 }}>
-        <Label>{label}</Label>
+        <div style={{ display: 'flex', fontFamily: MONO, fontWeight: 600, fontSize: 19, color: ON_INK_2 }}>{label}</div>
         <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: size, lineHeight: 0.98, letterSpacing: -size * 0.014, maxWidth: 1072 }}>{headline}</div>
       </div>
-      <Footer left={footer} url="ctrlai.com" />
+      <Footer line left={footer} url="ctrlai.com" />
     </div>
   );
 }
@@ -125,13 +135,13 @@ export function EditionImage({ right, label, line, footer }: { right: string; la
   const headline = clip(line, 190);
   const size = headline.length > 150 ? 64 : headline.length > 110 ? 72 : 84;
   return (
-    <div style={FRAME}>
-      <BrandRow right={right} />
+    <div style={FRAME_INK}>
+      <BrandRow line right={right} />
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flexGrow: 1, gap: 20 }}>
-        <Label>{label}</Label>
+        <div style={{ display: 'flex', fontFamily: MONO, fontWeight: 600, fontSize: 19, color: ON_INK_2 }}>{label}</div>
         <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: size, lineHeight: 0.98, letterSpacing: -size * 0.014, maxWidth: 1072 }}>{headline}</div>
       </div>
-      <Footer left={footer} url="ctrlai.com" />
+      <Footer line left={footer} url="ctrlai.com" />
     </div>
   );
 }
@@ -140,7 +150,7 @@ export function HallImage({ count, cap, firstTitles }: { count: number; cap: num
   return (
     <div style={FRAME}>
       <BrandRow right={`Hall of Fame · ${count} of ${cap}`} />
-      <div style={{ display: 'flex', flexDirection: 'column', marginTop: 28, gap: 16 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', marginTop: 44, gap: 16 }}>
         <Label>What you shouldn’t miss</Label>
         <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: 54, lineHeight: 0.98, letterSpacing: -0.7, maxWidth: 1072 }}>
           {`The ${count} things to see first about AI control, safety and how AI works. Six videos make one evening.`}
@@ -179,7 +189,7 @@ export function PickCard({ pick, label, right, footer, url }: { pick: Pick; labe
 /** The week's main events on one image: the first post of the weekly thread, and the LinkedIn image. */
 export function RecapImage({ issue }: { issue: Issue }) {
   return (
-    <div style={{ ...FRAME, padding: '38px 64px 36px' }}>
+    <div style={{ ...FRAME, padding: '0 64px' }}>
       <BrandRow right={`Issue ${issue.number} · ${rangeLabel(issue.from, issue.to)}`} size={36} />
       <div style={{ display: 'flex', marginTop: 22 }}>
         <Label>This week in AI control · what happened</Label>
@@ -221,9 +231,9 @@ export function AccordImage({ days, companies, rows, withNews, tied, total, chec
 }) {
   const cellW = 160;
   return (
-    <div style={{ ...FRAME, padding: '36px 64px 34px' }}>
+    <div style={{ ...FRAME, padding: '0 64px' }}>
       <BrandRow right={`Accord tracker · ${days} days after`} size={36} />
-      <div style={{ display: 'flex', flexDirection: 'column', marginTop: 20, gap: 10 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', marginTop: 30, gap: 10 }}>
         <Label>White House Accord on Super Intelligence</Label>
         <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: 58, lineHeight: 0.98, letterSpacing: -0.8, maxWidth: 1070 }}>Six companies committed to four safety controls.</div>
         <div style={{ display: 'flex', fontFamily: SANS, fontWeight: 500, fontSize: 25, lineHeight: 1.25, color: INK_2, maxWidth: 1070 }}>
@@ -338,8 +348,8 @@ export function QuoteCard({ size, label, quote, who, role, source, context, ques
   const qs = x ? (text.length <= 110 ? 46 : text.length <= 170 ? 40 : 34) : (text.length <= 110 ? 70 : text.length <= 170 ? 60 : 52);
   const meta = x ? 18 : 22;
   return (
-    <div style={{ ...FRAME, padding: x ? '40px 56px 34px' : '56px 64px 52px' }}>
-      <BrandRow right={label} size={x ? 34 : 44} />
+    <div style={{ ...FRAME, padding: x ? '0 56px' : '0 64px' }}>
+      <BrandRow side={x ? 56 : 64} right={label} size={x ? 34 : 44} />
       <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: x ? 'center' : 'flex-start', paddingTop: x ? 0 : 130, gap: Math.round(qs * 0.6) }}>
         <Marked text={text} size={qs} lineHeight={1.25} />
         <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
@@ -357,8 +367,8 @@ export function QuoteCard({ size, label, quote, who, role, source, context, ques
           <div style={{ display: 'flex', fontSize: 36, fontWeight: 700, lineHeight: 1.2 }}>{question}</div>
         </div>
       ) : null}
-      {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: meta - 3, color: MUTED, marginBottom: 12 }}>{disclosure}</div> : null}
-      <Footer left="Found word for word in the source." url="ctrlai.com" />
+      {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: meta - 3, color: MUTED, marginBottom: 16 }}>{disclosure}</div> : null}
+      <Footer side={x ? 56 : 64} left="Found word for word in the source." url="ctrlai.com" />
     </div>
   );
 }
@@ -376,7 +386,7 @@ export function ClipFrame({ quote, lit, who, role, source, context, checked }: C
       <div style={{ display: 'flex', height: CLIP_VIDEO.height, padding: '30px 34px', alignItems: 'flex-start' }}>
         <div style={{ display: 'flex', background: PAPER, padding: '10px 14px' }}><Mark size={34} /></div>
       </div>
-      <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, background: PAPER, padding: '34px 64px 36px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, background: PAPER, padding: '34px 64px 0' }}>
         <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, gap: Math.round(qs * 0.5) }}>
           <Marked text={quote} size={qs} lineHeight={1.22} lit={lit} />
           <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
@@ -440,7 +450,7 @@ export function MomentCard({ size, label, quote, who, role, source, context, pos
   if (size === 'linkedin') {
     const qs = text.length <= 110 ? 58 : text.length <= 170 ? 50 : 44;
     return (
-      <div style={{ ...FRAME, padding: '50px 64px 46px' }}>
+      <div style={{ ...FRAME, padding: '0 64px' }}>
         <BrandRow right={label} size={42} />
         <div style={{ display: 'flex', marginTop: 30 }}><Poster src={poster} width={952} height={500} seconds={seconds} playWidth={92} /></div>
         <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, gap: Math.round(qs * 0.5), paddingTop: 32 }}>
@@ -462,8 +472,8 @@ export function MomentCard({ size, label, quote, who, role, source, context, pos
   const pw = compact ? 420 : 470;
   const qs = text.length <= 110 ? (compact ? 36 : 40) : text.length <= 170 ? (compact ? 31 : 34) : compact ? 27 : 30;
   return (
-    <div style={{ ...FRAME, padding: compact ? '30px 52px 26px' : '36px 52px 32px' }}>
-      <BrandRow right={label} size={compact ? 30 : 34} />
+    <div style={{ ...FRAME, padding: '0 52px' }}>
+      <BrandRow side={52} right={label} size={compact ? 30 : 34} />
       <div style={{ display: 'flex', flexGrow: 1, gap: 44, paddingTop: compact ? 20 : 26, paddingBottom: compact ? 16 : 20 }}>
         <div style={{ display: 'flex', flexDirection: 'column', width: pw, gap: 12 }}>
           <Poster src={poster} width={pw} height={Math.round((pw * 9) / 16)} seconds={seconds} playWidth={72} />
@@ -479,7 +489,7 @@ export function MomentCard({ size, label, quote, who, role, source, context, pos
         </div>
       </div>
       {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: 14, color: MUTED, marginBottom: 10 }}>{disclosure}</div> : null}
-      <Footer left="Found word for word in the source." url="ctrlai.com" />
+      <Footer side={52} left="Found word for word in the source." url="ctrlai.com" />
     </div>
   );
 }
@@ -487,15 +497,15 @@ export function MomentCard({ size, label, quote, who, role, source, context, pos
 /** A filing page's share image: what the company told investors, one of its warnings word for word, and where it is. */
 export function FilingImage({ label, title, quote, source, disclosure }: { label: string; title: string; quote: string; source: string; disclosure?: string }) {
   return (
-    <div style={{ ...FRAME, padding: '40px 60px 34px' }}>
-      <BrandRow right={label} size={36} />
+    <div style={{ ...FRAME, padding: '0 60px' }}>
+      <BrandRow side={60} right={label} size={36} />
       <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'center', gap: 22 }}>
         <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: 66, lineHeight: 0.98, letterSpacing: -1 }}>{title}</div>
         <Marked text={clip(quote, 220)} size={33} lineHeight={1.26} />
         <div style={{ display: 'flex', fontFamily: MONO, fontSize: 19, color: MUTED }}>{source}</div>
       </div>
       {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: 15, color: MUTED, marginBottom: 10 }}>{disclosure}</div> : null}
-      <Footer left="Every passage checked word for word against the filing." url="ctrlai.com" />
+      <Footer side={60} left="Every passage checked word for word against the filing." url="ctrlai.com" />
     </div>
   );
 }
@@ -507,8 +517,8 @@ const plain = (t: string) => t.replace(/\u2060/g, '');
 /** The money section: a company's figures from its filing, as tiles, each checked against the filing's table. */
 export function MoneyImage({ label, title, line, stats, disclosure }: { label: string; title: string; line: string; stats: MoneyStat[]; disclosure?: string }) {
   return (
-    <div style={{ ...FRAME, padding: '40px 60px 34px' }}>
-      <BrandRow right={label} size={36} />
+    <div style={{ ...FRAME, padding: '0 60px' }}>
+      <BrandRow side={60} right={label} size={36} />
       <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1, justifyContent: 'center', gap: 22 }}>
         <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: 64, lineHeight: 0.98, letterSpacing: -1 }}>{title}</div>
         <div style={{ display: 'flex', fontSize: 25, lineHeight: 1.3, color: INK_2 }}>{line}</div>
@@ -526,7 +536,7 @@ export function MoneyImage({ label, title, line, stats, disclosure }: { label: s
         </div>
       </div>
       {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: 15, color: MUTED, marginBottom: 10 }}>{disclosure}</div> : null}
-      <Footer left="Every figure checked against the filing." url="ctrlai.com/money" />
+      <Footer side={60} left="Every figure checked against the filing." url="ctrlai.com/money" />
     </div>
   );
 }
@@ -549,8 +559,8 @@ export function LossCard({ label, title, steps, takeaway, disclosure }: { label:
   const lo = Math.min(0, ...spans.map(s => Math.min(s.from, s.to))), hi = Math.max(0, ...spans.map(s => Math.max(s.from, s.to)));
   const x = (v: number) => ((v - lo) / (hi - lo)) * W;
   return (
-    <div style={{ ...FRAME, padding: '36px 60px 32px' }}>
-      <BrandRow right={label} size={36} />
+    <div style={{ ...FRAME, padding: '0 60px' }}>
+      <BrandRow side={60} right={label} size={36} />
       <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: 60, lineHeight: 1, letterSpacing: -1, marginTop: 24 }}>{title}</div>
       <div style={{ display: 'flex', flexDirection: 'column', marginTop: 30 }}>
         {spans.map(s => {
@@ -570,7 +580,7 @@ export function LossCard({ label, title, steps, takeaway, disclosure }: { label:
       </div>
       <div style={{ display: 'flex', flexGrow: 1, alignItems: 'center', fontSize: 27, lineHeight: 1.28, color: INK, fontWeight: 600, paddingTop: 14, paddingBottom: 10 }}>{takeaway}</div>
       {disclosure ? <div style={{ display: 'flex', fontFamily: MONO, fontSize: 15, color: MUTED, marginBottom: 12 }}>{disclosure}</div> : null}
-      <Footer left="Every figure checked against the filing." url="ctrlai.com/money/anthropic" />
+      <Footer side={60} left="Every figure checked against the filing." url="ctrlai.com/money/anthropic" />
     </div>
   );
 }
@@ -580,7 +590,7 @@ export type TodayItem = { kind: string; outlet: string; note: string };
 /** What changed today: up to three changes, in our words, each with what kind of change it is and where it came from. */
 export function TodayCard({ date, items, disclosure }: { date: string; items: TodayItem[]; disclosure?: string }) {
   return (
-    <div style={{ ...FRAME, padding: '56px 64px 52px' }}>
+    <div style={{ ...FRAME, padding: '0 64px' }}>
       <BrandRow right={date} size={44} />
       <div style={{ display: 'flex', fontFamily: MONO, fontWeight: 600, fontSize: 21, marginTop: 40 }}>AI safety and control</div>
       <div style={{ display: 'flex', fontFamily: DISPLAY, fontWeight: 800, fontSize: 84, lineHeight: 0.98, letterSpacing: -1.2, marginTop: 8 }}>What changed today</div>
