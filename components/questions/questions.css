@@ -34,3 +34,9 @@
 .q-loop h3 { font-family: var(--sans); font-size: 12px; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; }
 .q-loop p { font-size: 15px; line-height: 1.55; color: var(--ink-2); }
 @media (max-width: 640px) { .q-revisions li { grid-template-columns: minmax(0, 1fr); } .q-challenge { margin-left: 0; } }
+
+/* On the ink masthead */
+.mast .q-answer { border-top-color: var(--mark); }
+.mast .q-answer-label { color: var(--on-ink-2); }
+.mast .ed-qi-lede { color: #dcdcd6; }
+.mast .b-top { color: var(--mark); }

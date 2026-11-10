@@ -65,6 +65,10 @@ export function BaseBrowser({ rows }: { rows: Row[] }) {
   return (
     <div className="b-browser">
       <div className="b-controls">
+        <div className="b-searchrow">
+          <input className="b-search" type="search" placeholder="Search people, outlets, words" value={q} onChange={e => setQ(e.target.value)} aria-label="Search the Base" />
+          <span className="b-count" aria-live="polite"><b>{shown.length}</b> of {rows.length}</span>
+        </div>
         <div className="b-lenses" role="group" aria-label="Read as">
           <span className="b-lenses-label" aria-hidden="true">Read as</span>
           {LENSES.map(l => (
@@ -80,10 +84,6 @@ export function BaseBrowser({ rows }: { rows: Row[] }) {
             </button>
           ))}
         </div>
-        <div className="b-filters">
-          <input className="b-search" type="search" placeholder="Search people, outlets, words" value={q} onChange={e => setQ(e.target.value)} aria-label="Search the Base" />
-          <span className="b-count" aria-live="polite">{shown.length} of {rows.length}</span>
-        </div>
       </div>
 
       {topic ? <p className="b-lens-who"><b>{TOPICS.find(t => t.id === topic)?.question}</b></p> : null}
@@ -96,9 +96,9 @@ export function BaseBrowser({ rows }: { rows: Row[] }) {
               <time dateTime={r.published}>{day(r.published)}</time>
               <div className="b-row-main">
                 <div className="b-meta">
-                  <span className="b-kind">{KIND_LABEL[r.kind]}</span>
+                  <span className="b-kind tag">{KIND_LABEL[r.kind]}</span>
                   <span>{r.outlet}</span>
-                  {r.importance === 3 ? <span className="b-top">Top story</span> : null}
+                  {r.importance === 3 ? <span className="b-top tag tag-signal">Top story</span> : null}
                   {r.access === 'excerpt' ? <span className="b-machine" title="We have only read the feed’s description of this item so far">From the description</span> : null}
                 </div>
                 <h3><Link href={`/base/${r.slug}`}>{r.title}</Link></h3>

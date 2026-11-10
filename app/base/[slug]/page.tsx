@@ -58,10 +58,10 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
 
   return (
     <div className="shell page b-page">
-      <header className="b-entry-head">
+      <header className="mast mast-bleed b-entry-head">
         <p className="dateline">
           <Link href="/base"><b>The Base</b></Link>
-          <span>{KIND_LABEL[e.kind]}</span>
+          <span className="tag">{KIND_LABEL[e.kind]}</span>
           <span>{e.outlet}</span>
           <time dateTime={e.published}>{longDate(e.published)}</time>
           {e.minutes ? <span>{e.minutes} min</span> : null}
@@ -70,8 +70,9 @@ export default async function EntryPage({ params }: { params: Promise<{ slug: st
         <h1 className="headline">{e.title}</h1>
         <p className="lede">{e.summary}</p>
         <div className="b-source-link">
-          <a className="key key-sm" href={e.url}>Open the source ↗</a>
-          {e.importance === 3 ? <span className="b-top">Top story of the week</span> : null}
+          <a className="key" href={e.url}>Open the source ↗</a>
+          {e.quotes.length ? <a className="b-jump" href="#words-section"><b>{e.quotes.length}</b> {e.quotes.length === 1 ? 'quotation' : 'quotations'} checked, word for word ↓</a> : null}
+          {e.importance === 3 ? <span className="b-top tag tag-signal">Top story of the week</span> : null}
         </div>
         {e.conflict ? (
           <div className="b-draft" role="note"><b>About Anthropic or Claude</b><span>Claude, made by Anthropic, wrote this entry. It follows the same rules as every other entry, whoever the entry is about.</span></div>

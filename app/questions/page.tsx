@@ -21,7 +21,7 @@ export default function QuestionsIndex() {
   const briefs = BRIEFS.filter(briefVisible);
   return (
     <div className="shell ed">
-      <header className="ed-head">
+      <header className="mast mast-bleed ed-head">
         <p className="dateline"><b>The Base</b><span>Nine questions</span><span>{answered.size} answered</span></p>
         <h1 className="ed-line">Nine questions about AI safety and control, and what the record says so far</h1>
         <p className="ed-qi-lede">Every entry in the Base is filed under the questions it bears on. Where we have read enough, we answer: with a date, the evidence and where it stops, who disagrees and why, and a public history of every revision.</p>

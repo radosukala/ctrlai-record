@@ -75,7 +75,7 @@ export default async function QuestionPage({ params }: { params: Promise<{ id: s
 
   return (
     <div className="shell page b-page q-page">
-      <header className="b-entry-head">
+      <header className="mast mast-bleed b-entry-head">
         <p className="dateline">
           <Link href="/"><b>The Base</b></Link>
           <span>A question, answered</span>

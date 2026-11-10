@@ -89,17 +89,23 @@ export function Quotation({ q, e, group }: { q: Quote; e: Entry; group?: Group }
   );
 }
 
+/** The masthead carries the top change when the edition's headline is that change, so the list below starts at the next. */
+const leadInMast = (ed: Edition) => !!ed.changes[0] && ed.changes[0].e.change!.note === ed.line;
+
 function Changes({ ed, id }: { ed: Edition; id: string }) {
   const w = words(ed);
+  const inMast = leadInMast(ed);
+  const list = inMast ? ed.changes.slice(1) : ed.changes;
+  if (inMast && !list.length) return null;
   return (
     <section className="ed-sec ed-sec-changed" aria-labelledby={id}>
-      <SecHead id={id} title={`What changed ${w.when}`} note="Decisions, new evidence, corrections and commitments we read in full, one per story. Arguments and recaps don’t count." />
-      {ed.changes.length ? (
+      <SecHead id={id} title={`What ${inMast ? 'else ' : ''}changed ${w.when}`} note="Decisions, new evidence, corrections and commitments we read in full, one per story. Arguments and recaps don’t count." />
+      {list.length ? (
         <div className="ed-changes">
-          {ed.changes.map(({ e, q }: Pick, i) => (
-            <article key={e.slug} className={i === 0 ? 'ed-change ed-change-lead' : 'ed-change'}>
+          {list.map(({ e, q }: Pick, i) => (
+            <article key={e.slug} className={i === 0 && !inMast ? 'ed-change ed-change-lead' : 'ed-change'}>
               <div className="ed-change-text">
-                <p className="ed-meta"><b>{CHANGE_LABEL[e.change!.kind]}</b><span>{e.outlet}</span><time dateTime={e.published}>{shortDate(e.published)}</time></p>
+                <p className="ed-meta"><b className="tag">{CHANGE_LABEL[e.change!.kind]}</b><span>{e.outlet}</span><time dateTime={e.published}>{shortDate(e.published)}</time></p>
                 <h3 className="ed-change-title"><Link href={`/base/${e.slug}`}>{e.change!.note}</Link></h3>
                 <p className="ed-src">{KIND_LABEL[e.kind]}: <Link href={`/base/${e.slug}`}>{e.title}</Link></p>
                 <LensLines e={e} />
@@ -191,7 +197,7 @@ function Decided({ ed, id }: { ed: Edition; id: string }) {
         {ed.decided.map(e => (
           <li key={e.slug}>
             <time dateTime={e.published}>{shortDate(e.published)}</time>
-            <span className="ed-ledger-kind">{CHANGE_LABEL[e.change!.kind]}</span>
+            <span className="ed-ledger-kind"><b className="tag">{CHANGE_LABEL[e.change!.kind]}</b></span>
             <Link className="ed-ledger-note" href={`/base/${e.slug}`}>{e.change!.note}</Link>
             <span className="ed-ledger-src">{e.outlet}</span>
           </li>
@@ -393,25 +399,53 @@ export function EditionView({ ed, heading = 'h2', front = false, nav }: { ed: Ed
   const date = ed.horizon === 'day'
     ? `${front ? 'Today · ' : ''}${weekday(ed.run!.run)}, ${longDate(ed.run!.run)}`
     : ed.horizon === 'week' ? `${front ? 'This week · ' : ''}${dateRange(ed.from, ed.to)}` : `${front ? 'This month · ' : ''}${longDate(ed.from.slice(0, 7))}, through ${longDate(ed.to).replace(/, \d{4}$/, '')}`;
-  const scope = ed.horizon === 'day'
-    ? `Radar run of ${shortDate(ed.run!.run)}: ${fmt(ed.numbers.entries)} new entries, ${fmt(ed.numbers.read)} read in full, ${fmt(ed.numbers.quotes)} quotations checked`
-    : `${fmt(ed.numbers.entries)} entries${ed.horizon === 'month' ? ' so far' : ''}, ${fmt(ed.numbers.read)} read in full, ${fmt(ed.numbers.quotes)} quotations checked`;
+  const n = ed.numbers;
+  const nums: { n: number; label: string; checked?: boolean }[] = [
+    { n: n.entries, label: ed.horizon === 'day' ? 'new entries' : ed.horizon === 'month' ? 'entries so far' : 'entries' },
+    { n: n.read, label: 'read in full' },
+    { n: n.quotes, label: 'quotations checked, word for word', checked: true },
+  ];
+  // The masthead is the top story when the headline is the top change: its source, why it matters, its checked words.
+  const lead = ed.changes[0] as Pick | undefined;
+  const inMast = leadInMast(ed);
   return (
-    <section className={`shell ed ed-${ed.horizon}`} aria-labelledby={`${p}-line`}>
-      <header className="ed-head">
-        <p className="dateline"><b>{date}</b><span>{scope}</span><span>{w.minutes}</span></p>
-        <Line id={`${p}-line`} className="ed-line">{ed.line}</Line>
-        <div className="ed-head-foot">
-          <p className="ed-key" aria-label="How to read this page">
-            <span className="ed-key-title">How to read this page</span>
-            <span><b className="ed-k-serif">Serif</b> their words, as the source published them</span>
-            <span><b className="ed-k-serif"><span className="hl">Marked</span></b> found word for word in the source</span>
-            <span><b className="ed-k-sans">Sans</b> our words</span>
-          </p>
-          {nav ? <div className="ed-head-nav">{nav}</div> : null}
+    <section className={`ed ed-${ed.horizon}`} aria-labelledby={`${p}-line`}>
+      <header className="mast ed-mast">
+        <div className={lead?.q ? 'shell ed-mast-in ed-mast-quoted' : 'shell ed-mast-in'}>
+          <div className="ed-mast-main">
+            <p className="dateline"><b>{date}</b>{ed.horizon === 'day' ? <span>Radar run of {shortDate(ed.run!.run)}</span> : null}<span>{w.minutes}</span></p>
+            <Line id={`${p}-line`} className="ed-line">{inMast ? <Link href={`/base/${lead!.e.slug}`}>{ed.line}</Link> : ed.line}</Line>
+            {inMast ? (
+              <div className="ed-mast-lead">
+                <p className="ed-meta"><b className="tag">{CHANGE_LABEL[lead!.e.change!.kind]}</b><span>{lead!.e.outlet}</span><time dateTime={lead!.e.published}>{shortDate(lead!.e.published)}</time></p>
+                <p className="ed-src">{KIND_LABEL[lead!.e.kind]}: <Link href={`/base/${lead!.e.slug}`}>{lead!.e.title}</Link></p>
+                <LensLines e={lead!.e} />
+              </div>
+            ) : null}
+          </div>
+          {lead?.q ? (
+            <aside className="ed-mast-quote" aria-label={inMast ? 'In their words' : 'From the top change'}>
+              <p className="ed-mast-quote-tag">Checked against the source</p>
+              <Quotation q={lead.q} e={lead.e} />
+            </aside>
+          ) : null}
+          <ol className="nums ed-nums" aria-label="What this edition holds">
+            {nums.map(x => <li key={x.label} className={x.checked ? 'is-checked' : undefined}><b>{fmt(x.n)}</b><span>{x.label}</span></li>)}
+          </ol>
         </div>
-        <LensBar />
       </header>
+      <div className="shell">
+        <div className="ed-bar">
+          <LensBar />
+          <div className="ed-bar-side">
+            <p className="ed-key" aria-label="How to read this page">
+              <span><b className="ed-k-serif">Serif</b> their words</span>
+              <span><b className="ed-k-serif"><span className="hl">Marked</span></b> found word for word in the source</span>
+              <span><b className="ed-k-sans">Sans</b> our words</span>
+            </p>
+            {nav ? <div className="ed-head-nav">{nav}</div> : null}
+          </div>
+        </div>
       <div className="ed-body">
         <Heard ed={ed} id={`${p}-heard`} />
         <Changes ed={ed} id={`${p}-changed`} />
@@ -425,6 +459,7 @@ export function EditionView({ ed, heading = 'h2', front = false, nav }: { ed: Ed
         <OnRecord ed={ed} id={`${p}-onrecord`} />
         <Rest ed={ed} />
         <Made ed={ed} id={`${p}-made`} />
+      </div>
       </div>
     </section>
   );

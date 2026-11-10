@@ -37,7 +37,7 @@ export default async function PersonPage({ params }: { params: Promise<{ id: str
 
   return (
     <div className="shell page b-page">
-      <header className="b-hero">
+      <header className="mast mast-bleed b-hero">
         <p className="dateline"><Link href="/base"><b>The Base</b></Link><Link href="/people">People</Link></p>
         <h1 className="headline">{p.name}</h1>
         {p.titles.length ? <p className="lede">{p.titles.map(t => t.title).filter((t, i, a) => a.indexOf(t) === i).join(' · ')}</p> : null}

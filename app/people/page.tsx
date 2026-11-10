@@ -18,7 +18,7 @@ export default function PeoplePage() {
   const [first, last] = [days[0], days[days.length - 1]];
   return (
     <div className="shell page b-page">
-      <header className="b-hero">
+      <header className="mast mast-bleed b-hero">
         <p className="dateline"><Link href="/base"><b>The Base</b></Link><span>People</span></p>
         <h1 className="headline">On the record</h1>
         <p className="lede">Everyone who spoke or wrote in the sources the Radar reads, by how often they did. Each person’s page keeps what they said, when, with the quotation checked against the source, so you can see their views over time.</p>

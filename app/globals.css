@@ -8,12 +8,15 @@
      condensed and heavy for our headlines.
    - Provenance (dates, outlets, counts, how a quotation matched) is in IBM Plex Mono, the way a record is filed.
    The mark is Ctrl with AI on a square of that highlighter yellow. One red, --signal, is the editor's pencil: the page
-   you are on, a warning. White paper,
-   black ink, hairlines, nothing rounded, nothing boxed for decoration. Stance labels are words, never color alone. */
+   you are on, a warning, a play button.
+   Three surfaces give the page its rhythm: ink (the header, every page's masthead, the footer), white paper (the
+   reading), and a warm tint (--paper-2) for bands and cards. Yellow stays reserved for what was checked. Nothing is
+   rounded. A section opens with a hairline whose first 64px are thick: the tab you would stick on a printout.
+   Stance labels are words, never color alone. */
 
 :root {
   --paper: #ffffff;
-  --paper-2: #f2f2ef;
+  --paper-2: #f4f3ee;
   --white: #ffffff;
   --ink: #111111;
   --ink-2: #2f2f2f;
@@ -25,6 +28,12 @@
   --signal-deep: #b22213;
   --on-signal: #ffffff;
   --mark: #ffe45c;
+  /* Ink surfaces: the header, mastheads, the footer. */
+  --ink-0: #0d0d0c;
+  --ink-1: #1b1b19;
+  --ink-line: #33332f;
+  --on-ink: #ffffff;
+  --on-ink-2: #b4b4ad;
 
   --serif: 'Source Serif 4 Variable', 'Source Serif 4', Georgia, 'Times New Roman', serif;
   --sans: 'Archivo Variable', 'Archivo', -apple-system, 'Helvetica Neue', Arial, sans-serif;
@@ -108,8 +117,10 @@ code { font-family: var(--mono); font-size: 0.9em; }
 .page { display: grid; gap: clamp(48px, 7vw, 88px); padding-block: 0 clamp(64px, 9vw, 112px); }
 .band { background: var(--paper-2); border-top: 2px solid var(--ink); border-bottom: 1px solid var(--line); padding-block: clamp(32px, 5vw, 56px); }
 .band .sec { border-top: 0; padding-top: 0; }
+.band .sec::before { display: none; }
 
-.sec { display: grid; gap: 18px; border-top: 3px solid var(--ink); padding-top: 16px; }
+.sec { position: relative; display: grid; gap: 18px; border-top: 1px solid var(--ink); padding-top: 22px; }
+.sec::before { content: ''; position: absolute; left: 0; top: -1px; width: 64px; height: 7px; background: var(--ink); }
 .sec-rail-in { display: grid; gap: 10px; align-content: start; }
 .sec-title { font-size: clamp(26px, 2.8vw, 34px); line-height: 1; }
 .sec-blurb { font-size: 14.5px; line-height: 1.5; color: var(--muted); max-width: 30em; }
@@ -137,18 +148,22 @@ code { font-family: var(--mono); font-size: 0.9em; }
 .prose a { text-decoration-color: var(--faint); }
 .prose .text-button { font-family: var(--sans); font-size: inherit; }
 
-/* ——— Header ——— */
-.site-header { border-bottom: 1px solid var(--ink); background: var(--paper); }
+/* ——— Header: ink, on every page ——— */
+.site-header { background: var(--ink-0); color: var(--on-ink); border-bottom: 1px solid var(--ink-line); }
 .site-header .shell { display: flex; align-items: center; gap: 16px 32px; min-height: 64px; flex-wrap: wrap; }
 .wordmark { display: inline-flex; align-items: center; text-decoration: none; color: var(--ink); }
 .mark { display: inline-flex; align-items: baseline; gap: 0.14em; font-family: var(--sans); font-weight: 800; font-stretch: var(--display-stretch); font-size: 28px; line-height: 1; letter-spacing: -0.01em; color: var(--ink); white-space: nowrap; }
-.mark-ai { display: inline-grid; place-items: center; width: 1.18em; height: 1.18em; padding-top: 0.04em; background: var(--mark); }
+.mark-ai { display: inline-grid; place-items: center; width: 1.18em; height: 1.18em; padding-top: 0.04em; background: var(--mark); color: var(--ink); }
+.site-header .mark, .site-footer .mark { color: var(--on-ink); }
+.site-header .mark-ai, .site-footer .mark-ai { color: var(--ink); }
 .nav { display: flex; align-items: center; gap: 26px; margin-left: auto; font-size: 14.5px; font-weight: 500; }
-.nav a { text-decoration: none; color: var(--ink-2); white-space: nowrap; padding: 21px 0 19px; border-bottom: 3px solid transparent; margin-bottom: -1px; }
-.nav a:hover { color: var(--ink); }
-.nav a[aria-current='page'] { color: var(--ink); font-weight: 650; border-bottom-color: var(--signal); }
-.nav a.key { padding: 5px 12px 6px; border: 1.5px solid var(--ink); margin: 0 0 0 4px; }
-.nav a.key[aria-current='page'] { background: var(--paper-2); }
+.nav a { text-decoration: none; color: var(--on-ink-2); white-space: nowrap; padding: 21px 0 19px; border-bottom: 3px solid transparent; margin-bottom: -1px; transition: color 0.15s; }
+.nav a:hover { color: var(--on-ink); }
+.nav a[aria-current='page'] { color: var(--on-ink); font-weight: 650; border-bottom-color: var(--signal); }
+.nav a.key { padding: 6px 13px 7px; border: 1.5px solid var(--on-ink); margin: 0 0 0 4px; background: var(--on-ink); color: var(--ink); font-weight: 650; }
+.nav a.key:hover { background: var(--mark); border-color: var(--mark); color: var(--ink); }
+.nav a.key[aria-current='page'] { background: var(--mark); border-color: var(--mark); }
+.site-header :focus-visible, .mast :focus-visible, .site-footer :focus-visible { outline-color: var(--mark); }
 @media (max-width: 560px) {
   .site-header .shell { min-height: 0; padding-block: 14px 0; gap: 6px 20px; }
   .nav { margin-left: calc(-1 * var(--gutter)); margin-right: calc(-1 * var(--gutter)); padding-inline: var(--gutter); width: calc(100% + 2 * var(--gutter)); gap: 0 18px; font-size: 14px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
@@ -156,6 +171,30 @@ code { font-family: var(--mono); font-size: 0.9em; }
   .nav a { padding: 10px 0 11px; }
   .nav a.key { margin-left: auto; margin-bottom: 8px; }
 }
+
+/* ——— Masthead: the ink band a page opens with. .mast-bleed is for a masthead that sits inside a .shell. ——— */
+.mast { background: var(--ink-0); color: var(--on-ink); }
+.mast-bleed { box-shadow: 0 0 0 100vmax var(--ink-0); clip-path: inset(0 -100vmax); }
+.mast ::selection { background: var(--mark); color: var(--ink); }
+.mast .dateline { color: var(--on-ink-2); }
+.mast .dateline b { color: var(--on-ink); }
+.mast .dateline a:hover { color: var(--on-ink); }
+.mast .lede { color: #dcdcd6; }
+.mast a { text-decoration-color: var(--ink-line); }
+.mast a:hover { text-decoration-color: currentColor; }
+.mast .key { border-color: var(--on-ink); background: var(--on-ink); color: var(--ink); }
+.mast .key:hover { background: var(--mark); border-color: var(--mark); }
+/* Big numerals for what a page holds; the one about checking is in the highlighter's yellow. */
+.nums { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--ink-line); }
+.nums li { display: grid; gap: 2px; align-content: start; padding: 16px 16px 22px 0; min-width: 0; }
+.nums li + li { padding-left: clamp(12px, 2vw, 24px); border-left: 1px solid var(--ink-line); }
+.nums b { font-family: var(--sans); font-weight: 800; font-stretch: var(--display-stretch); font-size: clamp(34px, 4.4vw, 56px); line-height: 0.95; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.nums span { font-size: 13.5px; line-height: 1.35; color: var(--on-ink-2); }
+.nums .is-checked b { color: var(--mark); }
+/* A label that is a fact about the item: what kind of change, what kind of source. Words, on ink. */
+.tag { display: inline-block; padding: 2px 7px 2px; background: var(--ink); color: var(--paper); font-family: var(--mono); font-size: 11px; font-weight: 600; line-height: 1.5; letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap; }
+.mast .tag { background: var(--on-ink); color: var(--ink); }
+.tag-signal { background: var(--signal); color: var(--on-signal); }
 
 /* ——— Front page ——— */
 .hero { display: grid; gap: 22px; padding-block: clamp(28px, 4vw, 52px) clamp(28px, 4vw, 48px); }
@@ -293,19 +332,26 @@ code { font-family: var(--mono); font-size: 0.9em; }
 .subscribe-note { font-size: 13.5px; color: var(--muted); max-width: 36em; }
 .subscribe-confirm { margin-block: 6px; }
 
-/* ——— Footer ——— */
-.site-footer { border-top: 2px solid var(--ink); background: var(--paper); padding-block: 36px 44px; font-size: 14px; color: var(--muted); }
+/* ——— Footer: ink ——— */
+.site-footer { background: var(--ink-0); padding-block: 48px 44px; font-size: 14px; color: var(--on-ink-2); }
 .site-footer .shell { display: grid; gap: 28px; }
 .footer-top { display: grid; gap: 24px; align-items: start; }
-.footer-line { font-family: var(--sans); font-stretch: var(--display-stretch); font-weight: 800; font-size: clamp(24px, 3vw, 34px); color: var(--ink); line-height: 1.1; max-width: 16em; margin-top: 14px; letter-spacing: -0.01em; }
+.footer-line { font-family: var(--sans); font-stretch: var(--display-stretch); font-weight: 800; font-size: clamp(30px, 4.4vw, 56px); color: var(--on-ink); line-height: 1; max-width: 12em; margin-top: 18px; letter-spacing: -0.015em; }
 .footer-links { display: grid; grid-template-columns: repeat(2, max-content); gap: 8px 36px; font-size: 14.5px; }
-.footer-links a { color: var(--ink); text-decoration: none; }
+.footer-links a { color: var(--on-ink); text-decoration: none; }
 .footer-links a:hover { text-decoration: underline; }
-.footer-subscribe { display: grid; gap: 14px 40px; align-items: center; border-top: 1px solid var(--line); padding-top: 24px; }
+.footer-subscribe { display: grid; gap: 14px 40px; align-items: center; border-top: 1px solid var(--ink-line); padding-top: 24px; }
 .footer-subscribe p { max-width: 24em; }
-.footer-subscribe-title { font-family: var(--sans); font-stretch: var(--display-stretch); font-weight: 800; font-size: clamp(22px, 2.6vw, 28px); line-height: 1.05; color: var(--ink); }
-.footer-note { display: flex; flex-wrap: wrap; gap: 8px 22px; border-top: 1px solid var(--line); padding-top: 18px; font-size: 13px; }
+.footer-subscribe-title { font-family: var(--sans); font-stretch: var(--display-stretch); font-weight: 800; font-size: clamp(22px, 2.6vw, 28px); line-height: 1.05; color: var(--on-ink); }
+.site-footer .subscribe-form input[type='email'] { border-color: var(--on-ink); }
+.site-footer .key, .site-footer .key-primary { background: var(--mark); border-color: var(--mark); color: var(--ink); }
+.site-footer .key:hover { background: var(--on-ink); border-color: var(--on-ink); }
+.site-footer .subscribe-done { color: var(--ink-2); }
+.site-footer .subscribe-small, .site-footer .subscribe-error { color: var(--on-ink-2); }
+.site-footer a { text-decoration-color: var(--ink-line); }
+.footer-note { display: flex; flex-wrap: wrap; gap: 8px 22px; border-top: 1px solid var(--ink-line); padding-top: 18px; font-size: 13px; }
 .footer-button, .text-button { padding: 0; border: 0; background: none; font: inherit; color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line); cursor: pointer; }
+.site-footer .footer-button { text-decoration-color: var(--ink-line); }
 .footer-button:hover, .text-button:hover { text-decoration-color: currentColor; }
 @media (min-width: 760px) {
   .footer-top { grid-template-columns: minmax(0, 1fr) auto; }
