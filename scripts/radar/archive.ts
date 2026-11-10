@@ -12,7 +12,7 @@
  * The id is the Radar's item id (sha1 of the canonical URL, 12 hex), so a Base entry and its archive folder share it.
  */
 import { createHash } from 'node:crypto';
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, statSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, join } from 'node:path';
 import { canonical, itemId } from './feeds';
 import { RADAR_DOCS } from './paths';
@@ -99,7 +99,9 @@ export function rebuildCatalog() {
   const lines: string[] = [];
   const root = join(ARCHIVE, 'docs');
   if (!existsSync(root)) return 0;
-  for (const p of readdirSync(root).sort()) for (const id of readdirSync(join(root, p)).sort()) {
+  const dirs = (d: string) => readdirSync(d).filter(n => !n.startsWith('.') && statSync(join(d, n)).isDirectory()).sort();
+  for (const p of dirs(root)) for (const id of dirs(join(root, p))) {
+    if (!existsSync(join(root, p, id, 'meta.json'))) continue;
     const m = JSON.parse(readFileSync(join(root, p, id, 'meta.json'), 'utf8')) as Meta;
     lines.push(JSON.stringify({
       id: m.id, url: m.url, title: m.title, outlet: m.outlet, published: m.published, kind: m.kind,
