@@ -130,6 +130,18 @@
   "titles": []
  },
  {
+  "id": "adam-gayoso",
+  "name": "Adam Gayoso",
+  "titles": [
+   {
+    "title": "Google DeepMind",
+    "entry": "deepmind-2026-11-11-alphagenome-2-podcast",
+    "on": "2026-11-11",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "adam-gleave",
   "name": "Adam Gleave",
   "titles": []
@@ -390,6 +402,12 @@
   "name": "Alan Woodward",
   "titles": [
    {
+    "title": "cybersecurity expert, University of Surrey",
+    "entry": "transformer-2026-11-11-hugging-face-abliterated-models",
+    "on": "2026-11-11",
+    "role": "speaker"
+   },
+   {
     "title": "Professor of cybersecurity, Surrey University",
     "entry": "guardian-2026-11-03-ncsc-ai-malware-infrastructure",
     "on": "2026-11-03",
@@ -553,6 +571,18 @@
   "titles": []
  },
  {
+  "id": "alexa-von-tobel",
+  "name": "Alexa Von Tobel",
+  "titles": [
+   {
+    "title": "Founder and managing partner, Inspired Capital",
+    "entry": "cnbc-2026-11-11-von-tobel-ai-entrepreneurship",
+    "on": "2026-11-11",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "alexander-k-saeri",
   "name": "Alexander K. Saeri",
   "titles": []
@@ -634,6 +664,12 @@
   "id": "alice-huang",
   "name": "Alice Huang",
   "titles": [
+   {
+    "title": "Megaspeed employee",
+    "entry": "axios-2026-11-11-bessent-lutnick-megaspeed",
+    "on": "2026-11-11",
+    "role": "mentioned"
+   },
    {
     "title": "Megaspeed executive",
     "entry": "techcrunch-2026-11-10-huang-megaspeed-timeline",
@@ -731,6 +767,11 @@
   ]
  },
  {
+  "id": "amelia-davidson",
+  "name": "Amelia Davidson",
+  "titles": []
+ },
+ {
   "id": "amelie-knecht",
   "name": "Amelie Knecht",
   "titles": [
@@ -773,6 +814,11 @@
     "role": "mentioned"
    }
   ]
+ },
+ {
+  "id": "ana-swanson",
+  "name": "Ana Swanson",
+  "titles": []
  },
  {
   "id": "ananaya-mittal",
@@ -882,6 +928,18 @@
   "id": "andrei-kucharavy",
   "name": "Andrei Kucharavy",
   "titles": []
+ },
+ {
+  "id": "andrew-arditi",
+  "name": "Andrew Arditi",
+  "titles": [
+   {
+    "title": "AI researcher",
+    "entry": "transformer-2026-11-11-hugging-face-abliterated-models",
+    "on": "2026-11-11",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "andrew-bailey",
@@ -1127,6 +1185,11 @@
  {
   "id": "anna-hedstrom",
   "name": "Anna Hedström",
+  "titles": []
+ },
+ {
+  "id": "anna-heim",
+  "name": "Anna Heim",
   "titles": []
  },
  {
@@ -1959,6 +2022,18 @@
   ]
  },
  {
+  "id": "ben-buchanan",
+  "name": "Ben Buchanan",
+  "titles": [
+   {
+    "title": "President Biden's former senior AI advisor",
+    "entry": "chtech-2026-11-12-ai-race-with-china-or-trap",
+    "on": "2026-11-12",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "ben-gartside",
   "name": "Ben Gartside",
   "titles": [
@@ -2476,6 +2551,12 @@
   "name": "Brian Mast",
   "titles": [
    {
+    "title": "Chairman, House Foreign Affairs Committee",
+    "entry": "techcrunch-2026-11-11-huang-scandal-timeline",
+    "on": "2026-11-11",
+    "role": "mentioned"
+   },
+   {
     "title": "Rep. (R-FL); chair, House Foreign Affairs Committee",
     "entry": "forbes-breaking-news-2026-11-10-mast-huang-naive-chips",
     "on": "2026-11-10",
@@ -2720,6 +2801,18 @@
   "id": "caterina-borgese",
   "name": "Caterina Borgese",
   "titles": []
+ },
+ {
+  "id": "catherine-flick",
+  "name": "Catherine Flick",
+  "titles": [
+   {
+    "title": "professor of ethics and games technology, University of Staffordshire",
+    "entry": "transformer-2026-11-11-hugging-face-abliterated-models",
+    "on": "2026-11-11",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "cathy-newman",
@@ -2983,6 +3076,18 @@
   ]
  },
  {
+  "id": "chris-csis",
+  "name": "Chris",
+  "titles": [
+   {
+    "title": "Associate Fellow, CSIS",
+    "entry": "ai-policy-podcast-2026-11-12-metr-anthropic-nvidia-trust",
+    "on": "2026-11-12",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "chris-cundy",
   "name": "Chris Cundy",
   "titles": []
@@ -3107,6 +3212,18 @@
   "id": "christian-arnold",
   "name": "Christian Arnold",
   "titles": []
+ },
+ {
+  "id": "christian-lamarco",
+  "name": "Christian Lamarco",
+  "titles": [
+   {
+    "title": "Short seller and trader",
+    "entry": "nyt-2026-11-11-trader-warned-nvidia-china-ties",
+    "on": "2026-11-11",
+    "role": "subject"
+   }
+  ]
  },
  {
   "id": "christian-schroeder-de-witt",
@@ -4195,6 +4312,18 @@
     "entry": "bloomberg-television-2026-10-15-marcus-trustworthy-ai-forum",
     "on": "2026-10-15",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "david-perdue",
+  "name": "David Perdue",
+  "titles": [
+   {
+    "title": "US ambassador to China",
+    "entry": "bloomberg-television-2026-11-11-anthropic-ipo-make-or-break",
+    "on": "2026-11-11",
+    "role": "speaker"
    }
   ]
  },
@@ -5590,6 +5719,11 @@
   "titles": []
  },
  {
+  "id": "evan-schlozman",
+  "name": "Evan Schlozman",
+  "titles": []
+ },
+ {
   "id": "everett-hildenbrandt",
   "name": "Everett Hildenbrandt",
   "titles": [
@@ -6008,6 +6142,11 @@
   ]
  },
  {
+  "id": "garrett-m-graff",
+  "name": "Garrett M. Graff",
+  "titles": []
+ },
+ {
   "id": "garrison-lovely",
   "name": "Garrison Lovely",
   "titles": [
@@ -6188,6 +6327,12 @@
   "id": "george-kurtz",
   "name": "George Kurtz",
   "titles": [
+   {
+    "title": "CEO, CrowdStrike",
+    "entry": "transformer-2026-11-11-hugging-face-abliterated-models",
+    "on": "2026-11-11",
+    "role": "speaker"
+   },
    {
     "title": "Founder and CEO, CrowdStrike",
     "entry": "cnbc-2026-10-06-crowdstrike-kurtz-ai-safety",
@@ -6656,6 +6801,18 @@
   "titles": []
  },
  {
+  "id": "hannah-fry",
+  "name": "Hannah Fry",
+  "titles": [
+   {
+    "title": "Professor",
+    "entry": "deepmind-2026-11-11-alphagenome-2-podcast",
+    "on": "2026-11-11",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "hannah-rubinton",
   "name": "Hannah Rubinton",
   "titles": [
@@ -6868,6 +7025,16 @@
  {
   "id": "hersheys",
   "name": "hersheys",
+  "titles": []
+ },
+ {
+  "id": "heyanuja",
+  "name": "heyanuja",
+  "titles": []
+ },
+ {
+  "id": "hiblick",
+  "name": "hiblick",
   "titles": []
  },
  {
@@ -7229,6 +7396,18 @@
   "id": "jack-richings",
   "name": "Jack Richings",
   "titles": []
+ },
+ {
+  "id": "jack-selby",
+  "name": "Jack Selby",
+  "titles": [
+   {
+    "title": "Managing Director, Copper Sky Capital",
+    "entry": "bloomberg-television-2026-11-11-anthropic-ipo-make-or-break",
+    "on": "2026-11-11",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "jack-shanahan",
@@ -7781,6 +7960,18 @@
   ]
  },
  {
+  "id": "jeff-kessler",
+  "name": "Jeff Kessler",
+  "titles": [
+   {
+    "title": "Commerce Undersecretary",
+    "entry": "axios-2026-11-11-bessent-lutnick-megaspeed",
+    "on": "2026-11-11",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
   "id": "jeff-warren",
   "name": "Jeff Warren",
   "titles": [
@@ -7875,6 +8066,12 @@
   "name": "Jensen Huang",
   "titles": [
    {
+    "title": "Chief executive, Nvidia",
+    "entry": "cset-2026-11-11-espionage-ai-strategic-overreaction",
+    "on": "2026-11-11",
+    "role": "mentioned"
+   },
+   {
     "title": "chief executive, Nvidia",
     "entry": "bbc-2026-11-10-faisal-islam-nvidia-boss-china",
     "on": "2026-11-10",
@@ -7926,6 +8123,18 @@
     "title": "Co-founder, Gladstone AI",
     "entry": "doom-debates-2026-10-20-harris-ai-chernobyl-pause",
     "on": "2026-10-20",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "jeremy-howard",
+  "name": "Jeremy Howard",
+  "titles": [
+   {
+    "title": "Co-founder of fast.ai and Answer.AI",
+    "entry": "mlst-2026-11-11-howard-llms-cosplay-understanding",
+    "on": "2026-11-11",
     "role": "speaker"
    }
   ]
@@ -8394,6 +8603,18 @@
   "titles": []
  },
  {
+  "id": "john-moolenaar",
+  "name": "John Moolenaar",
+  "titles": [
+   {
+    "title": "Chairman, House Select Committee on China",
+    "entry": "techcrunch-2026-11-11-huang-scandal-timeline",
+    "on": "2026-11-11",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "john-newman",
   "name": "John Newman",
   "titles": [
@@ -8492,6 +8713,18 @@
     "entry": "axios-2026-10-19-ai-attack-ads-midterms",
     "on": "2026-10-19",
     "role": "subject"
+   }
+  ]
+ },
+ {
+  "id": "jon-palmer",
+  "name": "Jon Palmer",
+  "titles": [
+   {
+    "title": "Corporate Vice President and Chief Legal Officer, Microsoft",
+    "entry": "microsoft-2026-11-11-fourth-circuit-press-freedom-ruling",
+    "on": "2026-11-12",
+    "role": "author"
    }
   ]
  },
@@ -8957,6 +9190,11 @@
   ]
  },
  {
+  "id": "juliana-castro-varon",
+  "name": "Juliana Castro Varón",
+  "titles": []
+ },
+ {
   "id": "julie-bedard",
   "name": "Julie Bedard",
   "titles": [
@@ -9082,6 +9320,18 @@
   "id": "kadharmoideen-fadurudeen",
   "name": "Kadharmoideen Fadurudeen",
   "titles": []
+ },
+ {
+  "id": "kai-fu-lee",
+  "name": "Kai-Fu Lee",
+  "titles": [
+   {
+    "title": "Chairman and CEO, Sinovation Ventures; CEO, 01.AI",
+    "entry": "bloomberg-2026-11-11-kai-fu-lee-ai-valuations",
+    "on": "2026-11-11",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "kai-nicol-schwarz",
@@ -9317,6 +9567,11 @@
  {
   "id": "karthik-ganapathy",
   "name": "Karthik Ganapathy",
+  "titles": []
+ },
+ {
+  "id": "kartikay-luthra",
+  "name": "Kartikay Luthra",
   "titles": []
  },
  {
@@ -9657,6 +9912,12 @@
     "entry": "politico-2026-11-11-nvidia-loses-ground-chip-fight",
     "on": "2026-11-11",
     "role": "mentioned"
+   },
+   {
+    "title": "Republican Senator",
+    "entry": "cnbc-2026-11-11-cramer-huang-resign-wachtell",
+    "on": "2026-11-11",
+    "role": "subject"
    }
   ]
  },
@@ -9812,6 +10073,18 @@
   "id": "kim-jong-un",
   "name": "Kim Jong Un",
   "titles": []
+ },
+ {
+  "id": "kimberly-powell",
+  "name": "Kimberly Powell",
+  "titles": [
+   {
+    "title": "Vice president of health care, Nvidia",
+    "entry": "techcrunch-2026-11-11-huang-scandal-timeline",
+    "on": "2026-11-11",
+    "role": "mentioned"
+   }
+  ]
  },
  {
   "id": "kirsten-horton",
@@ -11532,6 +11805,11 @@
   "titles": []
  },
  {
+  "id": "maureen-farrell",
+  "name": "Maureen Farrell",
+  "titles": []
+ },
+ {
   "id": "max-harms",
   "name": "Max Harms",
   "titles": []
@@ -11666,6 +11944,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "megasilverfist",
+  "name": "megasilverfist",
+  "titles": []
  },
  {
   "id": "meia-chita-tegmark",
@@ -12422,6 +12705,12 @@
   "name": "Nate Soares",
   "titles": [
    {
+    "title": "president, Machine Intelligence Research Institute",
+    "entry": "nyt-2026-11-11-teaching-agents-corrigibility",
+    "on": "2026-11-11",
+    "role": "speaker"
+   },
+   {
     "title": "MIRI",
     "entry": "zvi-mowshowitz-2026-10-23-the-hackening",
     "on": "2026-10-23",
@@ -12666,6 +12955,11 @@
  {
   "id": "nick-romeo",
   "name": "Nick Romeo",
+  "titles": []
+ },
+ {
+  "id": "nico-portuondo",
+  "name": "Nico Portuondo",
   "titles": []
  },
  {
@@ -13002,6 +13296,18 @@
   ]
  },
  {
+  "id": "owencb",
+  "name": "owencb",
+  "titles": [
+   {
+    "title": "Author on the AI Alignment Forum, linking to Forethought",
+    "entry": "alignmentforum-2026-11-11-types-of-automated-alignment",
+    "on": "2026-11-11",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "pamela-brown",
   "name": "Pamela Brown",
   "titles": []
@@ -13293,6 +13599,11 @@
   ]
  },
  {
+  "id": "peter-eckersley",
+  "name": "Peter Eckersley",
+  "titles": []
+ },
+ {
   "id": "peter-lewis",
   "name": "Peter Lewis",
   "titles": [
@@ -13442,6 +13753,18 @@
     "title": "Creator of Heretic",
     "entry": "wired-2026-11-10-abliterators-uncensored-ai-models",
     "on": "2026-11-10",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "philipp-emanuel-weidmann",
+  "name": "Philipp Emanuel Weidmann",
+  "titles": [
+   {
+    "title": "developer of Heretic",
+    "entry": "transformer-2026-11-11-hugging-face-abliterated-models",
+    "on": "2026-11-11",
     "role": "speaker"
    }
   ]
@@ -13676,6 +13999,12 @@
   "name": "Raja Krishnamoorthi",
   "titles": [
    {
+    "title": "Representative (D), Illinois",
+    "entry": "bloomberg-2026-11-11-krishnamoorthi-huang-subpoena",
+    "on": "2026-11-11",
+    "role": "speaker"
+   },
+   {
     "title": "Rep. (D-IL)",
     "entry": "forbes-breaking-news-2026-10-13-krishnamoorthi-chinese-ai-models",
     "on": "2026-10-13",
@@ -13858,6 +14187,18 @@
   "titles": []
  },
  {
+  "id": "richard-adams",
+  "name": "Richard Adams",
+  "titles": [
+   {
+    "title": "Education editor",
+    "entry": "guardian-2026-11-11-ofs-ai-coursework-assessment",
+    "on": "2026-11-11",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "richard-bertossa",
   "name": "Richard Bertossa",
   "titles": []
@@ -13909,6 +14250,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "richard-juggins",
+  "name": "Richard Juggins",
+  "titles": []
  },
  {
   "id": "richard-partington",
@@ -13976,6 +14322,18 @@
   ]
  },
  {
+  "id": "rick-crawford",
+  "name": "Rick Crawford",
+  "titles": [
+   {
+    "title": "Chairman, House Permanent Select Committee on Intelligence",
+    "entry": "techcrunch-2026-11-11-huang-scandal-timeline",
+    "on": "2026-11-11",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
   "id": "rick-smith",
   "name": "Rick Smith",
   "titles": [
@@ -14022,6 +14380,11 @@
  {
   "id": "ro-khanna",
   "name": "Ro Khanna",
+  "titles": []
+ },
+ {
+  "id": "rob-copeland",
+  "name": "Rob Copeland",
   "titles": []
  },
  {
@@ -14613,6 +14976,11 @@
   "titles": []
  },
  {
+  "id": "sam-bresnick",
+  "name": "Sam Bresnick",
+  "titles": []
+ },
+ {
   "id": "sam-hiner",
   "name": "Sam Hiner",
   "titles": [
@@ -14728,6 +15096,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "sandra-laville",
+  "name": "Sandra Laville",
+  "titles": []
  },
  {
   "id": "sandy-tanwisuth",
@@ -15021,6 +15394,18 @@
     "entry": "lesswrong-2026-11-01-towards-the-autograntor",
     "on": "2026-11-01",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "scott-bessent",
+  "name": "Scott Bessent",
+  "titles": [
+   {
+    "title": "Treasury Secretary",
+    "entry": "axios-2026-11-11-bessent-lutnick-megaspeed",
+    "on": "2026-11-11",
+    "role": "subject"
    }
   ]
  },
@@ -15800,6 +16185,18 @@
   "titles": []
  },
  {
+  "id": "strauss-zelnick",
+  "name": "Strauss Zelnick",
+  "titles": [
+   {
+    "title": "Chairman and CEO, Take-Two Interactive",
+    "entry": "bloomberg-2026-11-11-zelnick-ai-gaming-jobs",
+    "on": "2026-11-11",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "stuart-armstrong",
   "name": "Stuart Armstrong",
   "titles": []
@@ -15923,6 +16320,18 @@
   "id": "suyash-maniyar",
   "name": "Suyash Maniyar",
   "titles": []
+ },
+ {
+  "id": "suzan-delbene",
+  "name": "Suzan DelBene",
+  "titles": [
+   {
+    "title": "Representative",
+    "entry": "bloomberg-2026-11-11-delbene-nvidia-huang-investigation",
+    "on": "2026-11-11",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "swyx",
@@ -16731,6 +17140,18 @@
     "entry": "guardian-2026-11-03-cps-prosecutor-imaginary-case",
     "on": "2026-11-03",
     "role": "mentioned"
+   }
+  ]
+ },
+ {
+  "id": "vijoy-pandey",
+  "name": "Vijoy Pandey",
+  "titles": [
+   {
+    "title": "SVP and GM, Outshift by Cisco",
+    "entry": "cognitive-revolution-2026-11-11-cisco-pandey-agents-think-together",
+    "on": "2026-11-11",
+    "role": "speaker"
    }
   ]
  },
@@ -17723,6 +18144,18 @@
   "id": "zifeng-cheng",
   "name": "Zifeng Cheng",
   "titles": []
+ },
+ {
+  "id": "ziga-avsec",
+  "name": "Ziga Avsec",
+  "titles": [
+   {
+    "title": "Google DeepMind",
+    "entry": "deepmind-2026-11-11-alphagenome-2-podcast",
+    "on": "2026-11-11",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "zihan-chen",
