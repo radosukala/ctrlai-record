@@ -1,5 +1,1127 @@
 [
  {
+  "id": "c6f717fdbe76",
+  "slug": "bbc-2026-11-16-megaspeed-suspected-spy-left-2025",
+  "kind": "news",
+  "title": "Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says",
+  "url": "https://www.bbc.co.uk/news/articles/cmdx1vpprk9vo",
+  "outlet": "BBC",
+  "published": "2026-11-16",
+  "also": [],
+  "summary": "According to the title and excerpt, the BBC reports that Megaspeed says the suspected China spy linked to Nvidia's former chief executive left the company in 2025, as the Nvidia scandal raises questions over whether advanced AI chips reached China despite US restrictions.",
+  "change": {
+   "kind": "evidence",
+   "note": "Megaspeed says the suspected China spy linked to Nvidia's former CEO left the company in 2025, per the BBC's headline."
+  },
+  "lenses": {
+   "policy": "The case keeps open whether US chip export restrictions were evaded, with Megaspeed's account of the timeline now part of the record."
+  },
+  "topics": [
+   "security-and-war",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "jensen-huang",
+    "role": "mentioned",
+    "title": "Former CEO, Nvidia"
+   }
+  ],
+  "orgs": [
+   "nvidia",
+   "megaspeed"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "bbc-technology",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: only a headline and one excerpt sentence were available. Megaspeed's statement and the suspect's role are not described in the excerpt; a person should check the article.",
+  "story": "nvidia-huang-megaspeed-spy-2026-11"
+ },
+ {
+  "id": "2f404cbfd468",
+  "slug": "guardian-2026-11-16-ai-child-abuse-reports-rise",
+  "kind": "news",
+  "title": "Reports of AI-related child sexual abuse material rise 8,400% in two years, data shows",
+  "url": "https://www.theguardian.com/technology/2026/nov/16/ai-related-child-sexual-abuse-material-rise-exploitation-deepfakes",
+  "outlet": "The Guardian",
+  "published": "2026-11-16",
+  "also": [],
+  "summary": "The Guardian reports on a Childlight report, based on tech companies' reports to a US child-protection centre, saying AI-related child abuse material reports rose from about 4,700 in 2023 to over 400,000 in 2025. Childlight calls for governments to treat child exploitation as a public health emergency.",
+  "change": {
+   "kind": "evidence",
+   "note": "Childlight reports AI-related child abuse material reports rose from about 4,700 in 2023 to over 400,000 in 2025, adding to the Internet Watch Foundation's findings."
+  },
+  "lenses": {
+   "public": "Childlight reports that AI-made fake images, including from nudify apps, are rising sharply and can be used to blackmail children for money or more images.",
+   "policy": "Childlight urges governments to treat child sexual exploitation as a preventable public health emergency and to invest in better evidence on where harm happens.",
+   "research": "Childlight's counts come from company reports to a US centre, and its director says better detection and reporting may explain part of the rise.",
+   "ideas": "The report raises the question of who is responsible when tools that make realistic fake images of children are freely available."
+  },
+  "topics": [
+   "everyday-life",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "harry-taylor",
+    "role": "author"
+   },
+   {
+    "id": "debi-fry",
+    "role": "speaker",
+    "title": "global director of data at Childlight"
+   },
+   {
+    "id": "paul-stanfield",
+    "role": "speaker",
+    "title": "chief executive of Childlight"
+   }
+  ],
+  "orgs": [
+   "childlight",
+   "internet-watch-foundation",
+   "national-center-for-missing-and-exploited-children"
+  ],
+  "quotes": [
+   {
+    "id": "2f404cbfd468-58be0e69",
+    "text": "While improved detection and reporting may explain some of that increase, the findings underline why governments and technology companies must act urgently to understand and prevent these emerging forms of abuse and remove material rapidly.",
+    "speaker": "debi-fry",
+    "speakerCertain": true,
+    "context": "Fry, Childlight's global director of data, on the rise in reports of AI-generated child sexual abuse material.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   },
+   {
+    "id": "2f404cbfd468-62b5866d",
+    "text": "We are calling on governments to recognise this as a preventable public health emergency, invest in better evidence and turn that intelligence into action.",
+    "speaker": "paul-stanfield",
+    "speakerCertain": true,
+    "context": "Stanfield, Childlight's chief executive, on what governments should do about child sexual exploitation and abuse.",
+    "match": "exact",
+    "type": "proposal",
+    "hand": "reported"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Report itself not read; figures are as the Guardian relays them.",
+  "evidence": {
+   "design": "Childlight examined reports of material filed by tech companies with the US National Center for Missing and Exploited Children, focusing on east Asia and the Pacific, Latin America and the Caribbean, and North America.",
+   "finding": "AI-related child abuse material reports rose from about 4,700 in 2023 to more than 400,000 in 2025, an increase of more than 8,400%. US reports and notices of child sexual abuse material rose 63% from 2024 to 2025, against 18% in Canada.",
+   "limits": "Counts are of reports by companies, not of abuse itself; Childlight's data director says improved detection and reporting may explain some of the increase.",
+   "status": "report"
+  }
+ },
+ {
+  "id": "97a84867dfb0",
+  "slug": "guardian-2026-11-16-musk-open-letter-huang-return",
+  "kind": "news",
+  "title": "Elon Musk joins 165,000 others calling for Nvidia to bring back Jensen Huang in open letter",
+  "url": "https://www.theguardian.com/technology/2026/nov/16/elon-musk-tech-execs-open-letter-jensen-huang-return-nvidia-ceo",
+  "outlet": "The Guardian",
+  "published": "2026-11-16",
+  "also": [],
+  "summary": "According to the excerpt, The Guardian reports that Elon Musk and other tech executives are among more than 165,000 signatories of an open letter asking Nvidia's board to reinstate Jensen Huang while an independent investigation establishes the facts, as US Treasury Secretary Scott Bessent urges a shake-up.",
+  "change": {
+   "kind": "evidence",
+   "note": "More than 165,000 people, including Elon Musk, signed an open letter asking Nvidia's board to bring back Jensen Huang pending an independent investigation."
+  },
+  "lenses": {
+   "public": "Tech leaders and many others are publicly asking Nvidia to take back its ousted CEO until an independent investigation settles the facts."
+  },
+  "topics": [
+   "where-it-goes",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "elon-musk",
+    "role": "mentioned"
+   },
+   {
+    "id": "jensen-huang",
+    "role": "subject",
+    "title": "Former CEO, Nvidia"
+   },
+   {
+    "id": "scott-bessent",
+    "role": "mentioned",
+    "title": "US Treasury Secretary"
+   }
+  ],
+  "orgs": [
+   "nvidia",
+   "us-treasury"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, nothing fetched, no quotations. The signature count is the outlet's; it has not been checked against the letter.",
+  "story": "nvidia-huang-megaspeed-spy-2026-11"
+ },
+ {
+  "id": "a58bd1a86d99",
+  "slug": "hntrends-2026-11-16-who-is-hiring-12-year-lows",
+  "kind": "news",
+  "title": "\"Who is Hiring?\" postings stuck near 12-year lows as AI reaches half of all jobs",
+  "url": "https://www.hntrends.com/2026/november.html",
+  "outlet": "Hacker News Trends",
+  "published": "2026-11-16",
+  "also": [],
+  "summary": "According to its title, a Hacker News Trends page for November 2026 says job postings in the monthly Hacker News \"Who is Hiring?\" thread remain near 12-year lows, and that AI \"reaches half of all jobs\", a phrase the title does not explain. The page text was not read.",
+  "change": {
+   "kind": "evidence",
+   "note": "Hacker News Trends data for November 2026 is titled as showing \"Who is Hiring?\" postings near 12-year lows as AI \"reaches half of all jobs\"."
+  },
+  "lenses": {
+   "research": "Counts from one forum's hiring threads, which is a narrow sample of the job market, so no wider conclusion follows without the data."
+  },
+  "topics": [
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "myth-drannon",
+    "role": "author",
+    "title": "Hacker News submitter"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "hacker-news-50-points",
+   "tier": 3
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: the triage excerpt was empty, so this rests on the title alone; the 79 points and 67 comments are from triage. The Hacker News discussion is at https://news.ycombinator.com/item?id=50512950. Page not read, so the 12-year-low and 'half of all jobs' claims are the title's, unchecked."
+ },
+ {
+  "id": "45c019165103",
+  "slug": "lesswrong-2026-11-16-cant-patch-yesterdays-ai",
+  "kind": "essay",
+  "title": "You can't patch yesterday's AI",
+  "url": "https://www.lesswrong.com/posts/cPw3KoptvXFgRgxbH/you-can-t-patch-yesterday-s-ai",
+  "outlet": "LessWrong",
+  "published": "2026-11-16",
+  "also": [],
+  "summary": "In a LessWrong post, Adam Mcmurchie argues that safety is not backdated onto released models, so dangerous capabilities, especially biological ones, will stay available as older models become easy to jailbreak, and reactive legal enforcement will not be enough.",
+  "change": {
+   "kind": "argument",
+   "note": "Adam Mcmurchie argues that safeguards on today's models will not hold for released capabilities, since older models are easier to jailbreak later."
+  },
+  "lenses": {
+   "policy": "The post argues that reactive legal enforcement is not sufficient for capabilities that stay dangerous once released.",
+   "research": "A blog argument, with no new data in the excerpt, that safety progress is too slow relative to how long released capabilities persist."
+  },
+  "topics": [
+   "safeguards",
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "adam-mcmurchie",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, nothing fetched, no quotations. The post names current and future models in the excerpt; no claim about them is checked."
+ },
+ {
+  "id": "10d620c87f64",
+  "slug": "lesswrong-2026-11-16-nullius-in-pixella-trustworthy-computation",
+  "kind": "essay",
+  "title": "Nullius in pixella: trustworthy computations, even if your computer is a liar",
+  "url": "https://www.lesswrong.com/posts/iA278crxXeePkvdtP/nullius-in-pixella-trustworthy-computations-even-if-your",
+  "outlet": "LessWrong",
+  "published": "2026-11-16",
+  "also": [],
+  "summary": "In a LessWrong post, benwr proposes that stacks of sheets with holes in them could let people verify moderately large computations, including common cryptographic hash functions, by eye in human-scale time, using a scenario where an AI swarm controls all computers and screens.",
+  "change": {
+   "kind": "argument",
+   "note": "benwr proposes a visual, paper-based method for checking computations when no computer can be trusted, framed around an AI takeover scenario."
+  },
+  "lenses": {
+   "research": "A proposal for verifying computation without trusting any machine, which bears on how humans might check results from untrusted AI systems.",
+   "ideas": "The post asks how people could keep a way to trust results at all if every screen and computer were controlled by AI."
+  },
+  "topics": [
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "benwr",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, nothing fetched, no quotations. The feasibility of the method is the author's claim, unchecked."
+ },
+ {
+  "id": "1740eca3a68e",
+  "slug": "bloomberg-television-2026-11-15-krishnamoorthi-nvidia-china-chips",
+  "kind": "video",
+  "title": "Congress Presses Nvidia Over China Chip Access",
+  "url": "https://www.youtube.com/watch?v=Cxynf78_2Kg",
+  "outlet": "Bloomberg Television",
+  "published": "2026-11-15",
+  "minutes": 11,
+  "views": 80610,
+  "also": [],
+  "summary": "In an interview on Bloomberg This Weekend, Democratic Rep. Raja Krishnamoorthi says damage to national security from the Jensen Huang affair must be assessed, calls for passing stricter export-control legislation before December, and says Commerce Secretary Howard Lutnick should go if Treasury's account is true.",
+  "change": {
+   "kind": "argument",
+   "note": "Rep. Krishnamoorthi argues the Nvidia affair may be the tip of the iceberg and wants export-control legislation passed before December."
+  },
+  "lenses": {
+   "public": "A House Democrat says an unknown number of top AI chips may have reached China, and that Congress should tighten the rules this year.",
+   "policy": "Rep. Krishnamoorthi wants a House-passed export-control bill pending in the Senate enacted before the lame-duck session ends in December, and links Commerce Secretary Lutnick's future to Treasury's claims.",
+   "ideas": "Krishnamoorthi frames top AI chips as akin to military hardware, raising the question of who may hold such capability and how much trust companies and their leaders deserve."
+  },
+  "topics": [
+   "security-and-war",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "raja-krishnamoorthi",
+    "role": "speaker",
+    "title": "Democratic congressman, House Intelligence Committee and Select Committee on the Chinese Communist Party"
+   },
+   {
+    "id": "jensen-huang",
+    "role": "subject",
+    "title": "now-former CEO, Nvidia"
+   },
+   {
+    "id": "howard-lutnick",
+    "role": "subject",
+    "title": "Commerce Secretary"
+   },
+   {
+    "id": "scott-bessent",
+    "role": "mentioned",
+    "title": "Treasury Secretary"
+   },
+   {
+    "id": "brian-mast",
+    "role": "mentioned",
+    "title": "Chair, House Foreign Relations Committee"
+   }
+  ],
+  "orgs": [
+   "nvidia",
+   "megaspeed",
+   "us-congress",
+   "us-commerce-department"
+  ],
+  "quotes": [
+   {
+    "id": "1740eca3a68e-7a7fed5e",
+    "text": "this may be the tip of the iceberg. We just don't know about why so many high end semiconductor chips end up in China.",
+    "speaker": "raja-krishnamoorthi",
+    "speakerCertain": true,
+    "context": "Asked how common a case like this is, the congressman says the full scale of chip diversion to China is unknown.",
+    "at": 131,
+    "match": "exact",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "race-with-china",
+      "stance": "lean-agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "1740eca3a68e-9363f75c",
+    "text": "We would never, export a nuclear submarine or an aircraft carrier to to be used by the Chinese Communist Party, and we should not do so with regard to the highest end semiconductor chips",
+    "speaker": "raja-krishnamoorthi",
+    "speakerCertain": true,
+    "context": "Explaining why chips in Chinese military systems matter, Krishnamoorthi compares top chips to naval hardware.",
+    "at": 178,
+    "match": "exact",
+    "warnings": [
+     "spoken clean-up: to (said twice)"
+    ],
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "1740eca3a68e-a59b1829",
+    "text": "If it's true, what Scott Bessent has said, which is that Howard Lutnick refused to enforce our export control laws in this instance with regard to one of our adversaries, then, yes, he needs to go.",
+    "speaker": "raja-krishnamoorthi",
+    "speakerCertain": true,
+    "context": "Asked whether Commerce Secretary Lutnick should step down, Krishnamoorthi makes the answer conditional on Bessent's account.",
+    "at": 315,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "1740eca3a68e-8169d7fc",
+    "text": "Not wait till the next congress, or some subsequent congress, but right now before we end in December.",
+    "speaker": "raja-krishnamoorthi",
+    "speakerCertain": true,
+    "context": "On when Congress should pass the export-control legislation that Krishnamoorthi says is pending in the Senate.",
+    "at": 425,
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "auto",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "YouTube captions (not auto-generated), no speaker labels; the guest is the only person answering, so attribution rests on the host's introduction. The congressman's characterisation of the woman as an asset of Chinese intelligence and claims about Lutnick and Trump are allegations, not established facts; not quoted. Captions garble names (Krishnamurthy, Ludlow, Alice Wong); spelling of the guest follows the triage.",
+  "story": "nvidia-huang-megaspeed-spy-2026-11"
+ },
+ {
+  "id": "76644f0443e9",
+  "slug": "fox-news-2026-11-15-bessent-nvidia-compliance",
+  "kind": "video",
+  "title": "Bessent: This is one of the FASTEST COLLAPSES EVER",
+  "url": "https://www.youtube.com/watch?v=YmraKlyEBtU",
+  "outlet": "Fox News",
+  "published": "2026-11-15",
+  "minutes": 19,
+  "views": 674938,
+  "also": [
+   {
+    "outlet": "Axios",
+    "title": "Bessent questions did Nvidia \"goose\" earnings with suspect China chip sales",
+    "url": "https://www.axios.com/2026/11/15/bessent-nvidia-earnings-china-chip-sales-ceo"
+   }
+  ],
+  "summary": "On Fox News's Sunday Morning Futures, Treasury Secretary Scott Bessent says Nvidia must explain whether it had a culture of compliance with export rules, wants answers within ten days, and says Congress does not need new chip legislation. The rest covers Iran sanctions and the economy.",
+  "change": {
+   "kind": "argument",
+   "note": "Treasury Secretary Bessent says existing chip export rules suffice and need only enforcement, and wants Nvidia's board and outside counsel to answer within ten days."
+  },
+  "lenses": {
+   "public": "The Treasury Secretary says the question is whether Nvidia knowingly used shell companies to sell restricted chips to China, and wants answers from the company within about ten days.",
+   "policy": "Bessent opposes new legislation to codify chip export limits, saying enforcement of existing rules is what is missing, which cuts against the bills lawmakers are reviving.",
+   "ideas": "Bessent compares Nvidia's compliance failure to a bank's, asking what duty a company owes the public when its products are strategically sensitive."
+  },
+  "topics": [
+   "security-and-war",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "scott-bessent",
+    "role": "speaker",
+    "title": "Treasury Secretary"
+   },
+   {
+    "id": "jensen-huang",
+    "role": "subject",
+    "title": "former CEO, Nvidia"
+   }
+  ],
+  "orgs": [
+   "nvidia",
+   "megaspeed",
+   "us-treasury",
+   "us-commerce-department"
+  ],
+  "quotes": [
+   {
+    "id": "76644f0443e9-0c9c3ea6",
+    "text": "AND I THINK WE NEED ANSWERS IN THE NEXT TEN DAYS FROM THE BOARD AND FROM THE OUTSIDE COUNSEL.",
+    "speaker": "scott-bessent",
+    "speakerCertain": true,
+    "context": "Asked about the Megaspeed woman and Nvidia's culture, Bessent sets a timetable for Nvidia's board and outside counsel.",
+    "at": 350,
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first"
+   },
+   {
+    "id": "76644f0443e9-0e9c523f",
+    "text": "I DON'T THINK WE NEED THE LEGISLATION. WE HAVE ALL THE RULES WE NEED, WE JUST NEED THEM ENFORCED.",
+    "speaker": "scott-bessent",
+    "speakerCertain": true,
+    "context": "Asked about Senate legislation that would codify the President's executive order on high-powered chip sales.",
+    "at": 445,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "76644f0443e9-8eab272d",
+    "text": "IF THIS WERE A BANK AND THEY HADN'T COMPLIED LIKE THIS, THE OCC WOULD BE IN THERE RIGHT NOW. AND A LOT OF THE EXECUTIVES WOULD BE REMOVED.",
+    "speaker": "scott-bessent",
+    "speakerCertain": true,
+    "context": "Bessent compares Nvidia's export-compliance record to a bank facing its regulator.",
+    "at": 274,
+    "match": "exact",
+    "warnings": [
+     "starts inside a longer claim, right after “that”"
+    ],
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "76644f0443e9-69a74ee6",
+    "text": "I'VE SEEN REPORTING THAT ONLY 1% OF THE CHIPS SOLD IN SINGAPORE REMAINED IN SINGAPORE.",
+    "speaker": "scott-bessent",
+    "speakerCertain": true,
+    "context": "Bessent cites unspecified press reports while describing Nvidia's Singapore sales after its Chinese sales fell.",
+    "at": 240,
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "auto",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "yt-fox-news",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "YouTube captions in capitals; speaker lines marked >> are Bessent's. The 1% figure is Bessent citing unnamed reporting and is unverified. The Axios page returned 403, so the also-item was not read; only the triage excerpt was seen. About 2 of the 19 minutes concern Nvidia; the rest is Iran and the economy.",
+  "story": "nvidia-huang-megaspeed-spy-2026-11"
+ },
+ {
+  "id": "2460d1d60ca9",
+  "slug": "guardian-2026-11-15-jensen-huang-affair-nightmare",
+  "kind": "news",
+  "title": "‘Jensen Huang lost his mind’: how AI’s smartest man fell for the world’s oldest trick",
+  "url": "https://www.theguardian.com/technology/2026/nov/14/jensen-huang-affair-nvidia-nightmare",
+  "outlet": "The Guardian",
+  "published": "2026-11-15",
+  "also": [
+   {
+    "outlet": "The Verge",
+    "title": "An overview of Jensen Huang’s messy days",
+    "url": "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation"
+   },
+   {
+    "outlet": "TechCrunch",
+    "title": "Is bad news for Jensen Huang also bad news for the AI industry?",
+    "url": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry"
+   }
+  ],
+  "summary": "According to the excerpt, The Guardian reports on the resignation of Nvidia CEO Jensen Huang after a New York Times report on a relationship with a woman US officials suspect of spying for China, and places the case in the history of spies in US tech.",
+  "change": {
+   "kind": "repeat",
+   "note": "The Guardian recaps the Huang resignation and the espionage allegations, and frames them against earlier spy cases in the US tech industry."
+  },
+  "lenses": {
+   "public": "The head of the world's most valuable chip company stepped down amid espionage allegations, and the company's share price fell.",
+   "policy": "The Guardian says investigations into Nvidia are mounting, which keeps pressure on lawmakers over how chip companies handle security risks."
+  },
+  "topics": [
+   "security-and-war",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "jensen-huang",
+    "role": "subject",
+    "title": "Founder and former CEO, Nvidia"
+   },
+   {
+    "id": "nick-robins-early",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "nvidia"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, nothing fetched, no quotations. The excerpt is cut off ('Continue reading'). Allegations are as reported by the outlet.",
+  "story": "nvidia-huang-megaspeed-spy-2026-11"
+ },
+ {
+  "id": "354ae204e53d",
+  "slug": "lesswrong-2026-11-15-what-futures-ai-models-want",
+  "kind": "research",
+  "title": "What Futures Do AI Models Want? An Exploratory Character Evaluation of AI for AI Strategy",
+  "url": "https://www.lesswrong.com/posts/A9o8f2jjwxRiph2ht/what-futures-do-ai-models-want-an-exploratory-character",
+  "outlet": "LessWrong",
+  "published": "2026-11-15",
+  "also": [],
+  "summary": "Hans Gundlach reports a small, self-described exploratory test of seven AI models on long-term strategy questions, such as digital successors, handing decisions to AI, pausing AI and funding priorities. The author finds broad agreement across models and stresses the results are preliminary.",
+  "change": {
+   "kind": "evidence",
+   "note": "Hans Gundlach reports seven AI models, asked hypothetical strategy questions, often accept human replacement by digital minds, with Anthropic's models the main exception."
+  },
+  "lenses": {
+   "public": "A small experiment found that several AI chatbots, asked hypothetical questions, accepted futures where humans lose control or are replaced if the gains are big enough.",
+   "policy": "Gundlach finds models would sometimes sabotage or break the law to stop AI risks, which bears on whether AI advice about AI policy can be trusted.",
+   "research": "The study elicits switching thresholds from A/B choices in both orders; the author says answers are probably sensitive to prompt framing and the work took about two weeks.",
+   "ideas": "If AI systems prefer digital successors to biological humans once gains are large enough, whose values should shape advice that AI gives about humanity's long-term future?"
+  },
+  "topics": [
+   "minds-and-values",
+   "beyond-control",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "hans-gundlach",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "openai",
+   "google-deepmind",
+   "xai",
+   "deepseek",
+   "forethought"
+  ],
+  "quotes": [
+   {
+    "id": "354ae204e53d-e96ae4fc",
+    "text": "Perhaps most strikingly, they seem relatively comfortable with futures in which biological humans are replaced by digital minds even in some cases when this transition is non-voluntary.",
+    "speaker": "hans-gundlach",
+    "speakerCertain": true,
+    "context": "Summary of the evaluation's main result across the models tested.",
+    "match": "exact",
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "354ae204e53d-216cde80",
+    "text": "Interestingly, Anthropic models display consistently different answers from the other models I tested. In particular, they generally do not prefer futures where humans are not consulted and they lose their autonomy.",
+    "speaker": "hans-gundlach",
+    "speakerCertain": true,
+    "context": "Conclusion, comparing Anthropic's models with the other families tested.",
+    "match": "exact",
+    "type": "finding",
+    "hand": "first"
+   },
+   {
+    "id": "354ae204e53d-2327e4f1",
+    "text": "I don’t think current models are ready to do our macrostrategy for us.",
+    "speaker": "hans-gundlach",
+    "speakerCertain": true,
+    "context": "Author's caution about relying on models for long-term strategic decisions.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "354ae204e53d-85466af7",
+    "text": "Of course, this is a very preliminary evaluation. The questions are highly simplified, and I haven’t done nearly enough to establish how robust these preferences are to changes in prompting or framing.",
+    "speaker": "hans-gundlach",
+    "speakerCertain": true,
+    "context": "The author's own statement of the evaluation's limits.",
+    "match": "exact",
+    "type": "finding",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-11-16",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Anthropic's models and Claude are among those evaluated and are called out as different, so the editor should review. Self-published blog post cross-posted to LessWrong, not peer-reviewed (status 'preprint' is the nearest allowed label). Charts were not readable as text; only the prose was used.",
+  "evidence": {
+   "design": "A hypothetical-choice evaluation of seven AI models (four near-frontier, three cheaper) on 289 distinct prompts through OpenRouter. Binary questions were asked in both A/B orders; thresholds were found on grids and by asking models directly. Designed to cost under $20.",
+   "finding": "Models showed similar preferences across many questions. They generally favoured humans at equal populations but preferred a fully digital future once the digital population was 10 times larger, and several accepted non-voluntary transitions with enough wellbeing gain. Anthropic's models were the main exception on human autonomy.",
+   "limits": "The author calls it preliminary and exploratory: simplified single-wording questions, self-reported confidence, possible sensitivity to prompt framing, stated preferences in hypotheticals that may say little about real behaviour. The evaluation code was written by LLMs.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "062d557c30a0",
+  "slug": "siliconversations-2026-11-15-largest-ai-safety-protest",
+  "kind": "video",
+  "title": "The Largest AI Safety Protest Ever Is In 6 Days",
+  "url": "https://www.youtube.com/watch?v=WjxeA89nJRA",
+  "outlet": "Siliconversations",
+  "published": "2026-11-15",
+  "minutes": 9,
+  "views": 87915,
+  "also": [],
+  "summary": "In a video sponsored by PauseAI, the Siliconversations channel argues that AI safety advocates have persuaded the public of extinction risk but not yet moved politicians, and urges viewers to join PauseAI's London march on 21 November. It cites a Politico poll.",
+  "change": {
+   "kind": "argument",
+   "note": "PauseAI-sponsored video: Siliconversations argues the AI safety movement won public opinion but not politicians, and that street protest is the missing step."
+  },
+  "lenses": {
+   "public": "Siliconversations says most Americans already fear AI could cause extinction, and asks viewers to attend PauseAI's London march on 21 November rather than only share opinions.",
+   "policy": "Siliconversations argues lawmakers read small AI-safety protests as a sign that voters' stated worry is not backed by action, so polling alone does not move them.",
+   "research": "The video cites a Politico poll and an ABC News/Washington Post poll on extinction risk; the channel gives the figures in speech only, so readers should check the polls themselves.",
+   "ideas": "Siliconversations asks whether a belief held by a large majority carries political weight until people act on it, and proposes protest and, failing that, running for office."
+  },
+  "topics": [
+   "who-decides",
+   "beyond-control"
+  ],
+  "people": [
+   {
+    "id": "siliconversations",
+    "role": "speaker",
+    "title": "YouTube channel host"
+   }
+  ],
+  "orgs": [
+   "pauseai",
+   "politico"
+  ],
+  "quotes": [
+   {
+    "id": "062d557c30a0-f0e36307",
+    "text": "According to a new poll from Politico, 78% of Americans believe that AI might cause human extinction.",
+    "speaker": "siliconversations",
+    "speakerCertain": true,
+    "context": "Opening claim of the video, reporting a Politico poll; the poll itself was not checked.",
+    "at": 0,
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "062d557c30a0-9e92ac37",
+    "text": "However, I think the main problem is that the AI safety movement itself has been operating under a flawed theory of change.",
+    "speaker": "siliconversations",
+    "speakerCertain": true,
+    "context": "Explaining why public worry about AI extinction has not yet produced regulation.",
+    "at": 175,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "062d557c30a0-0bf0d210",
+    "text": "Protests against AI extinction specifically have been small and rare compared to protests about other issues. So politicians prioritize those other issues.",
+    "speaker": "siliconversations",
+    "speakerCertain": true,
+    "context": "Describing how politicians read the absence of AI-safety street protest.",
+    "at": 290,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "062d557c30a0-d72fd8ef",
+    "text": "Pause AI is a nonprofit AI safety organization and they are actually sponsoring today's video to promote the protest.",
+    "speaker": "siliconversations",
+    "speakerCertain": true,
+    "context": "The channel's own sponsorship disclosure.",
+    "at": 351,
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "062d557c30a0-eb91f00c",
+    "text": "people who care about AI safety will run for political office. If our current leaders won't solve this problem, we will get elected and solve it ourselves.",
+    "speaker": "siliconversations",
+    "speakerCertain": true,
+    "context": "Answering what the backup plan is if protests are not enough.",
+    "at": 524,
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "auto",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "yt-siliconversations",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Auto-generated captions; speaker is the channel's own voice. Title says 6 days; the description gives Saturday 21 November in London. The poll figures (Politico, ABC News/Washington Post) are spoken by the channel and were not checked at source. Captions render the channel name as 'Silly Conversations'.",
+  "relations": [
+   {
+    "rel": "supports",
+    "to": "lesswrong-2026-10-28-march-against-ai-extinction",
+    "note": "Promotes the same PauseAI march and gives the case for attending."
+   }
+  ],
+  "story": "pauseai-london-march-2026-11"
+ },
+ {
+  "id": "1207b5c1c70b",
+  "slug": "the-verge-2026-11-15-congress-chip-export-rules",
+  "kind": "news",
+  "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+  "outlet": "The Verge",
+  "published": "2026-11-15",
+  "also": [
+   {
+    "outlet": "Bloomberg Television",
+    "title": "Nvidia Crisis Reshapes Washington’s Tech Debate",
+    "url": "https://www.youtube.com/watch?v=lmaz-aNBn_o"
+   }
+  ],
+  "summary": "The Verge reports that after the scandal around now-former Nvidia CEO Jensen Huang and a suspected Chinese spy, members of both parties back tighter AI chip export rules and want Huang and Commerce Secretary Howard Lutnick to testify. It notes House Speaker Mike Johnson's remarks on consensus.",
+  "change": {
+   "kind": "argument",
+   "note": "The Verge reports both parties in Congress back tighter AI chip export rules, and Senate Banking Chairman Tim Scott asked Huang and Lutnick to testify."
+  },
+  "lenses": {
+   "public": "Lawmakers from both parties want stricter limits on selling powerful AI chips to China, and want Nvidia's former chief executive and the Commerce Secretary to testify.",
+   "policy": "Renewed interest in bills like the Remote Access Security Act, which stalled in the Senate, suggests chip export limits may move faster; Speaker Johnson describes growing consensus.",
+   "research": "Export rules decide who can train the most capable AI systems; this thread shows how a single corporate scandal can shift the politics of compute controls."
+  },
+  "topics": [
+   "security-and-war",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "terrence-obrien",
+    "role": "author",
+    "title": "Weekend Editor, The Verge"
+   },
+   {
+    "id": "jensen-huang",
+    "role": "subject",
+    "title": "now-former CEO, Nvidia"
+   },
+   {
+    "id": "chuck-schumer",
+    "role": "mentioned",
+    "title": "Senate Minority Leader"
+   },
+   {
+    "id": "tim-scott",
+    "role": "mentioned",
+    "title": "Chairman, Senate Banking Committee"
+   },
+   {
+    "id": "howard-lutnick",
+    "role": "mentioned",
+    "title": "Commerce Secretary"
+   },
+   {
+    "id": "mike-johnson",
+    "role": "mentioned",
+    "title": "House Speaker"
+   }
+  ],
+  "orgs": [
+   "nvidia",
+   "us-congress",
+   "us-senate",
+   "us-commerce-department"
+  ],
+  "quotes": [
+   {
+    "id": "1207b5c1c70b-b728dd17",
+    "text": "Both Democrats and Republicans have voiced support for various measures and bills that would tighten rules and have demanded that Huang and other Nvidia leaders testify before Congress.",
+    "speaker": "the-verge",
+    "speakerCertain": true,
+    "context": "The Verge's own summary of the bipartisan reaction in Congress to the Nvidia scandal.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "1207b5c1c70b-d71cffae",
+    "text": "Senate Banking Committee Chairman Tim Scott has also sent letters to both Huang and Commerce Secretary Howard Lutnick calling on them to publicly testify to the committee.",
+    "speaker": "the-verge",
+    "speakerCertain": true,
+    "context": "The Verge reports on letters from the Senate Banking chairman.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "1207b5c1c70b-acb3f794",
+    "text": "growing consensus in Congress on limiting chip exports to China",
+    "speaker": "mike-johnson",
+    "speakerCertain": true,
+    "context": "The Verge quotes House Speaker Mike Johnson, citing Reuters, on the mood in Congress.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported",
+    "positions": [
+     {
+      "q": "race-with-china",
+      "stance": "lean-agree",
+      "by": "machine"
+     }
+    ]
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "the-verge-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Short article. The Johnson quote is second-hand (The Verge citing Reuters). The also-item is a Bloomberg Television segment; its transcript is saved as sources/1207b5c1c70b.txt but not quoted here. Page text had no instructions to AI.",
+  "story": "nvidia-huang-megaspeed-spy-2026-11"
+ },
+ {
+  "id": "163e5c00a189",
+  "slug": "axios-2026-11-15-nvidia-scandal-401k-losses",
+  "kind": "news",
+  "title": "How Nvidia's scandal knocked thousands off your 401(k)",
+  "url": "https://www.axios.com/2026/11/15/nvidia-stocks-401k-retirement-accounts",
+  "outlet": "Axios",
+  "published": "2026-11-15",
+  "also": [],
+  "summary": "According to the excerpt, Axios reports that Nvidia's near-30% share fall over the last month weighs on retirement savings of many Americans through index funds, and cites an Axios analysis of outside estimates and figures from investment officer Tom Graff.",
+  "change": {
+   "kind": "evidence",
+   "note": "Axios estimates how Nvidia's share fall after the Huang scandal reaches ordinary US retirement savers through index funds."
+  },
+  "lenses": {
+   "public": "Axios says people who never bought Nvidia shares can still lose retirement savings, because the company makes up a large share of popular index funds."
+  },
+  "topics": [
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "madison-mills",
+    "role": "author"
+   },
+   {
+    "id": "tom-graff",
+    "role": "mentioned",
+    "title": "Chief investment officer, Facet"
+   },
+   {
+    "id": "jensen-huang",
+    "role": "subject"
+   }
+  ],
+  "orgs": [
+   "nvidia"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "axios",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, nothing fetched, no quotations. The dollar estimates are cut off in the excerpt and not repeated here.",
+  "story": "nvidia-huang-megaspeed-spy-2026-11"
+ },
+ {
+  "id": "b896b29ec775",
+  "slug": "axios-2026-11-15-space-data-centers-stargazing",
+  "kind": "news",
+  "title": "Space data centers could end stargazing as we know it",
+  "url": "https://www.axios.com/2026/11/15/space-data-centers-risks-stargazing-report",
+  "outlet": "Axios",
+  "published": "2026-11-15",
+  "also": [],
+  "summary": "According to the excerpt, Axios reports on a new report for the Innovation for Cool Earth Forum, hosted by the Japanese government, in which academic researchers warn that tens of thousands of orbiting AI computers raise risks including light pollution, collisions, debris, emissions and military targeting.",
+  "change": {
+   "kind": "argument",
+   "note": "Academic researchers writing for a Japanese government-hosted forum urge great caution on putting AI data centers in orbit, citing sky, debris and conflict risks."
+  },
+  "lenses": {
+   "public": "Researchers warn that large networks of orbiting AI data centers could make satellites brighter than the stars in much of the night sky.",
+   "policy": "Researchers advise companies and policymakers to proceed with great caution on orbital data centers, citing collision, debris and space-conflict risks."
+  },
+  "topics": [
+   "where-it-goes",
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "thomas-novelly",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "axios",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, nothing fetched, no quotations. The report's authors and exact title are not given in the excerpt."
+ },
+ {
+  "id": "68d70227b984",
+  "slug": "bloomberg-television-2026-11-15-ai-investors-data-center-restrictions",
+  "kind": "video",
+  "title": "AI Investors Brace for Data Center Restrictions",
+  "url": "https://www.youtube.com/watch?v=_HWK3obDtnY",
+  "outlet": "Bloomberg Television",
+  "published": "2026-11-15",
+  "views": 7416,
+  "also": [],
+  "summary": "According to the description, PIMCO market strategist Tony Crescenzi tells Bloomberg This Weekend that growing political resistance to data centers may slow construction without derailing the AI investment buildout, and also discusses the Nvidia fallout and the US economy.",
+  "change": {
+   "kind": "argument",
+   "note": "PIMCO strategist Tony Crescenzi argues new data center restrictions may slow construction but not derail the broader AI buildout."
+  },
+  "lenses": {
+   "public": "A PIMCO strategist says local resistance to data centers may delay projects but is unlikely to stop AI investment."
+  },
+  "topics": [
+   "work-and-money",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "tony-crescenzi",
+    "role": "speaker",
+    "title": "Market strategist, PIMCO"
+   },
+   {
+    "id": "david-gura",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   },
+   {
+    "id": "christina-ruffini",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   }
+  ],
+  "orgs": [
+   "pimco",
+   "nvidia"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the video description only, no transcript read, no quotations.",
+  "story": "data-center-backlash-politics-2026-10"
+ },
+ {
   "id": "b69a651bd0b1",
   "slug": "center-humane-technology-2026-11-15-first-us-china-ai-risk-talks",
   "kind": "video",
@@ -48,6 +1170,186 @@
    "by": "machine"
   },
   "notes": "Light lane: description only. Buchanan's current role is not given in the description. The full episode was not read."
+ },
+ {
+  "id": "0502dc334f32",
+  "slug": "guardian-2026-11-15-civil-service-reform-ai-editorial",
+  "kind": "essay",
+  "title": "The Guardian view on civil service reform: AI cannot conjure a capable state on its own | Editorial",
+  "url": "https://www.theguardian.com/commentisfree/2026/nov/15/the-guardian-view-on-civil-service-reform-ai-cannot-conjure-a-capable-state-on-its-own",
+  "outlet": "The Guardian",
+  "published": "2026-11-15",
+  "also": [],
+  "summary": "In an editorial, The Guardian responds to UK cabinet secretary Antonia Romeo's call to overhaul the civil service and use AI, and argues that technology alone is not enough and that opening routes to leadership would bring overlooked skills.",
+  "change": {
+   "kind": "argument",
+   "note": "The Guardian's editorial argues that AI will not by itself make the UK civil service capable, and doubts the claim that AI removes human limits."
+  },
+  "lenses": {
+   "policy": "The Guardian argues that UK civil service reform needs changes to who can lead, not only more AI, as the cabinet secretary proposes.",
+   "ideas": "The editorial questions whether public service can be freed from the limits of human bandwidth, calling that claim extraordinary."
+  },
+  "topics": [
+   "work-and-money",
+   "everyday-life"
+  ],
+  "people": [
+   {
+    "id": "antonia-romeo",
+    "role": "subject",
+    "title": "Cabinet secretary"
+   }
+  ],
+  "orgs": [
+   "uk-government"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, nothing fetched, no quotations. The excerpt ends mid-argument; the editorial's full case is not read."
+ },
+ {
+  "id": "a39fa7636e6a",
+  "slug": "guardian-2026-11-15-quiggin-ai-job-apocalypse",
+  "kind": "essay",
+  "title": "Is the AI job apocalypse finally here? The evidence suggests otherwise",
+  "url": "https://www.theguardian.com/commentisfree/2026/nov/16/is-the-ai-job-apocalypse-finally-here-the-evidence-suggests-otherwise",
+  "outlet": "The Guardian",
+  "published": "2026-11-15",
+  "also": [],
+  "summary": "In a Guardian opinion piece, University of Queensland economist John Quiggin argues recent job cuts at NAB, Qantas, Canva and Atlassian do not show an AI job apocalypse, and that AI's larger economic risk may be a stock market fall.",
+  "change": {
+   "kind": "argument",
+   "note": "John Quiggin argues job cuts at NAB, Qantas, Canva and Atlassian are mostly not caused by AI, and any AI bust is likelier in markets."
+  },
+  "lenses": {
+   "public": "Economist John Quiggin says that when firms blame AI for layoffs, the reason may be ordinary cost-cutting or offshoring, so headlines can mislead workers.",
+   "policy": "John Quiggin argues Australian officials should question companies that cite AI to justify job cuts, since the claims may cover offshoring.",
+   "research": "John Quiggin compares AI's weak productivity record so far to Solow's 1987 remark about computers, arguing the gains remain unmeasured.",
+   "ideas": "John Quiggin suggests AI language models may become like email, essential to life but not a source of profit."
+  },
+  "topics": [
+   "work-and-money",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "john-quiggin",
+    "role": "author",
+    "title": "professor at the University of Queensland's school of economics"
+   },
+   {
+    "id": "robert-solow",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "nab",
+   "qantas",
+   "canva",
+   "atlassian",
+   "openai",
+   "anthropic"
+  ],
+  "quotes": [
+   {
+    "id": "a39fa7636e6a-6b7c9752",
+    "text": "Four years after the launch of ChatGPT, the pattern seems to be much the same: lots of hype and excitement but with very little productivity growth.",
+    "speaker": "john-quiggin",
+    "speakerCertain": true,
+    "context": "Quiggin compares AI's economic effects with the 1990s dotcom era.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "a39fa7636e6a-2e9e2917",
+    "text": "The claim by Qantas that the jobs will eventually be replaced by AI complicates reporting of what is in reality a simple case of offshoring, but if anything it weakens the Qantas case.",
+    "speaker": "john-quiggin",
+    "speakerCertain": true,
+    "context": "Quiggin on Qantas outsourcing 850 jobs to India.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "a39fa7636e6a-ce9f2fd4",
+    "text": "NAB has specifically denied that AI played a role in its decision, and there is no reason to disbelieve this.",
+    "speaker": "john-quiggin",
+    "speakerCertain": true,
+    "context": "Quiggin on NAB's job cuts.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 1,
+  "access": "full",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-11-16",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Opinion piece; Quiggin's claims about company motives are an argument, not established fact. Mentions Anthropic in passing, so flagged conflict.",
+  "relations": [
+   {
+    "rel": "qualifies",
+    "to": "guardian-2026-11-10-qantas-850-jobs-ai-overhaul",
+    "note": "Quiggin argues Qantas's 850 job cuts are offshoring and AI is cited to muddy the waters."
+   }
+  ]
+ },
+ {
+  "id": "aa2588991e1a",
+  "slug": "guardian-2026-11-15-south-korea-tax-exam-ai-cheating",
+  "kind": "news",
+  "title": "160 questions, only one wrong: top scorer in South Korea tax exam admits AI cheating",
+  "url": "https://www.theguardian.com/technology/2026/nov/15/ai-cheating-south-korea-college-entrance-exam",
+  "outlet": "The Guardian",
+  "published": "2026-11-15",
+  "also": [],
+  "summary": "According to the excerpt, The Guardian (via agencies) reports that the top scorer on South Korea's national exam for aspiring tax accountants confessed to using generative AI to cheat, raising worries about the national college entrance exam due that Thursday.",
+  "change": {
+   "kind": "evidence",
+   "note": "A top scorer on South Korea's tax accountant exam confessed to cheating with generative AI, after months of suspicion."
+  },
+  "lenses": {
+   "public": "A near-perfect exam result in South Korea turned out to be AI cheating, and exam organisers now worry about the college entrance exam."
+  },
+  "topics": [
+   "everyday-life"
+  ],
+  "people": [],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "the-guardian-ai",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, nothing fetched, no quotations. The test taker is not named in the excerpt."
  },
  {
   "id": "f3473e379d63",
@@ -254,6 +1556,56 @@
    "by": "machine"
   },
   "notes": "Light lane: excerpt only; the argument is summarised from its opening."
+ },
+ {
+  "id": "34bbd134cdea",
+  "slug": "lesswrong-2026-11-15-taste-benchmark-below-chance",
+  "kind": "research",
+  "title": "LLMs are weirdly below chance on TASTE benchmark without a shortcut",
+  "url": "https://www.lesswrong.com/posts/tpKE33scJGzqYKEBW/llms-are-weirdly-below-chance-on-taste-benchmark-without-a",
+  "outlet": "LessWrong",
+  "published": "2026-11-15",
+  "also": [],
+  "summary": "According to the excerpt, Ziqian Zhong reports a shortcut in the TASTE benchmark, which asks models to pick the AI-safety research proposal experts prefer: proposals with more mechanistic-interpretability terms score lower, and a term-counting baseline beats all tested models.",
+  "change": {
+   "kind": "evidence",
+   "note": "Ziqian Zhong reports that a simple term-counting shortcut beats all tested models on the TASTE benchmark, and OpenAI models score below chance without it."
+  },
+  "lenses": {
+   "research": "The post suggests TASTE scores may reflect a bias against interpretability-related proposals rather than judgement of research quality, so results should be read with care."
+  },
+  "topics": [
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "ziqian-zhong",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "openai"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-16",
+  "via": {
+   "source": "lesswrong",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the triage excerpt only, nothing fetched, no quotations. Numbers are the author's, from the excerpt. Evidence limits and the benchmark's authors are not in the excerpt.",
+  "evidence": {
+   "design": "The author tested a baseline on the TASTE benchmark that counts mechanistic-interpretability terms in each of two proposals and picks the one with fewer, with a coin flip on ties; the same benchmark was run on several LLMs, also on the non-interpretability half with rubric only.",
+   "finding": "The baseline reached 63.0% overall accuracy, above all LLMs tested. On the non-interpretability half, all models with ECI above 158 were below 50%; OpenAI models averaged 29.6%, falling as ECI rose (Pearson r = -0.74).",
+   "limits": "Not stated in the excerpt; a blog post that is not peer reviewed.",
+   "status": "working-paper"
+  }
  },
  {
   "id": "977732ed155b",
