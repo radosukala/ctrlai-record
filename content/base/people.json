@@ -764,6 +764,18 @@
   ]
  },
  {
+  "id": "allison-gardner",
+  "name": "Allison Gardner",
+  "titles": [
+   {
+    "title": "Labour MP for Stoke-on-Trent South",
+    "entry": "uk-commons-2026-11-16-health-digital-capability",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "alvaro-bedoya",
   "name": "Alvaro Bedoya",
   "titles": [
@@ -849,6 +861,18 @@
   "id": "amman-yusuf",
   "name": "Amman Yusuf",
   "titles": []
+ },
+ {
+  "id": "amna-nawaz",
+  "name": "Amna Nawaz",
+  "titles": [
+   {
+    "title": "PBS News",
+    "entry": "pbs-2026-11-16-us-closes-china-ai-chip-loophole",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "amy-harder",
@@ -1710,6 +1734,18 @@
   "titles": []
  },
  {
+  "id": "austin-long",
+  "name": "Austin Long",
+  "titles": [
+   {
+    "title": "PhD student, University of York safety assurance community (per the post)",
+    "entry": "lesswrong-2026-11-17-safety-cases-agent-foundations",
+    "on": "2026-11-17",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "austin-meek",
   "name": "Austin Meek",
   "titles": []
@@ -2117,7 +2153,14 @@
  {
   "id": "ben-bernanke",
   "name": "Ben Bernanke",
-  "titles": []
+  "titles": [
+   {
+    "title": "former chair of the US Federal Reserve",
+    "entry": "guardian-2026-11-16-anthropic-governance-pratley",
+    "on": "2026-11-16",
+    "role": "mentioned"
+   }
+  ]
  },
  {
   "id": "ben-boudreaux",
@@ -2168,6 +2211,18 @@
     "title": "Guest host, All-In Podcast",
     "entry": "all-in-2026-10-17-anthropic-ipo-iot-gates",
     "on": "2026-10-17",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "ben-lake",
+  "name": "Ben Lake",
+  "titles": [
+   {
+    "title": "MP",
+    "entry": "controlai-2026-11-16-ben-lake-parliamentarians-responsibility",
+    "on": "2026-11-16",
     "role": "speaker"
    }
   ]
@@ -2745,6 +2800,18 @@
   ]
  },
  {
+  "id": "brian-moynihan",
+  "name": "Brian Moynihan",
+  "titles": [
+   {
+    "title": "Chairman and Chief Executive Officer, Bank of America",
+    "entry": "bloomberg-television-2026-11-16-moynihan-anthropic-ipo-delays",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "brian-murray",
   "name": "Brian Murray",
   "titles": [
@@ -2833,7 +2900,14 @@
  {
   "id": "buck-shlegeris",
   "name": "Buck",
-  "titles": []
+  "titles": [
+   {
+    "title": "CEO, Redwood",
+    "entry": "openai-2026-11-16-first-embedded-assessments",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "burny",
@@ -3224,6 +3298,12 @@
   "name": "Dame Chi Onwurah",
   "titles": [
    {
+    "title": "Labour MP for Newcastle upon Tyne Central and West",
+    "entry": "uk-commons-2026-11-16-health-digital-capability",
+    "on": "2026-11-16",
+    "role": "speaker"
+   },
+   {
     "title": "MP for Newcastle upon Tyne Central and West",
     "entry": "guardian-2026-10-27-uk-datacentre-policy-consultation",
     "on": "2026-10-27",
@@ -3350,7 +3430,14 @@
  {
   "id": "chris-mcguire",
   "name": "Chris McGuire",
-  "titles": []
+  "titles": [
+   {
+    "title": "senior fellow for China and emerging technologies, Council on Foreign Relations",
+    "entry": "chinatalk-2026-11-16-bis-closes-loopholes",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "chris-miller",
@@ -3637,6 +3724,12 @@
   "name": "Chuck Schumer",
   "titles": [
    {
+    "title": "Senate Minority Leader (D-NY)",
+    "entry": "cspan-2026-11-16-schumer-tougher-chip-export-controls",
+    "on": "2026-11-16",
+    "role": "speaker"
+   },
+   {
     "title": "Senate Minority Leader",
     "entry": "the-verge-2026-11-15-congress-chip-export-rules",
     "on": "2026-11-15",
@@ -3727,6 +3820,11 @@
     "role": "subject"
    }
   ]
+ },
+ {
+  "id": "cleo-nardo",
+  "name": "Cleo Nardo",
+  "titles": []
  },
  {
   "id": "clickyquack",
@@ -4024,6 +4122,18 @@
     "entry": "guardian-2026-10-24-newport-datacentre-residents",
     "on": "2026-10-24",
     "role": "subject"
+   }
+  ]
+ },
+ {
+  "id": "damian-hinds",
+  "name": "Damian Hinds",
+  "titles": [
+   {
+    "title": "Conservative MP for East Hampshire",
+    "entry": "uk-commons-2026-11-16-health-digital-capability",
+    "on": "2026-11-16",
+    "role": "speaker"
    }
   ]
  },
@@ -4822,6 +4932,11 @@
   "titles": []
  },
  {
+  "id": "dawn-butler",
+  "name": "Dawn Butler",
+  "titles": []
+ },
+ {
   "id": "dax-raad",
   "name": "Dax Raad",
   "titles": [
@@ -5041,6 +5156,11 @@
   "titles": []
  },
  {
+  "id": "dinh-phung",
+  "name": "Dinh Phung",
+  "titles": []
+ },
+ {
   "id": "dipto-das",
   "name": "Dipto Das",
   "titles": []
@@ -5209,6 +5329,12 @@
   "id": "drew-pusateri",
   "name": "Drew Pusateri",
   "titles": [
+   {
+    "title": "spokesperson, OpenAI",
+    "entry": "guardian-2026-11-16-california-sues-openai-rogue-agent",
+    "on": "2026-11-16",
+    "role": "speaker"
+   },
    {
     "title": "OpenAI spokesperson",
     "entry": "the-verge-2026-10-14-eight-states-sue-openai",
@@ -5400,6 +5526,18 @@
     "title": "Bloomberg Tech",
     "entry": "bloomberg-tech-2026-10-15-data-center-backlash-midterms",
     "on": "2026-10-15",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "ed-markey",
+  "name": "Ed Markey",
+  "titles": [
+   {
+    "title": "Senator (D-MA)",
+    "entry": "forbes-2026-11-16-markey-data-center-federal-funds",
+    "on": "2026-11-16",
     "role": "speaker"
    }
   ]
@@ -5635,6 +5773,11 @@
   ]
  },
  {
+  "id": "ellen-thomas",
+  "name": "Ellen Thomas",
+  "titles": []
+ },
+ {
   "id": "elliott-whitson",
   "name": "Elliott Whitson",
   "titles": []
@@ -5740,6 +5883,18 @@
     "title": "Bloomberg interviewer",
     "entry": "bloomberg-tech-2026-10-14-huang-wouldnt-sell-chips-unsafe",
     "on": "2026-10-14",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "emily-darlington",
+  "name": "Emily Darlington",
+  "titles": [
+   {
+    "title": "Labour MP for Milton Keynes Central",
+    "entry": "uk-commons-2026-11-16-health-digital-capability",
+    "on": "2026-11-16",
     "role": "speaker"
    }
   ]
@@ -5998,6 +6153,18 @@
   "id": "esa-karjalainen",
   "name": "Esa Karjalainen",
   "titles": []
+ },
+ {
+  "id": "esme-carter",
+  "name": "Esmé Carter",
+  "titles": [
+   {
+    "title": "Media Relations Officer, ControlAI",
+    "entry": "controlai-2026-11-16-ben-lake-parliamentarians-responsibility",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "estelle-caswell",
@@ -6283,6 +6450,11 @@
   ]
  },
  {
+  "id": "felix-moses",
+  "name": "Felix Moses",
+  "titles": []
+ },
+ {
   "id": "filip-konopczynski",
   "name": "Filip Konopczyński",
   "titles": [
@@ -6560,6 +6732,12 @@
   "id": "gary-gensler",
   "name": "Gary Gensler",
   "titles": [
+   {
+    "title": "former chairman, SEC",
+    "entry": "cnn-2026-11-16-gensler-ai-bubble-burst",
+    "on": "2026-11-16",
+    "role": "speaker"
+   },
    {
     "title": "Former SEC Chair",
     "entry": "bloomberg-tv-2026-11-03-gensler-ai-washington-slow",
@@ -7383,6 +7561,18 @@
   "titles": []
  },
  {
+  "id": "helen-morgan",
+  "name": "Helen Morgan",
+  "titles": [
+   {
+    "title": "Liberal Democrat MP for North Shropshire",
+    "entry": "uk-commons-2026-11-16-health-digital-capability",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "helen-toner",
   "name": "Helen Toner",
   "titles": [
@@ -7499,6 +7689,11 @@
   ]
  },
  {
+  "id": "hiroaki-yamagiwa",
+  "name": "Hiroaki Yamagiwa",
+  "titles": []
+ },
+ {
   "id": "hjalmar-wijk",
   "name": "Hjalmar Wijk",
   "titles": []
@@ -7534,6 +7729,18 @@
     "entry": "lesswrong-2026-10-28-hippie-rationalism-unposted-article",
     "on": "2026-10-28",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "hong-yuan",
+  "name": "Hong Yuan",
+  "titles": [
+   {
+    "title": "researcher and secretary-general of the Center for American Military Studies at the Chinese Academy of Social Sciences",
+    "entry": "ars-technica-2026-11-16-us-cuts-china-remote-chip-access",
+    "on": "2026-11-16",
+    "role": "speaker"
    }
   ]
  },
@@ -7625,6 +7832,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "ian-murray",
+  "name": "Ian Murray",
+  "titles": []
  },
  {
   "id": "ian-sample",
@@ -7852,6 +8064,11 @@
   "titles": []
  },
  {
+  "id": "jacob-brinton",
+  "name": "Jacob Brinton",
+  "titles": []
+ },
+ {
   "id": "jacob-coxon",
   "name": "Jacob Coxon",
   "titles": [
@@ -7988,6 +8205,18 @@
   "titles": []
  },
  {
+  "id": "james-frith",
+  "name": "James Frith",
+  "titles": [
+   {
+    "title": "Parliamentary Under-Secretary of State for Health and Social Care",
+    "entry": "uk-commons-2026-11-16-health-digital-capability",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "james-gates",
   "name": "James Gates",
   "titles": [
@@ -8111,6 +8340,11 @@
     "role": "subject"
    }
   ]
+ },
+ {
+  "id": "janhavi-khindkar",
+  "name": "Janhavi Khindkar",
+  "titles": []
  },
  {
   "id": "janine-berg",
@@ -8972,6 +9206,30 @@
   "titles": []
  },
  {
+  "id": "joe-dominguez",
+  "name": "Joe Dominguez",
+  "titles": [
+   {
+    "title": "CEO, Constellation Energy",
+    "entry": "verge-2026-11-16-nuclear-data-centers-democrats",
+    "on": "2026-11-16",
+    "role": "subject"
+   }
+  ]
+ },
+ {
+  "id": "joe-mathieu",
+  "name": "Joe Mathieu",
+  "titles": [
+   {
+    "title": "Bloomberg",
+    "entry": "bloomberg-2026-11-16-wes-moore-midterms-faa-ai-oversight",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "joe-weisenthal",
   "name": "Joe Weisenthal",
   "titles": [
@@ -9168,6 +9426,23 @@
     "entry": "techcrunch-2026-11-10-huang-megaspeed-timeline",
     "on": "2026-11-10",
     "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "john-searle",
+  "name": "John Searle",
+  "titles": []
+ },
+ {
+  "id": "john-steidley",
+  "name": "John Steidley",
+  "titles": [
+   {
+    "title": "chief of staff, Palisade Research",
+    "entry": "openai-2026-11-16-first-embedded-assessments",
+    "on": "2026-11-16",
+    "role": "mentioned"
    }
   ]
  },
@@ -9735,6 +10010,18 @@
   "titles": []
  },
  {
+  "id": "julian-gewirtz",
+  "name": "Julian Gewirtz",
+  "titles": [
+   {
+    "title": "senior research scholar, Columbia SIPA",
+    "entry": "chinatalk-2026-11-16-bis-closes-loopholes",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "julian-posada",
   "name": "Julián Posada",
   "titles": [
@@ -9786,6 +10073,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "jun-hirako",
+  "name": "Jun Hirako",
+  "titles": []
  },
  {
   "id": "jundong-li",
@@ -9912,6 +10204,12 @@
   "name": "Kailey Leinz",
   "titles": [
    {
+    "title": "Bloomberg",
+    "entry": "bloomberg-2026-11-16-wes-moore-midterms-faa-ai-oversight",
+    "on": "2026-11-16",
+    "role": "speaker"
+   },
+   {
     "title": "host, Balance of Power",
     "entry": "bloomberg-television-2026-11-10-gallego-hegseth-nvidia-chips",
     "on": "2026-11-10",
@@ -9922,6 +10220,11 @@
  {
   "id": "kaiming-liu",
   "name": "Kaiming Liu",
+  "titles": []
+ },
+ {
+  "id": "kaivu-hariharan",
+  "name": "Kaivu Hariharan",
   "titles": []
  },
  {
@@ -10204,6 +10507,12 @@
   "id": "kate-rooney",
   "name": "Kate Rooney",
   "titles": [
+   {
+    "title": "reporter, CNBC",
+    "entry": "cnbc-2026-11-16-doomers-anthropic-ipo-winners",
+    "on": "2026-11-16",
+    "role": "author"
+   },
    {
     "title": "CNBC",
     "entry": "cnbc-2026-10-14-solomon-goldman-ai-accountability",
@@ -10608,6 +10917,12 @@
   "name": "Kevin Warsh",
   "titles": [
    {
+    "title": "Chair, Federal Reserve",
+    "entry": "forbes-breaking-news-2026-11-16-warsh-fed-ai-remarks",
+    "on": "2026-11-16",
+    "role": "speaker"
+   },
+   {
     "title": "Federal Reserve Chair",
     "entry": "cspan-2026-10-16-warsh-ai-most-consequential-change",
     "on": "2026-10-16",
@@ -10675,6 +10990,11 @@
  {
   "id": "koby-lewis",
   "name": "Koby Lewis",
+  "titles": []
+ },
+ {
+  "id": "koki-itai",
+  "name": "Koki Itai",
   "titles": []
  },
  {
@@ -10765,6 +11085,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "kromem",
+  "name": "kromem",
+  "titles": []
  },
  {
   "id": "kshitij-mishra",
@@ -11055,6 +11380,11 @@
   "titles": []
  },
  {
+  "id": "leni-shor",
+  "name": "Leni Shor",
+  "titles": []
+ },
+ {
   "id": "lennart-finke",
   "name": "Lennart Finke",
   "titles": []
@@ -11080,6 +11410,18 @@
   "id": "leon-tu-nguyen",
   "name": "Leon Tu Nguyen",
   "titles": []
+ },
+ {
+  "id": "leona-verdadero",
+  "name": "Leona Verdadero",
+  "titles": [
+   {
+    "title": "lead author of the report, UNESCO",
+    "entry": "un-news-2026-11-16-ai-climate-science-push-back",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "leonard-dung",
@@ -11257,6 +11599,11 @@
   "titles": []
  },
  {
+  "id": "lipeng-he",
+  "name": "Lipeng He",
+  "titles": []
+ },
+ {
   "id": "liping-yang",
   "name": "Liping Yang",
   "titles": []
@@ -11349,6 +11696,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "liza-tobin",
+  "name": "Liza Tobin",
+  "titles": []
  },
  {
   "id": "logan-graham",
@@ -11562,6 +11914,11 @@
   "titles": []
  },
  {
+  "id": "lord-marks-of-henley-on-thames",
+  "name": "Lord Marks of Henley-on-Thames",
+  "titles": []
+ },
+ {
   "id": "lord-mcfall-of-alcluith",
   "name": "Lord McFall of Alcluith",
   "titles": []
@@ -11574,6 +11931,11 @@
  {
   "id": "lord-moylan",
   "name": "Lord Moylan",
+  "titles": []
+ },
+ {
+  "id": "lord-murray-of-blidworth",
+  "name": "Lord Murray of Blidworth",
   "titles": []
  },
  {
@@ -11789,6 +12151,11 @@
   "titles": []
  },
  {
+  "id": "luke-charters",
+  "name": "Luke Charters",
+  "titles": []
+ },
+ {
   "id": "luke-muehlhauser",
   "name": "Luke Muehlhauser",
   "titles": [
@@ -11804,6 +12171,18 @@
   "id": "luxi-he",
   "name": "Luxi He",
   "titles": []
+ },
+ {
+  "id": "lynn-barr",
+  "name": "Lynn Barr",
+  "titles": [
+   {
+    "title": "Founder, Caravan Health",
+    "entry": "forbes-2026-11-16-lynn-barr-ai-hospital-billing",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "maciej-zelaszczyk",
@@ -12138,6 +12517,11 @@
     "role": "subject"
    }
   ]
+ },
+ {
+  "id": "mark-wang",
+  "name": "Mark Wang",
+  "titles": []
  },
  {
   "id": "mark-warner",
@@ -12618,6 +13002,11 @@
  {
   "id": "megasilverfist",
   "name": "megasilverfist",
+  "titles": []
+ },
+ {
+  "id": "mehrtash-harandi",
+  "name": "Mehrtash Harandi",
   "titles": []
  },
  {
@@ -13304,6 +13693,12 @@
   "name": "Mustafa Suleyman",
   "titles": [
    {
+    "title": "chief executive of Microsoft's AI division",
+    "entry": "guardian-2026-11-16-anthropic-governance-pratley",
+    "on": "2026-11-16",
+    "role": "mentioned"
+   },
+   {
     "title": "CEO, Microsoft AI",
     "entry": "all-in-2026-10-10-claude-conscious-pope",
     "on": "2026-10-10",
@@ -13407,6 +13802,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "nataliia-povarova",
+  "name": "Nataliia Povarova",
+  "titles": []
  },
  {
   "id": "natasha-singer",
@@ -13632,6 +14032,11 @@
   ]
  },
  {
+  "id": "nicholas-gabriel",
+  "name": "Nicholas Gabriel",
+  "titles": []
+ },
+ {
   "id": "nicholas-thompson",
   "name": "Nicholas Thompson",
   "titles": [
@@ -13848,6 +14253,18 @@
   "titles": []
  },
  {
+  "id": "nils-pratley",
+  "name": "Nils Pratley",
+  "titles": [
+   {
+    "title": "Guardian finance columnist",
+    "entry": "guardian-2026-11-16-anthropic-governance-pratley",
+    "on": "2026-11-16",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "ninazrdl",
   "name": "NinaZRdl",
   "titles": []
@@ -13961,6 +14378,18 @@
   "id": "openai-spokesperson",
   "name": "OpenAI spokesperson",
   "titles": []
+ },
+ {
+  "id": "oren-cass",
+  "name": "Oren Cass",
+  "titles": [
+   {
+    "title": "founder, American Compass",
+    "entry": "axios-2026-11-16-maga-huang-scandal-trump",
+    "on": "2026-11-16",
+    "role": "mentioned"
+   }
+  ]
  },
  {
   "id": "orthonormal",
@@ -14139,6 +14568,12 @@
   "name": "Paul Christiano",
   "titles": [
    {
+    "title": "Head, Alignment Research Center; member of OpenAI's board",
+    "entry": "dwarkesh-2026-11-16-christiano-pause-algorithmic-progress",
+    "on": "2026-11-16",
+    "role": "speaker"
+   },
+   {
     "title": "OpenAI Foundation board member and Executive Director, Alignment Research Center",
     "entry": "ars-2026-11-13-openai-board-member-ai-takeover",
     "on": "2026-11-13",
@@ -14162,6 +14597,12 @@
   "id": "paul-kedrosky",
   "name": "Paul Kedrosky",
   "titles": [
+   {
+    "title": "veteran technology investor",
+    "entry": "axios-2026-11-16-ai-bubble-huang-resignation",
+    "on": "2026-11-16",
+    "role": "mentioned"
+   },
    {
     "title": "Partner, SK Ventures; fellow, MIT Initiative on the Digital Economy",
     "entry": "ezra-klein-show-2026-10-16-ai-bubble-debate",
@@ -14728,6 +15169,11 @@
   ]
  },
  {
+  "id": "quoc-nguyen",
+  "name": "Quoc Nguyen",
+  "titles": []
+ },
+ {
   "id": "rachel-bujalski",
   "name": "Rachel Bujalski",
   "titles": []
@@ -14879,6 +15325,12 @@
   "id": "rebecca-bellan",
   "name": "Rebecca Bellan",
   "titles": [
+   {
+    "title": "senior reporter, TechCrunch",
+    "entry": "openai-2026-11-16-first-embedded-assessments",
+    "on": "2026-11-16",
+    "role": "author"
+   },
    {
     "title": "Senior Reporter, TechCrunch",
     "entry": "techcrunch-2026-10-08-fired-openai-researchers-dispute",
@@ -15181,6 +15633,18 @@
   "id": "ro-khanna",
   "name": "Ro Khanna",
   "titles": []
+ },
+ {
+  "id": "rob-bonta",
+  "name": "Rob Bonta",
+  "titles": [
+   {
+    "title": "California attorney general",
+    "entry": "guardian-2026-11-16-california-sues-openai-rogue-agent",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "rob-copeland",
@@ -15582,6 +16046,11 @@
   ]
  },
  {
+  "id": "ruoxuan-shi",
+  "name": "Ruoxuan Shi",
+  "titles": []
+ },
+ {
   "id": "ruth-appel",
   "name": "Ruth Appel",
   "titles": [
@@ -15797,6 +16266,18 @@
   "titles": []
  },
  {
+  "id": "sam-bankman-fried",
+  "name": "Sam Bankman-Fried",
+  "titles": [
+   {
+    "title": "founder, FTX",
+    "entry": "nyt-2026-11-16-bankman-fried-anthropic-windfall",
+    "on": "2026-11-16",
+    "role": "subject"
+   }
+  ]
+ },
+ {
   "id": "sam-bresnick",
   "name": "Sam Bresnick",
   "titles": []
@@ -15965,6 +16446,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "saqib-bhatti",
+  "name": "Saqib Bhatti",
+  "titles": []
  },
  {
   "id": "sara-alsherif",
@@ -16516,6 +17002,11 @@
  {
   "id": "shen-pang",
   "name": "Shen Pang",
+  "titles": []
+ },
+ {
+  "id": "sheng-yang",
+  "name": "Sheng Yang",
   "titles": []
  },
  {
@@ -17084,6 +17575,18 @@
   "titles": []
  },
  {
+  "id": "stuart-riddick",
+  "name": "Stuart Riddick",
+  "titles": [
+   {
+    "title": "sustainable investment manager, Aberdeen",
+    "entry": "guardian-2026-11-16-anthropic-governance-pratley",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "stuart-russell",
   "name": "Stuart Russell",
   "titles": [
@@ -17100,6 +17603,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "sudhi-sinha",
+  "name": "Sudhi Sinha",
+  "titles": []
  },
  {
   "id": "suhyun-choi",
@@ -17509,6 +18017,11 @@
   ]
  },
  {
+  "id": "tim-g-j-rudner",
+  "name": "Tim G. J. Rudner",
+  "titles": []
+ },
+ {
   "id": "tim-hua",
   "name": "Tim Hua",
   "titles": []
@@ -17676,6 +18189,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "tom-mcilroy",
+  "name": "Tom McIlroy",
+  "titles": []
  },
  {
   "id": "tom-milton",
@@ -17875,6 +18393,11 @@
   "titles": []
  },
  {
+  "id": "trung-le",
+  "name": "Trung Le",
+  "titles": []
+ },
+ {
   "id": "tsvibt",
   "name": "TsviBT",
   "titles": []
@@ -17989,6 +18512,11 @@
   "titles": []
  },
  {
+  "id": "uzay-girit",
+  "name": "Uzay Girit",
+  "titles": []
+ },
+ {
   "id": "vai-pahwa",
   "name": "Vai Pahwa",
   "titles": []
@@ -18025,6 +18553,11 @@
  {
   "id": "vanessa-kosoy",
   "name": "Vanessa Kosoy",
+  "titles": []
+ },
+ {
+  "id": "vasisht-duddu",
+  "name": "Vasisht Duddu",
   "titles": []
  },
  {
@@ -18263,6 +18796,18 @@
   "id": "wenhao-wang",
   "name": "Wenhao Wang",
   "titles": []
+ },
+ {
+  "id": "wes-moore",
+  "name": "Wes Moore",
+  "titles": [
+   {
+    "title": "Governor of Maryland",
+    "entry": "bloomberg-2026-11-16-wes-moore-midterms-faa-ai-oversight",
+    "on": "2026-11-16",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "wes-streeting",
@@ -18715,6 +19260,11 @@
   ]
  },
  {
+  "id": "yiwei-fu",
+  "name": "Yiwei Fu",
+  "titles": []
+ },
+ {
   "id": "yixin-tan",
   "name": "Yixin Tan",
   "titles": []
@@ -19043,6 +19593,11 @@
     "role": "author"
    }
   ]
+ },
+ {
+  "id": "zhengxing-su",
+  "name": "Zhengxing Su",
+  "titles": []
  },
  {
   "id": "zhengyue-zhao",
