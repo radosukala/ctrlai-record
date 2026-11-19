@@ -33,16 +33,7 @@ echo "== Posts"
 # posted; a person posts. Drafting them never stops the run: the record is published either way.
 if npx tsx scripts/social.ts day "$RUN" --out "$DIR/posts" > "$DIR/posts.log" 2>&1; then tail -3 "$DIR/posts.log"; else echo "WARNING: the posts could not be drafted (see $DIR/posts.log); the run publishes anyway"; fi
 
-echo "== Video"
-# The day's video from the edition, into kit/video-$RUN/ in this checkout: the MP4, VIDEO.md (the texts and every source) and
-# poster.png. Narrated by the film's narrator when ElevenLabs answers and this month's credit cap allows, else captions only.
-# VIDEO.md and the poster are copied into the run folder; the MP4 (3 MB a day) stays here, out of the archive. Nothing is posted.
-# Never stops the run: the record is published either way.
-mkdir -p "$DIR/video"
-if PATH="/opt/homebrew/bin:$PATH" npx tsx scripts/social.ts video "$RUN" --voice > "$DIR/video.log" 2>&1; then
-  { grep -E "^(Narration|WARNING|No decision)|^Video for|^  [0-9.]+ s," "$DIR/video.log" | tail -4; } || true
-  cp "kit/video-$RUN/VIDEO.md" "kit/video-$RUN/poster.png" "$DIR/video/" 2>/dev/null || true
-else echo "WARNING: the video could not be made (see $DIR/video.log); the run publishes anyway"; fi
+# The daily video was retired on 2026-11-19 (no views on social media). `scripts/social.ts video` still exists; nothing calls it.
 
 echo "== Filings"
 # New SEC filings by the companies in the money section (scripts/filings/watch.ts). Today that is Anthropic's S-1/A, which
