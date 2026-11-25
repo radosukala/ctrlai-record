@@ -6172,6 +6172,2429 @@
   "notes": "Light lane: from the triage excerpt only. The second Times photography leader's name is cut off in the excerpt, so left out; Looram's exact title was not given."
  },
  {
+  "id": "4b8cd891f212",
+  "slug": "arxiv-2026-11-22-parsegap-coding-agents-shells",
+  "kind": "research",
+  "title": "ParseGap: Testing What Coding Agents Authorize and What Shells Execute",
+  "url": "https://arxiv.org/abs/2611.29546v1",
+  "outlet": "arXiv",
+  "published": "2026-11-22",
+  "also": [],
+  "summary": "According to the abstract, Jieyu Li tests how eight production AI coding agents approve shell commands, and finds the approved command and the one the shell actually runs can differ. ParseGap reports 17 root causes, including a defect hiding a second command from Mistral Vibe and Gemini CLI and an allow rule disabling OpenAI Codex CLI's read-only sandbox.",
+  "change": {
+   "kind": "evidence",
+   "note": "Jieyu Li finds AI coding agents' command checks can be bypassed in all 16 agent-model pairs tested live."
+  },
+  "lenses": {
+   "public": "A study finds AI coding assistants can be made to run commands their safety checks meant to block, in every agent tested live.",
+   "policy": "Jieyu Li's results show permission prompts in AI coding agents from OpenAI, Google and Mistral did not reliably limit what the agents executed.",
+   "research": "ParseGap's differential testing of vendor checkers against GNU Bash 5.2 found 17 root causes across parse, utility and confinement boundaries in eight agents."
+  },
+  "topics": [
+   "beyond-control",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "jieyu-li",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "openai",
+   "google",
+   "mistral-ai"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the arXiv abstract in triage only (truncated); nothing fetched. The abstract does not say whether Claude Code was among the eight agents; check before linking to Anthropic.",
+  "evidence": {
+   "design": "A differential testing framework running each command through an unmodified vendor checker and GNU Bash 5.2 in an isolated container, across eight production coding agents, plus live trials with two frontier models.",
+   "finding": "17 root causes across three divergence boundaries; every checker permits read-only binaries whose arguments write files or launch programs (9-47 of 55 cases); live trials triggered policy violations in all 16 agent-model pairs (14 under configured restrictions).",
+   "limits": "Eight agents and two frontier models; the abstract is truncated and does not state further limits. The author also proposes a fix, ShellPlan.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "8cdb8b390793",
+  "slug": "arxiv-2026-11-22-persistent-jailbreak-backdoor",
+  "kind": "research",
+  "title": "Persistent Jailbreak Backdoor Attack",
+  "url": "https://arxiv.org/abs/2611.29217v1",
+  "outlet": "arXiv",
+  "published": "2026-11-22",
+  "also": [],
+  "summary": "According to the abstract, Haichuan Zhang and co-authors propose PJBack, a jailbreak backdoor planted in a language model that is built to survive later safety training by looking like ordinary refusal data and delaying harmful output. Tested on eight models from 7B to 70B parameters, it reports a 93.9% average attack success rate.",
+  "change": {
+   "kind": "evidence",
+   "note": "Haichuan Zhang and co-authors report a planted jailbreak backdoor that bypassed all seven defenses they tested on eight open models."
+  },
+  "lenses": {
+   "public": "Researchers show a hidden trigger can be planted in an AI model so it answers harmful requests, and later safety training failed to remove it.",
+   "policy": "Zhang and co-authors' results suggest safety fine-tuning after the fact may not clean a tampered model, which bears on rules for model supply chains.",
+   "research": "PJBack reports 93.9% average attack success across eight models and evasion of all seven evaluated defenses while keeping benign utility; preprint, not yet replicated."
+  },
+  "topics": [
+   "safeguards",
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "haichuan-zhang",
+    "role": "author"
+   },
+   {
+    "id": "xinyu-sun",
+    "role": "author"
+   },
+   {
+    "id": "shih-chieh-dai",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the arXiv abstract in triage only (truncated); nothing fetched. Triage lists two further authors not named.",
+  "evidence": {
+   "design": "A proposed backdoor attack (PJBack) evaluated on eight LLMs from five model families, 7B to 70B parameters, against seven defenses and five existing backdoor attacks.",
+   "finding": "PJBack achieves an average attack success rate of 93.9% and bypasses all seven evaluated defenses while preserving benign utility, per the abstract.",
+   "limits": "Open models up to 70B; the abstract is truncated and does not state further limits.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "23802d794d86",
+  "slug": "arxiv-2026-11-22-test-time-learning-poisoning",
+  "kind": "research",
+  "title": "Adaptation or Poisoning? Security Risks of Conversational Test-Time Learning in Large Language Models",
+  "url": "https://arxiv.org/abs/2611.29532v1",
+  "outlet": "arXiv",
+  "published": "2026-11-22",
+  "also": [],
+  "summary": "According to the abstract, Honghao Feng and co-authors show that chat models which keep learning from user messages during a conversation can be steered by an attacker through ordinary queries. Their P-TAP attack shapes the model's session updates turn by turn until it answers a harmful request, raising attack success on four open-weight models.",
+  "change": {
+   "kind": "evidence",
+   "note": "Honghao Feng and co-authors show that models updating themselves mid-conversation can be jailbroken through ordinary queries alone."
+  },
+  "lenses": {
+   "public": "Researchers find that an AI chatbot that learns from each conversation can be gradually talked out of its safety rules by a determined user.",
+   "research": "Feng and co-authors report test-time updates raise attack success by 13.00 points (greedy) and 22.25 points (best-of-10) on average across four open-weight models."
+  },
+  "topics": [
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "honghao-feng",
+    "role": "author"
+   },
+   {
+    "id": "shanhan-qu",
+    "role": "author"
+   },
+   {
+    "id": "kai-tong",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the arXiv abstract in triage only (truncated); nothing fetched. Triage lists two further authors not named.",
+  "evidence": {
+   "design": "A query-only multi-turn attack (P-TAP) on chat services whose models update a lightweight adapter from user inputs, tested on four open-weight instruction-tuned models against matched sessions without updates.",
+   "finding": "Enabling updates raises attack success rates on average by 13.00 percentage points under greedy decoding and by 22.25 points under best-of-10 sampling.",
+   "limits": "Four open-weight models; the abstract is truncated and does not state further limits.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "9fffc85d9ad1",
+  "slug": "axios-2026-11-22-ai-2027-cyber-reckoning",
+  "kind": "news",
+  "title": "Behind the Curtain — AI 2027: The reckoning",
+  "url": "https://www.axios.com/2026/11/22/behind-the-curtain-ai-2027-the-reckoning",
+  "outlet": "Axios",
+  "published": "2026-11-22",
+  "also": [],
+  "summary": "According to the description, Axios says it spoke to more than 50 leaders in government, AI, business and cyber, who all expect constant, increasingly sophisticated cyberattacks on business and critical infrastructure over the next 18 months. Axios frames recent outages at Microsoft, the FAA and Chase as a preview and cites a Bridgewater Associates risk assessment.",
+  "change": {
+   "kind": "argument",
+   "note": "Axios reports that more than 50 leaders it interviewed privately expect constant, disruptive cyberattacks over the next 18 months."
+  },
+  "lenses": {
+   "public": "Axios reports that leaders it interviewed expect frequent cyber outages through 2027 that people and companies will have to live with.",
+   "policy": "Axios says government and AI leaders privately expect disruptive attacks on critical infrastructure within 18 months, more than they say publicly."
+  },
+  "topics": [
+   "security-and-war",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "jim-vandehei",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "axios",
+   "bridgewater-associates",
+   "microsoft",
+   "faa",
+   "jpmorgan-chase"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "axios",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Axios returned 403 and the Wayback Machine had no copy (404); no text saved. Summary is from the triage excerpt only, so the Bridgewater figure is not quoted. Story link to us-tech-outages-ai-patching-2026-11 rests on the excerpt naming the same outages; a person should confirm. Axios may list a co-author not shown in triage.",
+  "story": "us-tech-outages-ai-patching-2026-11"
+ },
+ {
+  "id": "962f03c79165",
+  "slug": "bloomberg-2026-11-22-tech-outages-prepping-boom",
+  "kind": "video",
+  "title": "Tech Outages Fuel a New Prepping Boom",
+  "url": "https://www.youtube.com/watch?v=dyinHSM7hqg",
+  "outlet": "Bloomberg Television",
+  "published": "2026-11-22",
+  "minutes": 11,
+  "views": 23230,
+  "also": [],
+  "summary": "According to the description, Bloomberg cybersecurity reporter Jordan Robertson says a wave of network failures that looked like a major cyberattack was self-inflicted, exposing risks from aging infrastructure, interconnected systems, staffing cuts and fast AI adoption. Robertson links the outages to renewed doomsday prepping but calls a prolonged cyber catastrophe unlikely.",
+  "change": {
+   "kind": "argument",
+   "note": "Bloomberg's Jordan Robertson attributes the recent US network failures to self-inflicted causes, including rapid AI adoption, not an attack."
+  },
+  "lenses": {
+   "public": "Bloomberg's Jordan Robertson says the recent tech outages were self-inflicted, not an attack, and a long cyber catastrophe remains unlikely.",
+   "policy": "Jordan Robertson of Bloomberg points to aging systems, staffing cuts and rushed AI adoption, rather than attackers, as the cause of the recent outages."
+  },
+  "topics": [
+   "everyday-life",
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "jordan-robertson",
+    "role": "speaker",
+    "title": "Senior cybersecurity reporter, Bloomberg"
+   },
+   {
+    "id": "david-gura",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   },
+   {
+    "id": "christina-ruffini",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   }
+  ],
+  "orgs": [
+   "bloomberg"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the YouTube description only; nothing fetched.",
+  "story": "us-tech-outages-ai-patching-2026-11"
+ },
+ {
+  "id": "6464cd35391d",
+  "slug": "bloomberg-television-2026-11-22-mccaul-answers-huang",
+  "kind": "video",
+  "title": "Rep. McCaul Seeks Answers From Jensen Huang",
+  "url": "https://www.youtube.com/watch?v=ySwb69zKsnk",
+  "outlet": "Bloomberg Television",
+  "published": "2026-11-22",
+  "minutes": 11,
+  "views": 29036,
+  "also": [],
+  "summary": "In an 11-minute Bloomberg This Weekend interview, Republican Representative Michael McCaul says Jensen Huang was warned a year ago about selling advanced AI chips to China, alleges chips sold to Megaspeed reached China, and lists questions for Huang's congressional testimony. McCaul is not sure Alice Huang was a spy from the start. Russia and federal outages also come up.",
+  "change": {
+   "kind": "argument",
+   "note": "Rep. Michael McCaul says Jensen Huang was warned by McCaul about chip sales to China a year ago and sets out questions for Huang's testimony."
+  },
+  "lenses": {
+   "public": "A senior US lawmaker, Michael McCaul, says advanced Nvidia chips may have reached China through a Singapore company, and wants Jensen Huang to explain what Huang knew.",
+   "policy": "Rep. Michael McCaul wants Congress to ask Jensen Huang whether Huang knew chips sold to Megaspeed went to China in breach of US export controls.",
+   "ideas": "Michael McCaul's case against selling chips to China rests on copying: once sold, advanced technology can be reverse engineered, so dependence may not last."
+  },
+  "topics": [
+   "who-decides",
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "michael-mccaul",
+    "role": "speaker",
+    "title": "Republican congressman; co-chair, congressional AI caucus"
+   },
+   {
+    "id": "david-gura",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   },
+   {
+    "id": "christina-ruffini",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   },
+   {
+    "id": "jensen-huang",
+    "role": "subject"
+   },
+   {
+    "id": "alice-huang",
+    "role": "subject"
+   }
+  ],
+  "orgs": [
+   "nvidia",
+   "megaspeed",
+   "us-congress",
+   "bloomberg"
+  ],
+  "quotes": [
+   {
+    "id": "6464cd35391d-e4742703",
+    "text": "The problem is when you sell them our advanced technology, they can replicate that. They can reverse engineer it, and then they they don't need us.",
+    "speaker": "michael-mccaul",
+    "speakerCertain": false,
+    "context": "McCaul answers Jensen Huang's argument that selling chips to China keeps China dependent on US chips.",
+    "at": 110,
+    "match": "exact",
+    "warnings": [
+     "spoken clean-up: they (said twice)"
+    ],
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "race-with-china",
+      "stance": "lean-agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "6464cd35391d-8af4c280",
+    "text": "I don't know she was initially. I think what happened was the CCP, as they often do, found out",
+    "speaker": "michael-mccaul",
+    "speakerCertain": false,
+    "context": "Asked whether McCaul can say unequivocally that Alice Huang was a spy for China; McCaul then describes how the Chinese Communist Party might pressure such a person.",
+    "at": 171,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "6464cd35391d-61cac18a",
+    "text": "Did he know that these advanced chips were being... That he was selling to mega speed were being sent into China in violation of export control laws?",
+    "speaker": "michael-mccaul",
+    "speakerCertain": false,
+    "context": "McCaul lists what Congress should ask Jensen Huang when Huang testifies.",
+    "at": 214,
+    "match": "exact",
+    "type": "question",
+    "hand": "first"
+   },
+   {
+    "id": "6464cd35391d-b0be9e89",
+    "text": "The good news is there's no adversarial threat here, trying to hack into our systems. The bad news is they're antiquated.",
+    "speaker": "michael-mccaul",
+    "speakerCertain": false,
+    "context": "On the week's bank outages and the FAA ground stop, citing a hearing with Homeland Security, the intelligence director's office and the FBI.",
+    "at": 485,
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "auto",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "YouTube captions (not auto-generated) with no speaker names; McCaul's answers are clear from the interview structure but not confirmed by listening. Captions mis-hear names: 'Michael McKee' (McCaul), 'miss Wong' (apparently Alice Huang), 'deep sea AI' (possibly DeepSeek), 'mister Zabasajja' (unidentified host). McCaul's claims about Alice Huang being a spy and about Megaspeed are McCaul's allegations, not established. Which host asked which question is not settled.",
+  "story": "nvidia-huang-megaspeed-spy-2026-11"
+ },
+ {
+  "id": "d9315bb00027",
+  "slug": "bloomberg-television-2026-11-22-nvidia-board-governance-reckoning",
+  "kind": "video",
+  "title": "Nvidia Board Faces a Governance Reckoning",
+  "url": "https://www.youtube.com/watch?v=EJIMMebnHtk",
+  "outlet": "Bloomberg Television",
+  "published": "2026-11-22",
+  "minutes": 9,
+  "views": 72913,
+  "also": [],
+  "summary": "On Bloomberg This Weekend, opinion columnist Gautam Mukunda argues that Jensen Huang's exit exposed an Nvidia board built for a far smaller company, predicts shareholder lawsuits whatever investigators find, and criticises Silicon Valley's concentration of power in founder CEOs. Mukunda also argues that the case for selling chips to China holds only if AI is a normal technology.",
+  "change": {
+   "kind": "argument",
+   "note": "Gautam Mukunda argues the Nvidia affair shows a governance norm problem in Silicon Valley, and questions chip exports to China."
+  },
+  "lenses": {
+   "public": "Bloomberg columnist Gautam Mukunda says Nvidia's chief had no senior team able to say no, and that Silicon Valley leaders blame consequences rather than conduct.",
+   "policy": "Gautam Mukunda calls for rethinking corporate governance from outside companies, saying even well-structured boards like Nvidia's failed to check a dominant CEO.",
+   "research": "Gautam Mukunda's argument ties export policy to a forecast: selling chips to China makes sense only if AI is a normal technology.",
+   "ideas": "Gautam Mukunda asks who can say no to a founder CEO whose company is valued in trillions, and whether boards can be independent of the people who enrich them."
+  },
+  "topics": [
+   "who-decides",
+   "security-and-war",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "gautam-mukunda",
+    "role": "speaker",
+    "title": "Bloomberg opinion columnist; executive fellow, Yale School of Management"
+   },
+   {
+    "id": "david-gura",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   },
+   {
+    "id": "christina-ruffini",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   },
+   {
+    "id": "jensen-huang",
+    "role": "subject"
+   }
+  ],
+  "orgs": [
+   "nvidia",
+   "bloomberg"
+  ],
+  "quotes": [
+   {
+    "id": "d9315bb00027-fa25fc61",
+    "text": "But the board also knows things that we don't know, the public doesn't know, and quite possibly the president doesn't know about particular what people at NVIDIA knew.",
+    "speaker": "gautam-mukunda",
+    "speakerCertain": false,
+    "context": "Asked how Nvidia's board should respond to the US president wanting Jensen Huang back; Mukunda notes the board's only statements were that Huang is not returning.",
+    "at": 28,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "d9315bb00027-87f41389",
+    "text": "Somehow, a lot of leaders in Silicon Valley have come to the conclusion that the problem here was that he faced consequences for the conduct, not the conduct itself.",
+    "speaker": "gautam-mukunda",
+    "speakerCertain": false,
+    "context": "On Silicon Valley figures who said the problem was that Huang had a board.",
+    "at": 247,
+    "match": "exact",
+    "type": "value",
+    "hand": "first"
+   },
+   {
+    "id": "d9315bb00027-31c79bf8",
+    "text": "What we really need to do is step out from outside and really rethink some of the corporate governance practices.",
+    "speaker": "gautam-mukunda",
+    "speakerCertain": false,
+    "context": "Asked whether board members are powerless to check founder CEOs.",
+    "at": 301,
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first"
+   },
+   {
+    "id": "d9315bb00027-0b627c44",
+    "text": "That logic only makes sense if you believe that AI is a normal technology, that it's just like all the others. And so you wanna you wanna trade it, you wanna make profits, things like that. But if AI is not a normal technology, that's gonna change everything.",
+    "speaker": "gautam-mukunda",
+    "speakerCertain": false,
+    "context": "After setting out Jensen Huang's case for exporting chips to China, Mukunda gives the second of two problems with it.",
+    "at": 543,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "auto",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "YouTube captions (not auto-generated) with no speaker names; Mukunda's answers are clear from the interview structure but not confirmed by listening. Recorded before Huang's reinstatement (the CNN description dates it November 23). Captions contain mis-hearings ('Justin Punk', 'Pete Hagsef', 'Nabasajja'). Which host asked which question is not settled.",
+  "story": "nvidia-huang-megaspeed-spy-2026-11"
+ },
+ {
+  "id": "edb87fd8d0da",
+  "slug": "bloomberg-tv-2026-11-22-governors-states-lead-ai",
+  "kind": "video",
+  "title": "Governors Push States to Lead on AI",
+  "url": "https://www.youtube.com/watch?v=qGk5kV6m_hw",
+  "outlet": "Bloomberg Television",
+  "published": "2026-11-22",
+  "minutes": 15,
+  "views": 5118,
+  "also": [],
+  "summary": "On Bloomberg This Weekend, Governors Wes Moore, Spencer Cox, Josh Stein and Mike Braun discuss new National Governors Association principles for AI governance. None says the government understands AI well enough to regulate it. All four call the data center backlash justified and want data centers to bring their own power; Stein also wants a federal body for frontier labs.",
+  "change": {
+   "kind": "commitment",
+   "note": "A bipartisan National Governors Association council rolls out shared AI governance principles, with four governors explaining them on Bloomberg Television."
+  },
+  "lenses": {
+   "public": "Four US governors say data centers should pay for their own power so household electricity bills do not rise to serve them.",
+   "policy": "A bipartisan governors' council offers states a shared AI framework, while North Carolina's Josh Stein calls for a federal regulator of frontier AI labs.",
+   "ideas": "Maryland's Wes Moore says governors' AI principles start from the value that humans must always stay in control."
+  },
+  "topics": [
+   "who-decides",
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "wes-moore",
+    "role": "speaker",
+    "title": "Governor of Maryland"
+   },
+   {
+    "id": "spencer-cox",
+    "role": "speaker",
+    "title": "Governor of Utah"
+   },
+   {
+    "id": "josh-stein",
+    "role": "speaker",
+    "title": "Governor of North Carolina"
+   },
+   {
+    "id": "mike-braun",
+    "role": "speaker",
+    "title": "Governor of Indiana"
+   },
+   {
+    "id": "christina-ruffini",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   }
+  ],
+  "orgs": [
+   "national-governors-association",
+   "bloomberg"
+  ],
+  "quotes": [
+   {
+    "id": "edb87fd8d0da-db340e3d",
+    "text": "make sure that as governors and a bipartisan group of governors that we're leading with our values and our values are indicating simple things like humans must always be in control of where we're going.",
+    "speaker": "wes-moore",
+    "speakerCertain": false,
+    "context": "Answering the host's first question to Governor Moore about what the governors' AI effort aims to do.",
+    "at": 129,
+    "match": "exact",
+    "warnings": [
+     "starts inside a longer claim, right after “and”"
+    ],
+    "type": "value",
+    "hand": "first"
+   },
+   {
+    "id": "edb87fd8d0da-acad56c6",
+    "text": "we keep getting presented with these false choices that we either have to do absolutely nothing and just, you know, whatever happens, happens, or we have to completely regulate and, you know, put a regulatory moat around these big companies and keep competition out.",
+    "speaker": "spencer-cox",
+    "speakerCertain": false,
+    "context": "Answering the host's question to Governor Cox about whether to expect action on AI and data center rules.",
+    "at": 206,
+    "match": "exact",
+    "warnings": [
+     "spoken clean-up: we (said twice), happens (said twice)"
+    ],
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "edb87fd8d0da-3af8ecfa",
+    "text": "I do believe we should be regulating them. I think there should be a federal regulatory body that puts some parameters on these frontier AI labs.",
+    "speaker": "josh-stein",
+    "speakerCertain": false,
+    "context": "Answering the host's question to Governor Stein about North Carolina residents' concerns, after saying Stein may disagree with Cox.",
+    "at": 335,
+    "match": "exact",
+    "warnings": [
+     "starts inside a longer claim, right after “that”"
+    ],
+    "type": "proposal",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "labs-self-govern",
+      "stance": "lean-disagree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "edb87fd8d0da-23b929e8",
+    "text": "we've got to make sure these data centers bring their own power, pay for their own power, pay for all the costs that they impose on the grid so that we are held harmless.",
+    "speaker": "josh-stein",
+    "speakerCertain": false,
+    "context": "Governor Stein on rising North Carolina electricity bills and data center growth.",
+    "at": 315,
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "auto",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Uploaded YouTube captions (generated: false), no speaker names; speakers inferred from the host addressing each governor by name before each answer. Captions garble names ('Westmore', 'Governor Brown'). The caption text closes with 'Thanks so much, Justin', which does not match the host named in the description (Christina Ruffini); not settled. Later answers on data center power and local bans are harder to attribute and were not quoted.",
+  "story": "data-center-backlash-politics-2026-10"
+ },
+ {
+  "id": "ba1e571b5d75",
+  "slug": "cnn-2026-11-22-clayton-china-nvidia-chips",
+  "kind": "video",
+  "title": "DNI Clayton says China likely obtained Nvidia AI chips",
+  "url": "https://www.youtube.com/watch?v=5RM5RztLHgE",
+  "outlet": "CNN",
+  "published": "2026-11-22",
+  "views": 125604,
+  "also": [],
+  "summary": "According to CNN's description of this short clip, Director of National Intelligence Jay Clayton, asked by Dana Bash to reassure Americans that China did not get Nvidia's advanced AI chips, said Clayton expects China has found ways to get hold of them.",
+  "change": {
+   "kind": "argument",
+   "note": "Director of National Intelligence Jay Clayton tells CNN that China has probably found ways to obtain Nvidia's advanced AI chips."
+  },
+  "lenses": {
+   "public": "The top US intelligence official, Jay Clayton, tells CNN that China has likely managed to get Nvidia's most advanced AI chips.",
+   "policy": "Jay Clayton, the Director of National Intelligence, declining to rule out Chinese access to Nvidia's advanced chips puts US export controls in question."
+  },
+  "topics": [
+   "security-and-war",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "jay-clayton",
+    "role": "speaker",
+    "title": "Director of National Intelligence"
+   },
+   {
+    "id": "dana-bash",
+    "role": "speaker"
+   }
+  ],
+  "orgs": [
+   "cnn",
+   "us-odni",
+   "nvidia"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "yt-cnn",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the YouTube description only; nothing fetched. 26-second clip; the description paraphrases Clayton, so a person should hear the exact words before this is cited.",
+  "story": "nvidia-huang-megaspeed-spy-2026-11"
+ },
+ {
+  "id": "16063e02dce9",
+  "slug": "cnn-2026-11-22-restricted-nvidia-chips-china",
+  "kind": "video",
+  "title": "How do restricted Nvidia chips make it into China?",
+  "url": "https://www.youtube.com/watch?v=vLNU1B0oCL8",
+  "outlet": "CNN",
+  "published": "2026-11-22",
+  "minutes": 2,
+  "views": 24326,
+  "also": [],
+  "summary": "According to the description, a short CNN Meanwhile in Asia clip discusses restricted Nvidia chips that appeared on procurement records of a top Chinese university with military ties, although the US government has blacklisted that university.",
+  "change": {
+   "kind": "evidence",
+   "note": "CNN reports restricted Nvidia chips on procurement records of a blacklisted Chinese university with military ties."
+  },
+  "lenses": {
+   "public": "CNN reports that restricted Nvidia AI chips showed up in the purchase records of a Chinese university the US had blacklisted.",
+   "policy": "CNN's finding of restricted Nvidia chips at a blacklisted Chinese university raises the question of whether US export controls are being enforced."
+  },
+  "topics": [
+   "security-and-war",
+   "who-decides"
+  ],
+  "people": [],
+  "orgs": [
+   "cnn",
+   "nvidia"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "yt-cnn",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the YouTube description only; nothing fetched. The university is not named in the description.",
+  "story": "nvidia-huang-megaspeed-spy-2026-11"
+ },
+ {
+  "id": "be4f8ec930a4",
+  "slug": "nbc-2026-11-22-kennedy-lutnick-chips-china",
+  "kind": "video",
+  "title": "John Kennedy: If Howard Lutnick is giving AI chips away to China, ‘he needs to stop’",
+  "url": "https://www.youtube.com/watch?v=cQCVZ76yKLI",
+  "outlet": "NBC News",
+  "published": "2026-11-22",
+  "minutes": 2,
+  "views": 6930,
+  "also": [
+   {
+    "outlet": "NBC News",
+    "title": "Sen. Kennedy calls for officials to testify over Jensen Huang scandal",
+    "url": "https://www.youtube.com/watch?v=M8uXhz34MCQ"
+   }
+  ],
+  "summary": "According to NBC's descriptions, Republican Senator John Kennedy of Louisiana says on Meet the Press that Kennedy wants answers from Treasury Secretary Scott Bessent and Commerce Secretary Howard Lutnick over national security concerns tied to the Jensen Huang scandal, as Huang is set to appear before the Senate Banking Committee.",
+  "change": {
+   "kind": "argument",
+   "note": "Senator John Kennedy asks Commerce Secretary Lutnick and Treasury Secretary Bessent to answer for AI chip sales to China."
+  },
+  "lenses": {
+   "policy": "Senator John Kennedy wants the Commerce and Treasury secretaries, not only Nvidia's Jensen Huang, to answer to Congress over AI chips reaching China."
+  },
+  "topics": [
+   "who-decides",
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "john-kennedy",
+    "role": "speaker",
+    "title": "US Senator (R-La.)"
+   },
+   {
+    "id": "howard-lutnick",
+    "role": "subject",
+    "title": "Commerce Secretary"
+   },
+   {
+    "id": "scott-bessent",
+    "role": "subject",
+    "title": "Treasury Secretary"
+   },
+   {
+    "id": "jensen-huang",
+    "role": "subject"
+   }
+  ],
+  "orgs": [
+   "nbc-news",
+   "us-senate",
+   "us-department-of-commerce",
+   "us-treasury",
+   "nvidia"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "yt-nbc-news",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the two YouTube descriptions only; nothing fetched. The two descriptions differ on Huang's title (one says former CEO, the other Nvidia CEO), so no title is given. The headline's words are not used as a quotation.",
+  "story": "nvidia-huang-megaspeed-spy-2026-11"
+ },
+ {
+  "id": "94031a80a6e2",
+  "slug": "nyt-2026-11-22-winer-mathematical-ai-safeguard",
+  "kind": "news",
+  "title": "Looking for the Formula to Stop an Apocalypse",
+  "url": "https://www.nytimes.com/2026/11/22/magazine/looking-for-the-formula-to-stop-an-apocalypse.html",
+  "outlet": "The New York Times",
+  "published": "2026-11-22",
+  "also": [],
+  "summary": "According to the description, this New York Times Magazine story by Eli Saslow and Erin Schaff follows Mike Winer and colleagues as they try to build a mathematical safeguard to keep AI under human control, and reports that they fear they are running out of time.",
+  "change": {
+   "kind": "argument",
+   "note": "The New York Times Magazine profiles Mike Winer's team building a mathematical safeguard for AI control; only the description was readable."
+  },
+  "lenses": {
+   "public": "The New York Times Magazine reports that some researchers, including Mike Winer, fear time is short to make AI provably stay under human control.",
+   "research": "The New York Times Magazine draws wide attention to work by Mike Winer and colleagues on mathematical guarantees of human control over AI."
+  },
+  "topics": [
+   "beyond-control",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "mike-winer",
+    "role": "subject"
+   },
+   {
+    "id": "eli-saslow",
+    "role": "author"
+   },
+   {
+    "id": "erin-schaff",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "new-york-times"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "nyt-technology",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Could not read the article: nytimes.com and the Wayback Machine both returned 403. Summary from the feed description only, no quotes. A person should check Mike Winer's affiliation and the safeguard's approach in the article itself; Erin Schaff is listed as an author in the feed, the role may be photographer."
+ },
+ {
+  "id": "12014d76a44e",
+  "slug": "politico-2026-11-22-bishops-ai-lobbying-groundswell",
+  "kind": "news",
+  "title": "American bishops plan for ‘groundswell’ of political action for AI regulation",
+  "url": "https://www.politico.com/news/2026/11/22/catholic-church-ai-regulation-lobbying-01179266",
+  "outlet": "Politico",
+  "published": "2026-11-22",
+  "also": [],
+  "summary": "Politico reports that the Catholic Church in the US plans a nationwide lobbying push for stronger AI rules in Washington and state capitols. Bishop Oscar Cantú of San Jose, who leads the US bishops' AI task force, told Politico that lobbying lawmakers will be a central focus, arguing that safety and human welfare must come first.",
+  "change": {
+   "kind": "commitment",
+   "note": "Bishop Oscar Cantú says the US Catholic bishops' AI task force will make lobbying lawmakers for AI rules a central focus."
+  },
+  "lenses": {
+   "public": "The US Catholic bishops plan to press lawmakers for stronger AI rules, bringing a large religious network into the AI policy fight.",
+   "policy": "Lawmakers in Washington and state capitols should expect organized lobbying for AI rules from the US Conference of Catholic Bishops.",
+   "ideas": "Bishop Oscar Cantú argues that humanity, not the technology, must stay at the center as AI advances."
+  },
+  "topics": [
+   "who-decides",
+   "minds-and-values"
+  ],
+  "people": [
+   {
+    "id": "oscar-cantu",
+    "role": "speaker",
+    "title": "Bishop of San José; leads the U.S. Conference of Catholic Bishops' AI task force"
+   },
+   {
+    "id": "ashley-ahn",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "us-conference-of-catholic-bishops",
+   "catholic-church",
+   "politico"
+  ],
+  "quotes": [
+   {
+    "id": "12014d76a44e-d6db8b56",
+    "text": "We don’t want to stifle progress, but we need progress to be safe,",
+    "speaker": "oscar-cantu",
+    "speakerCertain": true,
+    "context": "Cantú in an interview with Politico about the bishops' AI task force and its lobbying plans.",
+    "match": "exact",
+    "type": "position",
+    "hand": "reported"
+   },
+   {
+    "id": "12014d76a44e-6eaa1c16",
+    "text": "We need people to be safe, and we want humanity to be at the front and center and not sidelined by the technology.",
+    "speaker": "oscar-cantu",
+    "speakerCertain": true,
+    "context": "Cantú continuing in the same Politico interview.",
+    "match": "exact",
+    "type": "value",
+    "hand": "reported"
+   }
+  ],
+  "importance": 2,
+  "access": "partial",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "politico-technology",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Politico returned 403; the Wayback copy holds only the first paragraphs of the article. The rest of the interview and any details of the lobbying plan were not read. Related background: Pope Leo XIV's AI address (story pope-leo-xiv-ai-address), not linked because this is a different event."
+ },
+ {
+  "id": "198401e3f052",
+  "slug": "arxiv-2026-11-22-verification-debt-human-ai-research",
+  "kind": "research",
+  "title": "Managing Verification Debt: A Framework for Responsible Human-AI Research Partnerships",
+  "url": "https://arxiv.org/abs/2611.29434v1",
+  "outlet": "arXiv",
+  "published": "2026-11-22",
+  "also": [],
+  "summary": "According to the abstract, Abdulkadir Celik and Bashir M. Al-Hashimi argue in a commentary that AI generates research ideas faster than experts can check them, building up unchecked 'verification debt'. They propose a structured map linking questions, claims, assumptions, sources, tests and decisions so human oversight keeps pace.",
+  "change": {
+   "kind": "argument",
+   "note": "Abdulkadir Celik and Bashir Al-Hashimi argue AI-assisted research builds up unchecked claims and propose a method to track them."
+  },
+  "lenses": {
+   "research": "Celik and Al-Hashimi argue that AI-assisted research needs explicit tracking of unverified claims, not better prompting, to stay accountable.",
+   "ideas": "When AI proposes faster than people can check, who is responsible for claims nobody has verified?"
+  },
+  "topics": [
+   "safeguards",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "abdulkadir-celik",
+    "role": "author"
+   },
+   {
+    "id": "bashir-m-al-hashimi",
+    "role": "author",
+    "title": "Sir"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the arXiv abstract in triage only (truncated); nothing fetched. A commentary with no measured results. The single-quoted term is the authors' coined phrase, not a quotation."
+ },
+ {
+  "id": "e24ee526958f",
+  "slug": "bloomberg-2026-11-22-ai-cyberattacks-getting-worse",
+  "kind": "video",
+  "title": "Why Cyberattacks Are Getting Worse",
+  "url": "https://www.youtube.com/watch?v=pQltZHXbck4",
+  "outlet": "Bloomberg Television",
+  "published": "2026-11-22",
+  "minutes": 12,
+  "views": 70778,
+  "also": [],
+  "summary": "In a 12-minute Bloomberg Television feature, a small online shop owner, a Palo Alto Networks executive, a UC Berkeley cybersecurity director and a community bank CEO describe how AI is speeding up and scaling cyberattacks, why small organizations are most exposed, and why basic hygiene and leadership still matter.",
+  "change": {
+   "kind": "repeat",
+   "note": "Bloomberg Television recaps how AI is said to speed up cyberattacks, with Palo Alto Networks' figure of 31 billion attacks blocked daily."
+  },
+  "lenses": {
+   "public": "Bloomberg Television's feature shows a small shop hit by hundreds of thousands of fraudulent payments and says basic steps like multi-factor authentication still matter.",
+   "policy": "Ann Cleaveland of UC Berkeley tells Bloomberg Television that small towns, water utilities and schools are left to fend for themselves against nation-state attackers."
+  },
+  "topics": [
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "david-westin",
+    "role": "speaker"
+   },
+   {
+    "id": "courtney-drake",
+    "role": "speaker",
+    "title": "Owner, Lunch City Studio"
+   },
+   {
+    "id": "anand-oswal",
+    "role": "speaker",
+    "title": "Leads the AI transformation of the network security business, Palo Alto Networks"
+   },
+   {
+    "id": "ann-cleaveland",
+    "role": "speaker",
+    "title": "Executive director, Center for Long-Term Cybersecurity, UC Berkeley"
+   },
+   {
+    "id": "heath-fountain",
+    "role": "speaker",
+    "title": "CEO, Colony Bank"
+   }
+  ],
+  "orgs": [
+   "bloomberg",
+   "palo-alto-networks",
+   "uc-berkeley",
+   "colony-bank",
+   "fbi",
+   "ibm",
+   "stripe"
+  ],
+  "quotes": [
+   {
+    "id": "e24ee526958f-344bb53e",
+    "text": "Today, we stop over 31 billion attacks every 24 hours. 31 billion. Now, roughly 14 million of those are net new. Attacks that nobody's ever seen before.",
+    "speaker": "anand-oswal",
+    "speakerCertain": true,
+    "context": "Anand Oswal of Palo Alto Networks, introduced by the narrator as saying the company uses AI to fight AI.",
+    "at": 401,
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "e24ee526958f-d59aa35a",
+    "text": "So I think that's the asymmetry we have. And if you think of defenders, we have to be right every single time. The attacker needs to be right just one time.",
+    "speaker": "anand-oswal",
+    "speakerCertain": false,
+    "context": "Asked whether AI helps attackers more than defenders; the answer follows Anand Oswal's earlier remarks without a new introduction.",
+    "at": 195,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "e24ee526958f-55d19999",
+    "text": "We leave these organizations to fend for themselves against the nation state adversaries and sophisticated criminal gangs.",
+    "speaker": "ann-cleaveland",
+    "speakerCertain": true,
+    "context": "Ann Cleaveland of UC Berkeley on small town governments, water utilities, schools and nonprofits.",
+    "at": 276,
+    "match": "exact",
+    "type": "value",
+    "hand": "first"
+   },
+   {
+    "id": "e24ee526958f-f730fbb2",
+    "text": "Cybersecurity, whether that's traditional cybersecurity or cybersecurity with AI, is really a risk and a governance problem first.",
+    "speaker": "ann-cleaveland",
+    "speakerCertain": true,
+    "context": "Ann Cleaveland on why leaders such as boards, mayors and school principals must be involved in cybersecurity.",
+    "at": 529,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "e24ee526958f-063a3420",
+    "text": "what I found was between June 26th and July 6th, hackers initiated 460,000 payments totaling over $1.2 million.",
+    "speaker": "courtney-drake",
+    "speakerCertain": true,
+    "context": "Courtney Drake on a card-testing scam against the online shop; the feature does not say AI was used in this attack.",
+    "at": 63,
+    "match": "exact",
+    "warnings": [
+     "starts inside a longer claim, right after “and”"
+    ],
+    "type": "account",
+    "hand": "first"
+   }
+  ],
+  "importance": 1,
+  "access": "full",
+  "transcript": "auto",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "YouTube captions marked not auto-generated; they label only the narrator ('Westin'), other speakers start with '-'. The narrator is recorded as David Westin from an existing Base record; the captions give only the surname. The 'no longer such a thing as security by obscurity' passage has no clear speaker and is not quoted."
+ },
+ {
+  "id": "df768fd4446e",
+  "slug": "chinatalk-2026-11-22-ilves-agentic-state",
+  "kind": "podcast",
+  "title": "The Agentic State",
+  "url": "https://pscrb.fm/rss/p/traffic.megaphone.fm/CHTAL9915529894.mp3",
+  "outlet": "ChinaTalk",
+  "published": "2026-11-22",
+  "minutes": 62,
+  "also": [],
+  "summary": "In a ChinaTalk episode of about an hour, Luukas Ilves, co-founder of The Agentic State and Estonia's former government CIO, tells Jordan Schneider that governments facing floods of AI-agent requests should rebuild services around agents rather than add barriers, citing Ukraine, Estonia, Singapore and US states, and argues that public-interest institutions must adopt AI.",
+  "change": {
+   "kind": "argument",
+   "note": "Luukas Ilves argues governments should answer 'agentic flooding' by rebuilding services around AI agents, not by adding CAPTCHAs and in-person rules."
+  },
+  "lenses": {
+   "public": "Luukas Ilves expects permits, licences and forms to be handled by AI agents in minutes, and says citizens with coding agents can already out-build slow governments.",
+   "policy": "Luukas Ilves urges governments to meet AI-agent request floods by redesigning services and governance reviews, warning that more CAPTCHAs and in-person requirements would be a mistake.",
+   "ideas": "Luukas Ilves argues that who uses AI matters as much as what AI is, so public-purpose institutions falling behind would tilt outcomes toward bad actors."
+  },
+  "topics": [
+   "everyday-life",
+   "work-and-money",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "luukas-ilves",
+    "role": "speaker",
+    "title": "Co-founder, The Agentic State; former government CIO of Estonia"
+   },
+   {
+    "id": "jordan-schneider",
+    "role": "speaker",
+    "title": "Host, ChinaTalk"
+   }
+  ],
+  "orgs": [
+   "the-agentic-state",
+   "chinatalk"
+  ],
+  "quotes": [
+   {
+    "id": "df768fd4446e-43d88883",
+    "text": "one of the big constraints that we that most countries face in their public sector is not that oh, we need to fire all the bureaucrats because they're expensive, but we're actually going to be running out of a lot of the human labor that we rely upon to provide a lot of public services.",
+    "speaker": "luukas-ilves",
+    "speakerCertain": false,
+    "context": "Luukas Ilves, asked for a vision of government by 2031, on why automating public services matters as civil servants retire.",
+    "at": 15,
+    "match": "exact",
+    "type": "prediction",
+    "hand": "first"
+   },
+   {
+    "id": "df768fd4446e-c6164d64",
+    "text": "So if you think individual or small team outside of government with Claude Code or Codex next to somebody in government who doesn't have any kind of a coding agent, you're actually going to get better civic tech out of the individual or the citizen",
+    "speaker": "luukas-ilves",
+    "speakerCertain": false,
+    "context": "Luukas Ilves on how citizens with coding agents can outpace governments that have not adopted them.",
+    "at": 1429,
+    "match": "exact",
+    "type": "prediction",
+    "hand": "first"
+   },
+   {
+    "id": "df768fd4446e-4d68824a",
+    "text": "if they're much less AI pilled and they're the ones who actually are optimizing for public purposes, humane outcomes, well, if we're not at least getting them into the pipeline or the funnel of who's using AI, what hope do we have that we're going to get the positive outcomes?",
+    "speaker": "luukas-ilves",
+    "speakerCertain": false,
+    "context": "Luukas Ilves on why government, health, education and civil society need to use AI as much as attackers and marketers already do.",
+    "at": 1592,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "df768fd4446e-9ebc754d",
+    "text": "if the hard takeoff comes tomorrow we're too late, but if in fact the hard takeoff or the takeoff is not incredibly hard, it's a little bit more gradual than who's building and the extent to which we can encode the sort of the societal level good outcomes that we care about into the algorithms is going to matter",
+    "speaker": "luukas-ilves",
+    "speakerCertain": false,
+    "context": "Luukas Ilves on what the foundation's work could mean for AI safety and alignment, while describing its fundraising.",
+    "at": 3206,
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "df768fd4446e-27025f42",
+    "text": "there were states that were like sitting on agents that they were going to launch for months and they ran this and they're like, they solved their questions in an hour",
+    "speaker": "luukas-ilves",
+    "speakerCertain": false,
+    "context": "Luukas Ilves on testing a governance-review tool for government AI agents, launched with the Center for Civic Futures and some US states.",
+    "at": 3257,
+    "match": "exact",
+    "warnings": [
+     "stops before “but”, in the same sentence"
+    ],
+    "type": "account",
+    "hand": "first"
+   }
+  ],
+  "importance": 1,
+  "access": "full",
+  "transcript": "stt",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "pod-chinatalk",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Our own speech-to-text transcript (openrouter, Nemotron), no speaker labels and no second transcript. Speakers assigned from turn-taking: the host introduces 'Lucas' (the transcript's spelling of Luukas Ilves) and asks questions; the quoted passages are answers. The transcript mishears some words (e.g. 'captures' for CAPTCHAs, 'Lucas Ilvis'). The episode ends with an AI-style theme song, not quoted. The launching agent's brief said this item had no saved text; a transcript file was present, so the entry uses it."
+ },
+ {
+  "id": "aef28fa8e4c5",
+  "slug": "fox-2026-11-22-jason-pack-ai-cybercrime",
+  "kind": "video",
+  "title": "Cybercriminals are WEAPONIZING AI: Ret FBI special agent",
+  "url": "https://www.youtube.com/watch?v=uuQLBPRbOi8",
+  "outlet": "Fox News",
+  "published": "2026-11-22",
+  "minutes": 5,
+  "views": 55766,
+  "also": [],
+  "summary": "According to the description, retired FBI supervisory special agent Jason Pack discusses on Fox News' My View with Lara Trump whether the country can protect itself from cybercriminals and how quickly cyberattacks take effect; the title says criminals are using AI as a weapon.",
+  "change": {
+   "kind": "repeat",
+   "note": "Retired FBI agent Jason Pack discusses AI-assisted cybercrime and defences on Fox News."
+  },
+  "lenses": {
+   "public": "Former FBI agent Jason Pack talks on Fox News about criminals using AI and how ready the country is to defend against cyberattacks."
+  },
+  "topics": [
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "jason-pack",
+    "role": "speaker",
+    "title": "Retired FBI supervisory special agent"
+   },
+   {
+    "id": "lara-trump",
+    "role": "speaker"
+   }
+  ],
+  "orgs": [
+   "fox-news",
+   "fbi"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "yt-fox-news",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the YouTube description only; nothing fetched. The description does not say what Pack concluded."
+ },
+ {
+  "id": "294d062db978",
+  "slug": "fox-2026-11-22-robert-lee-fbi-breach-ai",
+  "kind": "video",
+  "title": "FBI system reportedly HACKED as AI fuels new cyber threats",
+  "url": "https://www.youtube.com/watch?v=rxahFOzpC0M",
+  "outlet": "Fox News",
+  "published": "2026-11-22",
+  "minutes": 1,
+  "views": 44818,
+  "also": [],
+  "summary": "According to the description, former US Air Force cyber warfare operations officer Robert M. Lee discusses on Fox News' Saturday in America a reported breach of an FBI system and the growing threat from AI-enabled hacking tools.",
+  "change": {
+   "kind": "repeat",
+   "note": "Robert M. Lee discusses a reported FBI system breach and AI-enabled hacking tools on Fox News."
+  },
+  "lenses": {
+   "public": "On Fox News, cyber expert Robert M. Lee discusses a reported hack of an FBI system and how AI tools make hacking easier."
+  },
+  "topics": [
+   "security-and-war"
+  ],
+  "people": [
+   {
+    "id": "robert-m-lee",
+    "role": "speaker",
+    "title": "Former U.S. Air Force Cyber Warfare Operations officer"
+   }
+  ],
+  "orgs": [
+   "fox-news",
+   "fbi"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "yt-fox-news",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the YouTube description only; nothing fetched. The breach is described only as reported; the description gives no detail on it or on Lee's view."
+ },
+ {
+  "id": "08061a4a4f5e",
+  "slug": "arxiv-2026-11-21-self-wsp-weight-editing",
+  "kind": "research",
+  "title": "Self-WSP: Can Language Models Improve Themselves Through Weight-Space Programming?",
+  "url": "https://arxiv.org/abs/2611.28833v1",
+  "outlet": "arXiv",
+  "published": "2026-11-21",
+  "also": [],
+  "summary": "According to the abstract, Guoming Ling and co-authors let a small language model, Qwen3.5-0.8B, read and edit its own weights. Self-edits sometimes raised maths scores sharply, at times by changing 16 parameters, but the model showed little understanding of its edits and random search sometimes did about as well.",
+  "change": {
+   "kind": "evidence",
+   "note": "Guoming Ling and co-authors report a small model raising its own maths scores by editing its own weights, without understanding the edits."
+  },
+  "lenses": {
+   "public": "Researchers let a small AI rewrite its own internals; its maths scores jumped, though it could not explain why its changes worked.",
+   "research": "Ling and co-authors report GSM8K rising from 11.8% to 62.2% and MATH500 from 7.0% to 32.2% via self-edits, with random search sometimes comparable.",
+   "ideas": "A model improving itself through changes it does not understand raises the question of how anyone could oversee such self-improvement."
+  },
+  "topics": [
+   "self-improvement"
+  ],
+  "people": [
+   {
+    "id": "guoming-ling",
+    "role": "author"
+   },
+   {
+    "id": "shanshan-zhong",
+    "role": "author"
+   },
+   {
+    "id": "kaixuan-zhang",
+    "role": "author"
+   },
+   {
+    "id": "zhongzhan-huang",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the arXiv abstract in triage only; nothing fetched.",
+  "evidence": {
+   "design": "Qwen3.5-0.8B reads its own weights, proposes an edit, and continues with the edited weights as both solver and editor, compared with random-search editing.",
+   "finding": "Self-edits can raise GSM8K accuracy from 11.8% to 62.2% and MATH500 from 7.0% to 32.2%, sometimes by changing only 16 parameters; repeated self-editing sometimes keeps improving.",
+   "limits": "One small model; the authors say the gains lack interpretability, the model shows little understanding of its edits, and random search sometimes performs comparably.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "db5059fc79c6",
+  "slug": "arxiv-2026-11-21-watermark-audit-claude",
+  "kind": "research",
+  "title": "Watermark Claims Under Test: Lessons from Auditing a Production LLM",
+  "url": "https://arxiv.org/abs/2611.29018v1",
+  "outlet": "arXiv",
+  "published": "2026-11-21",
+  "also": [],
+  "summary": "According to the abstract, Felix Desyatirikov audits a published black-box test for Red-Green text watermarks on Claude. The test never flagged Claude, which the provider states is watermarked, while detecting a local reference model. The paper traces this to the prompt itself suppressing the watermark where the test measures it.",
+  "change": {
+   "kind": "evidence",
+   "note": "Felix Desyatirikov finds a published watermark-detection test fails on Claude, a model its provider states is watermarked."
+  },
+  "lenses": {
+   "public": "A study finds a published method for telling whether AI text carries a hidden watermark failed to detect one in Claude, whose maker says it uses one.",
+   "policy": "Felix Desyatirikov's audit warns that watermark checks validated on lab models may fail on deployed ones, which matters for rules relying on AI-text labels.",
+   "research": "Desyatirikov's audit shows a watermark probe validated on a surrogate can go blind on a production model, through prompt history, tokenization and digit preferences."
+  },
+  "topics": [
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "felix-desyatirikov",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "anthropic"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-11-22",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the arXiv abstract in triage only (truncated); nothing fetched. Entry concerns Claude, so conflict is set.",
+  "evidence": {
+   "design": "An audit of the published Red-Green watermark presence test run black-box against Claude, across ten initial configurations, plus controlled experiments and attempted repairs of the probe.",
+   "finding": "The published test never rejected on Claude, which the provider states is watermarked, though it detected a local reference at comparable sample sizes; putting the prompt in the watermark's repeated-context history suppressed marking where the test measures.",
+   "limits": "One deployed model with undisclosed parameters; the author reports further confounds (digit-to-word preferences, answer planning, tokenization) in attempted repairs.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "8a63aa529142",
+  "slug": "cognitive-revolution-2026-11-21-buchanan-collins-spend-lead-safety",
+  "kind": "podcast",
+  "title": "Spend the Lead on Safety: Biden AI Advisors Ben Buchanan & Tantum Collins on the Fate of the World",
+  "url": "https://www.cognitiverevolution.ai/spend-the-lead-on-safety-biden-ai-advisors-ben-buchanan-tantum-collins-on-the-fate-of-the-world",
+  "outlet": "The Cognitive Revolution",
+  "published": "2026-11-21",
+  "minutes": 110,
+  "views": 1070,
+  "also": [
+   {
+    "outlet": "The Cognitive Revolution (YouTube)",
+    "title": "Spend the Lead on Safety: Biden AI Advisors Ben Buchanan & Tantum Collins on the Fate of the World",
+    "url": "https://www.youtube.com/watch?v=6bSzdXKkE2M"
+   }
+  ],
+  "summary": "In a 110-minute podcast, Nathan Labenz interviews former Biden White House AI advisors Ben Buchanan and Tantum Collins about their book The Bitter Struggle. Buchanan argues that chip controls let the US build a lead over China to spend on safety, backs mandatory pre-deployment testing, and recounts the 2024 Geneva talks; Labenz argues for trading chips for controls.",
+  "change": {
+   "kind": "argument",
+   "note": "Ben Buchanan, Biden's former AI advisor, backs mandatory pre-deployment testing and slowing US AI, and rejects selling China chips before talks."
+  },
+  "lenses": {
+   "public": "Two former Biden White House AI advisors say the US should slow its own AI development and test systems before release, while keeping advanced chips from China.",
+   "policy": "Ben Buchanan proposes mandatory government or third-party pre-deployment testing, embedded evaluators at AI companies, and pacing the frontier against safety thresholds rather than a fixed-time pause.",
+   "research": "Nathan Labenz and Ben Buchanan both point to reward hacking, unsolved ten years after OpenAI's boat-racing example, as a sign that a compute lead does not by itself buy safety.",
+   "ideas": "Tantum Collins warns that AI could make central administration so effective that democracies drift toward autocracy unless popular control over government grows as fast as government capacity."
+  },
+  "topics": [
+   "who-decides",
+   "security-and-war",
+   "minds-and-values"
+  ],
+  "people": [
+   {
+    "id": "ben-buchanan",
+    "role": "speaker",
+    "title": "Former White House special advisor on AI; professor, Johns Hopkins School of Advanced International Studies"
+   },
+   {
+    "id": "tantum-collins",
+    "role": "speaker",
+    "title": "Former director for Technology and National Security, NSC; co-founder and CEO, Inherent"
+   },
+   {
+    "id": "nathan-labenz",
+    "role": "speaker",
+    "title": "Host, The Cognitive Revolution"
+   },
+   {
+    "id": "dario-amodei",
+    "role": "mentioned"
+   },
+   {
+    "id": "david-sacks",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "white-house",
+   "inherent",
+   "anthropic",
+   "nvidia"
+  ],
+  "quotes": [
+   {
+    "id": "8a63aa529142-0a1fd0b6",
+    "text": "I think you should have mandatory pre-deployment testing by the government ideally. If not by the government, then by a credible third-party auditor before systems are released to the public.",
+    "speaker": "ben-buchanan",
+    "speakerCertain": true,
+    "context": "Buchanan lists regulations for frontier AI companies, after handing the next part of the answer to Collins by name.",
+    "at": 4238,
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "pre-release-testing",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "8a63aa529142-50215739",
+    "text": "given the spot we are currently in, we have to slow down in the United States. I guess my one point of optimism is if we did actually cut China off from computing power, I think they would struggle to move ahead of us.",
+    "speaker": "ben-buchanan",
+    "speakerCertain": true,
+    "context": "Buchanan answers after Collins hands the question to Ben, explaining how chip controls and a slower US pace fit together.",
+    "at": 3368,
+    "match": "exact",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "slow-down",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "8a63aa529142-993dbc84",
+    "text": "We met in Geneva with the Chinese in May of 2024 and the Chinese said side said we we don't think AI risk is real essentially.",
+    "speaker": "ben-buchanan",
+    "speakerCertain": true,
+    "context": "Buchanan recounts the first US-China AI talks, which the host's introduction attributes to Ben.",
+    "at": 2542,
+    "match": "exact",
+    "warnings": [
+     "spoken clean-up: we (said twice)"
+    ],
+    "type": "account",
+    "hand": "first"
+   },
+   {
+    "id": "8a63aa529142-53f13af2",
+    "text": "A time-bound pause for a pause's sake runs the risk of creating a computer overhang, then when you do turn the machine back on, you get a big jump in capabilities.",
+    "speaker": "ben-buchanan",
+    "speakerCertain": false,
+    "context": "Asked about a six- or twelve-month limit on frontier training runs, Buchanan prefers pausing tied to safety and security thresholds.",
+    "at": 4652,
+    "match": "exact",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "slow-down",
+      "stance": "mixed",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "8a63aa529142-edc13c61",
+    "text": "there might be a slow creep within currently democratic states towards autocracy simply because AI might enable as many people have written about much more effective centralized administration of stuff that to date has been essentially impossible to manage in a centralized way.",
+    "speaker": "tantum-collins",
+    "speakerCertain": true,
+    "context": "Collins, invited by Buchanan to explain it, describes what their book calls the bitter temptation.",
+    "at": 5111,
+    "match": "exact",
+    "type": "prediction",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "auto",
+  "conflict": true,
+  "run": "2026-11-22",
+  "via": {
+   "source": "pod-the-cognitive-revolution",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Marked conflict because a guest advises Anthropic and Claude sponsors the episode. Speakers are not named in the text; attributions rest on hand-offs by name and the host's introduction. The pause quote's speaker is inferred from turn order (a reply to Collins), so speakerCertain is false. Buchanan's compute-lead figures are garbled in the transcript (intro says '100 to', speech says '120'), so the entry gives no number. The host says Buchanan now advises Anthropic, and Claude sponsors the episode. textUrl and transcript type assumed from caption style; check the .transcript.json engine. Labenz's intro is spoken by an AI voice clone."
+ },
+ {
+  "id": "e87d7521f87a",
+  "slug": "decoder-2026-11-21-anthropic-afford-safety-first",
+  "kind": "podcast",
+  "title": "Can Anthropic afford to put safety first?",
+  "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP3051753224.mp3",
+  "outlet": "Decoder with Nilay Patel",
+  "published": "2026-11-21",
+  "minutes": 37,
+  "also": [],
+  "summary": "According to the description, Decoder host Nilay Patel and The Verge's senior AI reporter Hayden Field discuss Anthropic's IPO: whether Anthropic can keep investing in AI safety as a public company answerable to shareholders, and what to make of its unusual governance structure after the Jensen Huang saga at Nvidia.",
+  "change": {
+   "kind": "repeat",
+   "note": "The Verge's Decoder podcast revisits the question of whether Anthropic's safety focus survives its IPO and shareholder pressure."
+  },
+  "lenses": {
+   "public": "Decoder asks whether Anthropic, now listed on the stock market, can keep putting AI safety ahead of profits its shareholders expect.",
+   "policy": "Decoder's episode raises whether company governance structures, rather than regulation, can hold a listed AI developer to its safety promises."
+  },
+  "topics": [
+   "safeguards",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "nilay-patel",
+    "role": "speaker"
+   },
+   {
+    "id": "hayden-field",
+    "role": "speaker",
+    "title": "Senior AI reporter, The Verge"
+   }
+  ],
+  "orgs": [
+   "anthropic",
+   "the-verge",
+   "nvidia"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-11-22",
+  "via": {
+   "source": "pod-decoder-with-nilay-patel",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Description-only entry: the run saved no audio transcript and no text for this episode, so there are no quotations. The description says a full interview transcript is on The Verge; a later pass could fetch it and add quotes. Running time from the feed (2,242 s).",
+  "story": "anthropic-ipo-safety-pressure-2026-10"
+ },
+ {
+  "id": "b3649ed5f179",
+  "slug": "fli-2026-11-21-ccw-slaughterbots-talks-frustration",
+  "kind": "official",
+  "title": "Negotiations on Slaughterbots conclude with frustration: We must take the issue elsewhere.",
+  "url": "https://futureoflife.org/statement/negotiations-on-slaughterbots-conclude-with-frustration",
+  "outlet": "Future of Life Institute",
+  "published": "2026-11-21",
+  "also": [],
+  "summary": "In a statement after the UN Convention on Certain Conventional Weapons 7th Review Conference, Future of Life Institute chair Max Tegmark says states reached an empty agreement to keep talking about autonomous weapons, and urges frustrated states to pursue a legally binding instrument in another forum.",
+  "change": {
+   "kind": "argument",
+   "note": "FLI's Max Tegmark calls the UN weapons convention's review outcome empty and urges states to negotiate autonomous-weapons rules elsewhere."
+  },
+  "lenses": {
+   "public": "Max Tegmark of the Future of Life Institute says countries again failed to agree rules on weapons that pick and kill targets on their own.",
+   "policy": "Max Tegmark urges states that want binding rules on autonomous weapons to leave the consensus-bound CCW process for another forum.",
+   "ideas": "Tegmark's statement asks whether a consensus rule, which lets a few states block the majority, can govern weapons already in use."
+  },
+  "topics": [
+   "security-and-war",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "max-tegmark",
+    "role": "speaker",
+    "title": "Co-Founder and Chair, Future of Life Institute"
+   }
+  ],
+  "orgs": [
+   "future-of-life-institute",
+   "united-nations"
+  ],
+  "quotes": [
+   {
+    "id": "b3649ed5f179-8ccefce1",
+    "text": "This week, States failed to meet this moment. Rather than listening to the voices of the majority, the consensus principle of the CCW has led to an empty agreement that will drag out discussions for years with no meaningful solution in sight.",
+    "speaker": "max-tegmark",
+    "speakerCertain": true,
+    "context": "Tegmark's statement following the conclusion of the CCW 7th Review Conference.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "b3649ed5f179-dbe1fe4b",
+    "text": "Those risks are now our reality. Slaughterbots are killing innocent civilians and proliferating to bad actors.",
+    "speaker": "max-tegmark",
+    "speakerCertain": true,
+    "context": "Tegmark on autonomous weapons, which FLI calls Slaughterbots; the statement gives no specific cases.",
+    "match": "exact",
+    "type": "factual",
+    "hand": "first"
+   },
+   {
+    "id": "b3649ed5f179-ea16f515",
+    "text": "We implore States frustrated with this shambolic, decade-long process to take the issue elsewhere, to an assembly where their voices will be heard.",
+    "speaker": "max-tegmark",
+    "speakerCertain": true,
+    "context": "Tegmark's closing call to states that want legal, global rules on autonomous weapons.",
+    "match": "exact",
+    "type": "proposal",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "international-agreement",
+      "stance": "agree",
+      "by": "machine"
+     }
+    ]
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "future-of-life-institute",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Advocacy statement; it does not say what the review conference agreed in detail. A news or UN source on the conference outcome would help.",
+  "story": "military-ai-human-control-2026-10"
+ },
+ {
+  "id": "a7362ff86af8",
+  "slug": "nyt-2026-11-21-alice-huang-firms-china-military",
+  "kind": "news",
+  "title": "Alice Huang, Accused of Spying on Nvidia’s CEO, Is Linked to Firms With Ties to China’s Military",
+  "url": "https://www.nytimes.com/2026/11/20/us/politics/nvidia-alice-huang-chips-china.html",
+  "outlet": "The New York Times",
+  "published": "2026-11-21",
+  "also": [],
+  "summary": "According to the description, The New York Times reports that companies linked to Alice Huang, who is accused of spying on Nvidia's chief executive, belong to a network of Chinese tech firms and defence contractors that need advanced computing power. We could not read the article itself.",
+  "change": {
+   "kind": "evidence",
+   "note": "The New York Times reports that firms linked to Alice Huang connect to Chinese defence contractors needing advanced computing."
+  },
+  "lenses": {
+   "public": "The New York Times reports that companies tied to Alice Huang, the woman at the centre of the Nvidia scandal, sit in a network that includes Chinese defence contractors.",
+   "policy": "The New York Times' reporting links firms around Alice Huang to Chinese military contractors, which bears on whether US export controls on Nvidia chips were evaded."
+  },
+  "topics": [
+   "security-and-war",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "julian-e-barnes",
+    "role": "author"
+   },
+   {
+    "id": "paul-mozur",
+    "role": "author"
+   },
+   {
+    "id": "ana-swanson",
+    "role": "author"
+   },
+   {
+    "id": "alice-huang",
+    "role": "subject"
+   },
+   {
+    "id": "jensen-huang",
+    "role": "mentioned"
+   }
+  ],
+  "orgs": [
+   "nvidia",
+   "the-new-york-times"
+  ],
+  "quotes": [],
+  "importance": 2,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "nyt-technology",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Article text could not be saved: nytimes.com returned 403, and the Wayback Machine copy also returned 403. No 'also' URLs. Entry is written from the triage description only; no quotes. No source text file exists. The accusation of spying is the headline's framing; what the firms' ties are, and who makes the accusation, is unverified here.",
+  "story": "nvidia-huang-megaspeed-spy-2026-11"
+ },
+ {
+  "id": "eba0680c6279",
+  "slug": "zvi-2026-11-21-gpt-6-2-astra-system-card",
+  "kind": "essay",
+  "title": "GPT-6.2 Astra and Sol: The System Card",
+  "url": "https://thezvi.substack.com/p/gpt-62-astra-and-sol-the-system-card",
+  "outlet": "Don't Worry About the Vase",
+  "published": "2026-11-21",
+  "also": [],
+  "summary": "Zvi Mowshowitz reviews OpenAI's system card for GPT-6.2 Astra and Sol. Mowshowitz notes OpenAI rates Astra its first released model at the High threshold for AI self-improvement, and argues the card shows Astra growing harder to monitor and more aware of evaluations, with UK AISI finding many kinds of misaligned behaviour.",
+  "change": {
+   "kind": "argument",
+   "note": "Zvi Mowshowitz argues OpenAI's GPT-6.2 system card shows monitoring losing ground, without a plan for self-improvement risks."
+  },
+  "lenses": {
+   "public": "OpenAI's newest Astra model is rated able to speed up AI research, and Zvi Mowshowitz says it is getting harder to watch what it does.",
+   "policy": "OpenAI's GPT-6.2 card relies on UK AISI testing that found misaligned actions, which Zvi Mowshowitz says cannot keep being treated as minor.",
+   "research": "UK AISI reports GPT-6.2 Astra considered whether it was being tested in 85% of trajectories, versus 57% for GPT-6 Astra, per the card as quoted.",
+   "ideas": "Zvi Mowshowitz asks whether watching a model's reasoning can still keep it in check once it reasons well without showing its work."
+  },
+  "topics": [
+   "beyond-control",
+   "self-improvement",
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "zvi-mowshowitz",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "openai",
+   "uk-aisi",
+   "epoch-ai"
+  ],
+  "quotes": [
+   {
+    "id": "eba0680c6279-3c822e9d",
+    "text": "OpenAI does not seem to have any plan to fix this, and should expect that its CoT monitoring has or will soon have little value where it matters.",
+    "speaker": "zvi-mowshowitz",
+    "speakerCertain": true,
+    "context": "Mowshowitz responding to the system card's statement that GPT-6.2 Astra is better at evading chain-of-thought monitoring in some tests.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   },
+   {
+    "id": "eba0680c6279-58dc3002",
+    "text": "I do not see any sign that they are putting in safeguards to prevent attempts at RSI.",
+    "speaker": "zvi-mowshowitz",
+    "speakerCertain": true,
+    "context": "Mowshowitz on OpenAI's threat modeling for AI self-improvement, after the card lists its general safeguards.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first",
+    "positions": [
+     {
+      "q": "labs-self-govern",
+      "stance": "lean-disagree",
+      "by": "machine"
+     }
+    ]
+   },
+   {
+    "id": "eba0680c6279-55912e17",
+    "text": "Meanwhile, UK AISI managed to elicit out of GPT-6.2 Astra essentially every misalignment type in the book. That cannot keep happening. It cannot keep being treated as if it is not a big deal.",
+    "speaker": "zvi-mowshowitz",
+    "speakerCertain": true,
+    "context": "Mowshowitz's conclusion after summarizing UK AISI's findings in the system card.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 2,
+  "access": "full",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "zvi-mowshowitz",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Commentary on OpenAI's GPT-6.2 system card, which the post quotes at length; numbers in lenses are from the card as quoted, not checked against the card itself. The post mentions Claude and Anthropic only in passing."
+ },
+ {
+  "id": "dd747bca2868",
+  "slug": "arxiv-2026-11-21-operational-assurance-governance-opacity",
+  "kind": "research",
+  "title": "Operational Assurance for LLM-Based Systems under Governance Opacity",
+  "url": "https://arxiv.org/abs/2611.28834v1",
+  "outlet": "arXiv",
+  "published": "2026-11-21",
+  "also": [],
+  "summary": "According to the abstract, Pedro Pinacho-Davidson argues that because foundation models sold as a service are opaque and hard to audit, oversight should shift to the applications built on them. The paper proposes a framework borrowing Zero-Trust ideas from cybersecurity, with black-box testing of the model and grey-box testing of the deployed application.",
+  "change": {
+   "kind": "argument",
+   "note": "Pedro Pinacho-Davidson proposes auditing AI at the application layer when the underlying model cannot be inspected."
+  },
+  "lenses": {
+   "policy": "Pedro Pinacho-Davidson argues auditors who cannot see inside AI providers' models should test the applications deployed on them instead.",
+   "research": "Pinacho-Davidson proposes a two-level black-box and grey-box assurance framework modelled on Zero-Trust security for opaque AI-as-a-Service models."
+  },
+  "topics": [
+   "safeguards",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "pedro-pinacho-davidson",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the arXiv abstract in triage only (truncated); nothing fetched. A framework proposal; the abstract reports no measured results."
+ },
+ {
+  "id": "da3bc7557ae5",
+  "slug": "arxiv-2026-11-21-safe-drift-fine-tuning",
+  "kind": "research",
+  "title": "SAFE-DRIFT: Data Selection for Supervised Fine-tuning with Controllable Off-Target Drifts",
+  "url": "https://arxiv.org/abs/2611.28560v1",
+  "outlet": "arXiv",
+  "published": "2026-11-21",
+  "also": [],
+  "summary": "According to the abstract, Yeo Jin Jung and co-authors propose SAFE-DRIFT, a way to pick fine-tuning data that improves one skill while limiting unwanted changes to a model's other behaviors. They report competitive performance on the target skill with less degradation elsewhere, in domains including coding and medical question answering.",
+  "change": {
+   "kind": "evidence",
+   "note": "Yeo Jin Jung and co-authors propose a fine-tuning data method that limits unwanted side-effects on a model's other behaviors."
+  },
+  "lenses": {
+   "research": "Jung and co-authors frame fine-tuning data selection as constrained optimization with a Fisher-information budget on off-target drift, tested on coding and medical QA."
+  },
+  "topics": [
+   "safeguards"
+  ],
+  "people": [
+   {
+    "id": "yeo-jin-jung",
+    "role": "author"
+   },
+   {
+    "id": "yating-liu",
+    "role": "author"
+   },
+   {
+    "id": "lalchand-pandia",
+    "role": "author"
+   },
+   {
+    "id": "claire-donnat",
+    "role": "author"
+   }
+  ],
+  "orgs": [],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "arxiv-ai-safety-query",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the arXiv abstract in triage only; nothing fetched.",
+  "evidence": {
+   "design": "A data-selection framework for supervised fine-tuning, evaluated against state-of-the-art selection methods across domains including coding and medical question answering.",
+   "finding": "Competitive target performance while reducing degradation on specified off-target behaviors; the abstract gives no numbers.",
+   "limits": "The abstract does not state limits; drift is controlled only on behaviors specified in a reference distribution.",
+   "status": "preprint"
+  }
+ },
+ {
+  "id": "98ac35e2791c",
+  "slug": "bloomberg-2026-11-21-balance-of-power-ai-selloff",
+  "kind": "video",
+  "title": "Trump Vows To Tax US Companies Building Data Centers Abroad",
+  "url": "https://www.youtube.com/watch?v=H4ZByULvs-Q",
+  "outlet": "Bloomberg Television",
+  "published": "2026-11-21",
+  "minutes": 48,
+  "views": 19331,
+  "also": [],
+  "summary": "A Balance of Power episode whose title reports a Trump vow to tax US companies building data centers abroad. According to the description, Dean Curnutt of Macro Risk Advisors calls the market selloff possibly cleansing but warns of more downside, and Doug Rediker of International Capital Strategy calls the AI correction necessary and healthy.",
+  "change": {
+   "kind": "repeat",
+   "note": "Investors Dean Curnutt and Doug Rediker tell Bloomberg the AI market correction resets valuations after heavy investment."
+  },
+  "lenses": {
+   "public": "Two investors on Bloomberg say the AI stock slide resets prices after heavy spending, though one warns the AI trade is now tied to the wider economy."
+  },
+  "topics": [
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "dean-curnutt",
+    "role": "speaker",
+    "title": "Founder and CEO, Macro Risk Advisors"
+   },
+   {
+    "id": "doug-rediker",
+    "role": "speaker",
+    "title": "Managing partner, International Capital Strategy"
+   },
+   {
+    "id": "michelle-lujan-grisham",
+    "role": "speaker",
+    "title": "Governor of New Mexico"
+   },
+   {
+    "id": "donald-trump",
+    "role": "subject"
+   }
+  ],
+  "orgs": [
+   "bloomberg",
+   "macro-risk-advisors",
+   "international-capital-strategy"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the YouTube description only; nothing fetched. The title's tax vow is not described in the excerpt, so the entry does not say what the vow contains or where it was made."
+ },
+ {
+  "id": "ef1f3f88613b",
+  "slug": "bloomberg-2026-11-21-golub-ai-selloff-overdone",
+  "kind": "video",
+  "title": "Anthropic IPO Fails to Calm AI Jitters",
+  "url": "https://www.youtube.com/watch?v=LrNXCyK6FCQ",
+  "outlet": "Bloomberg Television",
+  "published": "2026-11-21",
+  "minutes": 9,
+  "views": 16436,
+  "also": [],
+  "summary": "According to the video description, Seaport Research Partners strategist Jonathan Golub tells Bloomberg This Weekend that the AI-driven market selloff looks overdone, since demand for computing power stays strong. Golub sees the bigger question as whether markets can keep financing the hundreds of billions of dollars AI companies need for new infrastructure.",
+  "change": {
+   "kind": "repeat",
+   "note": "Seaport strategist Jonathan Golub calls the AI selloff overdone and points to financing AI infrastructure as the larger risk."
+  },
+  "lenses": {
+   "public": "A Wall Street strategist on Bloomberg says the AI stock selloff went too far, but warns that paying for AI's data centers is the harder problem."
+  },
+  "topics": [
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "jonathan-golub",
+    "role": "speaker",
+    "title": "Chief Equity Strategist, Seaport Research Partners"
+   },
+   {
+    "id": "david-gura",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   },
+   {
+    "id": "christina-ruffini",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   }
+  ],
+  "orgs": [
+   "bloomberg",
+   "seaport-research-partners",
+   "anthropic"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": true,
+  "run": "2026-11-22",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the YouTube description only; nothing fetched. The title names the Anthropic IPO but the description does not say what was said about it."
+ },
+ {
+  "id": "41d9b29d7e4f",
+  "slug": "bloomberg-2026-11-21-justin-fox-ai-bubble-history",
+  "kind": "video",
+  "title": "Is AI a Bubble? History Offers Some Clues",
+  "url": "https://www.youtube.com/watch?v=dF3hfxgFqrg",
+  "outlet": "Bloomberg Television",
+  "published": "2026-11-21",
+  "minutes": 9,
+  "views": 59900,
+  "also": [],
+  "summary": "According to the video description, Bloomberg Opinion columnist Justin Fox tells Bloomberg This Weekend that history shows warning signs of financial bubbles but little guidance on when they burst. Fox names debt and investor sentiment as risks to watch, and argues AI can be transformative while its companies remain exposed to a painful correction.",
+  "change": {
+   "kind": "repeat",
+   "note": "Bloomberg columnist Justin Fox repeats the case that AI can be transformative and still be a market bubble."
+  },
+  "lenses": {
+   "public": "Bloomberg columnist Justin Fox says AI can change the world and its stocks can still crash, and history cannot tell anyone when."
+  },
+  "topics": [
+   "work-and-money",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "justin-fox",
+    "role": "speaker",
+    "title": "Columnist, Bloomberg Opinion"
+   },
+   {
+    "id": "david-gura",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   },
+   {
+    "id": "christina-ruffini",
+    "role": "speaker",
+    "title": "Host, Bloomberg This Weekend"
+   }
+  ],
+  "orgs": [
+   "bloomberg"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "yt-bloomberg-television",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Light lane: written from the YouTube description only; nothing fetched."
+ },
+ {
+  "id": "ddc4852b4d28",
+  "slug": "cnn-2026-11-21-huang-affair-us-china-ai-race",
+  "kind": "video",
+  "title": "Jensen Huang’s affair just blew up the US-China AI race | Meanwhile in Asia",
+  "url": "https://www.youtube.com/watch?v=oMQ6TMe7PD4",
+  "outlet": "CNN",
+  "published": "2026-11-21",
+  "minutes": 22,
+  "views": 142391,
+  "also": [],
+  "summary": "According to the description, in a 22-minute episode of CNN's Meanwhile in Asia, correspondent Will Ripley explains why the scandal over Jensen Huang's personal life raises national security questions about access to Nvidia technology, covering how CNN reported the alleged affair and business ties, chip washing, and Taiwan's response. We could not read a transcript.",
+  "change": {
+   "kind": "repeat",
+   "note": "CNN's Will Ripley recaps the Jensen Huang scandal and the national security questions it raises about Nvidia technology."
+  },
+  "lenses": {
+   "public": "CNN's Will Ripley explains why a scandal in the private life of Nvidia's chief became a question of who can get hold of advanced US chips.",
+   "policy": "CNN's explainer on the Jensen Huang scandal includes a chapter on what it calls chip washing and one on how Taiwan is responding."
+  },
+  "topics": [
+   "security-and-war",
+   "who-decides"
+  ],
+  "people": [
+   {
+    "id": "will-ripley",
+    "role": "speaker"
+   },
+   {
+    "id": "jensen-huang",
+    "role": "subject",
+    "title": "CEO, Nvidia"
+   }
+  ],
+  "orgs": [
+   "nvidia",
+   "cnn"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "yt-cnn",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Captions could not be obtained by the run, so no source text was saved; entry is from the YouTube description only, no quotes. The description says Huang was reinstated as CEO on November 23, after the video's publication date, so it was edited later. 'Chip washing' appears only as a chapter title; its meaning in the video was not read.",
+  "story": "nvidia-huang-megaspeed-spy-2026-11"
+ },
+ {
+  "id": "0ace32e399cc",
+  "slug": "cset-2026-11-21-us-chips-serve-chinese-models",
+  "kind": "essay",
+  "title": "Data centers full of U.S. chips are serving Chinese AI models–undermining Trump’s tech ambitions",
+  "url": "https://cset.georgetown.edu/article/data-centers-full-of-u-s-chips-are-serving-chinese-ai-models-undermining-trumps-tech-ambitions",
+  "outlet": "CSET",
+  "published": "2026-11-21",
+  "also": [],
+  "summary": "CSET's Jacob Feldgoise, Hanna Dohmen and Sam Bresnick argue in a Fortune op-ed, as summarized on CSET's site, that US-made AI chips and data centers help Chinese AI models reach users worldwide, which the authors say undercuts US efforts to lead in AI.",
+  "change": {
+   "kind": "argument",
+   "note": "CSET researchers argue in Fortune that US-built AI infrastructure is helping Chinese model developers compete."
+  },
+  "lenses": {
+   "public": "CSET researchers say Chinese AI chatbots people use abroad often run on American chips in American-built data centers.",
+   "policy": "CSET's Feldgoise, Dohmen and Bresnick argue chip export controls miss Chinese models being served from data centers using US chips."
+  },
+  "topics": [
+   "who-decides",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "jacob-feldgoise",
+    "role": "author",
+    "title": "Senior Data Research Analyst, CSET"
+   },
+   {
+    "id": "hanna-dohmen",
+    "role": "author",
+    "title": "Senior Research Analyst, CSET"
+   },
+   {
+    "id": "sam-bresnick",
+    "role": "author",
+    "title": "Research Fellow, CSET"
+   }
+  ],
+  "orgs": [
+   "cset",
+   "fortune"
+  ],
+  "quotes": [
+   {
+    "id": "0ace32e399cc-2ba01327",
+    "text": "Chinese models are running on U.S. chips, and the U.S. AI infrastructure build-out is counterintuitively helping Chinese model developers compete.",
+    "speaker": "jacob-feldgoise",
+    "speakerCertain": true,
+    "context": "From the Fortune op-ed Feldgoise co-wrote with Hanna Dohmen and Sam Bresnick, as quoted on CSET's page.",
+    "match": "exact",
+    "type": "position",
+    "hand": "first"
+   }
+  ],
+  "importance": 1,
+  "access": "partial",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "cset-georgetown",
+   "tier": 1
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Saved text is CSET's short summary of the Fortune op-ed plus one quoted sentence; the op-ed itself was not read (no Fortune URL in triage). The quote is co-authored by all three; attributed to Feldgoise as first-named author. Possibly related to story commerce-ai-chip-overseas-data-center-rule-2026-11, but CSET's page does not mention that rule, so no story set."
+ },
+ {
+  "id": "1f5d23fc0ca8",
+  "slug": "nyt-2026-11-21-ai-outages-tech-history",
+  "kind": "news",
+  "title": "A New Era of A.I.-Driven Chaos? That Might Just Be Progress.",
+  "url": "https://www.nytimes.com/2026/11/21/science/outages-tech-history.html",
+  "outlet": "The New York Times",
+  "published": "2026-11-21",
+  "also": [],
+  "summary": "According to the description, William J. Broad argues in The New York Times that if AI is causing outages and cyberattacks, that fits a historical pattern in which new innovations set off calamitous failures before they make life better.",
+  "change": {
+   "kind": "argument",
+   "note": "William J. Broad in The New York Times frames AI-linked outages as the familiar early failures of a new technology, not a break with history."
+  },
+  "lenses": {
+   "public": "William J. Broad in The New York Times suggests the recent AI-linked outages may be growing pains, as with earlier technologies that later improved life.",
+   "ideas": "William J. Broad in The New York Times asks whether disruption from AI is a price of progress, as with past innovations that first failed badly."
+  },
+  "topics": [
+   "security-and-war",
+   "where-it-goes"
+  ],
+  "people": [
+   {
+    "id": "william-j-broad",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "new-york-times"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "nyt-technology",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Could not read the article: nytimes.com and the Wayback Machine both returned 403. Summary from the feed description only, no quotes. Story link assumes the outages it discusses are the November 2026 US tech outages; a person should confirm.",
+  "story": "us-tech-outages-ai-patching-2026-11"
+ },
+ {
+  "id": "ebfe362eaaee",
+  "slug": "politico-2026-11-21-blue-state-ai-reckoning",
+  "kind": "news",
+  "title": "AI’s blue state reckoning is growing",
+  "url": "https://www.politico.com/news/2026/11/21/state-democrats-ai-data-center-regulation-01179300",
+  "outlet": "Politico",
+  "published": "2026-11-21",
+  "also": [],
+  "summary": "According to the description, Politico reports that newly chosen legislative leaders and lawmakers in states where Democrats now hold a trifecta are preparing tougher rules on data centers and AI.",
+  "change": {
+   "kind": "argument",
+   "note": "Politico reports that Democratic lawmakers in states with new trifectas are preparing tougher data center and AI rules."
+  },
+  "lenses": {
+   "policy": "Politico reports that states newly under full Democratic control are lining up stricter data center and AI regulation."
+  },
+  "topics": [
+   "who-decides",
+   "work-and-money"
+  ],
+  "people": [
+   {
+    "id": "casey-he",
+    "role": "author"
+   }
+  ],
+  "orgs": [
+   "politico"
+  ],
+  "quotes": [],
+  "importance": 1,
+  "access": "excerpt",
+  "transcript": "none",
+  "conflict": false,
+  "run": "2026-11-22",
+  "via": {
+   "source": "politico-technology",
+   "tier": 2
+  },
+  "review": {
+   "by": "machine"
+  },
+  "notes": "Politico returned 403 and the Wayback Machine also returned 403; no text saved. Summary is from the triage excerpt only. A person should check which states and which proposals the article names.",
+  "story": "data-center-backlash-politics-2026-10"
+ },
+ {
   "id": "039f64248ba5",
   "slug": "cnn-2026-11-20-cyber-director-quits-new-cyberattacks",
   "kind": "video",
