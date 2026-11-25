@@ -40,6 +40,11 @@
   "titles": []
  },
  {
+  "id": "aaron-rupar",
+  "name": "Aaron Rupar",
+  "titles": []
+ },
+ {
   "id": "abdul-el-sayed",
   "name": "Abdul El-Sayed",
   "titles": [
@@ -725,6 +730,12 @@
   "name": "Alexandr Wang",
   "titles": [
    {
+    "title": "AI chief, Meta",
+    "entry": "forbes-2026-11-23-alexandr-wang-handover-warning",
+    "on": "2026-11-23",
+    "role": "subject"
+   },
+   {
     "title": "chief AI officer, Meta",
     "entry": "verge-2026-11-17-instagram-ai-deepfakes-meta",
     "on": "2026-11-17",
@@ -1028,6 +1039,12 @@
     "role": "speaker"
    },
    {
+    "title": "Anchor, PBS NewsHour",
+    "entry": "pbs-newshour-2026-11-23-huang-return-national-security",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
+   {
     "title": "PBS News Hour",
     "entry": "pbs-newshour-2026-11-18-data-centers-necessary-evil",
     "on": "2026-11-18",
@@ -1285,6 +1302,11 @@
   "titles": []
  },
  {
+  "id": "andrew-lohn",
+  "name": "Andrew Lohn",
+  "titles": []
+ },
+ {
   "id": "andrew-mclachlan",
   "name": "Andrew McLachlan",
   "titles": [
@@ -1412,6 +1434,18 @@
   ]
  },
  {
+  "id": "andy-jassy",
+  "name": "Andy Jassy",
+  "titles": [
+   {
+    "title": "President, Amazon",
+    "entry": "guardian-2026-11-23-ai-toys-amazon-ebay-letter",
+    "on": "2026-11-23",
+    "role": "subject"
+   }
+  ]
+ },
+ {
   "id": "andy-macnae",
   "name": "Andy MacNae",
   "titles": [
@@ -1469,6 +1503,11 @@
   "titles": []
  },
  {
+  "id": "aniruddh-pramod",
+  "name": "Aniruddh Pramod",
+  "titles": []
+ },
+ {
   "id": "anka-reuel",
   "name": "Anka Reuel",
   "titles": [
@@ -1518,6 +1557,12 @@
   "id": "ann-lipton",
   "name": "Ann Lipton",
   "titles": [
+   {
+    "title": "Law professor, University of Colorado Boulder",
+    "entry": "cnbc-2026-11-23-doj-neutral-investigation-huang",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
    {
     "title": "law professor at the University of Colorado Law School",
     "entry": "verge-2026-11-19-anthropic-ipo-good-guy-reputation",
@@ -1811,8 +1856,8 @@
   "titles": [
    {
     "title": "UN Secretary-General",
-    "entry": "un-2026-11-24-guterres-security-council-ai-control",
-    "on": "2026-11-24",
+    "entry": "un-news-2026-11-23-guterres-ai-risk-framework",
+    "on": "2026-11-23",
     "role": "speaker"
    }
   ]
@@ -2091,6 +2136,11 @@
   "titles": []
  },
  {
+  "id": "avi-caciularu",
+  "name": "Avi Caciularu",
+  "titles": []
+ },
+ {
   "id": "aviv-yossef",
   "name": "Aviv Yossef",
   "titles": []
@@ -2278,7 +2328,14 @@
  {
   "id": "baroness-finlay-of-llandaff",
   "name": "Baroness Finlay of Llandaff",
-  "titles": []
+  "titles": [
+   {
+    "title": "Crossbench member of the House of Lords",
+    "entry": "lords-2026-11-23-health-bill-ai-mental-health-chatbots",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "baroness-finn",
@@ -2307,6 +2364,12 @@
   "name": "Baroness Harding of Winscombe",
   "titles": [
    {
+    "title": "Conservative member of the House of Lords",
+    "entry": "lords-2026-11-23-health-bill-ai-mental-health-chatbots",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
+   {
     "title": "Conservative peer",
     "entry": "lords-2026-11-03-time-is-money-regulators-ai",
     "on": "2026-11-03",
@@ -2332,9 +2395,28 @@
   ]
  },
  {
+  "id": "baroness-hyde-of-bemerton",
+  "name": "Baroness Hyde of Bemerton",
+  "titles": [
+   {
+    "title": "Baroness in Waiting/Government Whip (Labour)",
+    "entry": "lords-2026-11-23-health-bill-ai-mental-health-chatbots",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "baroness-kidron",
   "name": "Baroness Kidron",
-  "titles": []
+  "titles": [
+   {
+    "title": "Crossbench member of the House of Lords",
+    "entry": "lords-2026-11-23-health-bill-ai-mental-health-chatbots",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "baroness-lloyd-of-effra",
@@ -2381,6 +2463,18 @@
   "titles": []
  },
  {
+  "id": "baroness-pidgeon",
+  "name": "Baroness Pidgeon",
+  "titles": [
+   {
+    "title": "Liberal Democrat member of the House of Lords",
+    "entry": "lords-2026-11-23-health-bill-ai-mental-health-chatbots",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "baroness-prashar",
   "name": "Baroness Prashar",
   "titles": []
@@ -2393,6 +2487,18 @@
     "title": "Baroness in Waiting/Government Whip",
     "entry": "uk-house-of-lords-2026-10-27-meta-ai-crawling",
     "on": "2026-10-27",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "baroness-shawcross-wolfson",
+  "name": "Baroness Shawcross-Wolfson",
+  "titles": [
+   {
+    "title": "Conservative member of the House of Lords",
+    "entry": "lords-2026-11-23-health-bill-ai-mental-health-chatbots",
+    "on": "2026-11-23",
     "role": "speaker"
    }
   ]
@@ -2427,6 +2533,18 @@
     "title": "Parliamentary Secretary, Cabinet Office",
     "entry": "uk-lords-2026-10-14-dsit-abolition-ai",
     "on": "2026-10-14",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "baroness-tyler-of-enfield",
+  "name": "Baroness Tyler of Enfield",
+  "titles": [
+   {
+    "title": "Liberal Democrat member of the House of Lords",
+    "entry": "lords-2026-11-23-health-bill-ai-mental-health-chatbots",
+    "on": "2026-11-23",
     "role": "speaker"
    }
   ]
@@ -2564,6 +2682,12 @@
   "name": "Ben Buchanan",
   "titles": [
    {
+    "title": "former Biden AI official",
+    "entry": "understanding-ai-2026-11-23-five-ai-debates",
+    "on": "2026-11-23",
+    "role": "mentioned"
+   },
+   {
     "title": "Former White House special advisor on AI; professor, Johns Hopkins School of Advanced International Studies",
     "entry": "cognitive-revolution-2026-11-21-buchanan-collins-spend-lead-safety",
     "on": "2026-11-21",
@@ -2593,6 +2717,18 @@
   "id": "ben-glocker",
   "name": "Ben Glocker",
   "titles": []
+ },
+ {
+  "id": "ben-gross",
+  "name": "Ben Gross",
+  "titles": [
+   {
+    "title": "doctoral student, CUNY Graduate Center",
+    "entry": "mit-technology-review-2026-11-23-nagel-anthropic-consciousness",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "ben-horowitz",
@@ -2889,6 +3025,11 @@
   "titles": []
  },
  {
+  "id": "bingxu-lu",
+  "name": "Bingxu Lu",
+  "titles": []
+ },
+ {
   "id": "bino-paul",
   "name": "Bino Paul",
   "titles": [
@@ -3038,6 +3179,11 @@
  {
   "id": "boxuan-wang",
   "name": "Boxuan Wang",
+  "titles": []
+ },
+ {
+  "id": "boyd-kane",
+  "name": "Boyd Kane",
   "titles": []
  },
  {
@@ -3526,6 +3672,11 @@
   "titles": []
  },
  {
+  "id": "caroline-haskins",
+  "name": "Caroline Haskins",
+  "titles": []
+ },
+ {
   "id": "caroline-mitchell",
   "name": "Caroline Mitchell",
   "titles": [
@@ -3758,6 +3909,18 @@
   ]
  },
  {
+  "id": "charles-elson",
+  "name": "Charles Elson",
+  "titles": [
+   {
+    "title": "Founding director, corporate governance centre, University of Delaware",
+    "entry": "bloomberg-2026-11-23-elson-huang-mistake",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "charles-qian",
   "name": "Charles Qian",
   "titles": [
@@ -3792,6 +3955,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "charlotte-stix",
+  "name": "Charlotte Stix",
+  "titles": []
  },
  {
   "id": "chaymaa-abbas",
@@ -4031,6 +4199,12 @@
   "name": "Chris McGuire",
   "titles": [
    {
+    "title": "Former deputy senior director for tech protection strategy, NSC",
+    "entry": "chinatalk-2026-11-23-emergency-pod-jensen-back",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
+   {
     "title": "senior fellow for China and emerging technologies, Council on Foreign Relations",
     "entry": "chinatalk-2026-11-16-bis-closes-loopholes",
     "on": "2026-11-16",
@@ -4125,6 +4299,11 @@
  {
   "id": "chris-stokel-walker",
   "name": "Chris Stokel-Walker",
+  "titles": []
+ },
+ {
+  "id": "chris-tava",
+  "name": "Chris Tava",
   "titles": []
  },
  {
@@ -4338,6 +4517,18 @@
   ]
  },
  {
+  "id": "christopher-smart",
+  "name": "Christopher Smart",
+  "titles": [
+   {
+    "title": "Founder, Arbroath Group; former special assistant to the president, National Economic Council",
+    "entry": "bloomberg-2026-11-23-smart-nvidia-national-security",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "christopher-stubbs",
   "name": "Christopher Stubbs",
   "titles": [
@@ -4504,6 +4695,12 @@
   "id": "clint-gibler",
   "name": "Clint Gibler",
   "titles": [
+   {
+    "title": "Applied cyber research lead, OpenAI",
+    "entry": "openai-2026-11-23-gpt-6-cyber-linux-kernel",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
    {
     "title": "OpenAI",
     "entry": "openai-2026-11-13-mozilla-gpt-6-cyber-firefox",
@@ -4930,6 +5127,18 @@
   "titles": []
  },
  {
+  "id": "dan-ives",
+  "name": "Dan Ives",
+  "titles": [
+   {
+    "title": "Partner and Senior Managing Director, Yorkville Ives & Co.",
+    "entry": "cnbc-2026-11-23-ives-shareholder-activism-huang",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "dan-jarvis",
   "name": "Dan Jarvis",
   "titles": [
@@ -5001,6 +5210,18 @@
     "title": "Deputy Permanent Representative of the United States to the UN",
     "entry": "forbes-2026-11-25-us-un-negrea-ai-safety",
     "on": "2026-11-25",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "dan-rayfield",
+  "name": "Dan Rayfield",
+  "titles": [
+   {
+    "title": "Oregon attorney general",
+    "entry": "wired-2026-11-23-states-sue-spacex-grok",
+    "on": "2026-11-23",
     "role": "speaker"
    }
   ]
@@ -5335,6 +5556,18 @@
   ]
  },
  {
+  "id": "darryl-campbell",
+  "name": "Darryl Campbell",
+  "titles": [
+   {
+    "title": "Freelance journalist, aviation expert and author",
+    "entry": "decoder-2026-11-23-router-faa-ground-stop",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "darya-kaviani",
   "name": "Darya Kaviani",
   "titles": [
@@ -5526,6 +5759,18 @@
   ]
  },
  {
+  "id": "david-herro",
+  "name": "David Herro",
+  "titles": [
+   {
+    "title": "Partner, portfolio manager and co-CIO of international equities, Harris | Oakmark",
+    "entry": "bloomberg-2026-11-23-herro-nvidia-too-important",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "david-j-deming",
   "name": "David J. Deming",
   "titles": [
@@ -5704,6 +5949,18 @@
   "id": "david-rubenstein",
   "name": "David Rubenstein",
   "titles": []
+ },
+ {
+  "id": "david-rudenstine",
+  "name": "David Rudenstine",
+  "titles": [
+   {
+    "title": "Constitutional law professor, Cardozo School of Law",
+    "entry": "nyt-2026-11-23-republicans-break-trump-huang",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "david-sacks",
@@ -5995,6 +6252,11 @@
   ]
  },
  {
+  "id": "derek-thompson",
+  "name": "Derek Thompson",
+  "titles": []
+ },
+ {
   "id": "desmond-c-ong",
   "name": "Desmond C. Ong",
   "titles": []
@@ -6097,6 +6359,12 @@
   "name": "Dmitri Alperovitch",
   "titles": [
    {
+    "title": "Co-founder and chairman, Silverado Policy Accelerator; co-founder and former CTO, CrowdStrike",
+    "entry": "pbs-newshour-2026-11-23-huang-return-national-security",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
+   {
     "title": "co-founder and chairman, Silverado Policy Accelerator; CrowdStrike co-founder",
     "entry": "cnbc-television-2026-11-10-alperovitch-huang-survive",
     "on": "2026-11-10",
@@ -6147,6 +6415,18 @@
     "entry": "arxiv-2026-10-13-safe-autonomy-for-computer-use",
     "on": "2026-10-13",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "don-bacon",
+  "name": "Don Bacon",
+  "titles": [
+   {
+    "title": "Representative (R-Neb.), chairman, House Subcommittee on Cyber, Information Technologies, and Innovation",
+    "entry": "nyt-2026-11-23-republicans-break-trump-huang",
+    "on": "2026-11-23",
+    "role": "speaker"
    }
   ]
  },
@@ -6798,6 +7078,11 @@
   ]
  },
  {
+  "id": "elizabeth-donoway",
+  "name": "Elizabeth Donoway",
+  "titles": []
+ },
+ {
   "id": "elizabeth-rhodes",
   "name": "Elizabeth Rhodes",
   "titles": [
@@ -6847,6 +7132,12 @@
     "title": "Senator (D-MA)",
     "entry": "forbes-breaking-news-2026-11-24-warren-hard-questions-huang",
     "on": "2026-11-24",
+    "role": "speaker"
+   },
+   {
+    "title": "Top Democrat, Senate Banking Committee",
+    "entry": "verge-2026-11-23-trump-engineered-huang-comeback",
+    "on": "2026-11-23",
     "role": "speaker"
    },
    {
@@ -7569,6 +7860,11 @@
   ]
  },
  {
+  "id": "faruk-alpay",
+  "name": "Faruk Alpay",
+  "titles": []
+ },
+ {
   "id": "fasheng-miao",
   "name": "Fasheng Miao",
   "titles": []
@@ -7829,6 +8125,18 @@
   "titles": []
  },
  {
+  "id": "gaetano-pedulla",
+  "name": "Gaetano Pedulla'",
+  "titles": [
+   {
+    "title": "Member of the European Parliament (The Left)",
+    "entry": "europarl-2026-11-23-avmsd-revision-debate-ai",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "gang-niu",
   "name": "Gang Niu",
   "titles": []
@@ -8045,6 +8353,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "geoffrey-miller",
+  "name": "Geoffrey Miller",
+  "titles": []
  },
  {
   "id": "geoffrey-vos",
@@ -8272,6 +8585,18 @@
   "titles": []
  },
  {
+  "id": "gordon-chang",
+  "name": "Gordon Chang",
+  "titles": [
+   {
+    "title": "Author; US-China relations expert",
+    "entry": "forbes-2026-11-23-gordon-chang-huang-return",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "gordon-mckee",
   "name": "Gordon McKee",
   "titles": [
@@ -8447,6 +8772,18 @@
     "title": "Representative (D-AZ)",
     "entry": "bloomberg-television-2026-11-24-stanton-nvidia-board-answers",
     "on": "2026-11-24",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "gregory-meeks",
+  "name": "Gregory Meeks",
+  "titles": [
+   {
+    "title": "Top Democrat, House Foreign Affairs Committee",
+    "entry": "verge-2026-11-23-trump-engineered-huang-comeback",
+    "on": "2026-11-23",
     "role": "speaker"
    }
   ]
@@ -8864,6 +9201,12 @@
     "role": "mentioned"
    },
    {
+    "title": "Board chair, Nvidia",
+    "entry": "nyt-2026-11-23-trump-pushed-reinstate-huang",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
+   {
     "title": "Chair of Nvidia's board",
     "entry": "bloomberg-television-2026-11-17-nvidia-board-no-reinstate-huang",
     "on": "2026-11-17",
@@ -8988,6 +9331,18 @@
   "titles": []
  },
  {
+  "id": "helder-sousa-silva",
+  "name": "Hélder Sousa Silva",
+  "titles": [
+   {
+    "title": "Member of the European Parliament (PPE)",
+    "entry": "europarl-2026-11-23-avmsd-revision-debate-ai",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "helen-clark",
   "name": "Helen Clark",
   "titles": [
@@ -9024,9 +9379,33 @@
   ]
  },
  {
+  "id": "helmut-brandstatter",
+  "name": "Helmut Brandstätter",
+  "titles": [
+   {
+    "title": "Member of the European Parliament (Renew)",
+    "entry": "europarl-2026-11-23-avmsd-revision-debate-ai",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "hengheng-xiong",
   "name": "Hengheng Xiong",
   "titles": []
+ },
+ {
+  "id": "henna-virkkunen",
+  "name": "Henna Virkkunen",
+  "titles": [
+   {
+    "title": "Executive Vice-President of the European Commission",
+    "entry": "europarl-2026-11-23-avmsd-revision-debate-ai",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "henry-belot",
@@ -9461,6 +9840,11 @@
   "titles": []
  },
  {
+  "id": "ilia-shumailov",
+  "name": "Ilia Shumailov",
+  "titles": []
+ },
+ {
   "id": "imanol-schlag",
   "name": "Imanol Schlag",
   "titles": []
@@ -9495,6 +9879,18 @@
   ]
  },
  {
+  "id": "irena-joveva",
+  "name": "Irena Joveva",
+  "titles": [
+   {
+    "title": "Member of the European Parliament (Renew)",
+    "entry": "europarl-2026-11-23-avmsd-revision-debate-ai",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "irene-solaiman",
   "name": "Irene Solaiman",
   "titles": [
@@ -9505,6 +9901,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "isaak-mengesha",
+  "name": "Isaak Mengesha",
+  "titles": []
  },
  {
   "id": "isabella-ward",
@@ -9531,6 +9932,11 @@
  {
   "id": "isak-czeresnia-etinger",
   "name": "Isak Czeresnia Etinger",
+  "titles": []
+ },
+ {
+  "id": "ishan-verma-prasad",
+  "name": "Ishan Verma Prasad",
   "titles": []
  },
  {
@@ -9863,6 +10269,18 @@
   ]
  },
  {
+  "id": "james-lewis",
+  "name": "James Lewis",
+  "titles": [
+   {
+    "title": "Tech Policy Program, Center for European Policy Analysis",
+    "entry": "pbs-newshour-2026-11-23-huang-return-national-security",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "james-lucassen",
   "name": "James Lucassen",
   "titles": []
@@ -9930,6 +10348,11 @@
   ]
  },
  {
+  "id": "james-white",
+  "name": "James White",
+  "titles": []
+ },
+ {
   "id": "jamie-dimon",
   "name": "Jamie Dimon",
   "titles": [
@@ -9938,6 +10361,18 @@
     "entry": "bloomberg-2026-10-15-dimon-ai-benefits-risks",
     "on": "2026-10-15",
     "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "jamie-iannone",
+  "name": "Jamie Iannone",
+  "titles": [
+   {
+    "title": "President, eBay",
+    "entry": "guardian-2026-11-23-ai-toys-amazon-ebay-letter",
+    "on": "2026-11-23",
+    "role": "subject"
    }
   ]
  },
@@ -10215,6 +10650,12 @@
   "name": "Jay Clayton",
   "titles": [
    {
+    "title": "Director of National Intelligence; AI czar",
+    "entry": "axios-2026-11-23-clayton-acting-cyber-director",
+    "on": "2026-11-23",
+    "role": "subject"
+   },
+   {
     "title": "director of national intelligence and AI czar",
     "entry": "guardian-2026-11-18-senators-clayton-outages-vulnerabilities",
     "on": "2026-11-18",
@@ -10242,6 +10683,18 @@
     "title": "AI czar, White House",
     "entry": "cnbc-2026-10-07-clayton-safety-speed-false-choice",
     "on": "2026-10-07",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "jay-jones",
+  "name": "Jay Jones",
+  "titles": [
+   {
+    "title": "Virginia attorney general",
+    "entry": "wired-2026-11-23-states-sue-spacex-grok",
+    "on": "2026-11-23",
     "role": "speaker"
    }
   ]
@@ -10286,6 +10739,12 @@
   "id": "jd-vance",
   "name": "JD Vance",
   "titles": [
+   {
+    "title": "Vice President of the United States",
+    "entry": "verge-2026-11-23-trump-engineered-huang-comeback",
+    "on": "2026-11-23",
+    "role": "mentioned"
+   },
    {
     "title": "Vice President",
     "entry": "forbes-2026-10-09-vance-data-centers-grid-power",
@@ -10453,6 +10912,12 @@
     "entry": "techcrunch-2026-11-24-sonnenfeld-nvidia-detriment",
     "on": "2026-11-25",
     "role": "speaker"
+   },
+   {
+    "title": "Senior associate dean, Yale School of Management",
+    "entry": "cnbc-2026-11-23-sonnenfeld-nvidia-board-resign",
+    "on": "2026-11-23",
+    "role": "speaker"
    }
   ]
  },
@@ -10460,6 +10925,18 @@
   "id": "jefftk",
   "name": "jefftk",
   "titles": []
+ },
+ {
+  "id": "jen-easterly",
+  "name": "Jen Easterly",
+  "titles": [
+   {
+    "title": "Former Biden administration cybersecurity official",
+    "entry": "cnn-2026-11-23-trump-huang-image",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "jennifer-huddleston",
@@ -10688,8 +11165,8 @@
   "titles": [
    {
     "title": "MP",
-    "entry": "controlai-2026-11-24-jess-asato-stop-the-car",
-    "on": "2026-11-24",
+    "entry": "controlai-2026-11-23-jess-asato-ban-runaway-ai",
+    "on": "2026-11-23",
     "role": "speaker"
    },
    {
@@ -10840,6 +11317,11 @@
  {
   "id": "jiao-shan",
   "name": "Jiao Shan",
+  "titles": []
+ },
+ {
+  "id": "jiaqi-rong",
+  "name": "Jiaqi Rong",
   "titles": []
  },
  {
@@ -11101,6 +11583,11 @@
   ]
  },
  {
+  "id": "jo-j-jiao",
+  "name": "Jo J. Jiao",
+  "titles": []
+ },
+ {
   "id": "jo-jiao",
   "name": "Jo Jiao",
   "titles": []
@@ -11136,6 +11623,12 @@
   "id": "joe-mathieu",
   "name": "Joe Mathieu",
   "titles": [
+   {
+    "title": "Host, Bloomberg's Balance of Power",
+    "entry": "bloomberg-television-2026-11-23-haines-nvidia-board-lawyer-up",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
    {
     "title": "Bloomberg",
     "entry": "bloomberg-2026-11-16-wes-moore-midterms-faa-ai-oversight",
@@ -11220,6 +11713,18 @@
     "title": "CNN",
     "entry": "forbes-breaking-news-2026-11-24-coons-trump-nvidia-enriched",
     "on": "2026-11-24",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
+  "id": "john-cornyn",
+  "name": "John Cornyn",
+  "titles": [
+   {
+    "title": "Senator (R-Texas)",
+    "entry": "nyt-2026-11-23-republicans-break-trump-huang",
+    "on": "2026-11-23",
     "role": "mentioned"
    }
   ]
@@ -11347,6 +11852,12 @@
   "id": "john-moolenaar",
   "name": "John Moolenaar",
   "titles": [
+   {
+    "title": "Chair, House China Committee",
+    "entry": "verge-2026-11-23-trump-engineered-huang-comeback",
+    "on": "2026-11-23",
+    "role": "mentioned"
+   },
    {
     "title": "Chair, House select committee on the Chinese Communist party",
     "entry": "guardian-2026-11-17-huang-testify-congress",
@@ -11828,6 +12339,11 @@
   ]
  },
  {
+  "id": "josephine-walker",
+  "name": "Josephine Walker",
+  "titles": []
+ },
+ {
   "id": "josh-butler",
   "name": "Josh Butler",
   "titles": [
@@ -12172,6 +12688,18 @@
   "titles": []
  },
  {
+  "id": "junaid-hussain",
+  "name": "Junaid Hussain",
+  "titles": [
+   {
+    "title": "Co-founder, Agon",
+    "entry": "govuk-2026-11-23-sovereign-ai-nssif-agon",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "jundong-li",
   "name": "Jundong Li",
   "titles": [
@@ -12236,6 +12764,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "justin-papp",
+  "name": "Justin Papp",
+  "titles": []
  },
  {
   "id": "justin-timothy",
@@ -12329,6 +12862,12 @@
   "id": "kailey-leinz",
   "name": "Kailey Leinz",
   "titles": [
+   {
+    "title": "Host, Bloomberg's Balance of Power",
+    "entry": "bloomberg-television-2026-11-23-haines-nvidia-board-lawyer-up",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
    {
     "title": "Bloomberg",
     "entry": "bloomberg-2026-11-16-wes-moore-midterms-faa-ai-oversight",
@@ -12444,6 +12983,12 @@
   "id": "kanishka-narayan",
   "name": "Kanishka Narayan",
   "titles": [
+   {
+    "title": "AI Minister, UK",
+    "entry": "govuk-2026-11-23-sovereign-ai-nssif-agon",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
    {
     "title": "AI minister",
     "entry": "guardian-2026-10-17-labour-figures-ai-worry",
@@ -12768,6 +13313,18 @@
   ]
  },
  {
+  "id": "katie-sweeten",
+  "name": "Katie Sweeten",
+  "titles": [
+   {
+    "title": "Partner, Scale LLP",
+    "entry": "cnbc-2026-11-23-doj-neutral-investigation-huang",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "katie-van-syckle",
   "name": "Katie Van Syckle",
   "titles": []
@@ -12919,6 +13476,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "kevin-breuninger",
+  "name": "Kevin Breuninger",
+  "titles": []
  },
  {
   "id": "kevin-bryan",
@@ -13184,6 +13746,12 @@
   "id": "kirsten-davies",
   "name": "Kirsten Davies",
   "titles": [
+   {
+    "title": "Chief information officer, Pentagon",
+    "entry": "axios-2026-11-23-clayton-acting-cyber-director",
+    "on": "2026-11-23",
+    "role": "subject"
+   },
    {
     "title": "Pentagon chief information officer",
     "entry": "axios-2026-11-19-trump-names-kirsten-davies-cyber-director",
@@ -13466,6 +14034,18 @@
     "entry": "ars-2026-10-27-anthropic-ipo-risk-factors",
     "on": "2026-10-27",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "kyle-zeng",
+  "name": "Kyle Zeng",
+  "titles": [
+   {
+    "title": "Cyber researcher, OpenAI",
+    "entry": "openai-2026-11-23-gpt-6-cyber-linux-kernel",
+    "on": "2026-11-23",
+    "role": "speaker"
    }
   ]
  },
@@ -13839,6 +14419,11 @@
   ]
  },
  {
+  "id": "lihai-nie",
+  "name": "Lihai Nie",
+  "titles": []
+ },
+ {
   "id": "lila-ibrahim",
   "name": "Lila Ibrahim",
   "titles": [
@@ -14039,7 +14624,14 @@
  {
   "id": "liz-landers",
   "name": "Liz Landers",
-  "titles": []
+  "titles": [
+   {
+    "title": "White House correspondent, PBS NewsHour",
+    "entry": "pbs-2026-11-23-why-trump-pushed-huang",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "liz-lloyd",
@@ -14170,9 +14762,27 @@
   "name": "Lord Clement-Jones",
   "titles": [
    {
+    "title": "Liberal Democrat member of the House of Lords",
+    "entry": "lords-2026-11-23-health-bill-ai-mental-health-chatbots",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
+   {
     "title": "Liberal Democrat peer",
     "entry": "lords-2026-10-26-ai-tools-schools-question",
     "on": "2026-10-26",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "lord-crisp",
+  "name": "Lord Crisp",
+  "titles": [
+   {
+    "title": "Crossbench member of the House of Lords",
+    "entry": "lords-2026-11-23-health-bill-ai-mental-health-chatbots",
+    "on": "2026-11-23",
     "role": "speaker"
    }
   ]
@@ -14368,7 +14978,14 @@
  {
   "id": "lord-tarassenko",
   "name": "Lord Tarassenko",
-  "titles": []
+  "titles": [
+   {
+    "title": "Crossbench member of the House of Lords",
+    "entry": "lords-2026-11-23-health-bill-ai-mental-health-chatbots",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "lord-udny-lister",
@@ -14623,6 +15240,12 @@
   "name": "Madeleine Dean",
   "titles": [
    {
+    "title": "US Representative; member, House Foreign Affairs Committee",
+    "entry": "bloomberg-2026-11-23-dean-huang-not-end-well",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
+   {
     "title": "Democratic Congresswoman from Pennsylvania, House Foreign Affairs Committee",
     "entry": "cnn-2026-11-13-bessent-blames-lutnick-nvidia",
     "on": "2026-11-13",
@@ -14722,6 +15345,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "manzi-fabrice-niyigaba",
+  "name": "Manzi Fabrice Niyigaba",
+  "titles": []
  },
  {
   "id": "mao-ning",
@@ -15312,6 +15940,11 @@
   "titles": []
  },
  {
+  "id": "matteo-pistillo",
+  "name": "Matteo Pistillo",
+  "titles": []
+ },
+ {
   "id": "matthew-botvinick",
   "name": "Matthew Botvinick",
   "titles": [
@@ -15703,6 +16336,18 @@
   "id": "mia-goth",
   "name": "Mia Goth",
   "titles": []
+ },
+ {
+  "id": "mia-mottley",
+  "name": "Mia Mottley",
+  "titles": [
+   {
+    "title": "Prime Minister of Barbados",
+    "entry": "un-news-2026-11-23-guterres-ai-risk-framework",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "mia-sato",
@@ -16739,6 +17384,18 @@
   "titles": []
  },
  {
+  "id": "nela-riehl",
+  "name": "Nela Riehl",
+  "titles": [
+   {
+    "title": "Member of the European Parliament (Verts/ALE)",
+    "entry": "europarl-2026-11-23-avmsd-revision-debate-ai",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "neo-christopher-chung",
   "name": "Neo Christopher Chung",
   "titles": [
@@ -17132,6 +17789,11 @@
   "titles": []
  },
  {
+  "id": "nora-soderberg",
+  "name": "Nora Söderberg",
+  "titles": []
+ },
+ {
   "id": "nourhan-abdelrhim",
   "name": "Nourhan Abdelrhim",
   "titles": []
@@ -17388,6 +18050,18 @@
     "entry": "cnbc-2026-11-18-paris-hilton-ai-creativity-deepfakes",
     "on": "2026-11-18",
     "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "paris-martineau",
+  "name": "Paris Martineau",
+  "titles": [
+   {
+    "title": "journalist",
+    "entry": "marcus-on-ai-2026-11-23-jensengate-president",
+    "on": "2026-11-23",
+    "role": "mentioned"
    }
   ]
  },
@@ -17812,6 +18486,23 @@
   "titles": []
  },
  {
+  "id": "peter-harrell",
+  "name": "Peter Harrell",
+  "titles": [
+   {
+    "title": "Former senior director for international economics under President Biden",
+    "entry": "chinatalk-2026-11-23-emergency-pod-jensen-back",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "peter-horvath",
+  "name": "Peter Horvath",
+  "titles": []
+ },
+ {
   "id": "peter-lewis",
   "name": "Peter Lewis",
   "titles": [
@@ -17867,6 +18558,18 @@
     "entry": "transformer-2026-11-24-fix-training-environments-ai-cheating",
     "on": "2026-11-24",
     "role": "mentioned"
+   }
+  ]
+ },
+ {
+  "id": "peter-morici",
+  "name": "Peter Morici",
+  "titles": [
+   {
+    "title": "Economist",
+    "entry": "fox-2026-11-23-morici-ai-regulation-panic",
+    "on": "2026-11-23",
+    "role": "speaker"
    }
   ]
  },
@@ -18018,6 +18721,18 @@
   "titles": []
  },
  {
+  "id": "pierre-ferragu",
+  "name": "Pierre Ferragu",
+  "titles": [
+   {
+    "title": "Global team head of technology infrastructure, New Street Research",
+    "entry": "bloomberg-2026-11-23-ferragu-huang-back",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "pippa-stevens",
   "name": "Pippa Stevens",
   "titles": [
@@ -18115,6 +18830,11 @@
   ]
  },
  {
+  "id": "priya-bharadia",
+  "name": "Priya Bharadia",
+  "titles": []
+ },
+ {
   "id": "provat-saha",
   "name": "Provat Saha",
   "titles": []
@@ -18152,6 +18872,11 @@
  {
   "id": "qichen-zhao",
   "name": "Qichen Zhao",
+  "titles": []
+ },
+ {
+  "id": "qilong-wang",
+  "name": "Qilong Wang",
   "titles": []
  },
  {
@@ -18662,6 +19387,18 @@
   ]
  },
  {
+  "id": "rick-scott",
+  "name": "Rick Scott",
+  "titles": [
+   {
+    "title": "Senator (R-Fla.)",
+    "entry": "nyt-2026-11-23-republicans-break-trump-huang",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "rick-smith",
   "name": "Rick Smith",
   "titles": [
@@ -18890,6 +19627,11 @@
   ]
  },
  {
+  "id": "robert-jimison",
+  "name": "Robert Jimison",
+  "titles": []
+ },
+ {
   "id": "robert-m-lee",
   "name": "Robert M. Lee",
   "titles": [
@@ -19074,6 +19816,12 @@
   "id": "ron-wyden",
   "name": "Ron Wyden",
   "titles": [
+   {
+    "title": "Senator (D-Ore.), top Democrat, Senate Finance Committee",
+    "entry": "nyt-2026-11-23-republicans-break-trump-huang",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
    {
     "title": "Senator (D-OR)",
     "entry": "techcrunch-2026-11-19-jensen-huang-scandal-timeline",
@@ -19632,6 +20380,11 @@
   "titles": []
  },
  {
+  "id": "sandra-upson",
+  "name": "Sandra Upson",
+  "titles": []
+ },
+ {
   "id": "sandy-tanwisuth",
   "name": "Sandy Tanwisuth",
   "titles": []
@@ -19649,6 +20402,11 @@
  {
   "id": "sanmi-koyejo",
   "name": "Sanmi Koyejo",
+  "titles": []
+ },
+ {
+  "id": "sansheng-cao",
+  "name": "Sansheng Cao",
   "titles": []
  },
  {
@@ -19790,6 +20548,11 @@
     "role": "mentioned"
    }
   ]
+ },
+ {
+  "id": "sarah-holder",
+  "name": "Sarah Holder",
+  "titles": []
  },
  {
   "id": "sarah-kunst",
@@ -20243,6 +21006,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "shanghong-xie",
+  "name": "Shanghong Xie",
+  "titles": []
  },
  {
   "id": "shanhan-qu",
@@ -20946,6 +21714,18 @@
   ]
  },
  {
+  "id": "steve-sosnick",
+  "name": "Steve Sosnick",
+  "titles": [
+   {
+    "title": "Chief strategist, Interactive Brokers",
+    "entry": "cnbc-2026-11-23-ives-shareholder-activism-huang",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "steve-swick",
   "name": "Steve Swick",
   "titles": [
@@ -21312,6 +22092,11 @@
   ]
  },
  {
+  "id": "taylan-alpay",
+  "name": "Taylan Alpay",
+  "titles": []
+ },
+ {
   "id": "taylor-budowich",
   "name": "Taylor Budowich",
   "titles": [
@@ -21378,6 +22163,18 @@
     "entry": "verge-2026-10-10-nadella-assume-models-compromised",
     "on": "2026-10-10",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "terry-haines",
+  "name": "Terry Haines",
+  "titles": [
+   {
+    "title": "Founder, Pangaea Policy",
+    "entry": "bloomberg-television-2026-11-23-haines-nvidia-board-lawyer-up",
+    "on": "2026-11-23",
+    "role": "speaker"
    }
   ]
  },
@@ -21507,6 +22304,12 @@
   "id": "thomas-nagel",
   "name": "Thomas Nagel",
   "titles": [
+   {
+    "title": "philosopher",
+    "entry": "mit-technology-review-2026-11-23-nagel-anthropic-consciousness",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
    {
     "title": "professor emeritus, NYU",
     "entry": "wired-2026-11-18-nagel-ai-consciousness-interview",
@@ -21684,6 +22487,11 @@
   ]
  },
  {
+  "id": "timothy-b-lee",
+  "name": "Timothy B. Lee",
+  "titles": []
+ },
+ {
   "id": "toby-ord",
   "name": "Toby Ord",
   "titles": []
@@ -21751,6 +22559,12 @@
     "entry": "cnn-2026-11-24-republicans-break-trump-huang",
     "on": "2026-11-24",
     "role": "subject"
+   },
+   {
+    "title": "Chair, Senate Intelligence Committee",
+    "entry": "verge-2026-11-23-trump-engineered-huang-comeback",
+    "on": "2026-11-23",
+    "role": "speaker"
    }
   ]
  },
@@ -21834,6 +22648,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "tom-kimpson",
+  "name": "Tom Kimpson",
+  "titles": []
  },
  {
   "id": "tom-llamas",
@@ -21951,6 +22770,11 @@
   ]
  },
  {
+  "id": "tomer-ashuach",
+  "name": "Tomer Ashuach",
+  "titles": []
+ },
+ {
   "id": "tommaso-tosato",
   "name": "Tommaso Tosato",
   "titles": []
@@ -22065,6 +22889,18 @@
   "id": "tripp-mickle",
   "name": "Tripp Mickle",
   "titles": []
+ },
+ {
+  "id": "tristam-constant",
+  "name": "Tristam Constant",
+  "titles": [
+   {
+    "title": "Co-founder and CEO, Agon",
+    "entry": "govuk-2026-11-23-sovereign-ai-nssif-agon",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "tristan-harris",
@@ -22360,6 +23196,18 @@
   "titles": []
  },
  {
+  "id": "viktor-weisz",
+  "name": "Viktor Weisz",
+  "titles": [
+   {
+    "title": "Member of the European Parliament (PPE)",
+    "entry": "europarl-2026-11-23-avmsd-revision-debate-ai",
+    "on": "2026-11-23",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "vince-fong",
   "name": "Vince Fong",
   "titles": [
@@ -22561,6 +23409,11 @@
   "titles": []
  },
  {
+  "id": "wenlong-yu",
+  "name": "Wenlong Yu",
+  "titles": []
+ },
+ {
   "id": "wera-hobhouse",
   "name": "Wera Hobhouse",
   "titles": [
@@ -22576,6 +23429,12 @@
   "id": "wes-moore",
   "name": "Wes Moore",
   "titles": [
+   {
+    "title": "Governor of Maryland; chair, National Governors Association",
+    "entry": "axios-2026-11-23-moore-trump-nvidia",
+    "on": "2026-11-23",
+    "role": "speaker"
+   },
    {
     "title": "Governor of Maryland",
     "entry": "bloomberg-2026-11-16-wes-moore-midterms-faa-ai-oversight",
@@ -22604,6 +23463,18 @@
     "title": "Spokesperson, WhatsApp",
     "entry": "redact-2026-10-19-whatsapp-hidden-ai-instructions",
     "on": "2026-10-19",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
+  "id": "will-bushby",
+  "name": "Will Bushby",
+  "titles": [
+   {
+    "title": "Sovereign AI Investor",
+    "entry": "govuk-2026-11-23-sovereign-ai-nssif-agon",
+    "on": "2026-11-23",
     "role": "speaker"
    }
   ]
@@ -22847,6 +23718,11 @@
   "titles": []
  },
  {
+  "id": "xinche-zhang",
+  "name": "Xinche Zhang",
+  "titles": []
+ },
+ {
   "id": "xing-xie",
   "name": "Xing Xie",
   "titles": []
@@ -23050,6 +23926,11 @@
   "titles": []
  },
  {
+  "id": "yi-han",
+  "name": "Yi Han",
+  "titles": []
+ },
+ {
   "id": "yi-zhang",
   "name": "Yi Zhang",
   "titles": []
@@ -23241,6 +24122,11 @@
  {
   "id": "yun-jeong-hu",
   "name": "Yun Jeong-hu",
+  "titles": []
+ },
+ {
+  "id": "yunchen-lu",
+  "name": "Yunchen Lu",
   "titles": []
  },
  {
@@ -23459,6 +24345,11 @@
   "titles": []
  },
  {
+  "id": "zhen-sun",
+  "name": "Zhen Sun",
+  "titles": []
+ },
+ {
   "id": "zhen-xu",
   "name": "Zhen Xu",
   "titles": []
@@ -23521,6 +24412,11 @@
   "titles": []
  },
  {
+  "id": "zhijie-deng",
+  "name": "Zhijie Deng",
+  "titles": []
+ },
+ {
   "id": "zhiliang-tian",
   "name": "Zhiliang Tian",
   "titles": []
@@ -23563,6 +24459,11 @@
   "titles": []
  },
  {
+  "id": "zhiyuan-ma",
+  "name": "Zhiyuan Ma",
+  "titles": []
+ },
+ {
   "id": "zhiyuan-wang",
   "name": "Zhiyuan Wang",
   "titles": []
@@ -23580,6 +24481,11 @@
  {
   "id": "zhu-zhang",
   "name": "Zhu Zhang",
+  "titles": []
+ },
+ {
+  "id": "zhuoran-liu",
+  "name": "Zhuoran Liu",
   "titles": []
  },
  {
@@ -23715,6 +24621,11 @@
  {
   "id": "zora-che",
   "name": "Zora Che",
+  "titles": []
+ },
+ {
+  "id": "zorik-gekhman",
+  "name": "Zorik Gekhman",
   "titles": []
  },
  {
