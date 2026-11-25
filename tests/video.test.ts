@@ -88,12 +88,10 @@ test('the report names the words to listen for: what was respelled for the voice
   assert.ok(!list.some(w => /plain|agencies|warns/.test(w)), 'ordinary words are not listed');
 });
 
-test('the Video step of the daily finish can never stop the run, and the MP4 stays out of the archive', () => {
+test('the daily finish makes no video (retired on 2026-11-19), and no MP4 reaches the archive', () => {
   const finish = fs.readFileSync(path.join(import.meta.dirname, '..', 'scripts/radar/daily-finish.sh'), 'utf8');
-  const step = finish.slice(finish.indexOf('echo "== Video"'), finish.indexOf('echo "== Archive"'));
-  assert.ok(step.length > 0, 'no Video step');
-  assert.match(step, /else echo "WARNING: the video could not be made/, 'a failed video only warns');
-  assert.match(step, /\|\| true/, 'a missing line or file does not stop it under set -e');
-  assert.match(step, /--voice/);
-  assert.doesNotMatch(step.replace(/^#.*$/gm, ''), /\.mp4/, 'the MP4 is not copied into the run folder, which is archived');
+  const code = finish.replace(/^\s*#.*$/gm, '');
+  assert.ok(!code.includes('echo "== Video"'), 'the Video step is gone');
+  assert.doesNotMatch(code, /social\.ts video/, 'nothing calls the video maker');
+  assert.doesNotMatch(code, /\.mp4/, 'no MP4 is made or copied by the finish');
 });
