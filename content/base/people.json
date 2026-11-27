@@ -875,6 +875,18 @@
   "titles": []
  },
  {
+  "id": "alison-durkee",
+  "name": "Alison Durkee",
+  "titles": [
+   {
+    "title": "Senior news reporter, Forbes",
+    "entry": "forbes-2026-11-26-amodei-rejects-surrender-free-will",
+    "on": "2026-11-26",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "alison-taylor",
   "name": "Alison Taylor",
   "titles": [
@@ -1782,6 +1794,18 @@
   ]
  },
  {
+  "id": "anonymous-guardian-ai-leader-2026-11",
+  "name": "Anonymous",
+  "titles": [
+   {
+    "title": "Senior AI leader at a large tech company (as described by the writer)",
+    "entry": "guardian-2026-11-26-anonymous-ai-leader-safety",
+    "on": "2026-11-26",
+    "role": "author"
+   }
+  ]
+ },
+ {
   "id": "anson-ho",
   "name": "Anson Ho",
   "titles": []
@@ -2320,6 +2344,11 @@
   ]
  },
  {
+  "id": "baroness-altmann",
+  "name": "Baroness Altmann",
+  "titles": []
+ },
+ {
   "id": "baroness-armstrong-of-hill-top",
   "name": "Baroness Armstrong of Hill Top",
   "titles": []
@@ -2335,6 +2364,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "baroness-benjamin",
+  "name": "Baroness Benjamin",
+  "titles": []
  },
  {
   "id": "baroness-bennett-of-manor-castle",
@@ -2376,6 +2410,11 @@
   "titles": []
  },
  {
+  "id": "baroness-caine-of-kentish-town",
+  "name": "Baroness Caine of Kentish Town",
+  "titles": []
+ },
+ {
   "id": "baroness-cash",
   "name": "Baroness Cash",
   "titles": [
@@ -2386,6 +2425,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "baroness-chakrabarti",
+  "name": "Baroness Chakrabarti",
+  "titles": []
  },
  {
   "id": "baroness-finlay-of-llandaff",
@@ -3390,6 +3434,18 @@
   ]
  },
  {
+  "id": "brett-dixon",
+  "name": "Brett Dixon",
+  "titles": [
+   {
+    "title": "President, Law Society",
+    "entry": "guardian-2026-11-26-court-cases-undisclosed-ai",
+    "on": "2026-11-26",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "brett-guthrie",
   "name": "Brett Guthrie",
   "titles": [
@@ -3446,6 +3502,12 @@
   "id": "brian-flanagan",
   "name": "Brian Flanagan",
   "titles": [
+   {
+    "title": "Associate professor, school of law and criminology, Maynooth University",
+    "entry": "guardian-2026-11-26-court-cases-undisclosed-ai",
+    "on": "2026-11-26",
+    "role": "speaker"
+   },
    {
     "title": "associate professor of law, Maynooth University",
     "entry": "guardian-2026-11-03-cps-prosecutor-imaginary-case",
@@ -4339,6 +4401,18 @@
   ]
  },
  {
+  "id": "chris-mcdonald",
+  "name": "Chris McDonald",
+  "titles": [
+   {
+    "title": "Minister for Science, Innovation and Investment",
+    "entry": "commons-2026-11-26-topical-questions-deepseek-assurance",
+    "on": "2026-11-26",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "chris-mcguire",
   "name": "Chris McGuire",
   "titles": [
@@ -4924,6 +4998,18 @@
   ]
  },
  {
+  "id": "colin-birss",
+  "name": "Sir Colin Birss",
+  "titles": [
+   {
+    "title": "Second most senior judge in England and Wales; leads the Civil Justice Council's working group",
+    "entry": "guardian-2026-11-26-court-cases-undisclosed-ai",
+    "on": "2026-11-26",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
   "id": "colleen-mcclain",
   "name": "Colleen McClain",
   "titles": [
@@ -5009,7 +5095,14 @@
  {
   "id": "cory-booker",
   "name": "Cory Booker",
-  "titles": []
+  "titles": [
+   {
+    "title": "Senator",
+    "entry": "zvi-2026-11-26-ai-196-the-return",
+    "on": "2026-11-26",
+    "role": "mentioned"
+   }
+  ]
  },
  {
   "id": "cory-breaux",
@@ -5345,6 +5438,12 @@
   "id": "dan-milmo",
   "name": "Dan Milmo",
   "titles": [
+   {
+    "title": "Guardian global technology editor",
+    "entry": "bbc-2026-11-26-spacex-starmind-satellites-approved",
+    "on": "2026-11-26",
+    "role": "speaker"
+   },
    {
     "title": "global technology editor, The Guardian",
     "entry": "guardian-2026-10-26-claude-georgia-voter-data",
@@ -5841,6 +5940,18 @@
     "title": "Director, Brechner Freedom of Information Project, University of Florida",
     "entry": "mittr-2026-11-25-ai-open-records-strain",
     "on": "2026-11-25",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
+  "id": "david-dalrymple",
+  "name": "David Dalrymple",
+  "titles": [
+   {
+    "title": "AI safety researcher",
+    "entry": "cognitive-revolution-2026-11-26-christiano-warning-jensen-return",
+    "on": "2026-11-26",
     "role": "mentioned"
    }
   ]
@@ -8282,6 +8393,28 @@
   "titles": []
  },
  {
+  "id": "fred-thomas",
+  "name": "Fred Thomas",
+  "titles": []
+ },
+ {
+  "id": "frmsaul",
+  "name": "frmsaul",
+  "titles": []
+ },
+ {
+  "id": "fu-cong",
+  "name": "Fu Cong",
+  "titles": [
+   {
+    "title": "Permanent Representative of China to the United Nations",
+    "entry": "forbes-2026-11-26-china-un-ai-human-control",
+    "on": "2026-11-26",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "fusen-guo",
   "name": "Fusen Guo",
   "titles": []
@@ -9161,6 +9294,11 @@
  {
   "id": "gwyn-topham",
   "name": "Gwyn Topham",
+  "titles": []
+ },
+ {
+  "id": "hadad",
+  "name": "hadad",
   "titles": []
  },
  {
@@ -10172,6 +10310,18 @@
   "id": "isaak-mengesha",
   "name": "Isaak Mengesha",
   "titles": []
+ },
+ {
+  "id": "isabel-juniewicz",
+  "name": "Isabel Juniewicz",
+  "titles": [
+   {
+    "title": "Senior Supply Chain Researcher, Epoch AI",
+    "entry": "nyt-2026-11-27-nvidia-halts-southeast-asia-sales",
+    "on": "2026-11-27",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "isabella-ward",
@@ -12143,6 +12293,18 @@
   ]
  },
  {
+  "id": "john-hickenlooper",
+  "name": "John Hickenlooper",
+  "titles": [
+   {
+    "title": "Senator",
+    "entry": "zvi-2026-11-26-ai-196-the-return",
+    "on": "2026-11-26",
+    "role": "mentioned"
+   }
+  ]
+ },
+ {
   "id": "john-kennedy",
   "name": "John Kennedy",
   "titles": [
@@ -13377,6 +13539,12 @@
   "name": "Karandeep Anand",
   "titles": [
    {
+    "title": "CEO, Character.AI",
+    "entry": "the-verge-2026-11-26-ags-block-characterai-chat-sale",
+    "on": "2026-11-26",
+    "role": "mentioned"
+   },
+   {
     "title": "Former CEO of Character.AI",
     "entry": "wired-2026-10-19-disney-characterai-bankruptcy-deal",
     "on": "2026-10-19",
@@ -14556,6 +14724,11 @@
   ]
  },
  {
+  "id": "lauren-edwards",
+  "name": "Lauren Edwards",
+  "titles": []
+ },
+ {
   "id": "lauren-feiner",
   "name": "Lauren Feiner",
   "titles": [
@@ -15264,6 +15437,11 @@
   ]
  },
  {
+  "id": "lord-john-of-southwark",
+  "name": "Lord John of Southwark",
+  "titles": []
+ },
+ {
   "id": "lord-kirkhope-of-harrogate",
   "name": "Lord Kirkhope of Harrogate",
   "titles": []
@@ -15289,6 +15467,11 @@
  {
   "id": "lord-loomba",
   "name": "Lord Loomba",
+  "titles": []
+ },
+ {
+  "id": "lord-markham",
+  "name": "Lord Markham",
   "titles": []
  },
  {
@@ -15366,6 +15549,18 @@
   "id": "lord-rees-of-ludlow",
   "name": "Lord Rees of Ludlow",
   "titles": []
+ },
+ {
+  "id": "lord-sales",
+  "name": "Lord Sales",
+  "titles": [
+   {
+    "title": "Supreme court judge",
+    "entry": "guardian-2026-11-26-court-cases-undisclosed-ai",
+    "on": "2026-11-26",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "lord-scriven",
@@ -15627,6 +15822,18 @@
     "entry": "arxiv-2026-10-13-monitoring-latent-reasoning-looped-models",
     "on": "2026-10-13",
     "role": "author"
+   }
+  ]
+ },
+ {
+  "id": "mackenzie-arnold",
+  "name": "Mackenzie Arnold",
+  "titles": [
+   {
+    "title": "Managing director for US Law and Policy, Institute for Law and AI",
+    "entry": "cognitive-revolution-2026-11-26-christiano-warning-jensen-return",
+    "on": "2026-11-26",
+    "role": "speaker"
    }
   ]
  },
@@ -16050,6 +16257,18 @@
   ]
  },
  {
+  "id": "mark-mullen",
+  "name": "Mark Mullen",
+  "titles": [
+   {
+    "title": "Senior insolvency judge",
+    "entry": "guardian-2026-11-26-court-cases-undisclosed-ai",
+    "on": "2026-11-26",
+    "role": "subject"
+   }
+  ]
+ },
+ {
   "id": "mark-sweney",
   "name": "Mark Sweney",
   "titles": []
@@ -16088,6 +16307,11 @@
     "role": "speaker"
    }
   ]
+ },
+ {
+  "id": "mark-wilding",
+  "name": "Mark Wilding",
+  "titles": []
  },
  {
   "id": "mark-woolway",
@@ -16624,6 +16848,11 @@
   ]
  },
  {
+  "id": "meena-duerson",
+  "name": "Meena Duerson",
+  "titles": []
+ },
+ {
   "id": "meetali-jain",
   "name": "Meetali Jain",
   "titles": [
@@ -16804,6 +17033,18 @@
   "id": "micah-carroll",
   "name": "Micah Carroll",
   "titles": []
+ },
+ {
+  "id": "michael-d-sicilia",
+  "name": "Michael D. Sicilia",
+  "titles": [
+   {
+    "title": "Chief Executive Officer, Oracle",
+    "entry": "forbes-2026-11-26-barrett-oracle-ai-liability",
+    "on": "2026-11-26",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "michael-dell",
@@ -17981,6 +18222,18 @@
   ]
  },
  {
+  "id": "nick-allardice",
+  "name": "Nick Allardice",
+  "titles": [
+   {
+    "title": "President and CEO, GiveDirectly",
+    "entry": "cognitive-revolution-2026-11-26-christiano-warning-jensen-return",
+    "on": "2026-11-26",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "nick-bostrom",
   "name": "Nick Bostrom",
   "titles": []
@@ -18660,6 +18913,12 @@
   "id": "paul-christiano",
   "name": "Paul Christiano",
   "titles": [
+   {
+    "title": "Founder, Alignment Research Center",
+    "entry": "cognitive-revolution-2026-11-26-christiano-warning-jensen-return",
+    "on": "2026-11-26",
+    "role": "subject"
+   },
    {
     "title": "Board member, OpenAI Foundation",
     "entry": "cnn-2026-11-24-christiano-ai-accident-takeover",
@@ -21153,6 +21412,11 @@
   ]
  },
  {
+  "id": "sarah-pochin",
+  "name": "Sarah Pochin",
+  "titles": []
+ },
+ {
   "id": "sarah-sacher",
   "name": "Sarah Sacher",
   "titles": []
@@ -23147,6 +23411,18 @@
   ]
  },
  {
+  "id": "tom-barrett",
+  "name": "Tom Barrett",
+  "titles": [
+   {
+    "title": "U.S. Representative (R-MI)",
+    "entry": "forbes-2026-11-26-barrett-oracle-ai-liability",
+    "on": "2026-11-26",
+    "role": "speaker"
+   }
+  ]
+ },
+ {
   "id": "tom-costello",
   "name": "Tom Costello",
   "titles": [
@@ -23184,7 +23460,14 @@
  {
   "id": "tom-davidson",
   "name": "Tom Davidson",
-  "titles": []
+  "titles": [
+   {
+    "title": "Senior research fellow, Forethought",
+    "entry": "cognitive-revolution-2026-11-26-christiano-warning-jensen-return",
+    "on": "2026-11-26",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "tom-dolphin",
@@ -23679,6 +23962,11 @@
   "titles": []
  },
  {
+  "id": "valentin-hartmann",
+  "name": "Valentin Hartmann",
+  "titles": []
+ },
+ {
   "id": "valerie-foushee",
   "name": "Valerie Foushee",
   "titles": [
@@ -23711,6 +23999,18 @@
   "id": "vasisht-duddu",
   "name": "Vasisht Duddu",
   "titles": []
+ },
+ {
+  "id": "vassily-nebenzia",
+  "name": "Vassily Nebenzia",
+  "titles": [
+   {
+    "title": "Ambassador of the Russian Federation to the United Nations",
+    "entry": "forbes-2026-11-26-russia-un-ai-military-reality",
+    "on": "2026-11-26",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "vatsal-raina",
@@ -23877,6 +24177,11 @@
   ]
  },
  {
+  "id": "viscount-colville-of-culross",
+  "name": "Viscount Colville of Culross",
+  "titles": []
+ },
+ {
   "id": "vishal-karande",
   "name": "Vishal Karande",
   "titles": []
@@ -23973,6 +24278,18 @@
   "id": "wei-qin",
   "name": "Wei Qin",
   "titles": []
+ },
+ {
+  "id": "wei-sun",
+  "name": "Wei Sun",
+  "titles": [
+   {
+    "title": "Counterpoint Research",
+    "entry": "nyt-2026-11-27-nvidia-halts-southeast-asia-sales",
+    "on": "2026-11-27",
+    "role": "speaker"
+   }
+  ]
  },
  {
   "id": "weihang-liu",
